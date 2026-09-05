@@ -20,7 +20,7 @@ async function refresh(): Promise<boolean> {
 export async function api<T>(path: string, options: { method?: "GET" | "POST"; body?: unknown; signal?: AbortSignal } = {}): Promise<T> {
   const request = () => fetch("/api/v1/" + path, { method: options.method || "GET", credentials: "same-origin", cache: "no-store", signal: options.signal || AbortSignal.timeout(20000), ...(options.body !== undefined ? { headers: { "Content-Type": "application/json" }, body: JSON.stringify(options.body) } : {}) });
   let response = await request();
-  const canRefresh = !["auth/request-code", "auth/verify-code", "auth/refresh"].includes(path);
+  const canRefresh = !["auth/request-code", "auth/request-link", "auth/verify-code", "auth/refresh"].includes(path);
   if (response.status === 401 && canRefresh && await refresh()) response = await request();
   const result = await response.json().catch(() => null);
   if (!response.ok) {
