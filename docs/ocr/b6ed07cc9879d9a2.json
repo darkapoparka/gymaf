@@ -1,0 +1,528 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "Apple Watch",
+                      "words":  [
+                                    {
+                                        "y":  269,
+                                        "height":  56,
+                                        "width":  158,
+                                        "text":  "Apple",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  173,
+                                        "text":  "Watch",
+                                        "x":  587
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HEART RATE",
+                      "words":  [
+                                    {
+                                        "y":  537,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "HEART",
+                                        "x":  207
+                                    },
+                                    {
+                                        "y":  537,
+                                        "height":  28,
+                                        "width":  99,
+                                        "text":  "RATE",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "137 BPM AVG",
+                      "words":  [
+                                    {
+                                        "y":  1053,
+                                        "height":  32,
+                                        "width":  74,
+                                        "text":  "137",
+                                        "x":  260
+                                    },
+                                    {
+                                        "y":  1054,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "BPM",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  1053,
+                                        "height":  32,
+                                        "width":  89,
+                                        "text":  "AVG",
+                                        "x":  467
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MIN 70 • MAX 142",
+                      "words":  [
+                                    {
+                                        "y":  1059,
+                                        "height":  23,
+                                        "width":  62,
+                                        "text":  "MIN",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  1058,
+                                        "height":  25,
+                                        "width":  39,
+                                        "text":  "70",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  1069,
+                                        "height":  8,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  23,
+                                        "width":  75,
+                                        "text":  "MAX",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  1058,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "142",
+                                        "x":  862
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Accountability with",
+                      "words":  [
+                                    {
+                                        "y":  1443,
+                                        "height":  77,
+                                        "width":  567,
+                                        "text":  "Accountability",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  63,
+                                        "width":  164,
+                                        "text":  "with",
+                                        "x":  685
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Apple Watch",
+                      "words":  [
+                                    {
+                                        "y":  1545,
+                                        "height":  75,
+                                        "width":  225,
+                                        "text":  "Apple",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1546,
+                                        "height":  60,
+                                        "width":  245,
+                                        "text":  "Watch",
+                                        "x":  346
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "With an Apple Watch, detailed fitness stats are",
+                      "words":  [
+                                    {
+                                        "y":  1707,
+                                        "height":  31,
+                                        "width":  84,
+                                        "text":  "With",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1715,
+                                        "height":  24,
+                                        "width":  43,
+                                        "text":  "an",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  39,
+                                        "width":  110,
+                                        "text":  "Apple",
+                                        "x":  255
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  39,
+                                        "width":  129,
+                                        "text":  "Watch,",
+                                        "x":  379
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  32,
+                                        "width":  151,
+                                        "text":  "detailed",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  32,
+                                        "width":  128,
+                                        "text":  "fitness",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  1710,
+                                        "height":  29,
+                                        "width":  92,
+                                        "text":  "stats",
+                                        "x":  833
+                                    },
+                                    {
+                                        "y":  1715,
+                                        "height":  24,
+                                        "width":  57,
+                                        "text":  "are",
+                                        "x":  940
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "delivered to you and shared with your coach. Plus,",
+                      "words":  [
+                                    {
+                                        "y":  1757,
+                                        "height":  32,
+                                        "width":  173,
+                                        "text":  "delivered",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1760,
+                                        "height":  29,
+                                        "width":  36,
+                                        "text":  "to",
+                                        "x":  286
+                                    },
+                                    {
+                                        "y":  1765,
+                                        "height":  31,
+                                        "width":  66,
+                                        "text":  "you",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1757,
+                                        "height":  32,
+                                        "width":  68,
+                                        "text":  "and",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  1757,
+                                        "height":  32,
+                                        "width":  128,
+                                        "text":  "shared",
+                                        "x":  502
+                                    },
+                                    {
+                                        "y":  1757,
+                                        "height":  31,
+                                        "width":  78,
+                                        "text":  "with",
+                                        "x":  644
+                                    },
+                                    {
+                                        "y":  1765,
+                                        "height":  31,
+                                        "width":  84,
+                                        "text":  "your",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  1757,
+                                        "height":  32,
+                                        "width":  124,
+                                        "text":  "coach.",
+                                        "x":  835
+                                    },
+                                    {
+                                        "y":  1757,
+                                        "height":  39,
+                                        "width":  87,
+                                        "text":  "Plus,",
+                                        "x":  977
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "you\u0027ll enjoy a more seamless workout experience",
+                      "words":  [
+                                    {
+                                        "y":  1807,
+                                        "height":  39,
+                                        "width":  98,
+                                        "text":  "you\u0027ll",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1807,
+                                        "height":  39,
+                                        "width":  101,
+                                        "text":  "enjoy",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  1815,
+                                        "height":  24,
+                                        "width":  18,
+                                        "text":  "a",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  1815,
+                                        "height":  24,
+                                        "width":  94,
+                                        "text":  "more",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  1807,
+                                        "height":  32,
+                                        "width":  177,
+                                        "text":  "seamless",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  1807,
+                                        "height":  32,
+                                        "width":  154,
+                                        "text":  "workout",
+                                        "x":  661
+                                    },
+                                    {
+                                        "y":  1807,
+                                        "height":  39,
+                                        "width":  209,
+                                        "text":  "experience",
+                                        "x":  829
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "with features like auto-rep counting, quick weight",
+                      "words":  [
+                                    {
+                                        "y":  1856,
+                                        "height":  32,
+                                        "width":  77,
+                                        "text":  "with",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1857,
+                                        "height":  32,
+                                        "width":  156,
+                                        "text":  "features",
+                                        "x":  189
+                                    },
+                                    {
+                                        "y":  1856,
+                                        "height":  33,
+                                        "width":  61,
+                                        "text":  "like",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  1860,
+                                        "height":  36,
+                                        "width":  165,
+                                        "text":  "auto-rep",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  1857,
+                                        "height":  39,
+                                        "width":  175,
+                                        "text":  "counting,",
+                                        "x":  617
+                                    },
+                                    {
+                                        "y":  1857,
+                                        "height":  39,
+                                        "width":  103,
+                                        "text":  "quick",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  1857,
+                                        "height":  39,
+                                        "width":  127,
+                                        "text":  "weight",
+                                        "x":  924
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "adjustments, and more.",
+                      "words":  [
+                                    {
+                                        "y":  1907,
+                                        "height":  39,
+                                        "width":  243,
+                                        "text":  "adjustments,",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1907,
+                                        "height":  32,
+                                        "width":  67,
+                                        "text":  "and",
+                                        "x":  359
+                                    },
+                                    {
+                                        "y":  1915,
+                                        "height":  24,
+                                        "width":  105,
+                                        "text":  "more.",
+                                        "x":  443
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GET AN APPLE WATCH",
+                      "words":  [
+                                    {
+                                        "y":  2176,
+                                        "height":  29,
+                                        "width":  74,
+                                        "text":  "GET",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  2176,
+                                        "height":  28,
+                                        "width":  53,
+                                        "text":  "AN",
+                                        "x":  461
+                                    },
+                                    {
+                                        "y":  2176,
+                                        "height":  28,
+                                        "width":  121,
+                                        "text":  "APPLE",
+                                        "x":  528
+                                    },
+                                    {
+                                        "y":  2176,
+                                        "height":  29,
+                                        "width":  138,
+                                        "text":  "WATCH",
+                                        "x":  664
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SETTING UP YOUR APPLE WATCH",
+                      "words":  [
+                                    {
+                                        "y":  2368,
+                                        "height":  29,
+                                        "width":  165,
+                                        "text":  "SETTING",
+                                        "x":  269
+                                    },
+                                    {
+                                        "y":  2368,
+                                        "height":  29,
+                                        "width":  50,
+                                        "text":  "UP",
+                                        "x":  449
+                                    },
+                                    {
+                                        "y":  2368,
+                                        "height":  29,
+                                        "width":  108,
+                                        "text":  "YOUR",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  2368,
+                                        "height":  28,
+                                        "width":  121,
+                                        "text":  "APPLE",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  2368,
+                                        "height":  29,
+                                        "width":  138,
+                                        "text":  "WATCH",
+                                        "x":  769
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "Apple Watch HEART RATE 137 BPM AVG MIN 70 • MAX 142 Accountability with Apple Watch With an Apple Watch, detailed fitness stats are delivered to you and shared with your coach. Plus, you\u0027ll enjoy a more seamless workout experience with features like auto-rep counting, quick weight adjustments, and more. GET AN APPLE WATCH SETTING UP YOUR APPLE WATCH F Future Pro *Mobbin"
+}

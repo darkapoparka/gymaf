@@ -1,0 +1,650 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Daily Steps",
+                      "words":  [
+                                    {
+                                        "y":  381,
+                                        "height":  84,
+                                        "width":  197,
+                                        "text":  "Daily",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  381,
+                                        "height":  83,
+                                        "width":  220,
+                                        "text":  "Steps",
+                                        "x":  265
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Tue",
+                      "words":  [
+                                    {
+                                        "y":  893,
+                                        "height":  24,
+                                        "width":  51,
+                                        "text":  "Tue",
+                                        "x":  112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Today",
+                      "words":  [
+                                    {
+                                        "y":  1033,
+                                        "height":  37,
+                                        "width":  101,
+                                        "text":  "Today",
+                                        "x":  72
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "990",
+                      "words":  [
+                                    {
+                                        "y":  1096,
+                                        "height":  39,
+                                        "width":  91,
+                                        "text":  "990",
+                                        "x":  74
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Date",
+                      "words":  [
+                                    {
+                                        "y":  1247,
+                                        "height":  29,
+                                        "width":  77,
+                                        "text":  "Date",
+                                        "x":  110
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wed",
+                      "words":  [
+                                    {
+                                        "y":  893,
+                                        "height":  24,
+                                        "width":  67,
+                                        "text":  "Wed",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thu",
+                      "words":  [
+                                    {
+                                        "y":  893,
+                                        "height":  24,
+                                        "width":  54,
+                                        "text":  "Thu",
+                                        "x":  378
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fri",
+                      "words":  [
+                                    {
+                                        "y":  893,
+                                        "height":  24,
+                                        "width":  30,
+                                        "text":  "Fri",
+                                        "x":  525
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This Week",
+                      "words":  [
+                                    {
+                                        "y":  1033,
+                                        "height":  29,
+                                        "width":  69,
+                                        "text":  "This",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1033,
+                                        "height":  29,
+                                        "width":  100,
+                                        "text":  "Week",
+                                        "x":  432
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "990 avg",
+                      "words":  [
+                                    {
+                                        "y":  1096,
+                                        "height":  39,
+                                        "width":  91,
+                                        "text":  "990",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1107,
+                                        "height":  37,
+                                        "width":  76,
+                                        "text":  "avg",
+                                        "x":  460
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 29, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1343,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  1342,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "29,",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1342,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  239
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 28, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1452,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  1451,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "28,",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1451,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  240
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 27, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1561,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  1560,
+                                        "height":  35,
+                                        "width":  44,
+                                        "text":  "27,",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1560,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  234
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 26, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1670,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  1669,
+                                        "height":  35,
+                                        "width":  50,
+                                        "text":  "26,",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1669,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  240
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 25, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1779,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  1778,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "25,",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1778,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  239
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 24, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1888,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  1887,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "24,",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1887,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  240
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 23, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1997,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  1996,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "23,",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1996,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  239
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 22, 2026",
+                      "words":  [
+                                    {
+                                        "y":  2106,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  2105,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "22,",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  2105,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  239
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 21, 2026",
+                      "words":  [
+                                    {
+                                        "y":  2215,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  2214,
+                                        "height":  35,
+                                        "width":  40,
+                                        "text":  "21,",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  2214,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  231
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sat",
+                      "words":  [
+                                    {
+                                        "y":  893,
+                                        "height":  24,
+                                        "width":  46,
+                                        "text":  "Sat",
+                                        "x":  650
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Last Week",
+                      "words":  [
+                                    {
+                                        "y":  1034,
+                                        "height":  28,
+                                        "width":  69,
+                                        "text":  "Last",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  1033,
+                                        "height":  29,
+                                        "width":  99,
+                                        "text":  "Week",
+                                        "x":  795
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "605 avg",
+                      "words":  [
+                                    {
+                                        "y":  1096,
+                                        "height":  39,
+                                        "width":  89,
+                                        "text":  "605",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  1107,
+                                        "height":  37,
+                                        "width":  76,
+                                        "text":  "avg",
+                                        "x":  819
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Steps",
+                      "words":  [
+                                    {
+                                        "y":  1246,
+                                        "height":  37,
+                                        "width":  96,
+                                        "text":  "Steps",
+                                        "x":  651
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "990",
+                      "words":  [
+                                    {
+                                        "y":  1342,
+                                        "height":  30,
+                                        "width":  69,
+                                        "text":  "990",
+                                        "x":  651
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "577",
+                      "words":  [
+                                    {
+                                        "y":  1670,
+                                        "height":  28,
+                                        "width":  62,
+                                        "text":  "577",
+                                        "x":  651
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2649",
+                      "words":  [
+                                    {
+                                        "y":  1778,
+                                        "height":  30,
+                                        "width":  91,
+                                        "text":  "2649",
+                                        "x":  651
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "20",
+                      "words":  [
+                                    {
+                                        "y":  1887,
+                                        "height":  30,
+                                        "width":  43,
+                                        "text":  "20",
+                                        "x":  651
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Home",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  22,
+                                        "width":  83,
+                                        "text":  "Home",
+                                        "x":  146
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Progress",
+                      "words":  [
+                                    {
+                                        "y":  2431,
+                                        "height":  28,
+                                        "width":  131,
+                                        "text":  "Progress",
+                                        "x":  314
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Messages",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "Messages",
+                                        "x":  509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Friends",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  106,
+                                        "text":  "Friends",
+                                        "x":  740
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "curated by",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  138,
+                                        "text":  "curated",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  36,
+                                        "width":  42,
+                                        "text":  "by",
+                                        "x":  807
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2,800",
+                      "words":  [
+                                    {
+                                        "y":  555,
+                                        "height":  29,
+                                        "width":  83,
+                                        "text":  "2,800",
+                                        "x":  1021
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1,400",
+                      "words":  [
+                                    {
+                                        "y":  708,
+                                        "height":  29,
+                                        "width":  77,
+                                        "text":  "1,400",
+                                        "x":  1020
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Profile",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "Profile",
+                                        "x":  947
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  170,
+                                        "text":  "Mobbin",
+                                        "x":  981
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Daily Steps Tue Today 990 Date Wed Thu Fri This Week 990 avg Jun 29, 2026 Jun 28, 2026 Jun 27, 2026 Jun 26, 2026 Jun 25, 2026 Jun 24, 2026 Jun 23, 2026 Jun 22, 2026 Jun 21, 2026 Sat Last Week 605 avg Steps 990 577 2649 20 F Home Future Pro Progress Messages Friends curated by 2,800 1,400 Profile Mobbin"
+}

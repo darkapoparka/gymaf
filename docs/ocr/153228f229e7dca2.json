@@ -1,0 +1,604 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Book your kickoff call with Lee.",
+                      "words":  [
+                                    {
+                                        "y":  354,
+                                        "height":  50,
+                                        "width":  153,
+                                        "text":  "Book",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  48,
+                                        "width":  132,
+                                        "text":  "your",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  50,
+                                        "width":  204,
+                                        "text":  "kickoff",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  50,
+                                        "width":  97,
+                                        "text":  "call",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  50,
+                                        "width":  126,
+                                        "text":  "with",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  355,
+                                        "height":  49,
+                                        "width":  114,
+                                        "text":  "Lee.",
+                                        "x":  853
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This 30 minute one-on-one call is key to laying",
+                      "words":  [
+                                    {
+                                        "y":  466,
+                                        "height":  37,
+                                        "width":  90,
+                                        "text":  "This",
+                                        "x":  72
+                                    },
+                                    {
+                                        "y":  466,
+                                        "height":  37,
+                                        "width":  58,
+                                        "text":  "30",
+                                        "x":  175
+                                    },
+                                    {
+                                        "y":  466,
+                                        "height":  37,
+                                        "width":  153,
+                                        "text":  "minute",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  476,
+                                        "height":  27,
+                                        "width":  265,
+                                        "text":  "one-on-one",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  466,
+                                        "height":  37,
+                                        "width":  70,
+                                        "text":  "call",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  466,
+                                        "height":  37,
+                                        "width":  31,
+                                        "text":  "is",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  466,
+                                        "height":  47,
+                                        "width":  73,
+                                        "text":  "key",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  470,
+                                        "height":  33,
+                                        "width":  45,
+                                        "text":  "to",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  466,
+                                        "height":  47,
+                                        "width":  124,
+                                        "text":  "laying",
+                                        "x":  968
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "a strong foundation for your training.",
+                      "words":  [
+                                    {
+                                        "y":  539,
+                                        "height":  27,
+                                        "width":  22,
+                                        "text":  "a",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  533,
+                                        "height":  43,
+                                        "width":  140,
+                                        "text":  "strong",
+                                        "x":  110
+                                    },
+                                    {
+                                        "y":  528,
+                                        "height":  38,
+                                        "width":  242,
+                                        "text":  "foundation",
+                                        "x":  261
+                                    },
+                                    {
+                                        "y":  528,
+                                        "height":  38,
+                                        "width":  62,
+                                        "text":  "for",
+                                        "x":  516
+                                    },
+                                    {
+                                        "y":  539,
+                                        "height":  37,
+                                        "width":  98,
+                                        "text":  "your",
+                                        "x":  587
+                                    },
+                                    {
+                                        "y":  529,
+                                        "height":  47,
+                                        "width":  175,
+                                        "text":  "training.",
+                                        "x":  694
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mon",
+                      "words":  [
+                                    {
+                                        "y":  771,
+                                        "height":  29,
+                                        "width":  74,
+                                        "text":  "Mon",
+                                        "x":  119
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "29",
+                      "words":  [
+                                    {
+                                        "y":  832,
+                                        "height":  34,
+                                        "width":  49,
+                                        "text":  "29",
+                                        "x":  131
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Tue",
+                      "words":  [
+                                    {
+                                        "y":  771,
+                                        "height":  29,
+                                        "width":  60,
+                                        "text":  "Tue",
+                                        "x":  323
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "30",
+                      "words":  [
+                                    {
+                                        "y":  832,
+                                        "height":  34,
+                                        "width":  51,
+                                        "text":  "30",
+                                        "x":  328
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12:00 AM",
+                      "words":  [
+                                    {
+                                        "y":  1039,
+                                        "height":  41,
+                                        "width":  126,
+                                        "text":  "12:00",
+                                        "x":  214
+                                    },
+                                    {
+                                        "y":  1040,
+                                        "height":  39,
+                                        "width":  80,
+                                        "text":  "AM",
+                                        "x":  352
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12.30 AM",
+                      "words":  [
+                                    {
+                                        "y":  1231,
+                                        "height":  41,
+                                        "width":  123,
+                                        "text":  "12.30",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  1232,
+                                        "height":  39,
+                                        "width":  80,
+                                        "text":  "AM",
+                                        "x":  350
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1:00 AM",
+                      "words":  [
+                                    {
+                                        "y":  1423,
+                                        "height":  41,
+                                        "width":  95,
+                                        "text":  "1:00",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  39,
+                                        "width":  80,
+                                        "text":  "AM",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1:30 AM",
+                      "words":  [
+                                    {
+                                        "y":  1615,
+                                        "height":  41,
+                                        "width":  92,
+                                        "text":  "1:30",
+                                        "x":  232
+                                    },
+                                    {
+                                        "y":  1616,
+                                        "height":  39,
+                                        "width":  80,
+                                        "text":  "AM",
+                                        "x":  335
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wed",
+                      "words":  [
+                                    {
+                                        "y":  770,
+                                        "height":  30,
+                                        "width":  79,
+                                        "text":  "Wed",
+                                        "x":  511
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1",
+                      "words":  [
+                                    {
+                                        "y":  832,
+                                        "height":  33,
+                                        "width":  13,
+                                        "text":  "1",
+                                        "x":  544
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "e",
+                      "words":  [
+                                    {
+                                        "y":  820,
+                                        "height":  64,
+                                        "width":  48,
+                                        "text":  "e",
+                                        "x":  724
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mon",
+                      "words":  [
+                                    {
+                                        "y":  771,
+                                        "height":  28,
+                                        "width":  74,
+                                        "text":  "Mon",
+                                        "x":  911
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6",
+                      "words":  [
+                                    {
+                                        "y":  832,
+                                        "height":  34,
+                                        "width":  24,
+                                        "text":  "6",
+                                        "x":  936
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Tue",
+                      "words":  [
+                                    {
+                                        "y":  771,
+                                        "height":  28,
+                                        "width":  60,
+                                        "text":  "Tue",
+                                        "x":  1115
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "7",
+                      "words":  [
+                                    {
+                                        "y":  832,
+                                        "height":  33,
+                                        "width":  24,
+                                        "text":  "7",
+                                        "x":  1134
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12:15 AM",
+                      "words":  [
+                                    {
+                                        "y":  1039,
+                                        "height":  41,
+                                        "width":  107,
+                                        "text":  "12:15",
+                                        "x":  754
+                                    },
+                                    {
+                                        "y":  1040,
+                                        "height":  39,
+                                        "width":  80,
+                                        "text":  "AM",
+                                        "x":  872
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12:45 AM",
+                      "words":  [
+                                    {
+                                        "y":  1231,
+                                        "height":  41,
+                                        "width":  122,
+                                        "text":  "12:45",
+                                        "x":  746
+                                    },
+                                    {
+                                        "y":  1232,
+                                        "height":  39,
+                                        "width":  80,
+                                        "text":  "AM",
+                                        "x":  879
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1:15 AM",
+                      "words":  [
+                                    {
+                                        "y":  1424,
+                                        "height":  40,
+                                        "width":  77,
+                                        "text":  "1:15",
+                                        "x":  769
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  39,
+                                        "width":  80,
+                                        "text":  "AM",
+                                        "x":  857
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1:45 AM",
+                      "words":  [
+                                    {
+                                        "y":  1616,
+                                        "height":  40,
+                                        "width":  92,
+                                        "text":  "1:45",
+                                        "x":  761
+                                    },
+                                    {
+                                        "y":  1616,
+                                        "height":  39,
+                                        "width":  80,
+                                        "text":  "AM",
+                                        "x":  864
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "None of these times work for me",
+                      "words":  [
+                                    {
+                                        "y":  1995,
+                                        "height":  40,
+                                        "width":  123,
+                                        "text":  "None",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  41,
+                                        "width":  47,
+                                        "text":  "of",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  41,
+                                        "width":  132,
+                                        "text":  "these",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  41,
+                                        "width":  131,
+                                        "text":  "times",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  41,
+                                        "width":  118,
+                                        "text":  "work",
+                                        "x":  690
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  41,
+                                        "width":  66,
+                                        "text":  "for",
+                                        "x":  817
+                                    },
+                                    {
+                                        "y":  2005,
+                                        "height":  30,
+                                        "width":  73,
+                                        "text":  "me",
+                                        "x":  896
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Book Thu, Jul 2 at 12:00...",
+                      "words":  [
+                                    {
+                                        "y":  2288,
+                                        "height":  41,
+                                        "width":  121,
+                                        "text":  "Book",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  2288,
+                                        "height":  48,
+                                        "width":  101,
+                                        "text":  "Thu,",
+                                        "x":  579
+                                    },
+                                    {
+                                        "y":  2288,
+                                        "height":  41,
+                                        "width":  68,
+                                        "text":  "Jul",
+                                        "x":  690
+                                    },
+                                    {
+                                        "y":  2288,
+                                        "height":  40,
+                                        "width":  27,
+                                        "text":  "2",
+                                        "x":  772
+                                    },
+                                    {
+                                        "y":  2293,
+                                        "height":  36,
+                                        "width":  45,
+                                        "text":  "at",
+                                        "x":  813
+                                    },
+                                    {
+                                        "y":  2288,
+                                        "height":  41,
+                                        "width":  162,
+                                        "text":  "12:00...",
+                                        "x":  870
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Book your kickoff call with Lee. This 30 minute one-on-one call is key to laying a strong foundation for your training. Mon 29 Tue 30 12:00 AM 12.30 AM 1:00 AM 1:30 AM Wed 1 e Mon 6 Tue 7 12:15 AM 12:45 AM 1:15 AM 1:45 AM None of these times work for me Book Thu, Jul 2 at 12:00... F Future Pro *Mobbin"
+}

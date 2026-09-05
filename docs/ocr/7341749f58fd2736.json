@@ -1,0 +1,402 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  266,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cover Photo",
+                      "words":  [
+                                    {
+                                        "y":  472,
+                                        "height":  38,
+                                        "width":  131,
+                                        "text":  "Cover",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  38,
+                                        "width":  130,
+                                        "text":  "Photo",
+                                        "x":  218
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Edit Profile",
+                      "words":  [
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  102,
+                                        "text":  "Edit",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  268,
+                                        "height":  46,
+                                        "width":  172,
+                                        "text":  "Profile",
+                                        "x":  562
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Update cover photo",
+                      "words":  [
+                                    {
+                                        "y":  632,
+                                        "height":  48,
+                                        "width":  161,
+                                        "text":  "Update",
+                                        "x":  261
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  28,
+                                        "width":  124,
+                                        "text":  "cover",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  48,
+                                        "width":  130,
+                                        "text":  "photo",
+                                        "x":  570
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Display Name",
+                      "words":  [
+                                    {
+                                        "y":  829,
+                                        "height":  47,
+                                        "width":  156,
+                                        "text":  "Display",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  829,
+                                        "height":  38,
+                                        "width":  131,
+                                        "text":  "Name",
+                                        "x":  245
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Alex Smith",
+                      "words":  [
+                                    {
+                                        "y":  978,
+                                        "height":  39,
+                                        "width":  96,
+                                        "text":  "Alex",
+                                        "x":  120
+                                    },
+                                    {
+                                        "y":  978,
+                                        "height":  39,
+                                        "width":  129,
+                                        "text":  "Smith",
+                                        "x":  225
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Interests \u0026 Hashtags",
+                      "words":  [
+                                    {
+                                        "y":  1164,
+                                        "height":  38,
+                                        "width":  190,
+                                        "text":  "Interests",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  1164,
+                                        "height":  38,
+                                        "width":  31,
+                                        "text":  "\u0026",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  1164,
+                                        "height":  47,
+                                        "width":  204,
+                                        "text":  "Hashtags",
+                                        "x":  324
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Add Interest",
+                      "words":  [
+                                    {
+                                        "y":  1314,
+                                        "height":  33,
+                                        "width":  77,
+                                        "text":  "Add",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  32,
+                                        "width":  150,
+                                        "text":  "Interest",
+                                        "x":  218
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Private Profile",
+                      "words":  [
+                                    {
+                                        "y":  1538,
+                                        "height":  38,
+                                        "width":  150,
+                                        "text":  "Private",
+                                        "x":  129
+                                    },
+                                    {
+                                        "y":  1537,
+                                        "height":  39,
+                                        "width":  138,
+                                        "text":  "Profile",
+                                        "x":  293
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When enabled, only your photo, cover image, name and",
+                      "words":  [
+                                    {
+                                        "y":  1652,
+                                        "height":  29,
+                                        "width":  102,
+                                        "text":  "When",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  1652,
+                                        "height":  35,
+                                        "width":  145,
+                                        "text":  "enabled,",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  1652,
+                                        "height":  37,
+                                        "width":  71,
+                                        "text":  "only",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  1660,
+                                        "height":  29,
+                                        "width":  76,
+                                        "text":  "your",
+                                        "x":  440
+                                    },
+                                    {
+                                        "y":  1652,
+                                        "height":  36,
+                                        "width":  106,
+                                        "text":  "photo,",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  1660,
+                                        "height":  22,
+                                        "width":  95,
+                                        "text":  "cover",
+                                        "x":  640
+                                    },
+                                    {
+                                        "y":  1653,
+                                        "height":  36,
+                                        "width":  108,
+                                        "text":  "image,",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  1660,
+                                        "height":  22,
+                                        "width":  95,
+                                        "text":  "name",
+                                        "x":  862
+                                    },
+                                    {
+                                        "y":  1652,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "and",
+                                        "x":  967
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "basic stats will display to others. All other information will",
+                      "words":  [
+                                    {
+                                        "y":  1700,
+                                        "height":  30,
+                                        "width":  87,
+                                        "text":  "basic",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1704,
+                                        "height":  26,
+                                        "width":  81,
+                                        "text":  "stats",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  1700,
+                                        "height":  29,
+                                        "width":  52,
+                                        "text":  "will",
+                                        "x":  284
+                                    },
+                                    {
+                                        "y":  1700,
+                                        "height":  37,
+                                        "width":  119,
+                                        "text":  "display",
+                                        "x":  347
+                                    },
+                                    {
+                                        "y":  1704,
+                                        "height":  26,
+                                        "width":  34,
+                                        "text":  "to",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  1700,
+                                        "height":  30,
+                                        "width":  116,
+                                        "text":  "others.",
+                                        "x":  517
+                                    },
+                                    {
+                                        "y":  1700,
+                                        "height":  29,
+                                        "width":  41,
+                                        "text":  "All",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  1700,
+                                        "height":  30,
+                                        "width":  91,
+                                        "text":  "other",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  1700,
+                                        "height":  29,
+                                        "width":  195,
+                                        "text":  "information",
+                                        "x":  791
+                                    },
+                                    {
+                                        "y":  1700,
+                                        "height":  29,
+                                        "width":  52,
+                                        "text":  "will",
+                                        "x":  995
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "remain private.",
+                      "words":  [
+                                    {
+                                        "y":  1749,
+                                        "height":  28,
+                                        "width":  114,
+                                        "text":  "remain",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1749,
+                                        "height":  35,
+                                        "width":  122,
+                                        "text":  "private.",
+                                        "x":  224
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 x Cover Photo Edit Profile Update cover photo Display Name Alex Smith Interests \u0026 Hashtags Add Interest Private Profile When enabled, only your photo, cover image, name and basic stats will display to others. All other information will remain private. F Future Pro *Mobbin"
+}

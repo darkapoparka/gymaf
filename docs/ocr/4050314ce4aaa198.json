@@ -1,0 +1,785 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ABOUT",
+                      "words":  [
+                                    {
+                                        "y":  422,
+                                        "height":  32,
+                                        "width":  148,
+                                        "text":  "ABOUT",
+                                        "x":  73
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Lee",
+                      "words":  [
+                                    {
+                                        "y":  226,
+                                        "height":  37,
+                                        "width":  80,
+                                        "text":  "Lee",
+                                        "x":  551
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Lee focuses on personalized programs that fit each",
+                      "words":  [
+                                    {
+                                        "y":  549,
+                                        "height":  31,
+                                        "width":  64,
+                                        "text":  "Lee",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  32,
+                                        "width":  150,
+                                        "text":  "focuses",
+                                        "x":  153
+                                    },
+                                    {
+                                        "y":  556,
+                                        "height":  24,
+                                        "width":  44,
+                                        "text":  "on",
+                                        "x":  318
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  39,
+                                        "width":  242,
+                                        "text":  "personalized",
+                                        "x":  378
+                                    },
+                                    {
+                                        "y":  556,
+                                        "height":  31,
+                                        "width":  181,
+                                        "text":  "programs",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  32,
+                                        "width":  74,
+                                        "text":  "that",
+                                        "x":  832
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  31,
+                                        "width":  37,
+                                        "text":  "fit",
+                                        "x":  920
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  32,
+                                        "width":  90,
+                                        "text":  "each",
+                                        "x":  971
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "client\u0027s lifestyle while building strength and",
+                      "words":  [
+                                    {
+                                        "y":  614,
+                                        "height":  32,
+                                        "width":  133,
+                                        "text":  "client\u0027s",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  39,
+                                        "width":  145,
+                                        "text":  "lifestyle",
+                                        "x":  223
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  32,
+                                        "width":  98,
+                                        "text":  "while",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  39,
+                                        "width":  149,
+                                        "text":  "building",
+                                        "x":  495
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  39,
+                                        "width":  158,
+                                        "text":  "strength",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  32,
+                                        "width":  68,
+                                        "text":  "and",
+                                        "x":  834
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "improving performance.",
+                      "words":  [
+                                    {
+                                        "y":  679,
+                                        "height":  39,
+                                        "width":  185,
+                                        "text":  "improving",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  39,
+                                        "width":  255,
+                                        "text":  "performance.",
+                                        "x":  277
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "With over 8 years of coaching clients from all walks",
+                      "words":  [
+                                    {
+                                        "y":  774,
+                                        "height":  31,
+                                        "width":  84,
+                                        "text":  "With",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  782,
+                                        "height":  24,
+                                        "width":  82,
+                                        "text":  "over",
+                                        "x":  174
+                                    },
+                                    {
+                                        "y":  775,
+                                        "height":  31,
+                                        "width":  22,
+                                        "text":  "8",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  782,
+                                        "height":  31,
+                                        "width":  102,
+                                        "text":  "years",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  774,
+                                        "height":  32,
+                                        "width":  36,
+                                        "text":  "of",
+                                        "x":  423
+                                    },
+                                    {
+                                        "y":  774,
+                                        "height":  39,
+                                        "width":  172,
+                                        "text":  "coaching",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  774,
+                                        "height":  32,
+                                        "width":  123,
+                                        "text":  "clients",
+                                        "x":  662
+                                    },
+                                    {
+                                        "y":  774,
+                                        "height":  32,
+                                        "width":  87,
+                                        "text":  "from",
+                                        "x":  799
+                                    },
+                                    {
+                                        "y":  774,
+                                        "height":  32,
+                                        "width":  38,
+                                        "text":  "all",
+                                        "x":  901
+                                    },
+                                    {
+                                        "y":  774,
+                                        "height":  32,
+                                        "width":  105,
+                                        "text":  "walks",
+                                        "x":  954
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of life, Lee is dedicated to helping clients unlock their",
+                      "words":  [
+                                    {
+                                        "y":  839,
+                                        "height":  32,
+                                        "width":  36,
+                                        "text":  "of",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  39,
+                                        "width":  62,
+                                        "text":  "life,",
+                                        "x":  125
+                                    },
+                                    {
+                                        "y":  840,
+                                        "height":  31,
+                                        "width":  65,
+                                        "text":  "Lee",
+                                        "x":  206
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  32,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  287
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  32,
+                                        "width":  189,
+                                        "text":  "dedicated",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  29,
+                                        "width":  37,
+                                        "text":  "to",
+                                        "x":  532
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  39,
+                                        "width":  138,
+                                        "text":  "helping",
+                                        "x":  584
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  32,
+                                        "width":  123,
+                                        "text":  "clients",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  32,
+                                        "width":  125,
+                                        "text":  "unlock",
+                                        "x":  876
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  32,
+                                        "width":  87,
+                                        "text":  "their",
+                                        "x":  1013
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "potential with results-driven strategies and",
+                      "words":  [
+                                    {
+                                        "y":  904,
+                                        "height":  39,
+                                        "width":  163,
+                                        "text":  "potential",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  904,
+                                        "height":  31,
+                                        "width":  78,
+                                        "text":  "with",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  904,
+                                        "height":  32,
+                                        "width":  264,
+                                        "text":  "results-driven",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  904,
+                                        "height":  39,
+                                        "width":  189,
+                                        "text":  "strategies",
+                                        "x":  627
+                                    },
+                                    {
+                                        "y":  904,
+                                        "height":  32,
+                                        "width":  68,
+                                        "text":  "and",
+                                        "x":  831
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "consistent support, no matter where they start.",
+                      "words":  [
+                                    {
+                                        "y":  968,
+                                        "height":  33,
+                                        "width":  198,
+                                        "text":  "consistent",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  36,
+                                        "width":  157,
+                                        "text":  "support,",
+                                        "x":  286
+                                    },
+                                    {
+                                        "y":  977,
+                                        "height":  24,
+                                        "width":  45,
+                                        "text":  "no",
+                                        "x":  461
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  29,
+                                        "width":  124,
+                                        "text":  "matter",
+                                        "x":  521
+                                    },
+                                    {
+                                        "y":  969,
+                                        "height":  32,
+                                        "width":  116,
+                                        "text":  "where",
+                                        "x":  658
+                                    },
+                                    {
+                                        "y":  969,
+                                        "height":  39,
+                                        "width":  82,
+                                        "text":  "they",
+                                        "x":  788
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  29,
+                                        "width":  97,
+                                        "text":  "start.",
+                                        "x":  884
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Outside of the gym, Lee unwinds + stays active by",
+                      "words":  [
+                                    {
+                                        "y":  1064,
+                                        "height":  32,
+                                        "width":  147,
+                                        "text":  "Outside",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  1064,
+                                        "height":  32,
+                                        "width":  36,
+                                        "text":  "of",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  1064,
+                                        "height":  32,
+                                        "width":  60,
+                                        "text":  "the",
+                                        "x":  285
+                                    },
+                                    {
+                                        "y":  1072,
+                                        "height":  31,
+                                        "width":  90,
+                                        "text":  "gym,",
+                                        "x":  360
+                                    },
+                                    {
+                                        "y":  1065,
+                                        "height":  31,
+                                        "width":  65,
+                                        "text":  "Lee",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  1064,
+                                        "height":  32,
+                                        "width":  155,
+                                        "text":  "unwinds",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  1072,
+                                        "height":  22,
+                                        "width":  22,
+                                        "text":  "+",
+                                        "x":  719
+                                    },
+                                    {
+                                        "y":  1067,
+                                        "height":  36,
+                                        "width":  97,
+                                        "text":  "stays",
+                                        "x":  757
+                                    },
+                                    {
+                                        "y":  1064,
+                                        "height":  32,
+                                        "width":  113,
+                                        "text":  "active",
+                                        "x":  869
+                                    },
+                                    {
+                                        "y":  1064,
+                                        "height":  39,
+                                        "width":  42,
+                                        "text":  "by",
+                                        "x":  998
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "walking his two Goldendoodles and playing",
+                      "words":  [
+                                    {
+                                        "y":  1129,
+                                        "height":  39,
+                                        "width":  142,
+                                        "text":  "walking",
+                                        "x":  73
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  32,
+                                        "width":  51,
+                                        "text":  "his",
+                                        "x":  232
+                                    },
+                                    {
+                                        "y":  1132,
+                                        "height":  29,
+                                        "width":  68,
+                                        "text":  "two",
+                                        "x":  297
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  32,
+                                        "width":  289,
+                                        "text":  "Goldendoodles",
+                                        "x":  380
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  32,
+                                        "width":  68,
+                                        "text":  "and",
+                                        "x":  684
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  39,
+                                        "width":  134,
+                                        "text":  "playing",
+                                        "x":  768
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "basketball.",
+                      "words":  [
+                                    {
+                                        "y":  1194,
+                                        "height":  32,
+                                        "width":  203,
+                                        "text":  "basketball.",
+                                        "x":  75
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CERTIFIED",
+                      "words":  [
+                                    {
+                                        "y":  1380,
+                                        "height":  32,
+                                        "width":  215,
+                                        "text":  "CERTIFIED",
+                                        "x":  74
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "B.S. Exercise Science",
+                      "words":  [
+                                    {
+                                        "y":  1506,
+                                        "height":  32,
+                                        "width":  71,
+                                        "text":  "B.S.",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  1506,
+                                        "height":  32,
+                                        "width":  157,
+                                        "text":  "Exercise",
+                                        "x":  163
+                                    },
+                                    {
+                                        "y":  1506,
+                                        "height":  32,
+                                        "width":  150,
+                                        "text":  "Science",
+                                        "x":  335
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Functional Range Conditioning (FRS)",
+                      "words":  [
+                                    {
+                                        "y":  1601,
+                                        "height":  32,
+                                        "width":  195,
+                                        "text":  "Functional",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  1602,
+                                        "height":  38,
+                                        "width":  118,
+                                        "text":  "Range",
+                                        "x":  287
+                                    },
+                                    {
+                                        "y":  1600,
+                                        "height":  40,
+                                        "width":  241,
+                                        "text":  "Conditioning",
+                                        "x":  420
+                                    },
+                                    {
+                                        "y":  1601,
+                                        "height":  39,
+                                        "width":  98,
+                                        "text":  "(FRS)",
+                                        "x":  680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "LOVES",
+                      "words":  [
+                                    {
+                                        "y":  1787,
+                                        "height":  32,
+                                        "width":  133,
+                                        "text":  "LOVES",
+                                        "x":  75
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Walking his Two Goldendoodles",
+                      "words":  [
+                                    {
+                                        "y":  1913,
+                                        "height":  39,
+                                        "width":  148,
+                                        "text":  "Walking",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  1913,
+                                        "height":  32,
+                                        "width":  52,
+                                        "text":  "his",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  1914,
+                                        "height":  31,
+                                        "width":  76,
+                                        "text":  "Two",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  1913,
+                                        "height":  32,
+                                        "width":  289,
+                                        "text":  "Goldendoodles",
+                                        "x":  395
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Playing Basketball",
+                      "words":  [
+                                    {
+                                        "y":  2008,
+                                        "height":  39,
+                                        "width":  134,
+                                        "text":  "Playing",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  2008,
+                                        "height":  32,
+                                        "width":  193,
+                                        "text":  "Basketball",
+                                        "x":  226
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "All Things Philadelphia Sports",
+                      "words":  [
+                                    {
+                                        "y":  2103,
+                                        "height":  31,
+                                        "width":  44,
+                                        "text":  "All",
+                                        "x":  73
+                                    },
+                                    {
+                                        "y":  2103,
+                                        "height":  39,
+                                        "width":  128,
+                                        "text":  "Things",
+                                        "x":  133
+                                    },
+                                    {
+                                        "y":  2103,
+                                        "height":  39,
+                                        "width":  228,
+                                        "text":  "Philadelphia",
+                                        "x":  277
+                                    },
+                                    {
+                                        "y":  2103,
+                                        "height":  39,
+                                        "width":  125,
+                                        "text":  "Sports",
+                                        "x":  521
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Train with Lee",
+                      "words":  [
+                                    {
+                                        "y":  2347,
+                                        "height":  38,
+                                        "width":  108,
+                                        "text":  "Train",
+                                        "x":  435
+                                    },
+                                    {
+                                        "y":  2347,
+                                        "height":  37,
+                                        "width":  94,
+                                        "text":  "with",
+                                        "x":  559
+                                    },
+                                    {
+                                        "y":  2350,
+                                        "height":  35,
+                                        "width":  75,
+                                        "text":  "Lee",
+                                        "x":  671
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 ABOUT Lee Lee focuses on personalized programs that fit each client\u0027s lifestyle while building strength and improving performance. With over 8 years of coaching clients from all walks of life, Lee is dedicated to helping clients unlock their potential with results-driven strategies and consistent support, no matter where they start. Outside of the gym, Lee unwinds + stays active by walking his two Goldendoodles and playing basketball. CERTIFIED B.S. Exercise Science Functional Range Conditioning (FRS) LOVES Walking his Two Goldendoodles Playing Basketball All Things Philadelphia Sports F Future Pro Train with Lee *Mobbin"
+}

@@ -1,0 +1,415 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Morning, Alex",
+                      "words":  [
+                                    {
+                                        "y":  210,
+                                        "height":  84,
+                                        "width":  351,
+                                        "text":  "Morning,",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  210,
+                                        "height":  67,
+                                        "width":  176,
+                                        "text":  "Alex",
+                                        "x":  418
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "O Turn on Apple Health",
+                      "words":  [
+                                    {
+                                        "y":  451,
+                                        "height":  65,
+                                        "width":  70,
+                                        "text":  "O",
+                                        "x":  109
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  40,
+                                        "width":  102,
+                                        "text":  "Turn",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  30,
+                                        "width":  58,
+                                        "text":  "on",
+                                        "x":  332
+                                    },
+                                    {
+                                        "y":  448,
+                                        "height":  50,
+                                        "width":  140,
+                                        "text":  "Apple",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  448,
+                                        "height":  41,
+                                        "width":  150,
+                                        "text":  "Health",
+                                        "x":  557
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "permissions to more accurately",
+                      "words":  [
+                                    {
+                                        "y":  516,
+                                        "height":  49,
+                                        "width":  283,
+                                        "text":  "permissions",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  520,
+                                        "height":  36,
+                                        "width":  48,
+                                        "text":  "to",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  30,
+                                        "width":  120,
+                                        "text":  "more",
+                                        "x":  576
+                                    },
+                                    {
+                                        "y":  515,
+                                        "height":  51,
+                                        "width":  245,
+                                        "text":  "accurately",
+                                        "x":  710
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "record your workouts.",
+                      "words":  [
+                                    {
+                                        "y":  581,
+                                        "height":  41,
+                                        "width":  149,
+                                        "text":  "record",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  592,
+                                        "height":  40,
+                                        "width":  105,
+                                        "text":  "your",
+                                        "x":  381
+                                    },
+                                    {
+                                        "y":  581,
+                                        "height":  41,
+                                        "width":  230,
+                                        "text":  "workouts.",
+                                        "x":  495
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Continue",
+                      "words":  [
+                                    {
+                                        "y":  730,
+                                        "height":  41,
+                                        "width":  216,
+                                        "text":  "Continue",
+                                        "x":  290
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Enjoyed your workout?",
+                      "words":  [
+                                    {
+                                        "y":  1909,
+                                        "height":  60,
+                                        "width":  220,
+                                        "text":  "Enjoyed",
+                                        "x":  273
+                                    },
+                                    {
+                                        "y":  1923,
+                                        "height":  46,
+                                        "width":  127,
+                                        "text":  "your",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  1909,
+                                        "height":  49,
+                                        "width":  264,
+                                        "text":  "workout?",
+                                        "x":  643
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Share a 30-day guest pass and kick off the",
+                      "words":  [
+                                    {
+                                        "y":  2008,
+                                        "height":  38,
+                                        "width":  122,
+                                        "text":  "Share",
+                                        "x":  140
+                                    },
+                                    {
+                                        "y":  2019,
+                                        "height":  27,
+                                        "width":  23,
+                                        "text":  "a",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  2008,
+                                        "height":  47,
+                                        "width":  154,
+                                        "text":  "30-day",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  2013,
+                                        "height":  42,
+                                        "width":  118,
+                                        "text":  "guest",
+                                        "x":  473
+                                    },
+                                    {
+                                        "y":  2019,
+                                        "height":  35,
+                                        "width":  97,
+                                        "text":  "pass",
+                                        "x":  604
+                                    },
+                                    {
+                                        "y":  2008,
+                                        "height":  38,
+                                        "width":  78,
+                                        "text":  "and",
+                                        "x":  713
+                                    },
+                                    {
+                                        "y":  2008,
+                                        "height":  38,
+                                        "width":  85,
+                                        "text":  "kick",
+                                        "x":  806
+                                    },
+                                    {
+                                        "y":  2008,
+                                        "height":  38,
+                                        "width":  60,
+                                        "text":  "off",
+                                        "x":  901
+                                    },
+                                    {
+                                        "y":  2008,
+                                        "height":  38,
+                                        "width":  71,
+                                        "text":  "the",
+                                        "x":  968
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "journey together, you\u0027ll get $100 off your",
+                      "words":  [
+                                    {
+                                        "y":  2069,
+                                        "height":  46,
+                                        "width":  161,
+                                        "text":  "journey",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  2069,
+                                        "height":  46,
+                                        "width":  188,
+                                        "text":  "together,",
+                                        "x":  337
+                                    },
+                                    {
+                                        "y":  2069,
+                                        "height":  46,
+                                        "width":  106,
+                                        "text":  "you\u0027ll",
+                                        "x":  534
+                                    },
+                                    {
+                                        "y":  2073,
+                                        "height":  42,
+                                        "width":  67,
+                                        "text":  "get",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  2064,
+                                        "height":  47,
+                                        "width":  105,
+                                        "text":  "$100",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  2068,
+                                        "height":  38,
+                                        "width":  61,
+                                        "text":  "off",
+                                        "x":  848
+                                    },
+                                    {
+                                        "y":  2079,
+                                        "height":  36,
+                                        "width":  95,
+                                        "text":  "your",
+                                        "x":  916
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "membership for each friend who joins.",
+                      "words":  [
+                                    {
+                                        "y":  2129,
+                                        "height":  46,
+                                        "width":  271,
+                                        "text":  "membership",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  2129,
+                                        "height":  38,
+                                        "width":  60,
+                                        "text":  "for",
+                                        "x":  466
+                                    },
+                                    {
+                                        "y":  2129,
+                                        "height":  38,
+                                        "width":  103,
+                                        "text":  "each",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  2129,
+                                        "height":  38,
+                                        "width":  125,
+                                        "text":  "friend",
+                                        "x":  650
+                                    },
+                                    {
+                                        "y":  2129,
+                                        "height":  38,
+                                        "width":  92,
+                                        "text":  "who",
+                                        "x":  786
+                                    },
+                                    {
+                                        "y":  2130,
+                                        "height":  45,
+                                        "width":  110,
+                                        "text":  "joins.",
+                                        "x":  887
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Send a Free Month",
+                      "words":  [
+                                    {
+                                        "y":  2298,
+                                        "height":  39,
+                                        "width":  115,
+                                        "text":  "Send",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  2309,
+                                        "height":  28,
+                                        "width":  23,
+                                        "text":  "a",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  2299,
+                                        "height":  38,
+                                        "width":  95,
+                                        "text":  "Free",
+                                        "x":  589
+                                    },
+                                    {
+                                        "y":  2298,
+                                        "height":  39,
+                                        "width":  146,
+                                        "text":  "Month",
+                                        "x":  698
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Morning, Alex O Turn on Apple Health permissions to more accurately record your workouts. Continue Enjoyed your workout? Share a 30-day guest pass and kick off the journey together, you\u0027ll get $100 off your membership for each friend who joins. Send a Free Month F Future Pro *Mobbin"
+}

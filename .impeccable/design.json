@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-05T16:00:53.3414184Z",
+  "title": "Design System: Future Pro",
+  "extensions": {
+    "colorMeta": {
+      "primary-hover": {
+        "displayName": "Primary Hover",
+        "role": "primary"
+      },
+      "canvas": {
+        "displayName": "Lavender Canvas",
+        "role": "neutral"
+      },
+      "surface": {
+        "displayName": "Translucent White Surface",
+        "role": "neutral"
+      },
+      "line": {
+        "displayName": "Lavender Gray Line",
+        "role": "neutral"
+      },
+      "white": {
+        "displayName": "White",
+        "role": "neutral"
+      },
+      "button-surface": {
+        "displayName": "Button Surface",
+        "role": "neutral"
+      },
+      "ink": {
+        "displayName": "Ink",
+        "role": "primary"
+      },
+      "focus": {
+        "displayName": "Keyboard Focus Blue",
+        "role": "secondary"
+      },
+      "muted": {
+        "displayName": "Muted Gray",
+        "role": "neutral"
+      },
+      "accent": {
+        "displayName": "Activity Green",
+        "role": "primary"
+      },
+      "message-blue": {
+        "role": "secondary",
+        "displayName": "Message Blue"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Season Mix Display",
+        "purpose": "Local Season Mix medium (500) for default mobile h1; source-specific heading sizes remain role overrides. Exact source metrics are unverified."
+      },
+      "body": {
+        "displayName": "SF Pro Native Sans",
+        "purpose": "SF Pro Text regular and SF Pro Display medium loaded as one local family; system fallbacks follow."
+      },
+      "summary-numerals": {
+        "displayName": "Georgia Summary Numerals",
+        "purpose": "Explicit serif override for the native-reference summary metric role; not a global heading substitute."
+      },
+      "headline": {
+        "displayName": "Season Mix Headline",
+        "purpose": "Global h2 uses Season Mix medium (500); keep source-specific native sans labels and dialog title overrides."
+      }
+    },
+    "shadows": [
+      {
+        "name": "icon-action",
+        "value": "0 9px 26px #25232e0c",
+        "purpose": "Circular icon buttons."
+      },
+      {
+        "name": "floating-navigation",
+        "value": "0 9px 38px #37373c0e",
+        "purpose": "Ambient separation under navigation."
+      },
+      {
+        "name": "modal-sheet",
+        "value": "0 20px 70px #10101526",
+        "purpose": "Dialog elevation above the dimmed page."
+      },
+      {
+        "purpose": "Light ambient separation beneath shareable workout summary cards.",
+        "name": "summary-card",
+        "value": "0 10px 30px #29273217"
+      },
+      {
+        "purpose": "Raised top edge on settings and equipment route sheets.",
+        "name": "route-sheet-lip",
+        "value": "0 -9px 0 -3px #d5d7dd"
+      },
+      {
+        "purpose": "Upward separation for the sticky schedule picker.",
+        "name": "schedule-picker",
+        "value": "0 -4px 24px #0001"
+      },
+      {
+        "name": "desktop-immersive-frame",
+        "value": "0 20px 70px #33333112",
+        "purpose": "Ambient shadow around the narrow immersive desktop frame."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-background",
+        "value": "background 0.18s ease-out",
+        "purpose": "Button hover change; disabled under prefers-reduced-motion."
+      },
+      {
+        "purpose": "Rotating local matching indicator; disabled under reduced motion.",
+        "name": "matching-indicator",
+        "value": "spin 1s linear infinite"
+      },
+      {
+        "purpose": "Web representation state transition; disabled under reduced motion.",
+        "name": "dynamic-island",
+        "value": "all 0.25s"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-max",
+        "value": "359px"
+      },
+      {
+        "name": "desktop-min",
+        "value": "760px"
+      },
+      {
+        "name": "flow-desktop-min",
+        "value": "768px"
+      },
+      {
+        "name": "review-mobile-max",
+        "value": "767px"
+      },
+      {
+        "name": "short-viewport-max-height",
+        "value": "700px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink capsule for the main action.",
+      "html": "<button class=\"ds-primary\">Done</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--ink,#202020);color:#fff;border:0;border-radius:999px;min-height:46px;padding:12px 22px;font:16px/1.2 var(--sans,Arial,sans-serif);cursor:pointer;transition:background .18s ease-out}.ds-primary:hover{background:#383838}.ds-primary:focus-visible{outline:2px solid #336ba1;outline-offset:5px}.ds-primary:disabled{opacity:.38;cursor:default}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Translucent white capsule for supporting actions.",
+      "html": "<button class=\"ds-secondary\">Edit Schedule</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:#ffffffd9;color:var(--ink,#202020);border:0;border-radius:999px;min-height:46px;padding:12px 22px;font:16px/1.2 var(--sans,Arial,sans-serif);cursor:pointer;transition:background .18s ease-out}.ds-secondary:hover{background:#fff}.ds-secondary:focus-visible{outline:2px solid #336ba1;outline-offset:5px}.ds-secondary:disabled{opacity:.38;cursor:default}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "White rounded form field.",
+      "html": "<label class=\"ds-field\">Name<input value=\"Alex Smith\" /></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:9px;margin:18px 0;color:#54535a;font:14px var(--sans,Arial,sans-serif)}.ds-field input{background:#fff;color:var(--ink,#202020);border:1px solid #dedde4;padding:14px;border-radius:16px;min-height:50px;width:100%;font:17px var(--sans,Arial,sans-serif)}.ds-field input:focus-visible{outline:2px solid #336ba1;outline-offset:2px}"
+    },
+    {
+      "name": "Filter Capsule",
+      "kind": "chip",
+      "description": "Compact workout filter; selection belongs to the application state.",
+      "html": "<button class=\"ds-filter\">Duration <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></button>",
+      "css": ".ds-filter{display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid var(--line,#d8d7df);background:#ffffff9c;color:var(--ink,#202020);padding:10px 9px;border-radius:25px;min-height:44px;font:13px var(--sans,Arial,sans-serif);cursor:pointer}.ds-filter:focus-visible{outline:2px solid #336ba1;outline-offset:5px}"
+    },
+    {
+      "name": "Rounded Row",
+      "kind": "card",
+      "refersTo": "row",
+      "description": "Linked or actionable list row with trailing chevron.",
+      "html": "<button class=\"ds-row\"><span>Morning Yoga Flow<small>18 min</small></span><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></button>",
+      "css": ".ds-row{display:flex;align-items:center;text-align:left;gap:12px;width:100%;background:var(--surface,#ffffffbb);color:var(--ink,#202020);border:0;border-radius:24px;padding:18px 16px;min-height:54px;font:16px/1.4 var(--sans,Arial,sans-serif);cursor:pointer}.ds-row>span{display:flex;flex-direction:column;gap:4px;flex:1}.ds-row small{font-size:15px;color:var(--muted,#77767e)}.ds-row:hover{background:#ffffffef}.ds-row:focus-visible{outline:2px solid #336ba1;outline-offset:5px}"
+    },
+    {
+      "name": "Five-item Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Static navigation primitive preview. The live Messages destination uses a cropped coach avatar, omitted from this standalone SVG-only preview.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#home\" aria-current=\"page\"><svg viewBox=\"0 0 28 28\" aria-hidden=\"true\"><path d=\"M3 13 14 3l11 10v12H3zm8 4v8h6v-8z\" fill-rule=\"evenodd\"/></svg>Home</a><a href=\"#progress\"><svg viewBox=\"0 0 28 28\" aria-hidden=\"true\"><rect x=\"3\" y=\"10\" width=\"5\" height=\"14\" rx=\"1\"/><rect x=\"10\" y=\"3\" width=\"5\" height=\"21\" rx=\"1\"/><rect x=\"17\" y=\"7\" width=\"4\" height=\"17\" rx=\"1\"/><rect x=\"23\" y=\"13\" width=\"3\" height=\"11\" rx=\"1\"/></svg>Progress</a><a href=\"#messages\"><span class=\"ds-avatar-space\" aria-hidden=\"true\"></span>Messages</a><a href=\"#friends\"><svg viewBox=\"0 0 28 28\" aria-hidden=\"true\"><circle cx=\"14\" cy=\"7\" r=\"4\"/><circle cx=\"4\" cy=\"8\" r=\"3\"/><circle cx=\"24\" cy=\"8\" r=\"3\"/><path d=\"M7 24c0-6 2-10 7-10s7 4 7 10H7M0 23v-5c0-4 4-5 7-3-2 3-2 6-2 8H0M28 23v-5c0-4-4-5-7-3 2 3 2 6 2 8h5\"/></svg>Friends</a><a href=\"#profile\"><svg viewBox=\"0 0 28 28\" aria-hidden=\"true\"><circle cx=\"14\" cy=\"14\" r=\"13\"/><circle cx=\"14\" cy=\"10\" r=\"4\" fill=\"#f6f5f8\"/><path d=\"M6 22c1-7 15-7 16 0-5 4-11 4-16 0\" fill=\"#f6f5f8\"/></svg>Profile</a></nav>",
+      "css": ".ds-nav{display:flex;max-width:448px;padding:4px;min-height:64px;border-radius:50px;border:1.5px solid #fff;background:#ffffffa8;box-shadow:0 9px 38px #37373c0e;backdrop-filter:blur(18px);font-family:var(--sans,Arial,sans-serif)}.ds-nav>a{display:flex;flex:1;flex-direction:column;gap:2px;align-items:center;justify-content:center;border-radius:40px;padding:7px 1px 6px;min-width:0;font-size:11px;font-weight:600;line-height:1.2;min-height:52px;color:var(--ink,#202020);text-decoration:none}.ds-nav>a[aria-current=page]{background:#d8d8de85}.ds-nav>a:hover{background:#e1e1e74d}.ds-nav>a:focus-visible{outline:2px solid #336ba1;outline-offset:5px}.ds-nav svg{width:26px;height:26px;fill:currentColor}.ds-avatar-space{width:27px;height:27px;border-radius:50%;background:#e4e2df}"
+    },
+    {
+      "name": "Summary Metric",
+      "kind": "custom",
+      "description": "One summary metric role, with the explicit Georgia override used in the source comparison.",
+      "html": "<section class=\"ds-summary-metric\"><strong>28</strong><small>Minutes</small></section>",
+      "css": ".ds-summary-metric{display:flex;flex-direction:column;padding:18px 14px;color:var(--ink,#202020);background:linear-gradient(145deg,#dce2ea,#e5e8df 12%,#fff 70%);border-radius:30px;box-shadow:0 10px 30px #29273217}.ds-summary-metric strong{font-family:Georgia,\"Times New Roman\",serif;font-size:52px;font-weight:400;line-height:1.2;letter-spacing:-.025em;margin-top:16px}.ds-summary-metric small{font:14px/1.4 var(--sans,Arial,sans-serif);color:var(--muted,#77767e)}"
+    },
+    {
+      "name": "Outgoing Message",
+      "kind": "custom",
+      "description": "Source-specific blue outgoing conversation bubble; fixture messages are local.",
+      "html": "<p class=\"ds-message\">Workout complete.</p>",
+      "css": ".ds-message{margin:14px 0 0 auto;max-width:85%;width:fit-content;border-radius:20px 20px 6px 20px;background:#3787ef;color:white;padding:12px 15px;overflow-wrap:anywhere;white-space:pre-wrap;font:16px/1.42 var(--sans,Arial,sans-serif)}"
+    },
+    {
+      "name": "Source Weight Entry",
+      "kind": "custom",
+      "description": "Compact source-specific dialog; live implementation includes editable numeric controls and isolated capture keyboard states.",
+      "html": "<section class=\"ds-weight-entry\"><small>GOAL ENTRY</small><h2>Target Weight</h2><p>Set your target weight.</p><strong>162 <span>lb</span></strong><button>SET</button></section>",
+      "css": ".ds-weight-entry{padding:24px;border-radius:4px;background:#f2f1f7;text-align:center;font-family:var(--sans,Arial,sans-serif);color:#202020}.ds-weight-entry small{font-size:12px;letter-spacing:2px;color:#8e8e95;font-weight:600}.ds-weight-entry h2{font:600 16px var(--sans,Arial,sans-serif);margin:22px 0 24px}.ds-weight-entry p{font-size:14px;color:#92919a;margin:0 0 24px}.ds-weight-entry strong{display:block;font-size:36px;font-weight:500;margin-bottom:24px}.ds-weight-entry strong span{font-size:18px;color:#92929b}.ds-weight-entry button{background:#020903;color:white;border:0;border-radius:28px;width:100%;height:48px;font-size:14px;font-weight:600}.ds-weight-entry button:focus-visible{outline:2px solid #336ba1;outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "overview": "The supplied Future Pro Mobbin reference is the visual authority. The user requested its direct recreation; this document records the built implementation rather than proposing a new identity. The binding source is linked in PRODUCT.md. The earlier Glovo direction is superseded.\n\nThe interface pairs a pale lavender canvas, translucent light surfaces, Season Mix headings, compact photographic workout cards, and a floating five-item navigation capsule. Dark coach-selection and photographic training surfaces retain distinct source-led treatments. Desktop expands selected layouts because no desktop reference was supplied.\n\nThis records the current Next.js 16.3.4 / React 19.2.8 implementation with custom CSS, not proof of complete reference parity. The visual authority is retained in docs/reference-flows.json, docs/reference-screens.json, and public/reference/screens. All 84 flow families have local entry routes. The state ledger in docs/screen-coverage.json now contains explicit route/state mappings for all 270 unique captures, with 155 additional UI/data fixtures alongside baseline reference fixtures. The former candidate/missing mapping breakdown is obsolete. All 270 capture URLs passed the structural CUA check at 393 × 852 in docs/qa-capture-rendered.json: no error pages, horizontal overflow, broken completed images or loading placeholders were recorded. The image check covers completed-image failures; it is not a guarantee that every image had loaded. No capture is labelled verified 1:1.\n\nThe latest review in docs/review-fidelity.md resolves its named correction items and records **ship for the bounded named-fix visual batch**. Its pending final-build condition is now satisfied by docs/build-verification.json: production build, TypeScript and ESLint passed, with the temporary screenshot exporter removed. The emitted review HTML has SHA-256 dc17a822b43a02b070d243b0aac20e003e205448d3c884fe6aa8a4281c5596a8. This does not certify all 270 captures, exact source font metrics or native glyphs, physical camera behavior, external services, or deployment.\n\nCurrent evidence is indexed in docs/reference-rendered-evidence.json and docs/QA.md, including .impeccable/review/email-393-v2.jpg, weight-393-v2.jpg, cover-393-v2.jpg, weight-320-v2.jpg, home-393-v3.jpg and home-desktop-v3.jpg. Earlier .artifacts captures and docs/review-verdict.md retain historical review scope; their earlier fix disposition is not the latest named-batch verdict. This document reports those evidence levels and adds no browser verification.\n\nRoot layout emits the binding direction in its first authored body child, template#design-contract. Next inserts a hidden Suspense element ahead of it in production, so it is not the first emitted body element. The final emitted-output verification in docs/build-verification.json confirms the literal contract and source key, including the exact line: \"FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md\".",
+    "northStar": "Future Pro iOS reference fidelity",
+    "rules": [],
+    "dos": [
+      "Do use the Future Pro reference as the authority for new visual decisions.",
+      "Do preserve compact mobile composition, serif hierarchy, and floating five-item navigation.",
+      "Do keep real labels, links, buttons, fields, and dialog controls accessible.",
+      "Do compare affected screens with the retained source screenshots at matching mobile widths.",
+      "Do distinguish bundled font provenance, role-specific Georgia numerals, raster crops, desktop adaptations, local behavior and unverified source states.",
+      "Do preserve source-black media frames and distinguish editable capture keyboards from native device keyboards."
+    ],
+    "donts": [
+      "**Don't** introduce a new brand direction, color theme, or decorative design seed.",
+      "**Don't** claim full screenshot or flow parity from a subset of implemented screens.",
+      "**Don't** represent local fixture interactions as connected native, coaching, payment, or messaging services.",
+      "**Don't** trade the source's compact layout for large generic dashboard cards.",
+      "**Don't** treat desktop adaptations as evidence of an original Future Pro desktop design."
+    ],
+    "keyCharacteristics": [
+      "Lavender and warm neutral backgrounds with soft tonal separation.",
+      "Compact photography paired with local Season Mix headings and SF Pro controls.",
+      "Rounded cards, circular actions, and a floating five-item navigation.",
+      "Restrained motion and visible keyboard focus.",
+      "Mobile reference composition with an explicitly adapted desktop layout.",
+      "Launch uses the exact retained emblem-flat.svg path as an inline FutureMark SVG with solid currentColor #403f36, replacing the earlier filtered metallic asset.",
+      "Noah and Garrett use an ocean-photo underlay, rounded light sheet with a raised top-edge shadow, and adjacent source-photo slivers in the alternative carousel.",
+      "Capture status chrome and 20 editable HTML keyboard states retain source comparison geometry at 393 x 852 after removing the Mobbin attribution footer.",
+      "Nine retained cover-photo crops, source-black media frames and local weight/photo/recording controls preserve source treatments; capture mutations are isolated from ordinary localStorage."
+    ]
+  }
+}

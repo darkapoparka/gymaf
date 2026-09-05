@@ -1,0 +1,583 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Lee",
+                      "words":  [
+                                    {
+                                        "y":  226,
+                                        "height":  37,
+                                        "width":  82,
+                                        "text":  "Lee",
+                                        "x":  595
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your coach will be unavailable today (Thursday, 7/2)",
+                      "words":  [
+                                    {
+                                        "y":  384,
+                                        "height":  29,
+                                        "width":  83,
+                                        "text":  "Your",
+                                        "x":  61
+                                    },
+                                    {
+                                        "y":  383,
+                                        "height":  30,
+                                        "width":  108,
+                                        "text":  "coach",
+                                        "x":  156
+                                    },
+                                    {
+                                        "y":  382,
+                                        "height":  30,
+                                        "width":  58,
+                                        "text":  "will",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  383,
+                                        "height":  30,
+                                        "width":  42,
+                                        "text":  "be",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  382,
+                                        "height":  31,
+                                        "width":  206,
+                                        "text":  "unavailable",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  383,
+                                        "height":  37,
+                                        "width":  103,
+                                        "text":  "today",
+                                        "x":  627
+                                    },
+                                    {
+                                        "y":  383,
+                                        "height":  37,
+                                        "width":  192,
+                                        "text":  "(Thursday,",
+                                        "x":  745
+                                    },
+                                    {
+                                        "y":  383,
+                                        "height":  36,
+                                        "width":  67,
+                                        "text":  "7/2)",
+                                        "x":  951
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and tomorrow (Friday, 7/3) to celebrate",
+                      "words":  [
+                                    {
+                                        "y":  430,
+                                        "height":  30,
+                                        "width":  64,
+                                        "text":  "and",
+                                        "x":  62
+                                    },
+                                    {
+                                        "y":  433,
+                                        "height":  27,
+                                        "width":  178,
+                                        "text":  "tomorrow",
+                                        "x":  140
+                                    },
+                                    {
+                                        "y":  429,
+                                        "height":  38,
+                                        "width":  133,
+                                        "text":  "(Friday,",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  430,
+                                        "height":  36,
+                                        "width":  68,
+                                        "text":  "7/3)",
+                                        "x":  480
+                                    },
+                                    {
+                                        "y":  433,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "to",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  430,
+                                        "height":  30,
+                                        "width":  172,
+                                        "text":  "celebrate",
+                                        "x":  613
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Independence Day",
+                      "words":  [
+                                    {
+                                        "y":  476,
+                                        "height":  36,
+                                        "width":  260,
+                                        "text":  "Independence",
+                                        "x":  63
+                                    },
+                                    {
+                                        "y":  477,
+                                        "height":  36,
+                                        "width":  67,
+                                        "text":  "Day",
+                                        "x":  338
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Just the plank? Not any other",
+                      "words":  [
+                                    {
+                                        "y":  627,
+                                        "height":  35,
+                                        "width":  88,
+                                        "text":  "Just",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  37,
+                                        "width":  68,
+                                        "text":  "the",
+                                        "x":  177
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  45,
+                                        "width":  137,
+                                        "text":  "plank?",
+                                        "x":  262
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  35,
+                                        "width":  73,
+                                        "text":  "Not",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  635,
+                                        "height":  35,
+                                        "width":  74,
+                                        "text":  "any",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  37,
+                                        "width":  113,
+                                        "text":  "other",
+                                        "x":  595
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "movement? Odd!!",
+                      "words":  [
+                                    {
+                                        "y":  684,
+                                        "height":  35,
+                                        "width":  247,
+                                        "text":  "movement?",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  682,
+                                        "height":  37,
+                                        "width":  115,
+                                        "text":  "Odd!!",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Yesterday, 6:10 PM",
+                      "words":  [
+                                    {
+                                        "y":  796,
+                                        "height":  31,
+                                        "width":  169,
+                                        "text":  "Yesterday,",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  25,
+                                        "width":  64,
+                                        "text":  "6:10",
+                                        "x":  621
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  24,
+                                        "width":  45,
+                                        "text":  "PM",
+                                        "x":  694
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Equipment Added",
+                      "words":  [
+                                    {
+                                        "y":  924,
+                                        "height":  35,
+                                        "width":  186,
+                                        "text":  "Equipment",
+                                        "x":  177
+                                    },
+                                    {
+                                        "y":  923,
+                                        "height":  29,
+                                        "width":  114,
+                                        "text":  "Added",
+                                        "x":  370
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Elliptical, wall, Dumbbell",
+                      "words":  [
+                                    {
+                                        "y":  1007,
+                                        "height":  56,
+                                        "width":  234,
+                                        "text":  "Elliptical,",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1007,
+                                        "height":  53,
+                                        "width":  128,
+                                        "text":  "wall,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1007,
+                                        "height":  45,
+                                        "width":  258,
+                                        "text":  "Dumbbell",
+                                        "x":  486
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Hotel gym",
+                      "words":  [
+                                    {
+                                        "y":  1087,
+                                        "height":  29,
+                                        "width":  87,
+                                        "text":  "Hotel",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1095,
+                                        "height":  29,
+                                        "width":  70,
+                                        "text":  "gym",
+                                        "x":  196
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Yesterday, 11:59 PM",
+                      "words":  [
+                                    {
+                                        "y":  1216,
+                                        "height":  31,
+                                        "width":  169,
+                                        "text":  "Yesterday,",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  25,
+                                        "width":  79,
+                                        "text":  "11:59",
+                                        "x":  614
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  24,
+                                        "width":  44,
+                                        "text":  "PM",
+                                        "x":  703
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Yesterday",
+                      "words":  [
+                                    {
+                                        "y":  1343,
+                                        "height":  37,
+                                        "width":  166,
+                                        "text":  "Yesterday",
+                                        "x":  97
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Active",
+                      "words":  [
+                                    {
+                                        "y":  1418,
+                                        "height":  28,
+                                        "width":  106,
+                                        "text":  "Active",
+                                        "x":  312
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "46 min",
+                      "words":  [
+                                    {
+                                        "y":  1474,
+                                        "height":  39,
+                                        "width":  60,
+                                        "text":  "46",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  1475,
+                                        "height":  37,
+                                        "width":  79,
+                                        "text":  "min",
+                                        "x":  388
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TODAY\u0027S WORKOUT O",
+                      "words":  [
+                                    {
+                                        "y":  1699,
+                                        "height":  27,
+                                        "width":  172,
+                                        "text":  "TODAY\u0027S",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1699,
+                                        "height":  27,
+                                        "width":  201,
+                                        "text":  "WORKOUT",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  1689,
+                                        "height":  46,
+                                        "width":  46,
+                                        "text":  "O",
+                                        "x":  771
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Flex Friday",
+                      "words":  [
+                                    {
+                                        "y":  1801,
+                                        "height":  65,
+                                        "width":  155,
+                                        "text":  "Flex",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  1800,
+                                        "height":  81,
+                                        "width":  240,
+                                        "text":  "Friday",
+                                        "x":  502
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TOTAL BODY—BODY WEtGHT-etReUt-T-—",
+                      "words":  [
+                                    {
+                                        "y":  1932,
+                                        "height":  27,
+                                        "width":  117,
+                                        "text":  "TOTAL",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  1932,
+                                        "height":  27,
+                                        "width":  240,
+                                        "text":  "BODY—BODY",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  1932,
+                                        "height":  27,
+                                        "width":  355,
+                                        "text":  "WEtGHT-etReUt-T-—",
+                                        "x":  625
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Send a message",
+                      "words":  [
+                                    {
+                                        "y":  2206,
+                                        "height":  36,
+                                        "width":  106,
+                                        "text":  "Send",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  2215,
+                                        "height":  27,
+                                        "width":  21,
+                                        "text":  "a",
+                                        "x":  360
+                                    },
+                                    {
+                                        "y":  2215,
+                                        "height":  35,
+                                        "width":  190,
+                                        "text":  "message",
+                                        "x":  400
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Friends",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  106,
+                                        "text":  "Friends",
+                                        "x":  740
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Home",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  22,
+                                        "width":  83,
+                                        "text":  "Home",
+                                        "x":  146
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Progress",
+                      "words":  [
+                                    {
+                                        "y":  2431,
+                                        "height":  28,
+                                        "width":  128,
+                                        "text":  "Progress",
+                                        "x":  314
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Messages",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  27,
+                                        "width":  148,
+                                        "text":  "Messages",
+                                        "x":  509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Profile",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "Profile",
+                                        "x":  947
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Lee Your coach will be unavailable today (Thursday, 7/2) and tomorrow (Friday, 7/3) to celebrate Independence Day Just the plank? Not any other movement? Odd!! Yesterday, 6:10 PM Equipment Added Elliptical, wall, Dumbbell Hotel gym Yesterday, 11:59 PM Yesterday Active 46 min TODAY\u0027S WORKOUT O Flex Friday TOTAL BODY—BODY WEtGHT-etReUt-T-— Send a message Friends F Home Future Pro Progress Messages Profile *Mobbin"
+}

@@ -1,0 +1,516 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  296,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Injury/Limitation",
+                      "words":  [
+                                    {
+                                        "y":  297,
+                                        "height":  58,
+                                        "width":  437,
+                                        "text":  "Injury/Limitation",
+                                        "x":  371
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Excluded Movements",
+                      "words":  [
+                                    {
+                                        "y":  485,
+                                        "height":  45,
+                                        "width":  243,
+                                        "text":  "Excluded",
+                                        "x":  50
+                                    },
+                                    {
+                                        "y":  485,
+                                        "height":  45,
+                                        "width":  311,
+                                        "text":  "Movements",
+                                        "x":  309
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "These exercises will not be included in any of",
+                      "words":  [
+                                    {
+                                        "y":  569,
+                                        "height":  38,
+                                        "width":  136,
+                                        "text":  "These",
+                                        "x":  48
+                                    },
+                                    {
+                                        "y":  569,
+                                        "height":  38,
+                                        "width":  204,
+                                        "text":  "exercises",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  568,
+                                        "height":  38,
+                                        "width":  67,
+                                        "text":  "will",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  34,
+                                        "width":  71,
+                                        "text":  "not",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  569,
+                                        "height":  38,
+                                        "width":  55,
+                                        "text":  "be",
+                                        "x":  581
+                                    },
+                                    {
+                                        "y":  568,
+                                        "height":  39,
+                                        "width":  191,
+                                        "text":  "included",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  569,
+                                        "height":  37,
+                                        "width":  35,
+                                        "text":  "in",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  37,
+                                        "width":  77,
+                                        "text":  "any",
+                                        "x":  903
+                                    },
+                                    {
+                                        "y":  568,
+                                        "height":  39,
+                                        "width":  45,
+                                        "text":  "of",
+                                        "x":  991
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "your programmed workouts.",
+                      "words":  [
+                                    {
+                                        "y":  642,
+                                        "height":  37,
+                                        "width":  98,
+                                        "text":  "your",
+                                        "x":  48
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  47,
+                                        "width":  288,
+                                        "text":  "programmed",
+                                        "x":  159
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  38,
+                                        "width":  217,
+                                        "text":  "workouts.",
+                                        "x":  460
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Muscle Group",
+                      "words":  [
+                                    {
+                                        "y":  767,
+                                        "height":  38,
+                                        "width":  157,
+                                        "text":  "Muscle",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  767,
+                                        "height":  47,
+                                        "width":  138,
+                                        "text":  "Group",
+                                        "x":  223
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12",
+                      "words":  [
+                                    {
+                                        "y":  900,
+                                        "height":  36,
+                                        "width":  49,
+                                        "text":  "12",
+                                        "x":  120
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Deltoids",
+                      "words":  [
+                                    {
+                                        "y":  899,
+                                        "height":  38,
+                                        "width":  179,
+                                        "text":  "Deltoids",
+                                        "x":  256
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Med Ball Scoop Toss",
+                      "words":  [
+                                    {
+                                        "y":  1049,
+                                        "height":  38,
+                                        "width":  92,
+                                        "text":  "Med",
+                                        "x":  255
+                                    },
+                                    {
+                                        "y":  1049,
+                                        "height":  38,
+                                        "width":  79,
+                                        "text":  "Ball",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  1048,
+                                        "height":  49,
+                                        "width":  141,
+                                        "text":  "Scoop",
+                                        "x":  466
+                                    },
+                                    {
+                                        "y":  1049,
+                                        "height":  38,
+                                        "width":  103,
+                                        "text":  "Toss",
+                                        "x":  622
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Med Ball Scoop Toss",
+                      "words":  [
+                                    {
+                                        "y":  1217,
+                                        "height":  38,
+                                        "width":  92,
+                                        "text":  "Med",
+                                        "x":  255
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  38,
+                                        "width":  79,
+                                        "text":  "Ball",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  1216,
+                                        "height":  49,
+                                        "width":  141,
+                                        "text":  "Scoop",
+                                        "x":  466
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  38,
+                                        "width":  103,
+                                        "text":  "Toss",
+                                        "x":  622
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Stability Ball Pike",
+                      "words":  [
+                                    {
+                                        "y":  1384,
+                                        "height":  49,
+                                        "width":  176,
+                                        "text":  "Stability",
+                                        "x":  254
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  38,
+                                        "width":  79,
+                                        "text":  "Ball",
+                                        "x":  447
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  38,
+                                        "width":  93,
+                                        "text":  "Pike",
+                                        "x":  547
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Tripod Headstand",
+                      "words":  [
+                                    {
+                                        "y":  1553,
+                                        "height":  48,
+                                        "width":  139,
+                                        "text":  "Tripod",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1553,
+                                        "height":  38,
+                                        "width":  240,
+                                        "text":  "Headstand",
+                                        "x":  412
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Kettlebell Clean to",
+                      "words":  [
+                                    {
+                                        "y":  1691,
+                                        "height":  38,
+                                        "width":  202,
+                                        "text":  "Kettlebell",
+                                        "x":  256
+                                    },
+                                    {
+                                        "y":  1690,
+                                        "height":  39,
+                                        "width":  128,
+                                        "text":  "Clean",
+                                        "x":  477
+                                    },
+                                    {
+                                        "y":  1694,
+                                        "height":  35,
+                                        "width":  41,
+                                        "text":  "to",
+                                        "x":  623
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Push Press",
+                      "words":  [
+                                    {
+                                        "y":  1750,
+                                        "height":  38,
+                                        "width":  108,
+                                        "text":  "Push",
+                                        "x":  256
+                                    },
+                                    {
+                                        "y":  1750,
+                                        "height":  38,
+                                        "width":  125,
+                                        "text":  "Press",
+                                        "x":  386
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Med Ball Scoop Toss",
+                      "words":  [
+                                    {
+                                        "y":  1889,
+                                        "height":  38,
+                                        "width":  92,
+                                        "text":  "Med",
+                                        "x":  255
+                                    },
+                                    {
+                                        "y":  1889,
+                                        "height":  38,
+                                        "width":  79,
+                                        "text":  "Ball",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  1888,
+                                        "height":  49,
+                                        "width":  141,
+                                        "text":  "Scoop",
+                                        "x":  466
+                                    },
+                                    {
+                                        "y":  1889,
+                                        "height":  38,
+                                        "width":  103,
+                                        "text":  "Toss",
+                                        "x":  622
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sandbag Push Press",
+                      "words":  [
+                                    {
+                                        "y":  2056,
+                                        "height":  50,
+                                        "width":  198,
+                                        "text":  "Sandbag",
+                                        "x":  254
+                                    },
+                                    {
+                                        "y":  2057,
+                                        "height":  38,
+                                        "width":  109,
+                                        "text":  "Push",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  2057,
+                                        "height":  38,
+                                        "width":  125,
+                                        "text":  "Press",
+                                        "x":  604
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Dumbbell Hang Clean to",
+                      "words":  [
+                                    {
+                                        "y":  2195,
+                                        "height":  38,
+                                        "width":  208,
+                                        "text":  "Dumbbell",
+                                        "x":  256
+                                    },
+                                    {
+                                        "y":  2195,
+                                        "height":  48,
+                                        "width":  115,
+                                        "text":  "Hang",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  2194,
+                                        "height":  39,
+                                        "width":  128,
+                                        "text":  "Clean",
+                                        "x":  619
+                                    },
+                                    {
+                                        "y":  2198,
+                                        "height":  35,
+                                        "width":  41,
+                                        "text":  "to",
+                                        "x":  765
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Push Press",
+                      "words":  [
+                                    {
+                                        "y":  2254,
+                                        "height":  38,
+                                        "width":  108,
+                                        "text":  "Push",
+                                        "x":  256
+                                    },
+                                    {
+                                        "y":  2254,
+                                        "height":  38,
+                                        "width":  125,
+                                        "text":  "Press",
+                                        "x":  386
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Headstand",
+                      "words":  [
+                                    {
+                                        "y":  2393,
+                                        "height":  38,
+                                        "width":  239,
+                                        "text":  "Headstand",
+                                        "x":  256
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 x Injury/Limitation Excluded Movements These exercises will not be included in any of your programmed workouts. Muscle Group 12 Deltoids Med Ball Scoop Toss Med Ball Scoop Toss Stability Ball Pike Tripod Headstand Kettlebell Clean to Push Press Med Ball Scoop Toss Sandbag Push Press Dumbbell Hang Clean to Push Press Headstand F Future Pro *Mobbin"
+}

@@ -1,0 +1,363 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  97,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  218,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Email",
+                      "words":  [
+                                    {
+                                        "y":  752,
+                                        "height":  37,
+                                        "width":  115,
+                                        "text":  "Email",
+                                        "x":  123
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "future Pro",
+                      "words":  [
+                                    {
+                                        "y":  198,
+                                        "height":  88,
+                                        "width":  307,
+                                        "text":  "future",
+                                        "x":  349
+                                    },
+                                    {
+                                        "y":  198,
+                                        "height":  89,
+                                        "width":  155,
+                                        "text":  "Pro",
+                                        "x":  674
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Enter your email",
+                      "words":  [
+                                    {
+                                        "y":  387,
+                                        "height":  66,
+                                        "width":  210,
+                                        "text":  "Enter",
+                                        "x":  272
+                                    },
+                                    {
+                                        "y":  404,
+                                        "height":  66,
+                                        "width":  180,
+                                        "text":  "your",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  386,
+                                        "height":  67,
+                                        "width":  214,
+                                        "text":  "email",
+                                        "x":  694
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to get started.",
+                      "words":  [
+                                    {
+                                        "y":  504,
+                                        "height":  59,
+                                        "width":  79,
+                                        "text":  "to",
+                                        "x":  317
+                                    },
+                                    {
+                                        "y":  504,
+                                        "height":  76,
+                                        "width":  124,
+                                        "text":  "get",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  496,
+                                        "height":  67,
+                                        "width":  297,
+                                        "text":  "started.",
+                                        "x":  561
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use Phone Instead",
+                      "words":  [
+                                    {
+                                        "y":  963,
+                                        "height":  40,
+                                        "width":  86,
+                                        "text":  "Use",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  41,
+                                        "width":  150,
+                                        "text":  "Phone",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  41,
+                                        "width":  170,
+                                        "text":  "Instead",
+                                        "x":  743
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Continue",
+                      "words":  [
+                                    {
+                                        "y":  1277,
+                                        "height":  41,
+                                        "width":  217,
+                                        "text":  "Continue",
+                                        "x":  481
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "By continuing you agree to Future\u0027s Terms \u0026 Conditions",
+                      "words":  [
+                                    {
+                                        "y":  1507,
+                                        "height":  33,
+                                        "width":  39,
+                                        "text":  "By",
+                                        "x":  120
+                                    },
+                                    {
+                                        "y":  1506,
+                                        "height":  34,
+                                        "width":  174,
+                                        "text":  "continuing",
+                                        "x":  172
+                                    },
+                                    {
+                                        "y":  1514,
+                                        "height":  26,
+                                        "width":  58,
+                                        "text":  "you",
+                                        "x":  359
+                                    },
+                                    {
+                                        "y":  1513,
+                                        "height":  27,
+                                        "width":  94,
+                                        "text":  "agree",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  1509,
+                                        "height":  25,
+                                        "width":  32,
+                                        "text":  "to",
+                                        "x":  537
+                                    },
+                                    {
+                                        "y":  1507,
+                                        "height":  27,
+                                        "width":  135,
+                                        "text":  "Future\u0027s",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  1507,
+                                        "height":  27,
+                                        "width":  101,
+                                        "text":  "Terms",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  1507,
+                                        "height":  27,
+                                        "width":  24,
+                                        "text":  "\u0026",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  1506,
+                                        "height":  28,
+                                        "width":  179,
+                                        "text":  "Conditions",
+                                        "x":  881
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and Privacy Policy_",
+                      "words":  [
+                                    {
+                                        "y":  1549,
+                                        "height":  28,
+                                        "width":  58,
+                                        "text":  "and",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  1549,
+                                        "height":  34,
+                                        "width":  120,
+                                        "text":  "Privacy",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  1549,
+                                        "height":  34,
+                                        "width":  101,
+                                        "text":  "Policy_",
+                                        "x":  645
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "q vver",
+                      "words":  [
+                                    {
+                                        "y":  1752,
+                                        "height":  52,
+                                        "width":  33,
+                                        "text":  "q",
+                                        "x":  52
+                                    },
+                                    {
+                                        "y":  1752,
+                                        "height":  40,
+                                        "width":  269,
+                                        "text":  "vver",
+                                        "x":  158
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "X",
+                      "words":  [
+                                    {
+                                        "y":  2076,
+                                        "height":  39,
+                                        "width":  34,
+                                        "text":  "X",
+                                        "x":  341
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "c",
+                      "words":  [
+                                    {
+                                        "y":  2076,
+                                        "height":  40,
+                                        "width":  32,
+                                        "text":  "c",
+                                        "x":  460
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n",
+                      "words":  [
+                                    {
+                                        "y":  2076,
+                                        "height":  39,
+                                        "width":  33,
+                                        "text":  "n",
+                                        "x":  804
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "123",
+                      "words":  [
+                                    {
+                                        "y":  2235,
+                                        "height":  40,
+                                        "width":  82,
+                                        "text":  "123",
+                                        "x":  116
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "iop",
+                      "words":  [
+                                    {
+                                        "y":  1739,
+                                        "height":  65,
+                                        "width":  253,
+                                        "text":  "iop",
+                                        "x":  876
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\"Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "\"Mobbin",
+                                        "x":  887
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1180,
+    "height":  2676,
+    "text":  "9:41 x Email future Pro Enter your email to get started. Use Phone Instead Continue By continuing you agree to Future\u0027s Terms \u0026 Conditions and Privacy Policy_ q vver X c n 123 F Future Pro iop \"Mobbin"
+}

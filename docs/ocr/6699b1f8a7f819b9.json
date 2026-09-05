@@ -1,0 +1,523 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Change Membership Plan",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  56,
+                                        "width":  203,
+                                        "text":  "Change",
+                                        "x":  247
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  55,
+                                        "width":  337,
+                                        "text":  "Membership",
+                                        "x":  465
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  45,
+                                        "width":  114,
+                                        "text":  "Plan",
+                                        "x":  818
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "With Future Pro membership plans, you can choose",
+                      "words":  [
+                                    {
+                                        "y":  426,
+                                        "height":  35,
+                                        "width":  90,
+                                        "text":  "With",
+                                        "x":  56
+                                    },
+                                    {
+                                        "y":  428,
+                                        "height":  33,
+                                        "width":  127,
+                                        "text":  "Future",
+                                        "x":  165
+                                    },
+                                    {
+                                        "y":  428,
+                                        "height":  33,
+                                        "width":  64,
+                                        "text":  "Pro",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  426,
+                                        "height":  42,
+                                        "width":  251,
+                                        "text":  "membership",
+                                        "x":  390
+                                    },
+                                    {
+                                        "y":  427,
+                                        "height":  41,
+                                        "width":  116,
+                                        "text":  "plans,",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  436,
+                                        "height":  33,
+                                        "width":  71,
+                                        "text":  "you",
+                                        "x":  790
+                                    },
+                                    {
+                                        "y":  436,
+                                        "height":  25,
+                                        "width":  70,
+                                        "text":  "can",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  427,
+                                        "height":  34,
+                                        "width":  147,
+                                        "text":  "choose",
+                                        "x":  963
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "your commitment length and enjoy savings",
+                      "words":  [
+                                    {
+                                        "y":  496,
+                                        "height":  33,
+                                        "width":  89,
+                                        "text":  "your",
+                                        "x":  144
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  35,
+                                        "width":  256,
+                                        "text":  "commitment",
+                                        "x":  247
+                                    },
+                                    {
+                                        "y":  487,
+                                        "height":  42,
+                                        "width":  124,
+                                        "text":  "length",
+                                        "x":  518
+                                    },
+                                    {
+                                        "y":  487,
+                                        "height":  34,
+                                        "width":  71,
+                                        "text":  "and",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  43,
+                                        "width":  107,
+                                        "text":  "enjoy",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  43,
+                                        "width":  151,
+                                        "text":  "savings",
+                                        "x":  869
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Monthly",
+                      "words":  [
+                                    {
+                                        "y":  656,
+                                        "height":  48,
+                                        "width":  195,
+                                        "text":  "Monthly",
+                                        "x":  100
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "US$199/mo",
+                      "words":  [
+                                    {
+                                        "y":  759,
+                                        "height":  87,
+                                        "width":  465,
+                                        "text":  "US$199/mo",
+                                        "x":  102
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3 Months",
+                      "words":  [
+                                    {
+                                        "y":  1031,
+                                        "height":  38,
+                                        "width":  28,
+                                        "text":  "3",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  1030,
+                                        "height":  39,
+                                        "width":  180,
+                                        "text":  "Months",
+                                        "x":  144
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "US$179/mo",
+                      "words":  [
+                                    {
+                                        "y":  1128,
+                                        "height":  87,
+                                        "width":  458,
+                                        "text":  "US$179/mo",
+                                        "x":  102
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total US$537",
+                      "words":  [
+                                    {
+                                        "y":  1272,
+                                        "height":  34,
+                                        "width":  95,
+                                        "text":  "Total",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1270,
+                                        "height":  38,
+                                        "width":  162,
+                                        "text":  "US$537",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6 Months",
+                      "words":  [
+                                    {
+                                        "y":  1490,
+                                        "height":  38,
+                                        "width":  29,
+                                        "text":  "6",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  1489,
+                                        "height":  39,
+                                        "width":  180,
+                                        "text":  "Months",
+                                        "x":  145
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "US$169/mo",
+                      "words":  [
+                                    {
+                                        "y":  1592,
+                                        "height":  87,
+                                        "width":  465,
+                                        "text":  "US$169/mo",
+                                        "x":  102
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total US$1,014",
+                      "words":  [
+                                    {
+                                        "y":  1736,
+                                        "height":  34,
+                                        "width":  95,
+                                        "text":  "Total",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1734,
+                                        "height":  43,
+                                        "width":  189,
+                                        "text":  "US$1,014",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Annual",
+                      "words":  [
+                                    {
+                                        "y":  1952,
+                                        "height":  39,
+                                        "width":  165,
+                                        "text":  "Annual",
+                                        "x":  98
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "US$149/mo",
+                      "words":  [
+                                    {
+                                        "y":  2056,
+                                        "height":  87,
+                                        "width":  465,
+                                        "text":  "US$149/mo",
+                                        "x":  102
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total US$1,788",
+                      "words":  [
+                                    {
+                                        "y":  2200,
+                                        "height":  34,
+                                        "width":  95,
+                                        "text":  "Total",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  2198,
+                                        "height":  43,
+                                        "width":  193,
+                                        "text":  "US$1,788",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CURRENT PLAN",
+                      "words":  [
+                                    {
+                                        "y":  662,
+                                        "height":  27,
+                                        "width":  169,
+                                        "text":  "CURRENT",
+                                        "x":  769
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  26,
+                                        "width":  91,
+                                        "text":  "PLAN",
+                                        "x":  952
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MOST POPULAR",
+                      "words":  [
+                                    {
+                                        "y":  1495,
+                                        "height":  27,
+                                        "width":  102,
+                                        "text":  "MOST",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  1495,
+                                        "height":  27,
+                                        "width":  166,
+                                        "text":  "POPULAR",
+                                        "x":  878
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BEST VALUE",
+                      "words":  [
+                                    {
+                                        "y":  1958,
+                                        "height":  27,
+                                        "width":  88,
+                                        "text":  "BEST",
+                                        "x":  831
+                                    },
+                                    {
+                                        "y":  1958,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "VALUE",
+                                        "x":  931
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "If you choose to change your membership it will",
+                      "words":  [
+                                    {
+                                        "y":  2361,
+                                        "height":  34,
+                                        "width":  22,
+                                        "text":  "If",
+                                        "x":  58
+                                    },
+                                    {
+                                        "y":  2371,
+                                        "height":  33,
+                                        "width":  71,
+                                        "text":  "you",
+                                        "x":  93
+                                    },
+                                    {
+                                        "y":  2362,
+                                        "height":  34,
+                                        "width":  147,
+                                        "text":  "choose",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  2365,
+                                        "height":  31,
+                                        "width":  40,
+                                        "text":  "to",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  2362,
+                                        "height":  42,
+                                        "width":  148,
+                                        "text":  "change",
+                                        "x":  396
+                                    },
+                                    {
+                                        "y":  2371,
+                                        "height":  33,
+                                        "width":  90,
+                                        "text":  "your",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  2361,
+                                        "height":  42,
+                                        "width":  251,
+                                        "text":  "membership",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  2361,
+                                        "height":  34,
+                                        "width":  22,
+                                        "text":  "it",
+                                        "x":  931
+                                    },
+                                    {
+                                        "y":  2361,
+                                        "height":  34,
+                                        "width":  62,
+                                        "text":  "will",
+                                        "x":  967
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "start on 26 July 2026",
+                      "words":  [
+                                    {
+                                        "y":  2425,
+                                        "height":  31,
+                                        "width":  93,
+                                        "text":  "start",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  2431,
+                                        "height":  25,
+                                        "width":  47,
+                                        "text":  "on",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  2422,
+                                        "height":  34,
+                                        "width":  50,
+                                        "text":  "26",
+                                        "x":  495
+                                    },
+                                    {
+                                        "y":  2422,
+                                        "height":  42,
+                                        "width":  81,
+                                        "text":  "July",
+                                        "x":  561
+                                    },
+                                    {
+                                        "y":  2422,
+                                        "height":  34,
+                                        "width":  104,
+                                        "text":  "2026",
+                                        "x":  657
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Change Membership Plan With Future Pro membership plans, you can choose your commitment length and enjoy savings Monthly US$199/mo 3 Months US$179/mo Total US$537 6 Months US$169/mo Total US$1,014 Annual US$149/mo Total US$1,788 CURRENT PLAN MOST POPULAR BEST VALUE If you choose to change your membership it will start on 26 July 2026 F Future Pro *Mobbin"
+}

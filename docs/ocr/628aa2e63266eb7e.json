@@ -1,0 +1,93 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "Next \u003e",
+                      "words":  [
+                                    {
+                                        "y":  1957,
+                                        "height":  35,
+                                        "width":  98,
+                                        "text":  "Next",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  1956,
+                                        "height":  36,
+                                        "width":  22,
+                                        "text":  "\u003e",
+                                        "x":  646
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FUWre Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUWre",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  279,
+                                        "height":  48,
+                                        "width":  48,
+                                        "text":  "x",
+                                        "x":  1029
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\"Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "\"Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "Next \u003e F 9:41 FUWre Pro x \"Mobbin"
+}

@@ -1,0 +1,4 @@
+import {type Crop} from './data';
+const grid=(src:string,names:string[],y:number):Record<string,Crop>=>Object.fromEntries(names.map((name,i)=>[name,{src:`screens/${src}.webp`,sw:902,sh:2048,x:70+(i%3)*282,y:y+Math.floor(i/3)*370,w:200,h:180}]));
+export const equipmentCrops={...grid('464d28d1e615a0cc',['Ab Crunch Machine','Ab Wheel','Abductor Machine','Adductor Machine','Adjustable Bench - Decline','Agility Ladder','Ankle Attachment','Assisted Chin up / Dips Machine','BOSU'],870),...grid('6f7906549b48f376',['Dowel','Dumbbell','EZ Bar','Elliptical','Fan Bike','Flat Bar Attachment','Foam Roll','Hack Squat 45 Degree Machine','Hack Squat Machine'],900)};
+export const coachCrops:Record<string,Crop>=Object.fromEntries(['Aarif','Adam','Alex','Alyssa','Amber','Amberly'].map((name,i)=>[name,{src:'screens/32e4b5a461cdee6c.webp',sw:902,sh:2048,x:37,y:[434,657,881,1103,1391,1643][i],w:146,h:146}]));

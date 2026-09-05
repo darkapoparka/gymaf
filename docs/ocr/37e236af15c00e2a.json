@@ -1,0 +1,457 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  266,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Invite Friends to Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  429,
+                                        "height":  67,
+                                        "width":  214,
+                                        "text":  "Invite",
+                                        "x":  52
+                                    },
+                                    {
+                                        "y":  429,
+                                        "height":  67,
+                                        "width":  291,
+                                        "text":  "Friends",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  437,
+                                        "height":  59,
+                                        "width":  78,
+                                        "text":  "to",
+                                        "x":  600
+                                    },
+                                    {
+                                        "y":  430,
+                                        "height":  66,
+                                        "width":  254,
+                                        "text":  "Future",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  430,
+                                        "height":  66,
+                                        "width":  133,
+                                        "text":  "Pro",
+                                        "x":  980
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Gift a free month of training, plus earn a $100",
+                      "words":  [
+                                    {
+                                        "y":  603,
+                                        "height":  39,
+                                        "width":  81,
+                                        "text":  "Gift",
+                                        "x":  50
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  28,
+                                        "width":  23,
+                                        "text":  "a",
+                                        "x":  143
+                                    },
+                                    {
+                                        "y":  603,
+                                        "height":  39,
+                                        "width":  86,
+                                        "text":  "free",
+                                        "x":  179
+                                    },
+                                    {
+                                        "y":  603,
+                                        "height":  39,
+                                        "width":  144,
+                                        "text":  "month",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  603,
+                                        "height":  39,
+                                        "width":  45,
+                                        "text":  "of",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  604,
+                                        "height":  47,
+                                        "width":  175,
+                                        "text":  "training,",
+                                        "x":  490
+                                    },
+                                    {
+                                        "y":  603,
+                                        "height":  48,
+                                        "width":  89,
+                                        "text":  "plus",
+                                        "x":  679
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  28,
+                                        "width":  97,
+                                        "text":  "earn",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  28,
+                                        "width":  23,
+                                        "text":  "a",
+                                        "x":  892
+                                    },
+                                    {
+                                        "y":  599,
+                                        "height":  47,
+                                        "width":  108,
+                                        "text":  "$100",
+                                        "x":  929
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "membership credit for yourself when someone",
+                      "words":  [
+                                    {
+                                        "y":  666,
+                                        "height":  48,
+                                        "width":  282,
+                                        "text":  "membership",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  667,
+                                        "height":  38,
+                                        "width":  128,
+                                        "text":  "credit",
+                                        "x":  346
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  39,
+                                        "width":  63,
+                                        "text":  "for",
+                                        "x":  484
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  48,
+                                        "width":  179,
+                                        "text":  "yourself",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  667,
+                                        "height":  38,
+                                        "width":  121,
+                                        "text":  "when",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  677,
+                                        "height":  28,
+                                        "width":  211,
+                                        "text":  "someone",
+                                        "x":  877
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "you refer commits to their first paid month.",
+                      "words":  [
+                                    {
+                                        "y":  740,
+                                        "height":  37,
+                                        "width":  79,
+                                        "text":  "you",
+                                        "x":  48
+                                    },
+                                    {
+                                        "y":  729,
+                                        "height":  39,
+                                        "width":  101,
+                                        "text":  "refer",
+                                        "x":  143
+                                    },
+                                    {
+                                        "y":  730,
+                                        "height":  38,
+                                        "width":  195,
+                                        "text":  "commits",
+                                        "x":  256
+                                    },
+                                    {
+                                        "y":  734,
+                                        "height":  34,
+                                        "width":  45,
+                                        "text":  "to",
+                                        "x":  462
+                                    },
+                                    {
+                                        "y":  730,
+                                        "height":  38,
+                                        "width":  103,
+                                        "text":  "their",
+                                        "x":  517
+                                    },
+                                    {
+                                        "y":  729,
+                                        "height":  39,
+                                        "width":  85,
+                                        "text":  "first",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  730,
+                                        "height":  47,
+                                        "width":  93,
+                                        "text":  "paid",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  729,
+                                        "height":  39,
+                                        "width":  154,
+                                        "text":  "month.",
+                                        "x":  837
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Send Guest Pass",
+                      "words":  [
+                                    {
+                                        "y":  916,
+                                        "height":  41,
+                                        "width":  119,
+                                        "text":  "Send",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  916,
+                                        "height":  41,
+                                        "width":  141,
+                                        "text":  "Guest",
+                                        "x":  661
+                                    },
+                                    {
+                                        "y":  917,
+                                        "height":  40,
+                                        "width":  106,
+                                        "text":  "Pass",
+                                        "x":  817
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Referral Credits",
+                      "words":  [
+                                    {
+                                        "y":  1106,
+                                        "height":  46,
+                                        "width":  207,
+                                        "text":  "Referral",
+                                        "x":  50
+                                    },
+                                    {
+                                        "y":  1107,
+                                        "height":  45,
+                                        "width":  190,
+                                        "text":  "Credits",
+                                        "x":  272
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Show or send this QR code to friends to share",
+                      "words":  [
+                                    {
+                                        "y":  1994,
+                                        "height":  37,
+                                        "width":  121,
+                                        "text":  "Show",
+                                        "x":  105
+                                    },
+                                    {
+                                        "y":  2004,
+                                        "height":  27,
+                                        "width":  43,
+                                        "text":  "or",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  37,
+                                        "width":  102,
+                                        "text":  "send",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  37,
+                                        "width":  77,
+                                        "text":  "this",
+                                        "x":  403
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  46,
+                                        "width":  66,
+                                        "text":  "QR",
+                                        "x":  493
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  37,
+                                        "width":  108,
+                                        "text":  "code",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  1999,
+                                        "height":  32,
+                                        "width":  42,
+                                        "text":  "to",
+                                        "x":  690
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  37,
+                                        "width":  148,
+                                        "text":  "friends",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  1999,
+                                        "height":  32,
+                                        "width":  43,
+                                        "text":  "to",
+                                        "x":  902
+                                    },
+                                    {
+                                        "y":  1994,
+                                        "height":  37,
+                                        "width":  115,
+                                        "text":  "share",
+                                        "x":  957
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "your guest pass.",
+                      "words":  [
+                                    {
+                                        "y":  2065,
+                                        "height":  35,
+                                        "width":  95,
+                                        "text":  "your",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  2059,
+                                        "height":  41,
+                                        "width":  118,
+                                        "text":  "guest",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  2065,
+                                        "height":  35,
+                                        "width":  105,
+                                        "text":  "pass.",
+                                        "x":  654
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Share Link",
+                      "words":  [
+                                    {
+                                        "y":  2211,
+                                        "height":  40,
+                                        "width":  129,
+                                        "text":  "Share",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  2211,
+                                        "height":  39,
+                                        "width":  92,
+                                        "text":  "Link",
+                                        "x":  656
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 x Invite Friends to Future Pro Gift a free month of training, plus earn a $100 membership credit for yourself when someone you refer commits to their first paid month. Send Guest Pass Referral Credits Show or send this QR code to friends to share F Future Pro your guest pass. Share Link *Mobbin"
+}

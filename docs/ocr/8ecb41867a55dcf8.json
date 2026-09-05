@@ -1,0 +1,234 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  97,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "fåture Pro",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  107,
+                                        "width":  306,
+                                        "text":  "fåture",
+                                        "x":  349
+                                    },
+                                    {
+                                        "y":  198,
+                                        "height":  88,
+                                        "width":  155,
+                                        "text":  "Pro",
+                                        "x":  674
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Personal coaching,",
+                      "words":  [
+                                    {
+                                        "y":  1766,
+                                        "height":  67,
+                                        "width":  343,
+                                        "text":  "Personal",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  1766,
+                                        "height":  84,
+                                        "width":  380,
+                                        "text":  "coaching,",
+                                        "x":  440
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "reimagined.",
+                      "words":  [
+                                    {
+                                        "y":  1871,
+                                        "height":  84,
+                                        "width":  463,
+                                        "text":  "reimagined.",
+                                        "x":  75
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Train with one of the world\u0027s greatest",
+                      "words":  [
+                                    {
+                                        "y":  2010,
+                                        "height":  41,
+                                        "width":  111,
+                                        "text":  "Train",
+                                        "x":  72
+                                    },
+                                    {
+                                        "y":  2010,
+                                        "height":  41,
+                                        "width":  100,
+                                        "text":  "with",
+                                        "x":  194
+                                    },
+                                    {
+                                        "y":  2021,
+                                        "height":  30,
+                                        "width":  89,
+                                        "text":  "one",
+                                        "x":  308
+                                    },
+                                    {
+                                        "y":  2010,
+                                        "height":  41,
+                                        "width":  48,
+                                        "text":  "of",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  2010,
+                                        "height":  41,
+                                        "width":  79,
+                                        "text":  "the",
+                                        "x":  465
+                                    },
+                                    {
+                                        "y":  2010,
+                                        "height":  41,
+                                        "width":  165,
+                                        "text":  "world\u0027s",
+                                        "x":  554
+                                    },
+                                    {
+                                        "y":  2015,
+                                        "height":  46,
+                                        "width":  193,
+                                        "text":  "greatest",
+                                        "x":  731
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "coaches. Built to fit your health goals.",
+                      "words":  [
+                                    {
+                                        "y":  2091,
+                                        "height":  41,
+                                        "width":  211,
+                                        "text":  "coaches.",
+                                        "x":  73
+                                    },
+                                    {
+                                        "y":  2091,
+                                        "height":  41,
+                                        "width":  102,
+                                        "text":  "Built",
+                                        "x":  298
+                                    },
+                                    {
+                                        "y":  2096,
+                                        "height":  36,
+                                        "width":  49,
+                                        "text":  "to",
+                                        "x":  409
+                                    },
+                                    {
+                                        "y":  2091,
+                                        "height":  41,
+                                        "width":  48,
+                                        "text":  "fit",
+                                        "x":  469
+                                    },
+                                    {
+                                        "y":  2102,
+                                        "height":  40,
+                                        "width":  106,
+                                        "text":  "your",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  2091,
+                                        "height":  41,
+                                        "width":  144,
+                                        "text":  "health",
+                                        "x":  645
+                                    },
+                                    {
+                                        "y":  2091,
+                                        "height":  51,
+                                        "width":  133,
+                                        "text":  "goals.",
+                                        "x":  802
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Let\u0027s Start",
+                      "words":  [
+                                    {
+                                        "y":  2310,
+                                        "height":  40,
+                                        "width":  102,
+                                        "text":  "Let\u0027s",
+                                        "x":  147
+                                    },
+                                    {
+                                        "y":  2309,
+                                        "height":  41,
+                                        "width":  114,
+                                        "text":  "Start",
+                                        "x":  262
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  887
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1180,
+    "height":  2676,
+    "text":  "9:41 fåture Pro Personal coaching, reimagined. Train with one of the world\u0027s greatest coaches. Built to fit your health goals. Let\u0027s Start F Future Pro *Mobbin"
+}

@@ -1,0 +1,187 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Connect to Apple Health",
+                      "words":  [
+                                    {
+                                        "y":  1230,
+                                        "height":  49,
+                                        "width":  251,
+                                        "text":  "Connect",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  1235,
+                                        "height":  44,
+                                        "width":  57,
+                                        "text":  "to",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  1229,
+                                        "height":  62,
+                                        "width":  174,
+                                        "text":  "Apple",
+                                        "x":  516
+                                    },
+                                    {
+                                        "y":  1229,
+                                        "height":  50,
+                                        "width":  191,
+                                        "text":  "Health",
+                                        "x":  707
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Track progress to see how",
+                      "words":  [
+                                    {
+                                        "y":  1345,
+                                        "height":  41,
+                                        "width":  128,
+                                        "text":  "Track",
+                                        "x":  180
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  40,
+                                        "width":  202,
+                                        "text":  "progress",
+                                        "x":  320
+                                    },
+                                    {
+                                        "y":  1350,
+                                        "height":  36,
+                                        "width":  48,
+                                        "text":  "to",
+                                        "x":  532
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  30,
+                                        "width":  82,
+                                        "text":  "see",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  41,
+                                        "width":  99,
+                                        "text":  "how",
+                                        "x":  690
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "workouts impact your health.",
+                      "words":  [
+                                    {
+                                        "y":  1412,
+                                        "height":  41,
+                                        "width":  220,
+                                        "text":  "workouts",
+                                        "x":  180
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  49,
+                                        "width":  164,
+                                        "text":  "impact",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  1423,
+                                        "height":  40,
+                                        "width":  105,
+                                        "text":  "your",
+                                        "x":  588
+                                    },
+                                    {
+                                        "y":  1412,
+                                        "height":  41,
+                                        "width":  155,
+                                        "text":  "health.",
+                                        "x":  706
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Back",
+                      "words":  [
+                                    {
+                                        "y":  2288,
+                                        "height":  41,
+                                        "width":  115,
+                                        "text":  "Back",
+                                        "x":  99
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Continue",
+                      "words":  [
+                                    {
+                                        "y":  2288,
+                                        "height":  41,
+                                        "width":  216,
+                                        "text":  "Continue",
+                                        "x":  816
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\"Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "\"Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Connect to Apple Health Track progress to see how workouts impact your health. Back F Future Pro Continue \"Mobbin"
+}

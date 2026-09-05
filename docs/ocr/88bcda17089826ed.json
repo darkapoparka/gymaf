@@ -1,0 +1,577 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "How do you like to stay active?",
+                      "words":  [
+                                    {
+                                        "y":  355,
+                                        "height":  49,
+                                        "width":  134,
+                                        "text":  "How",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  50,
+                                        "width":  73,
+                                        "text":  "do",
+                                        "x":  222
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  48,
+                                        "width":  105,
+                                        "text":  "you",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  50,
+                                        "width":  97,
+                                        "text":  "like",
+                                        "x":  432
+                                    },
+                                    {
+                                        "y":  360,
+                                        "height":  44,
+                                        "width":  57,
+                                        "text":  "to",
+                                        "x":  543
+                                    },
+                                    {
+                                        "y":  360,
+                                        "height":  56,
+                                        "width":  119,
+                                        "text":  "stay",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  355,
+                                        "height":  49,
+                                        "width":  201,
+                                        "text":  "active?",
+                                        "x":  748
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Lee",
+                      "words":  [
+                                    {
+                                        "y":  516,
+                                        "height":  34,
+                                        "width":  69,
+                                        "text":  "Lee",
+                                        "x":  278
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "I\u0027ll try to work these into your plan!",
+                      "words":  [
+                                    {
+                                        "y":  585,
+                                        "height":  38,
+                                        "width":  36,
+                                        "text":  "I\u0027ll",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  590,
+                                        "height":  43,
+                                        "width":  61,
+                                        "text":  "try",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  590,
+                                        "height":  34,
+                                        "width":  45,
+                                        "text":  "to",
+                                        "x":  396
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  39,
+                                        "width":  112,
+                                        "text":  "work",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  39,
+                                        "width":  125,
+                                        "text":  "these",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  586,
+                                        "height":  38,
+                                        "width":  82,
+                                        "text":  "into",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  596,
+                                        "height":  37,
+                                        "width":  99,
+                                        "text":  "your",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  48,
+                                        "width":  102,
+                                        "text":  "plan!",
+                                        "x":  913
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your activities",
+                      "words":  [
+                                    {
+                                        "y":  748,
+                                        "height":  45,
+                                        "width":  121,
+                                        "text":  "Your",
+                                        "x":  72
+                                    },
+                                    {
+                                        "y":  748,
+                                        "height":  45,
+                                        "width":  235,
+                                        "text":  "activities",
+                                        "x":  206
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CrossFit x",
+                      "words":  [
+                                    {
+                                        "y":  869,
+                                        "height":  39,
+                                        "width":  184,
+                                        "text":  "CrossFit",
+                                        "x":  109
+                                    },
+                                    {
+                                        "y":  873,
+                                        "height":  31,
+                                        "width":  31,
+                                        "text":  "x",
+                                        "x":  323
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Strength Training x",
+                      "words":  [
+                                    {
+                                        "y":  869,
+                                        "height":  48,
+                                        "width":  190,
+                                        "text":  "Strength",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  870,
+                                        "height":  47,
+                                        "width":  173,
+                                        "text":  "Training",
+                                        "x":  669
+                                    },
+                                    {
+                                        "y":  873,
+                                        "height":  31,
+                                        "width":  31,
+                                        "text":  "x",
+                                        "x":  872
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Personal Training x",
+                      "words":  [
+                                    {
+                                        "y":  992,
+                                        "height":  39,
+                                        "width":  187,
+                                        "text":  "Personal",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  993,
+                                        "height":  47,
+                                        "width":  173,
+                                        "text":  "Training",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  996,
+                                        "height":  31,
+                                        "width":  31,
+                                        "text":  "x",
+                                        "x":  776
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HIIT X",
+                      "words":  [
+                                    {
+                                        "y":  993,
+                                        "height":  37,
+                                        "width":  86,
+                                        "text":  "HIIT",
+                                        "x":  111
+                                    },
+                                    {
+                                        "y":  996,
+                                        "height":  31,
+                                        "width":  31,
+                                        "text":  "X",
+                                        "x":  227
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Swimming x",
+                      "words":  [
+                                    {
+                                        "y":  1115,
+                                        "height":  48,
+                                        "width":  234,
+                                        "text":  "Swimming",
+                                        "x":  109
+                                    },
+                                    {
+                                        "y":  1119,
+                                        "height":  31,
+                                        "width":  31,
+                                        "text":  "x",
+                                        "x":  372
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Q Search or Add Activity",
+                      "words":  [
+                                    {
+                                        "y":  1275,
+                                        "height":  38,
+                                        "width":  37,
+                                        "text":  "Q",
+                                        "x":  131
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  37,
+                                        "width":  153,
+                                        "text":  "Search",
+                                        "x":  187
+                                    },
+                                    {
+                                        "y":  1285,
+                                        "height":  28,
+                                        "width":  44,
+                                        "text":  "or",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  37,
+                                        "width":  91,
+                                        "text":  "Add",
+                                        "x":  407
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  47,
+                                        "width":  166,
+                                        "text":  "Activity",
+                                        "x":  510
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Popular activities",
+                      "words":  [
+                                    {
+                                        "y":  1448,
+                                        "height":  56,
+                                        "width":  205,
+                                        "text":  "Popular",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  1448,
+                                        "height":  45,
+                                        "width":  234,
+                                        "text":  "activities",
+                                        "x":  292
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Strength \u0026 Resistance Training",
+                      "words":  [
+                                    {
+                                        "y":  1568,
+                                        "height":  47,
+                                        "width":  190,
+                                        "text":  "Strength",
+                                        "x":  73
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  38,
+                                        "width":  31,
+                                        "text":  "\u0026",
+                                        "x":  277
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  38,
+                                        "width":  242,
+                                        "text":  "Resistance",
+                                        "x":  323
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  47,
+                                        "width":  173,
+                                        "text":  "Training",
+                                        "x":  575
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Weight Training +",
+                      "words":  [
+                                    {
+                                        "y":  1678,
+                                        "height":  48,
+                                        "width":  159,
+                                        "text":  "Weight",
+                                        "x":  108
+                                    },
+                                    {
+                                        "y":  1679,
+                                        "height":  47,
+                                        "width":  173,
+                                        "text":  "Training",
+                                        "x":  277
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  32,
+                                        "width":  32,
+                                        "text":  "+",
+                                        "x":  480
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Strength Training x",
+                      "words":  [
+                                    {
+                                        "y":  1678,
+                                        "height":  48,
+                                        "width":  190,
+                                        "text":  "Strength",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  1679,
+                                        "height":  47,
+                                        "width":  173,
+                                        "text":  "Training",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  31,
+                                        "width":  31,
+                                        "text":  "x",
+                                        "x":  1030
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Resistance Training +",
+                      "words":  [
+                                    {
+                                        "y":  1802,
+                                        "height":  38,
+                                        "width":  242,
+                                        "text":  "Resistance",
+                                        "x":  111
+                                    },
+                                    {
+                                        "y":  1802,
+                                        "height":  47,
+                                        "width":  173,
+                                        "text":  "Training",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  1805,
+                                        "height":  32,
+                                        "width":  32,
+                                        "text":  "+",
+                                        "x":  566
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Personal Training x",
+                      "words":  [
+                                    {
+                                        "y":  1924,
+                                        "height":  39,
+                                        "width":  187,
+                                        "text":  "Personal",
+                                        "x":  551
+                                    },
+                                    {
+                                        "y":  1925,
+                                        "height":  47,
+                                        "width":  173,
+                                        "text":  "Training",
+                                        "x":  750
+                                    },
+                                    {
+                                        "y":  1928,
+                                        "height":  31,
+                                        "width":  31,
+                                        "text":  "x",
+                                        "x":  953
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Gymnastics +",
+                      "words":  [
+                                    {
+                                        "y":  1925,
+                                        "height":  47,
+                                        "width":  262,
+                                        "text":  "Gymnastics",
+                                        "x":  109
+                                    },
+                                    {
+                                        "y":  1928,
+                                        "height":  32,
+                                        "width":  32,
+                                        "text":  "+",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cardio \u0026 Endurance",
+                      "words":  [
+                                    {
+                                        "y":  2072,
+                                        "height":  38,
+                                        "width":  146,
+                                        "text":  "Cardio",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  2072,
+                                        "height":  38,
+                                        "width":  31,
+                                        "text":  "\u0026",
+                                        "x":  233
+                                    },
+                                    {
+                                        "y":  2072,
+                                        "height":  38,
+                                        "width":  239,
+                                        "text":  "Endurance",
+                                        "x":  279
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Back",
+                      "words":  [
+                                    {
+                                        "y":  2288,
+                                        "height":  41,
+                                        "width":  115,
+                                        "text":  "Back",
+                                        "x":  99
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Continue",
+                      "words":  [
+                                    {
+                                        "y":  2288,
+                                        "height":  41,
+                                        "width":  216,
+                                        "text":  "Continue",
+                                        "x":  816
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 How do you like to stay active? Lee I\u0027ll try to work these into your plan! Your activities CrossFit x Strength Training x Personal Training x HIIT X Swimming x Q Search or Add Activity Popular activities Strength \u0026 Resistance Training Weight Training + Strength Training x Resistance Training + Personal Training x Gymnastics + Cardio \u0026 Endurance Back F Future Pro Continue *Mobbin"
+}

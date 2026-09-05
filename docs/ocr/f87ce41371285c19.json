@@ -1,0 +1,210 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  97,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ELAPSED",
+                      "words":  [
+                                    {
+                                        "y":  489,
+                                        "height":  40,
+                                        "width":  269,
+                                        "text":  "ELAPSED",
+                                        "x":  131
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "0:02",
+                      "words":  [
+                                    {
+                                        "y":  243,
+                                        "height":  53,
+                                        "width":  148,
+                                        "text":  "0:02",
+                                        "x":  514
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "00:02.322",
+                      "words":  [
+                                    {
+                                        "y":  588,
+                                        "height":  87,
+                                        "width":  559,
+                                        "text":  "00:02.322",
+                                        "x":  131
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PACE",
+                      "words":  [
+                                    {
+                                        "y":  1208,
+                                        "height":  40,
+                                        "width":  148,
+                                        "text":  "PACE",
+                                        "x":  131
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "0100\"",
+                      "words":  [
+                                    {
+                                        "y":  1307,
+                                        "height":  88,
+                                        "width":  277,
+                                        "text":  "0100\"",
+                                        "x":  131
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "AVG PACE",
+                      "words":  [
+                                    {
+                                        "y":  1495,
+                                        "height":  40,
+                                        "width":  116,
+                                        "text":  "AVG",
+                                        "x":  128
+                                    },
+                                    {
+                                        "y":  1495,
+                                        "height":  40,
+                                        "width":  148,
+                                        "text":  "PACE",
+                                        "x":  278
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "0100\"",
+                      "words":  [
+                                    {
+                                        "y":  1594,
+                                        "height":  88,
+                                        "width":  277,
+                                        "text":  "0100\"",
+                                        "x":  131
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PROJ SPLIT",
+                      "words":  [
+                                    {
+                                        "y":  1208,
+                                        "height":  40,
+                                        "width":  150,
+                                        "text":  "PROJ",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  40,
+                                        "width":  169,
+                                        "text":  "SPLIT",
+                                        "x":  876
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BEST SPLIT",
+                      "words":  [
+                                    {
+                                        "y":  1495,
+                                        "height":  40,
+                                        "width":  148,
+                                        "text":  "BEST",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  1495,
+                                        "height":  40,
+                                        "width":  169,
+                                        "text":  "SPLIT",
+                                        "x":  871
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "End",
+                      "words":  [
+                                    {
+                                        "y":  2298,
+                                        "height":  37,
+                                        "width":  77,
+                                        "text":  "End",
+                                        "x":  1040
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Running",
+                      "words":  [
+                                    {
+                                        "y":  2322,
+                                        "height":  60,
+                                        "width":  226,
+                                        "text":  "Running",
+                                        "x":  477
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 ELAPSED 0:02 00:02.322 PACE 0100\" AVG PACE 0100\" F Future Pro PROJ SPLIT BEST SPLIT End Running *Mobbin"
+}

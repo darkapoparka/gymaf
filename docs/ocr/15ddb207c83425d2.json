@@ -1,0 +1,324 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  68,
+                                        "height":  39,
+                                        "width":  98,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  296,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cancel Membership",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  45,
+                                        "width":  183,
+                                        "text":  "Cancel",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  56,
+                                        "width":  336,
+                                        "text":  "Membership",
+                                        "x":  520
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "future Pro",
+                      "words":  [
+                                    {
+                                        "y":  645,
+                                        "height":  60,
+                                        "width":  212,
+                                        "text":  "future",
+                                        "x":  423
+                                    },
+                                    {
+                                        "y":  645,
+                                        "height":  60,
+                                        "width":  107,
+                                        "text":  "Pro",
+                                        "x":  648
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MEMBERSHIP",
+                      "words":  [
+                                    {
+                                        "y":  794,
+                                        "height":  27,
+                                        "width":  293,
+                                        "text":  "MEMBERSHIP",
+                                        "x":  440
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Are you sure you want to cancel your",
+                      "words":  [
+                                    {
+                                        "y":  1189,
+                                        "height":  30,
+                                        "width":  64,
+                                        "text":  "Are",
+                                        "x":  231
+                                    },
+                                    {
+                                        "y":  1196,
+                                        "height":  31,
+                                        "width":  67,
+                                        "text":  "you",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  1196,
+                                        "height":  24,
+                                        "width":  81,
+                                        "text":  "sure",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  1196,
+                                        "height":  31,
+                                        "width":  67,
+                                        "text":  "you",
+                                        "x":  487
+                                    },
+                                    {
+                                        "y":  1191,
+                                        "height":  28,
+                                        "width":  92,
+                                        "text":  "want",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  1191,
+                                        "height":  29,
+                                        "width":  37,
+                                        "text":  "to",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  1188,
+                                        "height":  32,
+                                        "width":  121,
+                                        "text":  "cancel",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  1196,
+                                        "height":  31,
+                                        "width":  85,
+                                        "text":  "your",
+                                        "x":  863
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "membership? You\u0027ll lose access to Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  1250,
+                                        "height":  39,
+                                        "width":  257,
+                                        "text":  "membership?",
+                                        "x":  150
+                                    },
+                                    {
+                                        "y":  1250,
+                                        "height":  32,
+                                        "width":  103,
+                                        "text":  "You\u0027ll",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1250,
+                                        "height":  32,
+                                        "width":  75,
+                                        "text":  "lose",
+                                        "x":  543
+                                    },
+                                    {
+                                        "y":  1258,
+                                        "height":  24,
+                                        "width":  132,
+                                        "text":  "access",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  1253,
+                                        "height":  29,
+                                        "width":  37,
+                                        "text":  "to",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  1251,
+                                        "height":  31,
+                                        "width":  120,
+                                        "text":  "Future",
+                                        "x":  832
+                                    },
+                                    {
+                                        "y":  1251,
+                                        "height":  31,
+                                        "width":  61,
+                                        "text":  "Pro",
+                                        "x":  969
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "on July 25 when your membership ends.",
+                      "words":  [
+                                    {
+                                        "y":  1320,
+                                        "height":  24,
+                                        "width":  45,
+                                        "text":  "on",
+                                        "x":  199
+                                    },
+                                    {
+                                        "y":  1312,
+                                        "height":  39,
+                                        "width":  75,
+                                        "text":  "July",
+                                        "x":  259
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  31,
+                                        "width":  45,
+                                        "text":  "25",
+                                        "x":  350
+                                    },
+                                    {
+                                        "y":  1312,
+                                        "height":  31,
+                                        "width":  101,
+                                        "text":  "when",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  1320,
+                                        "height":  31,
+                                        "width":  85,
+                                        "text":  "your",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  1312,
+                                        "height":  39,
+                                        "width":  237,
+                                        "text":  "membership",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  1312,
+                                        "height":  32,
+                                        "width":  102,
+                                        "text":  "ends.",
+                                        "x":  876
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CANCEL MEMBERSHIP",
+                      "words":  [
+                                    {
+                                        "y":  1483,
+                                        "height":  29,
+                                        "width":  163,
+                                        "text":  "CANCEL",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  1483,
+                                        "height":  29,
+                                        "width":  271,
+                                        "text":  "MEMBERSHIP",
+                                        "x":  543
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BACK",
+                      "words":  [
+                                    {
+                                        "y":  1675,
+                                        "height":  29,
+                                        "width":  108,
+                                        "text":  "BACK",
+                                        "x":  535
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 x Cancel Membership future Pro MEMBERSHIP Are you sure you want to cancel your membership? You\u0027ll lose access to Future Pro on July 25 when your membership ends. CANCEL MEMBERSHIP F Future Pro BACK *Mobbin"
+}

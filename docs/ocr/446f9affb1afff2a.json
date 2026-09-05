@@ -1,0 +1,640 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Evening, Alex",
+                      "words":  [
+                                    {
+                                        "y":  210,
+                                        "height":  84,
+                                        "width":  327,
+                                        "text":  "Evening,",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  210,
+                                        "height":  67,
+                                        "width":  177,
+                                        "text":  "Alex",
+                                        "x":  394
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "O Interested in leveling up your",
+                      "words":  [
+                                    {
+                                        "y":  446,
+                                        "height":  75,
+                                        "width":  51,
+                                        "text":  "O",
+                                        "x":  120
+                                    },
+                                    {
+                                        "y":  448,
+                                        "height":  41,
+                                        "width":  235,
+                                        "text":  "Interested",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  39,
+                                        "width":  38,
+                                        "text":  "in",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  448,
+                                        "height":  51,
+                                        "width":  173,
+                                        "text":  "leveling",
+                                        "x":  524
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  39,
+                                        "width":  59,
+                                        "text":  "up",
+                                        "x":  711
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  40,
+                                        "width":  105,
+                                        "text":  "your",
+                                        "x":  780
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "workouts \u0026 stats? An Apple",
+                      "words":  [
+                                    {
+                                        "y":  515,
+                                        "height":  41,
+                                        "width":  220,
+                                        "text":  "workouts",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  515,
+                                        "height":  41,
+                                        "width":  33,
+                                        "text":  "\u0026",
+                                        "x":  449
+                                    },
+                                    {
+                                        "y":  515,
+                                        "height":  41,
+                                        "width":  138,
+                                        "text":  "stats?",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  516,
+                                        "height":  39,
+                                        "width":  64,
+                                        "text":  "An",
+                                        "x":  644
+                                    },
+                                    {
+                                        "y":  515,
+                                        "height":  50,
+                                        "width":  140,
+                                        "text":  "Apple",
+                                        "x":  720
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Watch is highly recommended.",
+                      "words":  [
+                                    {
+                                        "y":  581,
+                                        "height":  41,
+                                        "width":  154,
+                                        "text":  "Watch",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  581,
+                                        "height":  41,
+                                        "width":  33,
+                                        "text":  "is",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  581,
+                                        "height":  51,
+                                        "width":  135,
+                                        "text":  "highly",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  581,
+                                        "height":  41,
+                                        "width":  362,
+                                        "text":  "recommended.",
+                                        "x":  581
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Learn More",
+                      "words":  [
+                                    {
+                                        "y":  731,
+                                        "height":  40,
+                                        "width":  127,
+                                        "text":  "Learn",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  731,
+                                        "height":  40,
+                                        "width":  120,
+                                        "text":  "More",
+                                        "x":  435
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Kickoff Call",
+                      "words":  [
+                                    {
+                                        "y":  982,
+                                        "height":  46,
+                                        "width":  193,
+                                        "text":  "Kickoff",
+                                        "x":  50
+                                    },
+                                    {
+                                        "y":  983,
+                                        "height":  45,
+                                        "width":  99,
+                                        "text":  "Call",
+                                        "x":  254
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "30 minutes • FaceTime",
+                      "words":  [
+                                    {
+                                        "y":  1150,
+                                        "height":  30,
+                                        "width":  44,
+                                        "text":  "30",
+                                        "x":  163
+                                    },
+                                    {
+                                        "y":  1150,
+                                        "height":  30,
+                                        "width":  136,
+                                        "text":  "minutes",
+                                        "x":  218
+                                    },
+                                    {
+                                        "y":  1166,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  "•",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  1150,
+                                        "height":  30,
+                                        "width":  160,
+                                        "text":  "FaceTime",
+                                        "x":  390
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Schedule Your Kickoff Call",
+                      "words":  [
+                                    {
+                                        "y":  1373,
+                                        "height":  41,
+                                        "width":  222,
+                                        "text":  "Schedule",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1374,
+                                        "height":  40,
+                                        "width":  109,
+                                        "text":  "Your",
+                                        "x":  330
+                                    },
+                                    {
+                                        "y":  1373,
+                                        "height":  41,
+                                        "width":  173,
+                                        "text":  "Kickoff",
+                                        "x":  452
+                                    },
+                                    {
+                                        "y":  1373,
+                                        "height":  41,
+                                        "width":  89,
+                                        "text":  "Call",
+                                        "x":  635
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "with Lee",
+                      "words":  [
+                                    {
+                                        "y":  1440,
+                                        "height":  41,
+                                        "width":  103,
+                                        "text":  "with",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  40,
+                                        "width":  84,
+                                        "text":  "Lee",
+                                        "x":  213
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Find a Time That Works",
+                      "words":  [
+                                    {
+                                        "y":  1618,
+                                        "height":  41,
+                                        "width":  97,
+                                        "text":  "Find",
+                                        "x":  147
+                                    },
+                                    {
+                                        "y":  1629,
+                                        "height":  30,
+                                        "width":  24,
+                                        "text":  "a",
+                                        "x":  259
+                                    },
+                                    {
+                                        "y":  1619,
+                                        "height":  40,
+                                        "width":  118,
+                                        "text":  "Time",
+                                        "x":  295
+                                    },
+                                    {
+                                        "y":  1618,
+                                        "height":  41,
+                                        "width":  107,
+                                        "text":  "That",
+                                        "x":  424
+                                    },
+                                    {
+                                        "y":  1618,
+                                        "height":  41,
+                                        "width":  152,
+                                        "text":  "Works",
+                                        "x":  541
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Welcome to Future",
+                      "words":  [
+                                    {
+                                        "y":  1871,
+                                        "height":  45,
+                                        "width":  254,
+                                        "text":  "Welcome",
+                                        "x":  48
+                                    },
+                                    {
+                                        "y":  1876,
+                                        "height":  40,
+                                        "width":  52,
+                                        "text":  "to",
+                                        "x":  315
+                                    },
+                                    {
+                                        "y":  1871,
+                                        "height":  45,
+                                        "width":  170,
+                                        "text":  "Future",
+                                        "x":  382
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  449,
+                                        "height":  33,
+                                        "width":  33,
+                                        "text":  "x",
+                                        "x":  1037
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Finish these quick steps so your coach can get",
+                      "words":  [
+                                    {
+                                        "y":  1967,
+                                        "height":  37,
+                                        "width":  124,
+                                        "text":  "Finish",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  1967,
+                                        "height":  37,
+                                        "width":  124,
+                                        "text":  "these",
+                                        "x":  187
+                                    },
+                                    {
+                                        "y":  1967,
+                                        "height":  47,
+                                        "width":  122,
+                                        "text":  "quick",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  1971,
+                                        "height":  42,
+                                        "width":  120,
+                                        "text":  "steps",
+                                        "x":  457
+                                    },
+                                    {
+                                        "y":  1977,
+                                        "height":  27,
+                                        "width":  51,
+                                        "text":  "so",
+                                        "x":  590
+                                    },
+                                    {
+                                        "y":  1977,
+                                        "height":  37,
+                                        "width":  98,
+                                        "text":  "your",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  1967,
+                                        "height":  37,
+                                        "width":  135,
+                                        "text":  "coach",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  1977,
+                                        "height":  27,
+                                        "width":  78,
+                                        "text":  "can",
+                                        "x":  911
+                                    },
+                                    {
+                                        "y":  1971,
+                                        "height":  43,
+                                        "width":  70,
+                                        "text":  "get",
+                                        "x":  1003
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "you started on your plan.",
+                      "words":  [
+                                    {
+                                        "y":  2040,
+                                        "height":  37,
+                                        "width":  78,
+                                        "text":  "you",
+                                        "x":  49
+                                    },
+                                    {
+                                        "y":  2030,
+                                        "height":  37,
+                                        "width":  155,
+                                        "text":  "started",
+                                        "x":  142
+                                    },
+                                    {
+                                        "y":  2040,
+                                        "height":  27,
+                                        "width":  53,
+                                        "text":  "on",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  2040,
+                                        "height":  37,
+                                        "width":  98,
+                                        "text":  "your",
+                                        "x":  379
+                                    },
+                                    {
+                                        "y":  2030,
+                                        "height":  47,
+                                        "width":  102,
+                                        "text":  "plan.",
+                                        "x":  489
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sav Hello to Lee",
+                      "words":  [
+                                    {
+                                        "y":  2264,
+                                        "height":  43,
+                                        "width":  84,
+                                        "text":  "Sav",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  2264,
+                                        "height":  41,
+                                        "width":  117,
+                                        "text":  "Hello",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  2269,
+                                        "height":  36,
+                                        "width":  48,
+                                        "text":  "to",
+                                        "x":  537
+                                    },
+                                    {
+                                        "y":  2265,
+                                        "height":  40,
+                                        "width":  81,
+                                        "text":  "Lee",
+                                        "x":  600
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Friends",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  106,
+                                        "text":  "Friends",
+                                        "x":  740
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Progress Messages",
+                      "words":  [
+                                    {
+                                        "y":  2431,
+                                        "height":  28,
+                                        "width":  128,
+                                        "text":  "Progress",
+                                        "x":  314
+                                    },
+                                    {
+                                        "y":  2432,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "Messages",
+                                        "x":  509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Home",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  22,
+                                        "width":  84,
+                                        "text":  "Home",
+                                        "x":  143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Profile",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "Profile",
+                                        "x":  947
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "your nrst vvorKout IS corning boon",
+                      "words":  [
+                                    {
+                                        "y":  2493,
+                                        "height":  28,
+                                        "width":  99,
+                                        "text":  "your",
+                                        "x":  223
+                                    },
+                                    {
+                                        "y":  2493,
+                                        "height":  28,
+                                        "width":  99,
+                                        "text":  "nrst",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  2493,
+                                        "height":  28,
+                                        "width":  203,
+                                        "text":  "vvorKout",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  2493,
+                                        "height":  28,
+                                        "width":  32,
+                                        "text":  "IS",
+                                        "x":  665
+                                    },
+                                    {
+                                        "y":  2493,
+                                        "height":  38,
+                                        "width":  186,
+                                        "text":  "corning",
+                                        "x":  711
+                                    },
+                                    {
+                                        "y":  2492,
+                                        "height":  29,
+                                        "width":  119,
+                                        "text":  "boon",
+                                        "x":  910
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Evening, Alex O Interested in leveling up your workouts \u0026 stats? An Apple Watch is highly recommended. Learn More Kickoff Call 30 minutes • FaceTime Schedule Your Kickoff Call with Lee Find a Time That Works Welcome to Future x Finish these quick steps so your coach can get you started on your plan. Sav Hello to Lee Friends Progress Messages Home Profile your nrst vvorKout IS corning boon F Future Pro *Mobbin"
+}

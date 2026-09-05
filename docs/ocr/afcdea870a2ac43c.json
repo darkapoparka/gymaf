@@ -1,0 +1,143 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  97,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "01:06.718",
+                      "words":  [
+                                    {
+                                        "y":  588,
+                                        "height":  87,
+                                        "width":  560,
+                                        "text":  "01:06.718",
+                                        "x":  131
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Finish your workout?",
+                      "words":  [
+                                    {
+                                        "y":  1234,
+                                        "height":  38,
+                                        "width":  129,
+                                        "text":  "Finish",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  1245,
+                                        "height":  35,
+                                        "width":  101,
+                                        "text":  "your",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  1235,
+                                        "height":  37,
+                                        "width":  208,
+                                        "text":  "workout?",
+                                        "x":  615
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "YES",
+                      "words":  [
+                                    {
+                                        "y":  1411,
+                                        "height":  30,
+                                        "width":  76,
+                                        "text":  "YES",
+                                        "x":  550
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CANCEL",
+                      "words":  [
+                                    {
+                                        "y":  1603,
+                                        "height":  30,
+                                        "width":  163,
+                                        "text":  "CANCEL",
+                                        "x":  507
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "End",
+                      "words":  [
+                                    {
+                                        "y":  2298,
+                                        "height":  37,
+                                        "width":  77,
+                                        "text":  "End",
+                                        "x":  1040
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Running",
+                      "words":  [
+                                    {
+                                        "y":  2322,
+                                        "height":  60,
+                                        "width":  226,
+                                        "text":  "Running",
+                                        "x":  477
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\"Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "\"Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 01:06.718 Finish your workout? F Future Pro YES CANCEL End Running \"Mobbin"
+}

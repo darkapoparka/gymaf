@@ -1,0 +1,2518 @@
+{
+  "date": "2026-09-05",
+  "scope": "Structural render check of all 270 explicit capture URLs, not a pixel comparison. CUA browser tab 8, exact 393px iframe viewport.",
+  "count": 270,
+  "viewport": {
+    "width": 393,
+    "height": 852
+  },
+  "errorPages": 0,
+  "brokenCompletedImages": 0,
+  "horizontalOverflows": 0,
+  "loadingPlaceholders": 0,
+  "imageLimitation": "Checks identify broken completed images; screenshots require a separate loaded-image confirmation.",
+  "fixtureIsolation": {
+    "passed": true,
+    "savedBefore": [
+      "Activity Rings",
+      "Minutes of Activity",
+      "Total Mileage",
+      "Daily Steps"
+    ],
+    "previewBefore": [
+      "Minutes of Activity",
+      "Activity Rings",
+      "Daily Steps"
+    ],
+    "previewAfter": [
+      "Minutes of Activity",
+      "Daily Steps",
+      "Activity Rings"
+    ],
+    "savedAfter": [
+      "Activity Rings",
+      "Minutes of Activity",
+      "Total Mileage",
+      "Daily Steps"
+    ]
+  },
+  "captures": [
+    {
+      "id": "8ecb41867a55dcf8",
+      "route": "/welcome?capture=8ecb41867a55dcf8",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "5043e58748db681f",
+      "route": "/onboarding/contact?capture=5043e58748db681f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "5a2d4d735d5445f9",
+      "route": "/onboarding/email?capture=5a2d4d735d5445f9",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "60e50acd6ca18e02",
+      "route": "/onboarding/email?capture=60e50acd6ca18e02",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "e189ade08bb8e1eb",
+      "route": "/onboarding/email?capture=e189ade08bb8e1eb",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d4a7f160bad9d7dc",
+      "route": "/onboarding/coach?capture=d4a7f160bad9d7dc",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "fecb6b6f3db7308b",
+      "route": "/onboarding/goal?capture=fecb6b6f3db7308b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "00da8459facd5b2b",
+      "route": "/onboarding/style?capture=00da8459facd5b2b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "04544bc90c7072a5",
+      "route": "/onboarding/style?capture=04544bc90c7072a5",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "40136879a4cf68ac",
+      "route": "/onboarding/intensity?capture=40136879a4cf68ac",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "e926bc36ba650bd8",
+      "route": "/onboarding/intensity?capture=e926bc36ba650bd8",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "f0f3ca0dcba09a07",
+      "route": "/onboarding/matching?capture=f0f3ca0dcba09a07",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8dae96b34ae39b84",
+      "route": "/coaches?capture=8dae96b34ae39b84",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "818823fea239b926",
+      "route": "/checkout?capture=818823fea239b926",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "93b3d967c9f773aa",
+      "route": "/coaches/lee?capture=93b3d967c9f773aa",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "4050314ce4aaa198",
+      "route": "/coaches/lee?capture=4050314ce4aaa198",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8ee44ade589ce9ac",
+      "route": "/coaches/lee?capture=8ee44ade589ce9ac",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "c143403931126a67",
+      "route": "/coaches?capture=c143403931126a67",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cb9726be9e6f072a",
+      "route": "/coaches/search?capture=cb9726be9e6f072a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9bbfbb4408c5aa98",
+      "route": "/coaches/search?capture=9bbfbb4408c5aa98",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "1ee01f448b7491b4",
+      "route": "/coaches/search?capture=1ee01f448b7491b4",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "32e4b5a461cdee6c",
+      "route": "/coaches/results?capture=32e4b5a461cdee6c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "ffc4e49a11c1acaf",
+      "route": "/coaches/search?capture=ffc4e49a11c1acaf",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "10cf3bdb6b6600bd",
+      "route": "/checkout/card?capture=10cf3bdb6b6600bd",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "1c9c16701eb28a46",
+      "route": "/checkout/card?capture=1c9c16701eb28a46",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b59ba0346a993f3b",
+      "route": "/onboarding/welcome?capture=b59ba0346a993f3b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "6786891202a185f3",
+      "route": "/onboarding/booking?capture=6786891202a185f3",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "153228f229e7dca2",
+      "route": "/onboarding/booking?capture=153228f229e7dca2",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "7cf1aa5f642fc208",
+      "route": "/onboarding/health?capture=7cf1aa5f642fc208",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "3131962d12621d0d",
+      "route": "/onboarding/details?capture=3131962d12621d0d",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "3738a7edc0708c90",
+      "route": "/onboarding/activities?capture=3738a7edc0708c90",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "88bcda17089826ed",
+      "route": "/onboarding/activities?capture=88bcda17089826ed",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "fa153f6aef1d5fba",
+      "route": "/onboarding/setup?capture=fa153f6aef1d5fba",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "51c3ec60abd95c16",
+      "route": "/onboarding/setup?capture=51c3ec60abd95c16",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "6678002287f3602b",
+      "route": "/onboarding/injuries?capture=6678002287f3602b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "554f8ad3d30873c4",
+      "route": "/onboarding/injuries?capture=554f8ad3d30873c4",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "6129f37fdd7feceb",
+      "route": "/onboarding/notes?capture=6129f37fdd7feceb",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "de585df2b0816233",
+      "route": "/onboarding/notes?capture=de585df2b0816233",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "92d268dd401589ea",
+      "route": "/onboarding/notifications?capture=92d268dd401589ea",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "537d86727616b47e",
+      "route": "/system/launch?capture=537d86727616b47e",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b2cf720138e8e91c",
+      "route": "/?activity=kickoff&capture=b2cf720138e8e91c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "83b5292282d583e4",
+      "route": "/onboarding/activities?capture=83b5292282d583e4",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "42bb4a3de314cb9f",
+      "route": "/onboarding/activities?capture=42bb4a3de314cb9f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "f9f9cbadb23780d7",
+      "route": "/onboarding/setup?capture=f9f9cbadb23780d7",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "133c603f4469b7a4",
+      "route": "/onboarding/setup?capture=133c603f4469b7a4",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "2753cde1987791db",
+      "route": "/onboarding/setup?capture=2753cde1987791db",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "ec4f21411c72e3bb",
+      "route": "/?activity=rest&capture=ec4f21411c72e3bb",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b635bfe86f9c0e40",
+      "route": "/?activity=pending&capture=b635bfe86f9c0e40",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "f9ddae79f8fdb799",
+      "route": "/?activity=workout&capture=f9ddae79f8fdb799",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d6b2986c85d07e16",
+      "route": "/?activity=completed&capture=d6b2986c85d07e16",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "5adfb1435467277e",
+      "route": "/?activity=running&capture=5adfb1435467277e",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d85dbaa361627940",
+      "route": "/?activity=setup&capture=d85dbaa361627940",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "4322744f2797844d",
+      "route": "/?activity=setup&capture=4322744f2797844d",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "0890079a95f41f87",
+      "route": "/?activity=completed&capture=0890079a95f41f87",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "39e4f69484b293fb",
+      "route": "/appointments?capture=39e4f69484b293fb",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "ff2cd4ca6797cee1",
+      "route": "/appointments?capture=ff2cd4ca6797cee1",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "446f9affb1afff2a",
+      "route": "/?activity=setup&capture=446f9affb1afff2a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "1b0f0590e3ab0639",
+      "route": "/workouts/morning-yoga?capture=1b0f0590e3ab0639",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8276fa5ae243d824",
+      "route": "/workouts/morning-yoga/session?capture=8276fa5ae243d824",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b399d75f2cab7473",
+      "route": "/workouts/morning-yoga/session?capture=b399d75f2cab7473",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "db68d717b839be9c",
+      "route": "/workouts/morning-yoga/session?capture=db68d717b839be9c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "df023ddc34d3cc11",
+      "route": "/workouts/morning-yoga/summary?capture=df023ddc34d3cc11",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "c3aecc2fdeda0fef",
+      "route": "/workouts/morning-yoga/summary?capture=c3aecc2fdeda0fef",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "7eb55b06aab6cb7a",
+      "route": "/workouts/morning-yoga/summary?activity=feedback&capture=7eb55b06aab6cb7a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "4aeac57b072491f1",
+      "route": "/workouts/morning-yoga/summary?activity=exercises&capture=4aeac57b072491f1",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cc7503a7402e36c1",
+      "route": "/workouts/morning-yoga/summary?activity=exercises&capture=cc7503a7402e36c1",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "f47162e51bcdadad",
+      "route": "/?activity=completed&capture=f47162e51bcdadad",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d564535745b2388a",
+      "route": "/workouts/morning-yoga?capture=d564535745b2388a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8ce2314bc1422fc8",
+      "route": "/settings/workout?capture=8ce2314bc1422fc8",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "1cb5bd47a8dd1541",
+      "route": "/settings/workout?capture=1cb5bd47a8dd1541",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a65a68b05a4f7bcf",
+      "route": "/settings/instructions?capture=a65a68b05a4f7bcf",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "e9cf6691b1825416",
+      "route": "/settings/instructions?capture=e9cf6691b1825416",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "260da8717befc18a",
+      "route": "/settings/workout?capture=260da8717befc18a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "3c7bf81d5bbd2adb",
+      "route": "/settings/tones?capture=3c7bf81d5bbd2adb",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "448d55aa6af7c20d",
+      "route": "/settings/tones?capture=448d55aa6af7c20d",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "60985223ac9f138b",
+      "route": "/settings/workout?capture=60985223ac9f138b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d89797aec72d9761",
+      "route": "/settings/heart-rate?capture=d89797aec72d9761",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b50f7a7db1dd2106",
+      "route": "/settings/heart-rate?capture=b50f7a7db1dd2106",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "46268c727e736b1c",
+      "route": "/settings/heart-rate?capture=46268c727e736b1c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "832851a4a7925a42",
+      "route": "/settings/workout?capture=832851a4a7925a42",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "effd0d3e27cbba21",
+      "route": "/workouts/morning-yoga?capture=effd0d3e27cbba21",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "74f82112a9f61383",
+      "route": "/workouts/bodyweight-beach/session?activity=overview&capture=74f82112a9f61383",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8df73e3cd33561bb",
+      "route": "/workouts/morning-yoga/session?activity=reps&capture=8df73e3cd33561bb",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "441dad8115c25dc0",
+      "route": "/workouts/morning-yoga/session?activity=reps&capture=441dad8115c25dc0",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "79ebf52716335b59",
+      "route": "/workouts/morning-yoga/session?activity=reps&capture=79ebf52716335b59",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "03c8df3d92da317a",
+      "route": "/workouts/morning-yoga/record?capture=03c8df3d92da317a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "452442b79e2166cf",
+      "route": "/workouts/morning-yoga/record?capture=452442b79e2166cf",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "628aa2e63266eb7e",
+      "route": "/workouts/morning-yoga/record?capture=628aa2e63266eb7e",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "7887b9889658f2a9",
+      "route": "/workouts/morning-yoga/record?capture=7887b9889658f2a9",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b3530a2506f3acbe",
+      "route": "/workouts/morning-yoga/session?activity=flag&capture=b3530a2506f3acbe",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "05a17c38ff39fccf",
+      "route": "/workouts/morning-yoga/session?activity=flag&capture=05a17c38ff39fccf",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d9903c7d95a8ba76",
+      "route": "/workouts/morning-yoga/session?activity=flag&capture=d9903c7d95a8ba76",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d37166677b0b6079",
+      "route": "/workouts/morning-yoga/session?activity=swap&capture=d37166677b0b6079",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "bef09692612c79a9",
+      "route": "/workouts/morning-yoga/session?activity=swap&capture=bef09692612c79a9",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9492113d9710273c",
+      "route": "/workouts/morning-yoga/session?activity=history&capture=9492113d9710273c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "56296a6a6c95f153",
+      "route": "/workouts/morning-yoga/session?activity=music&capture=56296a6a6c95f153",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a2083ac02bd170a7",
+      "route": "/workouts/morning-yoga/session?activity=pause&capture=a2083ac02bd170a7",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b2399bb53dcc7673",
+      "route": "/workouts/morning-yoga/summary?activity=background&capture=b2399bb53dcc7673",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "1769149f55abb90d",
+      "route": "/workouts/morning-yoga/summary?capture=1769149f55abb90d",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "ef9c7875de7a5182",
+      "route": "/workouts/morning-yoga/summary?activity=share&capture=ef9c7875de7a5182",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "85e00e517076b820",
+      "route": "/workouts/morning-yoga/summary?activity=share&capture=85e00e517076b820",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "3a92d2d5321e1e2b",
+      "route": "/workouts/morning-yoga/summary?activity=feedback&capture=3a92d2d5321e1e2b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "30911205601a5847",
+      "route": "/workouts/morning-yoga/summary?activity=feedback&capture=30911205601a5847",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "c74f945c3522715d",
+      "route": "/workouts/morning-yoga/summary?activity=feedback&capture=c74f945c3522715d",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "4164718dff7491cc",
+      "route": "/workouts/morning-yoga/summary?activity=feedback&capture=4164718dff7491cc",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "6a45a461602f837d",
+      "route": "/workouts/morning-yoga/summary?activity=feedback&capture=6a45a461602f837d",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "17f00755a1f2445d",
+      "route": "/workouts/morning-yoga/summary?activity=feedback&capture=17f00755a1f2445d",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "96bc22de5bed7abf",
+      "route": "/workouts/running?capture=96bc22de5bed7abf",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "f87ce41371285c19",
+      "route": "/workouts/running/session?capture=f87ce41371285c19",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "2e7750ed1f6dbf8e",
+      "route": "/workouts/running/session?capture=2e7750ed1f6dbf8e",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "afcdea870a2ac43c",
+      "route": "/workouts/running/session?activity=finish&capture=afcdea870a2ac43c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "afec13d5e56b48eb",
+      "route": "/workouts/running/summary?capture=afec13d5e56b48eb",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "60fd610fffc247d1",
+      "route": "/workouts/running/summary?activity=distance&capture=60fd610fffc247d1",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "85f0dcd85e5a0095",
+      "route": "/workouts?capture=85f0dcd85e5a0095",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "854ff6c1480f1c23",
+      "route": "/workouts?activity=all&capture=854ff6c1480f1c23",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "751724d1203270b4",
+      "route": "/workouts/picks?capture=751724d1203270b4",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a28e9eedc0c7a471",
+      "route": "/workouts/picks?capture=a28e9eedc0c7a471",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9f49c1dd63bf829c",
+      "route": "/workouts/picks?capture=9f49c1dd63bf829c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "22f2af83452b8d62",
+      "route": "/workouts/picks?capture=22f2af83452b8d62",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "7e1fbea48e31336c",
+      "route": "/workouts?activity=all&capture=7e1fbea48e31336c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "427a9bc6ccab8e60",
+      "route": "/workouts?activity=Hike&capture=427a9bc6ccab8e60",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "f845af9cab2c56dc",
+      "route": "/schedule?capture=f845af9cab2c56dc",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "aea6304de981a862",
+      "route": "/schedule?capture=aea6304de981a862",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "532d0f40834de913",
+      "route": "/schedule?capture=532d0f40834de913",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "948a38b6eea32d7a",
+      "route": "/schedule?capture=948a38b6eea32d7a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "944167db1d6d1f4b",
+      "route": "/?activity=completed&capture=944167db1d6d1f4b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "479f5f6fe605d407",
+      "route": "/schedule?capture=479f5f6fe605d407",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "50bfcead6704f5ea",
+      "route": "/schedule?capture=50bfcead6704f5ea",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8cfdb06d509ad322",
+      "route": "/schedule?capture=8cfdb06d509ad322",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "c1aafce51bd4fb31",
+      "route": "/schedule?capture=c1aafce51bd4fb31",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "dfbcc5d54315239b",
+      "route": "/schedule?capture=dfbcc5d54315239b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "60435d9b0d00713c",
+      "route": "/schedule?capture=60435d9b0d00713c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "40813dd8122258f7",
+      "route": "/history?capture=40813dd8122258f7",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9446df791c2cf84b",
+      "route": "/progress?capture=9446df791c2cf84b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "ae6f6828a96ef127",
+      "route": "/progress?capture=ae6f6828a96ef127",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "26397d459a360eab",
+      "route": "/progress?capture=26397d459a360eab",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "aefc9d4218b2f742",
+      "route": "/progress?capture=aefc9d4218b2f742",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a67702fc83ea3d05",
+      "route": "/progress?capture=a67702fc83ea3d05",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cac5c501bc6a10ec",
+      "route": "/progress?capture=cac5c501bc6a10ec",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "c3fd263f671179fa",
+      "route": "/progress?capture=c3fd263f671179fa",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "54d2648586600727",
+      "route": "/progress?capture=54d2648586600727",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a671de3ec25ed4d5",
+      "route": "/progress?capture=a671de3ec25ed4d5",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cc91972a8b91c317",
+      "route": "/progress?capture=cc91972a8b91c317",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "f8dc49d0fe545540",
+      "route": "/progress?capture=f8dc49d0fe545540",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "7b01261aafcd5709",
+      "route": "/progress/consistency?capture=7b01261aafcd5709",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "0613c59580d3a48f",
+      "route": "/progress/consistency?capture=0613c59580d3a48f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a8fa9ad2ffa8ecd9",
+      "route": "/progress/consistency?capture=a8fa9ad2ffa8ecd9",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "da024204f479856f",
+      "route": "/progress/consistency?capture=da024204f479856f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "e4e3e100cf32c510",
+      "route": "/progress/activity?capture=e4e3e100cf32c510",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "991137aacee976a6",
+      "route": "/progress/steps?capture=991137aacee976a6",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "1d3699ebfaeb1264",
+      "route": "/progress/metrics?capture=1d3699ebfaeb1264",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "69c1552bd207febb",
+      "route": "/progress/metrics?capture=69c1552bd207febb",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "184fb1cc4be177d5",
+      "route": "/progress/metrics?capture=184fb1cc4be177d5",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "83aa026b2c7d5972",
+      "route": "/progress?capture=83aa026b2c7d5972",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d896283a02dd3322",
+      "route": "/progress/metrics?capture=d896283a02dd3322",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "372ec72a4ad42b9a",
+      "route": "/progress?capture=372ec72a4ad42b9a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8442edc56bd7a6a2",
+      "route": "/progress/photos?capture=8442edc56bd7a6a2",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "0c9d6d9336ed2060",
+      "route": "/progress/photos/add?capture=0c9d6d9336ed2060",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cee9a987b896f939",
+      "route": "/progress/photos/add?capture=cee9a987b896f939",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "14a78fdd2e2f981c",
+      "route": "/progress/photos/add?capture=14a78fdd2e2f981c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b9ebd53fefdbd7b8",
+      "route": "/progress/photos?capture=b9ebd53fefdbd7b8",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "098311074fbc0d30",
+      "route": "/progress/photos/add?capture=098311074fbc0d30",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "dac1a3cf0fffb20a",
+      "route": "/progress/photos/add?capture=dac1a3cf0fffb20a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9f32c528eb3122b5",
+      "route": "/progress/photos/add?capture=9f32c528eb3122b5",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d0bffd680203472f",
+      "route": "/progress/weight?capture=d0bffd680203472f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "92f7fea0a4f23770",
+      "route": "/progress/target?capture=92f7fea0a4f23770",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "bfea6e37fa7d9b94",
+      "route": "/progress/target?capture=bfea6e37fa7d9b94",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "e95ed2394c15c550",
+      "route": "/progress/weight?capture=e95ed2394c15c550",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "654b8d1920644b89",
+      "route": "/progress/log-weight?capture=654b8d1920644b89",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "88f6f0ef24add973",
+      "route": "/progress/log-weight?capture=88f6f0ef24add973",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a0b73ff31607572f",
+      "route": "/progress/weight?capture=a0b73ff31607572f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "5cd2903b6dc7cc19",
+      "route": "/messages?capture=5cd2903b6dc7cc19",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "e9f1d9e135143206",
+      "route": "/messages?capture=e9f1d9e135143206",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "3707b8d0f4c3b815",
+      "route": "/messages?capture=3707b8d0f4c3b815",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8fb5d0b81c309b95",
+      "route": "/messages?capture=8fb5d0b81c309b95",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "244a2df35948b3dd",
+      "route": "/messages?capture=244a2df35948b3dd",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9b10c8dd53f773c4",
+      "route": "/messages/rate?capture=9b10c8dd53f773c4",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "06b4af20ce799415",
+      "route": "/messages?capture=06b4af20ce799415",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9788a9177d20367f",
+      "route": "/messages?capture=9788a9177d20367f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "96860a7f9c42a793",
+      "route": "/messages?capture=96860a7f9c42a793",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8c16d1cc0eb9ae1f",
+      "route": "/messages?capture=8c16d1cc0eb9ae1f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "91d24d7a940e3818",
+      "route": "/messages?capture=91d24d7a940e3818",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b406dae55f8f7185",
+      "route": "/messages/photo?capture=b406dae55f8f7185",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "e7f7a57998262595",
+      "route": "/messages?capture=e7f7a57998262595",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "1ec85d3afee3a8a7",
+      "route": "/messages?capture=1ec85d3afee3a8a7",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "80ef1b95989ab0a5",
+      "route": "/messages/videos?capture=80ef1b95989ab0a5",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "ce5d958da4fdbea8",
+      "route": "/messages/videos?capture=ce5d958da4fdbea8",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "5f192b1462a126b6",
+      "route": "/messages/rate?capture=5f192b1462a126b6",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cc20067000d4f87f",
+      "route": "/friends?capture=cc20067000d4f87f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cc47b92925d101cb",
+      "route": "/friends?capture=cc47b92925d101cb",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "230ba48bd84b5618",
+      "route": "/friends/invite?capture=230ba48bd84b5618",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "37e236af15c00e2a",
+      "route": "/friends/invite?capture=37e236af15c00e2a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "e9ff9ded70b5f433",
+      "route": "/profile?capture=e9ff9ded70b5f433",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "19cb4b2390d35bd5",
+      "route": "/profile?capture=19cb4b2390d35bd5",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "4a19ac431481a9af",
+      "route": "/profile?capture=4a19ac431481a9af",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "32f0fc08b604cc93",
+      "route": "/profile/event?capture=32f0fc08b604cc93",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "52738508d08de10f",
+      "route": "/profile/event?capture=52738508d08de10f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "3189e98ea2ffdf35",
+      "route": "/profile/event?capture=3189e98ea2ffdf35",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "0d4c3dca91994365",
+      "route": "/profile/event?capture=0d4c3dca91994365",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "ec59526f80f48f32",
+      "route": "/profile/event?capture=ec59526f80f48f32",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "0a8b40e28e7bd6f2",
+      "route": "/profile/event?capture=0a8b40e28e7bd6f2",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9900515c67c3bc0b",
+      "route": "/profile?capture=9900515c67c3bc0b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "de6aa2a677652a59",
+      "route": "/coaches/change?capture=de6aa2a677652a59",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "e690c12004fa0b11",
+      "route": "/coaches/change?capture=e690c12004fa0b11",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "5b8853eb6bed9cfa",
+      "route": "/coaches/change?capture=5b8853eb6bed9cfa",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cdd7b72066569858",
+      "route": "/coaches/matt?capture=cdd7b72066569858",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "587607868798e2bf",
+      "route": "/profile/edit?capture=587607868798e2bf",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "11cdf70d01f98f9d",
+      "route": "/profile/edit?capture=11cdf70d01f98f9d",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "93e000d6f001413c",
+      "route": "/profile?capture=93e000d6f001413c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "f0f400f1407a9492",
+      "route": "/profile/cover?capture=f0f400f1407a9492",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cf555b20934717e7",
+      "route": "/profile/cover?capture=cf555b20934717e7",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "7341749f58fd2736",
+      "route": "/profile/edit?capture=7341749f58fd2736",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "2d63b2d421e8986c",
+      "route": "/profile/edit?capture=2d63b2d421e8986c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a024a61347fa078a",
+      "route": "/settings?capture=a024a61347fa078a",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "0321f6f626e81a5f",
+      "route": "/settings?capture=0321f6f626e81a5f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "85169600dcd16f7c",
+      "route": "/account?capture=85169600dcd16f7c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "1ae56351357fac91",
+      "route": "/account?capture=1ae56351357fac91",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d7e03432f62fa9cf",
+      "route": "/account?capture=d7e03432f62fa9cf",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "7d8dea8cbab0f554",
+      "route": "/account?capture=7d8dea8cbab0f554",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "fb935a0aeee796e9",
+      "route": "/account?capture=fb935a0aeee796e9",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8724ed8b412f949b",
+      "route": "/account?capture=8724ed8b412f949b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d82e5dc3852242e7",
+      "route": "/account/membership?capture=d82e5dc3852242e7",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "4f3ba8d8c82561b3",
+      "route": "/account/membership?capture=4f3ba8d8c82561b3",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "6699b1f8a7f819b9",
+      "route": "/account/plan?capture=6699b1f8a7f819b9",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "55b876bd2a1cf2ec",
+      "route": "/account/cancel?capture=55b876bd2a1cf2ec",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "2cfbd72ec2d13d5b",
+      "route": "/account/cancel/offer?capture=2cfbd72ec2d13d5b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "15ddb207c83425d2",
+      "route": "/account/cancel/confirm?capture=15ddb207c83425d2",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a87f5f2814c17f7c",
+      "route": "/account/cancel/confirm?capture=a87f5f2814c17f7c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "61715db212cf2a1b",
+      "route": "/account/cancel/done?capture=61715db212cf2a1b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "a2b8db895a5f8c16",
+      "route": "/account/membership?capture=a2b8db895a5f8c16",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "35d81d4c979a3195",
+      "route": "/account/shipping?capture=35d81d4c979a3195",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "c69fee952cd49b41",
+      "route": "/account/shipping?capture=c69fee952cd49b41",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "716fd33fa6bc37d2",
+      "route": "/account/shipping?capture=716fd33fa6bc37d2",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "693755a9410f5831",
+      "route": "/account/shipping?capture=693755a9410f5831",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "fa33f93ee04cad49",
+      "route": "/account/membership?capture=fa33f93ee04cad49",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "5383ca7fc484ce9c",
+      "route": "/account/help?capture=5383ca7fc484ce9c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "fcdbbf34054452b1",
+      "route": "/account/help/billing?capture=fcdbbf34054452b1",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "cc6fb2233bc3f31c",
+      "route": "/account/help/billing?capture=cc6fb2233bc3f31c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "d761b09d83d4e850",
+      "route": "/account/help?capture=d761b09d83d4e850",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "593d3256755ff5ae",
+      "route": "/account/help/delete?capture=593d3256755ff5ae",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "3d888eebe1dae0aa",
+      "route": "/settings/location?capture=3d888eebe1dae0aa",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "dc867f791845be87",
+      "route": "/settings/location?capture=dc867f791845be87",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "c60d76b4556ccf29",
+      "route": "/settings/location?capture=c60d76b4556ccf29",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "464d28d1e615a0cc",
+      "route": "/settings/equipment?capture=464d28d1e615a0cc",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "6f7906549b48f376",
+      "route": "/settings/equipment?capture=6f7906549b48f376",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "45ff34930241ec24",
+      "route": "/settings/equipment?capture=45ff34930241ec24",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "f4dd4750b643f25c",
+      "route": "/settings/equipment?capture=f4dd4750b643f25c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "3c3f5b2ae12f0a16",
+      "route": "/settings/equipment?capture=3c3f5b2ae12f0a16",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "80efc3cf90fd540c",
+      "route": "/settings/equipment?capture=80efc3cf90fd540c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "bfbabe222728e739",
+      "route": "/settings?capture=bfbabe222728e739",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b63080eaf97404fc",
+      "route": "/settings/injury?capture=b63080eaf97404fc",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b25431078c7923a8",
+      "route": "/settings/injury?capture=b25431078c7923a8",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "68564002a352ea0b",
+      "route": "/settings/injury?capture=68564002a352ea0b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "bff6c138c772d2c2",
+      "route": "/settings/injury?capture=bff6c138c772d2c2",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "6c630c7f068150c8",
+      "route": "/settings/injury/detail?capture=6c630c7f068150c8",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "bca9653d973f5702",
+      "route": "/settings?capture=bca9653d973f5702",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "4917c735489f6b4c",
+      "route": "/settings/injury/detail?capture=4917c735489f6b4c",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8a7901a5c21e862f",
+      "route": "/settings/injury/exclusions?capture=8a7901a5c21e862f",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "22d870084ca0661b",
+      "route": "/settings/app?capture=22d870084ca0661b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9b057830c0013b72",
+      "route": "/settings/app?capture=9b057830c0013b72",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b6ed07cc9879d9a2",
+      "route": "/settings/watch?capture=b6ed07cc9879d9a2",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9b99aa1d95da47a0",
+      "route": "/settings/permissions?capture=9b99aa1d95da47a0",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "429770e07f9f4901",
+      "route": "/settings/about?capture=429770e07f9f4901",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "c8af58d62a9ed8f7",
+      "route": "/settings/about?capture=c8af58d62a9ed8f7",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "8ac22ec411e8c405",
+      "route": "/login/sent?capture=8ac22ec411e8c405",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "9dea7f21275910f2",
+      "route": "/login/signing-in?capture=9dea7f21275910f2",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "004036150c4419a6",
+      "route": "/system/live-activity?capture=004036150c4419a6",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "c2a9ab379931c3f0",
+      "route": "/system/dynamic-island?capture=c2a9ab379931c3f0",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "b9f1086598b7e89b",
+      "route": "/system/dynamic-island?capture=b9f1086598b7e89b",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    },
+    {
+      "id": "3f2fbd0e4124e8a1",
+      "route": "/system/widgets?capture=3f2fbd0e4124e8a1",
+      "width": 393,
+      "scrollWidth": 393,
+      "errorPage": false,
+      "brokenCompletedImages": 0,
+      "loadingPlaceholder": false
+    }
+  ],
+  "coachContinuation": {
+    "passed": true,
+    "flow": [
+      "Matt selection in capture preview",
+      "Appointments heading names Matt",
+      "Select Thu 2 and 8 PM",
+      "Book and reach home within capture session",
+      "Open ordinary appointments and confirm Lee unchanged"
+    ],
+    "screenshots": [
+      ".artifacts/noah-state-v3.png",
+      ".artifacts/garrett-state-v3.png",
+      ".artifacts/matt-state-v2.png",
+      ".artifacts/conversation-state-v2.png",
+      ".artifacts/launch-state-v3.png",
+      ".artifacts/achievement-state-v2.png"
+    ]
+  },
+  "newSurfaceWidths": {
+    "393px": {
+      "count": 6,
+      "overflow": 0,
+      "sourceImagesLoaded": true,
+      "noahActionsBottom": 796,
+      "garrettActionsBottom": 796.171875,
+      "coachHeaderBounds": {
+        "top": 93.40625,
+        "bottom": 118.59375
+      }
+    },
+    "1440px": {
+      "count": 6,
+      "overflow": 0
+    },
+    "320px": {
+      "count": 6,
+      "firstPassOverflow": [
+        "conversation-state"
+      ],
+      "fix": "Allow heart-rate notice wrapping at widths below360px",
+      "confirmation": {
+        "passed": true,
+        "conversationClientWidth": 320,
+        "conversationScrollWidth": 320
+      }
+    }
+  }
+}

@@ -1,0 +1,354 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  62,
+                                        "height":  45,
+                                        "width":  104,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Change Coach",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  56,
+                                        "width":  203,
+                                        "text":  "Change",
+                                        "x":  395
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  45,
+                                        "width":  171,
+                                        "text":  "Coach",
+                                        "x":  613
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Garrett",
+                      "words":  [
+                                    {
+                                        "y":  1399,
+                                        "height":  67,
+                                        "width":  283,
+                                        "text":  "Garrett",
+                                        "x":  232
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Corrective Exercise",
+                      "words":  [
+                                    {
+                                        "y":  1511,
+                                        "height":  34,
+                                        "width":  205,
+                                        "text":  "Corrective",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  1511,
+                                        "height":  34,
+                                        "width":  160,
+                                        "text":  "Exercise",
+                                        "x":  448
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Interested in a",
+                      "words":  [
+                                    {
+                                        "y":  1722,
+                                        "height":  67,
+                                        "width":  399,
+                                        "text":  "Interested",
+                                        "x":  76
+                                    },
+                                    {
+                                        "y":  1722,
+                                        "height":  66,
+                                        "width":  68,
+                                        "text":  "in",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  1740,
+                                        "height":  49,
+                                        "width":  43,
+                                        "text":  "a",
+                                        "x":  590
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fresh Start?",
+                      "words":  [
+                                    {
+                                        "y":  1833,
+                                        "height":  67,
+                                        "width":  212,
+                                        "text":  "Fresh",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  1833,
+                                        "height":  67,
+                                        "width":  234,
+                                        "text":  "Start?",
+                                        "x":  310
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "We\u0027re sorry we didn\u0027t meet your expectations,",
+                      "words":  [
+                                    {
+                                        "y":  1970,
+                                        "height":  39,
+                                        "width":  124,
+                                        "text":  "We\u0027re",
+                                        "x":  72
+                                    },
+                                    {
+                                        "y":  1981,
+                                        "height":  37,
+                                        "width":  111,
+                                        "text":  "sorry",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  1981,
+                                        "height":  28,
+                                        "width":  64,
+                                        "text":  "we",
+                                        "x":  330
+                                    },
+                                    {
+                                        "y":  1970,
+                                        "height":  39,
+                                        "width":  122,
+                                        "text":  "didn\u0027t",
+                                        "x":  406
+                                    },
+                                    {
+                                        "y":  1975,
+                                        "height":  34,
+                                        "width":  115,
+                                        "text":  "meet",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  1981,
+                                        "height":  37,
+                                        "width":  99,
+                                        "text":  "your",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  1971,
+                                        "height":  47,
+                                        "width":  298,
+                                        "text":  "expectations,",
+                                        "x":  776
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and wed love to try to make things right. Do",
+                      "words":  [
+                                    {
+                                        "y":  2033,
+                                        "height":  39,
+                                        "width":  82,
+                                        "text":  "and",
+                                        "x":  73
+                                    },
+                                    {
+                                        "y":  2033,
+                                        "height":  39,
+                                        "width":  96,
+                                        "text":  "wed",
+                                        "x":  167
+                                    },
+                                    {
+                                        "y":  2033,
+                                        "height":  39,
+                                        "width":  86,
+                                        "text":  "love",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  2038,
+                                        "height":  34,
+                                        "width":  44,
+                                        "text":  "to",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  2038,
+                                        "height":  43,
+                                        "width":  59,
+                                        "text":  "try",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  2038,
+                                        "height":  34,
+                                        "width":  45,
+                                        "text":  "to",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  2033,
+                                        "height":  39,
+                                        "width":  120,
+                                        "text":  "make",
+                                        "x":  559
+                                    },
+                                    {
+                                        "y":  2033,
+                                        "height":  48,
+                                        "width":  135,
+                                        "text":  "things",
+                                        "x":  689
+                                    },
+                                    {
+                                        "y":  2033,
+                                        "height":  48,
+                                        "width":  108,
+                                        "text":  "right.",
+                                        "x":  838
+                                    },
+                                    {
+                                        "y":  2034,
+                                        "height":  38,
+                                        "width":  60,
+                                        "text":  "Do",
+                                        "x":  959
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "you want to try out a different coach?",
+                      "words":  [
+                                    {
+                                        "y":  2107,
+                                        "height":  37,
+                                        "width":  79,
+                                        "text":  "you",
+                                        "x":  72
+                                    },
+                                    {
+                                        "y":  2101,
+                                        "height":  34,
+                                        "width":  108,
+                                        "text":  "want",
+                                        "x":  164
+                                    },
+                                    {
+                                        "y":  2101,
+                                        "height":  34,
+                                        "width":  45,
+                                        "text":  "to",
+                                        "x":  282
+                                    },
+                                    {
+                                        "y":  2101,
+                                        "height":  43,
+                                        "width":  59,
+                                        "text":  "try",
+                                        "x":  338
+                                    },
+                                    {
+                                        "y":  2101,
+                                        "height":  34,
+                                        "width":  74,
+                                        "text":  "out",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  2107,
+                                        "height":  28,
+                                        "width":  23,
+                                        "text":  "a",
+                                        "x":  494
+                                    },
+                                    {
+                                        "y":  2096,
+                                        "height":  39,
+                                        "width":  191,
+                                        "text":  "different",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  2096,
+                                        "height":  39,
+                                        "width":  161,
+                                        "text":  "coach?",
+                                        "x":  734
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Explore",
+                      "words":  [
+                                    {
+                                        "y":  2288,
+                                        "height":  50,
+                                        "width":  171,
+                                        "text":  "Explore",
+                                        "x":  236
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F FUtUre Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUtUre",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Change Coach Garrett Corrective Exercise Interested in a Fresh Start? We\u0027re sorry we didn\u0027t meet your expectations, and wed love to try to make things right. Do you want to try out a different coach? Explore F FUtUre Pro *Mobbin"
+}

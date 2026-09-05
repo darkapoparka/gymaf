@@ -1,0 +1,651 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  296,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "O FAQs",
+                      "words":  [
+                                    {
+                                        "y":  548,
+                                        "height":  51,
+                                        "width":  51,
+                                        "text":  "O",
+                                        "x":  139
+                                    },
+                                    {
+                                        "y":  554,
+                                        "height":  48,
+                                        "width":  114,
+                                        "text":  "FAQs",
+                                        "x":  249
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Account Help",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  45,
+                                        "width":  226,
+                                        "text":  "Account",
+                                        "x":  406
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  55,
+                                        "width":  123,
+                                        "text":  "Help",
+                                        "x":  647
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Permanently Delete Account",
+                      "words":  [
+                                    {
+                                        "y":  750,
+                                        "height":  48,
+                                        "width":  298,
+                                        "text":  "Permanently",
+                                        "x":  204
+                                    },
+                                    {
+                                        "y":  750,
+                                        "height":  39,
+                                        "width":  150,
+                                        "text":  "Delete",
+                                        "x":  518
+                                    },
+                                    {
+                                        "y":  752,
+                                        "height":  37,
+                                        "width":  195,
+                                        "text":  "Account",
+                                        "x":  683
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Account deletion is an irreversible",
+                      "words":  [
+                                    {
+                                        "y":  834,
+                                        "height":  33,
+                                        "width":  168,
+                                        "text":  "Account",
+                                        "x":  201
+                                    },
+                                    {
+                                        "y":  832,
+                                        "height":  35,
+                                        "width":  161,
+                                        "text":  "deletion",
+                                        "x":  383
+                                    },
+                                    {
+                                        "y":  832,
+                                        "height":  35,
+                                        "width":  29,
+                                        "text":  "is",
+                                        "x":  561
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  25,
+                                        "width":  45,
+                                        "text":  "an",
+                                        "x":  606
+                                    },
+                                    {
+                                        "y":  832,
+                                        "height":  35,
+                                        "width":  224,
+                                        "text":  "irreversible",
+                                        "x":  668
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "action that will permanently delete",
+                      "words":  [
+                                    {
+                                        "y":  892,
+                                        "height":  35,
+                                        "width":  121,
+                                        "text":  "action",
+                                        "x":  202
+                                    },
+                                    {
+                                        "y":  893,
+                                        "height":  34,
+                                        "width":  79,
+                                        "text":  "that",
+                                        "x":  339
+                                    },
+                                    {
+                                        "y":  892,
+                                        "height":  34,
+                                        "width":  62,
+                                        "text":  "will",
+                                        "x":  432
+                                    },
+                                    {
+                                        "y":  893,
+                                        "height":  42,
+                                        "width":  254,
+                                        "text":  "permanently",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  893,
+                                        "height":  34,
+                                        "width":  125,
+                                        "text":  "delete",
+                                        "x":  780
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "your account and all associated data",
+                      "words":  [
+                                    {
+                                        "y":  962,
+                                        "height":  33,
+                                        "width":  89,
+                                        "text":  "your",
+                                        "x":  201
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  31,
+                                        "width":  162,
+                                        "text":  "account",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  953,
+                                        "height":  34,
+                                        "width":  72,
+                                        "text":  "and",
+                                        "x":  482
+                                    },
+                                    {
+                                        "y":  953,
+                                        "height":  34,
+                                        "width":  41,
+                                        "text":  "all",
+                                        "x":  570
+                                    },
+                                    {
+                                        "y":  952,
+                                        "height":  35,
+                                        "width":  216,
+                                        "text":  "associated",
+                                        "x":  628
+                                    },
+                                    {
+                                        "y":  953,
+                                        "height":  34,
+                                        "width":  87,
+                                        "text":  "data",
+                                        "x":  861
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "from our servers.",
+                      "words":  [
+                                    {
+                                        "y":  1012,
+                                        "height":  35,
+                                        "width":  92,
+                                        "text":  "from",
+                                        "x":  201
+                                    },
+                                    {
+                                        "y":  1022,
+                                        "height":  25,
+                                        "width":  66,
+                                        "text":  "our",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  1022,
+                                        "height":  25,
+                                        "width":  159,
+                                        "text":  "servers.",
+                                        "x":  389
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "If you decide to return to Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  1132,
+                                        "height":  34,
+                                        "width":  22,
+                                        "text":  "If",
+                                        "x":  204
+                                    },
+                                    {
+                                        "y":  1142,
+                                        "height":  33,
+                                        "width":  70,
+                                        "text":  "you",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  1132,
+                                        "height":  35,
+                                        "width":  135,
+                                        "text":  "decide",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  1136,
+                                        "height":  31,
+                                        "width":  39,
+                                        "text":  "to",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  1136,
+                                        "height":  31,
+                                        "width":  119,
+                                        "text":  "return",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  1136,
+                                        "height":  31,
+                                        "width":  38,
+                                        "text":  "to",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  33,
+                                        "width":  128,
+                                        "text":  "Future",
+                                        "x":  722
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  33,
+                                        "width":  63,
+                                        "text":  "Pro",
+                                        "x":  867
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "at any point after your account",
+                      "words":  [
+                                    {
+                                        "y":  1196,
+                                        "height":  31,
+                                        "width":  36,
+                                        "text":  "at",
+                                        "x":  202
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  33,
+                                        "width":  70,
+                                        "text":  "any",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1192,
+                                        "height":  42,
+                                        "width":  100,
+                                        "text":  "point",
+                                        "x":  339
+                                    },
+                                    {
+                                        "y":  1192,
+                                        "height":  35,
+                                        "width":  94,
+                                        "text":  "after",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  33,
+                                        "width":  90,
+                                        "text":  "your",
+                                        "x":  561
+                                    },
+                                    {
+                                        "y":  1196,
+                                        "height":  31,
+                                        "width":  162,
+                                        "text":  "account",
+                                        "x":  665
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "deletion is confirmed, you\u0027ll need to",
+                      "words":  [
+                                    {
+                                        "y":  1252,
+                                        "height":  35,
+                                        "width":  160,
+                                        "text":  "deletion",
+                                        "x":  202
+                                    },
+                                    {
+                                        "y":  1252,
+                                        "height":  35,
+                                        "width":  28,
+                                        "text":  "is",
+                                        "x":  380
+                                    },
+                                    {
+                                        "y":  1252,
+                                        "height":  42,
+                                        "width":  216,
+                                        "text":  "confirmed,",
+                                        "x":  424
+                                    },
+                                    {
+                                        "y":  1253,
+                                        "height":  42,
+                                        "width":  104,
+                                        "text":  "you\u0027ll",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  1253,
+                                        "height":  34,
+                                        "width":  96,
+                                        "text":  "need",
+                                        "x":  779
+                                    },
+                                    {
+                                        "y":  1256,
+                                        "height":  31,
+                                        "width":  39,
+                                        "text":  "to",
+                                        "x":  891
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "create a brand new account that will",
+                      "words":  [
+                                    {
+                                        "y":  1316,
+                                        "height":  31,
+                                        "width":  126,
+                                        "text":  "create",
+                                        "x":  202
+                                    },
+                                    {
+                                        "y":  1322,
+                                        "height":  25,
+                                        "width":  20,
+                                        "text":  "a",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  34,
+                                        "width":  114,
+                                        "text":  "brand",
+                                        "x":  380
+                                    },
+                                    {
+                                        "y":  1322,
+                                        "height":  25,
+                                        "width":  81,
+                                        "text":  "new",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  1316,
+                                        "height":  31,
+                                        "width":  162,
+                                        "text":  "account",
+                                        "x":  608
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  34,
+                                        "width":  79,
+                                        "text":  "that",
+                                        "x":  785
+                                    },
+                                    {
+                                        "y":  1312,
+                                        "height":  34,
+                                        "width":  62,
+                                        "text":  "will",
+                                        "x":  878
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "have no record of your previous",
+                      "words":  [
+                                    {
+                                        "y":  1373,
+                                        "height":  34,
+                                        "width":  92,
+                                        "text":  "have",
+                                        "x":  203
+                                    },
+                                    {
+                                        "y":  1382,
+                                        "height":  25,
+                                        "width":  47,
+                                        "text":  "no",
+                                        "x":  311
+                                    },
+                                    {
+                                        "y":  1373,
+                                        "height":  34,
+                                        "width":  128,
+                                        "text":  "record",
+                                        "x":  375
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  35,
+                                        "width":  39,
+                                        "text":  "of",
+                                        "x":  519
+                                    },
+                                    {
+                                        "y":  1382,
+                                        "height":  33,
+                                        "width":  89,
+                                        "text":  "your",
+                                        "x":  572
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  42,
+                                        "width":  170,
+                                        "text":  "previous",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "coach, workouts, messages, or",
+                      "words":  [
+                                    {
+                                        "y":  1433,
+                                        "height":  41,
+                                        "width":  131,
+                                        "text":  "coach,",
+                                        "x":  202
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  41,
+                                        "width":  196,
+                                        "text":  "workouts,",
+                                        "x":  350
+                                    },
+                                    {
+                                        "y":  1442,
+                                        "height":  33,
+                                        "width":  214,
+                                        "text":  "messages,",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  1442,
+                                        "height":  25,
+                                        "width":  40,
+                                        "text":  "or",
+                                        "x":  795
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "progress on Future Pro.",
+                      "words":  [
+                                    {
+                                        "y":  1502,
+                                        "height":  33,
+                                        "width":  176,
+                                        "text":  "progress",
+                                        "x":  203
+                                    },
+                                    {
+                                        "y":  1502,
+                                        "height":  25,
+                                        "width":  47,
+                                        "text":  "on",
+                                        "x":  395
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  33,
+                                        "width":  128,
+                                        "text":  "Future",
+                                        "x":  460
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  33,
+                                        "width":  75,
+                                        "text":  "Pro.",
+                                        "x":  605
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Request Account Deletion",
+                      "words":  [
+                                    {
+                                        "y":  1653,
+                                        "height":  45,
+                                        "width":  187,
+                                        "text":  "Request",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  1653,
+                                        "height":  37,
+                                        "width":  191,
+                                        "text":  "Account",
+                                        "x":  494
+                                    },
+                                    {
+                                        "y":  1650,
+                                        "height":  40,
+                                        "width":  188,
+                                        "text":  "Deletion",
+                                        "x":  703
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FUture Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUture",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cancel",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  39,
+                                        "width":  156,
+                                        "text":  "Cancel",
+                                        "x":  512
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 x O FAQs Account Help Permanently Delete Account Account deletion is an irreversible action that will permanently delete your account and all associated data from our servers. If you decide to return to Future Pro at any point after your account deletion is confirmed, you\u0027ll need to create a brand new account that will have no record of your previous coach, workouts, messages, or progress on Future Pro. Request Account Deletion F FUture Pro Cancel *Mobbin"
+}

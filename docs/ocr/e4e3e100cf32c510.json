@@ -1,0 +1,557 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Activity Rings",
+                      "words":  [
+                                    {
+                                        "y":  381,
+                                        "height":  84,
+                                        "width":  304,
+                                        "text":  "Activity",
+                                        "x":  48
+                                    },
+                                    {
+                                        "y":  381,
+                                        "height":  84,
+                                        "width":  218,
+                                        "text":  "Rings",
+                                        "x":  371
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Tue",
+                      "words":  [
+                                    {
+                                        "y":  574,
+                                        "height":  25,
+                                        "width":  54,
+                                        "text":  "Tue",
+                                        "x":  155
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sat",
+                      "words":  [
+                                    {
+                                        "y":  890,
+                                        "height":  25,
+                                        "width":  48,
+                                        "text":  "Sat",
+                                        "x":  159
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wed",
+                      "words":  [
+                                    {
+                                        "y":  573,
+                                        "height":  25,
+                                        "width":  66,
+                                        "text":  "Wed",
+                                        "x":  420
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sun",
+                      "words":  [
+                                    {
+                                        "y":  890,
+                                        "height":  25,
+                                        "width":  56,
+                                        "text":  "Sun",
+                                        "x":  426
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thu",
+                      "words":  [
+                                    {
+                                        "y":  573,
+                                        "height":  25,
+                                        "width":  56,
+                                        "text":  "Thu",
+                                        "x":  695
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mon",
+                      "words":  [
+                                    {
+                                        "y":  890,
+                                        "height":  24,
+                                        "width":  63,
+                                        "text":  "Mon",
+                                        "x":  693
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Date",
+                      "words":  [
+                                    {
+                                        "y":  1227,
+                                        "height":  29,
+                                        "width":  77,
+                                        "text":  "Date",
+                                        "x":  272
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 30, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1335,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  1334,
+                                        "height":  35,
+                                        "width":  51,
+                                        "text":  "30,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1334,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 29, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1444,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "29,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  401
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 28, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1553,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  1552,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "28,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1552,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  402
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 27, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1662,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  1661,
+                                        "height":  35,
+                                        "width":  45,
+                                        "text":  "27,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1661,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  396
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 26, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1771,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  1770,
+                                        "height":  35,
+                                        "width":  50,
+                                        "text":  "26,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1770,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  402
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 25, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1880,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  1879,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "25,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1879,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  401
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 24, 2026",
+                      "words":  [
+                                    {
+                                        "y":  1989,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  1988,
+                                        "height":  35,
+                                        "width":  49,
+                                        "text":  "24,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1988,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  402
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 23, 2026",
+                      "words":  [
+                                    {
+                                        "y":  2098,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  2097,
+                                        "height":  35,
+                                        "width":  50,
+                                        "text":  "23,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  2097,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  401
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jun 22, 2026",
+                      "words":  [
+                                    {
+                                        "y":  2207,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "Jun",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  2206,
+                                        "height":  35,
+                                        "width":  48,
+                                        "text":  "22,",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  2206,
+                                        "height":  30,
+                                        "width":  90,
+                                        "text":  "2026",
+                                        "x":  401
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Progress",
+                      "words":  [
+                                    {
+                                        "y":  2431,
+                                        "height":  28,
+                                        "width":  131,
+                                        "text":  "Progress",
+                                        "x":  314
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Move",
+                      "words":  [
+                                    {
+                                        "y":  1227,
+                                        "height":  29,
+                                        "width":  91,
+                                        "text":  "Move",
+                                        "x":  597
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Messages",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "Messages",
+                                        "x":  509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Activity",
+                      "words":  [
+                                    {
+                                        "y":  1226,
+                                        "height":  37,
+                                        "width":  127,
+                                        "text":  "Activity",
+                                        "x":  794
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "18 min",
+                      "words":  [
+                                    {
+                                        "y":  1334,
+                                        "height":  29,
+                                        "width":  35,
+                                        "text":  "18",
+                                        "x":  794
+                                    },
+                                    {
+                                        "y":  1335,
+                                        "height":  28,
+                                        "width":  60,
+                                        "text":  "min",
+                                        "x":  840
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Friends",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  106,
+                                        "text":  "Friends",
+                                        "x":  740
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Home",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  22,
+                                        "width":  83,
+                                        "text":  "Home",
+                                        "x":  146
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "curated by",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  138,
+                                        "text":  "curated",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  36,
+                                        "width":  42,
+                                        "text":  "by",
+                                        "x":  807
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fri",
+                      "words":  [
+                                    {
+                                        "y":  573,
+                                        "height":  25,
+                                        "width":  35,
+                                        "text":  "Fri",
+                                        "x":  978
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Today",
+                      "words":  [
+                                    {
+                                        "y":  889,
+                                        "height":  31,
+                                        "width":  91,
+                                        "text":  "Today",
+                                        "x":  950
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Stand",
+                      "words":  [
+                                    {
+                                        "y":  1226,
+                                        "height":  30,
+                                        "width":  98,
+                                        "text":  "Stand",
+                                        "x":  993
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Profile",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "Profile",
+                                        "x":  947
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  170,
+                                        "text":  "Mobbin",
+                                        "x":  981
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Activity Rings Tue Sat Wed Sun Thu Mon Date Jun 30, 2026 Jun 29, 2026 Jun 28, 2026 Jun 27, 2026 Jun 26, 2026 Jun 25, 2026 Jun 24, 2026 Jun 23, 2026 Jun 22, 2026 Progress Move Messages Activity 18 min Friends F Home Future Pro curated by Fri Today Stand Profile Mobbin"
+}

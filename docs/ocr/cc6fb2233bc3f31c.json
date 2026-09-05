@@ -1,0 +1,215 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "Billing",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  56,
+                                        "width":  161,
+                                        "text":  "Billing",
+                                        "x":  509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Hello, If I decide to refund, is there any",
+                      "words":  [
+                                    {
+                                        "y":  537,
+                                        "height":  45,
+                                        "width":  118,
+                                        "text":  "Hello,",
+                                        "x":  102
+                                    },
+                                    {
+                                        "y":  537,
+                                        "height":  38,
+                                        "width":  26,
+                                        "text":  "If",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  538,
+                                        "height":  37,
+                                        "width":  6,
+                                        "text":  "I",
+                                        "x":  273
+                                    },
+                                    {
+                                        "y":  537,
+                                        "height":  39,
+                                        "width":  153,
+                                        "text":  "decide",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  34,
+                                        "width":  45,
+                                        "text":  "to",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  537,
+                                        "height":  45,
+                                        "width":  153,
+                                        "text":  "refund,",
+                                        "x":  516
+                                    },
+                                    {
+                                        "y":  538,
+                                        "height":  38,
+                                        "width":  32,
+                                        "text":  "is",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  537,
+                                        "height":  39,
+                                        "width":  118,
+                                        "text":  "there",
+                                        "x":  724
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  37,
+                                        "width":  78,
+                                        "text":  "any",
+                                        "x":  854
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "maximum duration before I got a full",
+                      "words":  [
+                                    {
+                                        "y":  601,
+                                        "height":  38,
+                                        "width":  218,
+                                        "text":  "maximum",
+                                        "x":  102
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  39,
+                                        "width":  184,
+                                        "text":  "duration",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  39,
+                                        "width":  144,
+                                        "text":  "before",
+                                        "x":  534
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  37,
+                                        "width":  6,
+                                        "text":  "I",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  605,
+                                        "height":  43,
+                                        "width":  70,
+                                        "text":  "got",
+                                        "x":  713
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  28,
+                                        "width":  23,
+                                        "text":  "a",
+                                        "x":  795
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  39,
+                                        "width":  65,
+                                        "text":  "full",
+                                        "x":  830
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "refundi",
+                      "words":  [
+                                    {
+                                        "y":  645,
+                                        "height":  72,
+                                        "width":  174,
+                                        "text":  "refundi",
+                                        "x":  102
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ogcogoooco",
+                      "words":  [
+                                    {
+                                        "y":  1707,
+                                        "height":  129,
+                                        "width":  1140,
+                                        "text":  "ogcogoooco",
+                                        "x":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ABC",
+                      "words":  [
+                                    {
+                                        "y":  2235,
+                                        "height":  40,
+                                        "width":  101,
+                                        "text":  "ABC",
+                                        "x":  105
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "Billing Hello, If I decide to refund, is there any maximum duration before I got a full refundi ogcogoooco ABC F Future Pro *Mobbin"
+}

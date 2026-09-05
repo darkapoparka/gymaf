@@ -1,0 +1,357 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  97,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Flag",
+                      "words":  [
+                                    {
+                                        "y":  1149,
+                                        "height":  47,
+                                        "width":  91,
+                                        "text":  "Flag",
+                                        "x":  85
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Dislike",
+                      "words":  [
+                                    {
+                                        "y":  1446,
+                                        "height":  29,
+                                        "width":  111,
+                                        "text":  "Dislike",
+                                        "x":  182
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mix It Up",
+                      "words":  [
+                                    {
+                                        "y":  1574,
+                                        "height":  29,
+                                        "width":  57,
+                                        "text":  "Mix",
+                                        "x":  194
+                                    },
+                                    {
+                                        "y":  1575,
+                                        "height":  28,
+                                        "width":  19,
+                                        "text":  "It",
+                                        "x":  265
+                                    },
+                                    {
+                                        "y":  1575,
+                                        "height":  34,
+                                        "width":  47,
+                                        "text":  "Up",
+                                        "x":  298
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2:30",
+                      "words":  [
+                                    {
+                                        "y":  239,
+                                        "height":  53,
+                                        "width":  148,
+                                        "text":  "2:30",
+                                        "x":  516
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15 MIN LEFT",
+                      "words":  [
+                                    {
+                                        "y":  328,
+                                        "height":  35,
+                                        "width":  53,
+                                        "text":  "15",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  328,
+                                        "height":  34,
+                                        "width":  84,
+                                        "text":  "MIN",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  328,
+                                        "height":  34,
+                                        "width":  109,
+                                        "text":  "LEFT",
+                                        "x":  624
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Chaturanga",
+                      "words":  [
+                                    {
+                                        "y":  1266,
+                                        "height":  52,
+                                        "width":  279,
+                                        "text":  "Chaturanga",
+                                        "x":  450
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Too Hard",
+                      "words":  [
+                                    {
+                                        "y":  1447,
+                                        "height":  28,
+                                        "width":  65,
+                                        "text":  "Too",
+                                        "x":  383
+                                    },
+                                    {
+                                        "y":  1446,
+                                        "height":  29,
+                                        "width":  80,
+                                        "text":  "Hard",
+                                        "x":  462
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Traveling",
+                      "words":  [
+                                    {
+                                        "y":  1574,
+                                        "height":  36,
+                                        "width":  158,
+                                        "text":  "Traveling",
+                                        "x":  447
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Too Easy",
+                      "words":  [
+                                    {
+                                        "y":  1447,
+                                        "height":  28,
+                                        "width":  65,
+                                        "text":  "Too",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  1447,
+                                        "height":  34,
+                                        "width":  78,
+                                        "text":  "Easy",
+                                        "x":  712
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Injured",
+                      "words":  [
+                                    {
+                                        "y":  1446,
+                                        "height":  35,
+                                        "width":  115,
+                                        "text":  "Injured",
+                                        "x":  882
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Uncomfortable",
+                      "words":  [
+                                    {
+                                        "y":  1703,
+                                        "height":  29,
+                                        "width":  257,
+                                        "text":  "Uncomfortable",
+                                        "x":  229
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Equipment Busy",
+                      "words":  [
+                                    {
+                                        "y":  1574,
+                                        "height":  35,
+                                        "width":  182,
+                                        "text":  "Equipment",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  1575,
+                                        "height":  35,
+                                        "width":  82,
+                                        "text":  "Busy",
+                                        "x":  905
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Missing Equipment",
+                      "words":  [
+                                    {
+                                        "y":  1703,
+                                        "height":  35,
+                                        "width":  129,
+                                        "text":  "Missing",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  1703,
+                                        "height":  35,
+                                        "width":  183,
+                                        "text":  "Equipment",
+                                        "x":  769
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Comments for Lee (optional)",
+                      "words":  [
+                                    {
+                                        "y":  1893,
+                                        "height":  28,
+                                        "width":  185,
+                                        "text":  "Comments",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1892,
+                                        "height":  28,
+                                        "width":  48,
+                                        "text":  "for",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  1893,
+                                        "height":  27,
+                                        "width":  58,
+                                        "text":  "Lee",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  1892,
+                                        "height":  35,
+                                        "width":  160,
+                                        "text":  "(optional)",
+                                        "x":  502
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NEXT",
+                      "words":  [
+                                    {
+                                        "y":  2162,
+                                        "height":  27,
+                                        "width":  103,
+                                        "text":  "NEXT",
+                                        "x":  538
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "REMOVE FLAG",
+                      "words":  [
+                                    {
+                                        "y":  2339,
+                                        "height":  28,
+                                        "width":  161,
+                                        "text":  "REMOVE",
+                                        "x":  452
+                                    },
+                                    {
+                                        "y":  2339,
+                                        "height":  28,
+                                        "width":  97,
+                                        "text":  "FLAG",
+                                        "x":  630
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "curated by",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  138,
+                                        "text":  "curated",
+                                        "x":  658
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  36,
+                                        "width":  42,
+                                        "text":  "by",
+                                        "x":  808
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  170,
+                                        "text":  "Mobbin",
+                                        "x":  982
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1180,
+    "height":  2676,
+    "text":  "9:41 Flag Dislike Mix It Up 2:30 15 MIN LEFT Chaturanga Too Hard Traveling Too Easy Injured Uncomfortable Equipment Busy Missing Equipment Comments for Lee (optional) F Future Pro NEXT REMOVE FLAG curated by Mobbin"
+}

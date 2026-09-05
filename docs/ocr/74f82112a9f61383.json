@@ -1,0 +1,462 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  97,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  296,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Overview",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  45,
+                                        "width":  251,
+                                        "text":  "Overview",
+                                        "x":  465
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Workout Intro",
+                      "words":  [
+                                    {
+                                        "y":  583,
+                                        "height":  41,
+                                        "width":  207,
+                                        "text":  "Workout",
+                                        "x":  387
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  40,
+                                        "width":  105,
+                                        "text":  "Intro",
+                                        "x":  609
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Warm-up",
+                      "words":  [
+                                    {
+                                        "y":  851,
+                                        "height":  49,
+                                        "width":  227,
+                                        "text":  "Warm-up",
+                                        "x":  96
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5 min Quick Transitions",
+                      "words":  [
+                                    {
+                                        "y":  929,
+                                        "height":  38,
+                                        "width":  27,
+                                        "text":  "5",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  929,
+                                        "height":  37,
+                                        "width":  78,
+                                        "text":  "min",
+                                        "x":  138
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  48,
+                                        "width":  131,
+                                        "text":  "Quick",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  929,
+                                        "height":  38,
+                                        "width":  239,
+                                        "text":  "Transitions",
+                                        "x":  391
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Quadruped Kick-Back",
+                      "words":  [
+                                    {
+                                        "y":  1108,
+                                        "height":  48,
+                                        "width":  256,
+                                        "text":  "Quadruped",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1108,
+                                        "height":  39,
+                                        "width":  223,
+                                        "text":  "Kick-Back",
+                                        "x":  693
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".•30 • Left Leg",
+                      "words":  [
+                                    {
+                                        "y":  1184,
+                                        "height":  38,
+                                        "width":  69,
+                                        "text":  ".•30",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1205,
+                                        "height":  6,
+                                        "width":  7,
+                                        "text":  "•",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  1183,
+                                        "height":  39,
+                                        "width":  85,
+                                        "text":  "Left",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1184,
+                                        "height":  47,
+                                        "width":  77,
+                                        "text":  "Leg",
+                                        "x":  624
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Quadruped Kick-Back",
+                      "words":  [
+                                    {
+                                        "y":  1420,
+                                        "height":  48,
+                                        "width":  256,
+                                        "text":  "Quadruped",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1420,
+                                        "height":  39,
+                                        "width":  222,
+                                        "text":  "Kick-Back",
+                                        "x":  694
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Right Leg",
+                      "words":  [
+                                    {
+                                        "y":  1517,
+                                        "height":  6,
+                                        "width":  7,
+                                        "text":  "•",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  1496,
+                                        "height":  47,
+                                        "width":  113,
+                                        "text":  "Right",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1496,
+                                        "height":  47,
+                                        "width":  77,
+                                        "text":  "Leg",
+                                        "x":  652
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Quadruped Fire Hydrant",
+                      "words":  [
+                                    {
+                                        "y":  1701,
+                                        "height":  48,
+                                        "width":  255,
+                                        "text":  "Quadruped",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1702,
+                                        "height":  38,
+                                        "width":  78,
+                                        "text":  "Fire",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  1701,
+                                        "height":  48,
+                                        "width":  175,
+                                        "text":  "Hydrant",
+                                        "x":  787
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Circles Backwards",
+                      "words":  [
+                                    {
+                                        "y":  1764,
+                                        "height":  39,
+                                        "width":  150,
+                                        "text":  "Circles",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1764,
+                                        "height":  39,
+                                        "width":  242,
+                                        "text":  "Backwards",
+                                        "x":  586
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".•30 • Left Leg",
+                      "words":  [
+                                    {
+                                        "y":  1840,
+                                        "height":  38,
+                                        "width":  69,
+                                        "text":  ".•30",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1861,
+                                        "height":  6,
+                                        "width":  7,
+                                        "text":  "•",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  1839,
+                                        "height":  39,
+                                        "width":  85,
+                                        "text":  "Left",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1840,
+                                        "height":  47,
+                                        "width":  77,
+                                        "text":  "Leg",
+                                        "x":  624
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Quadruped Fire Hydrant",
+                      "words":  [
+                                    {
+                                        "y":  2012,
+                                        "height":  48,
+                                        "width":  255,
+                                        "text":  "Quadruped",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  2013,
+                                        "height":  38,
+                                        "width":  78,
+                                        "text":  "Fire",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  2012,
+                                        "height":  48,
+                                        "width":  175,
+                                        "text":  "Hydrant",
+                                        "x":  787
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Circles Backwards",
+                      "words":  [
+                                    {
+                                        "y":  2075,
+                                        "height":  39,
+                                        "width":  150,
+                                        "text":  "Circles",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  2075,
+                                        "height":  39,
+                                        "width":  242,
+                                        "text":  "Backwards",
+                                        "x":  586
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Right Leg",
+                      "words":  [
+                                    {
+                                        "y":  2172,
+                                        "height":  6,
+                                        "width":  7,
+                                        "text":  "•",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  2151,
+                                        "height":  47,
+                                        "width":  113,
+                                        "text":  "Right",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  2151,
+                                        "height":  47,
+                                        "width":  76,
+                                        "text":  "Leg",
+                                        "x":  653
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Quadruped Fire Hydrant",
+                      "words":  [
+                                    {
+                                        "y":  2324,
+                                        "height":  48,
+                                        "width":  256,
+                                        "text":  "Quadruped",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  2325,
+                                        "height":  38,
+                                        "width":  78,
+                                        "text":  "Fire",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  2324,
+                                        "height":  48,
+                                        "width":  175,
+                                        "text":  "Hydrant",
+                                        "x":  787
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Circles Forwards",
+                      "words":  [
+                                    {
+                                        "y":  2387,
+                                        "height":  39,
+                                        "width":  150,
+                                        "text":  "Circles",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  2387,
+                                        "height":  39,
+                                        "width":  203,
+                                        "text":  "Forwards",
+                                        "x":  586
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Left Leg",
+                      "words":  [
+                                    {
+                                        "y":  2484,
+                                        "height":  6,
+                                        "width":  7,
+                                        "text":  "•",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  2462,
+                                        "height":  39,
+                                        "width":  85,
+                                        "text":  "Left",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  2463,
+                                        "height":  47,
+                                        "width":  76,
+                                        "text":  "Leg",
+                                        "x":  625
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  887
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1180,
+    "height":  2676,
+    "text":  "9:41 x Overview Workout Intro Warm-up 5 min Quick Transitions Quadruped Kick-Back .•30 • Left Leg Quadruped Kick-Back • Right Leg Quadruped Fire Hydrant Circles Backwards .•30 • Left Leg Quadruped Fire Hydrant Circles Backwards • Right Leg Quadruped Fire Hydrant Circles Forwards • Left Leg F Future Pro *Mobbin"
+}

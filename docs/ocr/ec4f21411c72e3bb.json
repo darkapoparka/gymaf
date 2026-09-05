@@ -1,0 +1,323 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Morning, Alex",
+                      "words":  [
+                                    {
+                                        "y":  210,
+                                        "height":  84,
+                                        "width":  351,
+                                        "text":  "Morning,",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  210,
+                                        "height":  67,
+                                        "width":  176,
+                                        "text":  "Alex",
+                                        "x":  418
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "O Turn on Apple Health",
+                      "words":  [
+                                    {
+                                        "y":  451,
+                                        "height":  65,
+                                        "width":  70,
+                                        "text":  "O",
+                                        "x":  109
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  40,
+                                        "width":  102,
+                                        "text":  "Turn",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  30,
+                                        "width":  58,
+                                        "text":  "on",
+                                        "x":  332
+                                    },
+                                    {
+                                        "y":  448,
+                                        "height":  50,
+                                        "width":  140,
+                                        "text":  "Apple",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  448,
+                                        "height":  41,
+                                        "width":  150,
+                                        "text":  "Health",
+                                        "x":  557
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "permissions to more accurately",
+                      "words":  [
+                                    {
+                                        "y":  515,
+                                        "height":  50,
+                                        "width":  283,
+                                        "text":  "permissions",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  520,
+                                        "height":  36,
+                                        "width":  48,
+                                        "text":  "to",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  30,
+                                        "width":  120,
+                                        "text":  "more",
+                                        "x":  576
+                                    },
+                                    {
+                                        "y":  515,
+                                        "height":  51,
+                                        "width":  245,
+                                        "text":  "accurately",
+                                        "x":  710
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "record your workouts.",
+                      "words":  [
+                                    {
+                                        "y":  581,
+                                        "height":  41,
+                                        "width":  149,
+                                        "text":  "record",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  592,
+                                        "height":  40,
+                                        "width":  105,
+                                        "text":  "your",
+                                        "x":  381
+                                    },
+                                    {
+                                        "y":  581,
+                                        "height":  41,
+                                        "width":  230,
+                                        "text":  "workouts.",
+                                        "x":  495
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Continue",
+                      "words":  [
+                                    {
+                                        "y":  730,
+                                        "height":  41,
+                                        "width":  216,
+                                        "text":  "Continue",
+                                        "x":  290
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Today",
+                      "words":  [
+                                    {
+                                        "y":  983,
+                                        "height":  56,
+                                        "width":  160,
+                                        "text":  "Today",
+                                        "x":  48
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Rest Day",
+                      "words":  [
+                                    {
+                                        "y":  1154,
+                                        "height":  49,
+                                        "width":  129,
+                                        "text":  "Rest",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1147,
+                                        "height":  68,
+                                        "width":  111,
+                                        "text":  "Day",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Find Recovery Sessions",
+                      "words":  [
+                                    {
+                                        "y":  1713,
+                                        "height":  39,
+                                        "width":  92,
+                                        "text":  "Find",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  1714,
+                                        "height":  47,
+                                        "width":  207,
+                                        "text":  "Recovery",
+                                        "x":  206
+                                    },
+                                    {
+                                        "y":  1714,
+                                        "height":  38,
+                                        "width":  196,
+                                        "text":  "Sessions",
+                                        "x":  423
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "More workouts",
+                      "words":  [
+                                    {
+                                        "y":  1898,
+                                        "height":  40,
+                                        "width":  119,
+                                        "text":  "More",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  1897,
+                                        "height":  41,
+                                        "width":  220,
+                                        "text":  "workouts",
+                                        "x":  230
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Home",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  22,
+                                        "width":  84,
+                                        "text":  "Home",
+                                        "x":  143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Progress",
+                      "words":  [
+                                    {
+                                        "y":  2431,
+                                        "height":  28,
+                                        "width":  128,
+                                        "text":  "Progress",
+                                        "x":  314
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Messages",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "Messages",
+                                        "x":  509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Friends",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  106,
+                                        "text":  "Friends",
+                                        "x":  740
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Profile",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "Profile",
+                                        "x":  947
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Morning, Alex O Turn on Apple Health permissions to more accurately record your workouts. Continue Today Rest Day Find Recovery Sessions More workouts Home F Future Pro Progress Messages Friends Profile *Mobbin"
+}

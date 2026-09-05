@@ -1,0 +1,814 @@
+{
+  "004036150c4419a6": {
+    "chromeLight": false
+  },
+  "00da8459facd5b2b": {
+    "chromeLight": true
+  },
+  "0321f6f626e81a5f": {
+    "chromeLight": false
+  },
+  "03c8df3d92da317a": {
+    "chromeLight": true
+  },
+  "04544bc90c7072a5": {
+    "chromeLight": true
+  },
+  "05a17c38ff39fccf": {
+    "chromeLight": true
+  },
+  "0613c59580d3a48f": {
+    "chromeLight": true
+  },
+  "06b4af20ce799415": {
+    "chromeLight": true
+  },
+  "0890079a95f41f87": {
+    "chromeLight": false
+  },
+  "098311074fbc0d30": {
+    "chromeLight": true,
+    "chromeHidden": true
+  },
+  "0a8b40e28e7bd6f2": {
+    "chromeLight": true
+  },
+  "0c9d6d9336ed2060": {
+    "chromeLight": true
+  },
+  "0d4c3dca91994365": {
+    "chromeLight": true
+  },
+  "10cf3bdb6b6600bd": {
+    "chromeLight": true
+  },
+  "11cdf70d01f98f9d": {
+    "chromeLight": true
+  },
+  "133c603f4469b7a4": {
+    "chromeLight": false
+  },
+  "14a78fdd2e2f981c": {
+    "chromeLight": true
+  },
+  "153228f229e7dca2": {
+    "chromeLight": false
+  },
+  "15ddb207c83425d2": {
+    "chromeLight": true
+  },
+  "1769149f55abb90d": {
+    "chromeLight": false
+  },
+  "17f00755a1f2445d": {
+    "chromeLight": false
+  },
+  "184fb1cc4be177d5": {
+    "chromeLight": false
+  },
+  "19cb4b2390d35bd5": {
+    "chromeLight": true
+  },
+  "1ae56351357fac91": {
+    "chromeLight": false
+  },
+  "1b0f0590e3ab0639": {
+    "chromeLight": true
+  },
+  "1c9c16701eb28a46": {
+    "chromeLight": true
+  },
+  "1cb5bd47a8dd1541": {
+    "chromeLight": true
+  },
+  "1d3699ebfaeb1264": {
+    "chromeLight": false
+  },
+  "1ec85d3afee3a8a7": {
+    "chromeLight": false
+  },
+  "1ee01f448b7491b4": {
+    "chromeLight": true
+  },
+  "22d870084ca0661b": {
+    "chromeLight": true
+  },
+  "22f2af83452b8d62": {
+    "chromeLight": false
+  },
+  "230ba48bd84b5618": {
+    "chromeLight": false
+  },
+  "244a2df35948b3dd": {
+    "chromeLight": true
+  },
+  "260da8717befc18a": {
+    "chromeLight": true
+  },
+  "26397d459a360eab": {
+    "chromeLight": false
+  },
+  "2753cde1987791db": {
+    "chromeLight": false
+  },
+  "2cfbd72ec2d13d5b": {
+    "chromeLight": true
+  },
+  "2d63b2d421e8986c": {
+    "chromeLight": true
+  },
+  "2e7750ed1f6dbf8e": {
+    "chromeLight": false
+  },
+  "30911205601a5847": {
+    "chromeLight": false
+  },
+  "3131962d12621d0d": {
+    "chromeLight": false
+  },
+  "3189e98ea2ffdf35": {
+    "chromeLight": true
+  },
+  "32e4b5a461cdee6c": {
+    "chromeLight": true
+  },
+  "32f0fc08b604cc93": {
+    "chromeLight": true
+  },
+  "35d81d4c979a3195": {
+    "chromeLight": true
+  },
+  "3707b8d0f4c3b815": {
+    "chromeLight": false
+  },
+  "372ec72a4ad42b9a": {
+    "chromeLight": false
+  },
+  "3738a7edc0708c90": {
+    "chromeLight": false
+  },
+  "37e236af15c00e2a": {
+    "chromeLight": false
+  },
+  "39e4f69484b293fb": {
+    "chromeLight": false
+  },
+  "3a92d2d5321e1e2b": {
+    "chromeLight": false
+  },
+  "3c3f5b2ae12f0a16": {
+    "chromeLight": true
+  },
+  "3c7bf81d5bbd2adb": {
+    "chromeLight": true
+  },
+  "3d888eebe1dae0aa": {
+    "chromeLight": true
+  },
+  "3f2fbd0e4124e8a1": {
+    "chromeLight": false
+  },
+  "40136879a4cf68ac": {
+    "chromeLight": true
+  },
+  "4050314ce4aaa198": {
+    "chromeLight": true
+  },
+  "40813dd8122258f7": {
+    "chromeLight": false
+  },
+  "4164718dff7491cc": {
+    "chromeLight": false
+  },
+  "427a9bc6ccab8e60": {
+    "chromeLight": false
+  },
+  "429770e07f9f4901": {
+    "chromeLight": true
+  },
+  "42bb4a3de314cb9f": {
+    "chromeLight": true
+  },
+  "4322744f2797844d": {
+    "chromeLight": true
+  },
+  "441dad8115c25dc0": {
+    "chromeLight": true
+  },
+  "446f9affb1afff2a": {
+    "chromeLight": false
+  },
+  "448d55aa6af7c20d": {
+    "chromeLight": true
+  },
+  "452442b79e2166cf": {
+    "chromeLight": true
+  },
+  "45ff34930241ec24": {
+    "chromeLight": true
+  },
+  "46268c727e736b1c": {
+    "chromeLight": true
+  },
+  "464d28d1e615a0cc": {
+    "chromeLight": true
+  },
+  "479f5f6fe605d407": {
+    "chromeLight": false
+  },
+  "4917c735489f6b4c": {
+    "chromeLight": true
+  },
+  "4a19ac431481a9af": {
+    "chromeLight": false
+  },
+  "4aeac57b072491f1": {
+    "chromeLight": false
+  },
+  "4f3ba8d8c82561b3": {
+    "chromeLight": true
+  },
+  "5043e58748db681f": {
+    "chromeLight": true
+  },
+  "50bfcead6704f5ea": {
+    "chromeLight": false
+  },
+  "51c3ec60abd95c16": {
+    "chromeLight": false
+  },
+  "52738508d08de10f": {
+    "chromeLight": true
+  },
+  "532d0f40834de913": {
+    "chromeLight": true
+  },
+  "537d86727616b47e": {
+    "chromeLight": false
+  },
+  "5383ca7fc484ce9c": {
+    "chromeLight": true
+  },
+  "54d2648586600727": {
+    "chromeLight": false
+  },
+  "554f8ad3d30873c4": {
+    "chromeLight": false
+  },
+  "55b876bd2a1cf2ec": {
+    "chromeLight": true
+  },
+  "56296a6a6c95f153": {
+    "chromeLight": true
+  },
+  "587607868798e2bf": {
+    "chromeLight": true
+  },
+  "593d3256755ff5ae": {
+    "chromeLight": true
+  },
+  "5a2d4d735d5445f9": {
+    "chromeLight": true
+  },
+  "5adfb1435467277e": {
+    "chromeLight": false
+  },
+  "5b8853eb6bed9cfa": {
+    "chromeLight": false
+  },
+  "5cd2903b6dc7cc19": {
+    "chromeLight": false
+  },
+  "5f192b1462a126b6": {
+    "chromeLight": true
+  },
+  "60435d9b0d00713c": {
+    "chromeLight": false
+  },
+  "60985223ac9f138b": {
+    "chromeLight": true
+  },
+  "60e50acd6ca18e02": {
+    "chromeLight": true
+  },
+  "60fd610fffc247d1": {
+    "chromeLight": false
+  },
+  "6129f37fdd7feceb": {
+    "chromeLight": false
+  },
+  "61715db212cf2a1b": {
+    "chromeLight": true
+  },
+  "628aa2e63266eb7e": {
+    "chromeLight": true
+  },
+  "654b8d1920644b89": {
+    "chromeLight": true
+  },
+  "6678002287f3602b": {
+    "chromeLight": false
+  },
+  "6699b1f8a7f819b9": {
+    "chromeLight": true
+  },
+  "6786891202a185f3": {
+    "chromeLight": false
+  },
+  "68564002a352ea0b": {
+    "chromeLight": true
+  },
+  "693755a9410f5831": {
+    "chromeLight": true
+  },
+  "69c1552bd207febb": {
+    "chromeLight": false
+  },
+  "6a45a461602f837d": {
+    "chromeLight": false
+  },
+  "6c630c7f068150c8": {
+    "chromeLight": true
+  },
+  "6f7906549b48f376": {
+    "chromeLight": true
+  },
+  "716fd33fa6bc37d2": {
+    "chromeLight": true
+  },
+  "7341749f58fd2736": {
+    "chromeLight": true
+  },
+  "74f82112a9f61383": {
+    "chromeLight": true
+  },
+  "751724d1203270b4": {
+    "chromeLight": false
+  },
+  "7887b9889658f2a9": {
+    "chromeLight": true
+  },
+  "79ebf52716335b59": {
+    "chromeLight": true
+  },
+  "7b01261aafcd5709": {
+    "chromeLight": false
+  },
+  "7cf1aa5f642fc208": {
+    "chromeLight": false
+  },
+  "7d8dea8cbab0f554": {
+    "chromeLight": false
+  },
+  "7e1fbea48e31336c": {
+    "chromeLight": false
+  },
+  "7eb55b06aab6cb7a": {
+    "chromeLight": false
+  },
+  "80ef1b95989ab0a5": {
+    "chromeLight": false
+  },
+  "80efc3cf90fd540c": {
+    "chromeLight": true
+  },
+  "818823fea239b926": {
+    "chromeLight": true
+  },
+  "8276fa5ae243d824": {
+    "chromeLight": true
+  },
+  "832851a4a7925a42": {
+    "chromeLight": true
+  },
+  "83aa026b2c7d5972": {
+    "chromeLight": false
+  },
+  "83b5292282d583e4": {
+    "chromeLight": true
+  },
+  "8442edc56bd7a6a2": {
+    "chromeLight": false
+  },
+  "85169600dcd16f7c": {
+    "chromeLight": false
+  },
+  "854ff6c1480f1c23": {
+    "chromeLight": false
+  },
+  "85e00e517076b820": {
+    "chromeLight": false
+  },
+  "85f0dcd85e5a0095": {
+    "chromeLight": false
+  },
+  "8724ed8b412f949b": {
+    "chromeLight": true
+  },
+  "88bcda17089826ed": {
+    "chromeLight": false
+  },
+  "88f6f0ef24add973": {
+    "chromeLight": true
+  },
+  "8a7901a5c21e862f": {
+    "chromeLight": true
+  },
+  "8ac22ec411e8c405": {
+    "chromeLight": true
+  },
+  "8c16d1cc0eb9ae1f": {
+    "chromeLight": false
+  },
+  "8ce2314bc1422fc8": {
+    "chromeLight": true
+  },
+  "8cfdb06d509ad322": {
+    "chromeLight": false
+  },
+  "8dae96b34ae39b84": {
+    "chromeLight": true
+  },
+  "8df73e3cd33561bb": {
+    "chromeLight": true
+  },
+  "8ecb41867a55dcf8": {
+    "chromeLight": true
+  },
+  "8ee44ade589ce9ac": {
+    "chromeLight": true
+  },
+  "8fb5d0b81c309b95": {
+    "chromeLight": false
+  },
+  "91d24d7a940e3818": {
+    "chromeLight": false
+  },
+  "92d268dd401589ea": {
+    "chromeLight": false
+  },
+  "92f7fea0a4f23770": {
+    "chromeLight": true
+  },
+  "93b3d967c9f773aa": {
+    "chromeLight": true
+  },
+  "93e000d6f001413c": {
+    "chromeLight": true
+  },
+  "944167db1d6d1f4b": {
+    "chromeLight": false
+  },
+  "9446df791c2cf84b": {
+    "chromeLight": false
+  },
+  "948a38b6eea32d7a": {
+    "chromeLight": true
+  },
+  "9492113d9710273c": {
+    "chromeLight": true
+  },
+  "96860a7f9c42a793": {
+    "chromeLight": false
+  },
+  "96bc22de5bed7abf": {
+    "chromeLight": true
+  },
+  "9788a9177d20367f": {
+    "chromeLight": false
+  },
+  "9900515c67c3bc0b": {
+    "chromeLight": true
+  },
+  "991137aacee976a6": {
+    "chromeLight": false
+  },
+  "9b057830c0013b72": {
+    "chromeLight": true
+  },
+  "9b10c8dd53f773c4": {
+    "chromeLight": true
+  },
+  "9b99aa1d95da47a0": {
+    "chromeLight": true
+  },
+  "9bbfbb4408c5aa98": {
+    "chromeLight": true
+  },
+  "9dea7f21275910f2": {
+    "chromeLight": true
+  },
+  "9f32c528eb3122b5": {
+    "chromeLight": true
+  },
+  "9f49c1dd63bf829c": {
+    "chromeLight": false
+  },
+  "a024a61347fa078a": {
+    "chromeLight": false
+  },
+  "a0b73ff31607572f": {
+    "chromeLight": false
+  },
+  "a2083ac02bd170a7": {
+    "chromeLight": true
+  },
+  "a28e9eedc0c7a471": {
+    "chromeLight": false
+  },
+  "a2b8db895a5f8c16": {
+    "chromeLight": true
+  },
+  "a65a68b05a4f7bcf": {
+    "chromeLight": true
+  },
+  "a671de3ec25ed4d5": {
+    "chromeLight": false
+  },
+  "a67702fc83ea3d05": {
+    "chromeLight": false
+  },
+  "a87f5f2814c17f7c": {
+    "chromeLight": true
+  },
+  "a8fa9ad2ffa8ecd9": {
+    "chromeLight": true
+  },
+  "ae6f6828a96ef127": {
+    "chromeLight": false
+  },
+  "aea6304de981a862": {
+    "chromeLight": false
+  },
+  "aefc9d4218b2f742": {
+    "chromeLight": false
+  },
+  "afcdea870a2ac43c": {
+    "chromeLight": true
+  },
+  "afec13d5e56b48eb": {
+    "chromeLight": false
+  },
+  "b2399bb53dcc7673": {
+    "chromeLight": false
+  },
+  "b25431078c7923a8": {
+    "chromeLight": true
+  },
+  "b2cf720138e8e91c": {
+    "chromeLight": false
+  },
+  "b3530a2506f3acbe": {
+    "chromeLight": true
+  },
+  "b399d75f2cab7473": {
+    "chromeLight": true
+  },
+  "b406dae55f8f7185": {
+    "chromeLight": true
+  },
+  "b50f7a7db1dd2106": {
+    "chromeLight": true
+  },
+  "b59ba0346a993f3b": {
+    "chromeLight": false
+  },
+  "b63080eaf97404fc": {
+    "chromeLight": true
+  },
+  "b635bfe86f9c0e40": {
+    "chromeLight": false
+  },
+  "b6ed07cc9879d9a2": {
+    "chromeLight": true
+  },
+  "b9ebd53fefdbd7b8": {
+    "chromeLight": false
+  },
+  "b9f1086598b7e89b": {
+    "chromeLight": false
+  },
+  "bca9653d973f5702": {
+    "chromeLight": true
+  },
+  "bef09692612c79a9": {
+    "chromeLight": true
+  },
+  "bfbabe222728e739": {
+    "chromeLight": true
+  },
+  "bfea6e37fa7d9b94": {
+    "chromeLight": true
+  },
+  "bff6c138c772d2c2": {
+    "chromeLight": true
+  },
+  "c143403931126a67": {
+    "chromeLight": true
+  },
+  "c1aafce51bd4fb31": {
+    "chromeLight": false
+  },
+  "c2a9ab379931c3f0": {
+    "chromeLight": false
+  },
+  "c3aecc2fdeda0fef": {
+    "chromeLight": false
+  },
+  "c3fd263f671179fa": {
+    "chromeLight": false
+  },
+  "c60d76b4556ccf29": {
+    "chromeLight": true
+  },
+  "c69fee952cd49b41": {
+    "chromeLight": true
+  },
+  "c74f945c3522715d": {
+    "chromeLight": false
+  },
+  "c8af58d62a9ed8f7": {
+    "chromeLight": true
+  },
+  "cac5c501bc6a10ec": {
+    "chromeLight": false
+  },
+  "cb9726be9e6f072a": {
+    "chromeLight": true
+  },
+  "cc20067000d4f87f": {
+    "chromeLight": false
+  },
+  "cc47b92925d101cb": {
+    "chromeLight": false
+  },
+  "cc6fb2233bc3f31c": {
+    "chromeLight": true
+  },
+  "cc7503a7402e36c1": {
+    "chromeLight": false
+  },
+  "cc91972a8b91c317": {
+    "chromeLight": false
+  },
+  "cdd7b72066569858": {
+    "chromeLight": false
+  },
+  "ce5d958da4fdbea8": {
+    "chromeLight": false
+  },
+  "cee9a987b896f939": {
+    "chromeLight": true
+  },
+  "cf555b20934717e7": {
+    "chromeLight": false
+  },
+  "d0bffd680203472f": {
+    "chromeLight": false
+  },
+  "d37166677b0b6079": {
+    "chromeLight": true
+  },
+  "d4a7f160bad9d7dc": {
+    "chromeLight": true
+  },
+  "d564535745b2388a": {
+    "chromeLight": true
+  },
+  "d6b2986c85d07e16": {
+    "chromeLight": false
+  },
+  "d761b09d83d4e850": {
+    "chromeLight": true
+  },
+  "d7e03432f62fa9cf": {
+    "chromeLight": false
+  },
+  "d82e5dc3852242e7": {
+    "chromeLight": true
+  },
+  "d85dbaa361627940": {
+    "chromeLight": false
+  },
+  "d896283a02dd3322": {
+    "chromeLight": false
+  },
+  "d89797aec72d9761": {
+    "chromeLight": true
+  },
+  "d9903c7d95a8ba76": {
+    "chromeLight": true
+  },
+  "da024204f479856f": {
+    "chromeLight": false
+  },
+  "dac1a3cf0fffb20a": {
+    "chromeLight": true,
+    "chromeHidden": true
+  },
+  "db68d717b839be9c": {
+    "chromeLight": true
+  },
+  "dc867f791845be87": {
+    "chromeLight": true
+  },
+  "de585df2b0816233": {
+    "chromeLight": false
+  },
+  "de6aa2a677652a59": {
+    "chromeLight": true
+  },
+  "df023ddc34d3cc11": {
+    "chromeLight": false
+  },
+  "dfbcc5d54315239b": {
+    "chromeLight": false
+  },
+  "e189ade08bb8e1eb": {
+    "chromeLight": true
+  },
+  "e4e3e100cf32c510": {
+    "chromeLight": false
+  },
+  "e690c12004fa0b11": {
+    "chromeLight": true
+  },
+  "e7f7a57998262595": {
+    "chromeLight": true
+  },
+  "e926bc36ba650bd8": {
+    "chromeLight": true
+  },
+  "e95ed2394c15c550": {
+    "chromeLight": false
+  },
+  "e9cf6691b1825416": {
+    "chromeLight": true
+  },
+  "e9f1d9e135143206": {
+    "chromeLight": false
+  },
+  "e9ff9ded70b5f433": {
+    "chromeLight": false
+  },
+  "ec4f21411c72e3bb": {
+    "chromeLight": false
+  },
+  "ec59526f80f48f32": {
+    "chromeLight": true
+  },
+  "ef9c7875de7a5182": {
+    "chromeLight": false
+  },
+  "effd0d3e27cbba21": {
+    "chromeLight": true
+  },
+  "f0f3ca0dcba09a07": {
+    "chromeLight": true
+  },
+  "f0f400f1407a9492": {
+    "chromeLight": false
+  },
+  "f47162e51bcdadad": {
+    "chromeLight": false
+  },
+  "f4dd4750b643f25c": {
+    "chromeLight": true
+  },
+  "f845af9cab2c56dc": {
+    "chromeLight": false
+  },
+  "f87ce41371285c19": {
+    "chromeLight": false
+  },
+  "f8dc49d0fe545540": {
+    "chromeLight": false
+  },
+  "f9ddae79f8fdb799": {
+    "chromeLight": false
+  },
+  "f9f9cbadb23780d7": {
+    "chromeLight": false
+  },
+  "fa153f6aef1d5fba": {
+    "chromeLight": false
+  },
+  "fa33f93ee04cad49": {
+    "chromeLight": true
+  },
+  "fb935a0aeee796e9": {
+    "chromeLight": false
+  },
+  "fcdbbf34054452b1": {
+    "chromeLight": true
+  },
+  "fecb6b6f3db7308b": {
+    "chromeLight": true
+  },
+  "ff2cd4ca6797cee1": {
+    "chromeLight": false
+  },
+  "ffc4e49a11c1acaf": {
+    "chromeLight": true
+  }
+}

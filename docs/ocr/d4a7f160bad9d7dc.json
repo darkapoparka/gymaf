@@ -1,0 +1,340 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  97,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  218,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "future Pro",
+                      "words":  [
+                                    {
+                                        "y":  198,
+                                        "height":  88,
+                                        "width":  307,
+                                        "text":  "future",
+                                        "x":  349
+                                    },
+                                    {
+                                        "y":  198,
+                                        "height":  89,
+                                        "width":  155,
+                                        "text":  "Pro",
+                                        "x":  674
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Select your coach now",
+                      "words":  [
+                                    {
+                                        "y":  784,
+                                        "height":  67,
+                                        "width":  245,
+                                        "text":  "Select",
+                                        "x":  145
+                                    },
+                                    {
+                                        "y":  802,
+                                        "height":  66,
+                                        "width":  180,
+                                        "text":  "your",
+                                        "x":  407
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  67,
+                                        "width":  241,
+                                        "text":  "coach",
+                                        "x":  605
+                                    },
+                                    {
+                                        "y":  802,
+                                        "height":  49,
+                                        "width":  170,
+                                        "text":  "now",
+                                        "x":  869
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to begin your Future",
+                      "words":  [
+                                    {
+                                        "y":  903,
+                                        "height":  59,
+                                        "width":  78,
+                                        "text":  "to",
+                                        "x":  192
+                                    },
+                                    {
+                                        "y":  895,
+                                        "height":  84,
+                                        "width":  219,
+                                        "text":  "begin",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  913,
+                                        "height":  66,
+                                        "width":  180,
+                                        "text":  "your",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  896,
+                                        "height":  66,
+                                        "width":  254,
+                                        "text":  "Future",
+                                        "x":  730
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "fitness journey.",
+                      "words":  [
+                                    {
+                                        "y":  1004,
+                                        "height":  68,
+                                        "width":  267,
+                                        "text":  "fitness",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  1005,
+                                        "height":  84,
+                                        "width":  312,
+                                        "text":  "journey.",
+                                        "x":  575
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Find Your Coach",
+                      "words":  [
+                                    {
+                                        "y":  1258,
+                                        "height":  41,
+                                        "width":  98,
+                                        "text":  "Find",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  1259,
+                                        "height":  40,
+                                        "width":  106,
+                                        "text":  "Your",
+                                        "x":  509
+                                    },
+                                    {
+                                        "y":  1258,
+                                        "height":  41,
+                                        "width":  154,
+                                        "text":  "Coach",
+                                        "x":  626
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Try another phone number or email",
+                      "words":  [
+                                    {
+                                        "y":  1444,
+                                        "height":  42,
+                                        "width":  57,
+                                        "text":  "Try",
+                                        "x":  224
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  33,
+                                        "width":  153,
+                                        "text":  "another",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  41,
+                                        "width":  124,
+                                        "text":  "phone",
+                                        "x":  457
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  33,
+                                        "width":  154,
+                                        "text":  "number",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1453,
+                                        "height":  24,
+                                        "width":  40,
+                                        "text":  "or",
+                                        "x":  758
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  33,
+                                        "width":  104,
+                                        "text":  "email",
+                                        "x":  807
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "By continuing you agree to Future\u0027s Terms \u0026 Conditions",
+                      "words":  [
+                                    {
+                                        "y":  2329,
+                                        "height":  33,
+                                        "width":  39,
+                                        "text":  "By",
+                                        "x":  120
+                                    },
+                                    {
+                                        "y":  2328,
+                                        "height":  34,
+                                        "width":  174,
+                                        "text":  "continuing",
+                                        "x":  172
+                                    },
+                                    {
+                                        "y":  2336,
+                                        "height":  26,
+                                        "width":  58,
+                                        "text":  "you",
+                                        "x":  359
+                                    },
+                                    {
+                                        "y":  2336,
+                                        "height":  26,
+                                        "width":  94,
+                                        "text":  "agree",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  2331,
+                                        "height":  25,
+                                        "width":  32,
+                                        "text":  "to",
+                                        "x":  537
+                                    },
+                                    {
+                                        "y":  2329,
+                                        "height":  27,
+                                        "width":  135,
+                                        "text":  "Future\u0027s",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  2329,
+                                        "height":  26,
+                                        "width":  102,
+                                        "text":  "Terms",
+                                        "x":  730
+                                    },
+                                    {
+                                        "y":  2329,
+                                        "height":  27,
+                                        "width":  24,
+                                        "text":  "\u0026",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  2328,
+                                        "height":  28,
+                                        "width":  179,
+                                        "text":  "Conditions",
+                                        "x":  881
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F FUtUre Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUtUre",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and Privacy Policy_",
+                      "words":  [
+                                    {
+                                        "y":  2371,
+                                        "height":  28,
+                                        "width":  58,
+                                        "text":  "and",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  2371,
+                                        "height":  34,
+                                        "width":  120,
+                                        "text":  "Privacy",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  2371,
+                                        "height":  34,
+                                        "width":  101,
+                                        "text":  "Policy_",
+                                        "x":  645
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  887
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1180,
+    "height":  2676,
+    "text":  "9:41 x future Pro Select your coach now to begin your Future fitness journey. Find Your Coach Try another phone number or email By continuing you agree to Future\u0027s Terms \u0026 Conditions F FUtUre Pro and Privacy Policy_ *Mobbin"
+}

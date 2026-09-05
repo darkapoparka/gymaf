@@ -1,0 +1,4923 @@
+{
+  "8ecb41867a55dcf8": {
+    "id": "8ecb41867a55dcf8",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "5043e58748db681f": {
+    "id": "5043e58748db681f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "phone",
+        "selector": "input[aria-label=\"Phone Number\"]",
+        "dark": true
+      }
+    }
+  },
+  "5a2d4d735d5445f9": {
+    "id": "5a2d4d735d5445f9",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "email",
+        "selector": "input[aria-label=\"Email\"]",
+        "dark": true
+      }
+    }
+  },
+  "60e50acd6ca18e02": {
+    "id": "60e50acd6ca18e02",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "onboarding.contact": "alexsmith.mobbin+1@gmail.com",
+      "keyboard": {
+        "type": "email",
+        "selector": "input[aria-label=\"Email\"]",
+        "dark": true
+      }
+    }
+  },
+  "e189ade08bb8e1eb": {
+    "id": "e189ade08bb8e1eb",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "onboarding.contact": "alexsmith.mobbin+1@gmail.com"
+    }
+  },
+  "d4a7f160bad9d7dc": {
+    "id": "d4a7f160bad9d7dc",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "fecb6b6f3db7308b": {
+    "id": "fecb6b6f3db7308b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "00da8459facd5b2b": {
+    "id": "00da8459facd5b2b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "04544bc90c7072a5": {
+    "id": "04544bc90c7072a5",
+    "data": {
+      "preferences": {
+        "coachQualities": "[\"Always positive\",\"Has a sense of humor\"]"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "40136879a4cf68ac": {
+    "id": "40136879a4cf68ac",
+    "data": {
+      "preferences": {
+        "coachIntensity": "2"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "e926bc36ba650bd8": {
+    "id": "e926bc36ba650bd8",
+    "data": {
+      "preferences": {
+        "coachIntensity": "1"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "f0f3ca0dcba09a07": {
+    "id": "f0f3ca0dcba09a07",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "8dae96b34ae39b84": {
+    "id": "8dae96b34ae39b84",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "818823fea239b926": {
+    "id": "818823fea239b926",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "93b3d967c9f773aa": {
+    "id": "93b3d967c9f773aa",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "4050314ce4aaa198": {
+    "id": "4050314ce4aaa198",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "scrollY": 470
+    }
+  },
+  "8ee44ade589ce9ac": {
+    "id": "8ee44ade589ce9ac",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "scrollY": 820
+    }
+  },
+  "c143403931126a67": {
+    "id": "c143403931126a67",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "onboarding.coachPage": 3
+    }
+  },
+  "cb9726be9e6f072a": {
+    "id": "cb9726be9e6f072a",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "9bbfbb4408c5aa98": {
+    "id": "9bbfbb4408c5aa98",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "onboarding.sheet": "Expertise"
+    }
+  },
+  "1ee01f448b7491b4": {
+    "id": "1ee01f448b7491b4",
+    "data": {
+      "preferences": {
+        "coachExpertise": "[\"Weight Loss\"]"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "onboarding.sheet": "Expertise"
+    }
+  },
+  "32e4b5a461cdee6c": {
+    "id": "32e4b5a461cdee6c",
+    "data": {
+      "preferences": {
+        "coachExpertise": "[\"Weight Loss\"]"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "ffc4e49a11c1acaf": {
+    "id": "ffc4e49a11c1acaf",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "onboarding.sheet": "Expertise",
+      "onboarding.sort": "A–Z"
+    }
+  },
+  "10cf3bdb6b6600bd": {
+    "id": "10cf3bdb6b6600bd",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "1c9c16701eb28a46": {
+    "id": "1c9c16701eb28a46",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "b59ba0346a993f3b": {
+    "id": "b59ba0346a993f3b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "6786891202a185f3": {
+    "id": "6786891202a185f3",
+    "data": {
+      "preferences": {
+        "appointmentDay": "Mon 29",
+        "appointmentTime": ""
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "153228f229e7dca2": {
+    "id": "153228f229e7dca2",
+    "data": {
+      "preferences": {
+        "appointmentDay": "Thu 2",
+        "appointmentTime": "12:00 AM"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "booking.times": [
+        "12:00 AM",
+        "12:15 AM",
+        "12:30 AM",
+        "12:45 AM",
+        "1:00 AM",
+        "1:15 AM",
+        "1:30 AM",
+        "1:45 AM"
+      ]
+    }
+  },
+  "7cf1aa5f642fc208": {
+    "id": "7cf1aa5f642fc208",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "3131962d12621d0d": {
+    "id": "3131962d12621d0d",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "3738a7edc0708c90": {
+    "id": "3738a7edc0708c90",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "88bcda17089826ed": {
+    "id": "88bcda17089826ed",
+    "data": {
+      "preferences": {
+        "activities": "[\"CrossFit\",\"Strength Training\",\"Personal Training\",\"HIIT\",\"Swimming\"]"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "fa153f6aef1d5fba": {
+    "id": "fa153f6aef1d5fba",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "51c3ec60abd95c16": {
+    "id": "51c3ec60abd95c16",
+    "data": {
+      "preferences": {
+        "workoutDuration": "60"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "6678002287f3602b": {
+    "id": "6678002287f3602b",
+    "data": {
+      "preferences": {
+        "hasInjury": "Yes"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "554f8ad3d30873c4": {
+    "id": "554f8ad3d30873c4",
+    "data": {
+      "preferences": {
+        "hasInjury": "No"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "6129f37fdd7feceb": {
+    "id": "6129f37fdd7feceb",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "de585df2b0816233": {
+    "id": "de585df2b0816233",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "92d268dd401589ea": {
+    "id": "92d268dd401589ea",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "537d86727616b47e": {
+    "id": "537d86727616b47e",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "b2cf720138e8e91c": {
+    "id": "b2cf720138e8e91c",
+    "data": {
+      "preferences": {
+        "appointmentBooked": "true",
+        "appointmentDay": "Thu 2",
+        "appointmentTime": "12:00 AM"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "83b5292282d583e4": {
+    "id": "83b5292282d583e4",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "text",
+        "selector": "input[placeholder=\"Search or Add Activity\"]"
+      }
+    }
+  },
+  "42bb4a3de314cb9f": {
+    "id": "42bb4a3de314cb9f",
+    "data": {
+      "preferences": {
+        "activities": "[\"Swimming\"]"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "onboarding.query": "Swimming"
+    }
+  },
+  "f9f9cbadb23780d7": {
+    "id": "f9f9cbadb23780d7",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "onboarding.sheet": "Add Gym",
+      "keyboard": {
+        "type": "text",
+        "selector": "input[name=\"locationName\"]"
+      }
+    }
+  },
+  "133c603f4469b7a4": {
+    "id": "133c603f4469b7a4",
+    "data": {
+      "preferences": {
+        "gymName": "Equinox",
+        "gymType": "Commercial Gym",
+        "locationName": "Equinox",
+        "locationType": "Commercial Gym"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "onboarding.sheet": "Add Gym",
+      "keyboard": {
+        "type": "text",
+        "selector": "input[name=\"locationName\"]"
+      }
+    }
+  },
+  "2753cde1987791db": {
+    "id": "2753cde1987791db",
+    "data": {
+      "preferences": {
+        "gymName": "Equinox",
+        "gymType": "Commercial Gym",
+        "locationName": "Equinox",
+        "locationType": "Commercial Gym"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "onboarding.sheet": "Add Gym"
+    }
+  },
+  "ec4f21411c72e3bb": {
+    "id": "ec4f21411c72e3bb",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "b635bfe86f9c0e40": {
+    "id": "b635bfe86f9c0e40",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "f9ddae79f8fdb799": {
+    "id": "f9ddae79f8fdb799",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "unreadMessages": 1
+    }
+  },
+  "d6b2986c85d07e16": {
+    "id": "d6b2986c85d07e16",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "5adfb1435467277e": {
+    "id": "5adfb1435467277e",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "d85dbaa361627940": {
+    "id": "d85dbaa361627940",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "4322744f2797844d": {
+    "id": "4322744f2797844d",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "0890079a95f41f87": {
+    "id": "0890079a95f41f87",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "39e4f69484b293fb": {
+    "id": "39e4f69484b293fb",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "ff2cd4ca6797cee1": {
+    "id": "ff2cd4ca6797cee1",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "446f9affb1afff2a": {
+    "id": "446f9affb1afff2a",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "1b0f0590e3ab0639": {
+    "id": "1b0f0590e3ab0639",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "8276fa5ae243d824": {
+    "id": "8276fa5ae243d824",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "b399d75f2cab7473": {
+    "id": "b399d75f2cab7473",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.expanded": false
+    }
+  },
+  "db68d717b839be9c": {
+    "id": "db68d717b839be9c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.step": 4,
+      "session.elapsed": 141
+    }
+  },
+  "df023ddc34d3cc11": {
+    "id": "df023ddc34d3cc11",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "c3aecc2fdeda0fef": {
+    "id": "c3aecc2fdeda0fef",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "summary.template": 1
+    }
+  },
+  "7eb55b06aab6cb7a": {
+    "id": "7eb55b06aab6cb7a",
+    "data": {
+      "preferences": {
+        "flag:morning-yoga": "{\"exercise\":\"Modified Plyo Push-Up\",\"reasons\":[\"Uncomfortable\"],\"comment\":\"Feels cramp on my calf\"}"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "4aeac57b072491f1": {
+    "id": "4aeac57b072491f1",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "cc7503a7402e36c1": {
+    "id": "cc7503a7402e36c1",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "scrollY": 420
+    }
+  },
+  "f47162e51bcdadad": {
+    "id": "f47162e51bcdadad",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "d564535745b2388a": {
+    "id": "d564535745b2388a",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "8ce2314bc1422fc8": {
+    "id": "8ce2314bc1422fc8",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "1cb5bd47a8dd1541": {
+    "id": "1cb5bd47a8dd1541",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "scrollY": 565
+    }
+  },
+  "a65a68b05a4f7bcf": {
+    "id": "a65a68b05a4f7bcf",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "e9cf6691b1825416": {
+    "id": "e9cf6691b1825416",
+    "data": {
+      "preferences": {
+        "exerciseInstructions": "Never"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "260da8717befc18a": {
+    "id": "260da8717befc18a",
+    "data": {
+      "preferences": {
+        "exerciseInstructions": "Never"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "3c7bf81d5bbd2adb": {
+    "id": "3c7bf81d5bbd2adb",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "448d55aa6af7c20d": {
+    "id": "448d55aa6af7c20d",
+    "data": {
+      "preferences": {
+        "workoutTone": "Beep"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "60985223ac9f138b": {
+    "id": "60985223ac9f138b",
+    "data": {
+      "preferences": {
+        "workoutTone": "Beep"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "d89797aec72d9761": {
+    "id": "d89797aec72d9761",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "b50f7a7db1dd2106": {
+    "id": "b50f7a7db1dd2106",
+    "data": {
+      "preferences": {
+        "heartRateMax": "190"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "number",
+        "selector": "input[name=\"heartRateMax\"]",
+        "done": true
+      }
+    }
+  },
+  "46268c727e736b1c": {
+    "id": "46268c727e736b1c",
+    "data": {
+      "preferences": {
+        "heartRateMax": "190"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "832851a4a7925a42": {
+    "id": "832851a4a7925a42",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "effd0d3e27cbba21": {
+    "id": "effd0d3e27cbba21",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [
+        "morning-yoga"
+      ],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "74f82112a9f61383": {
+    "id": "74f82112a9f61383",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "8df73e3cd33561bb": {
+    "id": "8df73e3cd33561bb",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.replaced": true,
+      "session.step": 4,
+      "session.elapsed": 186,
+      "session.reps": "15",
+      "keyboard": {
+        "type": "number",
+        "selector": "dialog input[type=\"number\"]"
+      }
+    }
+  },
+  "441dad8115c25dc0": {
+    "id": "441dad8115c25dc0",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.replaced": true,
+      "session.step": 4,
+      "session.elapsed": 186,
+      "session.reps": "15",
+      "keyboard": {
+        "type": "number",
+        "selector": "dialog input[type=\"number\"]"
+      }
+    }
+  },
+  "79ebf52716335b59": {
+    "id": "79ebf52716335b59",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.replaced": true,
+      "session.step": 4,
+      "session.elapsed": 186,
+      "session.reps": "15"
+    }
+  },
+  "03c8df3d92da317a": {
+    "id": "03c8df3d92da317a",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "record.state": "ready"
+    }
+  },
+  "452442b79e2166cf": {
+    "id": "452442b79e2166cf",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "record.state": "recording",
+      "record.seconds": 4
+    }
+  },
+  "628aa2e63266eb7e": {
+    "id": "628aa2e63266eb7e",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "record.state": "preview"
+    }
+  },
+  "7887b9889658f2a9": {
+    "id": "7887b9889658f2a9",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "record.state": "send"
+    }
+  },
+  "b3530a2506f3acbe": {
+    "id": "b3530a2506f3acbe",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "05a17c38ff39fccf": {
+    "id": "05a17c38ff39fccf",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.reasons": [
+        "Uncomfortable"
+      ]
+    }
+  },
+  "d9903c7d95a8ba76": {
+    "id": "d9903c7d95a8ba76",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.reasons": [
+        "Uncomfortable"
+      ],
+      "session.comment": "Feels cramp on my calf"
+    }
+  },
+  "d37166677b0b6079": {
+    "id": "d37166677b0b6079",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.replaced": true
+    }
+  },
+  "bef09692612c79a9": {
+    "id": "bef09692612c79a9",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.replaced": true,
+      "session.sheet": null
+    }
+  },
+  "9492113d9710273c": {
+    "id": "9492113d9710273c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "session.historyRange": "30 Days"
+    }
+  },
+  "56296a6a6c95f153": {
+    "id": "56296a6a6c95f153",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "a2083ac02bd170a7": {
+    "id": "a2083ac02bd170a7",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "b2399bb53dcc7673": {
+    "id": "b2399bb53dcc7673",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "1769149f55abb90d": {
+    "id": "1769149f55abb90d",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "summary.notice": "Strong Start Challenge — You've knocked out 1 of 12 workouts!"
+    }
+  },
+  "ef9c7875de7a5182": {
+    "id": "ef9c7875de7a5182",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "85e00e517076b820": {
+    "id": "85e00e517076b820",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "summary.notice": "Link Copied"
+    }
+  },
+  "3a92d2d5321e1e2b": {
+    "id": "3a92d2d5321e1e2b",
+    "data": {
+      "preferences": {
+        "flag:morning-yoga": "{\"exercise\":\"Modified Plyo Push-Up\",\"reasons\":[\"Uncomfortable\"],\"comment\":\"Feels cramp on my calf\"}"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "summary.tough": "1"
+    }
+  },
+  "30911205601a5847": {
+    "id": "30911205601a5847",
+    "data": {
+      "preferences": {
+        "flag:morning-yoga": "{\"exercise\":\"Modified Plyo Push-Up\",\"reasons\":[\"Uncomfortable\"],\"comment\":\"Feels cramp on my calf\"}"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {
+        "morning-yoga": {
+          "rating": 4,
+          "text": "I'm trying yoga bcs I wanna know how it feels. Never done it before. I think my form is not quite right, bcs my flexibility is not that good"
+        }
+      }
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "c74f945c3522715d": {
+    "id": "c74f945c3522715d",
+    "data": {
+      "preferences": {
+        "flag:morning-yoga": "{\"exercise\":\"Modified Plyo Push-Up\",\"reasons\":[\"Uncomfortable\"],\"comment\":\"Feels cramp on my calf\"}"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {
+        "morning-yoga": {
+          "rating": 4,
+          "text": "I'm trying yoga bcs I wanna know how it feels. Never done it before. I think my form is not quite right, bcs my flexibility is not that good"
+        }
+      }
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "4164718dff7491cc": {
+    "id": "4164718dff7491cc",
+    "data": {
+      "preferences": {
+        "flag:morning-yoga": "{\"exercise\":\"Modified Plyo Push-Up\",\"reasons\":[\"Uncomfortable\"],\"comment\":\"Feels cramp on my calf\"}"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {
+        "morning-yoga": {
+          "rating": 4,
+          "text": "I'm trying yoga bcs I wanna know how it feels. Never done it before. I think my form is not quite right, bcs my flexibility is not that good"
+        }
+      }
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "6a45a461602f837d": {
+    "id": "6a45a461602f837d",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "summary.editFlag": true
+    }
+  },
+  "17f00755a1f2445d": {
+    "id": "17f00755a1f2445d",
+    "data": {
+      "preferences": {
+        "flag:morning-yoga": "{\"exercise\":\"Modified Plyo Push-Up\",\"reasons\":[\"Uncomfortable\"],\"comment\":\"Feels cramp on my calf\"}"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {
+        "morning-yoga": {
+          "rating": 4,
+          "text": "I'm trying yoga bcs I wanna know how it feels. Never done it before. I think my form is not quite right, bcs my flexibility is not that good"
+        }
+      }
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "96bc22de5bed7abf": {
+    "id": "96bc22de5bed7abf",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "f87ce41371285c19": {
+    "id": "f87ce41371285c19",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "2e7750ed1f6dbf8e": {
+    "id": "2e7750ed1f6dbf8e",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "afcdea870a2ac43c": {
+    "id": "afcdea870a2ac43c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "afec13d5e56b48eb": {
+    "id": "afec13d5e56b48eb",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "60fd610fffc247d1": {
+    "id": "60fd610fffc247d1",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "85f0dcd85e5a0095": {
+    "id": "85f0dcd85e5a0095",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "854ff6c1480f1c23": {
+    "id": "854ff6c1480f1c23",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "workouts.tab": "Just Work Out",
+      "workouts.search": ""
+    }
+  },
+  "751724d1203270b4": {
+    "id": "751724d1203270b4",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "a28e9eedc0c7a471": {
+    "id": "a28e9eedc0c7a471",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "workouts.filter": "Duration"
+    }
+  },
+  "9f49c1dd63bf829c": {
+    "id": "9f49c1dd63bf829c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "workouts.duration": "Quick"
+    }
+  },
+  "22f2af83452b8d62": {
+    "id": "22f2af83452b8d62",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "workouts.duration": "Quick",
+      "workouts.equipment": "No Equipment"
+    }
+  },
+  "7e1fbea48e31336c": {
+    "id": "7e1fbea48e31336c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "workouts.tab": "Just Work Out",
+      "workouts.search": "",
+      "workouts.searchOpen": true
+    }
+  },
+  "427a9bc6ccab8e60": {
+    "id": "427a9bc6ccab8e60",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "workouts.tab": "Just Work Out",
+      "workouts.search": "Hike",
+      "workouts.searchOpen": true
+    }
+  },
+  "f845af9cab2c56dc": {
+    "id": "f845af9cab2c56dc",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "aea6304de981a862": {
+    "id": "aea6304de981a862",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "schedule": {
+        "Tuesday": "morning-yoga",
+        "Wednesday": "running"
+      }
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "532d0f40834de913": {
+    "id": "532d0f40834de913",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "schedule": {
+        "Tuesday": "morning-yoga",
+        "Wednesday": "running"
+      }
+    },
+    "ui": {
+      "chromeLight": true,
+      "schedule.sheet": "Reason for schedule change",
+      "keyboard": {
+        "type": "text",
+        "selector": "dialog textarea"
+      }
+    }
+  },
+  "948a38b6eea32d7a": {
+    "id": "948a38b6eea32d7a",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "schedule": {
+        "Tuesday": "morning-yoga",
+        "Wednesday": "running"
+      }
+    },
+    "ui": {
+      "chromeLight": true,
+      "schedule.sheet": "Reason for schedule change",
+      "schedule.reason": "I'm planning to run later",
+      "keyboard": {
+        "type": "text",
+        "selector": "dialog textarea"
+      }
+    }
+  },
+  "944167db1d6d1f4b": {
+    "id": "944167db1d6d1f4b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "schedule": {
+        "Tuesday": "morning-yoga",
+        "Wednesday": "running"
+      }
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "479f5f6fe605d407": {
+    "id": "479f5f6fe605d407",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "schedule.sheet": "Just Work Out"
+    }
+  },
+  "50bfcead6704f5ea": {
+    "id": "50bfcead6704f5ea",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "schedule.sheet": "Just Work Out",
+      "schedule.selection": "running",
+      "schedule.duration": "45"
+    }
+  },
+  "8cfdb06d509ad322": {
+    "id": "8cfdb06d509ad322",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "schedule.sheet": "Just Work Out",
+      "schedule.selection": "running",
+      "schedule.duration": "45"
+    }
+  },
+  "c1aafce51bd4fb31": {
+    "id": "c1aafce51bd4fb31",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "schedule.sheet": "Just Work Out",
+      "schedule.selection": "running",
+      "schedule.duration": "45"
+    }
+  },
+  "dfbcc5d54315239b": {
+    "id": "dfbcc5d54315239b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "schedule": {
+        "Tuesday": "morning-yoga",
+        "Wednesday": "running",
+        "Thursday": "running"
+      }
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "60435d9b0d00713c": {
+    "id": "60435d9b0d00713c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "schedule": {
+        "Tuesday": "morning-yoga",
+        "Wednesday": "running"
+      }
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "40813dd8122258f7": {
+    "id": "40813dd8122258f7",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "9446df791c2cf84b": {
+    "id": "9446df791c2cf84b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "goal": "Increase Muscle Mass"
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "ae6f6828a96ef127": {
+    "id": "ae6f6828a96ef127",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "26397d459a360eab": {
+    "id": "26397d459a360eab",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "scrollY": 190
+    }
+  },
+  "aefc9d4218b2f742": {
+    "id": "aefc9d4218b2f742",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "a67702fc83ea3d05": {
+    "id": "a67702fc83ea3d05",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "progress.tab": "Metrics"
+    }
+  },
+  "cac5c501bc6a10ec": {
+    "id": "cac5c501bc6a10ec",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "progress.tab": "Metrics"
+    }
+  },
+  "c3fd263f671179fa": {
+    "id": "c3fd263f671179fa",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "progress.tab": "Metrics",
+      "scrollY": 480
+    }
+  },
+  "54d2648586600727": {
+    "id": "54d2648586600727",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "progress.tab": "Metrics",
+      "scrollY": 480
+    }
+  },
+  "a671de3ec25ed4d5": {
+    "id": "a671de3ec25ed4d5",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "progress.goalOpen": true
+    }
+  },
+  "cc91972a8b91c317": {
+    "id": "cc91972a8b91c317",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "progress.goalOpen": true,
+      "progress.goal": "Improve Health and Longevity"
+    }
+  },
+  "f8dc49d0fe545540": {
+    "id": "f8dc49d0fe545540",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "goal": "Improve Health and Longevity"
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "7b01261aafcd5709": {
+    "id": "7b01261aafcd5709",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "0613c59580d3a48f": {
+    "id": "0613c59580d3a48f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "progressFlow.sheet": "Thursday’s Workout"
+    }
+  },
+  "a8fa9ad2ffa8ecd9": {
+    "id": "a8fa9ad2ffa8ecd9",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "progressFlow.sheet": "Did you finish your workout?"
+    }
+  },
+  "da024204f479856f": {
+    "id": "da024204f479856f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "e4e3e100cf32c510": {
+    "id": "e4e3e100cf32c510",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "991137aacee976a6": {
+    "id": "991137aacee976a6",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "1d3699ebfaeb1264": {
+    "id": "1d3699ebfaeb1264",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "69c1552bd207febb": {
+    "id": "69c1552bd207febb",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "184fb1cc4be177d5": {
+    "id": "184fb1cc4be177d5",
+    "data": {
+      "preferences": {
+        "metrics": "[\"Minutes of Activity\",\"Activity Rings\",\"Daily Steps\"]"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "83aa026b2c7d5972": {
+    "id": "83aa026b2c7d5972",
+    "data": {
+      "preferences": {
+        "metrics": "[\"Minutes of Activity\",\"Activity Rings\",\"Daily Steps\"]"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "progress.tab": "Metrics"
+    }
+  },
+  "d896283a02dd3322": {
+    "id": "d896283a02dd3322",
+    "data": {
+      "preferences": {
+        "metrics": "[\"Activity Rings\",\"Minutes of Activity\",\"Daily Steps\",\"Average Pace\",\"Progress Photos\",\"Weight\"]"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "372ec72a4ad42b9a": {
+    "id": "372ec72a4ad42b9a",
+    "data": {
+      "preferences": {
+        "metrics": "[\"Activity Rings\",\"Minutes of Activity\",\"Daily Steps\",\"Average Pace\",\"Progress Photos\",\"Weight\"]"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "progress.tab": "Metrics",
+      "scrollY": 480
+    }
+  },
+  "8442edc56bd7a6a2": {
+    "id": "8442edc56bd7a6a2",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "0c9d6d9336ed2060": {
+    "id": "0c9d6d9336ed2060",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "cee9a987b896f939": {
+    "id": "cee9a987b896f939",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "photos.source": true,
+      "progressFlow.sheet": "Add Photo"
+    }
+  },
+  "14a78fdd2e2f981c": {
+    "id": "14a78fdd2e2f981c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "photos.draft": {
+        "Full Body - Front": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cpath fill='black' d='M0 0h300v300H0z'/%3E%3C/svg%3E",
+        "Full Body - Back": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cpath fill='black' d='M0 0h300v300H0z'/%3E%3C/svg%3E",
+        "Full Body - Side": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cpath fill='black' d='M0 0h300v300H0z'/%3E%3C/svg%3E"
+      }
+    }
+  },
+  "b9ebd53fefdbd7b8": {
+    "id": "b9ebd53fefdbd7b8",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "photos": [
+        {
+          "id": "source-Front",
+          "kind": "Full Body - Front",
+          "date": "2026-07-01",
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cpath fill='black' d='M0 0h300v300H0z'/%3E%3C/svg%3E"
+        },
+        {
+          "id": "source-Back",
+          "kind": "Full Body - Back",
+          "date": "2026-07-01",
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cpath fill='black' d='M0 0h300v300H0z'/%3E%3C/svg%3E"
+        },
+        {
+          "id": "source-Side",
+          "kind": "Full Body - Side",
+          "date": "2026-07-01",
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cpath fill='black' d='M0 0h300v300H0z'/%3E%3C/svg%3E"
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "098311074fbc0d30": {
+    "id": "098311074fbc0d30",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "chromeHidden": true,
+      "photos.camera": true,
+      "photos.timer": 5
+    }
+  },
+  "dac1a3cf0fffb20a": {
+    "id": "dac1a3cf0fffb20a",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "chromeHidden": true,
+      "photos.camera": true,
+      "photos.timer": 5,
+      "photos.countdown": 4
+    }
+  },
+  "9f32c528eb3122b5": {
+    "id": "9f32c528eb3122b5",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "photos.draft": {
+        "Full Body - Front": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cpath fill='black' d='M0 0h300v300H0z'/%3E%3C/svg%3E"
+      }
+    }
+  },
+  "d0bffd680203472f": {
+    "id": "d0bffd680203472f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "92f7fea0a4f23770": {
+    "id": "92f7fea0a4f23770",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "number",
+        "selector": "input[aria-label=\"Target Weight\"]",
+        "done": true
+      }
+    }
+  },
+  "bfea6e37fa7d9b94": {
+    "id": "bfea6e37fa7d9b94",
+    "data": {
+      "preferences": {
+        "targetWeight": "161"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "number",
+        "selector": "input[aria-label=\"Target Weight\"]",
+        "done": true
+      }
+    }
+  },
+  "e95ed2394c15c550": {
+    "id": "e95ed2394c15c550",
+    "data": {
+      "preferences": {
+        "targetWeight": "161"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "654b8d1920644b89": {
+    "id": "654b8d1920644b89",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "number",
+        "selector": "input[aria-label=\"Weight\"]",
+        "done": true
+      }
+    }
+  },
+  "88f6f0ef24add973": {
+    "id": "88f6f0ef24add973",
+    "data": {
+      "preferences": {
+        "weightEntry": "156",
+        "loggedWeight": "156",
+        "weightDate": "2026-07-03"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "number",
+        "selector": "input[aria-label=\"Weight\"]",
+        "done": true
+      }
+    }
+  },
+  "a0b73ff31607572f": {
+    "id": "a0b73ff31607572f",
+    "data": {
+      "preferences": {
+        "targetWeight": "161"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "weight": "156",
+      "weightHistory": [
+        {
+          "id": "source-weight",
+          "value": "156",
+          "date": "2026-07-03"
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "5cd2903b6dc7cc19": {
+    "id": "5cd2903b6dc7cc19",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "community.history": "setup"
+    }
+  },
+  "e9f1d9e135143206": {
+    "id": "e9f1d9e135143206",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "community.history": "yoga"
+    }
+  },
+  "3707b8d0f4c3b815": {
+    "id": "3707b8d0f4c3b815",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "community.history": "events"
+    }
+  },
+  "8fb5d0b81c309b95": {
+    "id": "8fb5d0b81c309b95",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "community.history": "workout"
+    }
+  },
+  "244a2df35948b3dd": {
+    "id": "244a2df35948b3dd",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "community.history": "away"
+    }
+  },
+  "9b10c8dd53f773c4": {
+    "id": "9b10c8dd53f773c4",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "06b4af20ce799415": {
+    "id": "06b4af20ce799415",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "community.achievement": true
+    }
+  },
+  "9788a9177d20367f": {
+    "id": "9788a9177d20367f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "96860a7f9c42a793": {
+    "id": "96860a7f9c42a793",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "community.text": "Hi sorry! Actually I think we can discuss via chat instead?"
+    }
+  },
+  "8c16d1cc0eb9ae1f": {
+    "id": "8c16d1cc0eb9ae1f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [
+        {
+          "id": "source-message",
+          "text": "Hi sorry! Actually I think we can discuss via chat instead?"
+        }
+      ],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "91d24d7a940e3818": {
+    "id": "91d24d7a940e3818",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "b406dae55f8f7185": {
+    "id": "b406dae55f8f7185",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "e7f7a57998262595": {
+    "id": "e7f7a57998262595",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "1ec85d3afee3a8a7": {
+    "id": "1ec85d3afee3a8a7",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "80ef1b95989ab0a5": {
+    "id": "80ef1b95989ab0a5",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "ce5d958da4fdbea8": {
+    "id": "ce5d958da4fdbea8",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "5f192b1462a126b6": {
+    "id": "5f192b1462a126b6",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "cc20067000d4f87f": {
+    "id": "cc20067000d4f87f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "cc47b92925d101cb": {
+    "id": "cc47b92925d101cb",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "230ba48bd84b5618": {
+    "id": "230ba48bd84b5618",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "37e236af15c00e2a": {
+    "id": "37e236af15c00e2a",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "progressFlow.sheet": "Send Guest Pass"
+    }
+  },
+  "e9ff9ded70b5f433": {
+    "id": "e9ff9ded70b5f433",
+    "data": {
+      "preferences": {
+        "profileWorkouts": "0",
+        "memberSince": "Jul 2026"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "19cb4b2390d35bd5": {
+    "id": "19cb4b2390d35bd5",
+    "data": {
+      "preferences": {},
+      "interest": "running",
+      "events": [
+        {
+          "id": "source-event",
+          "name": "5K Jakarta Open Trail Run",
+          "date": "2026-07-26"
+        }
+      ],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "4a19ac431481a9af": {
+    "id": "4a19ac431481a9af",
+    "data": {
+      "preferences": {},
+      "interest": "running",
+      "events": [
+        {
+          "id": "source-event",
+          "name": "5K Jakarta Open Trail Run",
+          "date": "2026-07-26"
+        }
+      ],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "scrollY": 300
+    }
+  },
+  "32f0fc08b604cc93": {
+    "id": "32f0fc08b604cc93",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "progressFlow.tab": "Travel",
+      "progressFlow.date": "2026-07-01"
+    }
+  },
+  "52738508d08de10f": {
+    "id": "52738508d08de10f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "progressFlow.date": "2026-07-26",
+      "progressFlow.tab": "Event"
+    }
+  },
+  "3189e98ea2ffdf35": {
+    "id": "3189e98ea2ffdf35",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "0d4c3dca91994365": {
+    "id": "0d4c3dca91994365",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "ec59526f80f48f32": {
+    "id": "ec59526f80f48f32",
+    "data": {
+      "preferences": {
+        "eventName": "5K Jakarta Open Trail Run",
+        "eventDetails": "Elevation gain: 284 M",
+        "eventStart": "2026-07-26",
+        "eventEnd": "2026-07-26",
+        "eventVisibility": "true"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "progressFlow.date": "2026-07-26",
+      "progressFlow.tab": "Event"
+    }
+  },
+  "0a8b40e28e7bd6f2": {
+    "id": "0a8b40e28e7bd6f2",
+    "data": {
+      "preferences": {
+        "eventName": "5K Jakarta Open Trail Run",
+        "eventDetails": "Elevation gain: 284 M",
+        "eventStart": "2026-07-26",
+        "eventEnd": "2026-07-26",
+        "eventVisibility": "true"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "progressFlow.date": "2026-07-26",
+      "progressFlow.tab": "Event"
+    }
+  },
+  "9900515c67c3bc0b": {
+    "id": "9900515c67c3bc0b",
+    "data": {
+      "preferences": {
+        "profileWorkouts": "0",
+        "memberSince": "Jul 2026"
+      },
+      "interest": "running",
+      "events": [
+        {
+          "id": "source-event",
+          "name": "5K Jakarta Open Trail Run",
+          "date": "2026-07-26"
+        }
+      ],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "de6aa2a677652a59": {
+    "id": "de6aa2a677652a59",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "e690c12004fa0b11": {
+    "id": "e690c12004fa0b11",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "account.sheet": "Explore"
+    }
+  },
+  "5b8853eb6bed9cfa": {
+    "id": "5b8853eb6bed9cfa",
+    "data": {
+      "preferences": {
+        "coachChangeReasons": "Ready for something new|Different coach personality"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "account.sheet": "Explore"
+    }
+  },
+  "cdd7b72066569858": {
+    "id": "cdd7b72066569858",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "587607868798e2bf": {
+    "id": "587607868798e2bf",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "11cdf70d01f98f9d": {
+    "id": "11cdf70d01f98f9d",
+    "data": {
+      "preferences": {},
+      "interest": "running",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "93e000d6f001413c": {
+    "id": "93e000d6f001413c",
+    "data": {
+      "preferences": {
+        "profileWorkouts": "0",
+        "memberSince": "Jul 2026"
+      },
+      "interest": "running",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "f0f400f1407a9492": {
+    "id": "f0f400f1407a9492",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "cover.loaded": false
+    }
+  },
+  "cf555b20934717e7": {
+    "id": "cf555b20934717e7",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "cover.loaded": true,
+      "cover.selection": "ocean"
+    }
+  },
+  "7341749f58fd2736": {
+    "id": "7341749f58fd2736",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "2d63b2d421e8986c": {
+    "id": "2d63b2d421e8986c",
+    "data": {
+      "preferences": {},
+      "interest": "running",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "privateProfile": true
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "a024a61347fa078a": {
+    "id": "a024a61347fa078a",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "0321f6f626e81a5f": {
+    "id": "0321f6f626e81a5f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "scrollY": 260
+    }
+  },
+  "85169600dcd16f7c": {
+    "id": "85169600dcd16f7c",
+    "data": {
+      "preferences": {
+        "preferredName": ""
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "1ae56351357fac91": {
+    "id": "1ae56351357fac91",
+    "data": {
+      "preferences": {
+        "preferredName": "Alex"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "d7e03432f62fa9cf": {
+    "id": "d7e03432f62fa9cf",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "scrollY": 300
+    }
+  },
+  "7d8dea8cbab0f554": {
+    "id": "7d8dea8cbab0f554",
+    "data": {
+      "preferences": {
+        "phone": "+1 (650) 213-7552"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "scrollY": 510,
+      "keyboard": {
+        "type": "phone",
+        "selector": "input[name=\"phone\"]"
+      }
+    }
+  },
+  "fb935a0aeee796e9": {
+    "id": "fb935a0aeee796e9",
+    "data": {
+      "preferences": {
+        "phone": "+1 (650) 213-7552"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "scrollY": 300
+    }
+  },
+  "8724ed8b412f949b": {
+    "id": "8724ed8b412f949b",
+    "data": {
+      "preferences": {
+        "phone": "+1 (650) 213-7552"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "account.sheet": "Sign Out"
+    }
+  },
+  "d82e5dc3852242e7": {
+    "id": "d82e5dc3852242e7",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "4f3ba8d8c82561b3": {
+    "id": "4f3ba8d8c82561b3",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "6699b1f8a7f819b9": {
+    "id": "6699b1f8a7f819b9",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "55b876bd2a1cf2ec": {
+    "id": "55b876bd2a1cf2ec",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "2cfbd72ec2d13d5b": {
+    "id": "2cfbd72ec2d13d5b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "15ddb207c83425d2": {
+    "id": "15ddb207c83425d2",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "a87f5f2814c17f7c": {
+    "id": "a87f5f2814c17f7c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "account.saving": true
+    }
+  },
+  "61715db212cf2a1b": {
+    "id": "61715db212cf2a1b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "a2b8db895a5f8c16": {
+    "id": "a2b8db895a5f8c16",
+    "data": {
+      "preferences": {
+        "membershipStatus": "Pending Cancellation"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "35d81d4c979a3195": {
+    "id": "35d81d4c979a3195",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "c69fee952cd49b41": {
+    "id": "c69fee952cd49b41",
+    "data": {
+      "preferences": {
+        "shippingStreet": "1226 University Dr",
+        "shippingCity": "Menlo Park",
+        "shippingState": "CA",
+        "shippingZip": "94025"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "716fd33fa6bc37d2": {
+    "id": "716fd33fa6bc37d2",
+    "data": {
+      "preferences": {
+        "shippingStreet": "1226 University Dr",
+        "shippingCity": "Menlo Park",
+        "shippingState": "CA",
+        "shippingZip": "94025"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "693755a9410f5831": {
+    "id": "693755a9410f5831",
+    "data": {
+      "preferences": {
+        "shippingStreet": "1226 University Dr",
+        "shippingCity": "Menlo Park",
+        "shippingState": "CA",
+        "shippingZip": "94025",
+        "shirtSize": "M"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "fa33f93ee04cad49": {
+    "id": "fa33f93ee04cad49",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "5383ca7fc484ce9c": {
+    "id": "5383ca7fc484ce9c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "fcdbbf34054452b1": {
+    "id": "fcdbbf34054452b1",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "text",
+        "selector": "textarea[name=\"billingQuestion\"]"
+      }
+    }
+  },
+  "cc6fb2233bc3f31c": {
+    "id": "cc6fb2233bc3f31c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "text",
+        "selector": "textarea[name=\"billingQuestion\"]",
+        "symbols": true
+      }
+    }
+  },
+  "d761b09d83d4e850": {
+    "id": "d761b09d83d4e850",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "593d3256755ff5ae": {
+    "id": "593d3256755ff5ae",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "3d888eebe1dae0aa": {
+    "id": "3d888eebe1dae0aa",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "dc867f791845be87": {
+    "id": "dc867f791845be87",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "c60d76b4556ccf29": {
+    "id": "c60d76b4556ccf29",
+    "data": {
+      "preferences": {
+        "locationName": "Hotel gym"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "464d28d1e615a0cc": {
+    "id": "464d28d1e615a0cc",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "locations": [
+        {
+          "id": "hotel",
+          "name": "Hotel gym",
+          "kind": "Hotel Gym",
+          "equipment": []
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "6f7906549b48f376": {
+    "id": "6f7906549b48f376",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "locations": [
+        {
+          "id": "hotel",
+          "name": "Hotel gym",
+          "kind": "Hotel Gym",
+          "equipment": []
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": true,
+      "scrollY": 370
+    }
+  },
+  "45ff34930241ec24": {
+    "id": "45ff34930241ec24",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "account.sheet": "Select Dumbbells"
+    }
+  },
+  "f4dd4750b643f25c": {
+    "id": "f4dd4750b643f25c",
+    "data": {
+      "preferences": {
+        "dumbbell-2.3": "true",
+        "dumbbell-4.5": "true"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "account.sheet": "Select Dumbbells"
+    }
+  },
+  "3c3f5b2ae12f0a16": {
+    "id": "3c3f5b2ae12f0a16",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "locations": [
+        {
+          "id": "hotel",
+          "name": "Hotel gym",
+          "kind": "Hotel Gym",
+          "equipment": [
+            "Elliptical",
+            "Dumbbell",
+            "Wall",
+            "Yoga Mat"
+          ]
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": true,
+      "scrollY": 370
+    }
+  },
+  "80efc3cf90fd540c": {
+    "id": "80efc3cf90fd540c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "locations": [
+        {
+          "id": "hotel",
+          "name": "Hotel gym",
+          "kind": "Hotel Gym",
+          "equipment": [
+            "Elliptical",
+            "Dumbbell",
+            "Wall",
+            "Yoga Mat"
+          ]
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": true,
+      "account.tab": "Your Setup"
+    }
+  },
+  "bfbabe222728e739": {
+    "id": "bfbabe222728e739",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "b63080eaf97404fc": {
+    "id": "b63080eaf97404fc",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "b25431078c7923a8": {
+    "id": "b25431078c7923a8",
+    "data": {
+      "preferences": {
+        "injuryDescription": "Back in third week of June, I hiked and fall. My right ankle still doesn't feel right. I alr go to doctor and nothing fractured",
+        "injuryMovement": "Yes"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "text",
+        "selector": "textarea[name=\"injuryDescription\"]"
+      }
+    }
+  },
+  "68564002a352ea0b": {
+    "id": "68564002a352ea0b",
+    "data": {
+      "preferences": {
+        "injuryDescription": "Back in third week of June, I hiked and fall. My right ankle still doesn't feel right. I alr go to doctor and nothing fractured",
+        "injuryMovement": "Yes"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "keyboard": {
+        "type": "text",
+        "selector": "textarea[name=\"injuryDescription\"]"
+      }
+    }
+  },
+  "bff6c138c772d2c2": {
+    "id": "bff6c138c772d2c2",
+    "data": {
+      "preferences": {
+        "injuryDescription": "Back in third week of June, I hiked and fall. My right ankle still doesn't feel right. I alr go to doctor and nothing fractured",
+        "injuryMovement": "Yes"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "6c630c7f068150c8": {
+    "id": "6c630c7f068150c8",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "injuries": [
+        {
+          "id": "source-injury",
+          "description": "Back in third week of June, I hiked and fall. My right ankle still doesn't feel right. I alr go to doctor and nothing fractured",
+          "affectsMovement": true,
+          "excluded": [
+            "Med Ball Scoop Toss",
+            "Stability Ball Pike",
+            "Tripod Headstand",
+            "Kettlebell Clean to Push Press",
+            "Sandbag Push Press",
+            "Dumbbell Hang Clean to Push Press",
+            "Headstand"
+          ]
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "bca9653d973f5702": {
+    "id": "bca9653d973f5702",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "injuries": [
+        {
+          "id": "source-injury",
+          "description": "Back in third week of June, I hiked and fall. My right ankle still doesn't feel right. I alr go to doctor and nothing fractured",
+          "affectsMovement": true,
+          "excluded": [
+            "Med Ball Scoop Toss",
+            "Stability Ball Pike",
+            "Tripod Headstand",
+            "Kettlebell Clean to Push Press",
+            "Sandbag Push Press",
+            "Dumbbell Hang Clean to Push Press",
+            "Headstand"
+          ]
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": true,
+      "scrollY": 260
+    }
+  },
+  "4917c735489f6b4c": {
+    "id": "4917c735489f6b4c",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "injuries": [
+        {
+          "id": "source-injury",
+          "description": "Back in third week of June, I hiked and fall. My right ankle still doesn't feel right. I alr go to doctor and nothing fractured",
+          "affectsMovement": true,
+          "excluded": [
+            "Med Ball Scoop Toss",
+            "Stability Ball Pike",
+            "Tripod Headstand",
+            "Kettlebell Clean to Push Press",
+            "Sandbag Push Press",
+            "Dumbbell Hang Clean to Push Press",
+            "Headstand"
+          ]
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "8a7901a5c21e862f": {
+    "id": "8a7901a5c21e862f",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {},
+      "injuries": [
+        {
+          "id": "source-injury",
+          "description": "Back in third week of June, I hiked and fall. My right ankle still doesn't feel right. I alr go to doctor and nothing fractured",
+          "affectsMovement": true,
+          "excluded": [
+            "Med Ball Scoop Toss",
+            "Stability Ball Pike",
+            "Tripod Headstand",
+            "Kettlebell Clean to Push Press",
+            "Sandbag Push Press",
+            "Dumbbell Hang Clean to Push Press",
+            "Headstand"
+          ]
+        }
+      ]
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "22d870084ca0661b": {
+    "id": "22d870084ca0661b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "9b057830c0013b72": {
+    "id": "9b057830c0013b72",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "scrollY": 185
+    }
+  },
+  "b6ed07cc9879d9a2": {
+    "id": "b6ed07cc9879d9a2",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "9b99aa1d95da47a0": {
+    "id": "9b99aa1d95da47a0",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "429770e07f9f4901": {
+    "id": "429770e07f9f4901",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "c8af58d62a9ed8f7": {
+    "id": "c8af58d62a9ed8f7",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true,
+      "scrollY": 160
+    }
+  },
+  "8ac22ec411e8c405": {
+    "id": "8ac22ec411e8c405",
+    "data": {
+      "preferences": {
+        "contact": "alexsmith.mobbin@gmail.com"
+      },
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "9dea7f21275910f2": {
+    "id": "9dea7f21275910f2",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": true
+    }
+  },
+  "004036150c4419a6": {
+    "id": "004036150c4419a6",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "c2a9ab379931c3f0": {
+    "id": "c2a9ab379931c3f0",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  },
+  "b9f1086598b7e89b": {
+    "id": "b9f1086598b7e89b",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false,
+      "system.expanded": true
+    }
+  },
+  "3f2fbd0e4124e8a1": {
+    "id": "3f2fbd0e4124e8a1",
+    "data": {
+      "preferences": {},
+      "interest": "",
+      "events": [],
+      "messages": [],
+      "favorites": [],
+      "completed": [],
+      "sessions": {},
+      "feedback": {}
+    },
+    "ui": {
+      "chromeLight": false
+    }
+  }
+}

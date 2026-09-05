@@ -1,0 +1,572 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "Permissions \u0026 Watch App",
+                      "words":  [
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  320,
+                                        "text":  "Permissions",
+                                        "x":  248
+                                    },
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  38,
+                                        "text":  "\u0026",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  173,
+                                        "text":  "Watch",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  269,
+                                        "height":  56,
+                                        "width":  112,
+                                        "text":  "App",
+                                        "x":  817
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Notifications",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  39,
+                                        "width":  281,
+                                        "text":  "Notifications",
+                                        "x":  231
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Health",
+                      "words":  [
+                                    {
+                                        "y":  767,
+                                        "height":  39,
+                                        "width":  141,
+                                        "text":  "Health",
+                                        "x":  231
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Location",
+                      "words":  [
+                                    {
+                                        "y":  949,
+                                        "height":  38,
+                                        "width":  189,
+                                        "text":  "Location",
+                                        "x":  231
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Movement",
+                      "words":  [
+                                    {
+                                        "y":  1130,
+                                        "height":  38,
+                                        "width":  239,
+                                        "text":  "Movement",
+                                        "x":  231
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Bluetooth",
+                      "words":  [
+                                    {
+                                        "y":  1310,
+                                        "height":  39,
+                                        "width":  214,
+                                        "text":  "Bluetooth",
+                                        "x":  231
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Enabled",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  39,
+                                        "width":  178,
+                                        "text":  "Enabled",
+                                        "x":  861
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Disabled",
+                      "words":  [
+                                    {
+                                        "y":  767,
+                                        "height":  39,
+                                        "width":  190,
+                                        "text":  "Disabled",
+                                        "x":  849
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Disabled",
+                      "words":  [
+                                    {
+                                        "y":  948,
+                                        "height":  39,
+                                        "width":  190,
+                                        "text":  "Disabled",
+                                        "x":  849
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Enabled",
+                      "words":  [
+                                    {
+                                        "y":  1129,
+                                        "height":  39,
+                                        "width":  178,
+                                        "text":  "Enabled",
+                                        "x":  861
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Enabled",
+                      "words":  [
+                                    {
+                                        "y":  1310,
+                                        "height":  39,
+                                        "width":  178,
+                                        "text":  "Enabled",
+                                        "x":  861
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Etnab[ing perrnissions ensures a srnooth traininrx fee: periencee It",
+                      "words":  [
+                                    {
+                                        "y":  1453,
+                                        "height":  35,
+                                        "width":  141,
+                                        "text":  "Etnab[ing",
+                                        "x":  63
+                                    },
+                                    {
+                                        "y":  1453,
+                                        "height":  35,
+                                        "width":  204,
+                                        "text":  "perrnissions",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  132,
+                                        "text":  "ensures",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  17,
+                                        "text":  "a",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  1453,
+                                        "height":  28,
+                                        "width":  130,
+                                        "text":  "srnooth",
+                                        "x":  601
+                                    },
+                                    {
+                                        "y":  1453,
+                                        "height":  28,
+                                        "width":  125,
+                                        "text":  "traininrx",
+                                        "x":  741
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "fee:",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  1453,
+                                        "height":  35,
+                                        "width":  155,
+                                        "text":  "periencee",
+                                        "x":  916
+                                    },
+                                    {
+                                        "y":  1453,
+                                        "height":  28,
+                                        "width":  20,
+                                        "text":  "It",
+                                        "x":  1083
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "lets us cii3piay tra!tling data across the app, end send and",
+                      "words":  [
+                                    {
+                                        "y":  1501,
+                                        "height":  28,
+                                        "width":  57,
+                                        "text":  "lets",
+                                        "x":  63
+                                    },
+                                    {
+                                        "y":  1509,
+                                        "height":  20,
+                                        "width":  37,
+                                        "text":  "us",
+                                        "x":  130
+                                    },
+                                    {
+                                        "y":  1501,
+                                        "height":  35,
+                                        "width":  117,
+                                        "text":  "cii3piay",
+                                        "x":  178
+                                    },
+                                    {
+                                        "y":  1501,
+                                        "height":  35,
+                                        "width":  126,
+                                        "text":  "tra!tling",
+                                        "x":  303
+                                    },
+                                    {
+                                        "y":  1504,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "data",
+                                        "x":  439
+                                    },
+                                    {
+                                        "y":  1509,
+                                        "height":  20,
+                                        "width":  110,
+                                        "text":  "across",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  1501,
+                                        "height":  28,
+                                        "width":  54,
+                                        "text":  "the",
+                                        "x":  643
+                                    },
+                                    {
+                                        "y":  1509,
+                                        "height":  27,
+                                        "width":  71,
+                                        "text":  "app,",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  1501,
+                                        "height":  28,
+                                        "width":  61,
+                                        "text":  "end",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  1501,
+                                        "height":  28,
+                                        "width":  82,
+                                        "text":  "send",
+                                        "x":  861
+                                    },
+                                    {
+                                        "y":  1501,
+                                        "height":  28,
+                                        "width":  62,
+                                        "text":  "and",
+                                        "x":  954
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "receive data with Apple Health.",
+                      "words":  [
+                                    {
+                                        "y":  1549,
+                                        "height":  28,
+                                        "width":  119,
+                                        "text":  "receive",
+                                        "x":  63
+                                    },
+                                    {
+                                        "y":  1549,
+                                        "height":  28,
+                                        "width":  73,
+                                        "text":  "data",
+                                        "x":  193
+                                    },
+                                    {
+                                        "y":  1549,
+                                        "height":  28,
+                                        "width":  71,
+                                        "text":  "with",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  1549,
+                                        "height":  35,
+                                        "width":  100,
+                                        "text":  "Apple",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  1549,
+                                        "height":  28,
+                                        "width":  116,
+                                        "text":  "Health.",
+                                        "x":  468
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Connect Your Apple Watch",
+                      "words":  [
+                                    {
+                                        "y":  1791,
+                                        "height":  39,
+                                        "width":  194,
+                                        "text":  "Connect",
+                                        "x":  229
+                                    },
+                                    {
+                                        "y":  1792,
+                                        "height":  38,
+                                        "width":  100,
+                                        "text":  "Your",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  1791,
+                                        "height":  48,
+                                        "width":  133,
+                                        "text":  "Apple",
+                                        "x":  541
+                                    },
+                                    {
+                                        "y":  1791,
+                                        "height":  39,
+                                        "width":  145,
+                                        "text":  "Watch",
+                                        "x":  684
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Guide",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  39,
+                                        "width":  132,
+                                        "text":  "Guide",
+                                        "x":  921
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Pair a watch for workout data",
+                      "words":  [
+                                    {
+                                        "y":  1859,
+                                        "height":  34,
+                                        "width":  71,
+                                        "text":  "Pair",
+                                        "x":  231
+                                    },
+                                    {
+                                        "y":  1868,
+                                        "height":  25,
+                                        "width":  20,
+                                        "text":  "a",
+                                        "x":  311
+                                    },
+                                    {
+                                        "y":  1859,
+                                        "height":  34,
+                                        "width":  118,
+                                        "text":  "watch",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  1859,
+                                        "height":  34,
+                                        "width":  55,
+                                        "text":  "for",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  1859,
+                                        "height":  34,
+                                        "width":  163,
+                                        "text":  "workout",
+                                        "x":  534
+                                    },
+                                    {
+                                        "y":  1859,
+                                        "height":  34,
+                                        "width":  86,
+                                        "text":  "data",
+                                        "x":  707
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "N •ad more help with permissions or connecting your Apple",
+                      "words":  [
+                                    {
+                                        "y":  2025,
+                                        "height":  28,
+                                        "width":  21,
+                                        "text":  "N",
+                                        "x":  63
+                                    },
+                                    {
+                                        "y":  2025,
+                                        "height":  28,
+                                        "width":  51,
+                                        "text":  "•ad",
+                                        "x":  100
+                                    },
+                                    {
+                                        "y":  2033,
+                                        "height":  20,
+                                        "width":  86,
+                                        "text":  "more",
+                                        "x":  164
+                                    },
+                                    {
+                                        "y":  2025,
+                                        "height":  35,
+                                        "width":  69,
+                                        "text":  "help",
+                                        "x":  262
+                                    },
+                                    {
+                                        "y":  2025,
+                                        "height":  28,
+                                        "width":  70,
+                                        "text":  "with",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  2025,
+                                        "height":  35,
+                                        "width":  203,
+                                        "text":  "permissions",
+                                        "x":  425
+                                    },
+                                    {
+                                        "y":  2033,
+                                        "height":  20,
+                                        "width":  33,
+                                        "text":  "or",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  2025,
+                                        "height":  35,
+                                        "width":  192,
+                                        "text":  "connecting",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  2033,
+                                        "height":  27,
+                                        "width":  74,
+                                        "text":  "your",
+                                        "x":  882
+                                    },
+                                    {
+                                        "y":  2025,
+                                        "height":  35,
+                                        "width":  100,
+                                        "text":  "Apple",
+                                        "x":  964
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "help@future.co",
+                      "words":  [
+                                    {
+                                        "y":  2072,
+                                        "height":  37,
+                                        "width":  263,
+                                        "text":  "help@future.co",
+                                        "x":  301
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FUture Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUture",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "Permissions \u0026 Watch App Notifications Health Location Movement Bluetooth Enabled Disabled Disabled Enabled Enabled Etnab[ing perrnissions ensures a srnooth traininrx fee: periencee It lets us cii3piay tra!tling data across the app, end send and receive data with Apple Health. Connect Your Apple Watch Guide Pair a watch for workout data N •ad more help with permissions or connecting your Apple F help@future.co FUture Pro *Mobbin"
+}

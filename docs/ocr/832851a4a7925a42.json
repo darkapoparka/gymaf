@@ -1,0 +1,852 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  296,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Workout Settings",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  45,
+                                        "width":  233,
+                                        "text":  "Workout",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  56,
+                                        "width":  213,
+                                        "text":  "Settings",
+                                        "x":  605
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Heart Rate Zones",
+                      "words":  [
+                                    {
+                                        "y":  738,
+                                        "height":  39,
+                                        "width":  128,
+                                        "text":  "Heart",
+                                        "x":  387
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  39,
+                                        "width":  105,
+                                        "text":  "Rate",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  39,
+                                        "width":  144,
+                                        "text":  "Zones",
+                                        "x":  648
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  743,
+                                        "height":  30,
+                                        "width":  30,
+                                        "text":  "x",
+                                        "x":  1008
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Heart rate zones are a valuable tool for you",
+                      "words":  [
+                                    {
+                                        "y":  852,
+                                        "height":  31,
+                                        "width":  104,
+                                        "text":  "Heart",
+                                        "x":  159
+                                    },
+                                    {
+                                        "y":  854,
+                                        "height":  29,
+                                        "width":  72,
+                                        "text":  "rate",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  859,
+                                        "height":  24,
+                                        "width":  112,
+                                        "text":  "zones",
+                                        "x":  367
+                                    },
+                                    {
+                                        "y":  859,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "are",
+                                        "x":  494
+                                    },
+                                    {
+                                        "y":  859,
+                                        "height":  24,
+                                        "width":  18,
+                                        "text":  "a",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  851,
+                                        "height":  32,
+                                        "width":  159,
+                                        "text":  "valuable",
+                                        "x":  601
+                                    },
+                                    {
+                                        "y":  851,
+                                        "height":  32,
+                                        "width":  70,
+                                        "text":  "tool",
+                                        "x":  775
+                                    },
+                                    {
+                                        "y":  851,
+                                        "height":  32,
+                                        "width":  53,
+                                        "text":  "for",
+                                        "x":  860
+                                    },
+                                    {
+                                        "y":  859,
+                                        "height":  31,
+                                        "width":  68,
+                                        "text":  "you",
+                                        "x":  926
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and your coach to measure the intensity of",
+                      "words":  [
+                                    {
+                                        "y":  905,
+                                        "height":  32,
+                                        "width":  68,
+                                        "text":  "and",
+                                        "x":  158
+                                    },
+                                    {
+                                        "y":  913,
+                                        "height":  31,
+                                        "width":  84,
+                                        "text":  "your",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  32,
+                                        "width":  114,
+                                        "text":  "coach",
+                                        "x":  340
+                                    },
+                                    {
+                                        "y":  908,
+                                        "height":  29,
+                                        "width":  37,
+                                        "text":  "to",
+                                        "x":  469
+                                    },
+                                    {
+                                        "y":  913,
+                                        "height":  24,
+                                        "width":  163,
+                                        "text":  "measure",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  32,
+                                        "width":  61,
+                                        "text":  "the",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  39,
+                                        "width":  162,
+                                        "text":  "intensity",
+                                        "x":  776
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  32,
+                                        "width":  37,
+                                        "text":  "of",
+                                        "x":  953
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "your workouts. Biometric data is used to",
+                      "words":  [
+                                    {
+                                        "y":  967,
+                                        "height":  31,
+                                        "width":  84,
+                                        "text":  "your",
+                                        "x":  157
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  32,
+                                        "width":  187,
+                                        "text":  "workouts.",
+                                        "x":  254
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  32,
+                                        "width":  182,
+                                        "text":  "Biometric",
+                                        "x":  459
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  32,
+                                        "width":  81,
+                                        "text":  "data",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  32,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  755
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  32,
+                                        "width":  90,
+                                        "text":  "used",
+                                        "x":  798
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  29,
+                                        "width":  37,
+                                        "text":  "to",
+                                        "x":  903
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "calculate your personal zones automatically.",
+                      "words":  [
+                                    {
+                                        "y":  1012,
+                                        "height":  32,
+                                        "width":  172,
+                                        "text":  "calculate",
+                                        "x":  158
+                                    },
+                                    {
+                                        "y":  1020,
+                                        "height":  31,
+                                        "width":  85,
+                                        "text":  "your",
+                                        "x":  344
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  39,
+                                        "width":  162,
+                                        "text":  "personal",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  1020,
+                                        "height":  24,
+                                        "width":  112,
+                                        "text":  "zones",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  39,
+                                        "width":  264,
+                                        "text":  "automatically.",
+                                        "x":  751
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Zone 1 • Very Light",
+                      "words":  [
+                                    {
+                                        "y":  1326,
+                                        "height":  35,
+                                        "width":  111,
+                                        "text":  "Zone",
+                                        "x":  159
+                                    },
+                                    {
+                                        "y":  1326,
+                                        "height":  34,
+                                        "width":  15,
+                                        "text":  "1",
+                                        "x":  286
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  12,
+                                        "width":  11,
+                                        "text":  "•",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1326,
+                                        "height":  43,
+                                        "width":  102,
+                                        "text":  "Very",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  1323,
+                                        "height":  46,
+                                        "width":  111,
+                                        "text":  "Light",
+                                        "x":  474
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "YOUR RANGE: \u003c115 BPM",
+                      "words":  [
+                                    {
+                                        "y":  1401,
+                                        "height":  27,
+                                        "width":  112,
+                                        "text":  "YOUR",
+                                        "x":  158
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  27,
+                                        "width":  154,
+                                        "text":  "RANGE:",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  27,
+                                        "width":  91,
+                                        "text":  "\u003c115",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  26,
+                                        "width":  83,
+                                        "text":  "BPM",
+                                        "x":  585
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Easy warm up or recovery pace.",
+                      "words":  [
+                                    {
+                                        "y":  1507,
+                                        "height":  40,
+                                        "width":  92,
+                                        "text":  "Easy",
+                                        "x":  160
+                                    },
+                                    {
+                                        "y":  1515,
+                                        "height":  24,
+                                        "width":  109,
+                                        "text":  "warm",
+                                        "x":  267
+                                    },
+                                    {
+                                        "y":  1515,
+                                        "height":  32,
+                                        "width":  47,
+                                        "text":  "up",
+                                        "x":  394
+                                    },
+                                    {
+                                        "y":  1515,
+                                        "height":  25,
+                                        "width":  41,
+                                        "text":  "or",
+                                        "x":  457
+                                    },
+                                    {
+                                        "y":  1515,
+                                        "height":  32,
+                                        "width":  177,
+                                        "text":  "recovery",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  1515,
+                                        "height":  32,
+                                        "width":  108,
+                                        "text":  "pace.",
+                                        "x":  706
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Improves overall health, helps recovery,",
+                      "words":  [
+                                    {
+                                        "y":  1585,
+                                        "height":  40,
+                                        "width":  183,
+                                        "text":  "Improves",
+                                        "x":  160
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  34,
+                                        "width":  132,
+                                        "text":  "overall",
+                                        "x":  359
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  41,
+                                        "width":  133,
+                                        "text":  "health,",
+                                        "x":  510
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  41,
+                                        "width":  106,
+                                        "text":  "helps",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  1593,
+                                        "height":  32,
+                                        "width":  183,
+                                        "text":  "recovery,",
+                                        "x":  786
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and prepares your body to train at higher",
+                      "words":  [
+                                    {
+                                        "y":  1644,
+                                        "height":  34,
+                                        "width":  72,
+                                        "text":  "and",
+                                        "x":  158
+                                    },
+                                    {
+                                        "y":  1653,
+                                        "height":  32,
+                                        "width":  179,
+                                        "text":  "prepares",
+                                        "x":  248
+                                    },
+                                    {
+                                        "y":  1653,
+                                        "height":  33,
+                                        "width":  89,
+                                        "text":  "your",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  1644,
+                                        "height":  42,
+                                        "width":  99,
+                                        "text":  "body",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  1647,
+                                        "height":  30,
+                                        "width":  39,
+                                        "text":  "to",
+                                        "x":  662
+                                    },
+                                    {
+                                        "y":  1643,
+                                        "height":  35,
+                                        "width":  89,
+                                        "text":  "train",
+                                        "x":  716
+                                    },
+                                    {
+                                        "y":  1647,
+                                        "height":  30,
+                                        "width":  37,
+                                        "text":  "at",
+                                        "x":  822
+                                    },
+                                    {
+                                        "y":  1643,
+                                        "height":  42,
+                                        "width":  126,
+                                        "text":  "higher",
+                                        "x":  877
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "heart rates zones.",
+                      "words":  [
+                                    {
+                                        "y":  1704,
+                                        "height":  33,
+                                        "width":  102,
+                                        "text":  "heart",
+                                        "x":  160
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  31,
+                                        "width":  100,
+                                        "text":  "rates",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  1713,
+                                        "height":  25,
+                                        "width":  130,
+                                        "text":  "zones.",
+                                        "x":  396
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Rotate Crown to Modify Weight",
+                      "words":  [
+                                    {
+                                        "y":  2046,
+                                        "height":  38,
+                                        "width":  145,
+                                        "text":  "Rotate",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  2046,
+                                        "height":  38,
+                                        "width":  144,
+                                        "text":  "Crown",
+                                        "x":  257
+                                    },
+                                    {
+                                        "y":  2050,
+                                        "height":  34,
+                                        "width":  45,
+                                        "text":  "to",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  2045,
+                                        "height":  48,
+                                        "width":  154,
+                                        "text":  "Modify",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  2046,
+                                        "height":  47,
+                                        "width":  160,
+                                        "text":  "Weight",
+                                        "x":  634
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When enablea- rotate the Digital \u0027 rown or. vour Apple",
+                      "words":  [
+                                    {
+                                        "y":  2171,
+                                        "height":  28,
+                                        "width":  98,
+                                        "text":  "When",
+                                        "x":  100
+                                    },
+                                    {
+                                        "y":  2172,
+                                        "height":  27,
+                                        "width":  143,
+                                        "text":  "enablea-",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  2174,
+                                        "height":  25,
+                                        "width":  99,
+                                        "text":  "rotate",
+                                        "x":  364
+                                    },
+                                    {
+                                        "y":  2172,
+                                        "height":  27,
+                                        "width":  56,
+                                        "text":  "the",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  2172,
+                                        "height":  34,
+                                        "width":  101,
+                                        "text":  "Digital",
+                                        "x":  539
+                                    },
+                                    {
+                                        "y":  2180,
+                                        "height":  8,
+                                        "width":  4,
+                                        "text":  "\u0027",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  2179,
+                                        "height":  20,
+                                        "width":  81,
+                                        "text":  "rown",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  2180,
+                                        "height":  19,
+                                        "width":  41,
+                                        "text":  "or.",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  2180,
+                                        "height":  19,
+                                        "width":  75,
+                                        "text":  "vour",
+                                        "x":  823
+                                    },
+                                    {
+                                        "y":  2172,
+                                        "height":  32,
+                                        "width":  98,
+                                        "text":  "Apple",
+                                        "x":  906
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Watch to -anange the weighT thar you re ,lSing tor ar",
+                      "words":  [
+                                    {
+                                        "y":  2220,
+                                        "height":  27,
+                                        "width":  107,
+                                        "text":  "Watch",
+                                        "x":  100
+                                    },
+                                    {
+                                        "y":  2223,
+                                        "height":  23,
+                                        "width":  34,
+                                        "text":  "to",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  2227,
+                                        "height":  25,
+                                        "width":  116,
+                                        "text":  "-anange",
+                                        "x":  268
+                                    },
+                                    {
+                                        "y":  2220,
+                                        "height":  27,
+                                        "width":  56,
+                                        "text":  "the",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  2220,
+                                        "height":  32,
+                                        "width":  113,
+                                        "text":  "weighT",
+                                        "x":  457
+                                    },
+                                    {
+                                        "y":  2219,
+                                        "height":  28,
+                                        "width":  68,
+                                        "text":  "thar",
+                                        "x":  578
+                                    },
+                                    {
+                                        "y":  2228,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "you",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  2227,
+                                        "height":  20,
+                                        "width":  30,
+                                        "text":  "re",
+                                        "x":  724
+                                    },
+                                    {
+                                        "y":  2220,
+                                        "height":  32,
+                                        "width":  89,
+                                        "text":  ",lSing",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  2220,
+                                        "height":  27,
+                                        "width":  47,
+                                        "text":  "tor",
+                                        "x":  862
+                                    },
+                                    {
+                                        "y":  2228,
+                                        "height":  19,
+                                        "width":  30,
+                                        "text":  "ar",
+                                        "x":  918
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Double-Tap Gesture to Advance to Next Set",
+                      "words":  [
+                                    {
+                                        "y":  2384,
+                                        "height":  38,
+                                        "width":  200,
+                                        "text":  "Double-Tap",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  2384,
+                                        "height":  31,
+                                        "width":  141,
+                                        "text":  "Gesture",
+                                        "x":  308
+                                    },
+                                    {
+                                        "y":  2388,
+                                        "height":  27,
+                                        "width":  36,
+                                        "text":  "to",
+                                        "x":  457
+                                    },
+                                    {
+                                        "y":  2384,
+                                        "height":  31,
+                                        "width":  156,
+                                        "text":  "Advance",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  2388,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "to",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  2385,
+                                        "height":  30,
+                                        "width":  81,
+                                        "text":  "Next",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  2384,
+                                        "height":  31,
+                                        "width":  59,
+                                        "text":  "Set",
+                                        "x":  802
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 x Workout Settings Heart Rate Zones x Heart rate zones are a valuable tool for you and your coach to measure the intensity of your workouts. Biometric data is used to calculate your personal zones automatically. Zone 1 • Very Light YOUR RANGE: \u003c115 BPM Easy warm up or recovery pace. Improves overall health, helps recovery, and prepares your body to train at higher heart rates zones. Rotate Crown to Modify Weight When enablea- rotate the Digital \u0027 rown or. vour Apple Watch to -anange the weighT thar you re ,lSing tor ar Double-Tap Gesture to Advance to Next Set F Future Pro *Mobbin"
+}

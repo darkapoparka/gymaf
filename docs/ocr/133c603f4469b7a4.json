@@ -1,0 +1,372 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Share your workout setup.",
+                      "words":  [
+                                    {
+                                        "y":  354,
+                                        "height":  50,
+                                        "width":  165,
+                                        "text":  "Share",
+                                        "x":  73
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  48,
+                                        "width":  132,
+                                        "text":  "your",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  50,
+                                        "width":  243,
+                                        "text":  "workout",
+                                        "x":  393
+                                    },
+                                    {
+                                        "y":  360,
+                                        "height":  56,
+                                        "width":  174,
+                                        "text":  "setup.",
+                                        "x":  651
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Lee",
+                      "words":  [
+                                    {
+                                        "y":  492,
+                                        "height":  34,
+                                        "width":  69,
+                                        "text":  "Lee",
+                                        "x":  278
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This will form the foundation for",
+                      "words":  [
+                                    {
+                                        "y":  561,
+                                        "height":  39,
+                                        "width":  91,
+                                        "text":  "This",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  561,
+                                        "height":  38,
+                                        "width":  68,
+                                        "text":  "will",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  561,
+                                        "height":  39,
+                                        "width":  105,
+                                        "text":  "form",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  561,
+                                        "height":  39,
+                                        "width":  73,
+                                        "text":  "the",
+                                        "x":  575
+                                    },
+                                    {
+                                        "y":  561,
+                                        "height":  39,
+                                        "width":  243,
+                                        "text":  "foundation",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  561,
+                                        "height":  39,
+                                        "width":  63,
+                                        "text":  "for",
+                                        "x":  914
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "your weekly workout schedule.",
+                      "words":  [
+                                    {
+                                        "y":  641,
+                                        "height":  37,
+                                        "width":  98,
+                                        "text":  "your",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  630,
+                                        "height":  48,
+                                        "width":  156,
+                                        "text":  "weekly",
+                                        "x":  383
+                                    },
+                                    {
+                                        "y":  630,
+                                        "height":  39,
+                                        "width":  185,
+                                        "text":  "workout",
+                                        "x":  547
+                                    },
+                                    {
+                                        "y":  630,
+                                        "height":  39,
+                                        "width":  213,
+                                        "text":  "schedule.",
+                                        "x":  744
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "What\u0027s the name of your gym?",
+                      "words":  [
+                                    {
+                                        "y":  960,
+                                        "height":  48,
+                                        "width":  193,
+                                        "text":  "What\u0027s",
+                                        "x":  93
+                                    },
+                                    {
+                                        "y":  960,
+                                        "height":  48,
+                                        "width":  92,
+                                        "text":  "the",
+                                        "x":  298
+                                    },
+                                    {
+                                        "y":  973,
+                                        "height":  35,
+                                        "width":  156,
+                                        "text":  "name",
+                                        "x":  405
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  49,
+                                        "width":  59,
+                                        "text":  "of",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  973,
+                                        "height":  46,
+                                        "width":  126,
+                                        "text":  "your",
+                                        "x":  644
+                                    },
+                                    {
+                                        "y":  960,
+                                        "height":  59,
+                                        "width":  148,
+                                        "text":  "gym?",
+                                        "x":  783
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Equinox",
+                      "words":  [
+                                    {
+                                        "y":  1142,
+                                        "height":  45,
+                                        "width":  168,
+                                        "text":  "Equinox",
+                                        "x":  130
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\"Equinox\"",
+                      "words":  [
+                                    {
+                                        "y":  1606,
+                                        "height":  47,
+                                        "width":  218,
+                                        "text":  "\"Equinox\"",
+                                        "x":  88
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Next",
+                      "words":  [
+                                    {
+                                        "y":  1348,
+                                        "height":  39,
+                                        "width":  101,
+                                        "text":  "Next",
+                                        "x":  540
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Equinox\u0027s",
+                      "words":  [
+                                    {
+                                        "y":  1606,
+                                        "height":  47,
+                                        "width":  210,
+                                        "text":  "Equinox\u0027s",
+                                        "x":  485
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Equinoxes",
+                      "words":  [
+                                    {
+                                        "y":  1606,
+                                        "height":  47,
+                                        "width":  226,
+                                        "text":  "Equinoxes",
+                                        "x":  870
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "oooooooooo",
+                      "words":  [
+                                    {
+                                        "y":  1707,
+                                        "height":  129,
+                                        "width":  1140,
+                                        "text":  "oooooooooo",
+                                        "x":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ooooocooo",
+                      "words":  [
+                                    {
+                                        "y":  1869,
+                                        "height":  129,
+                                        "width":  1025,
+                                        "text":  "ooooocooo",
+                                        "x":  77
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Oz xc vb n m C]",
+                      "words":  [
+                                    {
+                                        "y":  2071,
+                                        "height":  52,
+                                        "width":  198,
+                                        "text":  "Oz",
+                                        "x":  57
+                                    },
+                                    {
+                                        "y":  2076,
+                                        "height":  40,
+                                        "width":  150,
+                                        "text":  "xc",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  2062,
+                                        "height":  54,
+                                        "width":  153,
+                                        "text":  "vb",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  2076,
+                                        "height":  39,
+                                        "width":  32,
+                                        "text":  "n",
+                                        "x":  804
+                                    },
+                                    {
+                                        "y":  2076,
+                                        "height":  39,
+                                        "width":  53,
+                                        "text":  "m",
+                                        "x":  910
+                                    },
+                                    {
+                                        "y":  2071,
+                                        "height":  52,
+                                        "width":  62,
+                                        "text":  "C]",
+                                        "x":  1061
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "123",
+                      "words":  [
+                                    {
+                                        "y":  2235,
+                                        "height":  40,
+                                        "width":  81,
+                                        "text":  "123",
+                                        "x":  116
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Share your workout setup. Lee This will form the foundation for your weekly workout schedule. What\u0027s the name of your gym? Equinox \"Equinox\" Next Equinox\u0027s Equinoxes oooooooooo ooooocooo Oz xc vb n m C] 123 F Future Pro *Mobbin"
+}

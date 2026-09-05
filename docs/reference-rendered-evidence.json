@@ -1,0 +1,30 @@
+{
+  "60e50acd6ca18e02": {
+    "path": ".impeccable/review/email-393-v2.jpg",
+    "scope": "Exact capture state compared; material fixes reviewed; full pixel parity not certified"
+  },
+  "bfea6e37fa7d9b94": {
+    "path": ".impeccable/review/weight-393-v2.jpg",
+    "scope": "Exact capture state compared; material fixes reviewed; full pixel parity not certified"
+  },
+  "0c9d6d9336ed2060": {
+    "path": ".impeccable/review/photo-393.jpg",
+    "scope": "Exact capture state compared; material fixes reviewed; full pixel parity not certified"
+  },
+  "cf555b20934717e7": {
+    "path": ".impeccable/review/cover-393-v2.jpg",
+    "scope": "Exact capture state compared; material fixes reviewed; full pixel parity not certified"
+  },
+  "03c8df3d92da317a": {
+    "path": ".impeccable/review/record-393.jpg",
+    "scope": "Exact capture state compared; material fixes reviewed; full pixel parity not certified"
+  },
+  "f9ddae79f8fdb799": {
+    "path": ".impeccable/review/home-393-v3.jpg",
+    "scope": "Exact capture state compared; material fixes reviewed; full pixel parity not certified"
+  },
+  "88f6f0ef24add973": {
+    "path": ".impeccable/review/weight-320-v2.jpg",
+    "scope": "320px responsive adaptation inspected; not source pixel comparison"
+  }
+}

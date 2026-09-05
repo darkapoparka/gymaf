@@ -1,0 +1,949 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  296,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Workout Settings",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  45,
+                                        "width":  233,
+                                        "text":  "Workout",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  56,
+                                        "width":  213,
+                                        "text":  "Settings",
+                                        "x":  605
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Heart Rate",
+                      "words":  [
+                                    {
+                                        "y":  494,
+                                        "height":  32,
+                                        "width":  106,
+                                        "text":  "Heart",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  494,
+                                        "height":  32,
+                                        "width":  87,
+                                        "text":  "Rate",
+                                        "x":  218
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Connect Heart Rate Monitor",
+                      "words":  [
+                                    {
+                                        "y":  621,
+                                        "height":  39,
+                                        "width":  194,
+                                        "text":  "Connect",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  38,
+                                        "width":  122,
+                                        "text":  "Heart",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  38,
+                                        "width":  99,
+                                        "text":  "Rate",
+                                        "x":  441
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  38,
+                                        "width":  174,
+                                        "text":  "Monitor",
+                                        "x":  554
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When connected, detailed heart rate information during",
+                      "words":  [
+                                    {
+                                        "y":  747,
+                                        "height":  28,
+                                        "width":  102,
+                                        "text":  "When",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  747,
+                                        "height":  33,
+                                        "width":  192,
+                                        "text":  "connected,",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  747,
+                                        "height":  28,
+                                        "width":  136,
+                                        "text":  "detailed",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  747,
+                                        "height":  28,
+                                        "width":  88,
+                                        "text":  "heart",
+                                        "x":  559
+                                    },
+                                    {
+                                        "y":  750,
+                                        "height":  25,
+                                        "width":  63,
+                                        "text":  "rate",
+                                        "x":  658
+                                    },
+                                    {
+                                        "y":  746,
+                                        "height":  29,
+                                        "width":  195,
+                                        "text":  "information",
+                                        "x":  732
+                                    },
+                                    {
+                                        "y":  747,
+                                        "height":  36,
+                                        "width":  107,
+                                        "text":  "during",
+                                        "x":  938
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "your workouts will be available to you and your coach.",
+                      "words":  [
+                                    {
+                                        "y":  801,
+                                        "height":  29,
+                                        "width":  75,
+                                        "text":  "your",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  794,
+                                        "height":  28,
+                                        "width":  157,
+                                        "text":  "workouts",
+                                        "x":  179
+                                    },
+                                    {
+                                        "y":  794,
+                                        "height":  28,
+                                        "width":  51,
+                                        "text":  "will",
+                                        "x":  346
+                                    },
+                                    {
+                                        "y":  794,
+                                        "height":  28,
+                                        "width":  41,
+                                        "text":  "be",
+                                        "x":  409
+                                    },
+                                    {
+                                        "y":  793,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "available",
+                                        "x":  460
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  25,
+                                        "width":  34,
+                                        "text":  "to",
+                                        "x":  614
+                                    },
+                                    {
+                                        "y":  802,
+                                        "height":  28,
+                                        "width":  61,
+                                        "text":  "you",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  793,
+                                        "height":  29,
+                                        "width":  62,
+                                        "text":  "and",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  801,
+                                        "height":  29,
+                                        "width":  75,
+                                        "text":  "your",
+                                        "x":  800
+                                    },
+                                    {
+                                        "y":  794,
+                                        "height":  28,
+                                        "width":  112,
+                                        "text":  "coach.",
+                                        "x":  883
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\u003e",
+                      "words":  [
+                                    {
+                                        "y":  623,
+                                        "height":  35,
+                                        "width":  21,
+                                        "text":  "\u003e",
+                                        "x":  1060
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Heart Rate Zones",
+                      "words":  [
+                                    {
+                                        "y":  958,
+                                        "height":  38,
+                                        "width":  121,
+                                        "text":  "Heart",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  958,
+                                        "height":  38,
+                                        "width":  100,
+                                        "text":  "Rate",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  958,
+                                        "height":  38,
+                                        "width":  136,
+                                        "text":  "Zones",
+                                        "x":  345
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Suggested Max",
+                      "words":  [
+                                    {
+                                        "y":  1114,
+                                        "height":  48,
+                                        "width":  235,
+                                        "text":  "Suggested",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1115,
+                                        "height":  38,
+                                        "width":  92,
+                                        "text":  "Max",
+                                        "x":  347
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "View Your Zones",
+                      "words":  [
+                                    {
+                                        "y":  1271,
+                                        "height":  38,
+                                        "width":  109,
+                                        "text":  "View",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  1271,
+                                        "height":  38,
+                                        "width":  100,
+                                        "text":  "Your",
+                                        "x":  213
+                                    },
+                                    {
+                                        "y":  1271,
+                                        "height":  38,
+                                        "width":  138,
+                                        "text":  "Zones",
+                                        "x":  323
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "193 BPM \u003e",
+                      "words":  [
+                                    {
+                                        "y":  1115,
+                                        "height":  38,
+                                        "width":  75,
+                                        "text":  "193",
+                                        "x":  834
+                                    },
+                                    {
+                                        "y":  1115,
+                                        "height":  37,
+                                        "width":  100,
+                                        "text":  "BPM",
+                                        "x":  924
+                                    },
+                                    {
+                                        "y":  1115,
+                                        "height":  35,
+                                        "width":  21,
+                                        "text":  "\u003e",
+                                        "x":  1060
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When enabled, your heart rate will be mapped to cardio",
+                      "words":  [
+                                    {
+                                        "y":  1395,
+                                        "height":  28,
+                                        "width":  102,
+                                        "text":  "When",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  1395,
+                                        "height":  33,
+                                        "width":  145,
+                                        "text":  "enabled,",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  1403,
+                                        "height":  28,
+                                        "width":  76,
+                                        "text":  "your",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  1395,
+                                        "height":  28,
+                                        "width":  89,
+                                        "text":  "heart",
+                                        "x":  446
+                                    },
+                                    {
+                                        "y":  1398,
+                                        "height":  25,
+                                        "width":  64,
+                                        "text":  "rate",
+                                        "x":  545
+                                    },
+                                    {
+                                        "y":  1395,
+                                        "height":  28,
+                                        "width":  52,
+                                        "text":  "will",
+                                        "x":  617
+                                    },
+                                    {
+                                        "y":  1395,
+                                        "height":  28,
+                                        "width":  41,
+                                        "text":  "be",
+                                        "x":  681
+                                    },
+                                    {
+                                        "y":  1395,
+                                        "height":  35,
+                                        "width":  141,
+                                        "text":  "mapped",
+                                        "x":  734
+                                    },
+                                    {
+                                        "y":  1398,
+                                        "height":  25,
+                                        "width":  34,
+                                        "text":  "to",
+                                        "x":  884
+                                    },
+                                    {
+                                        "y":  1395,
+                                        "height":  28,
+                                        "width":  105,
+                                        "text":  "cardio",
+                                        "x":  929
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intensity zones 1-5 during your workouts.",
+                      "words":  [
+                                    {
+                                        "y":  1442,
+                                        "height":  36,
+                                        "width":  142,
+                                        "text":  "intensity",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  20,
+                                        "width":  100,
+                                        "text":  "zones",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  1442,
+                                        "height":  28,
+                                        "width":  48,
+                                        "text":  "1-5",
+                                        "x":  359
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  37,
+                                        "width":  108,
+                                        "text":  "during",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  29,
+                                        "width":  76,
+                                        "text":  "your",
+                                        "x":  532
+                                    },
+                                    {
+                                        "y":  1442,
+                                        "height":  28,
+                                        "width":  165,
+                                        "text":  "workouts.",
+                                        "x":  615
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Watch",
+                      "words":  [
+                                    {
+                                        "y":  1581,
+                                        "height":  33,
+                                        "width":  127,
+                                        "text":  "Watch",
+                                        "x":  97
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Haptics on Watch",
+                      "words":  [
+                                    {
+                                        "y":  1710,
+                                        "height":  47,
+                                        "width":  167,
+                                        "text":  "Haptics",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  1720,
+                                        "height":  28,
+                                        "width":  54,
+                                        "text":  "on",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  1709,
+                                        "height":  39,
+                                        "width":  145,
+                                        "text":  "Watch",
+                                        "x":  344
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When enabled, haptics will play as your workout advances",
+                      "words":  [
+                                    {
+                                        "y":  1835,
+                                        "height":  28,
+                                        "width":  101,
+                                        "text":  "When",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1835,
+                                        "height":  33,
+                                        "width":  145,
+                                        "text":  "enabled,",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  1835,
+                                        "height":  35,
+                                        "width":  123,
+                                        "text":  "haptics",
+                                        "x":  364
+                                    },
+                                    {
+                                        "y":  1835,
+                                        "height":  28,
+                                        "width":  51,
+                                        "text":  "will",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  1835,
+                                        "height":  36,
+                                        "width":  68,
+                                        "text":  "play",
+                                        "x":  559
+                                    },
+                                    {
+                                        "y":  1842,
+                                        "height":  21,
+                                        "width":  37,
+                                        "text":  "as",
+                                        "x":  635
+                                    },
+                                    {
+                                        "y":  1843,
+                                        "height":  28,
+                                        "width":  74,
+                                        "text":  "your",
+                                        "x":  681
+                                    },
+                                    {
+                                        "y":  1835,
+                                        "height":  28,
+                                        "width":  140,
+                                        "text":  "workout",
+                                        "x":  763
+                                    },
+                                    {
+                                        "y":  1835,
+                                        "height":  28,
+                                        "width":  163,
+                                        "text":  "advances",
+                                        "x":  912
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "on your Apple Watch.",
+                      "words":  [
+                                    {
+                                        "y":  1889,
+                                        "height":  21,
+                                        "width":  41,
+                                        "text":  "on",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1889,
+                                        "height":  29,
+                                        "width":  74,
+                                        "text":  "your",
+                                        "x":  148
+                                    },
+                                    {
+                                        "y":  1882,
+                                        "height":  35,
+                                        "width":  101,
+                                        "text":  "Apple",
+                                        "x":  229
+                                    },
+                                    {
+                                        "y":  1882,
+                                        "height":  28,
+                                        "width":  118,
+                                        "text":  "Watch.",
+                                        "x":  339
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Rotate Crown to Modify Weight",
+                      "words":  [
+                                    {
+                                        "y":  2046,
+                                        "height":  38,
+                                        "width":  145,
+                                        "text":  "Rotate",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  2046,
+                                        "height":  38,
+                                        "width":  145,
+                                        "text":  "Crown",
+                                        "x":  256
+                                    },
+                                    {
+                                        "y":  2050,
+                                        "height":  34,
+                                        "width":  45,
+                                        "text":  "to",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  2045,
+                                        "height":  48,
+                                        "width":  154,
+                                        "text":  "Modify",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  2045,
+                                        "height":  48,
+                                        "width":  160,
+                                        "text":  "Weight",
+                                        "x":  634
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When enabled, rotate the Digital Crown on your Apple",
+                      "words":  [
+                                    {
+                                        "y":  2171,
+                                        "height":  28,
+                                        "width":  102,
+                                        "text":  "When",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  2171,
+                                        "height":  33,
+                                        "width":  145,
+                                        "text":  "enabled,",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  2174,
+                                        "height":  25,
+                                        "width":  99,
+                                        "text":  "rotate",
+                                        "x":  364
+                                    },
+                                    {
+                                        "y":  2171,
+                                        "height":  28,
+                                        "width":  56,
+                                        "text":  "the",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  2171,
+                                        "height":  36,
+                                        "width":  102,
+                                        "text":  "Digital",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  2171,
+                                        "height":  28,
+                                        "width":  110,
+                                        "text":  "Crown",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  2179,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "on",
+                                        "x":  772
+                                    },
+                                    {
+                                        "y":  2178,
+                                        "height":  29,
+                                        "width":  75,
+                                        "text":  "your",
+                                        "x":  823
+                                    },
+                                    {
+                                        "y":  2171,
+                                        "height":  35,
+                                        "width":  101,
+                                        "text":  "Apple",
+                                        "x":  904
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Watch to change the weight that you\u0027re using for an",
+                      "words":  [
+                                    {
+                                        "y":  2219,
+                                        "height":  28,
+                                        "width":  111,
+                                        "text":  "Watch",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  2222,
+                                        "height":  25,
+                                        "width":  34,
+                                        "text":  "to",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  2219,
+                                        "height":  36,
+                                        "width":  124,
+                                        "text":  "change",
+                                        "x":  260
+                                    },
+                                    {
+                                        "y":  2219,
+                                        "height":  28,
+                                        "width":  56,
+                                        "text":  "the",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  2219,
+                                        "height":  36,
+                                        "width":  113,
+                                        "text":  "weight",
+                                        "x":  457
+                                    },
+                                    {
+                                        "y":  2219,
+                                        "height":  28,
+                                        "width":  68,
+                                        "text":  "that",
+                                        "x":  578
+                                    },
+                                    {
+                                        "y":  2219,
+                                        "height":  36,
+                                        "width":  99,
+                                        "text":  "you\u0027re",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  2219,
+                                        "height":  36,
+                                        "width":  89,
+                                        "text":  "using",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  2218,
+                                        "height":  29,
+                                        "width":  47,
+                                        "text":  "for",
+                                        "x":  862
+                                    },
+                                    {
+                                        "y":  2227,
+                                        "height":  20,
+                                        "width":  39,
+                                        "text":  "an",
+                                        "x":  918
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "exercise.",
+                      "words":  [
+                                    {
+                                        "y":  2266,
+                                        "height":  28,
+                                        "width":  144,
+                                        "text":  "exercise.",
+                                        "x":  97
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Double-Tap Gesture to Advance to Next Set",
+                      "words":  [
+                                    {
+                                        "y":  2384,
+                                        "height":  38,
+                                        "width":  200,
+                                        "text":  "Double-Tap",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  2384,
+                                        "height":  31,
+                                        "width":  141,
+                                        "text":  "Gesture",
+                                        "x":  308
+                                    },
+                                    {
+                                        "y":  2388,
+                                        "height":  27,
+                                        "width":  36,
+                                        "text":  "to",
+                                        "x":  457
+                                    },
+                                    {
+                                        "y":  2384,
+                                        "height":  31,
+                                        "width":  156,
+                                        "text":  "Advance",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  2388,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "to",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  2385,
+                                        "height":  30,
+                                        "width":  81,
+                                        "text":  "Next",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  2384,
+                                        "height":  31,
+                                        "width":  59,
+                                        "text":  "Set",
+                                        "x":  802
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When enabled, tapping your index finger and thumb",
+                      "words":  [
+                                    {
+                                        "y":  2507,
+                                        "height":  28,
+                                        "width":  102,
+                                        "text":  "When",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  2507,
+                                        "height":  33,
+                                        "width":  145,
+                                        "text":  "enabled,",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  2507,
+                                        "height":  35,
+                                        "width":  131,
+                                        "text":  "tapping",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  2515,
+                                        "height":  27,
+                                        "width":  75,
+                                        "text":  "your",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  2507,
+                                        "height":  28,
+                                        "width":  91,
+                                        "text":  "index",
+                                        "x":  584
+                                    },
+                                    {
+                                        "y":  2506,
+                                        "height":  36,
+                                        "width":  97,
+                                        "text":  "finger",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  2507,
+                                        "height":  28,
+                                        "width":  63,
+                                        "text":  "and",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  2507,
+                                        "height":  28,
+                                        "width":  114,
+                                        "text":  "thumb",
+                                        "x":  859
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 x Workout Settings Heart Rate Connect Heart Rate Monitor When connected, detailed heart rate information during your workouts will be available to you and your coach. \u003e Heart Rate Zones Suggested Max View Your Zones 193 BPM \u003e When enabled, your heart rate will be mapped to cardio intensity zones 1-5 during your workouts. Watch Haptics on Watch When enabled, haptics will play as your workout advances on your Apple Watch. Rotate Crown to Modify Weight When enabled, rotate the Digital Crown on your Apple Watch to change the weight that you\u0027re using for an exercise. Double-Tap Gesture to Advance to Next Set When enabled, tapping your index finger and thumb F Future Pro *Mobbin"
+}

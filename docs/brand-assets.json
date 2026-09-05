@@ -1,0 +1,109 @@
+{
+  "assets": [
+    {
+      "contentType": "font/woff2",
+      "id": "1962dc96ce09c4bb",
+      "kind": "font",
+      "name": "MessinaSansWeb_Regular-s.p.3no2zhh7ncize.woff2",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/1962dc96ce09c4bb.woff2",
+      "url": "https://future.co/_next/static/media/MessinaSansWeb_Regular-s.p.3no2zhh7ncize.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "6471e244d0729c53",
+      "kind": "font",
+      "name": "SeasonMix_Medium-s.p.0t1g1j673uy_8.woff2",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/6471e244d0729c53.woff2",
+      "url": "https://future.co/_next/static/media/SeasonMix_Medium-s.p.0t1g1j673uy_8.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "23716357bdc92cef",
+      "kind": "font",
+      "name": "SeasonMix_Regular-s.p.1v0q8aq_4imwu.woff2",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/23716357bdc92cef.woff2",
+      "url": "https://future.co/_next/static/media/SeasonMix_Regular-s.p.1v0q8aq_4imwu.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "2a4897a1f6400b7b",
+      "kind": "font",
+      "name": "SF_Pro_Text_Regular-s.0nguydmra2xnb.woff2",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/2a4897a1f6400b7b.woff2",
+      "url": "https://future.co/_next/static/media/SF_Pro_Text_Regular-s.0nguydmra2xnb.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "7b6053af8d9af441",
+      "kind": "font",
+      "name": "SF_Pro_Display_Medium-s.3ub56eq-i86np.woff2",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/7b6053af8d9af441.woff2",
+      "url": "https://future.co/_next/static/media/SF_Pro_Display_Medium-s.3ub56eq-i86np.woff2"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "dd1cdf5112220fb8",
+      "kind": "image",
+      "name": "svg-2",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/dd1cdf5112220fb8.svg",
+      "url": "inline-svg:dd1cdf5112220fb8"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "d670b0f408bca099",
+      "kind": "image",
+      "name": "svg-3",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/d670b0f408bca099.svg",
+      "url": "inline-svg:d670b0f408bca099"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "8be8d49ade2e3705",
+      "kind": "image",
+      "name": "svg-54",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/8be8d49ade2e3705.svg",
+      "url": "inline-svg:8be8d49ade2e3705"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "3d8ce0d1deb3a4cd",
+      "kind": "image",
+      "name": "svg-6",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/3d8ce0d1deb3a4cd.svg",
+      "url": "inline-svg:3d8ce0d1deb3a4cd"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "8a06b958153385d1",
+      "kind": "image",
+      "name": "svg-7",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/8a06b958153385d1.svg",
+      "url": "inline-svg:8a06b958153385d1"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6a6b410faba122b8",
+      "kind": "image",
+      "name": "svg-8",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/6a6b410faba122b8.svg",
+      "url": "inline-svg:6a6b410faba122b8"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "28ca752db02e1fa9",
+      "kind": "image",
+      "name": "svg-9",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/28ca752db02e1fa9.svg",
+      "url": "inline-svg:28ca752db02e1fa9"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "c472d3714fd8c821",
+      "kind": "image",
+      "name": "svg-10",
+      "path": "C:\\Users\\radev\\AppData\\Local\\Temp/browser-use/assets/91b457d9-ff4c-4afb-8899-e0484b108ee6/c472d3714fd8c821.svg",
+      "url": "inline-svg:c472d3714fd8c821"
+    }
+  ],
+  "failures": []
+}

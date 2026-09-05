@@ -1,0 +1,420 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Unlimited",
+                      "words":  [
+                                    {
+                                        "y":  866,
+                                        "height":  32,
+                                        "width":  178,
+                                        "text":  "Unlimited",
+                                        "x":  219
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Membership",
+                      "words":  [
+                                    {
+                                        "y":  1092,
+                                        "height":  51,
+                                        "width":  303,
+                                        "text":  "Membership",
+                                        "x":  124
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Checkout",
+                      "words":  [
+                                    {
+                                        "y":  224,
+                                        "height":  39,
+                                        "width":  224,
+                                        "text":  "Checkout",
+                                        "x":  478
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Lee",
+                      "words":  [
+                                    {
+                                        "y":  700,
+                                        "height":  73,
+                                        "width":  163,
+                                        "text":  "Lee",
+                                        "x":  510
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "-on-I Coaching",
+                      "words":  [
+                                    {
+                                        "y":  867,
+                                        "height":  31,
+                                        "width":  99,
+                                        "text":  "-on-I",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  866,
+                                        "height":  39,
+                                        "width":  179,
+                                        "text":  "Coaching",
+                                        "x":  550
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Expertise",
+                      "words":  [
+                                    {
+                                        "y":  865,
+                                        "height":  40,
+                                        "width":  176,
+                                        "text":  "Expertise",
+                                        "x":  786
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "$50 first month — $199/mo afterwards.",
+                      "words":  [
+                                    {
+                                        "y":  1190,
+                                        "height":  36,
+                                        "width":  72,
+                                        "text":  "$50",
+                                        "x":  123
+                                    },
+                                    {
+                                        "y":  1192,
+                                        "height":  32,
+                                        "width":  75,
+                                        "text":  "first",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  1192,
+                                        "height":  32,
+                                        "width":  118,
+                                        "text":  "month",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  1209,
+                                        "height":  4,
+                                        "width":  22,
+                                        "text":  "—",
+                                        "x":  432
+                                    },
+                                    {
+                                        "y":  1190,
+                                        "height":  41,
+                                        "width":  166,
+                                        "text":  "$199/mo",
+                                        "x":  469
+                                    },
+                                    {
+                                        "y":  1192,
+                                        "height":  32,
+                                        "width":  214,
+                                        "text":  "afterwards.",
+                                        "x":  650
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TODAY\u0027S TOTAL",
+                      "words":  [
+                                    {
+                                        "y":  1418,
+                                        "height":  25,
+                                        "width":  185,
+                                        "text":  "TODAY\u0027S",
+                                        "x":  121
+                                    },
+                                    {
+                                        "y":  1418,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "TOTAL",
+                                        "x":  331
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "$50",
+                      "words":  [
+                                    {
+                                        "y":  1096,
+                                        "height":  36,
+                                        "width":  72,
+                                        "text":  "$50",
+                                        "x":  984
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "$50",
+                      "words":  [
+                                    {
+                                        "y":  1405,
+                                        "height":  51,
+                                        "width":  104,
+                                        "text":  "$50",
+                                        "x":  952
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "All subscriptions come with a 30-day risk free",
+                      "words":  [
+                                    {
+                                        "y":  1646,
+                                        "height":  29,
+                                        "width":  42,
+                                        "text":  "All",
+                                        "x":  174
+                                    },
+                                    {
+                                        "y":  1646,
+                                        "height":  36,
+                                        "width":  241,
+                                        "text":  "subscriptions",
+                                        "x":  231
+                                    },
+                                    {
+                                        "y":  1654,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "come",
+                                        "x":  487
+                                    },
+                                    {
+                                        "y":  1646,
+                                        "height":  29,
+                                        "width":  73,
+                                        "text":  "with",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1654,
+                                        "height":  21,
+                                        "width":  17,
+                                        "text":  "a",
+                                        "x":  684
+                                    },
+                                    {
+                                        "y":  1646,
+                                        "height":  36,
+                                        "width":  128,
+                                        "text":  "30-day",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  1646,
+                                        "height":  29,
+                                        "width":  61,
+                                        "text":  "risk",
+                                        "x":  860
+                                    },
+                                    {
+                                        "y":  1646,
+                                        "height":  29,
+                                        "width":  69,
+                                        "text":  "free",
+                                        "x":  934
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "guarantee.",
+                      "words":  [
+                                    {
+                                        "y":  1704,
+                                        "height":  33,
+                                        "width":  189,
+                                        "text":  "guarantee.",
+                                        "x":  494
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAQ",
+                      "words":  [
+                                    {
+                                        "y":  1891,
+                                        "height":  35,
+                                        "width":  75,
+                                        "text":  "FAQ",
+                                        "x":  552
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Terms of Use",
+                      "words":  [
+                                    {
+                                        "y":  2072,
+                                        "height":  31,
+                                        "width":  115,
+                                        "text":  "Terms",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  2071,
+                                        "height":  32,
+                                        "width":  36,
+                                        "text":  "of",
+                                        "x":  383
+                                    },
+                                    {
+                                        "y":  2072,
+                                        "height":  31,
+                                        "width":  71,
+                                        "text":  "Use",
+                                        "x":  435
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Privacy Policy",
+                      "words":  [
+                                    {
+                                        "y":  2071,
+                                        "height":  39,
+                                        "width":  136,
+                                        "text":  "Privacy",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  2071,
+                                        "height":  39,
+                                        "width":  112,
+                                        "text":  "Policy",
+                                        "x":  815
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Subscribe with é Pay",
+                      "words":  [
+                                    {
+                                        "y":  2240,
+                                        "height":  50,
+                                        "width":  294,
+                                        "text":  "Subscribe",
+                                        "x":  272
+                                    },
+                                    {
+                                        "y":  2240,
+                                        "height":  50,
+                                        "width":  122,
+                                        "text":  "with",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  2231,
+                                        "height":  59,
+                                        "width":  48,
+                                        "text":  "é",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  2235,
+                                        "height":  69,
+                                        "width":  115,
+                                        "text":  "Pay",
+                                        "x":  794
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Subscribe with Card",
+                      "words":  [
+                                    {
+                                        "y":  2398,
+                                        "height":  38,
+                                        "width":  221,
+                                        "text":  "Subscribe",
+                                        "x":  365
+                                    },
+                                    {
+                                        "y":  2398,
+                                        "height":  37,
+                                        "width":  92,
+                                        "text":  "with",
+                                        "x":  600
+                                    },
+                                    {
+                                        "y":  2399,
+                                        "height":  37,
+                                        "width":  102,
+                                        "text":  "Card",
+                                        "x":  709
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FUWre Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUWre",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Unlimited Membership Checkout Lee -on-I Coaching Expertise $50 first month — $199/mo afterwards. TODAY\u0027S TOTAL $50 $50 All subscriptions come with a 30-day risk free guarantee. FAQ Terms of Use Privacy Policy Subscribe with é Pay Subscribe with Card F FUWre Pro *Mobbin"
+}

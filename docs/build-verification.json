@@ -1,0 +1,25 @@
+{
+  "build": "passed",
+  "typescript": "passed within production build",
+  "eslint": "passed",
+  "artifact": ".next/server/app/review.html",
+  "sha256": "dc17a822b43a02b070d243b0aac20e003e205448d3c884fe6aa8a4281c5596a8",
+  "firstBodyElementIsContract": false,
+  "emittedHtmlComment": true,
+  "exactFinish": true,
+  "sourceKey": true,
+  "temporaryExporterRemoved": true,
+  "referenceScreens": 270,
+  "flowFamilies": 84,
+  "additionalStateFixtures": 155,
+  "keyboardStates": 20,
+  "visualEvidence": "docs/reference-rendered-evidence.json",
+  "review": "docs/review-fidelity.md",
+  "fullPixelParityVerified": false,
+  "finalHomeBrowser": {
+    "url": "http://127.0.0.1:3210/",
+    "heading": "Morning, Alex",
+    "mainNavigationLinks": 5,
+    "visibleIssueBadge": false
+  }
+}

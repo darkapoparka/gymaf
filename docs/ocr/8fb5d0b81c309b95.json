@@ -1,0 +1,859 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Lee",
+                      "words":  [
+                                    {
+                                        "y":  226,
+                                        "height":  37,
+                                        "width":  82,
+                                        "text":  "Lee",
+                                        "x":  595
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "For today, I uploaded a full-body,",
+                      "words":  [
+                                    {
+                                        "y":  367,
+                                        "height":  35,
+                                        "width":  66,
+                                        "text":  "For",
+                                        "x":  76
+                                    },
+                                    {
+                                        "y":  365,
+                                        "height":  45,
+                                        "width":  128,
+                                        "text":  "today,",
+                                        "x":  156
+                                    },
+                                    {
+                                        "y":  367,
+                                        "height":  34,
+                                        "width":  5,
+                                        "text":  "I",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  365,
+                                        "height":  45,
+                                        "width":  198,
+                                        "text":  "uploaded",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  375,
+                                        "height":  27,
+                                        "width":  21,
+                                        "text":  "a",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  365,
+                                        "height":  45,
+                                        "width":  203,
+                                        "text":  "full-body,",
+                                        "x":  579
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "bodyweight workout. It\u0027s set up in a",
+                      "words":  [
+                                    {
+                                        "y":  423,
+                                        "height":  45,
+                                        "width":  248,
+                                        "text":  "bodyweight",
+                                        "x":  76
+                                    },
+                                    {
+                                        "y":  423,
+                                        "height":  37,
+                                        "width":  184,
+                                        "text":  "workout.",
+                                        "x":  340
+                                    },
+                                    {
+                                        "y":  425,
+                                        "height":  35,
+                                        "width":  61,
+                                        "text":  "It\u0027s",
+                                        "x":  543
+                                    },
+                                    {
+                                        "y":  427,
+                                        "height":  33,
+                                        "width":  64,
+                                        "text":  "set",
+                                        "x":  620
+                                    },
+                                    {
+                                        "y":  433,
+                                        "height":  35,
+                                        "width":  51,
+                                        "text":  "up",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  423,
+                                        "height":  36,
+                                        "width":  33,
+                                        "text":  "in",
+                                        "x":  769
+                                    },
+                                    {
+                                        "y":  433,
+                                        "height":  27,
+                                        "width":  21,
+                                        "text":  "a",
+                                        "x":  818
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "**21-15-9** format, so the reps",
+                      "words":  [
+                                    {
+                                        "y":  481,
+                                        "height":  36,
+                                        "width":  253,
+                                        "text":  "**21-15-9**",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  480,
+                                        "height":  45,
+                                        "width":  152,
+                                        "text":  "format,",
+                                        "x":  344
+                                    },
+                                    {
+                                        "y":  490,
+                                        "height":  27,
+                                        "width":  48,
+                                        "text":  "so",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  480,
+                                        "height":  37,
+                                        "width":  68,
+                                        "text":  "the",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  490,
+                                        "height":  35,
+                                        "width":  92,
+                                        "text":  "reps",
+                                        "x":  662
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "decrease each round. It starts out",
+                      "words":  [
+                                    {
+                                        "y":  537,
+                                        "height":  37,
+                                        "width":  196,
+                                        "text":  "decrease",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  537,
+                                        "height":  37,
+                                        "width":  101,
+                                        "text":  "each",
+                                        "x":  286
+                                    },
+                                    {
+                                        "y":  537,
+                                        "height":  37,
+                                        "width":  134,
+                                        "text":  "round.",
+                                        "x":  405
+                                    },
+                                    {
+                                        "y":  539,
+                                        "height":  34,
+                                        "width":  23,
+                                        "text":  "It",
+                                        "x":  559
+                                    },
+                                    {
+                                        "y":  541,
+                                        "height":  33,
+                                        "width":  121,
+                                        "text":  "starts",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  541,
+                                        "height":  33,
+                                        "width":  69,
+                                        "text":  "out",
+                                        "x":  734
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "looking like a lot of work, but the",
+                      "words":  [
+                                    {
+                                        "y":  595,
+                                        "height":  45,
+                                        "width":  151,
+                                        "text":  "looking",
+                                        "x":  76
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  37,
+                                        "width":  67,
+                                        "text":  "like",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  605,
+                                        "height":  27,
+                                        "width":  21,
+                                        "text":  "a",
+                                        "x":  329
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  37,
+                                        "width":  49,
+                                        "text":  "lot",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  37,
+                                        "width":  42,
+                                        "text":  "of",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  45,
+                                        "width":  114,
+                                        "text":  "work,",
+                                        "x":  490
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  37,
+                                        "width":  67,
+                                        "text":  "but",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  37,
+                                        "width":  67,
+                                        "text":  "the",
+                                        "x":  706
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "decreasing reps help you keep the",
+                      "words":  [
+                                    {
+                                        "y":  652,
+                                        "height":  45,
+                                        "width":  235,
+                                        "text":  "decreasing",
+                                        "x":  74
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  35,
+                                        "width":  92,
+                                        "text":  "reps",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  652,
+                                        "height":  45,
+                                        "width":  88,
+                                        "text":  "help",
+                                        "x":  436
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  35,
+                                        "width":  75,
+                                        "text":  "you",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  652,
+                                        "height":  45,
+                                        "width":  99,
+                                        "text":  "keep",
+                                        "x":  634
+                                    },
+                                    {
+                                        "y":  652,
+                                        "height":  37,
+                                        "width":  68,
+                                        "text":  "the",
+                                        "x":  748
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intensity up while still getting a great",
+                      "words":  [
+                                    {
+                                        "y":  709,
+                                        "height":  45,
+                                        "width":  180,
+                                        "text":  "intensity",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  719,
+                                        "height":  35,
+                                        "width":  52,
+                                        "text":  "up",
+                                        "x":  271
+                                    },
+                                    {
+                                        "y":  709,
+                                        "height":  37,
+                                        "width":  110,
+                                        "text":  "while",
+                                        "x":  337
+                                    },
+                                    {
+                                        "y":  709,
+                                        "height":  37,
+                                        "width":  68,
+                                        "text":  "still",
+                                        "x":  464
+                                    },
+                                    {
+                                        "y":  709,
+                                        "height":  45,
+                                        "width":  149,
+                                        "text":  "getting",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  719,
+                                        "height":  27,
+                                        "width":  21,
+                                        "text":  "a",
+                                        "x":  716
+                                    },
+                                    {
+                                        "y":  713,
+                                        "height":  41,
+                                        "width":  110,
+                                        "text":  "great",
+                                        "x":  754
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "training stimulus.",
+                      "words":  [
+                                    {
+                                        "y":  766,
+                                        "height":  45,
+                                        "width":  160,
+                                        "text":  "training",
+                                        "x":  73
+                                    },
+                                    {
+                                        "y":  766,
+                                        "height":  37,
+                                        "width":  189,
+                                        "text":  "stimulus.",
+                                        "x":  250
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Give it a go and let me know how it",
+                      "words":  [
+                                    {
+                                        "y":  881,
+                                        "height":  37,
+                                        "width":  91,
+                                        "text":  "Give",
+                                        "x":  75
+                                    },
+                                    {
+                                        "y":  881,
+                                        "height":  36,
+                                        "width":  22,
+                                        "text":  "it",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  891,
+                                        "height":  27,
+                                        "width":  21,
+                                        "text":  "a",
+                                        "x":  222
+                                    },
+                                    {
+                                        "y":  891,
+                                        "height":  35,
+                                        "width":  52,
+                                        "text":  "go",
+                                        "x":  261
+                                    },
+                                    {
+                                        "y":  881,
+                                        "height":  37,
+                                        "width":  77,
+                                        "text":  "and",
+                                        "x":  329
+                                    },
+                                    {
+                                        "y":  881,
+                                        "height":  37,
+                                        "width":  48,
+                                        "text":  "let",
+                                        "x":  425
+                                    },
+                                    {
+                                        "y":  891,
+                                        "height":  27,
+                                        "width":  63,
+                                        "text":  "me",
+                                        "x":  490
+                                    },
+                                    {
+                                        "y":  881,
+                                        "height":  37,
+                                        "width":  111,
+                                        "text":  "know",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  881,
+                                        "height":  37,
+                                        "width":  86,
+                                        "text":  "how",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  881,
+                                        "height":  37,
+                                        "width":  23,
+                                        "text":  "it",
+                                        "x":  800
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "feels. 11m looking forward to hearing",
+                      "words":  [
+                                    {
+                                        "y":  938,
+                                        "height":  37,
+                                        "width":  112,
+                                        "text":  "feels.",
+                                        "x":  73
+                                    },
+                                    {
+                                        "y":  940,
+                                        "height":  34,
+                                        "width":  60,
+                                        "text":  "11m",
+                                        "x":  205
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  45,
+                                        "width":  151,
+                                        "text":  "looking",
+                                        "x":  284
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  37,
+                                        "width":  163,
+                                        "text":  "forward",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  33,
+                                        "width":  41,
+                                        "text":  "to",
+                                        "x":  630
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  45,
+                                        "width":  157,
+                                        "text":  "hearing",
+                                        "x":  689
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "what you think!",
+                      "words":  [
+                                    {
+                                        "y":  995,
+                                        "height":  37,
+                                        "width":  104,
+                                        "text":  "what",
+                                        "x":  73
+                                    },
+                                    {
+                                        "y":  1005,
+                                        "height":  35,
+                                        "width":  74,
+                                        "text":  "you",
+                                        "x":  192
+                                    },
+                                    {
+                                        "y":  995,
+                                        "height":  37,
+                                        "width":  117,
+                                        "text":  "think!",
+                                        "x":  282
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Yesterday, 11:59 PM",
+                      "words":  [
+                                    {
+                                        "y":  1109,
+                                        "height":  31,
+                                        "width":  169,
+                                        "text":  "Yesterday,",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  1110,
+                                        "height":  25,
+                                        "width":  79,
+                                        "text":  "11:59",
+                                        "x":  614
+                                    },
+                                    {
+                                        "y":  1110,
+                                        "height":  24,
+                                        "width":  44,
+                                        "text":  "PM",
+                                        "x":  703
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Yesterday",
+                      "words":  [
+                                    {
+                                        "y":  1236,
+                                        "height":  37,
+                                        "width":  166,
+                                        "text":  "Yesterday",
+                                        "x":  97
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1 min",
+                      "words":  [
+                                    {
+                                        "y":  1368,
+                                        "height":  37,
+                                        "width":  14,
+                                        "text":  "1",
+                                        "x":  312
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  37,
+                                        "width":  79,
+                                        "text":  "min",
+                                        "x":  342
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TODAY\u0027S WORKOUT O",
+                      "words":  [
+                                    {
+                                        "y":  1592,
+                                        "height":  27,
+                                        "width":  172,
+                                        "text":  "TODAY\u0027S",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1592,
+                                        "height":  27,
+                                        "width":  201,
+                                        "text":  "WORKOUT",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  44,
+                                        "width":  46,
+                                        "text":  "O",
+                                        "x":  771
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BODY WEIGHTBEACH",
+                      "words":  [
+                                    {
+                                        "y":  1693,
+                                        "height":  66,
+                                        "width":  233,
+                                        "text":  "BODY",
+                                        "x":  135
+                                    },
+                                    {
+                                        "y":  1693,
+                                        "height":  66,
+                                        "width":  650,
+                                        "text":  "WEIGHTBEACH",
+                                        "x":  392
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "QUICK NOWEIGTHS RAVÉL WORK OUT",
+                      "words":  [
+                                    {
+                                        "y":  1932,
+                                        "height":  29,
+                                        "width":  117,
+                                        "text":  "QUICK",
+                                        "x":  226
+                                    },
+                                    {
+                                        "y":  1931,
+                                        "height":  28,
+                                        "width":  235,
+                                        "text":  "NOWEIGTHS",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1926,
+                                        "height":  32,
+                                        "width":  115,
+                                        "text":  "RAVÉL",
+                                        "x":  627
+                                    },
+                                    {
+                                        "y":  1932,
+                                        "height":  27,
+                                        "width":  112,
+                                        "text":  "WORK",
+                                        "x":  754
+                                    },
+                                    {
+                                        "y":  1932,
+                                        "height":  27,
+                                        "width":  76,
+                                        "text":  "OUT",
+                                        "x":  878
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "0 33 MIN",
+                      "words":  [
+                                    {
+                                        "y":  2010,
+                                        "height":  33,
+                                        "width":  30,
+                                        "text":  "0",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  2014,
+                                        "height":  27,
+                                        "width":  44,
+                                        "text":  "33",
+                                        "x":  560
+                                    },
+                                    {
+                                        "y":  2014,
+                                        "height":  26,
+                                        "width":  66,
+                                        "text":  "MIN",
+                                        "x":  618
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Send a message",
+                      "words":  [
+                                    {
+                                        "y":  2206,
+                                        "height":  36,
+                                        "width":  106,
+                                        "text":  "Send",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  2215,
+                                        "height":  26,
+                                        "width":  21,
+                                        "text":  "a",
+                                        "x":  360
+                                    },
+                                    {
+                                        "y":  2215,
+                                        "height":  35,
+                                        "width":  190,
+                                        "text":  "message",
+                                        "x":  400
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Home",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  22,
+                                        "width":  83,
+                                        "text":  "Home",
+                                        "x":  146
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Progress",
+                      "words":  [
+                                    {
+                                        "y":  2431,
+                                        "height":  28,
+                                        "width":  128,
+                                        "text":  "Progress",
+                                        "x":  314
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Messages",
+                      "words":  [
+                                    {
+                                        "y":  2432,
+                                        "height":  27,
+                                        "width":  148,
+                                        "text":  "Messages",
+                                        "x":  509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Friends",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  106,
+                                        "text":  "Friends",
+                                        "x":  740
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "curated by",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  138,
+                                        "text":  "curated",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  36,
+                                        "width":  42,
+                                        "text":  "by",
+                                        "x":  807
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Profile",
+                      "words":  [
+                                    {
+                                        "y":  2430,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "Profile",
+                                        "x":  947
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  170,
+                                        "text":  "Mobbin",
+                                        "x":  981
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Lee For today, I uploaded a full-body, bodyweight workout. It\u0027s set up in a **21-15-9** format, so the reps decrease each round. It starts out looking like a lot of work, but the decreasing reps help you keep the intensity up while still getting a great training stimulus. Give it a go and let me know how it feels. 11m looking forward to hearing what you think! Yesterday, 11:59 PM Yesterday 1 min TODAY\u0027S WORKOUT O BODY WEIGHTBEACH QUICK NOWEIGTHS RAVÉL WORK OUT 0 33 MIN Send a message Home F Future Pro Progress Messages Friends curated by Profile Mobbin"
+}

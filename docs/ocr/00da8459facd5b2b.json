@@ -1,0 +1,371 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  97,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "How would you describe your",
+                      "words":  [
+                                    {
+                                        "y":  392,
+                                        "height":  48,
+                                        "width":  132,
+                                        "text":  "How",
+                                        "x":  102
+                                    },
+                                    {
+                                        "y":  392,
+                                        "height":  48,
+                                        "width":  181,
+                                        "text":  "would",
+                                        "x":  250
+                                    },
+                                    {
+                                        "y":  405,
+                                        "height":  45,
+                                        "width":  105,
+                                        "text":  "you",
+                                        "x":  453
+                                    },
+                                    {
+                                        "y":  392,
+                                        "height":  48,
+                                        "width":  260,
+                                        "text":  "describe",
+                                        "x":  582
+                                    },
+                                    {
+                                        "y":  405,
+                                        "height":  45,
+                                        "width":  134,
+                                        "text":  "your",
+                                        "x":  860
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ideal coach? Choose all that",
+                      "words":  [
+                                    {
+                                        "y":  471,
+                                        "height":  48,
+                                        "width":  136,
+                                        "text":  "ideal",
+                                        "x":  101
+                                    },
+                                    {
+                                        "y":  471,
+                                        "height":  48,
+                                        "width":  219,
+                                        "text":  "coach?",
+                                        "x":  261
+                                    },
+                                    {
+                                        "y":  470,
+                                        "height":  49,
+                                        "width":  229,
+                                        "text":  "Choose",
+                                        "x":  502
+                                    },
+                                    {
+                                        "y":  471,
+                                        "height":  48,
+                                        "width":  62,
+                                        "text":  "all",
+                                        "x":  753
+                                    },
+                                    {
+                                        "y":  471,
+                                        "height":  48,
+                                        "width":  122,
+                                        "text":  "that",
+                                        "x":  838
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "apply.",
+                      "words":  [
+                                    {
+                                        "y":  550,
+                                        "height":  60,
+                                        "width":  173,
+                                        "text":  "apply.",
+                                        "x":  99
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "High-energy",
+                      "words":  [
+                                    {
+                                        "y":  761,
+                                        "height":  46,
+                                        "width":  276,
+                                        "text":  "High-energy",
+                                        "x":  124
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Knows when to give me tough love",
+                      "words":  [
+                                    {
+                                        "y":  992,
+                                        "height":  35,
+                                        "width":  143,
+                                        "text":  "Knows",
+                                        "x":  124
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  37,
+                                        "width":  117,
+                                        "text":  "when",
+                                        "x":  282
+                                    },
+                                    {
+                                        "y":  994,
+                                        "height":  33,
+                                        "width":  44,
+                                        "text":  "to",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  989,
+                                        "height":  46,
+                                        "width":  90,
+                                        "text":  "give",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  27,
+                                        "width":  66,
+                                        "text":  "me",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  45,
+                                        "width":  128,
+                                        "text":  "tough",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  37,
+                                        "width":  87,
+                                        "text":  "love",
+                                        "x":  801
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Calm, cool, and collected",
+                      "words":  [
+                                    {
+                                        "y":  1218,
+                                        "height":  45,
+                                        "width":  121,
+                                        "text":  "Calm,",
+                                        "x":  123
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  45,
+                                        "width":  103,
+                                        "text":  "cool,",
+                                        "x":  262
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  37,
+                                        "width":  79,
+                                        "text":  "and",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  37,
+                                        "width":  201,
+                                        "text":  "collected",
+                                        "x":  478
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Always positive",
+                      "words":  [
+                                    {
+                                        "y":  1446,
+                                        "height":  45,
+                                        "width":  153,
+                                        "text":  "Always",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  1445,
+                                        "height":  46,
+                                        "width":  171,
+                                        "text":  "positive",
+                                        "x":  292
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Drill sergeant",
+                      "words":  [
+                                    {
+                                        "y":  1673,
+                                        "height":  37,
+                                        "width":  82,
+                                        "text":  "Drill",
+                                        "x":  124
+                                    },
+                                    {
+                                        "y":  1678,
+                                        "height":  41,
+                                        "width":  194,
+                                        "text":  "sergeant",
+                                        "x":  222
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Has a sense of humor",
+                      "words":  [
+                                    {
+                                        "y":  1904,
+                                        "height":  35,
+                                        "width":  81,
+                                        "text":  "Has",
+                                        "x":  124
+                                    },
+                                    {
+                                        "y":  1912,
+                                        "height":  27,
+                                        "width":  23,
+                                        "text":  "a",
+                                        "x":  220
+                                    },
+                                    {
+                                        "y":  1912,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "sense",
+                                        "x":  259
+                                    },
+                                    {
+                                        "y":  1902,
+                                        "height":  37,
+                                        "width":  43,
+                                        "text":  "of",
+                                        "x":  402
+                                    },
+                                    {
+                                        "y":  1902,
+                                        "height":  37,
+                                        "width":  141,
+                                        "text":  "humor",
+                                        "x":  462
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Analytical and results-driven",
+                      "words":  [
+                                    {
+                                        "y":  2129,
+                                        "height":  46,
+                                        "width":  214,
+                                        "text":  "Analytical",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2130,
+                                        "height":  37,
+                                        "width":  79,
+                                        "text":  "and",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  2129,
+                                        "height":  38,
+                                        "width":  308,
+                                        "text":  "results-driven",
+                                        "x":  448
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Strictly business",
+                      "words":  [
+                                    {
+                                        "y":  2357,
+                                        "height":  46,
+                                        "width":  157,
+                                        "text":  "Strictly",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2357,
+                                        "height":  38,
+                                        "width":  193,
+                                        "text":  "business",
+                                        "x":  295
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  887
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1180,
+    "height":  2676,
+    "text":  "9:41 How would you describe your ideal coach? Choose all that apply. High-energy Knows when to give me tough love Calm, cool, and collected Always positive Drill sergeant Has a sense of humor Analytical and results-driven Strictly business F Future Pro *Mobbin"
+}

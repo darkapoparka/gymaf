@@ -1,0 +1,183 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  296,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "x",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "O",
+                      "words":  [
+                                    {
+                                        "y":  548,
+                                        "height":  51,
+                                        "width":  51,
+                                        "text":  "O",
+                                        "x":  139
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Account Help",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  45,
+                                        "width":  226,
+                                        "text":  "Account",
+                                        "x":  406
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  56,
+                                        "width":  123,
+                                        "text":  "Help",
+                                        "x":  647
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAQs",
+                      "words":  [
+                                    {
+                                        "y":  554,
+                                        "height":  48,
+                                        "width":  114,
+                                        "text":  "FAQs",
+                                        "x":  249
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Billing Questions",
+                      "words":  [
+                                    {
+                                        "y":  723,
+                                        "height":  48,
+                                        "width":  127,
+                                        "text":  "Billing",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  48,
+                                        "width":  228,
+                                        "text":  "Questions",
+                                        "x":  387
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cancel Membership",
+                      "words":  [
+                                    {
+                                        "y":  891,
+                                        "height":  39,
+                                        "width":  154,
+                                        "text":  "Cancel",
+                                        "x":  247
+                                    },
+                                    {
+                                        "y":  891,
+                                        "height":  48,
+                                        "width":  282,
+                                        "text":  "Membership",
+                                        "x":  417
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Message Support",
+                      "words":  [
+                                    {
+                                        "y":  1062,
+                                        "height":  47,
+                                        "width":  196,
+                                        "text":  "Message",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  1062,
+                                        "height":  47,
+                                        "width":  183,
+                                        "text":  "Support",
+                                        "x":  457
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Permanent Account Deletion",
+                      "words":  [
+                                    {
+                                        "y":  1231,
+                                        "height":  38,
+                                        "width":  245,
+                                        "text":  "Permanent",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  1231,
+                                        "height":  38,
+                                        "width":  191,
+                                        "text":  "Account",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  1230,
+                                        "height":  39,
+                                        "width":  182,
+                                        "text":  "Deletion",
+                                        "x":  709
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F FUtUre Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUtUre",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "x O Account Help FAQs Billing Questions Cancel Membership Message Support Permanent Account Deletion F FUtUre Pro *Mobbin"
+}

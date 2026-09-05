@@ -1,0 +1,668 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "X",
+                      "words":  [
+                                    {
+                                        "y":  266,
+                                        "height":  52,
+                                        "width":  52,
+                                        "text":  "X",
+                                        "x":  87
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Schedule Kickoff Call",
+                      "words":  [
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  247,
+                                        "text":  "Schedule",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  268,
+                                        "height":  46,
+                                        "width":  194,
+                                        "text":  "Kickoff",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  100,
+                                        "text":  "Call",
+                                        "x":  772
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This 30 minute I-on-I call is keyto laying a strong",
+                      "words":  [
+                                    {
+                                        "y":  662,
+                                        "height":  34,
+                                        "width":  81,
+                                        "text":  "This",
+                                        "x":  117
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  34,
+                                        "width":  52,
+                                        "text":  "30",
+                                        "x":  208
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  34,
+                                        "width":  136,
+                                        "text":  "minute",
+                                        "x":  273
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  34,
+                                        "width":  111,
+                                        "text":  "I-on-I",
+                                        "x":  419
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  34,
+                                        "width":  63,
+                                        "text":  "call",
+                                        "x":  543
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  34,
+                                        "width":  28,
+                                        "text":  "is",
+                                        "x":  619
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  42,
+                                        "width":  113,
+                                        "text":  "keyto",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  42,
+                                        "width":  112,
+                                        "text":  "laying",
+                                        "x":  783
+                                    },
+                                    {
+                                        "y":  671,
+                                        "height":  25,
+                                        "width":  20,
+                                        "text":  "a",
+                                        "x":  904
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  38,
+                                        "width":  124,
+                                        "text":  "strong",
+                                        "x":  937
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "foundation for your progress.",
+                      "words":  [
+                                    {
+                                        "y":  717,
+                                        "height":  35,
+                                        "width":  215,
+                                        "text":  "foundation",
+                                        "x":  307
+                                    },
+                                    {
+                                        "y":  717,
+                                        "height":  35,
+                                        "width":  55,
+                                        "text":  "for",
+                                        "x":  532
+                                    },
+                                    {
+                                        "y":  727,
+                                        "height":  33,
+                                        "width":  87,
+                                        "text":  "your",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  727,
+                                        "height":  33,
+                                        "width":  177,
+                                        "text":  "progress.",
+                                        "x":  693
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mon",
+                      "words":  [
+                                    {
+                                        "y":  870,
+                                        "height":  29,
+                                        "width":  74,
+                                        "text":  "Mon",
+                                        "x":  95
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "29",
+                      "words":  [
+                                    {
+                                        "y":  931,
+                                        "height":  34,
+                                        "width":  49,
+                                        "text":  "29",
+                                        "x":  107
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Tue",
+                      "words":  [
+                                    {
+                                        "y":  870,
+                                        "height":  29,
+                                        "width":  60,
+                                        "text":  "Tue",
+                                        "x":  245
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "30",
+                      "words":  [
+                                    {
+                                        "y":  931,
+                                        "height":  34,
+                                        "width":  51,
+                                        "text":  "30",
+                                        "x":  250
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wed",
+                      "words":  [
+                                    {
+                                        "y":  869,
+                                        "height":  30,
+                                        "width":  79,
+                                        "text":  "Wed",
+                                        "x":  379
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1",
+                      "words":  [
+                                    {
+                                        "y":  931,
+                                        "height":  33,
+                                        "width":  13,
+                                        "text":  "1",
+                                        "x":  412
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mon",
+                      "words":  [
+                                    {
+                                        "y":  870,
+                                        "height":  29,
+                                        "width":  74,
+                                        "text":  "Mon",
+                                        "x":  527
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6",
+                      "words":  [
+                                    {
+                                        "y":  931,
+                                        "height":  34,
+                                        "width":  24,
+                                        "text":  "6",
+                                        "x":  552
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Tue",
+                      "words":  [
+                                    {
+                                        "y":  870,
+                                        "height":  29,
+                                        "width":  60,
+                                        "text":  "Tue",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "7",
+                      "words":  [
+                                    {
+                                        "y":  931,
+                                        "height":  33,
+                                        "width":  24,
+                                        "text":  "7",
+                                        "x":  696
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wed",
+                      "words":  [
+                                    {
+                                        "y":  869,
+                                        "height":  30,
+                                        "width":  79,
+                                        "text":  "Wed",
+                                        "x":  811
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "8",
+                      "words":  [
+                                    {
+                                        "y":  931,
+                                        "height":  34,
+                                        "width":  24,
+                                        "text":  "8",
+                                        "x":  840
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1:45 PM",
+                      "words":  [
+                                    {
+                                        "y":  1190,
+                                        "height":  40,
+                                        "width":  92,
+                                        "text":  "1:45",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  1190,
+                                        "height":  39,
+                                        "width":  73,
+                                        "text":  "PM",
+                                        "x":  876
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2:15 PM",
+                      "words":  [
+                                    {
+                                        "y":  1376,
+                                        "height":  41,
+                                        "width":  88,
+                                        "text":  "2:15",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  1377,
+                                        "height":  39,
+                                        "width":  74,
+                                        "text":  "PM",
+                                        "x":  873
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2:45 PM",
+                      "words":  [
+                                    {
+                                        "y":  1563,
+                                        "height":  41,
+                                        "width":  103,
+                                        "text":  "2:45",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  1564,
+                                        "height":  39,
+                                        "width":  74,
+                                        "text":  "PM",
+                                        "x":  881
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3:15 PM",
+                      "words":  [
+                                    {
+                                        "y":  1750,
+                                        "height":  41,
+                                        "width":  89,
+                                        "text":  "3:15",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  1751,
+                                        "height":  39,
+                                        "width":  74,
+                                        "text":  "PM",
+                                        "x":  874
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3:45 PM",
+                      "words":  [
+                                    {
+                                        "y":  1937,
+                                        "height":  41,
+                                        "width":  104,
+                                        "text":  "3:45",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  1938,
+                                        "height":  39,
+                                        "width":  74,
+                                        "text":  "PM",
+                                        "x":  882
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4:15 PM",
+                      "words":  [
+                                    {
+                                        "y":  2125,
+                                        "height":  40,
+                                        "width":  92,
+                                        "text":  "4:15",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  2125,
+                                        "height":  39,
+                                        "width":  73,
+                                        "text":  "PM",
+                                        "x":  876
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thu",
+                      "words":  [
+                                    {
+                                        "y":  869,
+                                        "height":  30,
+                                        "width":  64,
+                                        "text":  "Thu",
+                                        "x":  963
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9",
+                      "words":  [
+                                    {
+                                        "y":  931,
+                                        "height":  34,
+                                        "width":  24,
+                                        "text":  "9",
+                                        "x":  984
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fri",
+                      "words":  [
+                                    {
+                                        "y":  869,
+                                        "height":  29,
+                                        "width":  37,
+                                        "text":  "Fri",
+                                        "x":  1121
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  931,
+                                        "height":  34,
+                                        "width":  42,
+                                        "text":  "10",
+                                        "x":  1118
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1:30 PM",
+                      "words":  [
+                                    {
+                                        "y":  1189,
+                                        "height":  41,
+                                        "width":  92,
+                                        "text":  "1:30",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  1190,
+                                        "height":  39,
+                                        "width":  73,
+                                        "text":  "PM",
+                                        "x":  335
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2:00 PM",
+                      "words":  [
+                                    {
+                                        "y":  1376,
+                                        "height":  41,
+                                        "width":  106,
+                                        "text":  "2:00",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  1377,
+                                        "height":  39,
+                                        "width":  74,
+                                        "text":  "PM",
+                                        "x":  341
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2:30 PM",
+                      "words":  [
+                                    {
+                                        "y":  1563,
+                                        "height":  41,
+                                        "width":  103,
+                                        "text":  "2:30",
+                                        "x":  221
+                                    },
+                                    {
+                                        "y":  1564,
+                                        "height":  39,
+                                        "width":  74,
+                                        "text":  "PM",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3:00 PM",
+                      "words":  [
+                                    {
+                                        "y":  1750,
+                                        "height":  41,
+                                        "width":  107,
+                                        "text":  "3:00",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  1751,
+                                        "height":  39,
+                                        "width":  74,
+                                        "text":  "PM",
+                                        "x":  342
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3:30 PM",
+                      "words":  [
+                                    {
+                                        "y":  1937,
+                                        "height":  41,
+                                        "width":  104,
+                                        "text":  "3:30",
+                                        "x":  220
+                                    },
+                                    {
+                                        "y":  1938,
+                                        "height":  39,
+                                        "width":  74,
+                                        "text":  "PM",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4:00 PM",
+                      "words":  [
+                                    {
+                                        "y":  2124,
+                                        "height":  41,
+                                        "width":  111,
+                                        "text":  "4:00",
+                                        "x":  217
+                                    },
+                                    {
+                                        "y":  2125,
+                                        "height":  39,
+                                        "width":  73,
+                                        "text":  "PM",
+                                        "x":  344
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "None of These Times Work",
+                      "words":  [
+                                    {
+                                        "y":  2327,
+                                        "height":  40,
+                                        "width":  123,
+                                        "text":  "None",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  2326,
+                                        "height":  41,
+                                        "width":  46,
+                                        "text":  "of",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  2326,
+                                        "height":  41,
+                                        "width":  144,
+                                        "text":  "These",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  2327,
+                                        "height":  40,
+                                        "width":  144,
+                                        "text":  "Times",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  2326,
+                                        "height":  41,
+                                        "width":  129,
+                                        "text":  "Work",
+                                        "x":  777
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FUWre Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUWre",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 X Schedule Kickoff Call This 30 minute I-on-I call is keyto laying a strong foundation for your progress. Mon 29 Tue 30 Wed 1 Mon 6 Tue 7 Wed 8 1:45 PM 2:15 PM 2:45 PM 3:15 PM 3:45 PM 4:15 PM Thu 9 Fri 10 1:30 PM 2:00 PM 2:30 PM 3:00 PM 3:30 PM 4:00 PM None of These Times Work F FUWre Pro *Mobbin"
+}

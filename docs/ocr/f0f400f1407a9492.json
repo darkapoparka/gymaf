@@ -1,0 +1,83 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Edit Cover Photo",
+                      "words":  [
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  102,
+                                        "text":  "Edit",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  155,
+                                        "text":  "Cover",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  269,
+                                        "height":  45,
+                                        "width":  156,
+                                        "text":  "Photo",
+                                        "x":  654
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\"Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "\"Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Edit Cover Photo F Future Pro \"Mobbin"
+}

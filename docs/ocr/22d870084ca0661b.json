@@ -1,0 +1,827 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Notifications",
+                      "words":  [
+                                    {
+                                        "y":  422,
+                                        "height":  33,
+                                        "width":  246,
+                                        "text":  "Notifications",
+                                        "x":  99
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Repeat Alerts",
+                      "words":  [
+                                    {
+                                        "y":  552,
+                                        "height":  47,
+                                        "width":  158,
+                                        "text":  "Repeat",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  39,
+                                        "width":  131,
+                                        "text":  "Alerts",
+                                        "x":  267
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Privacy",
+                      "words":  [
+                                    {
+                                        "y":  742,
+                                        "height":  42,
+                                        "width":  138,
+                                        "text":  "Privacy",
+                                        "x":  99
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Private Profile",
+                      "words":  [
+                                    {
+                                        "y":  871,
+                                        "height":  38,
+                                        "width":  150,
+                                        "text":  "Private",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  870,
+                                        "height":  39,
+                                        "width":  138,
+                                        "text":  "Profile",
+                                        "x":  263
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "App Settings",
+                      "words":  [
+                                    {
+                                        "y":  269,
+                                        "height":  56,
+                                        "width":  111,
+                                        "text":  "App",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  269,
+                                        "height":  56,
+                                        "width":  214,
+                                        "text":  "Settings",
+                                        "x":  544
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Once \u003e",
+                      "words":  [
+                                    {
+                                        "y":  552,
+                                        "height":  37,
+                                        "width":  119,
+                                        "text":  "Once",
+                                        "x":  906
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  36,
+                                        "width":  21,
+                                        "text":  "\u003e",
+                                        "x":  1060
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When enabled, only your photo, cover image, name and",
+                      "words":  [
+                                    {
+                                        "y":  995,
+                                        "height":  29,
+                                        "width":  102,
+                                        "text":  "When",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  995,
+                                        "height":  34,
+                                        "width":  145,
+                                        "text":  "enabled,",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  995,
+                                        "height":  37,
+                                        "width":  71,
+                                        "text":  "only",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  29,
+                                        "width":  75,
+                                        "text":  "your",
+                                        "x":  441
+                                    },
+                                    {
+                                        "y":  996,
+                                        "height":  35,
+                                        "width":  106,
+                                        "text":  "photo,",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "cover",
+                                        "x":  640
+                                    },
+                                    {
+                                        "y":  996,
+                                        "height":  36,
+                                        "width":  108,
+                                        "text":  "image,",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "name",
+                                        "x":  862
+                                    },
+                                    {
+                                        "y":  996,
+                                        "height":  28,
+                                        "width":  62,
+                                        "text":  "and",
+                                        "x":  967
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "basic stats will display to others. All other information will",
+                      "words":  [
+                                    {
+                                        "y":  1043,
+                                        "height":  29,
+                                        "width":  87,
+                                        "text":  "basic",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1047,
+                                        "height":  25,
+                                        "width":  81,
+                                        "text":  "stats",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  1044,
+                                        "height":  28,
+                                        "width":  51,
+                                        "text":  "will",
+                                        "x":  285
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  37,
+                                        "width":  119,
+                                        "text":  "display",
+                                        "x":  347
+                                    },
+                                    {
+                                        "y":  1047,
+                                        "height":  25,
+                                        "width":  34,
+                                        "text":  "to",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "others.",
+                                        "x":  517
+                                    },
+                                    {
+                                        "y":  1044,
+                                        "height":  28,
+                                        "width":  41,
+                                        "text":  "All",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  1044,
+                                        "height":  28,
+                                        "width":  91,
+                                        "text":  "other",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  29,
+                                        "width":  195,
+                                        "text":  "information",
+                                        "x":  791
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  29,
+                                        "width":  51,
+                                        "text":  "will",
+                                        "x":  996
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "remain private.",
+                      "words":  [
+                                    {
+                                        "y":  1091,
+                                        "height":  28,
+                                        "width":  114,
+                                        "text":  "remain",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  35,
+                                        "width":  121,
+                                        "text":  "private.",
+                                        "x":  224
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Hide Me From Contact Syncing",
+                      "words":  [
+                                    {
+                                        "y":  1206,
+                                        "height":  39,
+                                        "width":  100,
+                                        "text":  "Hide",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  38,
+                                        "width":  69,
+                                        "text":  "Me",
+                                        "x":  213
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  38,
+                                        "width":  110,
+                                        "text":  "From",
+                                        "x":  296
+                                    },
+                                    {
+                                        "y":  1206,
+                                        "height":  39,
+                                        "width":  181,
+                                        "text":  "Contact",
+                                        "x":  420
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  47,
+                                        "width":  176,
+                                        "text":  "Syncing",
+                                        "x":  613
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When enabled, you won\u0027t be suggested as a friend to",
+                      "words":  [
+                                    {
+                                        "y":  1331,
+                                        "height":  29,
+                                        "width":  102,
+                                        "text":  "When",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  1331,
+                                        "height":  34,
+                                        "width":  144,
+                                        "text":  "enabled,",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1339,
+                                        "height":  29,
+                                        "width":  60,
+                                        "text":  "you",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  1332,
+                                        "height":  28,
+                                        "width":  90,
+                                        "text":  "won\u0027t",
+                                        "x":  432
+                                    },
+                                    {
+                                        "y":  1332,
+                                        "height":  28,
+                                        "width":  42,
+                                        "text":  "be",
+                                        "x":  532
+                                    },
+                                    {
+                                        "y":  1332,
+                                        "height":  36,
+                                        "width":  174,
+                                        "text":  "suggested",
+                                        "x":  584
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  37,
+                                        "text":  "as",
+                                        "x":  769
+                                    },
+                                    {
+                                        "y":  1339,
+                                        "height":  21,
+                                        "width":  17,
+                                        "text":  "a",
+                                        "x":  815
+                                    },
+                                    {
+                                        "y":  1331,
+                                        "height":  29,
+                                        "width":  98,
+                                        "text":  "friend",
+                                        "x":  843
+                                    },
+                                    {
+                                        "y":  1335,
+                                        "height":  25,
+                                        "width":  33,
+                                        "text":  "to",
+                                        "x":  951
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "other members who have your email or phone number in",
+                      "words":  [
+                                    {
+                                        "y":  1379,
+                                        "height":  29,
+                                        "width":  91,
+                                        "text":  "other",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1379,
+                                        "height":  29,
+                                        "width":  163,
+                                        "text":  "members",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  1379,
+                                        "height":  29,
+                                        "width":  71,
+                                        "text":  "who",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  1379,
+                                        "height":  29,
+                                        "width":  78,
+                                        "text":  "have",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  1387,
+                                        "height":  29,
+                                        "width":  74,
+                                        "text":  "your",
+                                        "x":  539
+                                    },
+                                    {
+                                        "y":  1379,
+                                        "height":  29,
+                                        "width":  89,
+                                        "text":  "email",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  1387,
+                                        "height":  21,
+                                        "width":  34,
+                                        "text":  "or",
+                                        "x":  722
+                                    },
+                                    {
+                                        "y":  1379,
+                                        "height":  36,
+                                        "width":  107,
+                                        "text":  "phone",
+                                        "x":  766
+                                    },
+                                    {
+                                        "y":  1379,
+                                        "height":  29,
+                                        "width":  133,
+                                        "text":  "number",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1380,
+                                        "height":  28,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  1028
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "their contacts.",
+                      "words":  [
+                                    {
+                                        "y":  1427,
+                                        "height":  28,
+                                        "width":  78,
+                                        "text":  "their",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  1430,
+                                        "height":  25,
+                                        "width":  157,
+                                        "text":  "contacts.",
+                                        "x":  182
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Health Metrics",
+                      "words":  [
+                                    {
+                                        "y":  1518,
+                                        "height":  33,
+                                        "width":  124,
+                                        "text":  "Health",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  1518,
+                                        "height":  33,
+                                        "width":  146,
+                                        "text":  "Metrics",
+                                        "x":  237
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Automatic Weight Updates",
+                      "words":  [
+                                    {
+                                        "y":  1647,
+                                        "height":  38,
+                                        "width":  234,
+                                        "text":  "Automatic",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  1646,
+                                        "height":  48,
+                                        "width":  159,
+                                        "text":  "Weight",
+                                        "x":  340
+                                    },
+                                    {
+                                        "y":  1646,
+                                        "height":  48,
+                                        "width":  186,
+                                        "text":  "Updates",
+                                        "x":  513
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When body weight updates are recorded in the Health",
+                      "words":  [
+                                    {
+                                        "y":  1771,
+                                        "height":  29,
+                                        "width":  102,
+                                        "text":  "When",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  1771,
+                                        "height":  37,
+                                        "width":  85,
+                                        "text":  "body",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1771,
+                                        "height":  37,
+                                        "width":  113,
+                                        "text":  "weight",
+                                        "x":  303
+                                    },
+                                    {
+                                        "y":  1772,
+                                        "height":  35,
+                                        "width":  138,
+                                        "text":  "updates",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  1779,
+                                        "height":  21,
+                                        "width":  51,
+                                        "text":  "are",
+                                        "x":  574
+                                    },
+                                    {
+                                        "y":  1772,
+                                        "height":  28,
+                                        "width":  153,
+                                        "text":  "recorded",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  1772,
+                                        "height":  28,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  1771,
+                                        "height":  29,
+                                        "width":  55,
+                                        "text":  "the",
+                                        "x":  837
+                                    },
+                                    {
+                                        "y":  1771,
+                                        "height":  29,
+                                        "width":  107,
+                                        "text":  "Health",
+                                        "x":  905
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "app, they are used to update your weight goals.",
+                      "words":  [
+                                    {
+                                        "y":  1826,
+                                        "height":  28,
+                                        "width":  71,
+                                        "text":  "app,",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  36,
+                                        "width":  76,
+                                        "text":  "they",
+                                        "x":  175
+                                    },
+                                    {
+                                        "y":  1826,
+                                        "height":  21,
+                                        "width":  51,
+                                        "text":  "are",
+                                        "x":  259
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  28,
+                                        "width":  81,
+                                        "text":  "used",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  25,
+                                        "width":  34,
+                                        "text":  "to",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  35,
+                                        "width":  119,
+                                        "text":  "update",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  1826,
+                                        "height":  29,
+                                        "width":  75,
+                                        "text":  "your",
+                                        "x":  584
+                                    },
+                                    {
+                                        "y":  1818,
+                                        "height":  37,
+                                        "width":  113,
+                                        "text":  "weight",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  36,
+                                        "width":  94,
+                                        "text":  "goals.",
+                                        "x":  789
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Hide Calories",
+                      "words":  [
+                                    {
+                                        "y":  1982,
+                                        "height":  39,
+                                        "width":  100,
+                                        "text":  "Hide",
+                                        "x":  99
+                                    },
+                                    {
+                                        "y":  1982,
+                                        "height":  39,
+                                        "width":  181,
+                                        "text":  "Calories",
+                                        "x":  212
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Calories burned will be hidden throughout the app.",
+                      "words":  [
+                                    {
+                                        "y":  2107,
+                                        "height":  28,
+                                        "width":  138,
+                                        "text":  "Calories",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  2107,
+                                        "height":  28,
+                                        "width":  121,
+                                        "text":  "burned",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  2107,
+                                        "height":  28,
+                                        "width":  51,
+                                        "text":  "will",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  2107,
+                                        "height":  28,
+                                        "width":  41,
+                                        "text":  "be",
+                                        "x":  440
+                                    },
+                                    {
+                                        "y":  2107,
+                                        "height":  28,
+                                        "width":  116,
+                                        "text":  "hidden",
+                                        "x":  492
+                                    },
+                                    {
+                                        "y":  2107,
+                                        "height":  35,
+                                        "width":  192,
+                                        "text":  "throughout",
+                                        "x":  617
+                                    },
+                                    {
+                                        "y":  2107,
+                                        "height":  28,
+                                        "width":  56,
+                                        "text":  "the",
+                                        "x":  817
+                                    },
+                                    {
+                                        "y":  2114,
+                                        "height":  28,
+                                        "width":  71,
+                                        "text":  "app.",
+                                        "x":  883
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Camera Roll",
+                      "words":  [
+                                    {
+                                        "y":  2294,
+                                        "height":  33,
+                                        "width":  153,
+                                        "text":  "Camera",
+                                        "x":  98
+                                    },
+                                    {
+                                        "y":  2294,
+                                        "height":  33,
+                                        "width":  67,
+                                        "text":  "Roll",
+                                        "x":  266
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Save Photos",
+                      "words":  [
+                                    {
+                                        "y":  2423,
+                                        "height":  38,
+                                        "width":  105,
+                                        "text":  "Save",
+                                        "x":  97
+                                    },
+                                    {
+                                        "y":  2422,
+                                        "height":  39,
+                                        "width":  155,
+                                        "text":  "Photos",
+                                        "x":  216
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F Future Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "Future",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Notifications Repeat Alerts Privacy Private Profile App Settings Once \u003e When enabled, only your photo, cover image, name and basic stats will display to others. All other information will remain private. Hide Me From Contact Syncing When enabled, you won\u0027t be suggested as a friend to other members who have your email or phone number in their contacts. Health Metrics Automatic Weight Updates When body weight updates are recorded in the Health app, they are used to update your weight goals. Hide Calories Calories burned will be hidden throughout the app. Camera Roll Save Photos F Future Pro *Mobbin"
+}

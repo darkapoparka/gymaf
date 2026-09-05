@@ -1,0 +1,184 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "15 min left",
+                      "words":  [
+                                    {
+                                        "y":  304,
+                                        "height":  34,
+                                        "width":  39,
+                                        "text":  "15",
+                                        "x":  771
+                                    },
+                                    {
+                                        "y":  304,
+                                        "height":  33,
+                                        "width":  70,
+                                        "text":  "min",
+                                        "x":  823
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  35,
+                                        "width":  62,
+                                        "text":  "left",
+                                        "x":  906
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  97,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2:25",
+                      "words":  [
+                                    {
+                                        "y":  304,
+                                        "height":  34,
+                                        "width":  83,
+                                        "text":  "2:25",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Flag",
+                      "words":  [
+                                    {
+                                        "y":  2367,
+                                        "height":  37,
+                                        "width":  68,
+                                        "text":  "Flag",
+                                        "x":  159
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FUture Pro",
+                      "words":  [
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUture",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Chaturanga",
+                      "words":  [
+                                    {
+                                        "y":  1592,
+                                        "height":  56,
+                                        "width":  310,
+                                        "text":  "Chaturanga",
+                                        "x":  435
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Reps",
+                      "words":  [
+                                    {
+                                        "y":  2122,
+                                        "height":  36,
+                                        "width":  85,
+                                        "text":  "Reps",
+                                        "x":  548
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Guide",
+                      "words":  [
+                                    {
+                                        "y":  2365,
+                                        "height":  30,
+                                        "width":  102,
+                                        "text":  "Guide",
+                                        "x":  406
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "History",
+                      "words":  [
+                                    {
+                                        "y":  2368,
+                                        "height":  37,
+                                        "width":  120,
+                                        "text":  "History",
+                                        "x":  663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Record",
+                      "words":  [
+                                    {
+                                        "y":  2111,
+                                        "height":  30,
+                                        "width":  120,
+                                        "text":  "Record",
+                                        "x":  883
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Restart",
+                      "words":  [
+                                    {
+                                        "y":  2371,
+                                        "height":  29,
+                                        "width":  122,
+                                        "text":  "Restart",
+                                        "x":  927
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  887
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1180,
+    "height":  2676,
+    "text":  "15 min left F 9:41 2:25 Flag FUture Pro Chaturanga Reps Guide History Record Restart *Mobbin"
+}

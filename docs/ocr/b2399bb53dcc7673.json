@@ -1,0 +1,268 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "9:41",
+                      "words":  [
+                                    {
+                                        "y":  69,
+                                        "height":  38,
+                                        "width":  96,
+                                        "text":  "9:41",
+                                        "x":  165
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Summary",
+                      "words":  [
+                                    {
+                                        "y":  385,
+                                        "height":  51,
+                                        "width":  228,
+                                        "text":  "Summary",
+                                        "x":  76
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Today 11:23 AM",
+                      "words":  [
+                                    {
+                                        "y":  223,
+                                        "height":  51,
+                                        "width":  144,
+                                        "text":  "Today",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  223,
+                                        "height":  41,
+                                        "width":  108,
+                                        "text":  "11:23",
+                                        "x":  582
+                                    },
+                                    {
+                                        "y":  224,
+                                        "height":  39,
+                                        "width":  85,
+                                        "text":  "AM",
+                                        "x":  699
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Feedback",
+                      "words":  [
+                                    {
+                                        "y":  386,
+                                        "height":  39,
+                                        "width":  232,
+                                        "text":  "Feedback",
+                                        "x":  433
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Exercises",
+                      "words":  [
+                                    {
+                                        "y":  386,
+                                        "height":  39,
+                                        "width":  215,
+                                        "text":  "Exercises",
+                                        "x":  793
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Coach Lee",
+                      "words":  [
+                                    {
+                                        "y":  642,
+                                        "height":  30,
+                                        "width":  110,
+                                        "text":  "Coach",
+                                        "x":  391
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Lee",
+                                        "x":  513
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Choose Background",
+                      "words":  [
+                                    {
+                                        "y":  1500,
+                                        "height":  47,
+                                        "width":  222,
+                                        "text":  "Choose",
+                                        "x":  96
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  58,
+                                        "width":  350,
+                                        "text":  "Background",
+                                        "x":  336
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your background image will appear on",
+                      "words":  [
+                                    {
+                                        "y":  1642,
+                                        "height":  36,
+                                        "width":  97,
+                                        "text":  "Your",
+                                        "x":  95
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  46,
+                                        "width":  255,
+                                        "text":  "background",
+                                        "x":  208
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  46,
+                                        "width":  130,
+                                        "text":  "image",
+                                        "x":  480
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  37,
+                                        "width":  66,
+                                        "text":  "will",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  1651,
+                                        "height":  35,
+                                        "width":  151,
+                                        "text":  "appear",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  1651,
+                                        "height":  27,
+                                        "width":  51,
+                                        "text":  "on",
+                                        "x":  873
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "all templates.",
+                      "words":  [
+                                    {
+                                        "y":  1699,
+                                        "height":  38,
+                                        "width":  43,
+                                        "text":  "all",
+                                        "x":  95
+                                    },
+                                    {
+                                        "y":  1699,
+                                        "height":  46,
+                                        "width":  227,
+                                        "text":  "templates.",
+                                        "x":  154
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Take photo",
+                      "words":  [
+                                    {
+                                        "y":  2086,
+                                        "height":  37,
+                                        "width":  104,
+                                        "text":  "Take",
+                                        "x":  141
+                                    },
+                                    {
+                                        "y":  2086,
+                                        "height":  45,
+                                        "width":  130,
+                                        "text":  "photo",
+                                        "x":  260
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Choose existing photo",
+                      "words":  [
+                                    {
+                                        "y":  2282,
+                                        "height":  38,
+                                        "width":  170,
+                                        "text":  "Choose",
+                                        "x":  142
+                                    },
+                                    {
+                                        "y":  2281,
+                                        "height":  48,
+                                        "width":  176,
+                                        "text":  "existing",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  2282,
+                                        "height":  46,
+                                        "width":  131,
+                                        "text":  "photo",
+                                        "x":  518
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F FUWre Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUWre",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "9:41 Summary Today 11:23 AM Feedback Exercises Coach Lee Choose Background Your background image will appear on all templates. Take photo Choose existing photo F FUWre Pro *Mobbin"
+}

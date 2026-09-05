@@ -1,0 +1,112 @@
+﻿{
+    "lines":  [
+                  {
+                      "text":  "Timer Off",
+                      "words":  [
+                                    {
+                                        "y":  2036,
+                                        "height":  42,
+                                        "width":  136,
+                                        "text":  "Timer",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  2037,
+                                        "height":  41,
+                                        "width":  74,
+                                        "text":  "Off",
+                                        "x":  638
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "o",
+                      "words":  [
+                                    {
+                                        "y":  2259,
+                                        "height":  81,
+                                        "width":  81,
+                                        "text":  "o",
+                                        "x":  548
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cancel",
+                      "words":  [
+                                    {
+                                        "y":  2275,
+                                        "height":  45,
+                                        "width":  175,
+                                        "text":  "Cancel",
+                                        "x":  75
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "F FUtUre Pro",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  40,
+                                        "width":  29,
+                                        "text":  "F",
+                                        "x":  51
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "FUtUre",
+                                        "x":  122
+                                    },
+                                    {
+                                        "y":  2603,
+                                        "height":  29,
+                                        "width":  59,
+                                        "text":  "Pro",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "words":  [
+                                    {
+                                        "y":  1747,
+                                        "height":  102,
+                                        "width":  78,
+                                        "text":  "4",
+                                        "x":  1047
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "IOS",
+                      "words":  [
+                                    {
+                                        "y":  2038,
+                                        "height":  40,
+                                        "width":  79,
+                                        "text":  "IOS",
+                                        "x":  987
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Mobbin",
+                      "words":  [
+                                    {
+                                        "y":  2596,
+                                        "height":  38,
+                                        "width":  265,
+                                        "text":  "*Mobbin",
+                                        "x":  886
+                                    }
+                                ]
+                  }
+              ],
+    "width":  1179,
+    "height":  2676,
+    "text":  "Timer Off o Cancel F FUtUre Pro 4 IOS *Mobbin"
+}
