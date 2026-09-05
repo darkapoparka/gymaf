@@ -122,3 +122,7 @@ Development review supports `settings`, `location`, `equipment`, `injury`, `even
 Current local screenshots are in `.artifacts/member-review/`: `equipment-393-fixed.jpg`, `event-393-fixed.jpg`, `event-1440-fixed.jpg`, `log-weight-320-fixed.jpg`, `log-weight-393-fixed.jpg` and `workout-settings-393-fixed.jpg`, plus prior `injury-393.jpg`, `location-393.jpg` and `settings-320.jpg` captures. The fixed captures supersede the corresponding earlier member states. `detector.json` alone is not a visual parity report.
 
 Next member acceptance requires paired source/connected captures per ledger row, a hosted migration decision and synthetic authenticated browser journeys covering create/edit/delete, refresh, revision conflicts, failed saves, nested editing and relationship/account boundaries. Overall 270-screen/84-flow 1:1 parity remains **NOT COMPLETE / NOT VERIFIED**.
+
+## Review branch publication
+
+Member source committed as `d64a56d` and pushed to `origin/review/mobbin-fidelity`. Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) targets `astra`; no merge or deployment occurred. The preceding working-tree descriptions identify the inspection snapshot. CI for this PR is pending at publication and must be checked separately before claiming hosted validation. The local disposable PostgreSQL test server on port 55445 was stopped after its successful checks; its synthetic data/logs remain under `.artifacts/member-db/`. The review app remains on port 3212. Hosted member migration approval is still pending.
