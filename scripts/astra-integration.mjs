@@ -1,0 +1,62 @@
+// Runs against local Supabase only. Creates synthetic records; never targets a linked cloud project.
+import assert from 'node:assert/strict';
+import { randomUUID } from 'node:crypto';
+import { seedLocal,localRequest } from './astra-local.mjs';
+
+try {
+  const {config,actors,seed}=await seedLocal();
+  const call=(actor,fn,body)=>localRequest(config,`/rest/v1/rpc/${fn}`,body,actors[actor].token);
+  const query=(actor,kind,id=null)=>call(actor,'gymaf_query',{p_kind:kind,p_id:id,p_before:null});
+  const command=(actor,action,p,key=randomUUID())=>call(actor,'gymaf_command',{p_action:action,p_command_id:key,p});
+  const denied=promise=>assert.rejects(promise,error=>['42501','P0002'].includes(error.code));
+  const {a:workspace}=seed.workspaces, {a1:relationship,a2:sibling,b1:other}=seed.relationships;
+  const exerciseId=randomUUID();
+  const plan={workouts:[{id:randomUUID(),title:'Synthetic integration session',dayOffset:0,exercises:[{id:exerciseId,name:'Synthetic movement',instructions:'Test fixture only. Not exercise instruction.',sets:[{reps:10,loadKg:null,durationSeconds:null,distanceM:null,restSeconds:60}]}]}]};
+  const draft=await command('coach_a','program.create',{workspaceId:workspace,title:'Integration fixture',plan});
+  const version=await command('coach_a','program.publish',{programId:draft.id,revision:0});
+  await denied(command('coach_b','program.assign',{versionId:version.id,relationshipId:other,startDate:'2026-09-07'}));
+  await command('coach_a','program.assign',{versionId:version.id,relationshipId:relationship,startDate:'2026-09-07'});
+  const client=await query('client_a1','relationship',relationship);
+  const scheduled=client.workouts.find(w=>w.version_id===version.id);
+  assert.ok(scheduled,'Assigned version is visible to its intended client');
+  await denied(query('client_a2','relationship',relationship));
+  await denied(query('coach_b','relationship',relationship));
+  await denied(query('client_a1','relationship',sibling));
+  const direct=await localRequest(config,`/rest/v1/scheduled_workouts?id=eq.${scheduled.id}&select=id`,undefined,actors.client_a2.token);
+  assert.deepEqual(direct,[],'Direct REST reads obey the sibling-client policy');
+  const firstKey=randomUUID();
+  const first=await command('client_a1','session.start',{scheduledId:scheduled.id},firstKey);
+  assert.deepEqual(await command('client_a1','session.start',{scheduledId:scheduled.id},firstKey),first,'Same command replays the same result');
+  await command('client_a1','session.save-set',{sessionId:first.id,exerciseId,setIndex:0,revision:0,actualReps:10,loadKg:20,durationSeconds:null,distanceM:null,skipped:false});
+  const finishKey=randomUUID();
+  await command('client_a1','session.transition',{sessionId:first.id,revision:0,state:'completed'},finishKey);
+  await command('client_a1','session.transition',{sessionId:first.id,revision:0,state:'completed'},finishKey);
+  const second=await command('client_a1','session.start',{scheduledId:scheduled.id});
+  assert.notEqual(second.id,first.id,'A real repeated workout has its own ID');
+  await command('client_a1','session.save-set',{sessionId:second.id,exerciseId,setIndex:0,revision:0,actualReps:12,loadKg:22.5,durationSeconds:null,distanceM:null,skipped:false});
+  await command('client_a1','session.transition',{sessionId:second.id,revision:0,state:'completed'});
+  const history=await query('client_a1','relationship',relationship);
+  assert.ok(history.sessions.some(s=>s.id===first.id) && history.sessions.some(s=>s.id===second.id),'Both attempts are retained');
+  const old=await query('coach_a','session',first.id);
+  assert.equal(old.sets[0].actual_reps,10);
+  assert.equal(old.editable,false,'Coach cannot overwrite client actuals');
+  await denied(query('client_a2','session',first.id));
+  await denied(query('coach_b','session',first.id));
+  const messageKey=randomUUID(), text=`Synthetic integration ${randomUUID()}`;
+  const message=await command('client_a1','message.send',{relationshipId:relationship,body:text},messageKey);
+  assert.deepEqual(await command('client_a1','message.send',{relationshipId:relationship,body:text},messageKey),message);
+  await assert.rejects(command('client_a1','message.send',{relationshipId:relationship,body:'Different payload'},messageKey),e=>e.code==='40001');
+  const messages=await query('coach_a','messages',relationship);
+  assert.equal(messages.messages.filter(m=>m.id===message.id).length,1);
+  await denied(query('client_a2','messages',relationship));
+  const directWrite=localRequest(config,'/rest/v1/app_users',{status:'active'},actors.client_a1.token,'PATCH');
+  await denied(directWrite);
+  await call('client_a2','gymaf_revoke_session',{});
+  await assert.rejects(query('client_a2','bootstrap'),e=>e.code==='28000');
+  await assert.rejects(call('client_a2','gymaf_register_session',{}),e=>e.code==='28000');
+  console.log('PASS: local Supabase ownership, direct REST denial, distinct history, retries, messages and app-session revocation.');
+  console.log('This does not certify browser behavior, MFA, email delivery, full security or production readiness.');
+} catch(error) {
+  console.error(error instanceof Error ? error.message : 'Local integration tests failed.');
+  process.exitCode=1;
+}

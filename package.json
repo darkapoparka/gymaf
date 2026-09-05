@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start --hostname 127.0.0.1 --port 3210",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test:unit": "node --experimental-strip-types --test tests/unit/validation.test.mjs",
+    "test:integration": "node scripts/astra-integration.mjs",
+    "astra:seed": "node scripts/astra-local.mjs"
   },
   "dependencies": {
     "lucide-react": "1.41.0",

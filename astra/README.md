@@ -1,51 +1,48 @@
-# Astra — Gymaf production blueprint
+# Astra — Gymaf implementation and production blueprint
 
-Version 1.0 • 5 September 2026 • Audited baseline `97b24278bdc70f2e1f2cba373acfcd6c56e0664d`.
+Updated 5 September 2026. `/astra` is the documentation directory; `astra` is also the separate implementation branch. They are not the same thing. `main` remains separate from the current implementation work.
 
-`/astra` is the canonical home for Gymaf's production specifications and AI-agent planning documents. The initial documentation was prepared in PR #1 under `docs/production`; use the files here for current implementation work. The source audit and implementation statuses are unchanged by this relocation.
+## Current implementation: start here
 
-This is an implementation specification, not a claim that the target features exist. Preserve the current client UI and styling while replacing prototype data/integrations and building the missing coach-side product. No application code, database, deployment, billing account, or generated visual asset is introduced by these documents.
+The owner requested actual implementation and local-agent testing. The `astra` branch now includes a connected web core, SQL migrations, local synthetic setup and tests. Read [LOCAL_TESTING](LOCAL_TESTING.md) for commands and accounts, [IMPLEMENTATION_STATUS](IMPLEMENTATION_STATUS.md) for exact coverage, [ADR-007](ADR-007-CONNECTED-WEB.md) for implementation choices, and [CI evidence](evidence/astra-ci-2026-09-05.json) for observed passing checks. Full browser/provider/device/production acceptance is not claimed.
+
+The original source audit is pinned to `97b24278bdc70f2e1f2cba373acfcd6c56e0664d`. Its findings and verification limits describe that historical baseline, not every subsequent commit. Earlier documentation-only statements apply to the initial documentation task; they are not a claim that this implementation branch contains no code.
 
 ## Agent reading order
 
-Read root [AGENTS.md](../AGENTS.md), then [DECISIONS](DECISIONS.md), [AUDIT](AUDIT.md), [PRD](PRD.md), and [ROADMAP](ROADMAP.md). Choose a dependency-ready task in [backlog.json](backlog.json). Its `read` entries resolve relative to this `/astra` directory. Load the task-specific contracts rather than treating the entire reference screenshot library as instructions to reproduce a competitor.
+Read root [AGENTS.md](../AGENTS.md), then the current implementation status and local handoff above. Read [DECISIONS](DECISIONS.md), [PRD](PRD.md), [FEATURES](FEATURES.md) and task-specific contracts for remaining work. The original [backlog](backlog.json) is a full release roadmap, not evidence that every new code path remains absent or that every implemented path is complete. Its `read` entries resolve relative to `/astra`.
 
-For a ready-to-use coding-agent assignment, open [AGENT_HANDOFF.md](AGENT_HANDOFF.md).
+For a ready-to-use local-agent assignment, open [AGENT_HANDOFF](AGENT_HANDOFF.md). Keep the existing visual language and avoid replacing working implementation with a generic rewrite.
 
-## Document index
+## Specification index
 
-| Document | Use |
+| Document | Purpose |
 |---|---|
-| [AUDIT](AUDIT.md) | Observed stack, source evidence, gaps, defects, and verification limits |
-| [PRD](PRD.md) | Product purpose, users, launch offer, scope, outcomes, non-goals |
-| [FEATURES](FEATURES.md) | Feature-by-feature current state, target behavior, acceptance criteria |
-| [ARCHITECTURE](ARCHITECTURE.md) | Proposed system, boundaries, migration, web/native separation |
-| [DATA_MODEL](DATA_MODEL.md) | Entities, invariants, tenancy, versioning, lifecycle rules |
-| [API_CONTRACTS](API_CONTRACTS.md) | Resource boundaries, authorization, payloads, retries and errors |
-| [SECURITY_PRIVACY](SECURITY_PRIVACY.md) | Threat model, permissions, data protection, human approval gates |
-| [DESIGN_CONTENT](DESIGN_CONTENT.md) | Visual preservation, brand replacement, image-generation briefs |
-| [BILLING](BILLING.md) | Seller model, entitlements, pilot payments, future automation |
-| [TEST_STRATEGY](TEST_STRATEGY.md) | Automated/manual evidence required before releasing |
-| [OPERATIONS](OPERATIONS.md) | Environments, delivery, monitoring, backups, incidents, launch checklist |
-| [MOBILE](MOBILE.md) | PWA scope, native strategy, reusable code, store/payment gates |
-| [ROADMAP](ROADMAP.md) | Dependency-ordered milestones and exit criteria |
-| [AGENT_PLAYBOOK](AGENT_PLAYBOOK.md) | Implementation workflow, scoped prompts, PR/handoff template |
-| [AGENT_HANDOFF](AGENT_HANDOFF.md) | Repository handoff and first coding-agent assignment |
-| [DECISIONS](DECISIONS.md) | Approved direction, proposed technical defaults, unresolved business gates |
-| [RESEARCH](RESEARCH.md) | Dated primary sources and limits of strategic assumptions |
-| [backlog.json](backlog.json) | Machine-readable work items; documentation is not completed implementation |
-| [asset-manifest.json](asset-manifest.json) | Planned asset slots and approval state; no generated assets yet |
-| [audit evidence](evidence/reproduction-results.json) | Two limited logic reproductions, explicitly not an application test run |
-| [original documentation validation](evidence/documentation-validation.json) | Historical validation of the initial documentation tree; not a new application test |
+| [AUDIT](AUDIT.md) | Historical source audit, defects and scope limits |
+| [PRD](PRD.md) | Product, users, release scope and intended outcomes |
+| [FEATURES](FEATURES.md) | Feature acceptance criteria, not automatic completion claims |
+| [ARCHITECTURE](ARCHITECTURE.md) | Original proposed system and migration boundaries |
+| [ADR-007](ADR-007-CONNECTED-WEB.md) | Actual branch architecture choices and differences from proposals |
+| [DATA_MODEL](DATA_MODEL.md) | Target ownership/versioning/lifecycle requirements |
+| [API_CONTRACTS](API_CONTRACTS.md) | Target resource contracts; see ADR-007 for the implemented command protocol |
+| [SECURITY_PRIVACY](SECURITY_PRIVACY.md) | Threats, access controls, privacy and launch gates |
+| [DESIGN_CONTENT](DESIGN_CONTENT.md) | Design preservation, content/asset rights and production briefs |
+| [BILLING](BILLING.md) | Commercial model and gated payment implementation |
+| [TEST_STRATEGY](TEST_STRATEGY.md) | Full quality target; implemented commands are in LOCAL_TESTING |
+| [OPERATIONS](OPERATIONS.md) | Environment, monitoring, recovery and release requirements |
+| [MOBILE](MOBILE.md) | Future native platform plan; no store binary is claimed delivered |
+| [ROADMAP](ROADMAP.md) | Dependency-ordered release milestones |
+| [AGENT_PLAYBOOK](AGENT_PLAYBOOK.md) | Bounded implementation workflow and review templates |
+| [DECISIONS](DECISIONS.md) | Owner direction, proposed vendors and human gates |
+| [RESEARCH](RESEARCH.md) | Original dated references and strategy hypotheses |
+| [backlog.json](backlog.json) | Original 32-task roadmap; reconcile with current implementation evidence |
+| [asset-manifest.json](asset-manifest.json) | Planned assets; no generated/approved assets implied |
+| [historical reproductions](evidence/reproduction-results.json) | Narrow original JavaScript reproductions |
+| [historical documentation validation](evidence/documentation-validation.json) | Initial documentation-only checks |
+| [current CI evidence](evidence/astra-ci-2026-09-05.json) | Passing build/unit/PostgreSQL checks at a specific source commit |
 
-## Status vocabulary
+## Status definitions
 
-`observed`: directly read at the audited commit. `reported`: a historical repository claim not independently rerun. `proposed`: recommendation, not an installed service. `planned`: implementation required. `verified`: evidence tied to the tested commit/environment. Never turn `planned` or `reported` into `verified` without tests.
+Observed source is not verified runtime behavior. Implemented means code is present; verified means the specified test passed at a named commit/environment. Planned native/payment/media operations are not working integrations. A passing build is not a security, privacy, visual, device or launch certificate.
 
-## Non-negotiable release distinction
-
-A prototype can look complete while lacking accounts, authorization, durable storage, actual coaching, legal content, and support operations. Real client data is prohibited until the relevant security/privacy gates pass, even for a small invite-only pilot. Native release and a marketplace are separate later investments, not prerequisites for proving the web coaching loop.
-
-## First assignment
-
-Start with `GY-001`: reproduce the current build on a usable checkout, record exact package/runtime versions, establish a visual baseline, and add regression tests for the two confirmed source-level defects. Do not start by rewriting the frontend or provisioning paid infrastructure.
+Real client data and publication remain blocked until the corresponding technical and human release gates pass. The local synthetic seed and its MFA bypass must never be deployed to a real environment.

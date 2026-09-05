@@ -1,0 +1,42 @@
+# Local development only. Do not copy local email/rate-limit settings into production.
+project_id = "gymaf-astra"
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 17
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+[studio]
+enabled = true
+port = 54323
+[inbucket]
+enabled = true
+port = 54324
+[auth]
+enabled = true
+site_url = "http://127.0.0.1:3210"
+additional_redirect_urls = ["http://localhost:3210"]
+jwt_expiry = 3600
+enable_signup = true
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+max_frequency = "1s"
+otp_length = 6
+otp_expiry = 3600
+[auth.email.template.magic_link]
+subject = "Your Gymaf sign-in code"
+content_path = "./supabase/templates/code.html"
+[auth.email.template.confirmation]
+subject = "Your Gymaf sign-in code"
+content_path = "./supabase/templates/code.html"
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
