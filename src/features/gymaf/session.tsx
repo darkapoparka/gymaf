@@ -31,11 +31,15 @@ function SetEditor({ sessionId, exerciseId, index, target, saved, editable, onDi
 export function SessionScreen({ id, back }: { id: string; back: string }) {
   const resource = useResource<SessionDetail>(`workout-sessions/${id}`), transition = useCommand(), router = useRouter();
   const [now, setNow] = useState(0), [dirty, setDirty] = useState<Set<string>>(new Set());
-  useEffect(() => { const timer = window.setInterval(() => setNow(Date.now()), 1000); return () => clearInterval(timer); }, []);
+  useEffect(() => {
+    const first = window.setTimeout(() => setNow(Date.now()), 0);
+    const timer = window.setInterval(() => setNow(Date.now()), 1000);
+    return () => { clearTimeout(first); clearInterval(timer); };
+  }, []);
   useEffect(() => { const warn = (event: BeforeUnloadEvent) => { if (dirty.size) { event.preventDefault(); event.returnValue = ""; } }; window.addEventListener("beforeunload", warn); return () => window.removeEventListener("beforeunload", warn); }, [dirty.size]);
   if (!resource.data) return <Pending error={resource.error} reload={resource.reload} />;
   const { session, sets, editable } = resource.data;
-  const elapsed = elapsedSeconds(session, now || Date.now()), minutes = Math.floor(elapsed / 60), seconds = elapsed % 60;
+  const elapsed = elapsedSeconds(session, now || Date.parse(session.started_at)), minutes = Math.floor(elapsed / 60), seconds = elapsed % 60;
   const performed = sets.some(s => !s.skipped && ((s.actual_reps || 0) > 0 || (s.duration_seconds || 0) > 0 || (s.distance_m || 0) > 0));
   async function change(state: SessionState) {
     if (dirty.size || !resource.data) return;

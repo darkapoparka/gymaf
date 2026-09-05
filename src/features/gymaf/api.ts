@@ -5,9 +5,17 @@ export class ApiError extends Error { constructor(public status: number, public 
 let refreshing: Promise<boolean> | null = null;
 async function refresh(): Promise<boolean> {
   if (refreshing) return refreshing;
-  const run = async () => { const response = await fetch("/api/v1/auth/refresh", { method: "POST", credentials: "same-origin", cache: "no-store", headers: { "Content-Type": "application/json" }, body: "{}", signal: AbortSignal.timeout(20000) }); return response.ok; };
-  refreshing = (typeof navigator !== "undefined" && navigator.locks ? navigator.locks.request("gymaf-refresh", run) : run()).catch(() => false).finally(() => { refreshing = null; });
-  return refreshing;
+  const run = async (): Promise<boolean> => {
+    const response = await fetch("/api/v1/auth/refresh", { method: "POST", credentials: "same-origin", cache: "no-store", headers: { "Content-Type": "application/json" }, body: "{}", signal: AbortSignal.timeout(20000) });
+    return response.ok;
+  };
+  const work = async (): Promise<boolean> => {
+    if (typeof navigator !== "undefined" && navigator.locks) return await navigator.locks.request("gymaf-refresh", async () => await run());
+    return await run();
+  };
+  const pending: Promise<boolean> = work().catch(() => false).finally(() => { refreshing = null; });
+  refreshing = pending;
+  return pending;
 }
 export async function api<T>(path: string, options: { method?: "GET" | "POST"; body?: unknown; signal?: AbortSignal } = {}): Promise<T> {
   const request = () => fetch("/api/v1/" + path, { method: options.method || "GET", credentials: "same-origin", cache: "no-store", signal: options.signal || AbortSignal.timeout(20000), ...(options.body !== undefined ? { headers: { "Content-Type": "application/json" }, body: JSON.stringify(options.body) } : {}) });
