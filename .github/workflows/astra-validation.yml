@@ -1,0 +1,73 @@
+name: Astra validation
+on:
+  push:
+    branches: [astra]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: astra-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Pure domain validation
+        run: npm run test:unit
+      - name: Clean dependency install
+        id: install
+        run: npm ci
+      - name: ESLint
+        if: always() && steps.install.outcome == 'success'
+        run: npm run lint
+      - name: TypeScript
+        if: always() && steps.install.outcome == 'success'
+        run: npm run typecheck
+      - name: Production build (no deployment)
+        if: always() && steps.install.outcome == 'success'
+        env:
+          GYMAF_REFERENCE_PREVIEW: '0'
+        run: npm run build
+  database:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: gymaf_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      PGHOST: 127.0.0.1
+      PGPORT: 5432
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: gymaf_test
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Bootstrap simulated provider context
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/bootstrap.sql
+      - name: Apply migrations and local-only seed helper
+        run: |
+          for file in supabase/migrations/*.sql; do psql -v ON_ERROR_STOP=1 -f "$file"; done
+          psql -v ON_ERROR_STOP=1 -f supabase/seed.sql
+      - name: Database ownership and history regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/coaching.sql
