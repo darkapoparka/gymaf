@@ -2,12 +2,15 @@
 
 Independent coaching software, launching with a flagship coach experience for Alexander Filipov and designed to support other coaches. Responsive web first; native iOS/Android later.
 
-## Start here
+## Start here — /astra
 
-- [Production documentation and agent reading order](docs/production/README.md)
-- [Source audit and verification limits](docs/production/AUDIT.md)
-- [PRD](docs/production/PRD.md), [feature acceptance criteria](docs/production/FEATURES.md), and [architecture](docs/production/ARCHITECTURE.md)
-- [Implementation backlog](docs/production/backlog.json) and [agent instructions](AGENTS.md)
+- [Production documentation and agent reading order](astra/README.md)
+- [Agent handoff and starter prompt](astra/AGENT_HANDOFF.md)
+- [Source audit and verification limits](astra/AUDIT.md)
+- [PRD](astra/PRD.md), [feature acceptance criteria](astra/FEATURES.md), and [architecture](astra/ARCHITECTURE.md)
+- [32-task implementation backlog](astra/backlog.json) and [agent instructions](AGENTS.md)
+
+`/astra/` is the canonical production-documentation directory. The initial documentation PR used `docs/production/`; current agents should read and maintain `/astra/` instead.
 
 ## Current implementation is a prototype
 
@@ -28,7 +31,7 @@ The dev server listens on `127.0.0.1:3210`. Existing commands: `npm run lint`, `
 
 ## Design direction
 
-Keep the existing layout and styling. Build a distinct Gymaf brand/content layer and real coaching functionality underneath it. See [DESIGN.md](DESIGN.md) and the [content production plan](docs/production/DESIGN_CONTENT.md).
+Keep the existing layout and styling. Build a distinct Gymaf brand/content layer and real coaching functionality underneath it. See [DESIGN.md](DESIGN.md) and the [content production plan](astra/DESIGN_CONTENT.md).
 
 ## Historical work
 

@@ -18,4 +18,4 @@ A coach's customer journey can carry that coach's approved identity without turn
 
 Capture an approved Gymaf baseline at 393px and 1440px and check 320px reflow, Bulgarian text expansion, keyboard use, reduced motion, loading/error/empty states, and safe-area/keyboard behavior. Keep a reviewable list of intentional differences. Do not require new Gymaf assets to match third-party screenshots pixel-for-pixel.
 
-Detailed rules and asset briefs: [DESIGN_CONTENT](docs/production/DESIGN_CONTENT.md). The original reference design document is preserved unchanged at [legacy DESIGN](docs/legacy/DESIGN-reference-2026-09-05.md). Existing reference metadata and source comments are historical where they conflict with this production direction.
+Detailed rules and asset briefs: [DESIGN_CONTENT](astra/DESIGN_CONTENT.md). The original reference design document is preserved unchanged at [legacy DESIGN](docs/legacy/DESIGN-reference-2026-09-05.md). Existing reference metadata and source comments are historical where they conflict with this production direction.

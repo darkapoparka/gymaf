@@ -14,6 +14,6 @@ Preserve the current layout, styling, visual hierarchy, and premium mobile-first
 
 ## Canonical specifications
 
-Read [PRD](docs/production/PRD.md), [FEATURES](docs/production/FEATURES.md), [DECISIONS](docs/production/DECISIONS.md), and [ROADMAP](docs/production/ROADMAP.md). These supersede the old reference-reproduction product goal. The historical document is preserved at [legacy PRODUCT](docs/legacy/PRODUCT-reference-2026-09-05.md).
+Read [PRD](astra/PRD.md), [FEATURES](astra/FEATURES.md), [DECISIONS](astra/DECISIONS.md), and [ROADMAP](astra/ROADMAP.md). These supersede the old reference-reproduction product goal. The historical document is preserved at [legacy PRODUCT](docs/legacy/PRODUCT-reference-2026-09-05.md).
 
-The current repository contains prototype UI, not the target production services. See [AUDIT](docs/production/AUDIT.md) for observed facts, limitations, and launch blockers.
+The current repository contains prototype UI, not the target production services. See [AUDIT](astra/AUDIT.md) for observed facts, limitations, and launch blockers.

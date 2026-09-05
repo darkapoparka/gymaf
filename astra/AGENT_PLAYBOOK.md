@@ -21,8 +21,9 @@ Update task evidence, feature status, schema/API changes and any ADR. Open a foc
 ## Starter prompt: baseline and first implementation gate
 
 ```text
-Work in darkapoparka/gymaf. Read AGENTS.md and docs/production/README.md,
-DECISIONS.md, AUDIT.md, TEST_STRATEGY.md, and backlog.json.
+Work in darkapoparka/gymaf. Read AGENTS.md and astra/README.md,
+astra/DECISIONS.md, astra/AUDIT.md, astra/TEST_STRATEGY.md,
+and astra/backlog.json.
 Start with GY-001 on a feature branch. Preserve current layout/styling.
 Record the current commit, runtime, lockfile and dependency install results.
 Run the existing lint/typecheck/build commands where available. Establish

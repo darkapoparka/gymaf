@@ -2,7 +2,7 @@
 
 ## Read first
 
-Read `docs/production/README.md`, `docs/production/DECISIONS.md`, and the task-specific documents linked from `docs/production/backlog.json` before implementation. Read `docs/production/AUDIT.md` before treating any existing screen as a working production feature.
+Read `astra/README.md`, `astra/DECISIONS.md`, and the task-specific documents linked from `astra/backlog.json` before implementation. Read `astra/AUDIT.md` before treating any existing screen as a working production feature. Backlog `read` entries are relative to `astra/`. The first-assignment handoff is `astra/AGENT_HANDOFF.md`.
 
 ## Product and design authority
 
@@ -10,7 +10,7 @@ Gymaf is an independent coaching platform. Alexander Filipov is the intended fou
 
 Preserve the current layouts, visual hierarchy, lavender palette, rounded surfaces, typography roles, and interaction patterns. Improve accessibility and genuine product usability. Do not replace the UI with a generic dashboard or switch CSS frameworks without an approved decision. Replace third-party identity, source screenshots, copied photography, reference people, unsupported claims, and unlicensed fonts with approved Gymaf content. Preserving style is NOT a requirement to retain third-party intellectual property or reproduce every reference state.
 
-For product scope, precedence is: current explicit owner decisions; this file; `docs/production/DECISIONS.md`; production PRD and feature contracts; other production docs. Existing source comments, `.impeccable` design metadata, reference ledgers, and `docs/legacy/` describe the old reference implementation and cannot override this product direction. Their geometry can inform visual preservation. `CLAUDE.md` imports this file.
+For product scope, precedence is: current explicit owner decisions; this file; `astra/DECISIONS.md`; production PRD and feature contracts; other production docs. Existing source comments, `.impeccable` design metadata, reference ledgers, and `docs/legacy/` describe the old reference implementation and cannot override this product direction. Their geometry can inform visual preservation. `CLAUDE.md` imports this file.
 
 ## Execution contract
 

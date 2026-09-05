@@ -1,12 +1,16 @@
-# Gymaf production blueprint
+# Astra — Gymaf production blueprint
 
 Version 1.0 • 5 September 2026 • Audited baseline `97b24278bdc70f2e1f2cba373acfcd6c56e0664d`.
+
+`/astra` is the canonical home for Gymaf's production specifications and AI-agent planning documents. The initial documentation was prepared in PR #1 under `docs/production`; use the files here for current implementation work. The source audit and implementation statuses are unchanged by this relocation.
 
 This is an implementation specification, not a claim that the target features exist. Preserve the current client UI and styling while replacing prototype data/integrations and building the missing coach-side product. No application code, database, deployment, billing account, or generated visual asset is introduced by these documents.
 
 ## Agent reading order
 
-Read root `AGENTS.md`, then [DECISIONS](DECISIONS.md), [AUDIT](AUDIT.md), [PRD](PRD.md), and [ROADMAP](ROADMAP.md). Choose a dependency-ready task in [backlog.json](backlog.json). Load the task-specific contracts rather than treating the entire reference screenshot library as instructions to reproduce a competitor.
+Read root [AGENTS.md](../AGENTS.md), then [DECISIONS](DECISIONS.md), [AUDIT](AUDIT.md), [PRD](PRD.md), and [ROADMAP](ROADMAP.md). Choose a dependency-ready task in [backlog.json](backlog.json). Its `read` entries resolve relative to this `/astra` directory. Load the task-specific contracts rather than treating the entire reference screenshot library as instructions to reproduce a competitor.
+
+For a ready-to-use coding-agent assignment, open [AGENT_HANDOFF.md](AGENT_HANDOFF.md).
 
 ## Document index
 
@@ -26,11 +30,13 @@ Read root `AGENTS.md`, then [DECISIONS](DECISIONS.md), [AUDIT](AUDIT.md), [PRD](
 | [MOBILE](MOBILE.md) | PWA scope, native strategy, reusable code, store/payment gates |
 | [ROADMAP](ROADMAP.md) | Dependency-ordered milestones and exit criteria |
 | [AGENT_PLAYBOOK](AGENT_PLAYBOOK.md) | Implementation workflow, scoped prompts, PR/handoff template |
+| [AGENT_HANDOFF](AGENT_HANDOFF.md) | Repository handoff and first coding-agent assignment |
 | [DECISIONS](DECISIONS.md) | Approved direction, proposed technical defaults, unresolved business gates |
 | [RESEARCH](RESEARCH.md) | Dated primary sources and limits of strategic assumptions |
 | [backlog.json](backlog.json) | Machine-readable work items; documentation is not completed implementation |
 | [asset-manifest.json](asset-manifest.json) | Planned asset slots and approval state; no generated assets yet |
 | [audit evidence](evidence/reproduction-results.json) | Two limited logic reproductions, explicitly not an application test run |
+| [original documentation validation](evidence/documentation-validation.json) | Historical validation of the initial documentation tree; not a new application test |
 
 ## Status vocabulary
 
