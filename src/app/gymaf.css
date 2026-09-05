@@ -1,0 +1,46 @@
+/* Connected Gymaf screens extend, rather than replace, the existing visual system. */
+.gymaf-connected { --gymaf-error: #8c1d25; }
+.gymaf-stack { display: flex; flex-direction: column; gap: 18px; }
+.gymaf-panel { padding: 22px; border-radius: var(--radius); background: var(--surface); }
+.gymaf-between { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.gymaf-error { border: 1px solid currentColor; border-radius: 16px; padding: 14px; color: var(--gymaf-error, #8c1d25); overflow-wrap: anywhere; }
+.gymaf-empty { min-height: 170px; gap: 16px; }
+.gymaf-fieldset { min-width: 0; border: 0; margin: 0; padding: 0; }
+.gymaf-connected .form-field { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.gymaf-connected input, .gymaf-connected textarea, .gymaf-connected select { width: 100%; max-width: 100%; box-sizing: border-box; font: inherit; color: var(--ink); background: white; border: 1px solid var(--line); border-radius: 16px; padding: 12px 14px; min-height: 46px; }
+.gymaf-connected textarea { min-height: 110px; resize: vertical; }
+.gymaf-connected input[type=checkbox] { width: 22px; min-height: 22px; accent-color: var(--ink); }
+.gymaf-connected select:focus-visible { outline: 2px solid #336ba1; outline-offset: 3px; }
+.gymaf-connected .button { min-height: 46px; white-space: normal; }
+.gymaf-connected .button-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.gymaf-connected .note { font-size: 14px; color: #55545d; overflow-wrap: anywhere; }
+.gymaf-exercise { padding: 18px; border: 1px solid var(--line); border-radius: 24px; }
+.gymaf-set-target { min-width: 0; border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
+.gymaf-set-target legend { padding: 0 8px; font-weight: 600; }
+.gymaf-target-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin-bottom: 12px; }
+.gymaf-workout-art { display: flex; align-items: center; justify-content: center; min-height: 210px; background: linear-gradient(140deg, #e4e0f0, #eceddf); border-radius: 24px 24px 0 0; }
+.gymaf-workout-art svg { width: 62px; height: 62px; opacity: .65; }
+.gymaf-connected .today-copy { display: block; padding: 20px; }
+.gymaf-stat { font-family: var(--serif); font-size: 42px; line-height: 1.15; }
+.gymaf-stats { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+.gymaf-secret { display: block; overflow-wrap: anywhere; background: white; padding: 16px; border-radius: 16px; user-select: all; }
+.gymaf-pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.gymaf-banner { max-width: 1080px; margin: 12px auto 0; padding: 8px 16px; font-size: 13px; color: #55545d; }
+.gymaf-account-links { display: flex; gap: 16px; flex-wrap: wrap; }
+.gymaf-connected .chat-messages { display: flex; flex-direction: column; gap: 12px; min-height: 230px; max-height: 55svh; overflow-y: auto; padding: 12px 0; }
+.gymaf-message { max-width: 85%; border-radius: 20px; padding: 12px 15px; background: white; align-self: flex-start; white-space: pre-wrap; overflow-wrap: anywhere; }
+.gymaf-message.mine { background: #2767ba; color: white; align-self: flex-end; border-bottom-right-radius: 6px; }
+.gymaf-message time, .gymaf-message small { display: block; font-size: 12px; margin-top: 7px; }
+.gymaf-compose { display: flex; align-items: end; gap: 10px; }
+.gymaf-compose label { flex: 1; }
+.gymaf-compose textarea { min-height: 52px; }
+.gymaf-timer { font-variant-numeric: tabular-nums; font-family: var(--serif); font-size: 50px; }
+.gymaf-sticky { position: sticky; top: 0; z-index: 10; background: var(--canvas); padding: 14px 0; border-bottom: 1px solid var(--line); }
+.gymaf-set-log { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.gymaf-set-log .gymaf-between { grid-column: 1 / -1; }
+.gymaf-connected code { overflow-wrap: anywhere; }
+.gymaf-row-list { display: flex; flex-direction: column; gap: 10px; }
+.gymaf-topline { display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 1080px; margin: auto; padding: 16px; }
+.gymaf-topline .wordmark { font-family: var(--serif); font-size: 26px; }
+@media(min-width:760px) { .gymaf-target-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } .gymaf-set-log { grid-template-columns: repeat(4,minmax(0,1fr)); } .gymaf-topline { padding-inline:40px; } }
+@media(max-width:359px) { .gymaf-panel { padding:16px; } .gymaf-exercise { padding:12px; } .gymaf-target-grid { grid-template-columns:1fr; } }

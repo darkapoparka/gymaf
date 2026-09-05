@@ -1,0 +1,9 @@
+import Link from "next/link";
+import { Dumbbell } from "lucide-react";
+
+export function Landing() {
+  return <div className="gymaf-connected"><header className="gymaf-topline"><Link href="/" className="wordmark">Gymaf</Link><Link href="/login" className="button">Sign in / Вход</Link></header><main className="app-shell home-page gymaf-stack"><div className="home-grid"><section className="today-column gymaf-stack"><h1>Your coach.<br />Your training.<br />Your progress.</h1><p>Training plans, workout logs and feedback in one place.</p><p>Тренировъчни програми, резултати и обратна връзка от твоя треньор.</p><div className="button-row"><Link className="button primary" href="/app">Open Gymaf</Link><Link className="button" href="/coach">Coach workspace</Link></div></section><section className="week-column gymaf-stack"><article className="today-card"><div className="gymaf-workout-art"><Dumbbell aria-hidden="true" /></div><div className="today-copy"><h2>Made for real coaching</h2><p>Follow your assigned training. Record each set. Review your week with your coach.</p></div></article><p className="note">Pre-release validation build. Use synthetic local accounts. Real coach identities, instructional media, commercial terms and release approvals are still pending.</p></section></div></main></div>;
+}
+export function CoachPublicPage({ coach }: { coach: { public_name: string; bio: string; slug: string } }) {
+  return <main className="app-shell immersive gymaf-connected gymaf-stack"><Link href="/" className="wordmark">Gymaf</Link><section className="gymaf-panel gymaf-stack"><h1>{coach.public_name}</h1><p className="gymaf-pre">{coach.bio}</p><p>Already invited by this coach? Open your private invitation link and sign in using the invited email.</p><Link href="/login" className="button primary full">Sign in</Link><p className="note">No self-service purchase or coach-matching service is enabled in this build.</p></section></main>;
+}
