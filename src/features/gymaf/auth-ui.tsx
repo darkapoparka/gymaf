@@ -1,4 +1,5 @@
 "use client";
+import { X } from "lucide-react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -17,15 +18,15 @@ export function LoginForm({ onSignedIn, linkMode = false, initialError = "" }: {
     } catch (failure) { setError(failure instanceof Error ? failure.message : "Sign-in failed."); }
     finally { setBusy(false); }
   }
-  return <form className="gymaf-stack" onSubmit={event => { event.preventDefault(); void submit(); }}>
-    <Field label="Email / Имейл" type="email" required autoComplete="email" maxLength={254} value={email} disabled={requested || busy} onChange={event => setEmail(event.target.value)} />
-    {requested && (linkMode ? <Note>Check your email, including spam. Open the newest sign-in link in this same browser on this computer. You do not need a code.</Note> : <><Note>A one-time code was requested. Check your email, including spam. Local test codes appear in the local Supabase email inbox.</Note><Field label="Sign-in code / Код за вход" autoFocus inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]{6,10}" minLength={6} maxLength={10} required value={code} onChange={event => setCode(event.target.value)} /></>)}
+  return <form className="gymaf-stack connected-login-form" onSubmit={event => { event.preventDefault(); void submit(); }}>
+    <Field label="Email / Имейл" placeholder="Email" type="email" required autoComplete="email" maxLength={254} value={email} disabled={requested || busy} onChange={event => setEmail(event.target.value)} />
+    {requested && (linkMode ? <Note>Check your email, including spam. Open the newest sign-in link in this same browser on this computer. You do not need a code.</Note> : <><Note>A one-time code was requested. Check your email, including spam. Local test codes appear in the local Supabase email inbox.</Note><Field label="Sign-in code / Код за вход" placeholder="Sign-in code" autoFocus inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]{6,10}" minLength={6} maxLength={10} required value={code} onChange={event => setCode(event.target.value)} /></>)}
     <ErrorNote message={error} />
     <button className="button primary full" disabled={busy}>{busy ? "Connecting…" : linkMode ? requested ? "Send a new sign-in link" : "Send sign-in link / Изпрати линк" : requested ? "Sign in / Вход" : "Send code / Изпрати код"}</button>
     {requested && <button type="button" className="button full" disabled={busy} onClick={() => { setRequested(false); setCode(""); setError(""); }}>{linkMode ? "Change email" : "Change email or request another code"}</button>}
   </form>;
 }
-export function LoginPage({ linkMode = false, initialError = "" }: { linkMode?: boolean; initialError?: string }) { return <main className="app-shell immersive gymaf-connected"><Head title="Welcome to Gymaf" back="/" /><section className="gymaf-panel gymaf-stack"><h2>Your coach. Your training.</h2><p>{linkMode ? "Влезте с линк, изпратен на имейла ви." : "Влезте с еднократен код, изпратен на имейла ви."}</p><LoginForm linkMode={linkMode} initialError={initialError} /><Note>Pre-release validation build. Use synthetic accounts, not real client or health data.</Note></section></main>; }
+export function LoginPage({ linkMode = false, initialError = "" }: { linkMode?: boolean; initialError?: string }) { return <main className="app-shell immersive gymaf-connected connected-login"><header><Link href="/" className="icon-button" aria-label="Close"><X/></Link><Link href="/" className="login-wordmark">Gymaf</Link></header><h1>Enter your email<br/>to get started.</h1><LoginForm linkMode={linkMode} initialError={initialError}/><p className="login-build-note">Pre-release validation build. Use synthetic accounts.</p></main>; }
 export function JoinPage({ linkMode = false }: { linkMode?: boolean }) {
   const [token, setToken] = useState(""), [ready, setReady] = useState(false);
   const account = useResource<Bootstrap>("me"), mutation = useCommand(), router = useRouter();

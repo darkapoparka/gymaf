@@ -1,0 +1,179 @@
+/* Future Pro reference geometry applied to connected Gymaf records. */
+.gymaf-client .app-shell.connected-route-sessions {padding:0;max-width:540px;}
+.connected-player {position:relative;display:flex;flex-direction:column;min-height:100svh;background:#77746d;isolation:isolate;}
+.connected-player > .training-artwork {position:absolute;inset:0;z-index:-1;}
+.connected-player > .training-artwork:after {content:"";position:absolute;inset:0;background:linear-gradient(#0005,transparent 40%,#0002);}
+.connected-player-top {display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;gap:12px;padding:70px 10px 0;color:white;}
+.connected-player-top .icon-button {color:inherit;background:none;}
+.connected-player-top progress {display:block;height:7px;width:100%;accent-color:#fff;border:0;border-radius:10px;overflow:hidden;}
+.connected-player-top progress::-webkit-progress-bar {background:#ffffff40;}
+.connected-player-top progress::-webkit-progress-value {background:white;}
+.player-time {display:flex;justify-content:space-between;font-size:13px;margin-top:7px;gap:8px;}
+.player-paused-title {position:absolute;left:20px;right:20px;top:47%;text-align:center;color:white;font:500 32px/1.15 var(--serif);}
+.player-paused-title h1 {font:inherit;}.player-paused-title p{font:16px var(--sans);}
+.connected-player-controls {position:relative;margin-top:auto;padding:0 22px max(30px,env(safe-area-inset-bottom));border:1px solid #fffc;border-radius:28px 28px 0 0;background:#e9e3d9df;backdrop-filter:blur(20px);}
+.player-handle {display:block;position:relative;width:96px;height:44px;margin:0 auto 10px;}
+.player-handle:after {content:"";position:absolute;top:7px;left:18px;width:60px;height:4px;background:#a6a09b;border-radius:4px;}
+.gymaf-client .connected-player-controls h2 {font:500 24px/1.2 var(--serif);text-align:center;margin:0 0 30px;overflow-wrap:anywhere;}
+.player-exercise-nav {display:grid;grid-template-columns:44px 1fr 44px;gap:10px;align-items:center;text-align:center;}
+.player-log-sets {min-height:44px;}
+.player-exercise-nav small {display:block;font-size:12px;color:#605e5a;margin-top:5px;}
+.player-action-row {display:flex;gap:10px;margin-top:24px;}.player-action-row .button{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;}
+.player-finish {display:block;margin:12px auto 0;min-height:44px;font-size:14px;}
+.player-overview button {display:flex;justify-content:space-between;align-items:center;width:100%;min-height:65px;text-align:left;border-bottom:1px solid var(--line);gap:15px;}
+.player-overview small {display:block;color:var(--muted);margin-top:4px;}.player-overview b{font-weight:500;}
+.connected-player .sheet {color:var(--ink);}
+.gymaf-client .gymaf-topline {display:none;}
+.gymaf-client .app-shell {padding:60px 16px 120px;max-width:540px;}
+.gymaf-client .page-head {margin:0 0 22px;}
+.gymaf-client .page-head h1 {font:500 32px/1.16 var(--serif);letter-spacing:-.01em;}
+.connected-progress .page-head {margin-bottom:0;}
+.connected-progress > h2 {margin-top:16px;}
+.connected-progress .consistency-card > header svg {color:#82d444;}
+.connected-account {max-width:600px;margin:auto;}
+.connected-settings-list h2 {font:400 14px var(--sans);color:var(--muted);margin:22px 0 10px;}
+.connected-settings-list .row {background:#ffffffb8;border-radius:0;margin:0;border-bottom:1px solid var(--line);min-height:58px;}
+.connected-settings-list .note {margin:28px 0 0;}
+.connected-account-edit .gymaf-panel {padding:0;background:none;}
+.gymaf-client .connected-home .today-copy h3,.gymaf-client .connected-home .today-copy p {white-space:normal;overflow-wrap:anywhere;}
+.gymaf-client h2 {font:500 22px/1.2 var(--serif);}
+.gymaf-build-info {position:absolute;z-index:30;top:12px;right:max(16px,calc((100% - 1080px)/2));}
+.gymaf-build-info summary {list-style:none;display:flex;align-items:center;gap:7px;cursor:pointer;min-height:38px;padding:7px 12px;border-radius:22px;background:#e4e3eb;}
+.gymaf-build-info summary::-webkit-details-marker{display:none;}
+.gymaf-build-info summary span {font-size:12px;}
+.gymaf-build-info > div {position:absolute;right:0;top:45px;width:280px;background:var(--canvas);border:1px solid var(--line);padding:18px;border-radius:18px;box-shadow:0 10px 30px #20202020;}
+.gymaf-build-info p {font-size:13px;line-height:1.5;margin:0 0 12px;}
+.gymaf-build-info a {display:block;padding:10px 0;}
+.connected-home .today-column > h2 {margin:0 0 16px;}
+.connected-home .today-card {border-radius:24px;}
+.connected-home .today-photo {display:block;height:300px;}
+.training-artwork {position:relative;height:100%;overflow:hidden;background:#d9d7d0;}
+.training-artwork img {display:block;width:100%;height:100%;object-fit:cover;}
+.training-artwork-empty {height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:linear-gradient(160deg,#d9d8cd,#c1c5c4);color:#6c7370;}
+.training-artwork-empty span {font-size:12px;letter-spacing:4px;}
+.connected-home .today-copy {padding:0 16px 19px;position:relative;background:#e4e1db;}
+.connected-home .today-copy h3 {font:500 22px/1.15 var(--serif);letter-spacing:-.02em;margin:0 0 5px;}
+.connected-home .today-copy p {font-size:16px;margin:0;}
+.connected-quick-links {margin-top:9px;padding:17px 14px 16px;background:#dfe2ee;border-radius:25px;}
+.connected-quick-links h2 {font:400 18px var(--sans);margin:0 0 14px;}
+.connected-quick-links > div {display:flex;justify-content:space-between;gap:8px;}
+.connected-quick-links a {display:flex;flex-direction:column;align-items:center;gap:5px;font-size:11px;}
+.connected-quick-links svg {box-sizing:content-box;width:23px;height:23px;padding:12px;border-radius:50%;background:#f8f7fc;}
+.connected-training-summary {margin:32px 0;background:#d9dcd0;border-radius:25px;overflow:hidden;}
+.connected-training-summary > div {display:flex;align-items:center;justify-content:space-between;padding:20px 18px 8px;}
+.connected-training-summary h2 {font:500 30px/1.1 var(--serif);margin:0;}
+.progress-emblem {display:grid;place-items:center;width:52px;height:52px;border:5px solid #bdc0b6;border-radius:50%;}
+.connected-training-summary > p {font-size:13px;padding:0 18px 14px;}
+.connected-training-summary > a {display:flex;justify-content:space-between;padding:17px 18px;background:#faf9fdc9;}
+.connected-upcoming {margin:15px 0;}
+.connected-upcoming > p {font-size:14px;margin:0 0 5px;}
+.gymaf-client .row {min-height:54px;}
+.gymaf-initial-avatar {display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:50%;background:#dad6cd;color:#474941;font:500 14px var(--sans);}
+.connected-route-workouts:has(.connected-workout-detail),.gymaf-client .connected-route-schedule,.gymaf-client .connected-route-profile:has(.connected-profile),.gymaf-client .connected-route-messages {padding:0;}
+.connected-workout-detail {position:relative;background:#333;color:#fff;min-height:100svh;}
+.connected-workout-detail > .training-artwork {position:absolute;inset:0;}
+.connected-workout-detail > .training-artwork:after {content:"";position:absolute;inset:0;background:linear-gradient(#0003,transparent 25%,#0008 70%,#000c);}
+.connected-workout-detail > header {position:absolute;z-index:2;top:58px;left:16px;right:16px;display:flex;justify-content:space-between;}
+.connected-workout-detail .icon-button {background:#ffffff30;color:white;}
+.connected-detail-title {position:relative;padding:143px 16px 220px;}
+.connected-detail-title h1 {font:500 32px/1.1 var(--serif);letter-spacing:-.025em;margin:0 0 17px;}
+.connected-detail-title p {font-size:16px;}
+.connected-detail-title > button {display:flex;align-items:center;gap:7px;margin-top:20px;min-height:44px;}
+.connected-workout-detail > footer {position:absolute;bottom:max(34px,env(safe-area-inset-bottom));left:16px;right:16px;}
+.connected-detail-meta {display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;min-height:82px;padding:16px;width:100%;border-radius:26px;background:#282321b0;margin-bottom:16px;font-size:18px;}
+.connected-detail-meta small {display:block;font-size:16px;color:#dedbd9;margin-top:7px;}
+.connected-detail-actions {display:grid;grid-template-columns:50px minmax(0,1fr);gap:16px;align-items:end;}
+.connected-detail-actions > .icon-button {background:#eee8e2d0;color:#202020;width:50px;height:50px;}
+.connected-detail-start .button {background:#202020;color:#fff;min-height:50px;}
+.connected-workout-detail > footer .note {color:white;font-size:12px;}
+.connected-overview article {display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;padding:18px 0;border-bottom:1px solid var(--line);}
+.connected-overview h3 {font:500 16px var(--sans);margin:0 0 3px;}
+.connected-overview p {font-size:14px;}
+.connected-overview small {color:var(--muted);}
+.prescribed-set {color:#62626b;font-size:12px!important;}
+.exercise-glyph {display:grid;place-items:center;flex-shrink:0;width:45px;height:45px;border-radius:12px;background:#dedee5;}
+.connected-schedule {padding:59px 16px 50px;min-height:100svh;}
+.native-titlebar {display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;gap:10px;}
+.native-titlebar h1 {font:500 22px var(--serif);text-align:center;margin:0;}
+.schedule-week {display:flex;align-items:center;justify-content:space-between;margin:24px 0 5px;font-size:13px;}
+.schedule-day {display:grid;grid-template-columns:41px minmax(0,1fr);gap:12px;min-height:85px;align-items:center;}
+.schedule-date {display:flex;flex-direction:column;align-items:center;gap:3px;}
+.schedule-date small {color:#777;font-size:12px;}
+.schedule-date b {display:grid;place-items:center;font-weight:400;width:32px;height:32px;border-radius:50%;}
+.schedule-date.today b {background:#282829;color:white;}
+.schedule-workout {display:flex;align-items:center;gap:8px;background:#fcfbff;border-radius:23px;padding:12px;margin:5px 0;}
+.schedule-workout > a {display:flex;gap:10px;align-items:center;flex:1;min-width:0;font:500 15px var(--sans);}
+.schedule-workout small {display:block;font-weight:400;color:#777;font-size:12px;margin-top:5px;}
+.schedule-workout > button {min-width:36px;min-height:44px;}
+.schedule-rest {padding:20px 16px;margin:0;color:#92929b;font-size:16px;}
+.schedule-help {font-size:12px;line-height:1.5;color:#74747c;margin:25px 5px;}
+.connected-schedule .schedule-day {padding:0;border:0;}
+.connected-schedule .schedule-day > div:last-child {display:block;min-width:0;}
+.connected-schedule .schedule-date {width:41px;}
+.connected-progress > .tabs {margin-bottom:16px;background:transparent;}
+.connected-progress > h2 {margin:22px 0 14px;}
+.connected-goal {border-radius:26px;padding:16px;background:#ffffffb8;min-height:81px;}
+.connected-goal h3 {font:500 22px/1.2 var(--serif);margin:0 0 4px;}
+.connected-goal p {font-size:17px;line-height:1.25;margin:0;}
+.connected-change-goal {margin:16px 0 12px;background:#ffffffb8;border-radius:26px;min-height:49px;padding:10px 26px;font-size:18px;}
+.connected-progress .consistency-card {padding:18px 16px;border-radius:26px;background:#ffffffb8;}
+.connected-progress .consistency-card > header {display:flex;align-items:center;gap:10px;margin-bottom:16px;font-size:18px;}
+.goal-options {display:flex;flex-direction:column;}
+.goal-options button {display:flex;align-items:center;justify-content:space-between;text-align:left;min-height:50px;padding:10px 5px;border-bottom:1px solid var(--line);}
+.connected-minutes {padding:20px;border-radius:24px;background:#fdfcff;}
+.connected-minutes h3 {font:500 16px var(--sans);}
+.minute-columns {height:140px;display:flex;justify-content:space-around;gap:10px;align-items:flex-end;border-bottom:1px solid var(--line);margin-bottom:27px;}
+.minute-columns > div {height:100%;flex:1;display:flex;align-items:center;justify-content:flex-end;flex-direction:column;position:relative;}
+.minute-columns i {width:20px;background:#b146e5;min-height:2px;border-radius:6px 6px 0 0;}
+.minute-columns small {position:absolute;bottom:-22px;font-size:11px;color:var(--muted);}
+.connected-minutes > p {font-size:27px;margin-bottom:0;}
+.connected-minutes > p small,.loaded-scope {font:12px var(--sans);color:var(--muted);}
+.connected-profile {position:relative;min-height:100svh;}
+.connected-profile-cover {height:235px;background:linear-gradient(#bebec2,#f1f0f6);}
+.connected-profile .profile-actions {position:absolute;top:58px;right:16px;z-index:2;}
+.connected-profile-info {margin-top:-85px;position:relative;text-align:center;padding:0 22px;}
+.connected-profile-info > .gymaf-initial-avatar {font-size:29px;border:4px solid var(--canvas);}
+.connected-profile-info h1 {font:500 32px/1.15 var(--serif);margin:13px 0 10px;}
+.connected-profile-info > p {font-size:14px;margin:0 auto;max-width:280px;}
+.profile-totals {display:flex;justify-content:center;gap:46px;padding:25px 0;}
+.profile-totals b,.profile-totals small {display:block;}
+.profile-totals b {font:500 26px var(--serif);}
+.profile-totals small {font-size:12px;color:#777;margin-top:5px;}
+.connected-profile-info > .button {min-height:42px;padding:10px 28px;}
+.connected-profile-info > .loaded-scope {margin:-8px auto 20px;font-size:12px;color:#62616a;}
+.connected-profile-rows {padding:25px 20px 130px;}
+.connected-profile-rows h2 {margin:26px 0 14px;}
+.profile-coach-row {display:flex;align-items:center;gap:12px;padding:15px;background:#ffffffa0;border-radius:24px;}
+.profile-coach-row > span:nth-child(2) {flex:1;}
+.profile-coach-row small {display:block;font-size:12px;color:#777;margin-top:3px;}
+.connected-conversation {padding:55px 16px 170px;min-height:100svh;}
+.conversation-head {position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;background:var(--canvas);padding:5px 0 20px;}
+.conversation-head > div {display:flex;flex-direction:column;align-items:center;gap:6px;}
+.conversation-head h1 {font:500 16px var(--sans);margin:0;}
+.gymaf-connected .connected-conversation .chat-messages {max-height:none;min-height:calc(100svh - 320px);overflow:visible;}
+.connected-conversation .gymaf-message {padding:12px 15px;font-size:16px;line-height:1.4;}
+.connected-conversation .gymaf-message p {margin:0;}
+.connected-conversation .gymaf-message time {font-size:10px;opacity:.75;}
+.connected-conversation .gymaf-message small {font-size:11px;}
+.connected-conversation .gymaf-compose {position:fixed;z-index:22;bottom:98px;left:50%;transform:translateX(-50%);width:calc(100% - 32px);max-width:508px;padding:6px;background:var(--canvas);border:1px solid #c5c4ce;border-radius:25px;align-items:flex-end;}
+.connected-conversation .gymaf-compose label {min-width:0;flex:1;}
+.gymaf-connected .connected-conversation .gymaf-compose textarea {min-height:32px;height:32px;max-height:130px;border:0;background:none;resize:none;padding:5px 8px;border-radius:0;field-sizing:content;font-size:16px;}
+.send-message {position:relative;width:44px;height:44px;border-radius:50%;color:white;display:grid;place-items:center;flex-shrink:0;isolation:isolate;}
+.send-message:before {content:"";position:absolute;inset:6px;border-radius:50%;background:#282828;z-index:-1;}
+.connected-login {min-height:100svh;max-width:540px;padding:59px 16px 40px;background:radial-gradient(ellipse at 82% 17%,#8c867a 0,transparent 60%),#242222;color:white;}
+.connected-login > header {display:flex;justify-content:center;position:relative;align-items:center;}
+.connected-login > header .icon-button {position:absolute;left:0;color:white;background:#ffffff20;font-size:29px;}
+.login-wordmark {font:400 42px/1.1 var(--sans);letter-spacing:-2px;}
+.connected-login > h1 {font:500 32px/1.12 var(--serif);text-align:center;letter-spacing:-.025em;margin:20px 0 42px;}
+.connected-login-form {gap:22px;}
+.connected-login .form-field > span {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+.gymaf-connected.connected-login input {height:50px;border:0;border-radius:28px;background:#ffffff25;color:white;font-size:17px;padding:12px 23px;}
+.gymaf-connected.connected-login input::placeholder {color:#e4dfdb;opacity:1;}
+.connected-login .button {background:#ffffff20;color:white;}
+.connected-login .primary {background:white;color:#222;min-height:49px;margin-top:32px;}
+.connected-login .note {color:#d7d4d0;font-size:14px;}
+.connected-login .gymaf-error {color:#ffe1dc;border-color:#bf857c;}
+.login-build-note {font-size:12px;text-align:center;color:#d7d4d0;margin-top:30px;}
+@media(max-width:759px){.gymaf-client .gymaf-build-info summary span{display:none;}.gymaf-client .gymaf-build-info{top:12px;}.gymaf-client.gymaf-player-shell .gymaf-build-info{display:none;}}
+@media(min-width:760px){.gymaf-client .gymaf-topline{display:flex;}.gymaf-client .app-shell{max-width:1080px;padding:48px 40px 125px;}.gymaf-client .connected-route-workouts:has(.connected-workout-detail){max-width:540px;padding:0;}.connected-home .today-photo{height:430px;}.connected-training-summary{margin-top:0;}.gymaf-client .connected-route-profile:has(.connected-profile),.gymaf-client .connected-route-schedule,.gymaf-client .connected-route-messages{max-width:600px;padding:0;}.gymaf-build-info{top:65px;}.connected-login{margin-top:30px;border-radius:32px;min-height:800px;}.connected-progress{max-width:640px;margin:auto;}}
+@media(max-width:359px){.gymaf-client .app-shell{padding-inline:12px;}.connected-home .today-photo{height:250px;}.connected-quick-links svg{padding:9px;}.connected-progress .consistency-card{padding:14px;}.connected-detail-title h1{font-size:36px;}.connected-schedule{padding-inline:12px;}.schedule-day{gap:7px;}}

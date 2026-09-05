@@ -2,11 +2,14 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Message, MessagePage } from "@/shared/gymaf/contracts";
 import { api, command } from "./api";
-import { Empty, ErrorNote, Note, useCommand } from "./ui";
+import Link from "next/link";
+import { ArrowUp, ChevronLeft, RefreshCw } from "lucide-react";
+import { InitialAvatar } from "./client-views";
+import { Empty, ErrorNote, Head, Note, useCommand } from "./ui";
 
 type ConversationState = MessagePage & { olderLoaded: boolean };
 function merge(a: Message[], b: Message[]) { const byId = new Map([...a,...b].map(message => [message.id,message])); return [...byId.values()].sort((x,y) => Date.parse(y.created_at)-Date.parse(x.created_at) || y.id.localeCompare(x.id)); }
-export function Messages({ relationshipId, userId, canSend }: { relationshipId: string; userId: string; canSend: boolean }) {
+export function Messages({ relationshipId, userId, canSend, coachName = "Your coach", presentation = "embedded" }: { relationshipId: string; userId: string; canSend: boolean; coachName?:string; presentation?: "client" | "embedded" }) {
   const [data, setData] = useState<ConversationState | null>(null), [error, setError] = useState(""), [body, setBody] = useState(""), [loadingOlder, setLoadingOlder] = useState(false);
   const mutation = useCommand(), lastRead = useRef(""), alive = useRef(true);
   const load = useCallback(async (before?: string) => {
@@ -33,11 +36,10 @@ export function Messages({ relationshipId, userId, canSend }: { relationshipId: 
     }
   }
   async function older() { if (!data?.next_cursor || loadingOlder) return; setLoadingOlder(true); try { await load(data.next_cursor); } catch (failure) { setError(failure instanceof Error ? failure.message : "Older messages could not be loaded."); } finally { setLoadingOlder(false); } }
-  return <section className="gymaf-stack"><div className="gymaf-between"><h2>Messages</h2><button className="button" onClick={() => void load().catch(failure => setError(failure instanceof Error ? failure.message : "Refresh failed."))}>Refresh</button></div>
-    <Note>Messages are saved to the server. This test build checks for new messages every 15 seconds while visible.</Note>
-    <ErrorNote message={error || mutation.error} />
-    {data?.next_cursor && <button className="button" disabled={loadingOlder} onClick={() => void older()}>Load older messages</button>}
+  return <section className={presentation === "client" ? "connected-conversation" : "gymaf-stack"}>{presentation === "client" ? <header className="conversation-head"><Link href={`/app?relationship=${relationshipId}`} className="icon-button" aria-label="Back"><ChevronLeft/></Link><div><InitialAvatar name={coachName}/><h1>{coachName}</h1></div><button className="icon-button" aria-label="Refresh conversation" onClick={() => void load().catch(failure => setError(failure instanceof Error ? failure.message : "Refresh failed."))}><RefreshCw size={19}/></button></header> : <Head title="Conversation"><button className="button" onClick={() => void load().catch(failure => setError(failure instanceof Error ? failure.message : "Refresh failed."))}>Refresh</button></Head>}
+    <ErrorNote message={error || mutation.error}/>
+    {data?.next_cursor && <button className="button conversation-older" disabled={loadingOlder} onClick={() => void older()}>Load older messages</button>}
     <div className="chat-messages" role="log" aria-live="polite" aria-label="Coach conversation">{!data ? <p>Loading…</p> : !data.messages.length ? <Empty>No messages yet.</Empty> : [...data.messages].reverse().map(message => <article key={message.id} className={`gymaf-message ${message.sender_id === userId ? "mine" : ""}`}><p>{message.body}</p><time dateTime={message.created_at}>{new Date(message.created_at).toLocaleString()}</time>{message.sender_id === userId && <small>{data.other_read_at && Date.parse(data.other_read_at) >= Date.parse(message.created_at) ? "Read" : "Sent"}</small>}</article>)}</div>
-    {canSend ? <form className="gymaf-compose" onSubmit={event => { event.preventDefault(); void send(); }}><label className="form-field"><span>Message</span><textarea required maxLength={4000} value={body} disabled={mutation.busy} onChange={event => setBody(event.target.value)} /></label><button className="button primary" disabled={mutation.busy || !body.trim()}>{mutation.busy ? "Sending…" : "Send"}</button></form> : <Note>This relationship is read-only. Account support is available from your profile.</Note>}
+    {canSend ? <form className="gymaf-compose" onSubmit={event => { event.preventDefault(); void send(); }}><label><span className="visually-hidden">Message</span><textarea placeholder="Message" required maxLength={4000} value={body} disabled={mutation.busy} onChange={event => setBody(event.target.value)} /></label><button className={presentation === "client" ? "send-message" : "button primary"} aria-label={mutation.busy?"Sending message":"Send message"} disabled={mutation.busy || !body.trim()}>{presentation === "client" ? <ArrowUp size={22}/> : mutation.busy ? "Sending…" : "Send"}</button></form> : <Note>This relationship is read-only. Account support is available from your profile.</Note>}
   </section>;
 }

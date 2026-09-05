@@ -4,6 +4,7 @@ import "./globals.css";
 import "./flows.css";
 import "./fidelity.css";
 import "./gymaf.css";
+import "./connected-fidelity.css";
 
 // Retained only to preserve the existing local visual baseline. Font rights and
 // Bulgarian/native coverage remain explicit release gates in astra/DESIGN_CONTENT.md.
