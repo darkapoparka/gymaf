@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-09-05",
+  "scope": "Backlog structure/dependency checks and declared documentation inventory verification. Not a whole-repository Markdown linter, application build, security test or browser run.",
+  "audited_baseline": "97b24278bdc70f2e1f2cba373acfcd6c56e0664d",
+  "checked_documentation_tree_before_this_evidence_file": "332d01d0e0cdd4896d726f05a07928bd1fbff2a1",
+  "backlog": {
+    "task_count": 32,
+    "valid_json": true,
+    "unique_task_ids": true,
+    "all_dependency_ids_exist": true,
+    "dependency_graph_acyclic": true,
+    "read_targets_present_in_production_document_inventory": true,
+    "all_implementation_tasks_planned_with_null_evidence": true,
+    "locally_validated_git_blob_sha": "3270978ecc0d9b3bdea86b9a5fbe6dc10190c0b4",
+    "github_tree_blob_sha_matches_local_validation": true
+  },
+  "production_document_inventory_before_this_file": {"markdown_files":17,"json_files":3},
+  "application_content_retained_git_objects": {
+    "src": "dd1a466ed797a3399467ba7cb1122bcf5fe07995",
+    "public": "fb7947e146fc389e1b629728e9cb253d0c193243",
+    "scripts": "cbac760983f80ffa2204dfed663adc38f8a5eac4",
+    "package.json": "6112fbc4de0594862f4463ef24d5d63cb44dd97b",
+    "package-lock.json": "77542bfca204357d4c07558efff60b0bd4f16f5d"
+  },
+  "application_checks_rerun": false
+}

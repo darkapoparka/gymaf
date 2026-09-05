@@ -1,0 +1,11 @@
+{
+  "audit_date": "2026-09-05",
+  "baseline": "97b24278bdc70f2e1f2cba373acfcd6c56e0664d",
+  "environment": {"node": "v22.16.0"},
+  "scope": "Standalone reproductions of expressions copied from inspected source. Not an application build, browser run, or exploit test.",
+  "cases": [
+    {"id":"AUD-003","input":"Two completions of the same workout ID with different seconds/reps","expected_history_count":2,"observed_history_count":1,"observed_state":{"completed":["test-workout"],"sessions":{"test-workout":{"seconds":120,"reps":"15"}}},"defect_reproduced":true},
+    {"id":"AUD-004","input":{"favorites":[],"name":"Example","locations":null},"passes_read_guard":true,"downstream_error":"TypeError: Cannot read properties of null (reading 'map')","defect_reproduced":true}
+  ],
+  "not_run":["npm ci","application lint","application typecheck","application build","browser tests","dependency vulnerability scan","deployment verification"]
+}

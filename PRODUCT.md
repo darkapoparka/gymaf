@@ -1,33 +1,19 @@
-# Future Pro web reference implementation
+# Gymaf product authority
 
-<!-- impeccable:product-schema 1 -->
+Status: production direction documented; implementation pending. Updated 5 September 2026.
 
-## Platform
+## Purpose
 
-web
+Help independent coaches deliver training programs, review completed training, communicate with clients, and manage a repeatable coaching service. Help clients know what to do, record what they did, and receive real coach feedback.
 
-## Stack
+Gymaf is the independent platform. Alexander Filipov is the intended founding coach and launch partner, not the permanent identity of every coach workspace. No partnership agreement, promotion commitment, equity allocation, or asset permission is assumed completed.
 
-Delegated by the user: Next.js App Router, React, TypeScript, custom CSS, and Lucide icons. One application with locally owned components gives precise control over the supplied reference.
+## Binding constraints
 
-## Product Purpose
+Preserve the current layout, styling, visual hierarchy, and premium mobile-first feel. Replace reference branding/content and resolve asset rights. Launch responsive web first, then iOS/Android. Build multi-coach authorization and data ownership from the beginning, but initially onboard coaches by invitation. Do not prioritize an open marketplace, social network, AI coach, or native health integrations over the core coaching loop.
 
-Reproduce the styling of the Future Pro iOS screens as an interactive website/web app. The user explicitly requested a 1:1 reference clone, not a new visual direction. Future Pro supersedes the earlier Glovo reference.
+## Canonical specifications
 
-## Brand Commitments
+Read [PRD](docs/production/PRD.md), [FEATURES](docs/production/FEATURES.md), [DECISIONS](docs/production/DECISIONS.md), and [ROADMAP](docs/production/ROADMAP.md). These supersede the old reference-reproduction product goal. The historical document is preserved at [legacy PRODUCT](docs/legacy/PRODUCT-reference-2026-09-05.md).
 
-The binding reference is https://mobbin.com/apps/future-pro-ios-e5c0e84e-d7e7-46cd-9662-23bffc92ca32/f4ddb8cd-b304-5687-8b52-ea09c577dfae/screens .
-
-## Capabilities and Constraints
-
-The reference contains 270 screen captures and 84 flows. Screen previews and flow sheets were accessible in the signed-in browser on 2026-09-05, despite a generic upgrade banner. Implemented coverage must be recorded explicitly, without asserting full parity based on a subset.
-
-The requested deliverable is a web interface. Native iOS hardware integrations, real coaching, account authentication, subscriptions, payments, message delivery, and health data connections are not configured. Local interactions must not imply those services are connected.
-
-## Evidence on Hand
-
-Authenticated Mobbin screen sheets and downloaded reference images. Alex Smith, Lee, workout titles, exercise descriptions, and sample statistics are reference fixture content, not the user's personal data. Original source images are retained locally for comparison.
-
-## Open Decisions
-
-Production backend, deployment target, commercial assets, and service integrations are unspecified. Desktop behavior is an adaptation of the supplied mobile design, since no desktop reference was provided.
+The current repository contains prototype UI, not the target production services. See [AUDIT](docs/production/AUDIT.md) for observed facts, limitations, and launch blockers.
