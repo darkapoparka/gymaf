@@ -16,6 +16,7 @@ export async function GET(request: NextRequest, context: Context) {
       return success(await rpc("gymaf_public_coach", { p_slug: slug }));
     }
     const token = accessToken(request), user = await verifiedUser(token);
+    if (path.join("/") === "me/details") return success(await rpc("gymaf_member_query", {}, token));
     if (path.join("/") === "auth/factors") return success({ factors: Array.isArray(user.factors) ? user.factors : [] });
     let kind: string, id: string | null = null;
     if (path.join("/") === "me") kind = "bootstrap";
@@ -26,7 +27,8 @@ export async function GET(request: NextRequest, context: Context) {
     else if (path.length === 3 && path[0] === "relationships" && path[2] === "messages") { kind = "messages"; id = uuid(path[1]); }
     else throw new HttpError(404, "NOT_FOUND", "Unknown resource.");
     const before = request.nextUrl.searchParams.get("before");
-    const result = await rpc("gymaf_query", { p_kind: kind, p_id: id, p_before: before ? uuid(before) : null }, token);
+    let result = await rpc("gymaf_query", { p_kind: kind, p_id: id, p_before: before ? uuid(before) : null }, token);
+    if (kind === "export") result = { ...(result as Record<string, unknown>), memberRecords: await rpc("gymaf_member_query", {}, token) };
     const response = success(result);
     if (kind === "export") response.headers.set("Content-Disposition", "attachment; filename=gymaf-export.json");
     return response;
@@ -42,6 +44,6 @@ export async function POST(request: NextRequest, context: Context) {
     else if (request.headers.has("origin")) sameOrigin(request);
     const token = accessToken(request); await verifiedUser(token);
     const command = validateCommand(await readBody(request));
-    return success(await rpc("gymaf_command", { p_action: command.action, p_command_id: command.commandId, p: command.payload }, token));
+    return success(await rpc(command.action.startsWith("member.") ? "gymaf_member_command" : "gymaf_command", { p_action: command.action, p_command_id: command.commandId, p: command.payload }, token));
   } catch (error) { return failure(error); }
 }

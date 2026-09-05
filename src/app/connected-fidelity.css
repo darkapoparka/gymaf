@@ -1,4 +1,32 @@
 /* Future Pro reference geometry applied to connected Gymaf records. */
+.gymaf-client .app-shell:has(.member-flow),.gymaf-client .app-shell:has(.member-settings),.gymaf-client .app-shell:has(.member-weight) {padding:0;max-width:540px;}
+.member-flow {padding-bottom:50px;}
+.member-flow .flow-head h1,.member-settings .flow-head h1 {font-size:22px;}
+.member-flow .flow-head > span:empty {min-width:44px;}
+.member-settings .row-copy > span {display:flex;align-items:center;gap:10px;}
+.member-settings .row {margin:0;background:transparent;border-radius:0;}
+.member-settings .row-group {overflow:hidden;background:#ffffffa0;border-radius:23px;}
+.member-settings .settings-links {margin-top:28px;}
+.member-choices {display:flex;flex-direction:column;}
+.member-choices > button {min-height:56px;text-align:left;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line);gap:16px;}
+.member-choices > button[aria-pressed=true] {background:#ffffffa0;}
+.member-choices > button:first-child {border-radius:20px 20px 0 0;}
+.member-choices > button:last-child {border-radius:0 0 20px 20px;}
+.member-toggle-row {display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:60px;text-align:left;}
+.member-toggle-row i {position:relative;width:48px;height:28px;border-radius:20px;background:#c9c9d1;flex-shrink:0;}
+.member-toggle-row i:after {content:"";position:absolute;width:24px;height:24px;top:2px;left:2px;border-radius:50%;background:white;box-shadow:0 1px 3px #0002;}
+.member-toggle-row[aria-checked=true] i {background:#34c759;}.member-toggle-row[aria-checked=true] i:after{left:22px;}
+.member-equipment-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+.member-equipment-grid button {position:relative;min-height:137px;text-align:left;padding:15px;background:#faf9fdbb;border-radius:22px;display:flex;flex-direction:column;justify-content:space-between;gap:15px;}
+.member-equipment-grid button > svg {align-self:flex-end;color:#6b6a6d;}
+.member-equipment-grid button[aria-pressed=true] {outline:2px solid #202020;outline-offset:-2px;}
+.member-equipment-grid button > .equipment-check {position:absolute;left:14px;bottom:15px;color:#202020;}
+.member-selected-count {font-size:13px;color:var(--muted);}
+.member-sticky-save {position:sticky;bottom:0;padding:16px 0 5px;background:var(--canvas);}
+.member-flow > h2,.member-flow fieldset > h2 {font:500 22px var(--serif);}
+.member-weight .weight-reference-plot svg {overflow:visible;}
+.member-weight .weight-reference-table td:last-child {width:44px;}
+.member-weight .weight-reference-table .icon-button {width:44px;min-height:44px;}
 .gymaf-client .app-shell.connected-route-sessions {padding:0;max-width:540px;}
 .connected-player {position:relative;display:flex;flex-direction:column;min-height:100svh;background:#77746d;isolation:isolate;}
 .connected-player > .training-artwork {position:absolute;inset:0;z-index:-1;}
@@ -177,3 +205,77 @@
 @media(max-width:759px){.gymaf-client .gymaf-build-info summary span{display:none;}.gymaf-client .gymaf-build-info{top:12px;}.gymaf-client.gymaf-player-shell .gymaf-build-info{display:none;}}
 @media(min-width:760px){.gymaf-client .gymaf-topline{display:flex;}.gymaf-client .app-shell{max-width:1080px;padding:48px 40px 125px;}.gymaf-client .connected-route-workouts:has(.connected-workout-detail){max-width:540px;padding:0;}.connected-home .today-photo{height:430px;}.connected-training-summary{margin-top:0;}.gymaf-client .connected-route-profile:has(.connected-profile),.gymaf-client .connected-route-schedule,.gymaf-client .connected-route-messages{max-width:600px;padding:0;}.gymaf-build-info{top:65px;}.connected-login{margin-top:30px;border-radius:32px;min-height:800px;}.connected-progress{max-width:640px;margin:auto;}}
 @media(max-width:359px){.gymaf-client .app-shell{padding-inline:12px;}.connected-home .today-photo{height:250px;}.connected-quick-links svg{padding:9px;}.connected-progress .consistency-card{padding:14px;}.connected-detail-title h1{font-size:36px;}.connected-schedule{padding-inline:12px;}.schedule-day{gap:7px;}}
+
+.member-location-create{position:relative;min-height:100svh;background:#595960;}
+.member-location-sheet{position:absolute;bottom:10px;left:10px;right:10px;border-radius:36px;padding:30px 22px 20px;background:#eceaf2;}
+.member-location-sheet h2{font:500 22px/1.25 var(--serif);margin:0 0 30px;max-width:280px;}
+.member-location-close{position:absolute;right:12px;top:10px;}
+.member-location-types{display:grid;gap:12px;}
+.member-location-types button{height:54px;display:flex;align-items:center;gap:12px;background:#faf9fc;border-radius:30px;padding:0 20px;text-align:left;font-size:17px;}
+.member-location-name{min-height:100svh;background:var(--canvas);}
+.member-location-name h2{font:500 24px/1.2 var(--serif);margin:50px 0 16px;}
+.member-injury .flow-head,.member-event .flow-head{margin-bottom:32px;}
+.member-injury-description{display:block;margin-top:44px;}
+.member-injury-description>span{display:block;font:500 22px/1.2 var(--serif);margin-bottom:24px;}
+.gymaf-connected .member-injury textarea{height:152px;border:0;border-radius:28px;background:#ffffffb8;resize:vertical;font-size:17px;padding:20px 16px;width:100%;}
+.member-injury h2{font:500 22px var(--serif);margin-top:32px;}
+.member-delete{margin-top:32px;color:#b62c26;background:#ffffffb0;}
+.member-event .flow-head{margin-bottom:20px;}
+.member-event-tabs{display:flex;gap:10px;margin-bottom:30px;}
+.member-event-tabs button{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 14px;background:#fff;border-radius:30px;font-size:17px;}
+.member-event-tabs button[aria-pressed=true]{background:#202020;color:#fff;}
+.member-event .form-field>span{font-size:14px;color:#777;}
+.gymaf-connected .member-event input{height:53px;border:0;border-radius:30px;background:#ffffffb8;font-size:17px;padding:12px 16px;}
+.member-event-details{display:block;margin-top:16px;}
+.gymaf-connected .member-event-details textarea{height:95px;width:100%;border:0;border-radius:26px;background:#ffffffb8;resize:vertical;padding:16px;font-size:17px;}
+.member-date-group{margin-top:20px;border-radius:26px;background:#ffffffb8;padding:0 16px;}
+.member-date-group .form-field{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:52px;}
+.member-date-group .form-field>span{font-size:16px;color:#222;}
+.gymaf-connected .member-date-group input{width:155px;min-width:0;background:transparent;padding:0;font-size:15px;}
+.member-date-group .form-field+.form-field{border-top:1px solid var(--line);}
+.player-countdown{position:absolute;inset:28% 0 auto;display:flex;align-items:center;flex-direction:column;color:white;gap:12px;z-index:5;}
+.player-countdown strong{font:500 90px/1 var(--serif);}.player-countdown .button{background:#fff;}
+.player-instructions summary{font-size:16px;cursor:pointer;min-height:44px;padding:12px 0;}
+
+.gymaf-connected .member-date-group .form-field{flex-direction:row;margin:0;}
+.member-location-create{background:var(--canvas);}
+.member-location-dialog.sheet{inset:auto 10px 10px;margin:0 auto;width:calc(100% - 20px);max-width:520px;max-height:calc(100svh - 40px);min-height:435px;border:1px solid #fff;border-radius:46px;background:#eeedf3ee;backdrop-filter:blur(22px);}
+.member-location-dialog .sheet-inner{background:transparent;padding:0 22px 30px;}
+.member-location-dialog .sheet-inner>header{display:block;position:relative;padding:55px 0 0;margin:0 0 26px;background:none;}
+.member-location-dialog .sheet-inner>header h2{font:500 22px/1.25 var(--serif);text-align:left;margin:0;}
+.member-location-dialog .sheet-inner>header>button{position:absolute;right:-15px;top:7px;background:none;}
+.member-location-dialog .sheet-content{padding:0;}
+.member-location-dialog .sheet-inner:before{content:'';position:absolute;top:5px;left:calc(50% - 17px);width:34px;height:5px;border-radius:8px;background:#b9b8bd;}
+.member-location-dialog.is-name .sheet-inner>header{padding-top:130px;}
+.gymaf-connected .member-location-dialog input{height:48px;border:0;border-radius:30px;background:#ffffffb8;font-size:17px;padding:12px;}
+.member-location-dialog .form-field>span{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden;}
+.member-location-dialog .member-change-type{background:transparent;font-size:13px;}
+.member-location-dialog .member-location-types{gap:12px;}
+.member-location-dialog .member-location-types button{height:52px;}
+@media(max-width:759px){.member-injury.flow-page,.member-event.flow-page{padding:76px 16px 50px;}.member-injury .flow-head,.member-event .flow-head{margin-top:-6px;margin-inline:0;}.member-injury-description{margin-top:34px;}.member-event-tabs{margin-bottom:20px;}}
+
+.gymaf-connected .member-event-details textarea{min-height:95px;display:block;}
+.member-event .form-field>span{color:#62616a;}
+.gymaf-connected .member-weight .weight-entry-dialog .sheet-inner>header h2{color:#62616a;}
+.gymaf-connected .member-weight .weight-stepper>button{flex:0 0 44px;min-width:44px;min-height:44px;color:#135568;background:#b8e3ed;}
+.gymaf-connected .member-weight .weight-stepper>label{min-width:0;flex:1;}
+.gymaf-connected .member-weight .weight-stepper input{min-width:0;width:100%;}
+.member-equipment-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+.member-equipment-grid button{min-height:145px;border-radius:20px;padding:12px 8px 10px;font-size:13px;}
+.member-equipment-grid button>span{min-height:34px;}
+.member-equipment-grid button>svg{align-self:center;}
+.member-equipment-done{background:#222!important;color:white;}
+.member-location-edit{display:flex;align-items:center;justify-content:center;gap:6px;margin:-20px auto 8px;min-height:44px;font-size:13px;color:#62616a;}
+.member-equipment-tabs{margin-bottom:15px;}
+.member-equipment-tabs small{margin-left:6px;background:#dddce3;padding:2px 7px;border-radius:20px;font-size:12px;}
+.member-equipment-filters{display:flex;gap:8px;overflow:auto;scrollbar-width:none;margin:12px 0 20px;padding-bottom:2px;}
+.member-equipment-filters button{flex-shrink:0;min-height:44px;padding:8px 14px;background:#fff;border-radius:24px;font-size:14px;}
+.member-equipment-filters button[aria-pressed=true]{background:#222;color:white;}
+.member-exclusions-link{width:100%;text-align:left;}
+
+.member-event .member-date-group{margin-top:14px;}
+
+.member-equipment-title{display:flex;align-items:center;justify-content:center;gap:4px;min-height:44px;font:500 22px var(--sans);width:100%;}
+.member-equipment-search{display:flex;align-items:center;gap:10px;background:#ffffffb8;border-radius:28px;padding:0 16px;min-height:54px;}
+.gymaf-connected .member-equipment-search input{background:none;border:0;padding:12px 0;min-width:0;height:54px;font-size:17px;}
+.member-equipment-grid button{align-items:center;text-align:center;}

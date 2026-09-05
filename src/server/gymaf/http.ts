@@ -60,7 +60,7 @@ export async function provider(path: string, body?: unknown, token?: string, met
   if (path.startsWith("/auth/") && response.status < 500) throw new HttpError(400, "AUTHENTICATION_FAILED", "The code is invalid or expired, or the authentication request could not be completed.");
   throw new HttpError(503, "PROVIDER_UNAVAILABLE", "The service could not complete the request.");
 }
-export async function rpc(name: "gymaf_register_session" | "gymaf_revoke_session" | "gymaf_query" | "gymaf_command" | "gymaf_public_coach", args: Record<string, unknown>, token?: string): Promise<unknown> { return provider(`/rest/v1/rpc/${name}`, args, token); }
+export async function rpc(name: "gymaf_register_session" | "gymaf_revoke_session" | "gymaf_query" | "gymaf_command" | "gymaf_public_coach" | "gymaf_member_query" | "gymaf_member_command", args: Record<string, unknown>, token?: string): Promise<unknown> { return provider(`/rest/v1/rpc/${name}`, args, token); }
 export async function verifiedUser(token: string) { const user = object(await provider("/auth/v1/user", undefined, token)); if (typeof user.id !== "string" || !user.email_confirmed_at) throw new HttpError(401, "VERIFY_EMAIL", "A verified email account is required."); return user; }
 export function setTokens(response: NextResponse, raw: unknown) {
   const t = object(raw); if (typeof t.access_token !== "string" || typeof t.refresh_token !== "string" || typeof t.expires_in !== "number" || !Number.isFinite(t.expires_in)) throw new HttpError(503, "INVALID_AUTH_RESPONSE", "Authentication returned an invalid session.");

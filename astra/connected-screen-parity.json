@@ -1289,7 +1289,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1309,7 +1309,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1357,7 +1357,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1385,7 +1385,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1405,7 +1405,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1449,7 +1449,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1469,7 +1469,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1534,14 +1534,17 @@
     ],
     "referenceRoute": "/settings/workout",
     "referenceState": "Workout settings; scroll to the captured audio, heart-rate or watch section",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/workout",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Instructions, countdown, tone and supported vibration persist and affect the player. Native workout integrations and exact variants remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "1cb5bd47a8dd1541",
@@ -1562,14 +1565,17 @@
     ],
     "referenceRoute": "/settings/workout",
     "referenceState": "Workout settings; scroll to the captured audio, heart-rate or watch section",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/workout",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Instructions, countdown, tone and supported vibration persist and affect the player. Native workout integrations and exact variants remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "a65a68b05a4f7bcf",
@@ -1582,14 +1588,17 @@
     ],
     "referenceRoute": "/settings/instructions",
     "referenceState": "Exercise instruction selection",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/instructions",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Saved visibility controls the player instruction disclosure; original spoken instruction media remains unavailable.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "e9cf6691b1825416",
@@ -1602,14 +1611,17 @@
     ],
     "referenceRoute": "/settings/instructions",
     "referenceState": "Exercise instruction selection",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/instructions",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Saved visibility controls the player instruction disclosure; original spoken instruction media remains unavailable.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "260da8717befc18a",
@@ -1622,14 +1634,17 @@
     ],
     "referenceRoute": "/settings/workout",
     "referenceState": "Workout settings; scroll to the captured audio, heart-rate or watch section",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/workout",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Instructions, countdown, tone and supported vibration persist and affect the player. Native workout integrations and exact variants remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "3c7bf81d5bbd2adb",
@@ -1642,14 +1657,17 @@
     ],
     "referenceRoute": "/settings/tones",
     "referenceState": "Choose Marimba",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/tones",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Tone choice persists; browser synthesized cues run following a user gesture. Original sound assets are unavailable.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "448d55aa6af7c20d",
@@ -1662,14 +1680,17 @@
     ],
     "referenceRoute": "/settings/tones",
     "referenceState": "Choose Beep",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/tones",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Tone choice persists; browser synthesized cues run following a user gesture. Original sound assets are unavailable.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "60985223ac9f138b",
@@ -1682,14 +1703,17 @@
     ],
     "referenceRoute": "/settings/workout",
     "referenceState": "Workout settings; scroll to the captured audio, heart-rate or watch section",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/workout",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Instructions, countdown, tone and supported vibration persist and affect the player. Native workout integrations and exact variants remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "d89797aec72d9761",
@@ -1762,14 +1786,17 @@
     ],
     "referenceRoute": "/settings/workout",
     "referenceState": "Workout settings; scroll to the captured audio, heart-rate or watch section",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/workout",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Instructions, countdown, tone and supported vibration persist and affect the player. Native workout integrations and exact variants remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "effd0d3e27cbba21",
@@ -1805,7 +1832,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1825,7 +1852,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1845,7 +1872,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -1865,7 +1892,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -2109,7 +2136,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -2149,7 +2176,7 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved set sheet, pause/resume and completion retained. Exact source controls/summary variants not complete.",
+    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -3534,14 +3561,17 @@
     ],
     "referenceRoute": "/progress/weight",
     "referenceState": "Weight overview with captured target and measurement state",
-    "connectedRoute": "/app/history",
+    "connectedRoute": "/app/progress/weight",
     "family": "health-metrics",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Only completed-session time/consistency are available; weight, steps, targets and health sync are absent.",
+    "backendGap": "Weight and target records persist privately with real dates and structured kg. No HealthKit sync.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "92f7fea0a4f23770",
@@ -3554,14 +3584,17 @@
     ],
     "referenceRoute": "/progress/target",
     "referenceState": "Captured editable input and reference keyboard; ordinary app uses device keyboard",
-    "connectedRoute": "/app/history",
+    "connectedRoute": "/app/progress/target",
     "family": "health-metrics",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Only completed-session time/consistency are available; weight, steps, targets and health sync are absent.",
+    "backendGap": "Weight target persists as an actor-scoped singleton. No HealthKit sync.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "bfea6e37fa7d9b94",
@@ -3574,14 +3607,17 @@
     ],
     "referenceRoute": "/progress/target",
     "referenceState": "Captured editable input and reference keyboard; ordinary app uses device keyboard",
-    "connectedRoute": "/app/history",
+    "connectedRoute": "/app/progress/target",
     "family": "health-metrics",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Only completed-session time/consistency are available; weight, steps, targets and health sync are absent.",
+    "backendGap": "Weight target persists as an actor-scoped singleton. No HealthKit sync.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "e95ed2394c15c550",
@@ -3598,14 +3634,17 @@
     ],
     "referenceRoute": "/progress/weight",
     "referenceState": "Weight overview with captured target and measurement state",
-    "connectedRoute": "/app/history",
+    "connectedRoute": "/app/progress/weight",
     "family": "health-metrics",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Only completed-session time/consistency are available; weight, steps, targets and health sync are absent.",
+    "backendGap": "Weight and target records persist privately with real dates and structured kg. No HealthKit sync.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "654b8d1920644b89",
@@ -3618,14 +3657,17 @@
     ],
     "referenceRoute": "/progress/log-weight",
     "referenceState": "Captured editable input and reference keyboard; ordinary app uses device keyboard",
-    "connectedRoute": "/app/history",
+    "connectedRoute": "/app/progress/log-weight",
     "family": "health-metrics",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Only completed-session time/consistency are available; weight, steps, targets and health sync are absent.",
+    "backendGap": "Manual date/weight entry persists privately. No HealthKit sync.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "88f6f0ef24add973",
@@ -3638,14 +3680,17 @@
     ],
     "referenceRoute": "/progress/log-weight",
     "referenceState": "Captured editable input and reference keyboard; ordinary app uses device keyboard",
-    "connectedRoute": "/app/history",
+    "connectedRoute": "/app/progress/log-weight",
     "family": "health-metrics",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Only completed-session time/consistency are available; weight, steps, targets and health sync are absent.",
+    "backendGap": "Manual date/weight entry persists privately. No HealthKit sync.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "a0b73ff31607572f",
@@ -3658,14 +3703,17 @@
     ],
     "referenceRoute": "/progress/weight",
     "referenceState": "Weight overview with captured target and measurement state",
-    "connectedRoute": "/app/history",
+    "connectedRoute": "/app/progress/weight",
     "family": "health-metrics",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Only completed-session time/consistency are available; weight, steps, targets and health sync are absent.",
+    "backendGap": "Weight and target records persist privately with real dates and structured kg. No HealthKit sync.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "5cd2903b6dc7cc19",
@@ -4133,7 +4181,7 @@
     "connectedRoute": "/app/profile",
     "family": "profile",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview adapted; source cover, profile photo, social numbers and events are absent.",
+    "backendGap": "Overview adapted and travel/event creation reachable; source cover, photo, social numbers and event-profile display remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -4153,7 +4201,7 @@
     "connectedRoute": "/app/profile",
     "family": "profile",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview adapted; source cover, profile photo, social numbers and events are absent.",
+    "backendGap": "Overview adapted and travel/event creation reachable; source cover, photo, social numbers and event-profile display remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -4181,7 +4229,7 @@
     "connectedRoute": "/app/profile",
     "family": "profile",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview adapted; source cover, profile photo, social numbers and events are absent.",
+    "backendGap": "Overview adapted and travel/event creation reachable; source cover, photo, social numbers and event-profile display remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -4198,14 +4246,17 @@
     ],
     "referenceRoute": "/profile/event",
     "referenceState": "Choose Travel and enter destination",
-    "connectedRoute": null,
+    "connectedRoute": "/app/profile/event",
     "family": "events-rating",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No events, training milestone sharing or coach-rating contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Travel/event dates and details persist privately. No social visibility or automatic coach-plan changes.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "52738508d08de10f",
@@ -4218,14 +4269,17 @@
     ],
     "referenceRoute": "/profile/event",
     "referenceState": "Event form with captured title, details and dates",
-    "connectedRoute": null,
+    "connectedRoute": "/app/profile/event",
     "family": "events-rating",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No events, training milestone sharing or coach-rating contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Travel/event dates and details persist privately. No social visibility or automatic coach-plan changes.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "3189e98ea2ffdf35",
@@ -4238,14 +4292,17 @@
     ],
     "referenceRoute": "/profile/event",
     "referenceState": "Choose Event, fill details and open the date picker",
-    "connectedRoute": null,
+    "connectedRoute": "/app/profile/event",
     "family": "events-rating",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No events, training milestone sharing or coach-rating contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Travel/event dates and details persist privately. No social visibility or automatic coach-plan changes.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "0d4c3dca91994365",
@@ -4258,14 +4315,17 @@
     ],
     "referenceRoute": "/profile/event",
     "referenceState": "Choose July 26; date picker follows the browser platform",
-    "connectedRoute": null,
+    "connectedRoute": "/app/profile/event",
     "family": "events-rating",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No events, training milestone sharing or coach-rating contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Travel/event dates and details persist privately. No social visibility or automatic coach-plan changes.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "ec59526f80f48f32",
@@ -4278,14 +4338,17 @@
     ],
     "referenceRoute": "/profile/event",
     "referenceState": "Event form with captured title, details and dates",
-    "connectedRoute": null,
+    "connectedRoute": "/app/profile/event",
     "family": "events-rating",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No events, training milestone sharing or coach-rating contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Travel/event dates and details persist privately. No social visibility or automatic coach-plan changes.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "0a8b40e28e7bd6f2",
@@ -4298,14 +4361,17 @@
     ],
     "referenceRoute": "/profile/event",
     "referenceState": "Event form with captured title, details and dates",
-    "connectedRoute": null,
+    "connectedRoute": "/app/profile/event",
     "family": "events-rating",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No events, training milestone sharing or coach-rating contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Travel/event dates and details persist privately. No social visibility or automatic coach-plan changes.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "9900515c67c3bc0b",
@@ -4321,7 +4387,7 @@
     "connectedRoute": "/app/profile",
     "family": "profile",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview adapted; source cover, profile photo, social numbers and events are absent.",
+    "backendGap": "Overview adapted and travel/event creation reachable; source cover, photo, social numbers and event-profile display remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -4469,7 +4535,7 @@
     "connectedRoute": "/app/profile",
     "family": "profile",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview adapted; source cover, profile photo, social numbers and events are absent.",
+    "backendGap": "Overview adapted and travel/event creation reachable; source cover, photo, social numbers and event-profile display remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
@@ -4589,11 +4655,14 @@
     "connectedRoute": "/app/settings",
     "family": "settings",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Settings index routes to actual security, membership and support; source entries differ.",
+    "backendGap": "Private member records are queried alongside existing security, membership and support routes. Native and social entries remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "0321f6f626e81a5f",
@@ -4625,11 +4694,14 @@
     "connectedRoute": "/app/settings",
     "family": "settings",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Settings index routes to actual security, membership and support; source entries differ.",
+    "backendGap": "Private member records are queried alongside existing security, membership and support routes. Native and social entries remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "85169600dcd16f7c",
@@ -5174,14 +5246,17 @@
     ],
     "referenceRoute": "/settings/location",
     "referenceState": "Select location type",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/location",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Actor-scoped location creation and equipment selection implemented; exact source variants and media remain unaccepted.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "dc867f791845be87",
@@ -5194,14 +5269,17 @@
     ],
     "referenceRoute": "/settings/location",
     "referenceState": "Focus location name",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/location",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Actor-scoped location creation and equipment selection implemented; exact source variants and media remain unaccepted.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "c60d76b4556ccf29",
@@ -5214,14 +5292,17 @@
     ],
     "referenceRoute": "/settings/location",
     "referenceState": "Enter Hotel gym",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/location",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Actor-scoped location creation and equipment selection implemented; exact source variants and media remain unaccepted.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "464d28d1e615a0cc",
@@ -5234,14 +5315,17 @@
     ],
     "referenceRoute": "/settings/equipment",
     "referenceState": "Hotel gym equipment selections and setup tab",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/equipment/[id]",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Revisioned location/equipment save/delete implemented. Setup, search and category filters are present. Equipment quantity/weight variants and original art remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "6f7906549b48f376",
@@ -5254,14 +5338,17 @@
     ],
     "referenceRoute": "/settings/equipment",
     "referenceState": "Hotel gym equipment selections and setup tab",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/equipment/[id]",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Revisioned location/equipment save/delete implemented. Setup, search and category filters are present. Equipment quantity/weight variants and original art remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "45ff34930241ec24",
@@ -5274,14 +5361,17 @@
     ],
     "referenceRoute": "/settings/equipment",
     "referenceState": "Select Dumbbell to open weight choices",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/equipment/[id]",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Revisioned location/equipment save/delete implemented. Setup, search and category filters are present. Equipment quantity/weight variants and original art remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "f4dd4750b643f25c",
@@ -5294,14 +5384,17 @@
     ],
     "referenceRoute": "/settings/equipment",
     "referenceState": "Select Dumbbell and one or more weights",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/equipment/[id]",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Revisioned location/equipment save/delete implemented. Setup, search and category filters are present. Equipment quantity/weight variants and original art remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "3c3f5b2ae12f0a16",
@@ -5314,14 +5407,17 @@
     ],
     "referenceRoute": "/settings/equipment",
     "referenceState": "Hotel gym equipment selections and setup tab",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/equipment/[id]",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Revisioned location/equipment save/delete implemented. Setup, search and category filters are present. Equipment quantity/weight variants and original art remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "80efc3cf90fd540c",
@@ -5334,14 +5430,17 @@
     ],
     "referenceRoute": "/settings/equipment",
     "referenceState": "Hotel gym equipment selections and setup tab",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/equipment/[id]",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Revisioned location/equipment save/delete implemented. Setup, search and category filters are present. Equipment quantity/weight variants and original art remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "bfbabe222728e739",
@@ -5357,11 +5456,14 @@
     "connectedRoute": "/app/settings",
     "family": "settings",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Settings index routes to actual security, membership and support; source entries differ.",
+    "backendGap": "Private member records are queried alongside existing security, membership and support routes. Native and social entries remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "b63080eaf97404fc",
@@ -5374,14 +5476,17 @@
     ],
     "referenceRoute": "/settings/injury",
     "referenceState": "Empty injury form",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/injury",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Private injury creation implemented. No automatic plan changes or implicit coach sharing.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "b25431078c7923a8",
@@ -5394,14 +5499,17 @@
     ],
     "referenceRoute": "/settings/injury",
     "referenceState": "Captured editable input and reference keyboard; ordinary app uses device keyboard",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/injury",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Private injury creation implemented. No automatic plan changes or implicit coach sharing.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "68564002a352ea0b",
@@ -5414,14 +5522,17 @@
     ],
     "referenceRoute": "/settings/injury",
     "referenceState": "Captured editable input and reference keyboard; ordinary app uses device keyboard",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/injury",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Private injury creation implemented. No automatic plan changes or implicit coach sharing.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "bff6c138c772d2c2",
@@ -5434,14 +5545,17 @@
     ],
     "referenceRoute": "/settings/injury",
     "referenceState": "Toggle the movement impact choice",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/injury",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Private injury creation implemented. No automatic plan changes or implicit coach sharing.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "6c630c7f068150c8",
@@ -5454,14 +5568,17 @@
     ],
     "referenceRoute": "/settings/injury/detail",
     "referenceState": "Save an injury and inspect its details",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/injury/[id]",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Private injury edits/deletion implemented. No automatic plan changes or implicit coach sharing.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "bca9653d973f5702",
@@ -5477,11 +5594,14 @@
     "connectedRoute": "/app/settings",
     "family": "settings",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Settings index routes to actual security, membership and support; source entries differ.",
+    "backendGap": "Private member records are queried alongside existing security, membership and support routes. Native and social entries remain incomplete.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "4917c735489f6b4c",
@@ -5494,14 +5614,17 @@
     ],
     "referenceRoute": "/settings/injury/detail",
     "referenceState": "Open saved injury details",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/injury/[id]",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Private injury edits/deletion implemented. No automatic plan changes or implicit coach sharing.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "8a7901a5c21e862f",
@@ -5514,14 +5637,17 @@
     ],
     "referenceRoute": "/settings/injury/exclusions",
     "referenceState": "Browse and select excluded movements",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/injury/[id]/exclusions",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Private movement exclusions persist. They do not automatically alter assigned workouts.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "22d870084ca0661b",
@@ -5534,14 +5660,17 @@
     ],
     "referenceRoute": "/settings/app",
     "referenceState": "App preferences; scroll to camera roll section",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/app",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Units persist and affect displayed weight. Private profile is disabled-on because public sharing is absent. Native notifications, health, contacts and camera-roll source settings remain absent.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "9b057830c0013b72",
@@ -5554,14 +5683,17 @@
     ],
     "referenceRoute": "/settings/app",
     "referenceState": "App preferences; scroll to camera roll section",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/app",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Units persist and affect displayed weight. Private profile is disabled-on because public sharing is absent. Native notifications, health, contacts and camera-roll source settings remain absent.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "b6ed07cc9879d9a2",
@@ -5614,14 +5746,17 @@
     ],
     "referenceRoute": "/settings/about",
     "referenceState": "About rows",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/about",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Basic Gymaf app information and real support/security links; source app/version/legal details differ.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "c8af58d62a9ed8f7",
@@ -5634,14 +5769,17 @@
     ],
     "referenceRoute": "/settings/about",
     "referenceState": "Scroll to Acknowledgements",
-    "connectedRoute": "/app/settings",
+    "connectedRoute": "/app/settings/about",
     "family": "preferences",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Source audio, watch, location, injury/exclusion and app-preference contracts are absent. Existing profile supports free-text equipment only.",
+    "backendGap": "Basic Gymaf app information and real support/security links; source app/version/legal details differ.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
+    ],
+    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
   },
   {
     "id": "8ac22ec411e8c405",

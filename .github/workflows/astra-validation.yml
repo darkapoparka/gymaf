@@ -3,7 +3,7 @@ on:
   push:
     branches: [astra]
   pull_request:
-    branches: [main]
+    branches: [main, astra]
 permissions:
   contents: read
 concurrency:
@@ -37,6 +37,8 @@ jobs:
         env:
           GYMAF_REFERENCE_PREVIEW: '0'
         run: npm run build
+      - name: Authentication HTTP contract
+        run: npm run test:auth
   database:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -71,3 +73,5 @@ jobs:
           psql -v ON_ERROR_STOP=1 -f supabase/seed.sql
       - name: Database ownership and history regression tests
         run: psql -v ON_ERROR_STOP=1 -f tests/db/coaching.sql
+      - name: Member record privacy and persistence regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/member-records.sql

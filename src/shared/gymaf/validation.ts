@@ -77,6 +77,39 @@ export function validateCommand(value: unknown): Command {
   const id = (name: string) => uuid(p[name]);
   const revision = () => integer(p.revision, "Revision", 0, 2147483646);
   switch (action) {
+    case "member.save": {
+      keys(p, ["id", "kind", "data", "revision"]);
+      const kind = oneOf(p.kind, ["preferences", "location", "injury", "event", "weight", "weight-target"]);
+      const d = object(p.data); let data: Record<string, unknown>;
+      const strings = (v: unknown, max: number) => {
+        if (!Array.isArray(v) || v.length > max) throw new InputError("Invalid list.");
+        const items = v.map(x => text(x, "Item", 120, 1));
+        if (new Set(items).size !== items.length) throw new InputError("Duplicate list entry.");
+        return items;
+      };
+      if (kind === "preferences") {
+        keys(d, ["units", "privateProfile", "instructions", "tone", "countdown", "vibration"]);
+        data = { units: oneOf(d.units, ["Metric", "Imperial"]), privateProfile: boolean(d.privateProfile), instructions: oneOf(d.instructions, ["Never", "Periodic", "Every Time"]), tone: oneOf(d.tone, ["Marimba", "Beep"]), countdown: boolean(d.countdown), vibration: boolean(d.vibration) };
+      } else if (kind === "location") {
+        keys(d, ["name", "type", "equipment"]);
+        data = { name: text(d.name, "Location name", 120, 1), type: oneOf(d.type, ["Home", "Gym", "Outdoor", "Somewhere Else"]), equipment: strings(d.equipment, 100) };
+      } else if (kind === "injury") {
+        keys(d, ["description", "affectsMovement", "excluded"]);
+        data = { description: text(d.description, "Injury description", 500, 1), affectsMovement: boolean(d.affectsMovement), excluded: strings(d.excluded, 60) };
+      } else if (kind === "event") {
+        keys(d, ["name", "type", "details", "startDate", "endDate", "training"]);
+        const startDate = dateOnly(d.startDate), endDate = dateOnly(d.endDate);
+        if (endDate < startDate) throw new InputError("End date must follow the start date.");
+        data = { name: text(d.name, "Event name", 120, 1), type: oneOf(d.type, ["Travel", "Event"]), details: text(d.details, "Event details", 2000), startDate, endDate, training: oneOf(d.training, ["Normal", "Lighter", "No Workouts"]) };
+      } else {
+        keys(d, kind === "weight" ? ["date", "valueKg"] : ["valueKg"]);
+        const valueKg = decimal(d.valueKg, "weight", 500);
+        if (valueKg === null || valueKg < 20) throw new InputError("Weight must be between 20 and 500 kg.");
+        data = { valueKg, ...(kind === "weight" ? { date: dateOnly(d.date) } : {}) };
+      }
+      payload = { id: id("id"), kind, revision: revision(), data }; break;
+    }
+    case "member.delete": keys(p, ["id", "kind", "revision"]); payload = { id: id("id"), kind: oneOf(p.kind, ["location", "injury", "event", "weight", "weight-target"]), revision: revision() }; break;
     case "profile.save": {
       keys(p, ["displayName", "locale", "timezone", "goal", "equipment", "availability", "revision"]);
       const timezone = text(p.timezone, "Timezone", 80, 1);

@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import type { PlanSet, SessionDetail, SetLog, SessionState } from "@/shared/gymaf/contracts";
+import type { MemberRecord, PlanSet, SessionDetail, SetLog, SessionState } from "@/shared/gymaf/contracts";
+import { preferenceDefaults } from "@/shared/gymaf/member-preferences";
 import { SessionView } from "./session-view";
 import { elapsedSeconds } from "@/shared/gymaf/validation";
 import { ErrorNote, Field, Note, Pending, useCommand, useResource } from "./ui";
@@ -32,6 +33,9 @@ function SetEditor({ sessionId, exerciseId, index, target, saved, editable, onDi
 }
 export function SessionScreen({ id, back }: { id: string; back: string }) {
   const resource = useResource<SessionDetail>(`workout-sessions/${id}`), transition = useCommand(), router = useRouter();
+  const member = useResource<MemberRecord[]>('me/details');
+  const savedPreferences=member.data?.find(r=>r.kind==='preferences')?.data;
+  const preferences={instructions:String(savedPreferences?.instructions||preferenceDefaults.instructions),tone:String(savedPreferences?.tone||preferenceDefaults.tone),countdown:(savedPreferences?.countdown??preferenceDefaults.countdown)===true,vibration:(savedPreferences?.vibration??preferenceDefaults.vibration)===true};
   const [now, setNow] = useState(0), [dirty, setDirty] = useState<Set<string>>(new Set());
   useEffect(() => {
     const first = window.setTimeout(() => setNow(Date.now()), 0);
@@ -47,7 +51,7 @@ export function SessionScreen({ id, back }: { id: string; back: string }) {
     const result = await transition.run("session.transition", { sessionId: id, revision: resource.data.session.revision, state });
     if (result) { if (state === "completed" || state === "abandoned") router.push(back); else resource.reload(); }
   }
-  return <SessionView detail={resource.data} elapsed={elapsed} back={back} dirty={!!dirty.size} busy={transition.busy} error={resource.error || transition.error} onTransition={state => void change(state)} renderSets={exerciseId => {
+  return <SessionView preferences={preferences} detail={resource.data} elapsed={elapsed} back={back} dirty={!!dirty.size} busy={transition.busy} error={resource.error || transition.error} onTransition={state => void change(state)} renderSets={exerciseId => {
     const exercise = session.prescription.exercises.find(item => item.id === exerciseId)!;
     return exercise.sets.map((target,index) => {
       const saved = sets.find(s => s.exercise_id === exercise.id && s.set_index === index), fieldKey = `${exercise.id}:${index}`;

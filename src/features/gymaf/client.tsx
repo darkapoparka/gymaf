@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { MemberArea } from "./member-area";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ClientHome, WorkoutDetailView, ScheduleView, ProgressView, ProfileOverview } from "./client-views";
@@ -37,6 +38,7 @@ export function ClientArea({ account, path, selectedId, reloadAccount }: { accou
   const resource = useResource<RelationshipDetail>(selected ? `relationships/${selected.id}` : null);
   const query = selected ? `?relationship=${selected.id}` : "";
   const reload = () => { resource.reload(); reloadAccount(); };
+  if ((path[0] === "settings" && !["security","service","support"].includes(path[1])) || path[0] === "progress" || (path[0] === "profile" && path[1] === "event")) return <MemberArea account={account} path={path} query={query}/>;
   if (path[0] === "settings" || (path[0] === "profile" && path[1] === "edit")) return selected && !resource.data ? <Pending error={resource.error} reload={resource.reload}/> : <ProfileScreen key={`${account.user.revision}:${path.join('/')}`} account={account} relationship={resource.data} reload={reload} query={query} mode={path[0] === 'profile' ? 'edit' : path[1] === 'security' || path[1] === 'service' || path[1] === 'support' ? path[1] : 'settings'} />;
   if (path[0] === "profile" && selected && !resource.data) return <Pending error={resource.error} reload={resource.reload}/>;
   if (path[0] === "profile") return <ProfileOverview account={account} data={resource.data} query={query}/>;
