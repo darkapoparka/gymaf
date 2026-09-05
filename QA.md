@@ -1,9 +1,11 @@
-# Gymaf verification status
+# Gymaf — current branch verification
 
-The production audit is documented in [AUDIT](astra/AUDIT.md). The executable release requirements are specified in [TEST_STRATEGY](astra/TEST_STRATEGY.md) and [OPERATIONS](astra/OPERATIONS.md).
+The `astra` implementation branch has new CI evidence in [astra/evidence/astra-ci-2026-09-05.json](astra/evidence/astra-ci-2026-09-05.json), separate from the historical prototype audit.
 
-The 5 September 2026 documentation audit inspected source through GitHub. A local checkout failed because the container could not resolve github.com. A new full application build, lint/typecheck run, browser session, dependency vulnerability scan, and deployment verification were NOT performed. Two isolated JavaScript expressions were reproduced; see [evidence](astra/evidence/reproduction-results.json). They are not application tests.
+At source commit `5ef5cfd3a68f8f995d3ac44d3d9addb0e31ab405`, GitHub Actions run `33985694273` passed clean install, 12 pure validation tests, ESLint (with internal-navigation warnings), TypeScript, production build and a real PostgreSQL migration/authorization/history regression suite. The database suite uses a simulated Supabase Auth schema/JWT context, not a live provider integration.
 
-Earlier successful build/render claims in `docs/QA.md` belong to the original reference implementation and were not independently rerun by this audit. The original root QA document is preserved at [legacy QA](docs/legacy/QA-reference-2026-09-05.md).
+The first CI run failed on refresh promise typing and an impure render-time timestamp. The follow-up source commit corrected both and the checks passed. No error was hidden by disabling the relevant test or lint rule.
 
-No production readiness, security certification, exact visual parity, or store approval is claimed. An agent must attach new evidence to the commit it actually tests. Relocating the documentation to `/astra` does not constitute a new application test run.
+Full local Supabase integration, browser flows, pixel/layout comparison, MFA/email/cookie acceptance, physical phones, load/security testing and deployment verification have not been completed here. Follow [LOCAL_TESTING](astra/LOCAL_TESTING.md). Passing this suite does not approve real client data or public release.
+
+Historical records in `docs/QA.md`, `docs/legacy/` and the original source audit remain bounded to their stated baseline. The current implementation and remaining gates are listed in [IMPLEMENTATION_STATUS](astra/IMPLEMENTATION_STATUS.md).

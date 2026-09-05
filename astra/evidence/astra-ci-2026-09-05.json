@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-09-05",
+  "branch": "astra",
+  "tested_source_commit": "5ef5cfd3a68f8f995d3ac44d3d9addb0e31ab405",
+  "workflow_run_id": 33985694273,
+  "workflow_url": "https://github.com/darkapoparka/gymaf/actions/runs/33985694273",
+  "run_conclusion": "success",
+  "web_job_id": 101358662962,
+  "database_job_id": 101358663086,
+  "checks": {
+    "npm_ci": "passed",
+    "unit_suite": "passed",
+    "unit_test_count": 12,
+    "eslint": "passed_with_internal_navigation_warnings",
+    "typescript": "passed",
+    "production_build_no_deployment": "passed",
+    "postgresql_migrations": "passed",
+    "database_ownership_history_retries": "passed"
+  },
+  "database_scope": "Real PostgreSQL 17 with simulated Supabase Auth schema/JWT context. Not a real Supabase Auth integration test.",
+  "observed_via": "Connected GitHub Actions run and job/step reads",
+  "not_run_here": ["local Supabase integration script", "browser end-to-end tests", "visual comparisons", "physical iOS/Android tests", "MFA/email/cookie integration acceptance", "load tests", "penetration test", "deployment verification"],
+  "first_failed_run": 33985559672,
+  "corrected_findings": ["Web Locks refresh promise typing", "Date.now called during session render"],
+  "production_ready": false
+}

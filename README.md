@@ -1,38 +1,44 @@
-# Gymaf
+# Gymaf — Astra implementation branch
 
-Independent coaching software, launching with a flagship coach experience for Alexander Filipov and designed to support other coaches. Responsive web first; native iOS/Android later.
+A connected, pre-release web coaching application built on the existing Next.js, React, TypeScript and custom-CSS interface. This `astra` branch adds real account/backend code and coach/client operations; `main` remains separate.
 
-## Start here — /astra
+## Run and review
 
-- [Production documentation and agent reading order](astra/README.md)
-- [Agent handoff and starter prompt](astra/AGENT_HANDOFF.md)
-- [Source audit and verification limits](astra/AUDIT.md)
-- [PRD](astra/PRD.md), [feature acceptance criteria](astra/FEATURES.md), and [architecture](astra/ARCHITECTURE.md)
-- [32-task implementation backlog](astra/backlog.json) and [agent instructions](AGENTS.md)
-
-`/astra/` is the canonical production-documentation directory. The initial documentation PR used `docs/production/`; current agents should read and maintain `/astra/` instead.
-
-## Current implementation is a prototype
-
-The audited baseline is `97b24278bdc70f2e1f2cba373acfcd6c56e0664d` (5 September 2026). It is a Next.js/React/TypeScript interactive reference implementation. Local browser state and reference fixtures power its coaching, account, and training screens. Production authentication, a coaching backend, payment processing, and cross-device synchronization are not implemented at that baseline.
-
-The production documents describe the target and the work required; they do not certify a deployed or production-ready service. The documentation change does not alter application source, styling, dependencies, or deployment settings.
-
-## Run the current prototype
+Start with [astra/LOCAL_TESTING.md](astra/LOCAL_TESTING.md). It contains safe checkout instructions, the isolated local Supabase setup, six synthetic accounts, dev commands and a coach-to-client test journey.
 
 ```sh
 npm ci
+npx supabase start
+npm run astra:seed
 npm run dev
 ```
 
-The dev server listens on `127.0.0.1:3210`. Existing commands: `npm run lint`, `npm run typecheck`, `npm run build`, and `npm start`. Do not start dev and production servers on the same port. Runtime/version verification is the first implementation task; no dependency upgrade is implied by these docs.
+For a fresh/disposable local database, the guide includes `npx supabase db reset --local` before seeding. That command deletes local test data; read the warning first. Use the app at `http://127.0.0.1:3210` and request test email codes from the local inbox at `http://127.0.0.1:54324`.
 
-`/review` and `/preview` are historical reference-review tools, not customer features. They and their assets require separation from public production builds. Never enter real payment, health, or client information into the current prototype.
+No cloud backend, live payment, deployment or production data is required. Never run the synthetic seed against a real environment. Existing `.env.local` is not overwritten.
 
-## Design direction
+## What exists on this branch
 
-Keep the existing layout and styling. Build a distinct Gymaf brand/content layer and real coaching functionality underneath it. See [DESIGN.md](DESIGN.md) and the [content production plan](astra/DESIGN_CONTENT.md).
+Email-code account/session handling, coach/client workspaces and invitations, program drafts and immutable versions, dated assignments, per-attempt/per-set workout logging, check-ins and coach feedback, durable text messages, manual/complimentary service access, operator/support request controls and a bounded personal export. See [implementation status](astra/IMPLEMENTATION_STATUS.md) for precise coverage and unfinished work.
 
-## Historical work
+The existing CSS system is retained. The new connected screens use its layout vocabulary and honest placeholders. Original reference screens remain available only in explicit development preview mode. The old fonts/assets are NOT declared cleared for public distribution.
 
-The original [README](docs/legacy/README-reference-2026-09-05.md), [product brief](docs/legacy/PRODUCT-reference-2026-09-05.md), [design document](docs/legacy/DESIGN-reference-2026-09-05.md), and [root QA record](docs/legacy/QA-reference-2026-09-05.md) are preserved unchanged for provenance. Their old one-to-one Future reproduction goal is superseded for production. Existing capture ledgers and `docs/QA.md` remain historical reference evidence, not current release certification.
+## Verification
+
+GitHub CI passed at source commit `5ef5cfd3a68f8f995d3ac44d3d9addb0e31ab405`: clean install, unit tests, lint, TypeScript, production build and PostgreSQL migration/policy/history checks. The PostgreSQL tests simulate provider authentication; full local Supabase, browser, MFA, device and visual acceptance remain pending. See [evidence](astra/evidence/astra-ci-2026-09-05.json).
+
+```sh
+npm run test:unit
+npm run lint
+npm run typecheck
+npm run build
+npm run test:integration
+```
+
+The last command needs the isolated local Supabase stack. It creates synthetic data and must not run against real customers. Test scripts do not deploy anything.
+
+## Specifications and agent instructions
+
+Read [AGENTS.md](AGENTS.md), [implementation choices](astra/ADR-007-CONNECTED-WEB.md), [documentation index](astra/README.md), [PRD](astra/PRD.md), [feature contracts](astra/FEATURES.md) and [roadmap backlog](astra/backlog.json). The original roadmap is not all complete. Native apps, live billing, private uploads, full deletion/retention, licensed content and launch operations remain separate work.
+
+The original reference documents are preserved under `docs/legacy/`; the static audit in `astra/AUDIT.md` is pinned to the original application baseline. It does not describe every later implementation change.
