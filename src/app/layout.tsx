@@ -11,6 +11,7 @@ import "./friends.css";
 import "./conversation-media.css";
 import "./workout-activity.css";
 import './billing.css';
+import './template-backend.css';
 
 // Retained only to preserve the existing local visual baseline. Font rights and
 // Bulgarian/native coverage remain explicit release gates in astra/DESIGN_CONTENT.md.

@@ -21,10 +21,12 @@ import {
   ProfileScreen,
 } from "./community";
 import { SettingsScreen, WelcomeScreen } from "./settings";
-import { workouts } from "@/lib/data";
 import { isFlowRoute } from "@/lib/flow-routes";
 import { RecordWorkout } from "./record-workout";
 import { FlowScreen } from "./flow-screen";
+import { useBackend, useWorkoutCatalog } from "@/lib/backend/context";
+import { ConnectedSession, ConnectedHistory, ConnectedSchedule, ConnectedCheckIns, ConnectedSummary } from "./backend/training";
+import { ServiceFlow, serviceFlow, UnavailableDeviceFlow } from './backend/flows';
 
 const subscribeToClient = () => () => {};
 const clientSnapshot = () => true;
@@ -39,6 +41,8 @@ export function FutureApp({
 }) {
   const clientReady = useSyncExternalStore(subscribeToClient, clientSnapshot, serverSnapshot);
   const capture = useCapture();
+  const backend = useBackend();
+  const catalog = useWorkoutCatalog();
   useEffect(() => {
     if (!clientReady || !capture) return;
     const frame = requestAnimationFrame(() => {
@@ -52,7 +56,7 @@ export function FutureApp({
     return () => cancelAnimationFrame(frame);
   }, [clientReady, capture]);
   if (!clientReady) return <main className="app-shell" aria-busy="true"><span className="visually-hidden">Loading your plan</span></main>;
-  const workout = workouts.find(
+  const workout = catalog.find(
     (w) =>
       "workouts/" + w.id === path || path.startsWith("workouts/" + w.id + "/"),
   );
@@ -60,16 +64,22 @@ export function FutureApp({
     (!!workout && !path.endsWith("/summary")) ||
     path === "welcome" ||
     path === "settings" ||
-    isFlowRoute(path);
+    isFlowRoute(path) || (backend && serviceFlow(path) && path !== 'friends');
   let content;
-  if (isFlowRoute(path)) content = <FlowScreen path={path} />;
+  if (backend && serviceFlow(path)) content = <ServiceFlow path={path}/>;
+  else if (backend && ['progress/steps','progress/activity','progress/metric','system/widgets','system/live-activity','system/dynamic-island','settings/watch','settings/permissions','settings/heart-rate','settings/zones'].includes(path)) content = <UnavailableDeviceFlow path={path}/>;
+  else if (backend && path === "check-ins") content = <ConnectedCheckIns />;
+  else if (backend && (path === "history" || path === 'progress/consistency')) content = <ConnectedHistory />;
+  else if (backend && path === "schedule") content = <ConnectedSchedule />;
+  else if (backend && path.startsWith("workouts/") && path !== 'workouts/picks' && !workout) content = <div className="empty-state"><h2>Workout unavailable</h2><p>Open a workout assigned to your account from your schedule.</p><Link href="/schedule" className="button">Schedule</Link></div>;
+  else if (isFlowRoute(path)) content = <FlowScreen path={path} />;
   else if (workout)
     content = path.endsWith("/record") ? (
-      <RecordWorkout workout={workout} />
+      backend ? <ConnectedSession key={workout.id} workout={workout}/> : <RecordWorkout workout={workout} />
     ) : path.endsWith("/session") ? (
-      <WorkoutSession workout={workout} screen={activity} />
+      backend ? <ConnectedSession key={workout.id} workout={workout} /> : <WorkoutSession workout={workout} screen={activity} />
     ) : path.endsWith("/summary") ? (
-      <SummaryScreen workout={workout} screen={activity} />
+      backend ? <ConnectedSummary workout={workout} /> : <SummaryScreen workout={workout} screen={activity} />
     ) : (
       <WorkoutDetail workout={workout} />
     );
@@ -120,8 +130,11 @@ export function FutureApp({
       case "history":
         content = <HistoryScreen />;
         break;
-      default:
+      case "":
         content = <HomeScreen screen={activity} />;
+        break;
+      default:
+        content = <div className="empty-state"><h1>Page unavailable</h1><Link href="/" className="button">Back to Home</Link></div>;
     }
   return (
     <>
@@ -152,7 +165,7 @@ export function FutureApp({
       >
         {content}
       </main>
-      {["", "progress", "messages", "friends", "profile", "progress/photos", "progress/photos/add", "progress/weight", "progress/target", "progress/log-weight"].includes(path) && (
+      {["", "progress", "messages", "messages/photo", "messages/rate", "messages/gifs", "friends", "profile", "progress/photos", "progress/photos/add", "progress/weight", "progress/target", "progress/log-weight"].includes(path) && (
         <Navigation path={path} />
       )}
     </>

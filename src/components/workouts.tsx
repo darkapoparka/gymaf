@@ -16,8 +16,9 @@ import {
   Clock3,
   Flame,
 } from "lucide-react";
-import { workouts, media, activities, type Workout } from "@/lib/data";
+import { media, activities, type Workout } from "@/lib/data";
 import { useLocalData } from "@/lib/store";
+import { useBackend, useWorkoutCatalog } from "@/lib/backend/context";
 import {
   Back,
   IconButton,
@@ -75,7 +76,9 @@ export function WorkoutsScreen({
   const [filter, setFilter] = useCaptureState<string | null>("workouts.filter", null);
   const [favoritesOnly, setFavoritesOnly] = useCaptureState("workouts.favoritesOnly", false);
   const { data } = useLocalData();
-  const list = workouts
+  const catalog = useWorkoutCatalog();
+  const backend = useBackend();
+  const list = catalog
     .filter(
       (w) =>
         !["bodyweight-beach", "running"].includes(w.id) &&
@@ -95,12 +98,12 @@ export function WorkoutsScreen({
           (equipment === "No equipment"
             ? w.equipment === "No Equipment Required"
             : w.equipment === "Dumbbells")) &&
-        (!favoritesOnly || data.favorites.includes(w.id)),
+        (!(favoritesOnly || backend && tab === 'Favorites') || data.favorites.includes(w.id)),
     );
   return (
     <>
       {all ? (
-        <PageHead title="Future Picks" back="/workouts">
+        <PageHead title={backend?'Your Workouts':'Future Picks'} back="/workouts">
           <IconButton
             label="Search workouts"
             onClick={() => setSearchOpen(!searchOpen)}
@@ -122,13 +125,13 @@ export function WorkoutsScreen({
       )}
       {!all && (
         <Tabs
-          items={["Future Picks", "Just Work Out"]}
-          value={tab}
+          items={backend ? ['Your Workouts','Favorites'] : ["Future Picks", "Just Work Out"]}
+          value={backend && tab === 'Future Picks' ? 'Your Workouts' : tab}
           onChange={setTab}
         />
       )}
       <div className="workout-content">
-        {tab === "Future Picks" ? (
+        {backend || tab === "Future Picks" ? (
           <>
             {all && (
               <div className="filter-row">
@@ -149,7 +152,7 @@ export function WorkoutsScreen({
                 </button>
               </div>
             )}
-            {searchOpen && (
+            {(backend || searchOpen) && (
               <div className="search-row">
                 <label className="search-field">
                   <Search size={18} />
@@ -180,8 +183,8 @@ export function WorkoutsScreen({
             )}
             {!all && (
               <div className="section-intro">
-                <h2>Future Picks</h2>
-                <p>The best from across Future</p>
+                <h2>{backend ? "Your workouts" : "Future Picks"}</h2>
+                <p>{backend ? "Assigned by your coach" : "The best from across Future"}</p>
               </div>
             )}
             <div className="workout-grid">
@@ -426,7 +429,7 @@ export function WorkoutDetail({ workout: w }: { workout: Workout }) {
             </div>
           ) : (
             <div className="row-group">
-              {(w.category === "Flexibility"
+              {(w.prescription ? w.prescription.exercises.map(e => e.name) : w.category === "Flexibility"
                 ? ["Breathing", "Cat-Cow", "Downward Dog", "Chaturanga"]
                 : [
                     "Warm Up",
@@ -438,7 +441,7 @@ export function WorkoutDetail({ workout: w }: { workout: Workout }) {
               ).map((e, i) => (
                 <Row
                   key={e}
-                  detail={i === 0 ? "Warm up" : "3 rounds"}
+                  detail={w.prescription ? `${w.prescription.exercises[i].sets.length} ${w.prescription.exercises[i].sets.length === 1 ? 'set' : 'sets'}` : i === 0 ? "Warm up" : "3 rounds"}
                   onClick={() => setSheet(null)}
                 >
                   {e}

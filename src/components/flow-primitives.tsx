@@ -176,17 +176,19 @@ export function Fields({
   children,
 }: {
   fields: FieldSpec[];
-  onSave: (values: Record<string, string>) => void;
+  onSave: (values: Record<string, string>) => void | Promise<void>;
   label?: string;
   children?: ReactNode;
 }) {
   const { get } = usePreferences();
   const [error, setError] = useState("");
+  const [saving, setSaving] = useState(false);
   return (
     <form
       className="flow-form"
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
+        if (saving) return;
         const values = Object.fromEntries(
           new FormData(e.currentTarget),
         ) as Record<string, string>;
@@ -194,7 +196,8 @@ export function Fields({
           setError("Please complete the required fields.");
           return;
         }
-        onSave(values);
+        setSaving(true);
+        try { await onSave(values); } catch { setError('Your changes could not be saved. Please retry.'); } finally { setSaving(false); }
       }}
     >
       {fields.map((f) => (
@@ -232,7 +235,7 @@ export function Fields({
       ))}
       {children}
       {error && <p role="alert">{error}</p>}
-      <button className="button primary full">{label}</button>
+      <button className="button primary full" disabled={saving}>{saving ? "Saving…" : label}</button>
     </form>
   );
 }

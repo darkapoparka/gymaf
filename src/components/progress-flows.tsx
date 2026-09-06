@@ -1,4 +1,6 @@
 "use client";
+import { useState } from "react";
+import { useBackend } from '@/lib/backend/context';
 import { useCaptureState } from "@/lib/capture-context";
 import { useRef } from "react";
 import Image from "next/image";
@@ -31,8 +33,10 @@ export const metricNames = [
   "Weight",
 ];
 export function ProgressFlows({ path }: { path: string }) {
+  const backend=useBackend();
   const { data, get, set, update } = usePreferences();
   const router = useRouter();
+  const [eventId]=useState(() => crypto.randomUUID());
   const [sheet, setSheet] = useCaptureState<string | null>("progressFlow.sheet", null);
   const [notice, setNotice] = useCaptureState("progressFlow.notice", "");
   const [date] = useCaptureState("progressFlow.date", new Date().toISOString().slice(0, 10));
@@ -182,11 +186,10 @@ export function ProgressFlows({ path }: { path: string }) {
               <>
                 <button
                   className="button primary full"
-                  onClick={() => {
-                    update((s) => ({
+                  onClick={async () => {
+                    if (await update((s) => ({
                       completed: [...new Set([...s.completed, "running"])],
-                    }));
-                    setSheet(null);
+                    }))) setSheet(null);
                   }}
                 >
                   YES
@@ -229,12 +232,12 @@ export function ProgressFlows({ path }: { path: string }) {
                 { key: "photoMessage", label: "Message", type: "textarea" },
               ]}
               label="Send to Lee"
-              onSave={(v) => {
+              onSave={async (v) => {
                 if (!draftPhotos.Message) {
                   setNotice("Choose a photo first.");
                   return;
                 }
-                update((s) => ({
+                if (await update((s) => ({
                   photos: [
                     ...s.photos,
                     {
@@ -252,8 +255,7 @@ export function ProgressFlows({ path }: { path: string }) {
                       photo: draftPhotos.Message,
                     },
                   ],
-                }));
-                router.push("/messages");
+                }))) router.push("/messages");
               }}
             >
               <p className="note">
@@ -347,16 +349,15 @@ export function ProgressFlows({ path }: { path: string }) {
             },
           ]}
           label="Add Interest"
-          onSave={(v) => {
-            update({
+          onSave={async (v) => {
+            if (await update({
               interest: [
                 ...new Set([
                   ...data.interest.split(","),
                   v.interestInput.replace(/^#/, ""),
                 ]),
               ].join(","),
-            });
-            router.push("/profile/edit");
+            })) router.push("/profile/edit");
           }}
         />
       </div>
@@ -400,26 +401,25 @@ export function ProgressFlows({ path }: { path: string }) {
             },
           ]}
           label="Save"
-          onSave={(v) => {
+          onSave={async (v) => {
             if (v.eventEnd < v.eventStart) {
               setNotice("End date must be on or after the start date.");
               return;
             }
-            update((s) => ({
+            if (await update((s) => ({
               events: [
                 ...s.events,
                 {
-                  id: crypto.randomUUID(),
+                  id: eventId,
                   name: v.eventName,
                   date: v.eventStart,
+                  endDate: v.eventEnd, details: v.eventDetails, type: tab,
                 },
               ],
-              preferences: { ...s.preferences, ...v },
-            }));
-            router.push("/profile");
+            }))) router.push("/profile");
           }}
         >
-          {tab === "Event" && (
+          {backend ? <p className="note">Saved privately to your account. Message your coach to discuss changes to your training plan.</p> : tab === "Event" && (
             <Toggle
               label="Profile Visibility"
               pref="eventVisibility"

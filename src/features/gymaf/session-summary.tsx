@@ -1,5 +1,5 @@
 "use client";
-import Link from 'next/link';
+import Link from '@/components/capture-link';
 import { useRef, useState, type ReactNode } from 'react';
 import { Check, ChevronRight, Dumbbell, List, X } from 'lucide-react';
 import type { SessionDetail } from '@/shared/gymaf/contracts';

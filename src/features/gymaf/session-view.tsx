@@ -6,7 +6,7 @@ import type { SessionDetail, SessionState } from '@/shared/gymaf/contracts';
 import { Dialog, ErrorNote } from './ui';
 import { TrainingArtwork, type Artwork } from './client-views';
 
-type Props = {
+export type Props = {
   detail: SessionDetail; elapsed: number; back: string; dirty: boolean; busy: boolean;
   error?: string; artwork?: Artwork; preferences?: {instructions?: string; tone?: string; countdown?: boolean; vibration?: boolean}; onTransition: (state: SessionState) => void;
   renderSets: (exerciseId: string) => ReactNode;

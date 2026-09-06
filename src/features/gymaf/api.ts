@@ -34,7 +34,7 @@ export async function api<T>(path: string, options: { method?: "GET" | "POST" | 
   if(response.ok && options.responseType==='blob') return await response.blob() as T;
   const result = await response.json().catch(() => null);
   if (!response.ok) {
-    if (response.status === 401) window.dispatchEvent(new Event("gymaf-session-expired"));
+    if (response.status === 401) { clearPrivateDrafts(); window.dispatchEvent(new Event("gymaf-session-expired")); }
     throw new ApiError(response.status, result?.error?.code || "REQUEST_FAILED", result?.error?.message || "The request failed. Please retry.");
   }
   if (path === "auth/verify-code" || path === "auth/logout") { clearFeedbackDrafts();clearPhotoDrafts();clearAttachmentDrafts();clearProfileDrafts();clearAccountDrafts();clearRatingDrafts();clearDirectoryDrafts();clearShippingDrafts(); }
@@ -43,3 +43,4 @@ export async function api<T>(path: string, options: { method?: "GET" | "POST" | 
 }
 export function command(action: string, payload: Record<string, unknown>, commandId: string): Promise<CommandResult> { return api("commands", { method: "POST", body: { action, payload, commandId } }); }
 export function invitationToken(): string { return [...crypto.getRandomValues(new Uint8Array(32))].map(byte => byte.toString(16).padStart(2, "0")).join(""); }
+export function clearPrivateDrafts() { clearFeedbackDrafts();clearPhotoDrafts();clearAttachmentDrafts();clearProfileDrafts();clearAccountDrafts();clearRatingDrafts();clearDirectoryDrafts();clearShippingDrafts(); }

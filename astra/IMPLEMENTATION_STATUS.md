@@ -1,6 +1,18 @@
 # Astra implementation status
 
-## Current checkpoint — membership and guest passes, 6 September 2026
+## Current checkpoint — original template integration, 7 September 2026
+
+The owner corrected the member presentation requirement: connect the current backend to the **original Future Pro template**. Both `/` and `/app` now render `FutureApp` inside `BackendProvider` in `M:/gym-fidelity`, branch `review/mobbin-fidelity`, review HEAD `606a7e33de50152a58a3cfdca7c9eb044b11f298` plus uncommitted changes. The preserved template source is main `c69df15` in `M:/gym`; that checkout remains untouched. [ADR-016](ADR-016-ORIGINAL-TEMPLATE-INTEGRATION.md) records the integration and evidence boundaries.
+
+Original home/profile/workouts/progress/settings/messages/session presentation is primary. A backend context and member-record adapter supply real authenticated records and existing revisioned commands. Newer account/billing/media/directory/service workflows retain their existing controllers; standalone coach/operator routes retain `ConnectedApp`. APIs, server implementation and migrations are unchanged by this correction. Synthetic captures require development mode, explicit `GYMAF_REFERENCE_PREVIEW=1` and a valid `capture` query; reference local data is never imported into real accounts.
+
+- **Local checks, parent-reported PASS:** 54 unit tests, five mocked HTTP tests, TypeScript and lint with zero errors/two existing coach warnings. Production build passed twice; the latest includes coach-route namespace and auth link-mode corrections. The later small paused-player padding/inert/Close Workout correction passed TypeScript and rendered verification after that build.
+- **Bounded rendered reads, parent-reported PASS:** actual signed-in account at 393×852 for home, profile, settings, messages, attachment modal, progress, library, workout detail and overview; 1440×1000 for home/profile. Sampled checks found no overflow or broken images, modal focus returned, and the inspected console error log was empty. Additional checks verified Profile → Change Coach at `/app/coaches/change`, actual History, an existing paused workout, corrected player padding and Close Workout returning to History. No user-record mutations were performed.
+- **Scoped source finish review PASS:** the final reviewer reports all source findings addressed. This pass does not certify all 270 captures, native/live providers, actual save/send/payment behavior or every width and source state.
+
+All 270 captures across 84 flows remain **NOT COMPLETE / NOT VERIFIED 1:1**; the historical 270-partial ledger is unchanged. Provider/live Stripe, native/device, media lifecycle/privacy, asset rights and paired source-state acceptance gates remain open. No new push/CI, main merge or production deployment is claimed. The current routing decision supersedes earlier descriptions of the replacement member shell as the intended primary interface. Historical checks below keep their original source and acceptance scope.
+
+## Earlier checkpoint — membership and guest passes, 6 September 2026
 
 Review worktree `M:/gym-fidelity`, branch `review/mobbin-fidelity`, billing increment after `2edb521`. [ADR-015](ADR-015-BILLING-AND-GUEST-PASSES.md) and [billing evidence](evidence/billing-2026-09-06.json) supersede the older commercial-provider and migration facts below. The owner delegated provider and credit-rule decisions: Stripe hosted Checkout/portal, verified seller account or Connect direct charges, no application fee, configurable EUR 99 tax-inclusive monthly default, cancellation at paid-period end, and three seven-day new-client guest passes per paid member per UTC month. These are implemented defaults; no hosted offer, Stripe connection or legal seller has been invented.
 

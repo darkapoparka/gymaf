@@ -1,0 +1,19 @@
+/* Backend-only affordances inside the preserved Future Pro component hierarchy. */
+.template-avatar {display:inline-flex;align-items:center;justify-content:center;background:var(--surface);overflow:hidden;flex-shrink:0;}
+.template-avatar > span {font:500 14px/1 var(--sans);}
+.template-avatar img,.profile-cover > img {width:100%;height:100%;object-fit:cover;}
+.template-messages .coach-message p,.template-messages .outgoing-message p {margin:0;white-space:pre-wrap;overflow-wrap:anywhere;}
+.template-messages .chat-messages {padding-bottom:160px;}
+.template-service {min-width:0;}
+.app-shell:has(.template-session) {padding:0;}
+.template-session .pause-overlay > .template-player-exit {position:absolute;top:24px;left:16px;color:white;}
+.template-service .friends-card > .photo {width:100%;}
+.template-service .template-session {min-height:100svh;}
+.template-service .template-session .exercise-panel h2 {font-family:var(--serif);}
+.template-service .template-session .workout-backdrop {inset:0;}
+.template-service .template-session .workout-backdrop > .photo {width:100%;height:100%;}
+.template-service .template-session .exercise-actions button {min-height:44px;}
+.template-service .template-session .session-top {z-index:2;}
+.template-service .template-session .session-top > div {min-width:0;flex:1;}
+.template-service .template-session .session-top span {display:block;}
+.template-service .template-session .gymaf-set-log {grid-template-columns:repeat(2,minmax(0,1fr));}
