@@ -466,3 +466,35 @@
 .photo-selection-actions{display:grid;gap:12px;margin-top:24px;}
 .private-photo-placeholder button{max-width:100%;line-height:1.1;}
 @media(max-width:359px){.member-photo-editor h1{font-size:19px;}.photo-selection-grid{gap:12px;}}
+/* Profile editing inherits the captured rounded sheet, title bar and inset fields. */
+.gymaf-client .app-shell:has(.connected-profile-editor){padding:0;max-width:540px;}
+.connected-profile-editor{margin-top:60px;padding:16px 24px 60px;min-height:calc(100svh - 60px);border-radius:40px 40px 0 0;background:#f3f2f8;}
+.connected-profile-editor .native-titlebar{position:sticky;top:0;z-index:2;background:#f3f2f8;padding:0 0 16px;margin:0 -8px 16px;}
+.connected-profile-editor .native-titlebar h1{font:500 22px/1.2 var(--serif);}
+.connected-profile-editor .profile-commit{color:#fff;background:#202020;}.connected-profile-editor .profile-commit:disabled{background:#a4a3a9;opacity:1;}
+.connected-profile-editor fieldset{border:0;padding:0;margin:0;min-width:0;display:grid;gap:24px;}
+.connected-profile-editor .form-field,.profile-editor-field{display:grid;gap:12px;margin:0;font:400 17px/1.35 var(--sans);color:#68676f;}
+.connected-profile-editor .form-field input,.connected-profile-editor .form-field select,.connected-profile-editor .form-field textarea{margin:0;width:100%;min-width:0;border:0;background:#ffffffbc;border-radius:25px;padding:15px 18px;font:400 17px/1.4 var(--sans);color:#202020;box-shadow:none;}
+.connected-profile-editor .form-field textarea{min-height:100px;resize:vertical;}
+.connected-profile-editor input::placeholder,.connected-profile-editor textarea::placeholder{color:#727078;}
+.profile-cover-control{display:flex;align-items:center;gap:16px;padding:9px 16px;border-radius:25px;background:#ffffffbc;min-height:62px;}
+.profile-cover-control>a{color:#65656a;font-size:18px;flex:1;min-height:44px;display:flex;align-items:center;}
+.profile-cover-preview{width:32px;height:32px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#e5e4e9;color:#6c6b74;flex-shrink:0;}
+.profile-cover-preview>img{width:100%;height:100%;object-fit:cover;}
+.profile-cover-preview:has(.private-photo-placeholder button){width:60px;height:60px;border-radius:16px;}
+.profile-training-fields,.profile-account-fields{display:grid;gap:20px;margin-top:4px;}
+.connected-profile-editor h2{font:500 22px/1.2 var(--serif);margin:0;}
+.profile-field-help{font:400 14px/1.5 var(--sans);color:#68676f;margin:0;}
+.profile-training-fields>h2+.profile-field-help{margin-top:-12px;}
+.profile-avatar-link{display:flex;gap:12px;align-items:center;min-height:50px;color:#65656a;}
+.profile-editor-actions{display:grid;gap:12px;margin-top:28px;}
+.profile-editor-links{display:grid;gap:8px;margin-top:28px;}.profile-editor-links>a{min-height:44px;display:flex;align-items:center;font-size:17px;}
+.profile-sign-out{padding:14px 20px;border-radius:25px;background:#ffffffa0;width:fit-content;min-height:48px;font-size:17px;}
+.profile-media-error{font-size:14px;}.profile-media-error button{min-height:44px;text-decoration:underline;}
+.profile-signout-dialog.sheet{position:fixed;inset:0;margin:auto;width:calc(100% - 72px);max-width:420px;height:fit-content;max-height:calc(100dvh - 32px);border-radius:34px;background:#f3f2f8eb;box-shadow:0 24px 36px #0002;border:1px solid #fff;}
+.profile-signout-dialog .sheet-inner{padding:22px 16px 16px;background:transparent;}
+.profile-signout-dialog .sheet-inner>header{padding:0 12px;margin:0 0 8px;min-height:0;background:none;}.profile-signout-dialog .sheet-inner>header>.icon-button{display:none;}
+.profile-signout-dialog .sheet-inner>header h2{font:600 18px/1.4 var(--sans);text-align:left;}
+.profile-signout-dialog .sheet-content{padding:0;gap:20px;}.profile-signout-dialog .sheet-content>p{padding-inline:12px;margin:0;font-size:16px;color:#646369;line-height:1.4;}
+.profile-signout-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;}.profile-signout-actions>button{background:#d2d1d5;border-radius:25px;min-height:48px;padding:10px 8px;font-size:17px;}.profile-signout-actions>button:last-child{color:#a72825;}
+@media(max-width:359px){.connected-profile-editor{padding-inline:20px;}.connected-profile-editor .native-titlebar h1{font-size:20px;}.profile-cover-control{gap:10px;padding-inline:12px;}.profile-cover-control>a{font-size:16px;}.profile-signout-dialog.sheet{width:calc(100% - 40px);}}

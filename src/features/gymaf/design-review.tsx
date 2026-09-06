@@ -1,5 +1,8 @@
 "use client";
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { ProfileEditorView } from './profile-editor';
+import { SignOutButton } from './sign-out';
 import { MemberMediaView, SelectedPhoto } from './member-media';
 import type { MemberMedia } from '@/shared/gymaf/contracts';
 import { MemberViews, preferenceDefaults } from './member-views';
@@ -34,11 +37,13 @@ function MediaReview({view}:{view:string}){
 
 /** Development-only, presentation-level fixtures. Never imported by ConnectedApp or its API hooks. */
 export function DesignReview({view}:{view:string}) {
+ const router=useRouter();
  const [feedback,setFeedback]=useState<import('@/shared/gymaf/contracts').SessionFeedback>({sessionId:'visual-session',editable:true,canSubmit:true,coachName:'Your Coach',revision:0,data:{rating:null,difficulty:null,body:'',flags:[]},sharedRevision:null,sharedAt:null});
  const [feedbackBusy,setFeedbackBusy]=useState(false),[feedbackDirty,setFeedbackDirty]=useState(false),[exitRequest,setExitRequest]=useState(0);
  async function saveFeedback(next:import('@/shared/gymaf/contracts').FeedbackData){setFeedbackBusy(true);await new Promise(resolve=>setTimeout(resolve,400));setFeedback(r=>({...r,revision:r.revision+1,data:next}));setFeedbackBusy(false);return true;}
  const [favorites,setFavorites]=useState<import('@/shared/gymaf/contracts').WorkoutFavorite[]>([]);
- const [data,setData]=useState(initial),[user,setUser]=useState(profile),[sessionState,setSessionState]=useState<SessionState>("in_progress");
+ const [data,setData]=useState(initial),[user,setUser]=useState<Bootstrap['user']>(profile),[sessionState,setSessionState]=useState<SessionState>("in_progress");
+ if(view==='profile-edit'||view==='profile-error')return <div className="gymaf-connected gymaf-client"><main id="main" className="app-shell"><ProfileEditorView user={user} footer={<SignOutButton onSignOut={async()=>{throw new Error('Synthetic sign-out failure. Retry or cancel.');}}/>} onLeave={()=>router.push('/design-review?view=profile&frame=1')} onSave={async draft=>{await new Promise(resolve=>setTimeout(resolve,450));if(view==='profile-error')throw new Error('A newer profile was saved. Reload the saved profile before saving your changes.');setUser({...user,display_name:draft.fields.displayName,goal:draft.fields.goal,equipment:draft.fields.equipment,availability:draft.fields.availability,locale:draft.fields.locale,timezone:draft.fields.timezone,revision:user.revision+1});}} onReload={async()=>({...user,display_name:'Alex Smith',revision:user.revision+1})}/></main></div>;
  if(['photos','photo-error','cover-photos','avatar-photos'].includes(view))return <MediaReview key={view} view={view}/>;
  if(view==='library')return <div className="gymaf-connected gymaf-client"><TrainingLibraryView data={{...data,workouts:Array.from({length:6},(_,i)=>({...data.workouts[0],id:'visual-scheduled-'+i,prescription:{...prescription,title:['Core and Glutes Burner','Full Body Strength','Upper Body Power Hour','Quick Core Crusher','Morning Yoga Flow','Conditioning'][i]}}))}} query="" favorites={favorites} onFavorite={(w,favorite)=>setFavorites(rows=>[...rows.filter(f=>f.scheduled_id!==w.id),{scheduled_id:w.id,favorite,revision:1}])}/></div>;
  if(view==='summary'||view==='feedback')return <div className="gymaf-connected gymaf-client"><SessionSummary initialTab={view==='feedback'?'Feedback':'Summary'} feedbackDirty={feedbackDirty} onDirtyExit={()=>setExitRequest(n=>n+1)} feedback={<FeedbackView draftKey="visual:summary" exitRequest={exitRequest} onLeave={()=>{setFeedbackDirty(false);setExitRequest(0);}} record={feedback} exercises={prescription.exercises} busy={feedbackBusy} onDirty={setFeedbackDirty} onSave={saveFeedback} onSubmit={async next=>{await saveFeedback(next);setFeedback(r=>({...r,sharedRevision:r.revision,sharedAt:new Date().toISOString()}));return true;}}/>} detail={{editable:false,sets:[],session:{id:'visual-session',relationship_id:relationship.id,scheduled_workout_id:'visual-scheduled',prescription,state:'completed',revision:1,started_at:today+'T08:00:00Z',running_since:null,elapsed_seconds:1131,completed_at:today+'T08:18:51Z'}}} back='/design-review?view=home&frame=1' renderSets={()=> <p>No set values in this synthetic presentation.</p>}/></div>;

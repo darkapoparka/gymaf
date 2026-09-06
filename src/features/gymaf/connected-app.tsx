@@ -7,6 +7,7 @@ import { CoachArea } from "./coach";
 import { OperatorArea } from "./operator";
 import { SessionScreen } from "./session";
 import { clearPhotoDrafts } from "./media-drafts";
+import { clearProfileDrafts } from "./profile-drafts";
 import { clearFeedbackDrafts } from "./feedback-drafts";
 import { Settings } from "lucide-react";
 import { Navigation, Note, Pending, useResource } from "./ui";
@@ -14,7 +15,7 @@ import { Navigation, Note, Pending, useResource } from "./ui";
 export function ConnectedApp({ area, path = [], relationshipId, workspaceId }: { area: "app" | "coach" | "operator"; path?: string[]; relationshipId?: string; workspaceId?: string }) {
   const account = useResource<Bootstrap>("me"), [expired,setExpired] = useState(false);
   useEffect(() => {
-    const expire = () => {clearFeedbackDrafts();clearPhotoDrafts();setExpired(true);};
+    const expire = () => {clearFeedbackDrafts();clearPhotoDrafts();clearProfileDrafts();setExpired(true);};
     window.addEventListener("gymaf-session-expired",expire);
     const channel = typeof BroadcastChannel !== "undefined" ? new BroadcastChannel("gymaf-session") : null;
     if (channel) channel.onmessage=expire;
