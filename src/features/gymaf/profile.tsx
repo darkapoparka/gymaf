@@ -34,8 +34,8 @@ export function ProfileScreen({ account, relationship, reload, mode = "all", que
     </>}
     {(mode === "all" || mode === "security") && <MfaSettings onVerified={reload} />}
     {(mode === "all" || mode === "service") && relationship && <section className="gymaf-panel gymaf-stack"><h2>Coaching service</h2><p>{relationship.relationship.coach_name || "Your coach"} · {relationship.relationship.state}</p>{relationship.entitlements.map(e => <p key={e.id}>{e.source} · {e.state} · {new Date(e.ends_at).toLocaleDateString()}</p>)}
-      <Note>No card is charged by this build. Canceling marks manual service access as non-renewing through its recorded end date; it does not issue a payment-provider refund.</Note>
-      <button className="button" disabled={mutation.busy} onClick={async () => { if (window.confirm("Record cancellation through the current service end date?")) { if (await mutation.run("service.cancel", { relationshipId: relationship.relationship.id })) { setNotice("Cancellation recorded. No external payment action was performed."); reload(); } } }}>Cancel service</button>
+      <Link className="button primary" href={`/app/account/plan${query}`}>Membership and Billing</Link><Note>Manage Stripe renewal and payment details in Membership and Billing. Manual access cancellation does not change a Stripe subscription or issue a refund.</Note>
+      <button className="button" disabled={mutation.busy||relationship.entitlements.some(e=>e.source==='stripe')} onClick={async () => { if (window.confirm("Record cancellation through the current service end date?")) { if (await mutation.run("service.cancel", { relationshipId: relationship.relationship.id })) { setNotice("Cancellation recorded. No external payment action was performed."); reload(); } } }}>Cancel service</button>
     </section>}
     {mode === "service" && !relationship && <Note>No coaching membership is connected to your account.</Note>}
     {(mode === "all" || mode === "support") && <section className="gymaf-panel gymaf-stack"><h2>Support and your data</h2><button className="button" onClick={() => void download()}>Download my data</button>

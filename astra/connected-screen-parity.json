@@ -317,14 +317,17 @@
     ],
     "referenceRoute": "/checkout",
     "referenceState": "Membership checkout",
-    "connectedRoute": null,
+    "connectedRoute": "/app/checkout",
     "family": "billing",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No payment-provider checkout, shipping or paid plan-change contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Stripe hosted Checkout/portal, immutable purchased offer, signed settlement and owned pending-checkout reconciliation implemented. Card fields are provider-owned; source empty/filled card UI is not reproduced. Stripe authentication and real sandbox acceptance pending.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Local SQL and mocked HTTP PASS; pre-fix browser family checks PASS; final finish verdict NEEDS VERIFICATION",
+    "evidence": [
+      "astra/ADR-015-BILLING-AND-GUEST-PASSES.md",
+      "astra/evidence/billing-2026-09-06.json"
+    ]
   },
   {
     "id": "93b3d967c9f773aa",
@@ -569,14 +572,17 @@
     ],
     "referenceRoute": "/checkout/card",
     "referenceState": "Empty card checkout form",
-    "connectedRoute": null,
+    "connectedRoute": "/app/checkout/card",
     "family": "billing",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No payment-provider checkout, shipping or paid plan-change contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Stripe hosted Checkout/portal, immutable purchased offer, signed settlement and owned pending-checkout reconciliation implemented. Card fields are provider-owned; source empty/filled card UI is not reproduced. Stripe authentication and real sandbox acceptance pending.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Local SQL and mocked HTTP PASS; pre-fix browser family checks PASS; final finish verdict NEEDS VERIFICATION",
+    "evidence": [
+      "astra/ADR-015-BILLING-AND-GUEST-PASSES.md",
+      "astra/evidence/billing-2026-09-06.json"
+    ]
   },
   {
     "id": "1c9c16701eb28a46",
@@ -589,14 +595,17 @@
     ],
     "referenceRoute": "/checkout/card",
     "referenceState": "Filled card checkout form; no charge is submitted",
-    "connectedRoute": null,
+    "connectedRoute": "/app/checkout/card",
     "family": "billing",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No payment-provider checkout, shipping or paid plan-change contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Stripe hosted Checkout/portal, immutable purchased offer, signed settlement and owned pending-checkout reconciliation implemented. Card fields are provider-owned; source empty/filled card UI is not reproduced. Stripe authentication and real sandbox acceptance pending.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Local SQL and mocked HTTP PASS; pre-fix browser family checks PASS; final finish verdict NEEDS VERIFICATION",
+    "evidence": [
+      "astra/ADR-015-BILLING-AND-GUEST-PASSES.md",
+      "astra/evidence/billing-2026-09-06.json"
+    ]
   },
   {
     "id": "b59ba0346a993f3b",
@@ -4394,14 +4403,17 @@
     ],
     "referenceRoute": "/friends/invite",
     "referenceState": "Guest-pass credits and QR sharing sheet",
-    "connectedRoute": null,
+    "connectedRoute": "/app/friends/invite",
     "family": "social",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No friend graph, invites or social statistics contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Server-owned 3 monthly guest passes, seven-day new-client trials, owner link replacement and capacity enforcement implemented; real provider-paid eligibility and hosted account journey NOT VERIFIED.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Local SQL and mocked HTTP PASS; pre-fix browser family checks PASS; final finish verdict NEEDS VERIFICATION",
+    "evidence": [
+      "astra/ADR-015-BILLING-AND-GUEST-PASSES.md",
+      "astra/evidence/billing-2026-09-06.json"
+    ]
   },
   {
     "id": "37e236af15c00e2a",
@@ -4414,14 +4426,17 @@
     ],
     "referenceRoute": "/friends/invite",
     "referenceState": "Guest-pass credits and QR sharing sheet",
-    "connectedRoute": null,
+    "connectedRoute": "/app/friends/invite",
     "family": "social",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No friend graph, invites or social statistics contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Server-owned 3 monthly guest passes, seven-day new-client trials, owner link replacement and capacity enforcement implemented; real provider-paid eligibility and hosted account journey NOT VERIFIED.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Local SQL and mocked HTTP PASS; pre-fix browser family checks PASS; final finish verdict NEEDS VERIFICATION",
+    "evidence": [
+      "astra/ADR-015-BILLING-AND-GUEST-PASSES.md",
+      "astra/evidence/billing-2026-09-06.json"
+    ]
   },
   {
     "id": "e9ff9ded70b5f433",
@@ -5282,14 +5297,17 @@
     ],
     "referenceRoute": "/account/plan",
     "referenceState": "Membership plan selection",
-    "connectedRoute": null,
+    "connectedRoute": "/app/account/plan",
     "family": "billing",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No payment-provider checkout, shipping or paid plan-change contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Stripe hosted Checkout/portal, immutable purchased offer, signed settlement and owned pending-checkout reconciliation implemented. Card fields are provider-owned; source empty/filled card UI is not reproduced. Stripe authentication and real sandbox acceptance pending.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Local SQL and mocked HTTP PASS; pre-fix browser family checks PASS; final finish verdict NEEDS VERIFICATION",
+    "evidence": [
+      "astra/ADR-015-BILLING-AND-GUEST-PASSES.md",
+      "astra/evidence/billing-2026-09-06.json"
+    ]
   },
   {
     "id": "55b876bd2a1cf2ec",

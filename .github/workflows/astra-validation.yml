@@ -97,3 +97,6 @@ jobs:
         run: psql -v ON_ERROR_STOP=1 -f tests/db/friends.sql
       - name: Conversation media sharing and storage policies
         run: psql -v ON_ERROR_STOP=1 -f tests/db/conversation-media.sql
+
+      - name: Billing settlement and guest-pass authorization tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/billing.sql

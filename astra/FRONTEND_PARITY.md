@@ -1,6 +1,25 @@
 # Mobbin frontend parity implementation
 
-## Current checkpoint — remaining web flow adaptations, 6 September 2026
+## Current checkpoint — commercial web counterparts, 6 September 2026
+
+The billing increment after `2edb521` on `M:/gym-fidelity`, `review/mobbin-fidelity`, brings the connected ledger to **270 Partial family adaptation / zero Not implemented / zero verified 1:1**. This supersedes the older 264/6 and 232/38 counts below. All 270 captures across 84 flows remain **NOT VERIFIED 1:1**. [ADR-015](ADR-015-BILLING-AND-GUEST-PASSES.md) and [billing evidence](evidence/billing-2026-09-06.json) define the current commercial coverage and limits.
+
+| Surface | Current implementation and boundary |
+| --- | --- |
+| Membership, `/app/account/plan` | Lavender/serif membership composition, immutable purchased price/seller for existing subscriptions, actual status and paid-period display, hosted Manage Billing and explicit Check Payment Status. No fabricated subscription. |
+| Checkout, `/app/checkout` | Dark composition, actual coach/offer/total, secure Stripe Checkout handoff, pending/error recovery and stable checkout identity. Hosted empty/filled card-entry states have not been reproduced or accepted. |
+| Guest passes, `/app/friends/invite` | Lavender invitation composition, actual credits and owned pass rows, private share/QR, Create Another, revoke and Replace Link recovery after reload. Replacement rotates the secret on the same pass without new credit use. |
+| Guest acceptance, `/guest-pass` | Authenticated preview and explicit seven-day card-free, nonrenewing trial acceptance for a new client. Real relationship/entitlement creation remains database-owned. |
+
+The surfaces retain Lucide, the existing lavender/serif membership and invitation language, dark checkout, and mobile layouts capped at 540px. `src/app/billing.css` and `src/features/gymaf/billing.tsx` own this increment. `DESIGN.md`, `PRODUCT.md` and `.impeccable` were not changed. No new visual identity, source portrait or legal seller identity is implied.
+
+Six previously absent commercial IDs now have partial mappings: `818823fea239b926`, `10cf3bdb6b6600bd`, `1c9c16701eb28a46`, `6699b1f8a7f819b9`, `230ba48bd84b5618`, `37e236af15c00e2a`. These are web-family adaptations; zero absent families is not zero missing source behavior or completed fidelity.
+
+Parent-reported browser evidence before the final source fixes contains eleven checks and 320/393/1440 captures in `.artifacts/billing-review/`. The final reviewer disposition is **NEEDS VERIFICATION**: purchased-offer truth, delayed checkout reconciliation and guest creation/recovery are resolved in source; checkout error visibility is **partial**, with source fixed but updated mobile captures blocked. Automatic approval review rejected restarting the local production server (`blocked by policy`), so the latest fixes have no final rendered acceptance. Targeted SQL/HTTP tests passed, but they do not close that visual gap.
+
+Parent-reported local build/TypeScript, 51 unit tests, five mocked HTTP tests and disposable PostgreSQL 17 with eighteen migrations/seed/thirteen SQL suites passed; final lint had zero errors/two existing coach warnings. Hosted development now has eighteen migrations, superseding the earlier local-only statements. That schema evidence is not a hosted billing journey: no offer/provider connection exists, live mode is disabled, and unavailable Stripe API/webhook credentials prevented real sandbox payments, portal cancellation, refund or dispute testing. Provider authentication is the remaining setup dependency; the owner already delegated product/provider choices. Commit/push and PR #3 CI for this increment remain pending here. Native, device, rights/content, privacy, media lifecycle and release gates remain open.
+
+## Earlier checkpoint — remaining web flow adaptations, 6 September 2026
 
 This checkpoint supersedes the corresponding older handoff below. The source after `3fd9e6a88cd225cb9632efb5d13836a6c9f4ae22` in `M:/gym-fidelity`, `review/mobbin-fidelity`, adds bounded web counterparts for the remaining noncommercial state families. [ADR-014](ADR-014-REMAINING-WEB-FLOWS.md) records authority, backend contracts, privacy/lifecycle and open gates. Overall status remains **NOT COMPLETE / NOT VERIFIED 1:1** for all 270 captures/84 flows.
 
@@ -39,7 +58,7 @@ Acceptance:
 
 Implementation order: connected shell/home, progress/goal, schedule/detail/player, conversation, profile/settings/auth, remaining state families. Original unavailable media and native service boundaries stay explicit. Pending unsupported domain features must not appear as working buttons backed by localStorage.
 
-## Current handoff — 6 September 2026
+## Earlier handoff — 6 September 2026
 
 Status: **NOT COMPLETE; all 270 captures across 84 flows remain NOT VERIFIED 1:1**. `astra/connected-screen-parity.json` is the current connected-screen ledger: 232 `Partial family adaptation`, 38 `Not implemented`, zero verified 1:1. The latest shipping extension adds partial coverage for three individually evidenced form captures; its native picker capture remains absent. Earlier counts below are historical; these coverage counts are not completed-screen counts. Bounded authenticated hosted location/equipment, favorites and synthetic private progress/cover journeys pass; wider connected flows and individual source-state acceptance remain open. The older 270-screen reference ledger under `docs/` describes the separate reference implementation and must not be counted as connected acceptance.
 

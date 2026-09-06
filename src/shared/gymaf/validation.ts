@@ -113,6 +113,10 @@ export function validateCommand(value: unknown): Command {
   const id = (name: string) => uuid(p[name]);
   const revision = () => integer(p.revision, "Revision", 0, 2147483646);
   switch (action) {
+    case "guest.create": { keys(p,['relationshipId','token']);const token=text(p.token,'Guest pass',64,64);if(!/^[a-f0-9]{64}$/.test(token))throw new InputError('Invalid guest pass.');payload={relationshipId:id('relationshipId'),token};break; }
+    case "guest.replace-link": { keys(p,['id','token']);const token=text(p.token,'Guest pass',64,64);if(!/^[a-f0-9]{64}$/.test(token))throw new InputError('Invalid guest pass.');payload={id:id('id'),token};break; }
+    case "guest.accept": { keys(p,['token']);const token=text(p.token,'Guest pass',64,64);if(!/^[a-f0-9]{64}$/.test(token))throw new InputError('Invalid guest pass.');payload={token};break; }
+    case "guest.revoke": keys(p,['id']);payload={id:id('id')};break;
     case "attachment.share": keys(p,['id']);payload={id:id('id')};break;
     case "social.invite": case "social.accept": case "social.revoke": {
       keys(p,['token']); const token=text(p.token,'Invitation',64,64); if(!/^[a-f0-9]{64}$/.test(token))throw new InputError('Invalid invitation.'); payload={token};break;

@@ -1,6 +1,19 @@
 # Astra implementation status
 
-## Current checkpoint — remaining web flow adaptations, 6 September 2026
+## Current checkpoint — membership and guest passes, 6 September 2026
+
+Review worktree `M:/gym-fidelity`, branch `review/mobbin-fidelity`, billing increment after `2edb521`. [ADR-015](ADR-015-BILLING-AND-GUEST-PASSES.md) and [billing evidence](evidence/billing-2026-09-06.json) supersede the older commercial-provider and migration facts below. The owner delegated provider and credit-rule decisions: Stripe hosted Checkout/portal, verified seller account or Connect direct charges, no application fee, configurable EUR 99 tax-inclusive monthly default, cancellation at paid-period end, and three seven-day new-client guest passes per paid member per UTC month. These are implemented defaults; no hosted offer, Stripe connection or legal seller has been invented.
+
+Connected source adds membership, dark checkout handoff, purchased-offer display, explicit delayed-payment reconciliation, guest credits/share/QR/acceptance, creation of another pass and recoverable owner management via link replacement. Backend ownership, immutable purchase snapshots, stable retry identities, raw Stripe signatures, separate HMAC synchronization and transactional guest limits are authoritative. Existing accepted trials persist when the sender's paid access is revoked; unaccepted passes are revoked. Full refunds/disputes of the latest paid invoice revoke paid entitlement and prevent renewal. Detailed rules and limits are in ADR-015.
+
+- **Local checks, parent-reported PASS:** production build, TypeScript, 51 unit tests, five mocked HTTP tests, fresh disposable PostgreSQL 17 with eighteen migrations plus synthetic seed and thirteen SQL suites. Final lint: zero errors, two pre-existing coach warnings. These are local/provider-mocked checks.
+- **Hosted development schema PASS, parent-reported:** `crhcgcqanoeoddmwaqhb` now has eighteen migrations. Coach appointments, private friends, conversation media and billing provider versions are respectively `20260906193822`, `20260906193825`, `20260906193826`, `20260906201450`. Private billing synchronization is configured with live mode disabled; no offer or Stripe connection exists. Hosted anonymous guard checks denied invalid/NULL proofs and found no anonymous command execution or client offer writes. Advisors reported zero errors but warnings remain; see ADR-015.
+- **Review: NEEDS VERIFICATION.** Purchased-offer truth, delayed checkout reconciliation and guest creation/link recovery are resolved in source. Checkout error visibility is partial: fixed in source, updated mobile capture blocked. Earlier browser evidence records eleven checks and 320/393/1440 captures under `.artifacts/billing-review/`. Automatic approval review rejected the local production-server restart (`blocked by policy`), preventing captures of the latest fixes. Earlier screenshots do not prove final visual acceptance.
+- **Provider acceptance NOT RUN:** expired Stripe CLI credentials returned 401; fresh login timed out. Stripe API/webhook credentials remain unavailable. No real sandbox payment, cancellation, refund or dispute has been tested. Next provider setup requires authentication, not another approval of delegated product choices. [STRIPE_SETUP.md](STRIPE_SETUP.md) describes the remaining setup.
+
+The connected ledger now records **270 Partial family adaptation / zero Not implemented / zero verified 1:1** across 84 flows. The six commercial IDs now map to partial web counterparts; provider-hosted empty/filled card forms and exact source captures are not verified. Full fidelity remains incomplete. Native services, rights/content, privacy, media lifecycle, hosted/device workflows, legal seller and release gates remain open. Billing commit/push and PR #3 CI remain pending at this checkpoint. No main merge, paid resource provisioning, live charge/refund or production deployment occurred. Entries below retain historical evidence only.
+
+## Earlier checkpoint — remaining web flow adaptations, 6 September 2026
 
 This checkpoint supersedes only the corresponding facts below. Review worktree `M:/gym-fidelity`, branch `review/mobbin-fidelity`, source after `3fd9e6a88cd225cb9632efb5d13836a6c9f4ae22`; source and evidence belong to the review-branch commit containing this checkpoint. [ADR-014](ADR-014-REMAINING-WEB-FLOWS.md) defines the implemented contracts and open gates.
 
@@ -17,7 +30,7 @@ Hosted migration/provider-account acceptance, device codecs, media lifecycle/era
 
 Updated 6 September 2026. Current review worktree: `M:/gym-fidelity`, branch `review/mobbin-fidelity`, shipping increment after `4de2d3c3d167c6cdb1320e4be57890d838a93657`; latest implementation source `897b9025cf5b2e55262b34751609e6923a133c33` pushed with passing CI `34012093019`. The current checkpoint overrides only updated facts; earlier evidence remains historical. The connected web implementation is not the completed production/native roadmap.
 
-## Current checkpoint — private shipping address
+## Earlier checkpoint — private shipping address
 
 `/app/account/shipping` links from Your Account and adds the reference light sheet, state/ZIP pair, XS–XXL selector and Update action. Country supports non-US addresses with optional region/postal fields. The owner-only `member_records` shipping singleton retains existing queries/export, commands, revisions and retries. This saves a private preference; it creates no order, shipment, coach send or fulfillment. [ADR-013](ADR-013-PRIVATE-SHIPPING-ADDRESS.md) records validation and ownership limits.
 

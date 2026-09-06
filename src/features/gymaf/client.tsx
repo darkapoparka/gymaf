@@ -13,6 +13,7 @@ import { ProfileScreen } from "./profile";
 import { CoachRatingDialog } from "./coach-rating";
 import { CoachDirectory } from "./coach-directory";
 import { Appointments } from "./appointments";
+import { Membership,GuestPasses } from './billing';
 import { Friends } from "./friends";
 import { SharedMedia } from './conversation-media';
 import { WorkoutActivity, LaunchScreen } from './workout-activity';
@@ -49,6 +50,8 @@ export function ClientArea({ account, path, selectedId, reloadAccount }: { accou
   const resource = useResource<RelationshipDetail>(selected ? `relationships/${selected.id}` : null);
   const query = selected ? `?relationship=${selected.id}` : "";
   const reload = () => { resource.reload(); reloadAccount(); };
+  if(path[0]==='checkout'||(path[0]==='account'&&path[1]==='plan'))return <Membership key={account.user.id+path.join('/')} relationshipId={selected?.id} checkoutView={path[0]==='checkout'}/>;
+  if(path[0]==='friends'&&path[1]==='invite')return <GuestPasses key={account.user.id}/>;
   if(path[0]==='friends')return <Friends key={account.user.id} ownerId={account.user.id} inviteView={path[1]==='invite'} query={query}/>;
   if(path[0]==='appointments')return <Appointments workspaceId={path[1]} zone={account.user.timezone} query={query}/>;
   if(path[0]==='onboarding'&&['coach','matching'].includes(path[1]))return <CoachDirectory account={account} path={path[1]==='coach'?['coaches','intro']:['coaches','matching']} query={query}/>;

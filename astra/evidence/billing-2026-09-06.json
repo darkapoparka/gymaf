@@ -1,0 +1,69 @@
+{
+  "base": "2edb521d2b9d2aa04494546a96f3d5a95f0d697a",
+  "updatedPartialRows": [
+    "818823fea239b926",
+    "10cf3bdb6b6600bd",
+    "1c9c16701eb28a46",
+    "6699b1f8a7f819b9",
+    "230ba48bd84b5618",
+    "37e236af15c00e2a"
+  ],
+  "counts": {
+    "Partial family adaptation": 270
+  },
+  "verified1to1": 0,
+  "build": "PASS",
+  "unit": {
+    "passed": 51,
+    "failed": 0
+  },
+  "http": {
+    "passed": 5,
+    "failed": 0,
+    "provider": "synthetic loopback Stripe SDK transport and Supabase fixtures"
+  },
+  "database": {
+    "engine": "PostgreSQL 17",
+    "database": "gymaf_billing_reviewed",
+    "migrations": 18,
+    "suites": 13,
+    "result": "PASS",
+    "authAndStorage": "simulated"
+  },
+  "lint": {
+    "errors": 0,
+    "existingWarnings": 2
+  },
+  "browser": {
+    "preFixAssertions": 11,
+    "widths": [
+      320,
+      393,
+      1440
+    ],
+    "finalFixCaptures": "NOT RUN - automatic approval review rejected local production server restart as blocked by policy"
+  },
+  "finishReview": {
+    "disposition": "NEEDS VERIFICATION",
+    "purchasedOffer": "Resolved in source",
+    "checkoutReconciliation": "Resolved in source",
+    "guestRecovery": "Resolved in source",
+    "errorVisibility": "Partial - source fixed, updated render not verified"
+  },
+  "hosted": {
+    "project": "crhcgcqanoeoddmwaqhb",
+    "migrations": 18,
+    "newVersions": {
+      "coach_appointments": "20260906193822",
+      "private_friend_connections": "20260906193825",
+      "conversation_media": "20260906193826",
+      "billing_and_guest_passes": "20260906201450"
+    },
+    "billingSyncSecretConfigured": true,
+    "liveEnabled": false,
+    "stripeAuthenticated": false,
+    "realProviderPaymentAcceptance": "NOT RUN"
+  },
+  "publication": "Review branch only; no main merge or production promotion",
+  "exactParity": "NOT COMPLETE / NOT VERIFIED 1:1"
+}
