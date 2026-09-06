@@ -75,3 +75,5 @@ jobs:
         run: psql -v ON_ERROR_STOP=1 -f tests/db/coaching.sql
       - name: Member record privacy and persistence regression tests
         run: psql -v ON_ERROR_STOP=1 -f tests/db/member-records.sql
+      - name: Training library privacy and persistence regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/training-library.sql

@@ -22,6 +22,10 @@ test('email link HTTP contract and session failure boundaries', { timeout: 45000
       response.statusCode = registrationFails ? 403 : 200;
       return response.end(registrationFails ? '{"code":"42501"}' : '{}');
     }
+    if (request.url === '/rest/v1/rpc/gymaf_training_command') {
+      response.statusCode = 400;
+      return response.end('{"code":"GY409","message":"Favorite changed"}');
+    }
     response.statusCode = 404; response.end('{}');
   });
   fixture.listen(0, '127.0.0.1'); await once(fixture, 'listening');
@@ -60,6 +64,9 @@ test('email link HTTP contract and session failure boundaries', { timeout: 45000
     assert.deepEqual(calls.slice(1).map(call => call.path), ['/auth/v1/token?grant_type=pkce', '/auth/v1/user', '/rest/v1/rpc/gymaf_register_session']);
     assert.equal(calls[1].body.code_verifier, verifier);
     assert.equal(await signedIn.text(), '');
+    const conflict = await fetch(origin + '/api/v1/commands', { method: 'POST', headers: { Origin: origin, 'Content-Type': 'application/json', cookie: 'gymaf-access=fixture-access' }, body: JSON.stringify({ action: 'training.favorite', commandId: '81000000-0000-4000-8000-000000000001', payload: { scheduledId: '82000000-0000-4000-8000-000000000001', favorite: true, revision: 0 } }) });
+    assert.equal(conflict.status, 409, 'application conflict is returned immediately as HTTP 409');
+    assert.equal((await conflict.json()).error.code, 'CONFLICT');
 
     registrationFails = true;
     const denied = await fetch(callback, { headers: { cookie }, redirect: 'manual' });

@@ -485,7 +485,7 @@
       }
     ],
     "referenceRoute": "/coaches/search",
-    "referenceState": "Expand expertise; switch sorting to A–Z",
+    "referenceState": "Expand expertise; switch sorting to A\u2013Z",
     "connectedRoute": null,
     "family": "coach-discovery",
     "frontendStatus": "Not implemented",
@@ -1382,14 +1382,18 @@
     ],
     "referenceRoute": "/workouts/morning-yoga/summary",
     "referenceState": "First summary card",
-    "connectedRoute": "/app/sessions/[id]",
+    "connectedRoute": "/app/sessions/[id] (completed/abandoned summary)",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
+    "backendGap": "Saved summary and exercise breakdown implemented. Source feedback, imagery, calorie estimate, carousel and share capabilities absent.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      ".artifacts/training-review/summary-393-fixed.png",
+      ".artifacts/training-review/summary-320-final.png",
+      ".artifacts/training-review/summary-1440-final.png"
+    ]
   },
   {
     "id": "c3aecc2fdeda0fef",
@@ -1446,14 +1450,17 @@
     ],
     "referenceRoute": "/workouts/morning-yoga/summary?activity=exercises",
     "referenceState": "Top of exercise breakdown",
-    "connectedRoute": "/app/sessions/[id]",
+    "connectedRoute": "/app/sessions/[id] (completed/abandoned summary)",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
+    "backendGap": "Saved summary and exercise breakdown implemented. Source feedback, imagery, calorie estimate, carousel and share capabilities absent.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      ".artifacts/training-review/summary-393.png",
+      ".artifacts/training-review/summary-exercises-393.png"
+    ]
   },
   {
     "id": "cc7503a7402e36c1",
@@ -1466,14 +1473,17 @@
     ],
     "referenceRoute": "/workouts/morning-yoga/summary?activity=exercises",
     "referenceState": "Scroll exercise breakdown",
-    "connectedRoute": "/app/sessions/[id]",
+    "connectedRoute": "/app/sessions/[id] (completed/abandoned summary)",
     "family": "player",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Overview, saved sets, pause/resume/completion and persisted instruction/countdown/tone/vibration preferences present. Exact source controls, media and summary variants remain incomplete.",
+    "backendGap": "Saved summary and exercise breakdown implemented. Source feedback, imagery, calorie estimate, carousel and share capabilities absent.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      ".artifacts/training-review/summary-393.png",
+      ".artifacts/training-review/summary-exercises-393.png"
+    ]
   },
   {
     "id": "f47162e51bcdadad",
@@ -1544,7 +1554,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "1cb5bd47a8dd1541",
@@ -1575,7 +1585,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "a65a68b05a4f7bcf",
@@ -1598,7 +1608,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "e9cf6691b1825416",
@@ -1621,7 +1631,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "260da8717befc18a",
@@ -1644,7 +1654,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "3c7bf81d5bbd2adb",
@@ -1667,7 +1677,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "448d55aa6af7c20d",
@@ -1690,7 +1700,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "60985223ac9f138b",
@@ -1713,7 +1723,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "d89797aec72d9761",
@@ -1796,7 +1806,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "effd0d3e27cbba21",
@@ -2093,14 +2103,17 @@
     ],
     "referenceRoute": "/workouts/morning-yoga/session?activity=history",
     "referenceState": "Choose 30 Days",
-    "connectedRoute": "/app/sessions/[id]",
+    "connectedRoute": "/app/sessions/[id] (expanded controls > History)",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Exact exercise identity history from completed authorized attempts; source visual/media parity remains open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      ".artifacts/training-review/player-history-393-fixed.png",
+      "tests/db/training-library.sql"
+    ]
   },
   {
     "id": "56296a6a6c95f153",
@@ -2481,14 +2494,18 @@
     ],
     "referenceRoute": "/workouts",
     "referenceState": "Future Picks tab",
-    "connectedRoute": "/app/schedule",
+    "connectedRoute": "/app/workouts?relationship=[id]",
     "family": "workout-catalog",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Assigned workouts exist; source browsable categories, on-demand picks and favorites are absent.",
+    "backendGap": "Assigned-workout library and private favorites implemented; source public picks and equipment/intensity metadata absent. Timed work/rest filter is not total duration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Hosted assigned library PASS: favorite save/reload/list, unfavorite, two-tab stale conflict, reload recovery. Source public catalog NOT IMPLEMENTED.",
+    "evidence": [
+      ".artifacts/training-review/library-393-fixed.png",
+      ".artifacts/training-review/library-1440-fixed.png",
+      "tests/db/training-library.sql"
+    ]
   },
   {
     "id": "854ff6c1480f1c23",
@@ -2525,14 +2542,18 @@
     ],
     "referenceRoute": "/workouts/picks",
     "referenceState": "Unfiltered Future Picks",
-    "connectedRoute": "/app/schedule",
+    "connectedRoute": "/app/workouts?relationship=[id]",
     "family": "workout-catalog",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Assigned workouts exist; source browsable categories, on-demand picks and favorites are absent.",
+    "backendGap": "Assigned-workout library and private favorites implemented; source public picks and equipment/intensity metadata absent. Timed work/rest filter is not total duration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Hosted assigned library PASS: favorite save/reload/list, unfavorite, two-tab stale conflict, reload recovery. Source public catalog NOT IMPLEMENTED.",
+    "evidence": [
+      ".artifacts/training-review/library-393-fixed.png",
+      ".artifacts/training-review/library-1440-fixed.png",
+      "tests/db/training-library.sql"
+    ]
   },
   {
     "id": "a28e9eedc0c7a471",
@@ -2545,14 +2566,18 @@
     ],
     "referenceRoute": "/workouts/picks",
     "referenceState": "Open Duration filter",
-    "connectedRoute": "/app/schedule",
+    "connectedRoute": "/app/workouts?relationship=[id]",
     "family": "workout-catalog",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Assigned workouts exist; source browsable categories, on-demand picks and favorites are absent.",
+    "backendGap": "Assigned-workout library and private favorites implemented; source public picks and equipment/intensity metadata absent. Timed work/rest filter is not total duration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      ".artifacts/training-review/library-393-fixed.png",
+      ".artifacts/training-review/library-1440-fixed.png",
+      "tests/db/training-library.sql"
+    ]
   },
   {
     "id": "9f49c1dd63bf829c",
@@ -2565,14 +2590,18 @@
     ],
     "referenceRoute": "/workouts/picks",
     "referenceState": "Choose Quick duration",
-    "connectedRoute": "/app/schedule",
+    "connectedRoute": "/app/workouts?relationship=[id]",
     "family": "workout-catalog",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Assigned workouts exist; source browsable categories, on-demand picks and favorites are absent.",
+    "backendGap": "Assigned-workout library and private favorites implemented; source public picks and equipment/intensity metadata absent. Timed work/rest filter is not total duration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      ".artifacts/training-review/library-393-fixed.png",
+      ".artifacts/training-review/library-1440-fixed.png",
+      "tests/db/training-library.sql"
+    ]
   },
   {
     "id": "22f2af83452b8d62",
@@ -2585,14 +2614,18 @@
     ],
     "referenceRoute": "/workouts/picks",
     "referenceState": "Choose Quick duration and no equipment",
-    "connectedRoute": "/app/schedule",
+    "connectedRoute": "/app/workouts?relationship=[id]",
     "family": "workout-catalog",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Assigned workouts exist; source browsable categories, on-demand picks and favorites are absent.",
+    "backendGap": "Assigned-workout library and private favorites implemented; source public picks and equipment/intensity metadata absent. Timed work/rest filter is not total duration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
     "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "evidence": [
+      ".artifacts/training-review/library-393-fixed.png",
+      ".artifacts/training-review/library-1440-fixed.png",
+      "tests/db/training-library.sql"
+    ]
   },
   {
     "id": "7e1fbea48e31336c",
@@ -3571,7 +3604,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "92f7fea0a4f23770",
@@ -3594,7 +3627,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "bfea6e37fa7d9b94",
@@ -3617,7 +3650,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "e95ed2394c15c550",
@@ -3644,7 +3677,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "654b8d1920644b89",
@@ -3667,7 +3700,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "88f6f0ef24add973",
@@ -3690,7 +3723,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "a0b73ff31607572f",
@@ -3713,7 +3746,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "5cd2903b6dc7cc19",
@@ -4256,7 +4289,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "52738508d08de10f",
@@ -4279,7 +4312,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "3189e98ea2ffdf35",
@@ -4302,7 +4335,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "0d4c3dca91994365",
@@ -4325,7 +4358,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "ec59526f80f48f32",
@@ -4348,7 +4381,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "0a8b40e28e7bd6f2",
@@ -4371,7 +4404,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "9900515c67c3bc0b",
@@ -4662,7 +4695,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "0321f6f626e81a5f",
@@ -4701,7 +4734,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "85169600dcd16f7c",
@@ -5252,11 +5285,11 @@
     "backendGap": "Actor-scoped location creation and equipment selection implemented; exact source variants and media remain unaccepted.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
+    "connectedFlowStatus": "Narrow hosted location flow PASS: Gym type, naming, Dumbbell selection, save/reload, Your Setup selection, delete/reload. Exact captured state NOT VERIFIED.",
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "dc867f791845be87",
@@ -5275,11 +5308,11 @@
     "backendGap": "Actor-scoped location creation and equipment selection implemented; exact source variants and media remain unaccepted.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
+    "connectedFlowStatus": "Narrow hosted location flow PASS: Gym type, naming, Dumbbell selection, save/reload, Your Setup selection, delete/reload. Exact captured state NOT VERIFIED.",
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "c60d76b4556ccf29",
@@ -5302,7 +5335,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "464d28d1e615a0cc",
@@ -5321,11 +5354,11 @@
     "backendGap": "Revisioned location/equipment save/delete implemented. Setup, search and category filters are present. Equipment quantity/weight variants and original art remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
+    "connectedFlowStatus": "Narrow hosted location flow PASS: Gym type, naming, Dumbbell selection, save/reload, Your Setup selection, delete/reload. Exact captured state NOT VERIFIED.",
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "6f7906549b48f376",
@@ -5344,11 +5377,11 @@
     "backendGap": "Revisioned location/equipment save/delete implemented. Setup, search and category filters are present. Equipment quantity/weight variants and original art remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
+    "connectedFlowStatus": "Narrow hosted location flow PASS: Gym type, naming, Dumbbell selection, save/reload, Your Setup selection, delete/reload. Exact captured state NOT VERIFIED.",
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "45ff34930241ec24",
@@ -5371,7 +5404,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "f4dd4750b643f25c",
@@ -5394,7 +5427,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "3c3f5b2ae12f0a16",
@@ -5417,7 +5450,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "80efc3cf90fd540c",
@@ -5440,7 +5473,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "bfbabe222728e739",
@@ -5463,7 +5496,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "b63080eaf97404fc",
@@ -5486,7 +5519,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "b25431078c7923a8",
@@ -5509,7 +5542,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "68564002a352ea0b",
@@ -5532,7 +5565,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "bff6c138c772d2c2",
@@ -5555,7 +5588,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "6c630c7f068150c8",
@@ -5578,7 +5611,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "bca9653d973f5702",
@@ -5601,7 +5634,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "4917c735489f6b4c",
@@ -5624,7 +5657,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "8a7901a5c21e862f",
@@ -5647,7 +5680,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "22d870084ca0661b",
@@ -5670,7 +5703,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "9b057830c0013b72",
@@ -5693,7 +5726,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "b6ed07cc9879d9a2",
@@ -5756,7 +5789,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "c8af58d62a9ed8f7",
@@ -5779,7 +5812,7 @@
     "evidence": [
       "astra/FRONTEND_PARITY.md - member extension, representative synthetic presentation only"
     ],
-    "databaseEvidence": "Local PostgreSQL tests/db/member-records.sql PASS with simulated provider JWT; hosted migration pending approval. No connected browser persistence claim."
+    "databaseEvidence": "Member migration installed on hosted gymaf as 20260905235553; local all-kind privacy/CRUD tests pass. Hosted browser create/select/reload/delete proven only for a temporary location with Dumbbell equipment."
   },
   {
     "id": "8ac22ec411e8c405",

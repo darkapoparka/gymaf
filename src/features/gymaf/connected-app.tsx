@@ -32,6 +32,6 @@ export function ConnectedApp({ area, path = [], relationshipId, workspaceId }: {
     <main id="main" className={`app-shell ${area==="app"?`connected-route-${path[0]||"home"}`:""} ${area === "app" && !path.length ? "home-page" : ""}`}>
       {sessionId ? <SessionScreen key={sessionId} id={sessionId} back={area === "coach" ? "/coach" : `/app/history${query}`} /> : area === "operator" ? <OperatorArea /> : area === "coach" ? <CoachArea account={data} path={path} workspaceId={workspaceId} reloadAccount={account.reload} /> : <ClientArea account={data} path={path} selectedId={relationshipId} reloadAccount={account.reload} />}
     </main>
-    {area !== "operator" && !sessionId && !(area === "app" && (path[0] === "schedule" || path[0] === "settings" || path[0] === "progress" || (path[0] === "profile" && path[1]) || (path[0] === "workouts" && path[1]))) && <Navigation area={area} active={path[0] || ""} locale={data.user.locale} query={query} />}
+    {area !== "operator" && !sessionId && !(area === "app" && (path[0] === "schedule" || path[0] === "settings" || path[0] === "progress" || (path[0] === "profile" && path[1]) || path[0] === "workouts")) && <Navigation area={area} active={path[0] || ""} locale={data.user.locale} query={query} />}
   </div>;
 }

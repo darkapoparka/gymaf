@@ -77,6 +77,7 @@ export function validateCommand(value: unknown): Command {
   const id = (name: string) => uuid(p[name]);
   const revision = () => integer(p.revision, "Revision", 0, 2147483646);
   switch (action) {
+    case "training.favorite": keys(p, ["scheduledId", "favorite", "revision"]); payload = { scheduledId: id("scheduledId"), favorite: boolean(p.favorite), revision: revision() }; break;
     case "member.save": {
       keys(p, ["id", "kind", "data", "revision"]);
       const kind = oneOf(p.kind, ["preferences", "location", "injury", "event", "weight", "weight-target"]);

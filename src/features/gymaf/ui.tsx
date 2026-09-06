@@ -26,6 +26,7 @@ export function useResource<T>(path: string | null) {
 export function useCommand() {
   const [busy, setBusy] = useState(false), [error, setError] = useState("");
   const running = useRef(false), retry = useRef<{ fingerprint: string; id: string } | null>(null);
+  const clearError = useCallback(() => setError(""), []);
   async function run(action: string, payload: Record<string, unknown>): Promise<CommandResult | null> {
     if (running.current) return null;
     running.current = true; setBusy(true); setError("");
@@ -38,7 +39,7 @@ export function useCommand() {
     } catch (failure) { setError(failure instanceof Error ? failure.message : "The operation failed. Retry without changing the fields."); return null; }
     finally { running.current = false; setBusy(false); }
   }
-  return { busy, error, run };
+  return { busy, error, run, clearError };
 }
 export function Copy({ locale, en, bg }: { locale: Locale; en: string; bg: string }) { return locale === "bg" ? bg : en; }
 export function Head({ title, back, children }: { title: string; back?: string; children?: ReactNode }) { return <header className={`page-head ${back ? "with-back" : ""}`}>{back && <Link href={back} className="icon-button" aria-label="Back"><ChevronLeft /></Link>}<h1>{title}</h1>{children && <div className="head-actions">{children}</div>}</header>; }
@@ -47,7 +48,7 @@ export function Field({ label, ...props }: { label: string } & InputHTMLAttribut
 export function Note({ children }: { children: ReactNode }) { return <p className="note" role="status">{children}</p>; }
 export function ErrorNote({ message }: { message?: string }) { return message ? <p className="gymaf-error" role="alert">{message}</p> : null; }
 export function Pending({ error, reload }: { error?: string; reload?: () => void }) { return <section className="gymaf-panel" aria-busy={!error}>{error ? <><ErrorNote message={error} />{reload && <button className="button" onClick={reload}>Retry</button>}<Link className="button" href="/login">Sign in</Link></> : <p role="status">Loading…</p>}</section>; }
-export function Empty({ children }: { children: ReactNode }) { return <div className="empty-state gymaf-empty"><CalendarDays size={32} /><p>{children}</p></div>; }
+export function Empty({ children }: { children: ReactNode }) { return <div className="empty-state gymaf-empty"><CalendarDays size={32} /><div>{children}</div></div>; }
 export function Dialog({ title, children, onClose, className = "" }: { title: string; children: ReactNode; onClose: () => void; className?: string }) {
   const ref = useRef<HTMLDialogElement>(null), titleId = useId();
   useEffect(() => { const dialog = ref.current, trigger = document.activeElement; dialog?.showModal(); return () => { dialog?.close(); if (trigger instanceof HTMLElement && trigger.isConnected) trigger.focus(); }; }, []);

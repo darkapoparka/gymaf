@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { MemberArea } from "./member-area";
+import { TrainingLibrary } from "./training-library";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ClientHome, WorkoutDetailView, ScheduleView, ProgressView, ProfileOverview } from "./client-views";
@@ -45,6 +46,7 @@ export function ClientArea({ account, path, selectedId, reloadAccount }: { accou
   if (!selected) return <div className="gymaf-stack"><Head title={`Welcome${account.user.display_name ? ", " + account.user.display_name : ""}`} /><Empty>No coach is connected to this account yet. Open the invitation link your coach gave you.</Empty><Row href="/app/profile">Complete your profile</Row>{account.workspaces.length > 0 && <Row href="/coach">Open coach workspace</Row>}</div>;
   if (!resource.data) return <Pending error={resource.error} reload={resource.reload} />;
   const data = resource.data;
+  if (path[0] === "workouts" && (!path[1] || path[1] === "picks")) return <TrainingLibrary key={selected.id} data={data} query={query}/>;
   if (path[0] === "workouts" && path[1]) { const workout = data.workouts.find(w => w.id === path[1]); return workout ? <WorkoutDetail key={workout.id} workout={workout} data={data} query={query} /> : <Empty>This workout is not in the currently loaded schedule. Open it through your current schedule or session history.</Empty>; }
   if (path[0] === "schedule") return <Schedule data={data} query={query} reload={resource.reload} />;
   if (path[0] === "messages") return <Messages presentation="client" coachName={data.relationship.coach_name} key={selected.id} relationshipId={selected.id} userId={account.user.id} canSend={data.can_train} />;
