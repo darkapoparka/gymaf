@@ -10,6 +10,8 @@ import type { Bootstrap, RelationshipDetail, ScheduledWorkout } from "@/shared/g
 import { localDate, monday } from "@/shared/gymaf/validation";
 import { Messages } from "./messages";
 import { ProfileScreen } from "./profile";
+import { CoachRatingDialog } from "./coach-rating";
+import { AccountEditor } from "./account-editor";
 import { ProfileEditor } from "./profile-editor";
 import { Empty, ErrorNote, Field, Head, Note, Pending, Row, useCommand, useResource } from "./ui";
 
@@ -41,6 +43,7 @@ export function ClientArea({ account, path, selectedId, reloadAccount }: { accou
   const resource = useResource<RelationshipDetail>(selected ? `relationships/${selected.id}` : null);
   const query = selected ? `?relationship=${selected.id}` : "";
   const reload = () => { resource.reload(); reloadAccount(); };
+  if(path[0]==='account')return <AccountEditor key={account.user.id} user={account.user} query={query}/>;
   if(path[0]==='profile'&&path[1]==='edit')return <ProfileEditor key={account.user.id} user={account.user} query={query} reload={reloadAccount}/>;
   if ((path[0] === "progress" && path[1] === "photos") || (path[0] === "profile" && ["avatar","cover"].includes(path[1]))) return <MemberMediaArea key={`${account.user.id}:${path[1]}`} account={account} kind={path[1] === "avatar" ? "avatar" : path[1] === "cover" ? "cover" : "progress"} query={query}/>;
   if ((path[0] === "settings" && !["security","service","support"].includes(path[1])) || path[0] === "progress" || (path[0] === "profile" && path[1] === "event")) return <MemberArea account={account} path={path} query={query}/>;
@@ -53,7 +56,7 @@ export function ClientArea({ account, path, selectedId, reloadAccount }: { accou
   if (path[0] === "workouts" && (!path[1] || path[1] === "picks")) return <TrainingLibrary key={selected.id} data={data} query={query}/>;
   if (path[0] === "workouts" && path[1]) { const workout = data.workouts.find(w => w.id === path[1]); return workout ? <WorkoutDetail key={workout.id} workout={workout} data={data} query={query} /> : <Empty>This workout is not in the currently loaded schedule. Open it through your current schedule or session history.</Empty>; }
   if (path[0] === "schedule") return <Schedule data={data} query={query} reload={resource.reload} />;
-  if (path[0] === "messages") return <Messages presentation="client" coachName={data.relationship.coach_name} key={selected.id} relationshipId={selected.id} userId={account.user.id} canSend={data.can_train} />;
+  if (path[0] === "messages") return <><Messages presentation="client" coachName={data.relationship.coach_name} key={selected.id} relationshipId={selected.id} userId={account.user.id} canSend={data.can_train} />{path[1]==='rate'&&<CoachRatingDialog ownerId={account.user.id} relationshipId={selected.id} coachName={data.relationship.coach_name}/>}</>;
   if (path[0] === "check-ins") return <CheckIns key={selected.id} data={data} reload={resource.reload} />;
   if (path[0] === "history") return <ProgressView data={data} query={query} user={account.user} busy={goalMutation.busy} error={goalMutation.error} onGoal={async goal=>{
     const u=account.user;

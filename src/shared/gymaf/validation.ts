@@ -78,6 +78,7 @@ export function validateCommand(value: unknown): Command {
   const id = (name: string) => uuid(p[name]);
   const revision = () => integer(p.revision, "Revision", 0, 2147483646);
   switch (action) {
+    case "coach-rating.save": keys(p,["relationshipId","revision","rating"]);payload={relationshipId:id("relationshipId"),revision:revision(),rating:integer(p.rating,"Rating",1,5)};break;
     case "feedback.submit": keys(p, ["sessionId", "revision"]); payload = { sessionId: id("sessionId"), revision: revision() }; break;
     case "feedback.save": {
       keys(p, ["sessionId", "revision", "data"]);
@@ -95,7 +96,7 @@ export function validateCommand(value: unknown): Command {
     case "training.favorite": keys(p, ["scheduledId", "favorite", "revision"]); payload = { scheduledId: id("scheduledId"), favorite: boolean(p.favorite), revision: revision() }; break;
     case "member.save": {
       keys(p, ["id", "kind", "data", "revision"]);
-      const kind = oneOf(p.kind, ["preferences", "location", "injury", "event", "weight", "weight-target"]);
+      const kind = oneOf(p.kind, ["preferences", "location", "injury", "event", "weight", "weight-target", "account"]);
       const d = object(p.data); let data: Record<string, unknown>;
       const strings = (v: unknown, max: number) => {
         if (!Array.isArray(v) || v.length > max) throw new InputError("Invalid list.");
@@ -103,7 +104,16 @@ export function validateCommand(value: unknown): Command {
         if (new Set(items).size !== items.length) throw new InputError("Duplicate list entry.");
         return items;
       };
-      if (kind === "preferences") {
+      if (kind === "account") {
+        keys(d, ["preferredName", "firstName", "lastName", "biologicalSex", "dateOfBirth", "heightCm", "phone"]);
+        const birth = text(d.dateOfBirth, "Date of birth", 10);
+        if (birth && (dateOnly(birth) > new Date().toISOString().slice(0,10) || birth < "1900-01-01")) throw new InputError("Enter a valid date of birth.");
+        const height = text(d.heightCm, "Height", 6);
+        if (height && (!/^\d+(\.\d)?$/.test(height) || Number(height)<50 || Number(height)>300)) throw new InputError("Height must be between 50 and 300 cm.");
+        const phone = text(d.phone, "Phone number", 32);
+        if (phone && !/^\+?[0-9 ()-]{5,32}$/.test(phone)) throw new InputError("Enter a valid contact phone number.");
+        data = {preferredName:text(d.preferredName,"Preferred name",120),firstName:text(d.firstName,"First name",120),lastName:text(d.lastName,"Last name",120),biologicalSex:oneOf(d.biologicalSex,["","Female","Male","Intersex","Prefer not to say"]),dateOfBirth:birth,heightCm:height,phone};
+      } else if (kind === "preferences") {
         keys(d, ["units", "privateProfile", "instructions", "tone", "countdown", "vibration"]);
         data = { units: oneOf(d.units, ["Metric", "Imperial"]), privateProfile: boolean(d.privateProfile), instructions: oneOf(d.instructions, ["Never", "Periodic", "Every Time"]), tone: oneOf(d.tone, ["Marimba", "Beep"]), countdown: boolean(d.countdown), vibration: boolean(d.vibration) };
       } else if (kind === "location") {
@@ -127,10 +137,16 @@ export function validateCommand(value: unknown): Command {
     }
     case "member.delete": keys(p, ["id", "kind", "revision"]); payload = { id: id("id"), kind: oneOf(p.kind, ["location", "injury", "event", "weight", "weight-target"]), revision: revision() }; break;
     case "profile.save": {
-      keys(p, ["displayName", "locale", "timezone", "goal", "equipment", "availability", "revision"]);
+      keys(p, ["displayName", "locale", "timezone", "goal", "equipment", "availability", "revision", "interests"]);
+      let interests:string[]|undefined;
+      if (p.interests !== undefined) {
+        if (!Array.isArray(p.interests) || p.interests.length>20) throw new InputError("Choose up to 20 interests.");
+        interests=p.interests.map(value=>text(value,"Interest",40,1));
+        if(interests.some(value=>!/^[-\p{L}\p{N}_ ]+$/u.test(value)) || new Set(interests.map(value=>value.toLowerCase())).size!==interests.length) throw new InputError("Use unique interests with letters, numbers, spaces, dashes or underscores.");
+      }
       const timezone = text(p.timezone, "Timezone", 80, 1);
       try { new Intl.DateTimeFormat("en", { timeZone: timezone }); } catch { throw new InputError("Invalid timezone."); }
-      payload = { displayName: text(p.displayName, "Name", 120, 1), locale: oneOf(p.locale, ["bg", "en"]), timezone, goal: text(p.goal, "Goal", 500), equipment: text(p.equipment, "Equipment", 1000), availability: text(p.availability, "Availability", 1000), revision: revision() }; break;
+      payload = { ...(interests === undefined ? {} : {interests}), displayName: text(p.displayName, "Name", 120, 1), locale: oneOf(p.locale, ["bg", "en"]), timezone, goal: text(p.goal, "Goal", 500), equipment: text(p.equipment, "Equipment", 1000), availability: text(p.availability, "Availability", 1000), revision: revision() }; break;
     }
     case "workspace.create": keys(p, ["name", "slug", "coachUserId"]); payload = { name: text(p.name, "Workspace", 120, 1), slug: text(p.slug, "Slug", 80, 3), coachUserId: id("coachUserId") }; if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(String(payload.slug))) throw new InputError("Use lowercase letters, numbers and hyphens for the slug."); break;
     case "workspace.publish": keys(p, ["workspaceId", "publicName", "bio", "published"]); payload = { workspaceId: id("workspaceId"), publicName: text(p.publicName, "Public name", 120, 1), bio: text(p.bio, "Biography", 2000), published: boolean(p.published) }; break;

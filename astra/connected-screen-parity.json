@@ -3947,14 +3947,21 @@
     ],
     "referenceRoute": "/messages/rate",
     "referenceState": "Coach rating, no stars selected",
-    "connectedRoute": null,
+    "connectedRoute": "/app/messages/rate?relationship=[id]",
     "family": "events-rating",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No events, training milestone sharing or coach-rating contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "coach-rating.save persists a private 1–5 rating for an active owned relationship with revision/idempotency. Active-actor queries/export are owner-only; ended relationships are read-only. No coach message, notification or public aggregate. Hosted save/conflict/privacy/export and complete source-flow acceptance remain open.",
+    "mediaStatus": "Initials coach portrait adapts missing original trainer photo; original media/native presentation not accepted",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked Back/Forward draft, failed-save/same-UUID retry, dirty close, trigger-focus return and beforeunload prompt. Actual hosted rating save/conflict/privacy flow NOT TESTED.",
+    "evidence": [
+      "Rating extension from 442aa4d: source empty rating state gains partial connected dialog coverage from conversation Star link; this individual row remains NOT VERIFIED 1:1.",
+      ".artifacts/rating-review/rating-empty-320-final.png; rating-empty-393-final.png; rating-empty-1440-final.png. Bounded rating reviewer SHIP with no material findings.",
+      ".artifacts/rating-review/retry-1.json and retry-2.json: mocked failed save/retry retains same UUID and revision 0. Same-document Back/Forward restored rating 4; dirty close and return focus to Rate your coach passed; page-exit beforeunload fired and was canceled; checked 320px had no overflow.",
+      ".artifacts/rating-review/rating-error-320.png; rating-error-393.png; rating-reload-320.png. Mocked recovery only; no hosted mutation or full source acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
+    ]
   },
   {
     "id": "06b4af20ce799415",
@@ -4167,14 +4174,21 @@
     ],
     "referenceRoute": "/messages/rate",
     "referenceState": "Select a coach rating",
-    "connectedRoute": null,
+    "connectedRoute": "/app/messages/rate?relationship=[id]",
     "family": "events-rating",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No events, training milestone sharing or coach-rating contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "coach-rating.save persists a private 1–5 rating for an active owned relationship with revision/idempotency. Active-actor queries/export are owner-only; ended relationships are read-only. No coach message, notification or public aggregate. Hosted save/conflict/privacy/export and complete source-flow acceptance remain open.",
+    "mediaStatus": "Initials coach portrait adapts missing original trainer photo; original media/native presentation not accepted",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked Back/Forward draft, failed-save/same-UUID retry, dirty close, trigger-focus return and beforeunload prompt. Actual hosted rating save/conflict/privacy flow NOT TESTED.",
+    "evidence": [
+      "Rating extension from 442aa4d: source selected rating state gains partial connected dialog coverage from conversation Star link; this individual row remains NOT VERIFIED 1:1.",
+      ".artifacts/rating-review/rating-selected-320-final.png; rating-selected-393-final.png; rating-selected-1440-final.png. Bounded rating reviewer SHIP with no material findings.",
+      ".artifacts/rating-review/retry-1.json and retry-2.json: mocked failed save/retry retains same UUID and revision 0. Same-document Back/Forward restored rating 4; dirty close and return focus to Rate your coach passed; page-exit beforeunload fired and was canceled; checked 320px had no overflow.",
+      ".artifacts/rating-review/rating-error-320.png; rating-error-393.png; rating-reload-320.png. Mocked recovery only; no hosted mutation or full source acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
+    ]
   },
   {
     "id": "cc20067000d4f87f",
@@ -4592,17 +4606,22 @@
     "connectedRoute": "/app/profile/edit",
     "family": "profile-edit",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Existing profile.save retains display name, locale, timezone, goal, equipment and availability with revision/idempotency. Private saved cover preview and photo navigation are connected. Source interests, private-profile/social controls and native account details are absent; actual successful profile-save browser acceptance remains open.",
+    "backendGap": "Private interests now save atomically with profile.save and its revision; legacy clients omitting interests preserve the list. Existing Gymaf training preferences remain. Private Profile is locked on; public/off/social states remain absent. Hosted successful save/conflict/privacy acceptance remains open.",
     "mediaStatus": "Private selected cover preview connected; original source media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "PASS bounded authenticated draft/history/Keep Editing/Discard without mutation; mocked retry/acknowledgement/validation PASS. Actual successful profile mutation and full source flow NOT VERIFIED.",
+    "connectedFlowStatus": "PASS bounded mocked draft/photo/Back/retry, dirty-close/discard, focused failure and reload recovery. Earlier authenticated non-mutation evidence remains historical; current hosted interest/profile mutation NOT TESTED.",
     "evidence": [
       "Source 3bd4b4a: /app/profile/edit uses close/checkmark sheet, cover preview, Display Name and existing Gymaf training/account preferences; no database changes.",
       "Account-scoped document-memory draft retains original baseline, revision and failed commandId across photo navigation/history; field changes reset commandId. Auth/session/logout clear memory; unmount abort guard, beforeunload, dirty-close choices and explicit Reload Saved Profile replacement are implemented.",
       "Parent-reported authenticated browser: temporary unsaved name survived cover picker and Back/Forward; Keep Editing and Discard worked; original saved name verified unchanged; no profile mutation.",
       ".artifacts/profile-review/retry-payloads.json: two aborted mocked profile.save requests across photo navigation retain the same UUID and revision 4; mocked acknowledgement exits/clears draft; empty-name Save and Leave focuses field without request.",
       ".artifacts/profile-review/editor-393-final.png; editor-320-final.png; editor-1440-final.png; reload-393.png; reload-320.png. Bounded reviewer PASS; source interests/privacy variants remain absent and this row is NOT VERIFIED 1:1.",
-      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance."
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance.",
+      "Account/interests extension from 442aa4d: removable private tags and unfinished tag input retained in scoped draft; training preferences disclosure; disabled-on private switch honestly states public sharing unavailable. Source public/off variants NOT implemented.",
+      ".artifacts/account-review/profile-320-final.png; profile-393-final.png; profile-1440-final.png; profile-error-320-spacing.png; profile-error-393-spacing.png. Bounded reviewer SHIP; NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked profile.save retry across photo navigation preserves UUID and revision 4; these are not successful hosted mutations.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
     ]
   },
   {
@@ -4623,17 +4642,22 @@
     "connectedRoute": "/app/profile/edit",
     "family": "profile-edit",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Existing profile.save retains display name, locale, timezone, goal, equipment and availability with revision/idempotency. Private saved cover preview and photo navigation are connected. Source interests, private-profile/social controls and native account details are absent; actual successful profile-save browser acceptance remains open.",
+    "backendGap": "Private interests now save atomically with profile.save and its revision; legacy clients omitting interests preserve the list. Existing Gymaf training preferences remain. Private Profile is locked on; public/off/social states remain absent. Hosted successful save/conflict/privacy acceptance remains open.",
     "mediaStatus": "Private selected cover preview connected; original source media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "PASS bounded authenticated draft/history/Keep Editing/Discard without mutation; mocked retry/acknowledgement/validation PASS. Actual successful profile mutation and full source flow NOT VERIFIED.",
+    "connectedFlowStatus": "PASS bounded mocked draft/photo/Back/retry, dirty-close/discard, focused failure and reload recovery. Earlier authenticated non-mutation evidence remains historical; current hosted interest/profile mutation NOT TESTED.",
     "evidence": [
       "Source 3bd4b4a: /app/profile/edit uses close/checkmark sheet, cover preview, Display Name and existing Gymaf training/account preferences; no database changes.",
       "Account-scoped document-memory draft retains original baseline, revision and failed commandId across photo navigation/history; field changes reset commandId. Auth/session/logout clear memory; unmount abort guard, beforeunload, dirty-close choices and explicit Reload Saved Profile replacement are implemented.",
       "Parent-reported authenticated browser: temporary unsaved name survived cover picker and Back/Forward; Keep Editing and Discard worked; original saved name verified unchanged; no profile mutation.",
       ".artifacts/profile-review/retry-payloads.json: two aborted mocked profile.save requests across photo navigation retain the same UUID and revision 4; mocked acknowledgement exits/clears draft; empty-name Save and Leave focuses field without request.",
       ".artifacts/profile-review/editor-393-final.png; editor-320-final.png; editor-1440-final.png; reload-393.png; reload-320.png. Bounded reviewer PASS; source interests/privacy variants remain absent and this row is NOT VERIFIED 1:1.",
-      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance."
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance.",
+      "Account/interests extension from 442aa4d: removable private tags and unfinished tag input retained in scoped draft; training preferences disclosure; disabled-on private switch honestly states public sharing unavailable. Source public/off variants NOT implemented.",
+      ".artifacts/account-review/profile-320-final.png; profile-393-final.png; profile-1440-final.png; profile-error-320-spacing.png; profile-error-393-spacing.png. Bounded reviewer SHIP; NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked profile.save retry across photo navigation preserves UUID and revision 4; these are not successful hosted mutations.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
     ]
   },
   {
@@ -4724,17 +4748,22 @@
     "connectedRoute": "/app/profile/edit",
     "family": "profile-edit",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Existing profile.save retains display name, locale, timezone, goal, equipment and availability with revision/idempotency. Private saved cover preview and photo navigation are connected. Source interests, private-profile/social controls and native account details are absent; actual successful profile-save browser acceptance remains open.",
+    "backendGap": "Private interests now save atomically with profile.save and its revision; legacy clients omitting interests preserve the list. Existing Gymaf training preferences remain. Private Profile is locked on; public/off/social states remain absent. Hosted successful save/conflict/privacy acceptance remains open.",
     "mediaStatus": "Private selected cover preview connected; original source media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "PASS bounded authenticated draft/history/Keep Editing/Discard without mutation; mocked retry/acknowledgement/validation PASS. Actual successful profile mutation and full source flow NOT VERIFIED.",
+    "connectedFlowStatus": "PASS bounded mocked draft/photo/Back/retry, dirty-close/discard, focused failure and reload recovery. Earlier authenticated non-mutation evidence remains historical; current hosted interest/profile mutation NOT TESTED.",
     "evidence": [
       "Source 3bd4b4a: /app/profile/edit uses close/checkmark sheet, cover preview, Display Name and existing Gymaf training/account preferences; no database changes.",
       "Account-scoped document-memory draft retains original baseline, revision and failed commandId across photo navigation/history; field changes reset commandId. Auth/session/logout clear memory; unmount abort guard, beforeunload, dirty-close choices and explicit Reload Saved Profile replacement are implemented.",
       "Parent-reported authenticated browser: temporary unsaved name survived cover picker and Back/Forward; Keep Editing and Discard worked; original saved name verified unchanged; no profile mutation.",
       ".artifacts/profile-review/retry-payloads.json: two aborted mocked profile.save requests across photo navigation retain the same UUID and revision 4; mocked acknowledgement exits/clears draft; empty-name Save and Leave focuses field without request.",
       ".artifacts/profile-review/editor-393-final.png; editor-320-final.png; editor-1440-final.png; reload-393.png; reload-320.png. Bounded reviewer PASS; source interests/privacy variants remain absent and this row is NOT VERIFIED 1:1.",
-      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance."
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance.",
+      "Account/interests extension from 442aa4d: removable private tags and unfinished tag input retained in scoped draft; training preferences disclosure; disabled-on private switch honestly states public sharing unavailable. Source public/off variants NOT implemented.",
+      ".artifacts/account-review/profile-320-final.png; profile-393-final.png; profile-1440-final.png; profile-error-320-spacing.png; profile-error-393-spacing.png. Bounded reviewer SHIP; NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked profile.save retry across photo navigation preserves UUID and revision 4; these are not successful hosted mutations.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
     ]
   },
   {
@@ -4755,17 +4784,22 @@
     "connectedRoute": "/app/profile/edit",
     "family": "profile-edit",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Existing profile.save retains display name, locale, timezone, goal, equipment and availability with revision/idempotency. Private saved cover preview and photo navigation are connected. Source interests, private-profile/social controls and native account details are absent; actual successful profile-save browser acceptance remains open.",
+    "backendGap": "Private interests now save atomically with profile.save and its revision; legacy clients omitting interests preserve the list. Existing Gymaf training preferences remain. Private Profile is locked on; public/off/social states remain absent. Hosted successful save/conflict/privacy acceptance remains open.",
     "mediaStatus": "Private selected cover preview connected; original source media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "PASS bounded authenticated draft/history/Keep Editing/Discard without mutation; mocked retry/acknowledgement/validation PASS. Actual successful profile mutation and full source flow NOT VERIFIED.",
+    "connectedFlowStatus": "PASS bounded mocked draft/photo/Back/retry, dirty-close/discard, focused failure and reload recovery. Earlier authenticated non-mutation evidence remains historical; current hosted interest/profile mutation NOT TESTED.",
     "evidence": [
       "Source 3bd4b4a: /app/profile/edit uses close/checkmark sheet, cover preview, Display Name and existing Gymaf training/account preferences; no database changes.",
       "Account-scoped document-memory draft retains original baseline, revision and failed commandId across photo navigation/history; field changes reset commandId. Auth/session/logout clear memory; unmount abort guard, beforeunload, dirty-close choices and explicit Reload Saved Profile replacement are implemented.",
       "Parent-reported authenticated browser: temporary unsaved name survived cover picker and Back/Forward; Keep Editing and Discard worked; original saved name verified unchanged; no profile mutation.",
       ".artifacts/profile-review/retry-payloads.json: two aborted mocked profile.save requests across photo navigation retain the same UUID and revision 4; mocked acknowledgement exits/clears draft; empty-name Save and Leave focuses field without request.",
       ".artifacts/profile-review/editor-393-final.png; editor-320-final.png; editor-1440-final.png; reload-393.png; reload-320.png. Bounded reviewer PASS; source interests/privacy variants remain absent and this row is NOT VERIFIED 1:1.",
-      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance."
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance.",
+      "Account/interests extension from 442aa4d: removable private tags and unfinished tag input retained in scoped draft; training preferences disclosure; disabled-on private switch honestly states public sharing unavailable. Source public/off variants NOT implemented.",
+      ".artifacts/account-review/profile-320-final.png; profile-393-final.png; profile-1440-final.png; profile-error-320-spacing.png; profile-error-393-spacing.png. Bounded reviewer SHIP; NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked profile.save retry across photo navigation preserves UUID and revision 4; these are not successful hosted mutations.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
     ]
   },
   {
@@ -4853,14 +4887,20 @@
     ],
     "referenceRoute": "/account",
     "referenceState": "Account fields",
-    "connectedRoute": "/app/settings/service",
+    "connectedRoute": "/app/account",
     "family": "account",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Manual service cancellation and data/support requests exist. Source commercial retention/refunds and shipping flows are absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Owner-only account singleton with preferred/first/last names, biological sex, birth date, height and contact phone uses member.save revisions/idempotency. Login email is verified and read-only; phone is not authentication. Existing weight/avatar/service/support/logout links remain. Hosted save/conflict/logout, source commercial and native flows remain unaccepted.",
+    "mediaStatus": "Initials avatar link connected; original source photo and native keyboard/picker states not accepted",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked account draft/photo/Back/retry, dirty-close/discard, focused failure and reload Escape/focus return. Actual hosted save/conflict/native source flow NOT TESTED.",
+    "evidence": [
+      "Account extension from 442aa4d: /app/account Close/checkmark sheet, About You and Login groups, private contact fields, read-only verified login email, existing weight/avatar links and membership/help/signout footer.",
+      ".artifacts/account-review/account-320-final.png; account-393-final.png; account-1440-final.png. Bounded account reviewer SHIP after visibility/copy/switch/error-spacing fixes; source native/editing variants NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked member.save account retry retains UUID and revision 1 through photo/back navigation; account-error-393-fixed.png and account-reload-320.png document bounded failure/reload states. No hosted account mutation acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
+    ]
   },
   {
     "id": "1ae56351357fac91",
@@ -4873,14 +4913,20 @@
     ],
     "referenceRoute": "/account",
     "referenceState": "Edit Preferred Name",
-    "connectedRoute": "/app/settings/service",
+    "connectedRoute": "/app/account",
     "family": "account",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Manual service cancellation and data/support requests exist. Source commercial retention/refunds and shipping flows are absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Owner-only account singleton with preferred/first/last names, biological sex, birth date, height and contact phone uses member.save revisions/idempotency. Login email is verified and read-only; phone is not authentication. Existing weight/avatar/service/support/logout links remain. Hosted save/conflict/logout, source commercial and native flows remain unaccepted.",
+    "mediaStatus": "Initials avatar link connected; original source photo and native keyboard/picker states not accepted",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked account draft/photo/Back/retry, dirty-close/discard, focused failure and reload Escape/focus return. Actual hosted save/conflict/native source flow NOT TESTED.",
+    "evidence": [
+      "Account extension from 442aa4d: /app/account Close/checkmark sheet, About You and Login groups, private contact fields, read-only verified login email, existing weight/avatar links and membership/help/signout footer.",
+      ".artifacts/account-review/account-320-final.png; account-393-final.png; account-1440-final.png. Bounded account reviewer SHIP after visibility/copy/switch/error-spacing fixes; source native/editing variants NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked member.save account retry retains UUID and revision 1 through photo/back navigation; account-error-393-fixed.png and account-reload-320.png document bounded failure/reload states. No hosted account mutation acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
+    ]
   },
   {
     "id": "d7e03432f62fa9cf",
@@ -4905,14 +4951,20 @@
     ],
     "referenceRoute": "/account",
     "referenceState": "Scroll to login details and billing links",
-    "connectedRoute": "/app/settings/service",
+    "connectedRoute": "/app/account",
     "family": "account",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Manual service cancellation and data/support requests exist. Source commercial retention/refunds and shipping flows are absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Owner-only account singleton with preferred/first/last names, biological sex, birth date, height and contact phone uses member.save revisions/idempotency. Login email is verified and read-only; phone is not authentication. Existing weight/avatar/service/support/logout links remain. Hosted save/conflict/logout, source commercial and native flows remain unaccepted.",
+    "mediaStatus": "Initials avatar link connected; original source photo and native keyboard/picker states not accepted",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked account draft/photo/Back/retry, dirty-close/discard, focused failure and reload Escape/focus return. Actual hosted save/conflict/native source flow NOT TESTED.",
+    "evidence": [
+      "Account extension from 442aa4d: /app/account Close/checkmark sheet, About You and Login groups, private contact fields, read-only verified login email, existing weight/avatar links and membership/help/signout footer.",
+      ".artifacts/account-review/account-footer-320.png; account-footer-393.png; account-footer-1440.png. Bounded account reviewer SHIP after visibility/copy/switch/error-spacing fixes; source native/editing variants NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked member.save account retry retains UUID and revision 1 through photo/back navigation; account-error-393-fixed.png and account-reload-320.png document bounded failure/reload states. No hosted account mutation acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
+    ]
   },
   {
     "id": "7d8dea8cbab0f554",
@@ -4925,14 +4977,20 @@
     ],
     "referenceRoute": "/account",
     "referenceState": "Captured editable input and reference keyboard; ordinary app uses device keyboard",
-    "connectedRoute": "/app/settings/service",
+    "connectedRoute": "/app/account",
     "family": "account",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Manual service cancellation and data/support requests exist. Source commercial retention/refunds and shipping flows are absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Owner-only account singleton with preferred/first/last names, biological sex, birth date, height and contact phone uses member.save revisions/idempotency. Login email is verified and read-only; phone is not authentication. Existing weight/avatar/service/support/logout links remain. Hosted save/conflict/logout, source commercial and native flows remain unaccepted.",
+    "mediaStatus": "Initials avatar link connected; original source photo and native keyboard/picker states not accepted",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked account draft/photo/Back/retry, dirty-close/discard, focused failure and reload Escape/focus return. Actual hosted save/conflict/native source flow NOT TESTED.",
+    "evidence": [
+      "Account extension from 442aa4d: /app/account Close/checkmark sheet, About You and Login groups, private contact fields, read-only verified login email, existing weight/avatar links and membership/help/signout footer.",
+      ".artifacts/account-review/account-320-final.png; account-393-final.png; account-1440-final.png. Bounded account reviewer SHIP after visibility/copy/switch/error-spacing fixes; source native/editing variants NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked member.save account retry retains UUID and revision 1 through photo/back navigation; account-error-393-fixed.png and account-reload-320.png document bounded failure/reload states. No hosted account mutation acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
+    ]
   },
   {
     "id": "fb935a0aeee796e9",
@@ -4945,14 +5003,20 @@
     ],
     "referenceRoute": "/account",
     "referenceState": "Save phone number and dismiss keyboard",
-    "connectedRoute": "/app/settings/service",
+    "connectedRoute": "/app/account",
     "family": "account",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Manual service cancellation and data/support requests exist. Source commercial retention/refunds and shipping flows are absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Owner-only account singleton with preferred/first/last names, biological sex, birth date, height and contact phone uses member.save revisions/idempotency. Login email is verified and read-only; phone is not authentication. Existing weight/avatar/service/support/logout links remain. Hosted save/conflict/logout, source commercial and native flows remain unaccepted.",
+    "mediaStatus": "Initials avatar link connected; original source photo and native keyboard/picker states not accepted",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked account draft/photo/Back/retry, dirty-close/discard, focused failure and reload Escape/focus return. Actual hosted save/conflict/native source flow NOT TESTED.",
+    "evidence": [
+      "Account extension from 442aa4d: /app/account Close/checkmark sheet, About You and Login groups, private contact fields, read-only verified login email, existing weight/avatar links and membership/help/signout footer.",
+      ".artifacts/account-review/account-320-final.png; account-393-final.png; account-1440-final.png. Bounded account reviewer SHIP after visibility/copy/switch/error-spacing fixes; source native/editing variants NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked member.save account retry retains UUID and revision 1 through photo/back navigation; account-error-393-fixed.png and account-reload-320.png document bounded failure/reload states. No hosted account mutation acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
+    ]
   },
   {
     "id": "8724ed8b412f949b",
@@ -4965,18 +5029,23 @@
     ],
     "referenceRoute": "/account",
     "referenceState": "Choose Sign Out to open confirmation",
-    "connectedRoute": "/app/profile/edit",
+    "connectedRoute": "/app/account",
     "family": "account",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Sign Out confirmation uses the existing auth/logout endpoint with Cancel default focus and recoverable failure. Actual successful logout is not browser-verified; other source account/commercial/native details remain absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Owner-only account singleton with preferred/first/last names, biological sex, birth date, height and contact phone uses member.save revisions/idempotency. Login email is verified and read-only; phone is not authentication. Existing weight/avatar/service/support/logout links remain. Hosted save/conflict/logout, source commercial and native flows remain unaccepted.",
+    "mediaStatus": "Initials avatar link connected; original source photo and native keyboard/picker states not accepted",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "PASS bounded confirmation/Cancel and mocked sign-out failure recovery; actual successful logout NOT VERIFIED.",
+    "connectedFlowStatus": "Account footer now links existing Sign Out confirmation. Earlier bounded mocked failure/Cancel evidence remains; successful hosted logout NOT VERIFIED.",
     "evidence": [
       "Source 3bd4b4a: SignOutButton in profile-editor.tsx uses the existing auth/logout endpoint, Cancel default focus, pending guard and failure recovery; no database changes.",
       ".artifacts/profile-review/signout-393-final.png; signout-320-final.png; signout-1440-final.png; signout-error-320-final.png. Bounded reviewer PASS; PRF-01 resolved with Sign Out contrast 4.65:1.",
       "Parent-reported mocked sign-out failure and Cancel checked; no actual successful logout performed. Other source account states are not promoted.",
-      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS; production design-review 404, detector []."
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS; production design-review 404, detector [].",
+      "Account extension from 442aa4d: /app/account Close/checkmark sheet, About You and Login groups, private contact fields, read-only verified login email, existing weight/avatar links and membership/help/signout footer.",
+      ".artifacts/account-review/account-footer-320.png; account-footer-393.png; account-footer-1440.png. Bounded account reviewer SHIP after visibility/copy/switch/error-spacing fixes; source native/editing variants NOT VERIFIED 1:1.",
+      ".artifacts/account-review/retry-requests.jsonl: mocked member.save account retry retains UUID and revision 1 through photo/back navigation; account-error-393-fixed.png and account-reload-320.png document bounded failure/reload states. No hosted account mutation acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: account source 20260906031729 installed as 20260906033135; rating source 20260906033420 installed as 20260906034708. Twelve migrations installed; this is schema evidence, not browser proof.",
+      "Final parent-reported local checks in .artifacts/rating-review/: build-final.log build/TypeScript PASS; unit-final.log 39 PASS; lint-final.log 0 errors/2 prior warnings; http-final.log 3 mocked HTTP PASS; full-db.log fresh PostgreSQL 17.4 gymaf_account_rating_final, all 12 migrations + seed + 7 SQL suites PASS with simulated provider JWT/Storage. Current batch commit/push/CI pending."
     ]
   },
   {

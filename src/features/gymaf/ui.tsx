@@ -49,10 +49,10 @@ export function Note({ children }: { children: ReactNode }) { return <p classNam
 export function ErrorNote({ message }: { message?: string }) { return message ? <p className="gymaf-error" role="alert">{message}</p> : null; }
 export function Pending({ error, reload }: { error?: string; reload?: () => void }) { return <section className="gymaf-panel" aria-busy={!error}>{error ? <><ErrorNote message={error} />{reload && <button className="button" onClick={reload}>Retry</button>}<Link className="button" href="/login">Sign in</Link></> : <p role="status">Loading…</p>}</section>; }
 export function Empty({ children }: { children: ReactNode }) { return <div className="empty-state gymaf-empty"><CalendarDays size={32} /><div>{children}</div></div>; }
-export function Dialog({ title, children, onClose, className = "" }: { title: string; children: ReactNode; onClose: () => void; className?: string }) {
+export function Dialog({ title, children, onClose, className = "", decoration }: { title: string; children: ReactNode; onClose: () => void; className?: string; decoration?:ReactNode }) {
   const ref = useRef<HTMLDialogElement>(null), titleId = useId();
   useEffect(() => { const dialog = ref.current, trigger = document.activeElement; dialog?.showModal(); return () => { dialog?.close(); if (trigger instanceof HTMLElement && trigger.isConnected) trigger.focus(); }; }, []);
-  return <dialog ref={ref} className={`sheet ${className}`} aria-labelledby={titleId} onCancel={event => { event.preventDefault(); onClose(); }} onClick={event => { if (event.target === event.currentTarget) onClose(); }}><div className="sheet-inner"><header><button type="button" className="icon-button" onClick={onClose} aria-label="Close"><X /></button><h2 id={titleId}>{title}</h2></header><div className="sheet-content gymaf-stack">{children}</div></div></dialog>;
+  return <dialog ref={ref} className={`sheet ${className}`} aria-labelledby={titleId} onCancel={event => { event.preventDefault(); onClose(); }} onClick={event => { if (event.target === event.currentTarget) onClose(); }}>{decoration}<div className="sheet-inner"><header><button type="button" className="icon-button" onClick={onClose} aria-label="Close"><X /></button><h2 id={titleId}>{title}</h2></header><div className="sheet-content gymaf-stack">{children}</div></div></dialog>;
 }
 export function Navigation({ area, active, locale, query = "" }: { area: "app" | "coach"; active: string; locale: Locale; query?: string }) {
   const entries = area === "coach" ? [

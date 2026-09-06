@@ -83,3 +83,7 @@ jobs:
         run: psql -v ON_ERROR_STOP=1 -f tests/db/session-feedback.sql
       - name: Private media ownership and lifecycle regression tests
         run: psql -v ON_ERROR_STOP=1 -f tests/db/member-media.sql
+      - name: Private account and interest regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/account-details.sql
+      - name: Private coach rating regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/coach-rating.sql

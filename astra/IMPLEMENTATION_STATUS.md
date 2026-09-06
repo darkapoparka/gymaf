@@ -1,8 +1,23 @@
 # Astra implementation status
 
-Updated 6 September 2026. Current review worktree: `M:/gym-fidelity`, branch `review/mobbin-fidelity`, current profile source commit `3bd4b4a` (local; push/CI pending at this checkpoint). The sections below preserve earlier evidence from development branch `astra` and its original base `82b75bde5b4ac2fa355ee98e0efc39fc470ebac6`. The connected web implementation is not the completed production/native roadmap.
+Updated 6 September 2026. Current review worktree: `M:/gym-fidelity`, branch `review/mobbin-fidelity`, account/rating batch starting HEAD `442aa4d`; current-batch commit/push/CI pending. The latest checkpoint below overrides only the facts it updates; earlier development and review evidence is preserved. The connected web implementation is not the completed production/native roadmap.
 
-## Current checkpoint — profile editor and sign-out
+## Current checkpoint — private account, interests and coach rating
+
+`/app/account` now provides owner-only account details, read-only verified login email, existing weight/avatar links, membership/help and Sign Out. `/app/profile/edit` adds removable private interests saved atomically with `profile.save` and its revision; older clients omitting interests preserve the list. Existing training preferences remain in a disclosure. Unfinished tag input, baseline/revision and failed command IDs survive photo navigation in scoped document-memory drafts; auth changes clear them. Public sharing remains unavailable; the disabled Private Profile switch does not accept the source off state.
+
+`/app/messages/rate?relationship=[id]` opens from the conversation Star control and saves a private 1–5 rating for the active owned relationship. Queries and export are owner-only; a save sends no coach message or notification. Ended relationships are read-only. Same-document history preserves rating drafts and retry IDs. Dirty-close/discard, explicit reload replacement, focused actionable errors and beforeunload protect unsaved work. [ADR-011](ADR-011-PRIVATE-ACCOUNT-AND-RATING.md) records the contracts and limits.
+
+- **Hosted schema PASS, parent-reported:** approved development project `crhcgcqanoeoddmwaqhb`: source account `20260906031729` → hosted `20260906033135`; source rating `20260906033420` → hosted `20260906034708`. All twelve hosted migrations installed. This is schema evidence, not a hosted browser save/privacy journey.
+- **Local checks, parent-reported:** final combined build/TypeScript PASS; 39 unit PASS; lint zero errors/two existing coach warnings; three mocked HTTP tests PASS, including private-account authenticated ownership/schema mapping, origin, 422, GY409 and 404. Fresh PostgreSQL 17.4 `gymaf_account_rating_final` on port 55445 passed all twelve migrations, seed and seven SQL suites, including malformed account fields/singleton/owner overrides. Local provider JWT context and Storage metadata are simulated. Logs: `.artifacts/rating-review/{build-final,unit-final,lint-final,http-final,full-db}.log`; `git diff --check` PASS.
+- **Mocked browser PASS, bounded and parent-reported:** account/profile failed-save → photo → Back → retry retained original UUID/revision; dirty close/discard, actionable error focus and reload Escape/focus return checked at bounded 320/393/1440 states. Rating Back/Forward restored selection 4, failed save/retry retained the same UUID/revision 0, dirty close and return focus to Rate your coach passed; page-exit beforeunload fired and was canceled; checked 320px had no overflow. These are mocked contract journeys only; no hosted account/profile/rating mutation or successful logout acceptance is added.
+- **Bounded finish review SHIP, parent-reported:** account visibility/copy/switch/error-spacing findings resolved; rating has no material findings. Final capture/request lists are in [FRONTEND_PARITY.md](FRONTEND_PARITY.md). Reviewer SHIP and detector `[]` are not 1:1 acceptance.
+
+Twelve individual ledger rows receive evidence; only rating IDs `9b10c8dd53f773c4` and `5f192b1462a126b6` move from absent to partial. Totals: **222 partial / 48 not implemented / zero verified 1:1**. All 270 captures/84 flows remain **NOT COMPLETE / NOT VERIFIED 1:1**. Native input/media, public sharing, commercial service variants, hosted mutation/conflict/privacy/export journeys and individual paired source acceptance remain open.
+
+Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) continues toward `astra`; current batch commit/push/CI are pending. No main merge or production promotion. `PRODUCT.md`, `DESIGN.md` and `.impeccable` are unchanged; legacy drift remains outside authorization.
+
+## Earlier checkpoint — profile editor and sign-out
 
 `/app/profile/edit` now uses a Close/checkmark Save sheet with saved cover preview and Display Name, retaining Gymaf goal/equipment/availability/language/timezone fields. New `profile-editor.tsx`, `profile-drafts.ts` and `sign-out.tsx` retain existing profile-save and logout contracts; no database changes. Source interests, private-profile/social controls and native account details remain absent.
 

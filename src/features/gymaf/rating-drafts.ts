@@ -1,0 +1,12 @@
+import type { CoachRating } from '@/shared/gymaf/contracts';
+export type RatingDraft={rating:number|null;baseline:number|null;revision:number;commandId?:string};
+const drafts=new Map<string,RatingDraft>();
+const focusReturns=new Set<string>();
+const key=(owner:string,relationship:string)=>`${owner}:${relationship}`;
+export const freshRatingDraft=(saved:CoachRating):RatingDraft=>({rating:saved.rating,baseline:saved.rating,revision:saved.revision});
+export const getRatingDraft=(owner:string,relationship:string)=>drafts.get(key(owner,relationship));
+export const putRatingDraft=(owner:string,relationship:string,draft:RatingDraft)=>drafts.set(key(owner,relationship),draft);
+export const forgetRatingDraft=(owner:string,relationship:string)=>drafts.delete(key(owner,relationship));
+export const clearRatingDrafts=()=>{drafts.clear();focusReturns.clear();};
+export const requestRatingFocus=(owner:string,relationship:string)=>focusReturns.add(key(owner,relationship));
+export const takeRatingFocus=(owner:string,relationship:string)=>focusReturns.delete(key(owner,relationship));
