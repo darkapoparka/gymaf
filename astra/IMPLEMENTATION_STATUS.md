@@ -1,6 +1,6 @@
 # Astra implementation status
 
-Updated 6 September 2026. Current review worktree: `M:/gym-fidelity`, branch `review/mobbin-fidelity`, shipping increment after `4de2d3c3d167c6cdb1320e4be57890d838a93657`; shipping source commit/push/CI pending. The current checkpoint overrides only updated facts; earlier evidence remains historical. The connected web implementation is not the completed production/native roadmap.
+Updated 6 September 2026. Current review worktree: `M:/gym-fidelity`, branch `review/mobbin-fidelity`, shipping increment after `4de2d3c3d167c6cdb1320e4be57890d838a93657`; latest implementation source `897b9025cf5b2e55262b34751609e6923a133c33` pushed with passing CI `34012093019`. The current checkpoint overrides only updated facts; earlier evidence remains historical. The connected web implementation is not the completed production/native roadmap.
 
 ## Current checkpoint — private shipping address
 
@@ -15,7 +15,7 @@ Auth-scoped document-memory drafts survive same-document history with separate s
 
 Only three individual shipping form rows gain partial coverage: **232 partial / 38 not implemented / zero verified 1:1** across 270 captures/84 flows, all **NOT COMPLETE / NOT VERIFIED 1:1**. Native picker `716fd33fa6bc37d2` remains Not implemented. Original background, OS keyboard/picker, provider browser save/conflict/remove/export, fulfillment and native acceptance remain open.
 
-Directory source was pushed as `4de2d3c3d167c6cdb1320e4be57890d838a93657` and exact [CI 34011418342](https://github.com/darkapoparka/gymaf/actions/runs/34011418342) passed, superseding its earlier pending-publication notes. PR #3 Vercel Preview check passed deployment completion, not hosted UI acceptance. Shipping commit/push/CI remain pending. Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) targets `astra`; no main merge or production promotion. `DESIGN.md`, `PRODUCT.md` and `.impeccable` remain unchanged.
+Directory source was pushed as `4de2d3c3d167c6cdb1320e4be57890d838a93657` and exact [CI 34011418342](https://github.com/darkapoparka/gymaf/actions/runs/34011418342) passed, superseding its earlier pending-publication notes. PR #3 Vercel Preview check passed deployment completion, not hosted UI acceptance. Shipping source was committed and pushed as `897b9025cf5b2e55262b34751609e6923a133c33`; exact [CI 34012093019](https://github.com/darkapoparka/gymaf/actions/runs/34012093019) passed both web and database jobs. The Vercel Preview check reports deployment completion, not hosted UI acceptance. Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) targets `astra`; no main merge or production promotion. `DESIGN.md`, `PRODUCT.md` and `.impeccable` remain unchanged.
 
 ## Earlier checkpoint — opted-in coach directory
 

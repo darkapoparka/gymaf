@@ -1,6 +1,6 @@
 # ADR-013: Private shipping address preference
 
-Date: 6 September 2026. Status: implemented locally after `4de2d3c3d167c6cdb1320e4be57890d838a93657` on `review/mobbin-fidelity` in `M:/gym-fidelity`. Migration installed on approved hosted development. Bounded finish review SHIP, including closure of P3 local-validation feedback. Shipping source commit/push/CI pending; overall parity remains NOT COMPLETE / NOT VERIFIED 1:1.
+Date: 6 September 2026. Status: implemented locally after `4de2d3c3d167c6cdb1320e4be57890d838a93657` on `review/mobbin-fidelity` in `M:/gym-fidelity`. Migration installed on approved hosted development. Bounded finish review SHIP, including closure of P3 local-validation feedback. Shipping source was committed and pushed as `897b9025cf5b2e55262b34751609e6923a133c33`; exact [CI 34012093019](https://github.com/darkapoparka/gymaf/actions/runs/34012093019) passed both web and database jobs. The Vercel Preview check reports deployment completion, not hosted UI acceptance.; overall parity remains NOT COMPLETE / NOT VERIFIED 1:1.
 
 ## Decision
 
