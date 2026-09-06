@@ -1,0 +1,78 @@
+{
+  "base": "3fd9e6a88cd225cb9632efb5d13836a6c9f4ae22",
+  "updatedPartialRows": [
+    "d4a7f160bad9d7dc",
+    "f0f3ca0dcba09a07",
+    "4050314ce4aaa198",
+    "8ee44ade589ce9ac",
+    "c143403931126a67",
+    "1ee01f448b7491b4",
+    "ffc4e49a11c1acaf",
+    "6786891202a185f3",
+    "153228f229e7dca2",
+    "537d86727616b47e",
+    "39e4f69484b293fb",
+    "ff2cd4ca6797cee1",
+    "03c8df3d92da317a",
+    "452442b79e2166cf",
+    "628aa2e63266eb7e",
+    "7887b9889658f2a9",
+    "14a78fdd2e2f981c",
+    "098311074fbc0d30",
+    "dac1a3cf0fffb20a",
+    "9f32c528eb3122b5",
+    "b406dae55f8f7185",
+    "80ef1b95989ab0a5",
+    "ce5d958da4fdbea8",
+    "cc20067000d4f87f",
+    "cc47b92925d101cb",
+    "e690c12004fa0b11",
+    "cdd7b72066569858",
+    "716fd33fa6bc37d2",
+    "004036150c4419a6",
+    "c2a9ab379931c3f0",
+    "b9f1086598b7e89b",
+    "3f2fbd0e4124e8a1"
+  ],
+  "commercialAbsentRows": [
+    "10cf3bdb6b6600bd",
+    "1c9c16701eb28a46",
+    "230ba48bd84b5618",
+    "37e236af15c00e2a",
+    "6699b1f8a7f819b9",
+    "818823fea239b926"
+  ],
+  "counts": {
+    "partial": 264,
+    "notImplemented": 6,
+    "verified1to1": 0
+  },
+  "scope": "Web adaptations, not 32 exact source-state completions. Existing browser select reclassified as partial without native recreation.",
+  "hostedMigrations": "Three new migrations NOT INSTALLED; local simulation only",
+  "validation": {
+    "unit": 48,
+    "sqlSuites": 12,
+    "httpSuites": 4,
+    "reviewDisposition": "ship for bounded web increment; two P2 fixes resolved",
+    "build": "PASS final",
+    "typecheck": "PASS final",
+    "lint": "0 errors; 2 pre-existing warnings",
+    "database": "gymaf_remaining_accepted: final17migrations+seed+12suitesPASS",
+    "http": "4PASS final"
+  },
+  "browserLogs": [
+    ".artifacts/remaining-review/browser-checks.json",
+    ".artifacts/remaining-review/media-browser-checks.json",
+    ".artifacts/remaining-review/gallery-browser-checks.json",
+    ".artifacts/remaining-review/review-fixes-browser.json"
+  ],
+  "open": [
+    "Six commercial source states",
+    "Original portraits and source content",
+    "Exact source-paired pixel parity",
+    "Actual mobile hardware camera/codec checks",
+    "Native iOS integrations",
+    "Hosted migrations and authenticated provider journeys"
+  ],
+  "browserLimits": "Additional shipping native-popup capture automation timed out; no native-picker rendered acceptance claimed. Other named successful logs remain valid."
+}

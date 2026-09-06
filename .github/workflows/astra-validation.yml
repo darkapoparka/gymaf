@@ -91,3 +91,9 @@ jobs:
         run: psql -v ON_ERROR_STOP=1 -f tests/db/coach-directory.sql
       - name: Private shipping address regression tests
         run: psql -v ON_ERROR_STOP=1 -f tests/db/shipping-address.sql
+      - name: Appointment ownership, retry and availability tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/appointments.sql
+      - name: Private friend invitation and sharing tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/friends.sql
+      - name: Conversation media sharing and storage policies
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/conversation-media.sql

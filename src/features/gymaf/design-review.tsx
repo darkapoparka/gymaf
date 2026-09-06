@@ -14,6 +14,13 @@ import { SessionView } from './session-view';
 import type { Bootstrap, MemberRecord, RelationshipDetail, SessionState } from '@/shared/gymaf/contracts';
 import { ClientHome, ProgressView, ProfileOverview, ScheduleView, WorkoutDetailView } from './client-views';
 import { Navigation } from './ui';
+import { BookingView, type BookingData } from './appointments';
+
+function BookingReview(){
+ const [data,setData]=useState<BookingData>(()=>({coachName:'Synthetic Coach',slots:Array.from({length:12},(_,i)=>{const start=Date.UTC(2026,8,10+Math.floor(i/4),9+(i%4));return {id:'visual-slot-'+i,workspaceId:'visual-workspace',startsAt:new Date(start).toISOString(),endsAt:new Date(start+1800000).toISOString(),cancelMinutes:60,state:'available',reserved:false};}),appointments:[]}));
+ const [busy,setBusy]=useState(false);
+ return <div className="gymaf-connected gymaf-client"><main className="app-shell"><BookingView data={data} zone="Europe/Sofia" back="/design-review?view=home&frame=1" busy={busy} reload={()=>{}} onBook={async slot=>{setBusy(true);await new Promise(resolve=>setTimeout(resolve,350));setData(previous=>({...previous,slots:previous.slots.filter(s=>s.id!==slot.id),appointments:[...previous.appointments,{...slot,id:crypto.randomUUID(),slotId:slot.id,coachName:'Synthetic Coach',state:'booked',canCancel:true}]}));setBusy(false);return true;}} onCancel={async item=>{setData(previous=>({...previous,appointments:previous.appointments.map(a=>a.id===item.id?{...a,state:'canceled',canCancel:false}:a)}));return true;}}/></main></div>;
+}
 const profile={id:'visual-client',display_name:'Alex Smith',locale:'en' as const,timezone:'Europe/Sofia',goal:'Increase Muscle Mass',equipment:'Dumbbells, Yoga Mat',availability:'Monday, Wednesday, Friday',revision:1};
 const relationship={id:'visual-relationship',workspace_id:'visual-workspace',client_user_id:profile.id,coach_user_id:'visual-coach',state:'active' as const,client_name:profile.display_name,coach_name:'Your Coach'};
 const account:Bootstrap={user:profile,relationships:[relationship],workspaces:[],operator:false,requires_mfa:false,local_mode:true,notifications:[]};
@@ -43,6 +50,7 @@ export function DesignReview({view}:{view:string}) {
  async function saveFeedback(next:import('@/shared/gymaf/contracts').FeedbackData){setFeedbackBusy(true);await new Promise(resolve=>setTimeout(resolve,400));setFeedback(r=>({...r,revision:r.revision+1,data:next}));setFeedbackBusy(false);return true;}
  const [favorites,setFavorites]=useState<import('@/shared/gymaf/contracts').WorkoutFavorite[]>([]);
  const [data,setData]=useState(initial),[user,setUser]=useState<Bootstrap['user']>(profile),[sessionState,setSessionState]=useState<SessionState>("in_progress");
+ if(view==='booking')return <BookingReview/>;
  if(view==='profile-edit'||view==='profile-error')return <div className="gymaf-connected gymaf-client"><main id="main" className="app-shell"><ProfileEditorView user={user} footer={<SignOutButton onSignOut={async()=>{throw new Error('Synthetic sign-out failure. Retry or cancel.');}}/>} onLeave={()=>router.push('/design-review?view=profile&frame=1')} onSave={async draft=>{await new Promise(resolve=>setTimeout(resolve,450));if(view==='profile-error')throw new Error('A newer profile was saved. Reload the saved profile before saving your changes.');setUser({...user,display_name:draft.fields.displayName,goal:draft.fields.goal,equipment:draft.fields.equipment,availability:draft.fields.availability,locale:draft.fields.locale,timezone:draft.fields.timezone,revision:user.revision+1});}} onReload={async()=>({...user,display_name:'Alex Smith',revision:user.revision+1})}/></main></div>;
  if(['photos','photo-error','cover-photos','avatar-photos'].includes(view))return <MediaReview key={view} view={view}/>;
  if(view==='library')return <div className="gymaf-connected gymaf-client"><TrainingLibraryView data={{...data,workouts:Array.from({length:6},(_,i)=>({...data.workouts[0],id:'visual-scheduled-'+i,prescription:{...prescription,title:['Core and Glutes Burner','Full Body Strength','Upper Body Power Hour','Quick Core Crusher','Morning Yoga Flow','Conditioning'][i]}}))}} query="" favorites={favorites} onFavorite={(w,favorite)=>setFavorites(rows=>[...rows.filter(f=>f.scheduled_id!==w.id),{scheduled_id:w.id,favorite,revision:1}])}/></div>;

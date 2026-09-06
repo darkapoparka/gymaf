@@ -1,4 +1,5 @@
 "use client";
+import { clearAttachmentDrafts } from "./attachment-drafts";
 import { clearPhotoDrafts } from "./media-drafts";
 import { clearDirectoryDrafts } from "./directory-data";
 import { clearShippingDrafts } from "./shipping-drafts";
@@ -36,7 +37,7 @@ export async function api<T>(path: string, options: { method?: "GET" | "POST" | 
     if (response.status === 401) window.dispatchEvent(new Event("gymaf-session-expired"));
     throw new ApiError(response.status, result?.error?.code || "REQUEST_FAILED", result?.error?.message || "The request failed. Please retry.");
   }
-  if (path === "auth/verify-code" || path === "auth/logout") { clearFeedbackDrafts();clearPhotoDrafts();clearProfileDrafts();clearAccountDrafts();clearRatingDrafts();clearDirectoryDrafts();clearShippingDrafts(); }
+  if (path === "auth/verify-code" || path === "auth/logout") { clearFeedbackDrafts();clearPhotoDrafts();clearAttachmentDrafts();clearProfileDrafts();clearAccountDrafts();clearRatingDrafts();clearDirectoryDrafts();clearShippingDrafts(); }
   if ((path === "auth/verify-code" || path === "auth/logout") && typeof BroadcastChannel !== "undefined") { const channel = new BroadcastChannel("gymaf-session"); channel.postMessage("changed"); channel.close(); }
   return result.data as T;
 }

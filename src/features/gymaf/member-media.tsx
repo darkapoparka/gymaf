@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import { Camera, Check, ChevronLeft, Images, Plus, Trash2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { CameraCapture } from './camera-capture';
 import type { Bootstrap, MemberMedia, RelationshipDetail } from '@/shared/gymaf/contracts';
 import { localDate } from '@/shared/gymaf/validation';
 import { api } from './api';
@@ -34,6 +35,7 @@ export function PhotoEntry({kind,draftKey,today,onClose,onUpload,onSaved}:{kind:
   const [draft,setDraft]=useState<PhotoDraft>(()=>getPhotoDraft(draftKey)||{date:today,photos:{}}),[busy,setBusy]=useState(false),[error,setError]=useState(''),[discard,setDiscard]=useState(false);
   const running=useRef(false),controller=useRef<AbortController|null>(null),mounted=useRef(true);
   const [source,setSource]=useState<MemberMedia['view']|null>(null);
+  const [camera,setCamera]=useState<MemberMedia['view']|null>(null);
   const views:MemberMedia['view'][]=kind==='progress'?['front','back','side']:['image'];
   const dirty=Object.values(draft.photos).some(photo=>!photo?.saved);
   function update(next:PhotoDraft){putPhotoDraft(draftKey,next);setDraft(next);}
@@ -60,7 +62,7 @@ export function PhotoEntry({kind,draftKey,today,onClose,onUpload,onSaved}:{kind:
       {error&&<p className="photo-retry-note">Saved photos stay saved. Retry Save to finish the remaining photos.</p>}
       <button className="button primary full" disabled={busy||!dirty}>{busy?'Saving…':'Save'}</button>
     </form>
-  </Dialog>{source&&<Dialog title="Choose Photo Source" className="photo-source-dialog member-photo-source" onClose={()=>setSource(null)}>{['Take Photo','Photo Library'].map(label=><label className="photo-pick" key={label}>{label}<input type="file" accept="image/jpeg,image/png,image/webp" capture={label==='Take Photo'?'environment':undefined} aria-label={label} onChange={e=>{const file=e.target.files?.[0];e.target.value='';if(!file)return;setSource(null);if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>4194304||!file.size){setError('Choose a JPEG, PNG or WebP photo smaller than 4 MB.');return;}setError('');update({...draft,photos:{...draft.photos,[source]:{id:crypto.randomUUID(),file,saved:false}}});}}/></label>)}<button className="button" onClick={()=>setSource(null)}>Cancel</button></Dialog>}{discard&&<Dialog title="Discard selected photos?" onClose={()=>setDiscard(false)}><p>Unsaved selections will be removed. Photos already saved will remain in your library.</p><button className="button primary" onClick={()=>setDiscard(false)}>Keep Editing</button><button className="button" onClick={()=>{forgetPhotoDraft(draftKey);setDiscard(false);onClose();}}>Discard Selections</button></Dialog>}</>;
+  </Dialog>{source&&<Dialog title="Choose Photo Source" className="photo-source-dialog member-photo-source" onClose={()=>setSource(null)}><button className="photo-pick" onClick={()=>{setCamera(source);setSource(null);}}>Take Photo</button><label className="photo-pick">Photo Library<input type="file" accept="image/jpeg,image/png,image/webp" aria-label="Photo Library" onChange={e=>{const file=e.target.files?.[0];e.target.value='';if(!file)return;setSource(null);if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>4194304||!file.size){setError('Choose a JPEG, PNG or WebP photo smaller than 4 MB.');return;}setError('');update({...draft,photos:{...draft.photos,[source]:{id:crypto.randomUUID(),file,saved:false}}});}}/></label><button className="button" onClick={()=>setSource(null)}>Cancel</button></Dialog>}{camera&&<CameraCapture onClose={()=>setCamera(null)} onPhoto={file=>{setError('');update({...draft,photos:{...draft.photos,[camera]:{id:crypto.randomUUID(),file,saved:false}}});setCamera(null);}}/>}{discard&&<Dialog title="Discard selected photos?" onClose={()=>setDiscard(false)}><p>Unsaved selections will be removed. Photos already saved will remain in your library.</p><button className="button primary" onClick={()=>setDiscard(false)}>Keep Editing</button><button className="button" onClick={()=>{forgetPhotoDraft(draftKey);setDiscard(false);onClose();}}>Discard Selections</button></Dialog>}</>;
 }
 export function MemberMediaView({items,kind,today,draftKey,back,onUpload,onSaved,onRemove,onSelect,onDone,renderPhoto=(item)=><PrivatePhoto item={item}/>}:{items:MemberMedia[];kind:Kind;today:string;draftKey:string;back:string;onUpload:Parameters<typeof PhotoEntry>[0]['onUpload'];onSaved:()=>void;onRemove:(item:MemberMedia)=>Promise<void>;onSelect:(item:MemberMedia)=>Promise<void>;onDone:()=>void;renderPhoto?:(item:MemberMedia)=>ReactNode}){
   const [adding,setAdding]=useState(()=>!!getPhotoDraft(draftKey)),[viewing,setViewing]=useState<MemberMedia|null>(null),[confirm,setConfirm]=useState(false),[busy,setBusy]=useState(false),[error,setError]=useState('');

@@ -8,6 +8,7 @@ import { ExerciseHistoryPanel } from "./exercise-history";
 import { SessionFeedbackPanel, SessionFlagPanel } from "./session-feedback";
 import { SessionSummary } from "./session-summary";
 import { SessionView } from "./session-view";
+import { AttachmentComposer } from './conversation-media';
 import { elapsedSeconds } from "@/shared/gymaf/validation";
 import { ErrorNote, Field, Note, Pending, useCommand, useResource } from "./ui";
 
@@ -65,5 +66,5 @@ export function SessionScreen({ id, back, ownerId }: { id: string; back: string;
     });
   };
   if (session.state === 'completed' || session.state === 'abandoned') return <SessionSummary detail={resource.data} back={back} renderSets={renderSets} feedbackDirty={feedbackDirty} onDirtyExit={href=>{setExitTarget(href);setExitRequest(n=>n+1);}} feedback={<SessionFeedbackPanel ownerId={ownerId} exitRequest={exitRequest} onLeave={()=>router.push(exitTarget)} sessionId={id} exercises={session.prescription.exercises} onDirty={setFeedbackDirty}/>}/>;
-  return <SessionView renderFlag={(exerciseId,close)=><SessionFlagPanel ownerId={ownerId} sessionId={id} exercise={session.prescription.exercises.find(e=>e.id===exerciseId)!} onClose={close}/>} preferences={preferences} detail={resource.data} elapsed={elapsed} back={back} dirty={!!dirty.size} busy={transition.busy} error={resource.error || transition.error} onTransition={state => void change(state)} renderSets={renderSets} renderHistory={exerciseId=><ExerciseHistoryPanel sessionId={id} exerciseId={exerciseId}/>}/>;
+  return <SessionView renderRecording={(exerciseId,close)=><AttachmentComposer ownerId={ownerId} relationshipId={session.relationship_id} sessionId={id} exerciseId={exerciseId} exerciseName={session.prescription.exercises.find(e=>e.id===exerciseId)?.name} coachName="your coach" recordVideo onClose={close} onShared={()=>{}}/>} renderFlag={(exerciseId,close)=><SessionFlagPanel ownerId={ownerId} sessionId={id} exercise={session.prescription.exercises.find(e=>e.id===exerciseId)!} onClose={close}/>} preferences={preferences} detail={resource.data} elapsed={elapsed} back={back} dirty={!!dirty.size} busy={transition.busy} error={resource.error || transition.error} onTransition={state => void change(state)} renderSets={renderSets} renderHistory={exerciseId=><ExerciseHistoryPanel sessionId={id} exerciseId={exerciseId}/>}/>;
 }

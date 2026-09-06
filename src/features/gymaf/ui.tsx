@@ -58,7 +58,7 @@ export function Navigation({ area, active, locale, query = "" }: { area: "app" |
   const entries = area === "coach" ? [
     ["", "Clients", "Клиенти", Users], ["programs", "Programs", "Програми", CalendarDays], ["reviews", "Reviews", "Прегледи", Check], ["profile", "Profile", "Профил", CircleUserRound],
   ] as const : [
-    ["", "Home", "Начало", Home], ["history", "Progress", "Прогрес", ChartNoAxesColumnIncreasing], ["messages", "Messages", "Съобщения", MessageCircle], ["check-ins", "Check-ins", "Отчети", Check], ["profile", "Profile", "Профил", CircleUserRound],
+    ["", "Home", "Начало", Home], ["history", "Progress", "Прогрес", ChartNoAxesColumnIncreasing], ["messages", "Messages", "Съобщения", MessageCircle], ["friends", "Friends", "Приятели", Users], ["profile", "Profile", "Профил", CircleUserRound],
   ] as const;
   return <nav className="bottom-nav" aria-label={locale === "bg" ? "Основна навигация" : "Main navigation"}>{entries.map(([path, en, bg, Icon]) => <Link key={path} href={`/${area}${path ? "/" + path : ""}${query}`} aria-current={active === path ? "page" : undefined}><Icon size={25} /><span>{locale === "bg" ? bg : en}</span></Link>)}</nav>;
 }

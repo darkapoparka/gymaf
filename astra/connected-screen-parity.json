@@ -130,14 +130,18 @@
     ],
     "referenceRoute": "/onboarding/coach",
     "referenceState": "Initial screen",
-    "connectedRoute": null,
+    "connectedRoute": "/app/onboarding/coach",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual opted-in directory profiles and private exploration only. Approved portraits, source personas, personalized matching and automatic coach changes remain absent. Matching view only reflects the real directory request.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/coach-directory.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "fecb6b6f3db7308b",
@@ -250,14 +254,18 @@
     ],
     "referenceRoute": "/onboarding/matching",
     "referenceState": "Transient matching state",
-    "connectedRoute": null,
+    "connectedRoute": "/app/onboarding/matching",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual opted-in directory profiles and private exploration only. Approved portraits, source personas, personalized matching and automatic coach changes remain absent. Matching view only reflects the real directory request.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/coach-directory.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "8dae96b34ae39b84",
@@ -356,14 +364,18 @@
     ],
     "referenceRoute": "/coaches/lee",
     "referenceState": "Scroll to About and Certified",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/profile/[slug]",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual opted-in directory profiles and private exploration only. Approved portraits, source personas, personalized matching and automatic coach changes remain absent. Matching view only reflects the real directory request.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/coach-directory.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "8ee44ade589ce9ac",
@@ -376,14 +388,18 @@
     ],
     "referenceRoute": "/coaches/lee",
     "referenceState": "Scroll to Loves and Located",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/profile/[slug]",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual opted-in directory profiles and private exploration only. Approved portraits, source personas, personalized matching and automatic coach changes remain absent. Matching view only reflects the real directory request.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/coach-directory.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "c143403931126a67",
@@ -396,14 +412,18 @@
     ],
     "referenceRoute": "/coaches",
     "referenceState": "Select the final recommendation pagination control",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual opted-in directory profiles and private exploration only. Approved portraits, source personas, personalized matching and automatic coach changes remain absent. Matching view only reflects the real directory request.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/coach-directory.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "cb9726be9e6f072a",
@@ -474,14 +494,18 @@
     ],
     "referenceRoute": "/coaches/search",
     "referenceState": "Expand expertise and select Weight Loss",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/search",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual opted-in directory profiles and private exploration only. Approved portraits, source personas, personalized matching and automatic coach changes remain absent. Matching view only reflects the real directory request.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/coach-directory.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "32e4b5a461cdee6c",
@@ -521,14 +545,18 @@
     ],
     "referenceRoute": "/coaches/search",
     "referenceState": "Expand expertise; switch sorting to A–Z",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/search",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual opted-in directory profiles and private exploration only. Approved portraits, source personas, personalized matching and automatic coach changes remain absent. Matching view only reflects the real directory request.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/coach-directory.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "10cf3bdb6b6600bd",
@@ -605,14 +633,18 @@
     ],
     "referenceRoute": "/onboarding/booking",
     "referenceState": "Select Mon 29; no time selected",
-    "connectedRoute": null,
+    "connectedRoute": "/app/appointments/[workspaceId]",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual coach-authored availability, reservation and cancellation; no captured fake availability, payment or automatic relationship creation. New appointment migration is local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/appointments.sql",
+      ".artifacts/remaining-review/review-fixes-browser.json"
+    ]
   },
   {
     "id": "153228f229e7dca2",
@@ -625,14 +657,18 @@
     ],
     "referenceRoute": "/onboarding/booking",
     "referenceState": "Select Thu 2 at midnight; captured availability is seeded",
-    "connectedRoute": null,
+    "connectedRoute": "/app/appointments/[workspaceId]",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual coach-authored availability, reservation and cancellation; no captured fake availability, payment or automatic relationship creation. New appointment migration is local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/appointments.sql",
+      ".artifacts/remaining-review/review-fixes-browser.json"
+    ]
   },
   {
     "id": "7cf1aa5f642fc208",
@@ -877,14 +913,18 @@
     ],
     "referenceRoute": "/system/launch",
     "referenceState": "Launch transition with Future emblem; click to continue",
-    "connectedRoute": null,
+    "connectedRoute": "/app/system/launch",
     "family": "native",
-    "frontendStatus": "Not implemented",
-    "backendGap": "iOS Live Activities, widgets and Dynamic Island require a native client.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Connected browser presentation only. No iOS Live Activity, Dynamic Island, WidgetKit or native background integration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/workout-activity.tsx",
+      ".artifacts/remaining-review/media-browser-checks.json"
+    ]
   },
   {
     "id": "b2cf720138e8e91c",
@@ -1229,14 +1269,18 @@
     ],
     "referenceRoute": "/appointments",
     "referenceState": "Select appointment date; the reference availability is not reproduced",
-    "connectedRoute": null,
+    "connectedRoute": "/app/appointments/[workspaceId]",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual coach-authored availability, reservation and cancellation; no captured fake availability, payment or automatic relationship creation. New appointment migration is local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/appointments.sql",
+      ".artifacts/remaining-review/review-fixes-browser.json"
+    ]
   },
   {
     "id": "ff2cd4ca6797cee1",
@@ -1249,14 +1293,18 @@
     ],
     "referenceRoute": "/appointments",
     "referenceState": "Select another date and time; the reference availability is not reproduced",
-    "connectedRoute": null,
+    "connectedRoute": "/app/appointments/[workspaceId]",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual coach-authored availability, reservation and cancellation; no captured fake availability, payment or automatic relationship creation. New appointment migration is local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/appointments.sql",
+      ".artifacts/remaining-review/review-fixes-browser.json"
+    ]
   },
   {
     "id": "446f9affb1afff2a",
@@ -1957,14 +2005,20 @@
     ],
     "referenceRoute": "/workouts/morning-yoga/record",
     "referenceState": "Open seeded recording state; Record, Stop, Next and local share controls are interactive",
-    "connectedRoute": null,
+    "connectedRoute": "/app/sessions/[id]",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual bounded browser capture, private upload and explicit conversation share. Native codec/device and hosted Storage acceptance pending. New conversation-media migration local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/conversation-media.sql",
+      "tests/conversation-media-http.test.mjs",
+      ".artifacts/remaining-review/media-browser-checks.json",
+      ".artifacts/remaining-review/gallery-browser-checks.json"
+    ]
   },
   {
     "id": "452442b79e2166cf",
@@ -1977,14 +2031,20 @@
     ],
     "referenceRoute": "/workouts/morning-yoga/record",
     "referenceState": "Open seeded recording state; Record, Stop, Next and local share controls are interactive",
-    "connectedRoute": null,
+    "connectedRoute": "/app/sessions/[id]",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual bounded browser capture, private upload and explicit conversation share. Native codec/device and hosted Storage acceptance pending. New conversation-media migration local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/conversation-media.sql",
+      "tests/conversation-media-http.test.mjs",
+      ".artifacts/remaining-review/media-browser-checks.json",
+      ".artifacts/remaining-review/gallery-browser-checks.json"
+    ]
   },
   {
     "id": "628aa2e63266eb7e",
@@ -1997,14 +2057,20 @@
     ],
     "referenceRoute": "/workouts/morning-yoga/record",
     "referenceState": "Open seeded recording state; Record, Stop, Next and local share controls are interactive",
-    "connectedRoute": null,
+    "connectedRoute": "/app/sessions/[id]",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual bounded browser capture, private upload and explicit conversation share. Native codec/device and hosted Storage acceptance pending. New conversation-media migration local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/conversation-media.sql",
+      "tests/conversation-media-http.test.mjs",
+      ".artifacts/remaining-review/media-browser-checks.json",
+      ".artifacts/remaining-review/gallery-browser-checks.json"
+    ]
   },
   {
     "id": "7887b9889658f2a9",
@@ -2017,14 +2083,20 @@
     ],
     "referenceRoute": "/workouts/morning-yoga/record",
     "referenceState": "Open seeded recording state; Record, Stop, Next and local share controls are interactive",
-    "connectedRoute": null,
+    "connectedRoute": "/app/sessions/[id]",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual bounded browser capture, private upload and explicit conversation share. Native codec/device and hosted Storage acceptance pending. New conversation-media migration local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/conversation-media.sql",
+      "tests/conversation-media-http.test.mjs",
+      ".artifacts/remaining-review/media-browser-checks.json",
+      ".artifacts/remaining-review/gallery-browser-checks.json"
+    ]
   },
   {
     "id": "b3530a2506f3acbe",
@@ -3592,14 +3664,18 @@
     ],
     "referenceRoute": "/progress/photos/add",
     "referenceState": "Front, back and side photo entry; native camera controls are device supplied",
-    "connectedRoute": null,
+    "connectedRoute": "/app/progress/photos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Live web camera with supported torch, timer, local draft and existing private photo persistence. Native camera chrome differs; real-device permissions remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/camera-capture.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "b9ebd53fefdbd7b8",
@@ -3637,14 +3713,18 @@
     ],
     "referenceRoute": "/progress/photos/add",
     "referenceState": "Use Take Photo; native camera timer UI is supplied by the device and not reproduced",
-    "connectedRoute": null,
+    "connectedRoute": "/app/progress/photos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Live web camera with supported torch, timer, local draft and existing private photo persistence. Native camera chrome differs; real-device permissions remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/camera-capture.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "dac1a3cf0fffb20a",
@@ -3657,14 +3737,18 @@
     ],
     "referenceRoute": "/progress/photos/add",
     "referenceState": "Use Take Photo; native flash and timer UI is supplied by the device and not reproduced",
-    "connectedRoute": null,
+    "connectedRoute": "/app/progress/photos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Live web camera with supported torch, timer, local draft and existing private photo persistence. Native camera chrome differs; real-device permissions remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/camera-capture.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "9f32c528eb3122b5",
@@ -3677,14 +3761,18 @@
     ],
     "referenceRoute": "/progress/photos/add",
     "referenceState": "Front, back and side photo entry; native camera controls are device supplied",
-    "connectedRoute": null,
+    "connectedRoute": "/app/progress/photos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Live web camera with supported torch, timer, local draft and existing private photo persistence. Native camera chrome differs; real-device permissions remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/camera-capture.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "d0bffd680203472f",
@@ -4109,14 +4197,20 @@
     ],
     "referenceRoute": "/messages/photo",
     "referenceState": "Choose a local image; historical conversation cards differ",
-    "connectedRoute": null,
+    "connectedRoute": "/app/messages/photo",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual bounded browser capture, private upload and explicit conversation share. Native codec/device and hosted Storage acceptance pending. New conversation-media migration local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/conversation-media.sql",
+      "tests/conversation-media-http.test.mjs",
+      ".artifacts/remaining-review/media-browser-checks.json",
+      ".artifacts/remaining-review/gallery-browser-checks.json"
+    ]
   },
   {
     "id": "e7f7a57998262595",
@@ -4169,14 +4263,20 @@
     ],
     "referenceRoute": "/messages/videos",
     "referenceState": "Shared recordings; create a local recording first",
-    "connectedRoute": null,
+    "connectedRoute": "/app/messages/videos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual bounded browser capture, private upload and explicit conversation share. Native codec/device and hosted Storage acceptance pending. New conversation-media migration local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/conversation-media.sql",
+      "tests/conversation-media-http.test.mjs",
+      ".artifacts/remaining-review/media-browser-checks.json",
+      ".artifacts/remaining-review/gallery-browser-checks.json"
+    ]
   },
   {
     "id": "ce5d958da4fdbea8",
@@ -4189,14 +4289,20 @@
     ],
     "referenceRoute": "/messages/videos",
     "referenceState": "Open or play a saved local recording",
-    "connectedRoute": null,
+    "connectedRoute": "/app/messages/videos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual bounded browser capture, private upload and explicit conversation share. Native codec/device and hosted Storage acceptance pending. New conversation-media migration local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/conversation-media.sql",
+      "tests/conversation-media-http.test.mjs",
+      ".artifacts/remaining-review/media-browser-checks.json",
+      ".artifacts/remaining-review/gallery-browser-checks.json"
+    ]
   },
   {
     "id": "5f192b1462a126b6",
@@ -4240,14 +4346,18 @@
     ],
     "referenceRoute": "/friends",
     "referenceState": "Weekly leaderboard",
-    "connectedRoute": null,
+    "connectedRoute": "/app/friends",
     "family": "social",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No friend graph, invites or social statistics contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Explicitly accepted friends share only names and weekly workout counts. Guest-pass credits are absent. New social migration is local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/friends.sql",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "cc47b92925d101cb",
@@ -4260,14 +4370,18 @@
     ],
     "referenceRoute": "/friends",
     "referenceState": "Scroll to Invite Friends",
-    "connectedRoute": null,
+    "connectedRoute": "/app/friends",
     "family": "social",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No friend graph, invites or social statistics contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Explicitly accepted friends share only names and weekly workout counts. Guest-pass credits are absent. New social migration is local only.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "tests/db/friends.sql",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "230ba48bd84b5618",
@@ -4581,14 +4695,18 @@
     ],
     "referenceRoute": "/coaches/change",
     "referenceState": "Choose Explore",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/change",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual opted-in directory profiles and private exploration only. Approved portraits, source personas, personalized matching and automatic coach changes remain absent. Matching view only reflects the real directory request.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/coach-directory.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "5b8853eb6bed9cfa",
@@ -4628,14 +4746,18 @@
     ],
     "referenceRoute": "/coaches/matt",
     "referenceState": "Alternative coach Matt, past experience and selection",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/profile/[slug]",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Actual opted-in directory profiles and private exploration only. Approved portraits, source personas, personalized matching and automatic coach changes remain absent. Matching view only reflects the real directory request.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/coach-directory.tsx",
+      ".artifacts/remaining-review/browser-checks.json"
+    ]
   },
   {
     "id": "587607868798e2bf",
@@ -5354,14 +5476,17 @@
     ],
     "referenceRoute": "/account/shipping",
     "referenceState": "Shipping form; native select menu is browser supplied",
-    "connectedRoute": null,
+    "connectedRoute": "/app/account/shipping",
     "family": "billing",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No payment-provider checkout, shipping or paid plan-change contract.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Existing real shipping editor uses the browser-owned shirt-size select. iOS popup appearance is device supplied and NOT VERIFIED; no custom native picker implemented.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/shipping-editor.tsx"
+    ]
   },
   {
     "id": "693755a9410f5831",
@@ -6115,14 +6240,18 @@
     ],
     "referenceRoute": "/system/live-activity",
     "referenceState": "Web presentation of Live Activity",
-    "connectedRoute": null,
+    "connectedRoute": "/app/system/live-activity",
     "family": "native",
-    "frontendStatus": "Not implemented",
-    "backendGap": "iOS Live Activities, widgets and Dynamic Island require a native client.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Connected browser presentation only. No iOS Live Activity, Dynamic Island, WidgetKit or native background integration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/workout-activity.tsx",
+      ".artifacts/remaining-review/media-browser-checks.json"
+    ]
   },
   {
     "id": "c2a9ab379931c3f0",
@@ -6135,14 +6264,18 @@
     ],
     "referenceRoute": "/system/dynamic-island",
     "referenceState": "Collapsed Dynamic Island web presentation",
-    "connectedRoute": null,
+    "connectedRoute": "/app/system/dynamic-island",
     "family": "native",
-    "frontendStatus": "Not implemented",
-    "backendGap": "iOS Live Activities, widgets and Dynamic Island require a native client.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Connected browser presentation only. No iOS Live Activity, Dynamic Island, WidgetKit or native background integration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/workout-activity.tsx",
+      ".artifacts/remaining-review/media-browser-checks.json"
+    ]
   },
   {
     "id": "b9f1086598b7e89b",
@@ -6155,14 +6288,18 @@
     ],
     "referenceRoute": "/system/dynamic-island",
     "referenceState": "Tap to expand Dynamic Island web presentation",
-    "connectedRoute": null,
+    "connectedRoute": "/app/system/dynamic-island",
     "family": "native",
-    "frontendStatus": "Not implemented",
-    "backendGap": "iOS Live Activities, widgets and Dynamic Island require a native client.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Connected browser presentation only. No iOS Live Activity, Dynamic Island, WidgetKit or native background integration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/workout-activity.tsx",
+      ".artifacts/remaining-review/media-browser-checks.json"
+    ]
   },
   {
     "id": "3f2fbd0e4124e8a1",
@@ -6175,13 +6312,17 @@
     ],
     "referenceRoute": "/system/widgets",
     "referenceState": "Widget web presentations",
-    "connectedRoute": null,
+    "connectedRoute": "/app/system/widgets",
     "family": "native",
-    "frontendStatus": "Not implemented",
-    "backendGap": "iOS Live Activities, widgets and Dynamic Island require a native client.",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Connected browser presentation only. No iOS Live Activity, Dynamic Island, WidgetKit or native background integration.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "Bounded local synthetic family checks; exact source state and hosted journey NOT VERIFIED",
+    "evidence": [
+      "astra/ADR-014-REMAINING-WEB-FLOWS.md",
+      "src/features/gymaf/workout-activity.tsx",
+      ".artifacts/remaining-review/media-browser-checks.json"
+    ]
   }
 ]

@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test:unit": "node --experimental-strip-types --test tests/unit/*.test.mjs",
-    "test:auth": "node --test tests/auth-email-link.test.mjs tests/media-http.test.mjs tests/private-account-http.test.mjs",
+    "test:auth": "node --test tests/auth-email-link.test.mjs tests/media-http.test.mjs tests/private-account-http.test.mjs tests/conversation-media-http.test.mjs",
     "test:integration": "node scripts/astra-integration.mjs",
     "astra:seed": "node scripts/astra-local.mjs"
   },

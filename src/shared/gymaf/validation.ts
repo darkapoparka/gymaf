@@ -113,6 +113,19 @@ export function validateCommand(value: unknown): Command {
   const id = (name: string) => uuid(p[name]);
   const revision = () => integer(p.revision, "Revision", 0, 2147483646);
   switch (action) {
+    case "attachment.share": keys(p,['id']);payload={id:id('id')};break;
+    case "social.invite": case "social.accept": case "social.revoke": {
+      keys(p,['token']); const token=text(p.token,'Invitation',64,64); if(!/^[a-f0-9]{64}$/.test(token))throw new InputError('Invalid invitation.'); payload={token};break;
+    }
+    case "social.revoke-id": case "social.remove": keys(p,['id']);payload={id:id('id')};break;
+    case "booking.slot-create": {
+      keys(p,['workspaceId','startsAt','endsAt','cancelMinutes']);
+      const instant=(value:unknown)=>{const valueText=text(value,'Time',40,1);if(!/(Z|[+-]\d{2}:\d{2})$/.test(valueText)||!Number.isFinite(Date.parse(valueText)))throw new InputError('Choose a valid time with a timezone.');return new Date(valueText).toISOString();};
+      const startsAt=instant(p.startsAt),endsAt=instant(p.endsAt),duration=Date.parse(endsAt)-Date.parse(startsAt);
+      if(duration<=0||duration>14400000)throw new InputError('Appointment duration must be between one minute and four hours.');
+      payload={workspaceId:id('workspaceId'),startsAt,endsAt,cancelMinutes:integer(p.cancelMinutes,'Cancellation notice',0,10080)};break;
+    }
+    case "booking.reserve": case "booking.withdraw": case "booking.cancel": keys(p,['id']);payload={id:id('id')};break;
     case "directory.save": {
       keys(p,['workspaceId','revision','data']);const d=object(p.data);keys(d,['listed','expertise','styles','sports','languages','experience','qualifications','loves','location']);
       const tags=(value:unknown,choices:string[])=>{if(!Array.isArray(value)||value.length>choices.length)throw new InputError('Invalid choices.');const selected=value.map(item=>oneOf(item,choices));if(new Set(selected).size!==selected.length)throw new InputError('Duplicate choice.');return selected;};

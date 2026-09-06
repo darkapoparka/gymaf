@@ -1,5 +1,30 @@
 # Mobbin frontend parity implementation
 
+## Current checkpoint — remaining web flow adaptations, 6 September 2026
+
+This checkpoint supersedes the corresponding older handoff below. The source after `3fd9e6a88cd225cb9632efb5d13836a6c9f4ae22` in `M:/gym-fidelity`, `review/mobbin-fidelity`, adds bounded web counterparts for the remaining noncommercial state families. [ADR-014](ADR-014-REMAINING-WEB-FLOWS.md) records authority, backend contracts, privacy/lifecycle and open gates. Overall status remains **NOT COMPLETE / NOT VERIFIED 1:1** for all 270 captures/84 flows.
+
+| Surface | Connected coverage and boundary |
+| --- | --- |
+| Camera and timer | Real `getUserMedia` preview, off/5/10-second timer, switching, supported torch, cancellation and denied/disconnected recovery; captured JPEG enters the existing private-photo flow. Device support is unverified. |
+| Exercise/conversation video | Actual `MediaRecorder`, up to 30 seconds, audio off by default, preview/Retake/Next; private upload and separate explicit Send. Server enforces 4 MiB and container magic, without transcoding or metadata removal. |
+| Media gallery | Private/explicitly shared items, preview and owned removal with acknowledgement retry. Shared reads are relationship-authorized; deletion does not retract recipient downloads or the existing text message. |
+| Appointments | Coach-authored time slots, member reservation, saved appointments and cancellation deadlines; full dates/timezone in selection and confirmation. No payment, coach transfer or meeting-provider integration. |
+| Friends | Private 256-bit one-use/seven-day invitation, local QR/share URL fragment, consent and accepted-peer weekly completed-workout counts. Reload recovers owned invitation IDs for revocation without exposing secrets. No public ranking, trial or referral credit. |
+| Directory/onboarding | Real opted-in directory introduction, actual directory-request pending view, search/profile detail and booking links. No artificial delay, fake match, algorithmic matching or approved source portraits. |
+| Workout activity/summary/launch | Actual attempt timer, revisioned pause/resume, expanded/compact browser activity, saved summary and Gymaf continuation. No OS widget, lock-screen activity or native launch integration. |
+
+Browser evidence in `.artifacts/remaining-review/` uses mocked API/media fixtures and proves bounded UI/contract paths, not hosted account acceptance:
+
+- `browser-checks.json`: 12 camera/booking/discovery/friends assertions; `media-browser-checks.json`: 11 recording/send/activity assertions; `gallery-browser-checks.json`: 3 private-gallery/removal assertions. Request evidence includes `media-browser-requests.json`.
+- `review-fixes-browser.json`: 8 PASS assertions for full booking dates and layout at 320/393/1440, plus recovered owner-ID invitation revocation after reload. Final captures: `booking-date-final-320.png`, `booking-date-final-393.png`, `booking-date-final-1440.png`, `friends-recovered-invite-393.png`.
+- Other representative captures: `camera-denied-393.png`, `camera-timer-393.png`, `photo-captured-393.png`, `video-ready-393.png`, `video-recording-393.png`, `video-review-393.png`, `video-send-retry-393.png`, `gallery-private-393.png`, `gallery-remove-393.png`, `friend-qr-393.png`, `discovery-intro-393.png`, `live-activity-final-393.png`, `dynamic-island-final-393.png`, `widgets-final-393.png`, `launch-final-393.png`.
+- Bounded reviewer SHIP follows closure of two P2 findings: full appointment dates and recoverable invitations. Detector `[]`, representative captures and a reviewer verdict do not establish paired per-capture 1:1 acceptance.
+
+Parent-reported local evidence: 48 units PASS, lint zero errors/two existing warnings and four isolated HTTP tests PASS, including uncertain upload/delete acknowledgements. Final production build and TypeScript PASS after the review fixes. Fresh disposable PostgreSQL 17 `gymaf_remaining_accepted` passed all final seventeen migrations, seed and twelve SQL suites; `full-db-accepted.log` records the result. Local JWT/Storage context is simulated. New migrations `20260906140000`, `20260906143000`, `20260906150000` are **LOCAL ONLY, NOT INSTALLED HOSTED**; the prior fourteen hosted migrations do not establish these new flows.
+
+The ledger moves from 232 partial / 38 not implemented to **264 Partial family adaptation / 6 Not implemented / zero verified 1:1**. The 32 newly mapped partial family adaptations are not 32 exact source-state completions; reviewed web counterparts remain partial, including adaptations of source OS states. The existing shipping browser-owned select receives partial coverage; custom native picker and iOS chrome remain unverified. [Current evidence](evidence/remaining-web-2026-09-06.json) records the parent reconciliation. Six commercial IDs stay Not implemented: `818823fea239b926`, `10cf3bdb6b6600bd`, `1c9c16701eb28a46`, `6699b1f8a7f819b9`, `230ba48bd84b5618`, `37e236af15c00e2a`. Membership/payment/credits, native services, matching, approved assets, full media lifecycle, provider/physical-device acceptance and paired source states remain open. Current-batch CI remains pending at this source checkpoint; no merge/deployment or legacy design-context changes.
+
 Owner confirmation, 6 September 2026: use the Future Pro Mobbin project for frontend layouts, styling, UI states and interaction flows, while retaining Gymaf identity, real backend, current authentication and persistence. This supersedes the earlier permission to retain only a general visual vocabulary. It does not authorize replacing real records with reference fixtures.
 
 Worktree: M:/gym-fidelity. Review branch: review/mobbin-fidelity. Base: dffa707 (includes hosted email-link repair and latest local testing evidence).
