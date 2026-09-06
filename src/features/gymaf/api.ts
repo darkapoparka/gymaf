@@ -1,4 +1,6 @@
 "use client";
+import { clearPhotoDrafts } from "./media-drafts";
+import { requestSignal } from "./request-signal";
 import { clearFeedbackDrafts } from "./feedback-drafts";
 import type { CommandResult } from "@/shared/gymaf/contracts";
 
@@ -18,17 +20,18 @@ async function refresh(): Promise<boolean> {
   refreshing = pending;
   return pending;
 }
-export async function api<T>(path: string, options: { method?: "GET" | "POST"; body?: unknown; signal?: AbortSignal } = {}): Promise<T> {
-  const request = () => fetch("/api/v1/" + path, { method: options.method || "GET", credentials: "same-origin", cache: "no-store", signal: options.signal || AbortSignal.timeout(20000), ...(options.body !== undefined ? { headers: { "Content-Type": "application/json" }, body: JSON.stringify(options.body) } : {}) });
+export async function api<T>(path: string, options: { method?: "GET" | "POST" | "DELETE"; body?: unknown; file?:Blob; uploadId?:string; responseType?:'blob'; signal?: AbortSignal } = {}): Promise<T> {
+  const request = () => fetch("/api/v1/" + path, { method: options.method || "GET", credentials: "same-origin", cache: "no-store", signal: requestSignal(options.signal,options.file?60000:20000), ...(options.file?{headers:{'Content-Type':options.file.type,'Idempotency-Key':options.uploadId||''},body:options.file}:options.body !== undefined ? { headers: { "Content-Type": "application/json" }, body: JSON.stringify(options.body) } : {}) });
   let response = await request();
   const canRefresh = !["auth/request-code", "auth/request-link", "auth/verify-code", "auth/refresh"].includes(path);
   if (response.status === 401 && canRefresh && await refresh()) response = await request();
+  if(response.ok && options.responseType==='blob') return await response.blob() as T;
   const result = await response.json().catch(() => null);
   if (!response.ok) {
     if (response.status === 401) window.dispatchEvent(new Event("gymaf-session-expired"));
     throw new ApiError(response.status, result?.error?.code || "REQUEST_FAILED", result?.error?.message || "The request failed. Please retry.");
   }
-  if (path === "auth/verify-code" || path === "auth/logout") clearFeedbackDrafts();
+  if (path === "auth/verify-code" || path === "auth/logout") { clearFeedbackDrafts();clearPhotoDrafts(); }
   if ((path === "auth/verify-code" || path === "auth/logout") && typeof BroadcastChannel !== "undefined") { const channel = new BroadcastChannel("gymaf-session"); channel.postMessage("changed"); channel.close(); }
   return result.data as T;
 }

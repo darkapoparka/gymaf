@@ -21,11 +21,11 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - name: Pure domain validation
-        run: npm run test:unit
       - name: Clean dependency install
         id: install
         run: npm ci
+      - name: Domain and image validation
+        run: npm run test:unit
       - name: ESLint
         if: always() && steps.install.outcome == 'success'
         run: npm run lint
@@ -67,6 +67,8 @@ jobs:
           persist-credentials: false
       - name: Bootstrap simulated provider context
         run: psql -v ON_ERROR_STOP=1 -f tests/db/bootstrap.sql
+      - name: Bootstrap simulated storage metadata
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/storage-bootstrap.sql
       - name: Apply migrations and local-only seed helper
         run: |
           for file in supabase/migrations/*.sql; do psql -v ON_ERROR_STOP=1 -f "$file"; done
@@ -79,3 +81,5 @@ jobs:
         run: psql -v ON_ERROR_STOP=1 -f tests/db/training-library.sql
       - name: Workout feedback privacy and submission regression tests
         run: psql -v ON_ERROR_STOP=1 -f tests/db/session-feedback.sql
+      - name: Private media ownership and lifecycle regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/member-media.sql

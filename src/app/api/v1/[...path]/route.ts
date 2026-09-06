@@ -2,6 +2,7 @@ import type { NextRequest } from "next/server";
 import { authPost } from "@/server/gymaf/auth";
 import { accessToken, failure, HttpError, readBody, rpc, sameOrigin, success, verifiedUser } from "@/server/gymaf/http";
 import { text, uuid, validateCommand } from "@/shared/gymaf/validation";
+import { deleteMedia, readMedia, uploadMedia } from "@/server/gymaf/media";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -16,6 +17,8 @@ export async function GET(request: NextRequest, context: Context) {
       return success(await rpc("gymaf_public_coach", { p_slug: slug }));
     }
     const token = accessToken(request), user = await verifiedUser(token);
+    if (path.join('/') === 'me/media') return success(await rpc('gymaf_media_query',{},token));
+    if (path.length === 4 && path[0] === 'me' && path[1] === 'media' && path[3] === 'file') return await readMedia(token,uuid(path[2]));
     if (path.join("/") === "me/details") return success(await rpc("gymaf_member_query", {}, token));
     if (path.length === 3 && path[0] === "workout-sessions" && path[2] === "feedback") return success(await rpc("gymaf_feedback_query", { p_id: uuid(path[1]) }, token));
     if (path.length === 3 && path[0] === "relationships" && path[2] === "favorites") return success(await rpc("gymaf_training_query", { p_kind: "favorites", p_id: uuid(path[1]) }, token));
@@ -31,7 +34,7 @@ export async function GET(request: NextRequest, context: Context) {
     else throw new HttpError(404, "NOT_FOUND", "Unknown resource.");
     const before = request.nextUrl.searchParams.get("before");
     let result = await rpc("gymaf_query", { p_kind: kind, p_id: id, p_before: before ? uuid(before) : null }, token);
-    if (kind === "export") result = { ...(result as Record<string, unknown>), memberRecords: await rpc("gymaf_member_query", {}, token), workoutFavorites: await rpc("gymaf_training_query", { p_kind: "export-favorites", p_id: null }, token), sessionFeedback: await rpc("gymaf_feedback_query", { p_id: null }, token) };
+    if (kind === "export") result = { ...(result as Record<string, unknown>), memberRecords: await rpc("gymaf_member_query", {}, token), workoutFavorites: await rpc("gymaf_training_query", { p_kind: "export-favorites", p_id: null }, token), sessionFeedback: await rpc("gymaf_feedback_query", { p_id: null }, token), media: await rpc('gymaf_media_query',{},token) };
     const response = success(result);
     if (kind === "export") response.headers.set("Content-Disposition", "attachment; filename=gymaf-export.json");
     return response;
@@ -41,12 +44,25 @@ export async function POST(request: NextRequest, context: Context) {
   try {
     const path = (await context.params).path;
     if (path.length === 2 && path[0] === "auth") return await authPost(request, path[1]);
-    if (path.join("/") !== "commands") throw new HttpError(404, "NOT_FOUND", "Unknown command endpoint.");
+    const selecting=path.length===4 && path[0]==='me' && path[1]==='media' && path[3]==='selection';
+    if (!selecting && path.join("/") !== "commands" && path.join('/') !== 'me/media') throw new HttpError(404, "NOT_FOUND", "Unknown command endpoint.");
     // Browser cookie writes require exact origin; bearer-only native requests do not use cookies.
     if (!request.headers.has("authorization")) sameOrigin(request);
     else if (request.headers.has("origin")) sameOrigin(request);
     const token = accessToken(request); await verifiedUser(token);
+    if (path.join('/') === 'me/media') return await uploadMedia(request,token);
+    if (selecting) {const body=await readBody(request);if(Object.keys(body).some(key=>key!=='commandId'))throw new HttpError(422,'INVALID_SELECTION','Invalid photo selection.');return success(await rpc('gymaf_media_command',{p_action:'media.select',p_command_id:uuid(body.commandId),p:{id:uuid(path[2])}},token));}
     const command = validateCommand(await readBody(request));
     return success(await rpc(command.action.startsWith("feedback.") ? "gymaf_feedback_command" : command.action.startsWith("member.") ? "gymaf_member_command" : command.action.startsWith("training.") ? "gymaf_training_command" : "gymaf_command", { p_action: command.action, p_command_id: command.commandId, p: command.payload }, token));
   } catch (error) { return failure(error); }
+}
+
+export async function DELETE(request:NextRequest,context:Context){
+  try{
+    const path=(await context.params).path;
+    if(path.length!==3||path[0]!=='me'||path[1]!=='media')throw new HttpError(404,'NOT_FOUND','Unknown photo.');
+    if(!request.headers.has('authorization')||request.headers.has('origin'))sameOrigin(request);
+    const token=accessToken(request);await verifiedUser(token);
+    return await deleteMedia(token,uuid(path[2]));
+  }catch(error){return failure(error);}
 }

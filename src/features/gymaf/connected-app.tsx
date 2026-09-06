@@ -6,6 +6,7 @@ import { ClientArea } from "./client";
 import { CoachArea } from "./coach";
 import { OperatorArea } from "./operator";
 import { SessionScreen } from "./session";
+import { clearPhotoDrafts } from "./media-drafts";
 import { clearFeedbackDrafts } from "./feedback-drafts";
 import { Settings } from "lucide-react";
 import { Navigation, Note, Pending, useResource } from "./ui";
@@ -13,7 +14,7 @@ import { Navigation, Note, Pending, useResource } from "./ui";
 export function ConnectedApp({ area, path = [], relationshipId, workspaceId }: { area: "app" | "coach" | "operator"; path?: string[]; relationshipId?: string; workspaceId?: string }) {
   const account = useResource<Bootstrap>("me"), [expired,setExpired] = useState(false);
   useEffect(() => {
-    const expire = () => {clearFeedbackDrafts();setExpired(true);};
+    const expire = () => {clearFeedbackDrafts();clearPhotoDrafts();setExpired(true);};
     window.addEventListener("gymaf-session-expired",expire);
     const channel = typeof BroadcastChannel !== "undefined" ? new BroadcastChannel("gymaf-session") : null;
     if (channel) channel.onmessage=expire;
@@ -33,6 +34,6 @@ export function ConnectedApp({ area, path = [], relationshipId, workspaceId }: {
     <main id="main" className={`app-shell ${area==="app"?`connected-route-${path[0]||"home"}`:""} ${area === "app" && !path.length ? "home-page" : ""}`}>
       {sessionId ? <SessionScreen ownerId={data.user.id} key={sessionId} id={sessionId} back={area === "coach" ? "/coach" : `/app/history${query}`} /> : area === "operator" ? <OperatorArea /> : area === "coach" ? <CoachArea account={data} path={path} workspaceId={workspaceId} reloadAccount={account.reload} /> : <ClientArea account={data} path={path} selectedId={relationshipId} reloadAccount={account.reload} />}
     </main>
-    {area !== "operator" && !sessionId && !(area === "app" && (path[0] === "schedule" || path[0] === "settings" || path[0] === "progress" || (path[0] === "profile" && path[1]) || path[0] === "workouts")) && <Navigation area={area} active={path[0] || ""} locale={data.user.locale} query={query} />}
+    {area !== "operator" && !sessionId && !(area === "app" && (path[0] === "schedule" || path[0] === "settings" || (path[0] === "progress" && path[1] !== "photos") || (path[0] === "profile" && path[1]) || path[0] === "workouts")) && <Navigation area={area} active={path[0] === "progress" ? "history" : path[0] || ""} locale={data.user.locale} query={query} />}
   </div>;
 }

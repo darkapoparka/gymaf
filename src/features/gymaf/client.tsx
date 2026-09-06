@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
+import { MemberMediaArea, ProfileWithPhotos } from "./member-media";
 import { MemberArea } from "./member-area";
 import { TrainingLibrary } from "./training-library";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ClientHome, WorkoutDetailView, ScheduleView, ProgressView, ProfileOverview } from "./client-views";
+import { ClientHome, WorkoutDetailView, ScheduleView, ProgressView } from "./client-views";
 import type { Bootstrap, RelationshipDetail, ScheduledWorkout } from "@/shared/gymaf/contracts";
 import { localDate, monday } from "@/shared/gymaf/validation";
 import { Messages } from "./messages";
@@ -39,10 +40,11 @@ export function ClientArea({ account, path, selectedId, reloadAccount }: { accou
   const resource = useResource<RelationshipDetail>(selected ? `relationships/${selected.id}` : null);
   const query = selected ? `?relationship=${selected.id}` : "";
   const reload = () => { resource.reload(); reloadAccount(); };
+  if ((path[0] === "progress" && path[1] === "photos") || (path[0] === "profile" && ["avatar","cover"].includes(path[1]))) return <MemberMediaArea key={`${account.user.id}:${path[1]}`} account={account} kind={path[1] === "avatar" ? "avatar" : path[1] === "cover" ? "cover" : "progress"} query={query}/>;
   if ((path[0] === "settings" && !["security","service","support"].includes(path[1])) || path[0] === "progress" || (path[0] === "profile" && path[1] === "event")) return <MemberArea account={account} path={path} query={query}/>;
   if (path[0] === "settings" || (path[0] === "profile" && path[1] === "edit")) return selected && !resource.data ? <Pending error={resource.error} reload={resource.reload}/> : <ProfileScreen key={`${account.user.revision}:${path.join('/')}`} account={account} relationship={resource.data} reload={reload} query={query} mode={path[0] === 'profile' ? 'edit' : path[1] === 'security' || path[1] === 'service' || path[1] === 'support' ? path[1] : 'settings'} />;
   if (path[0] === "profile" && selected && !resource.data) return <Pending error={resource.error} reload={resource.reload}/>;
-  if (path[0] === "profile") return <ProfileOverview account={account} data={resource.data} query={query}/>;
+  if (path[0] === "profile") return <ProfileWithPhotos account={account} data={resource.data} query={query}/>;
   if (!selected) return <div className="gymaf-stack"><Head title={`Welcome${account.user.display_name ? ", " + account.user.display_name : ""}`} /><Empty>No coach is connected to this account yet. Open the invitation link your coach gave you.</Empty><Row href="/app/profile">Complete your profile</Row>{account.workspaces.length > 0 && <Row href="/coach">Open coach workspace</Row>}</div>;
   if (!resource.data) return <Pending error={resource.error} reload={resource.reload} />;
   const data = resource.data;

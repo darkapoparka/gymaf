@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { DesignReview } from '@/features/gymaf/design-review';
 export default async function Page({searchParams}:{searchParams:Promise<{view?:string;width?:string;frame?:string}>}) {
  if(process.env.NODE_ENV!=='development')notFound();
- const q=await searchParams, views=['home','library','summary','feedback','progress','schedule','profile','workout','player','settings','location','equipment','injury','event','weight','log-weight','app-settings','workout-settings','tones','instructions'];
+ const q=await searchParams, views=['photos','photo-error','cover-photos','avatar-photos','home','library','summary','feedback','progress','schedule','profile','workout','player','settings','location','equipment','injury','event','weight','log-weight','app-settings','workout-settings','tones','instructions'];
  const view=views.includes(q.view||'')?q.view!:'home';
  if(q.frame==='1')return <DesignReview view={view}/>;
  const width=[320,393,1440].includes(Number(q.width))?Number(q.width):393;

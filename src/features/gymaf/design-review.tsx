@@ -1,5 +1,7 @@
 "use client";
 import { useState } from 'react';
+import { MemberMediaView, SelectedPhoto } from './member-media';
+import type { MemberMedia } from '@/shared/gymaf/contracts';
 import { MemberViews, preferenceDefaults } from './member-views';
 import { TrainingLibraryView } from "./training-library";
 import { ExerciseHistoryView } from "./exercise-history";
@@ -23,6 +25,13 @@ function MemberReview({view}:{view:string}){
  const navigate=(href:string)=>setPath(href.split('?')[0].split('/').filter(Boolean).slice(1));
  return <div className="gymaf-connected gymaf-client" onClickCapture={event=>{if((event.target as HTMLElement).closest('[data-member-navigation-blocked="true"]')){event.preventDefault();return;}const anchor=(event.target as HTMLElement).closest('a');const href=anchor?.getAttribute('href');if(href?.startsWith('/app/settings')||href?.startsWith('/app/progress')||href?.startsWith('/app/profile/event')){event.preventDefault();navigate(href);} }}><main id="main" className="app-shell"><MemberViews key={path.join('/')} account={account} path={path} query="" records={records} busy={busy} navigate={navigate} save={async(kind,data,record)=>{setBusy(true);await new Promise(resolve=>setTimeout(resolve,1200));const id=record?.id||crypto.randomUUID();setRecords(previous=>[...previous.filter(r=>r.id!==id),{id,kind,data,revision:(record?.revision||0)+1,updated_at:new Date().toISOString()}]);setBusy(false);return id;}} remove={async record=>{setRecords(previous=>previous.filter(r=>r.id!==record.id));return true;}}/></main></div>;
 }
+
+function MediaReview({view}:{view:string}){
+ const kind=view==='cover-photos'?'cover':view==='avatar-photos'?'avatar':'progress';
+ const [items,setItems]=useState<MemberMedia[]>([]),[files,setFiles]=useState<Record<string,File>>({});
+ return <div className="gymaf-connected gymaf-client"><main id="main" className="app-shell"><MemberMediaView kind={kind} items={items} today={today} draftKey={'visual:'+view} back="/design-review?view=progress&frame=1" onSaved={()=>{}} onDone={()=>{}} onSelect={async item=>{setItems(current=>current.map(row=>row.kind===kind?{...row,selected_at:row.id===item.id?new Date().toISOString():null}:row));}} onUpload={async(file,id,photoView,date)=>{await new Promise(resolve=>setTimeout(resolve,350));if(view==='photo-error'&&photoView!=='front')throw new Error('The photo upload could not be confirmed. Retry Save.');setFiles(current=>({...current,[id]:file}));setItems(current=>[...current.filter(item=>item.id!==id),{id,kind,view:photoView,taken_on:date,created_at:new Date().toISOString()}]);}} onRemove={async item=>{setItems(current=>current.filter(row=>row.id!==item.id));}} renderPhoto={item=>files[item.id]?<SelectedPhoto file={files[item.id]}/>:null}/></main>{kind==='progress'&&<Navigation area="app" active="history" locale="en"/>}</div>;
+}
+
 /** Development-only, presentation-level fixtures. Never imported by ConnectedApp or its API hooks. */
 export function DesignReview({view}:{view:string}) {
  const [feedback,setFeedback]=useState<import('@/shared/gymaf/contracts').SessionFeedback>({sessionId:'visual-session',editable:true,canSubmit:true,coachName:'Your Coach',revision:0,data:{rating:null,difficulty:null,body:'',flags:[]},sharedRevision:null,sharedAt:null});
@@ -30,6 +39,7 @@ export function DesignReview({view}:{view:string}) {
  async function saveFeedback(next:import('@/shared/gymaf/contracts').FeedbackData){setFeedbackBusy(true);await new Promise(resolve=>setTimeout(resolve,400));setFeedback(r=>({...r,revision:r.revision+1,data:next}));setFeedbackBusy(false);return true;}
  const [favorites,setFavorites]=useState<import('@/shared/gymaf/contracts').WorkoutFavorite[]>([]);
  const [data,setData]=useState(initial),[user,setUser]=useState(profile),[sessionState,setSessionState]=useState<SessionState>("in_progress");
+ if(['photos','photo-error','cover-photos','avatar-photos'].includes(view))return <MediaReview key={view} view={view}/>;
  if(view==='library')return <div className="gymaf-connected gymaf-client"><TrainingLibraryView data={{...data,workouts:Array.from({length:6},(_,i)=>({...data.workouts[0],id:'visual-scheduled-'+i,prescription:{...prescription,title:['Core and Glutes Burner','Full Body Strength','Upper Body Power Hour','Quick Core Crusher','Morning Yoga Flow','Conditioning'][i]}}))}} query="" favorites={favorites} onFavorite={(w,favorite)=>setFavorites(rows=>[...rows.filter(f=>f.scheduled_id!==w.id),{scheduled_id:w.id,favorite,revision:1}])}/></div>;
  if(view==='summary'||view==='feedback')return <div className="gymaf-connected gymaf-client"><SessionSummary initialTab={view==='feedback'?'Feedback':'Summary'} feedbackDirty={feedbackDirty} onDirtyExit={()=>setExitRequest(n=>n+1)} feedback={<FeedbackView draftKey="visual:summary" exitRequest={exitRequest} onLeave={()=>{setFeedbackDirty(false);setExitRequest(0);}} record={feedback} exercises={prescription.exercises} busy={feedbackBusy} onDirty={setFeedbackDirty} onSave={saveFeedback} onSubmit={async next=>{await saveFeedback(next);setFeedback(r=>({...r,sharedRevision:r.revision,sharedAt:new Date().toISOString()}));return true;}}/>} detail={{editable:false,sets:[],session:{id:'visual-session',relationship_id:relationship.id,scheduled_workout_id:'visual-scheduled',prescription,state:'completed',revision:1,started_at:today+'T08:00:00Z',running_since:null,elapsed_seconds:1131,completed_at:today+'T08:18:51Z'}}} back='/design-review?view=home&frame=1' renderSets={()=> <p>No set values in this synthetic presentation.</p>}/></div>;
  if(memberReviewViews.includes(view))return <MemberReview key={view} view={view}/>;

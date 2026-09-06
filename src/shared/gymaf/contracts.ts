@@ -33,3 +33,4 @@ export type AuthFactor = { id: string; factor_type: string; status: string; frie
 export type ExerciseFlag = { exerciseId: string; reasons: (typeof import("./validation").flagReasons)[number][]; comment: string };
 export type FeedbackData = { rating: number | null; difficulty: number | null; body: string; flags: ExerciseFlag[] };
 export type SessionFeedback = { sessionId: string; editable: boolean; canSubmit: boolean; coachName: string; revision: number; data: FeedbackData | null; sharedRevision: number | null; sharedAt: string | null };
+export type MemberMedia = { id:string;kind:'avatar'|'cover'|'progress';view:'front'|'back'|'side'|'image';taken_on:string;created_at:string;selected_at?:string|null };
