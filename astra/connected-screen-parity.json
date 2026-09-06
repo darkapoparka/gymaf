@@ -3478,14 +3478,19 @@
     ],
     "referenceRoute": "/progress/photos",
     "referenceState": "Progress photo timeline; source photos are review fixtures",
-    "connectedRoute": null,
+    "connectedRoute": "/app/progress/photos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Private dated front/back/side still-photo upload, gallery, view and delete are connected; entry is a dialog on /app/progress/photos. Camera file input is a web/device adaptation; native capture/permission UI remains unaccepted.",
+    "mediaStatus": "Private member JPEG/PNG/WebP uploads normalized to still JPEG; original source personal media is not copied. Video/exercise media and coach sharing are not implemented.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED PASS: authenticated synthetic progress upload, reload, view and delete; front/back/side partial-save recovery has isolated HTTP/fixture evidence, not full hosted/device acceptance.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md: Private media extension; astra/ADR-010-PRIVATE-MEDIA.md; source ea25393, push/CI pending.",
+      "Parent-reported local PASS: build/TypeScript, 32 unit tests, 2 isolated HTTP tests; fresh PostgreSQL 17.4 full ten-migration/seed/core/member/training/feedback/media suites with simulated JWT and Storage metadata.",
+      "Hosted media/selection migrations installed on crhcgcqanoeoddmwaqhb as 20260906015855 / 20260906021344; real authenticated Storage HTTP exercised with a synthetic 300x400 plain PNG. Two synthetic records removed, zero selected, zero remaining objects; no personal files or coach send.",
+      ".artifacts/media-review/gallery-393-final.png; viewer-393-final.png; delete-scrolled-320-final.png. Square timeline; at 320px dialog delete controls are reachable after scroll, 252x46 each; no overflow in checked states."
+    ]
   },
   {
     "id": "0c9d6d9336ed2060",
@@ -3498,14 +3503,19 @@
     ],
     "referenceRoute": "/progress/photos/add",
     "referenceState": "Front, back and side photo entry; native camera controls are device supplied",
-    "connectedRoute": null,
+    "connectedRoute": "/app/progress/photos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Private dated front/back/side still-photo upload, gallery, view and delete are connected; entry is a dialog on /app/progress/photos. Camera file input is a web/device adaptation; native capture/permission UI remains unaccepted.",
+    "mediaStatus": "Private member JPEG/PNG/WebP uploads normalized to still JPEG; original source personal media is not copied. Video/exercise media and coach sharing are not implemented.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED PASS: authenticated synthetic progress upload, reload, view and delete; front/back/side partial-save recovery has isolated HTTP/fixture evidence, not full hosted/device acceptance.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md: Private media extension; astra/ADR-010-PRIVATE-MEDIA.md; source ea25393, push/CI pending.",
+      "Parent-reported local PASS: build/TypeScript, 32 unit tests, 2 isolated HTTP tests; fresh PostgreSQL 17.4 full ten-migration/seed/core/member/training/feedback/media suites with simulated JWT and Storage metadata.",
+      "Hosted media/selection migrations installed on crhcgcqanoeoddmwaqhb as 20260906015855 / 20260906021344; real authenticated Storage HTTP exercised with a synthetic 300x400 plain PNG. Two synthetic records removed, zero selected, zero remaining objects; no personal files or coach send.",
+      ".artifacts/media-review/source-393-final.png; source-320-final.png; selected-393-final.png; selected-320-final.png; selected-1440-final.png. Explicit source picker and partial recovery; native capture UI not accepted."
+    ]
   },
   {
     "id": "cee9a987b896f939",
@@ -3522,14 +3532,19 @@
     ],
     "referenceRoute": "/progress/photos/add",
     "referenceState": "Front, back and side photo entry; native camera controls are device supplied",
-    "connectedRoute": null,
+    "connectedRoute": "/app/progress/photos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Private dated front/back/side still-photo upload, gallery, view and delete are connected; entry is a dialog on /app/progress/photos. Camera file input is a web/device adaptation; native capture/permission UI remains unaccepted.",
+    "mediaStatus": "Private member JPEG/PNG/WebP uploads normalized to still JPEG; original source personal media is not copied. Video/exercise media and coach sharing are not implemented.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED PASS: authenticated synthetic progress upload, reload, view and delete; front/back/side partial-save recovery has isolated HTTP/fixture evidence, not full hosted/device acceptance.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md: Private media extension; astra/ADR-010-PRIVATE-MEDIA.md; source ea25393, push/CI pending.",
+      "Parent-reported local PASS: build/TypeScript, 32 unit tests, 2 isolated HTTP tests; fresh PostgreSQL 17.4 full ten-migration/seed/core/member/training/feedback/media suites with simulated JWT and Storage metadata.",
+      "Hosted media/selection migrations installed on crhcgcqanoeoddmwaqhb as 20260906015855 / 20260906021344; real authenticated Storage HTTP exercised with a synthetic 300x400 plain PNG. Two synthetic records removed, zero selected, zero remaining objects; no personal files or coach send.",
+      ".artifacts/media-review/source-393-final.png; source-320-final.png; selected-393-final.png; selected-320-final.png; selected-1440-final.png. Explicit source picker and partial recovery; native capture UI not accepted."
+    ]
   },
   {
     "id": "14a78fdd2e2f981c",
@@ -3562,14 +3577,19 @@
     ],
     "referenceRoute": "/progress/photos",
     "referenceState": "Progress photo timeline; source photos are review fixtures",
-    "connectedRoute": null,
+    "connectedRoute": "/app/progress/photos",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Private dated front/back/side still-photo upload, gallery, view and delete are connected; entry is a dialog on /app/progress/photos. Camera file input is a web/device adaptation; native capture/permission UI remains unaccepted.",
+    "mediaStatus": "Private member JPEG/PNG/WebP uploads normalized to still JPEG; original source personal media is not copied. Video/exercise media and coach sharing are not implemented.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED PASS: authenticated synthetic progress upload, reload, view and delete; front/back/side partial-save recovery has isolated HTTP/fixture evidence, not full hosted/device acceptance.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md: Private media extension; astra/ADR-010-PRIVATE-MEDIA.md; source ea25393, push/CI pending.",
+      "Parent-reported local PASS: build/TypeScript, 32 unit tests, 2 isolated HTTP tests; fresh PostgreSQL 17.4 full ten-migration/seed/core/member/training/feedback/media suites with simulated JWT and Storage metadata.",
+      "Hosted media/selection migrations installed on crhcgcqanoeoddmwaqhb as 20260906015855 / 20260906021344; real authenticated Storage HTTP exercised with a synthetic 300x400 plain PNG. Two synthetic records removed, zero selected, zero remaining objects; no personal files or coach send.",
+      ".artifacts/media-review/gallery-393-final.png; viewer-393-final.png; delete-scrolled-320-final.png. Square timeline; at 320px dialog delete controls are reachable after scroll, 252x46 each; no overflow in checked states."
+    ]
   },
   {
     "id": "098311074fbc0d30",
@@ -4633,14 +4653,19 @@
     ],
     "referenceRoute": "/profile/cover",
     "referenceState": "Captured cover gallery state; select a cover or upload and Save",
-    "connectedRoute": null,
+    "connectedRoute": "/app/profile/cover",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Private cover upload, owner gallery and explicit selected_at checkmark save are connected; upload alone does not replace the current image. Native gallery and all source variants remain unaccepted.",
+    "mediaStatus": "Private member JPEG/PNG/WebP uploads normalized to still JPEG; original source personal media is not copied. Video/exercise media and coach sharing are not implemented.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED PASS: authenticated synthetic cover upload, checkmark save, Profile render, reopen Current photo and delete; wider source/device/privacy states unverified.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md: Private media extension; astra/ADR-010-PRIVATE-MEDIA.md; source ea25393, push/CI pending.",
+      "Parent-reported local PASS: build/TypeScript, 32 unit tests, 2 isolated HTTP tests; fresh PostgreSQL 17.4 full ten-migration/seed/core/member/training/feedback/media suites with simulated JWT and Storage metadata.",
+      "Hosted media/selection migrations installed on crhcgcqanoeoddmwaqhb as 20260906015855 / 20260906021344; real authenticated Storage HTTP exercised with a synthetic 300x400 plain PNG. Two synthetic records removed, zero selected, zero remaining objects; no personal files or coach send.",
+      ".artifacts/media-review/cover-empty-393-final.png; cover-selected-393-final.png; cover-selected-320-final.png; cover-selected-1440-final.png. Bounded SHIP does not establish paired source-state parity."
+    ]
   },
   {
     "id": "cf555b20934717e7",
@@ -4653,14 +4678,19 @@
     ],
     "referenceRoute": "/profile/cover",
     "referenceState": "Captured cover gallery state; select a cover or upload and Save",
-    "connectedRoute": null,
+    "connectedRoute": "/app/profile/cover",
     "family": "media",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No private photo/video upload, exercise-media or avatar/cover contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Private cover upload, owner gallery and explicit selected_at checkmark save are connected; upload alone does not replace the current image. Native gallery and all source variants remain unaccepted.",
+    "mediaStatus": "Private member JPEG/PNG/WebP uploads normalized to still JPEG; original source personal media is not copied. Video/exercise media and coach sharing are not implemented.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED PASS: authenticated synthetic cover upload, checkmark save, Profile render, reopen Current photo and delete; wider source/device/privacy states unverified.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md: Private media extension; astra/ADR-010-PRIVATE-MEDIA.md; source ea25393, push/CI pending.",
+      "Parent-reported local PASS: build/TypeScript, 32 unit tests, 2 isolated HTTP tests; fresh PostgreSQL 17.4 full ten-migration/seed/core/member/training/feedback/media suites with simulated JWT and Storage metadata.",
+      "Hosted media/selection migrations installed on crhcgcqanoeoddmwaqhb as 20260906015855 / 20260906021344; real authenticated Storage HTTP exercised with a synthetic 300x400 plain PNG. Two synthetic records removed, zero selected, zero remaining objects; no personal files or coach send.",
+      ".artifacts/media-review/cover-empty-393-final.png; cover-selected-393-final.png; cover-selected-320-final.png; cover-selected-1440-final.png. Bounded SHIP does not establish paired source-state parity."
+    ]
   },
   {
     "id": "7341749f58fd2736",
