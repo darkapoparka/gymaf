@@ -4592,11 +4592,18 @@
     "connectedRoute": "/app/profile/edit",
     "family": "profile-edit",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Display name, locale, timezone, goal, equipment and availability save; source bio/photo fields are absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Existing profile.save retains display name, locale, timezone, goal, equipment and availability with revision/idempotency. Private saved cover preview and photo navigation are connected. Source interests, private-profile/social controls and native account details are absent; actual successful profile-save browser acceptance remains open.",
+    "mediaStatus": "Private selected cover preview connected; original source media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded authenticated draft/history/Keep Editing/Discard without mutation; mocked retry/acknowledgement/validation PASS. Actual successful profile mutation and full source flow NOT VERIFIED.",
+    "evidence": [
+      "Source 3bd4b4a: /app/profile/edit uses close/checkmark sheet, cover preview, Display Name and existing Gymaf training/account preferences; no database changes.",
+      "Account-scoped document-memory draft retains original baseline, revision and failed commandId across photo navigation/history; field changes reset commandId. Auth/session/logout clear memory; unmount abort guard, beforeunload, dirty-close choices and explicit Reload Saved Profile replacement are implemented.",
+      "Parent-reported authenticated browser: temporary unsaved name survived cover picker and Back/Forward; Keep Editing and Discard worked; original saved name verified unchanged; no profile mutation.",
+      ".artifacts/profile-review/retry-payloads.json: two aborted mocked profile.save requests across photo navigation retain the same UUID and revision 4; mocked acknowledgement exits/clears draft; empty-name Save and Leave focuses field without request.",
+      ".artifacts/profile-review/editor-393-final.png; editor-320-final.png; editor-1440-final.png; reload-393.png; reload-320.png. Bounded reviewer PASS; source interests/privacy variants remain absent and this row is NOT VERIFIED 1:1.",
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance."
+    ]
   },
   {
     "id": "11cdf70d01f98f9d",
@@ -4616,11 +4623,18 @@
     "connectedRoute": "/app/profile/edit",
     "family": "profile-edit",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Display name, locale, timezone, goal, equipment and availability save; source bio/photo fields are absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Existing profile.save retains display name, locale, timezone, goal, equipment and availability with revision/idempotency. Private saved cover preview and photo navigation are connected. Source interests, private-profile/social controls and native account details are absent; actual successful profile-save browser acceptance remains open.",
+    "mediaStatus": "Private selected cover preview connected; original source media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded authenticated draft/history/Keep Editing/Discard without mutation; mocked retry/acknowledgement/validation PASS. Actual successful profile mutation and full source flow NOT VERIFIED.",
+    "evidence": [
+      "Source 3bd4b4a: /app/profile/edit uses close/checkmark sheet, cover preview, Display Name and existing Gymaf training/account preferences; no database changes.",
+      "Account-scoped document-memory draft retains original baseline, revision and failed commandId across photo navigation/history; field changes reset commandId. Auth/session/logout clear memory; unmount abort guard, beforeunload, dirty-close choices and explicit Reload Saved Profile replacement are implemented.",
+      "Parent-reported authenticated browser: temporary unsaved name survived cover picker and Back/Forward; Keep Editing and Discard worked; original saved name verified unchanged; no profile mutation.",
+      ".artifacts/profile-review/retry-payloads.json: two aborted mocked profile.save requests across photo navigation retain the same UUID and revision 4; mocked acknowledgement exits/clears draft; empty-name Save and Leave focuses field without request.",
+      ".artifacts/profile-review/editor-393-final.png; editor-320-final.png; editor-1440-final.png; reload-393.png; reload-320.png. Bounded reviewer PASS; source interests/privacy variants remain absent and this row is NOT VERIFIED 1:1.",
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance."
+    ]
   },
   {
     "id": "93e000d6f001413c",
@@ -4710,11 +4724,18 @@
     "connectedRoute": "/app/profile/edit",
     "family": "profile-edit",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Display name, locale, timezone, goal, equipment and availability save; source bio/photo fields are absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Existing profile.save retains display name, locale, timezone, goal, equipment and availability with revision/idempotency. Private saved cover preview and photo navigation are connected. Source interests, private-profile/social controls and native account details are absent; actual successful profile-save browser acceptance remains open.",
+    "mediaStatus": "Private selected cover preview connected; original source media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded authenticated draft/history/Keep Editing/Discard without mutation; mocked retry/acknowledgement/validation PASS. Actual successful profile mutation and full source flow NOT VERIFIED.",
+    "evidence": [
+      "Source 3bd4b4a: /app/profile/edit uses close/checkmark sheet, cover preview, Display Name and existing Gymaf training/account preferences; no database changes.",
+      "Account-scoped document-memory draft retains original baseline, revision and failed commandId across photo navigation/history; field changes reset commandId. Auth/session/logout clear memory; unmount abort guard, beforeunload, dirty-close choices and explicit Reload Saved Profile replacement are implemented.",
+      "Parent-reported authenticated browser: temporary unsaved name survived cover picker and Back/Forward; Keep Editing and Discard worked; original saved name verified unchanged; no profile mutation.",
+      ".artifacts/profile-review/retry-payloads.json: two aborted mocked profile.save requests across photo navigation retain the same UUID and revision 4; mocked acknowledgement exits/clears draft; empty-name Save and Leave focuses field without request.",
+      ".artifacts/profile-review/editor-393-final.png; editor-320-final.png; editor-1440-final.png; reload-393.png; reload-320.png. Bounded reviewer PASS; source interests/privacy variants remain absent and this row is NOT VERIFIED 1:1.",
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance."
+    ]
   },
   {
     "id": "2d63b2d421e8986c",
@@ -4734,11 +4755,18 @@
     "connectedRoute": "/app/profile/edit",
     "family": "profile-edit",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Display name, locale, timezone, goal, equipment and availability save; source bio/photo fields are absent.",
-    "mediaStatus": "Original media not connected",
+    "backendGap": "Existing profile.save retains display name, locale, timezone, goal, equipment and availability with revision/idempotency. Private saved cover preview and photo navigation are connected. Source interests, private-profile/social controls and native account details are absent; actual successful profile-save browser acceptance remains open.",
+    "mediaStatus": "Private selected cover preview connected; original source media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded authenticated draft/history/Keep Editing/Discard without mutation; mocked retry/acknowledgement/validation PASS. Actual successful profile mutation and full source flow NOT VERIFIED.",
+    "evidence": [
+      "Source 3bd4b4a: /app/profile/edit uses close/checkmark sheet, cover preview, Display Name and existing Gymaf training/account preferences; no database changes.",
+      "Account-scoped document-memory draft retains original baseline, revision and failed commandId across photo navigation/history; field changes reset commandId. Auth/session/logout clear memory; unmount abort guard, beforeunload, dirty-close choices and explicit Reload Saved Profile replacement are implemented.",
+      "Parent-reported authenticated browser: temporary unsaved name survived cover picker and Back/Forward; Keep Editing and Discard worked; original saved name verified unchanged; no profile mutation.",
+      ".artifacts/profile-review/retry-payloads.json: two aborted mocked profile.save requests across photo navigation retain the same UUID and revision 4; mocked acknowledgement exits/clears draft; empty-name Save and Leave focuses field without request.",
+      ".artifacts/profile-review/editor-393-final.png; editor-320-final.png; editor-1440-final.png; reload-393.png; reload-320.png. Bounded reviewer PASS; source interests/privacy variants remain absent and this row is NOT VERIFIED 1:1.",
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS. Production design-review 404; detector [] is not parity acceptance."
+    ]
   },
   {
     "id": "a024a61347fa078a",
@@ -4937,14 +4965,19 @@
     ],
     "referenceRoute": "/account",
     "referenceState": "Choose Sign Out to open confirmation",
-    "connectedRoute": "/app/settings/service",
+    "connectedRoute": "/app/profile/edit",
     "family": "account",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Manual service cancellation and data/support requests exist. Source commercial retention/refunds and shipping flows are absent.",
+    "backendGap": "Sign Out confirmation uses the existing auth/logout endpoint with Cancel default focus and recoverable failure. Actual successful logout is not browser-verified; other source account/commercial/native details remain absent.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded confirmation/Cancel and mocked sign-out failure recovery; actual successful logout NOT VERIFIED.",
+    "evidence": [
+      "Source 3bd4b4a: SignOutButton in profile-editor.tsx uses the existing auth/logout endpoint, Cancel default focus, pending guard and failure recovery; no database changes.",
+      ".artifacts/profile-review/signout-393-final.png; signout-320-final.png; signout-1440-final.png; signout-error-320-final.png. Bounded reviewer PASS; PRF-01 resolved with Sign Out contrast 4.65:1.",
+      "Parent-reported mocked sign-out failure and Cancel checked; no actual successful logout performed. Other source account states are not promoted.",
+      ".artifacts/profile-review/build-final.log, unit.log, lint.log, auth.log: final build/TypeScript PASS, 34 unit PASS, lint 0 errors/2 existing coach warnings, 2 mocked HTTP PASS; production design-review 404, detector []."
+    ]
   },
   {
     "id": "d82e5dc3852242e7",

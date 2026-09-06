@@ -1,8 +1,23 @@
 # Astra implementation status
 
-Updated 6 September 2026. Current review worktree: `M:/gym-fidelity`, branch `review/mobbin-fidelity`, media-batch starting HEAD `869e4d806378aaa0cac3f52a1e6e5d766ebc2019`. The sections below preserve earlier evidence from development branch `astra` and its original base `82b75bde5b4ac2fa355ee98e0efc39fc470ebac6`. The connected web implementation is not the completed production/native roadmap.
+Updated 6 September 2026. Current review worktree: `M:/gym-fidelity`, branch `review/mobbin-fidelity`, current profile source commit `3bd4b4a` (local; push/CI pending at this checkpoint). The sections below preserve earlier evidence from development branch `astra` and its original base `82b75bde5b4ac2fa355ee98e0efc39fc470ebac6`. The connected web implementation is not the completed production/native roadmap.
 
-## Current checkpoint — private media extension
+## Current checkpoint — profile editor and sign-out
+
+`/app/profile/edit` now uses a Close/checkmark Save sheet with saved cover preview and Display Name, retaining Gymaf goal/equipment/availability/language/timezone fields. New `profile-editor.tsx`, `profile-drafts.ts` and `sign-out.tsx` retain existing profile-save and logout contracts; no database changes. Source interests, private-profile/social controls and native account details remain absent.
+
+Account-scoped document-memory drafts retain their baseline, revision and failed-save command ID across photo navigation/history; field changes reset the ID, and auth/session/logout clear memory. Dirty-close Save and Leave/Keep Editing/Discard, beforeunload, explicit Reload Saved Profile replacement and unmount abort guards protect unsaved edits. Sign Out confirms with Cancel default focus and recoverable errors. Draft recovery is not durable storage or an acknowledged server save.
+
+- **Local final PASS, parent-reported:** build/TypeScript, 34 unit tests, lint 0 errors/2 existing coach warnings and 2 mocked HTTP tests. Logs: `.artifacts/profile-review/{build-final,unit,lint,auth}.log`. Production design-review returns 404.
+- **Authenticated browser PASS, bounded and parent-reported:** temporary unsaved name survived cover picker and Back/Forward; Keep Editing and Discard worked; saved name verified unchanged. No profile mutation/logout was performed; the task's browser was closed.
+- **Mocked recovery PASS, parent-reported:** two aborted profile saves across photo navigation retained the same UUID/revision 4 in `retry-payloads.json`; mocked acknowledgement exited/cleared the draft; empty-name Save and Leave focused the field without a request. Mocked sign-out failure and Cancel checked.
+- **Final reviewer PASS, bounded:** PRF-01 resolved with Sign Out contrast 4.65:1; detector `[]`. Final 320/393/1440 editor/sign-out and failure/reload captures are listed in [FRONTEND_PARITY.md](FRONTEND_PARITY.md).
+
+Five already-partial ledger rows receive evidence: four profile-edit captures and sign-out capture `8724ed8b412f949b`. Counts remain **220 partial / 50 not implemented / zero verified 1:1**; all 270 captures/84 flows remain **NOT COMPLETE / NOT VERIFIED 1:1**. Actual successful profile-save/logout browser journeys, conflict recovery and exact source-state acceptance remain open.
+
+Profile source `3bd4b4a` is local, not yet pushed; profile CI is pending at this documentation checkpoint. Media source `ea25393` plus documentation `6cdb0ff` were pushed; parent-reported exact HEAD `6cdb0ff01c30f31e34ff1f90f834811ade8d4f74` passed [CI 34006896970](https://github.com/darkapoparka/gymaf/actions/runs/34006896970). Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) targets `astra`; no merge or production promotion. `PRODUCT.md`, `DESIGN.md` and `.impeccable` remain unchanged.
+
+## Earlier checkpoint — private media extension
 
 Private progress front/back/side entries, explicit camera/library/cancel choices, normalized still-photo upload, preview/gallery/view/delete, and avatar/cover editors with explicit checkmark selection are connected. Private Profile renders saved `selected_at` images; uploads do not automatically replace them. Owner-only immutable storage, content-hash retries and individual save acknowledgements support partial recovery. Draft files remain in same-document memory only and clear on auth changes. Photos are not shared with coaches; native camera UI is a web/device adaptation awaiting device acceptance.
 
@@ -13,7 +28,7 @@ Private progress front/back/side entries, explicit camera/library/cancel choices
 
 [FRONTEND_PARITY.md](FRONTEND_PARITY.md) lists final captures and [ADR-010](ADR-010-PRIVATE-MEDIA.md) defines privacy, retries and cleanup limits. Exactly six media ledger rows gain partial connected coverage: **220 partial / 50 not implemented / zero verified 1:1**. All 270 captures across 84 flows remain **NOT COMPLETE / NOT VERIFIED 1:1**. Video, exercise media, attachments, native/billing, automatic abandoned-upload cleanup and account-wide storage erasure remain open.
 
-Pushed HEAD `869e4d8` and CI [34004476667](https://github.com/darkapoparka/gymaf/actions/runs/34004476667) PASS cover the preceding feedback batch. New media source is committed as `ea25393`, not yet pushed; media CI is pending. Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) targets `astra`; no main merge/promotion. Runtime remains port 3212, PID 46600, `M:/gym-fidelity`. `PRODUCT.md`, `DESIGN.md` and `.impeccable` remain unchanged.
+Pushed HEAD `869e4d8` and CI [34004476667](https://github.com/darkapoparka/gymaf/actions/runs/34004476667) PASS cover the preceding feedback batch. Media source `ea25393` and documentation `6cdb0ff` subsequently reached pushed HEAD `6cdb0ff01c30f31e34ff1f90f834811ade8d4f74`; [CI 34006896970](https://github.com/darkapoparka/gymaf/actions/runs/34006896970) PASS supersedes the former pending media publication note. This does not cover the later profile source. Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) targets `astra`; no main merge/promotion. Runtime remains port 3212, PID 46600, `M:/gym-fidelity`. `PRODUCT.md`, `DESIGN.md` and `.impeccable` remain unchanged.
 
 ## Earlier checkpoint — session feedback extension
 
