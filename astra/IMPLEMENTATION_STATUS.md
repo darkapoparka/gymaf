@@ -1,8 +1,23 @@
 # Astra implementation status
 
-Updated 6 September 2026. Current review worktree: `M:/gym-fidelity`, branch `review/mobbin-fidelity`, directory increment after `4651f0b6e787656bc10c1133734ba3963e497088`; directory source commit/push/CI pending. The current checkpoint overrides only updated facts; earlier evidence remains historical. The connected web implementation is not the completed production/native roadmap.
+Updated 6 September 2026. Current review worktree: `M:/gym-fidelity`, branch `review/mobbin-fidelity`, shipping increment after `4de2d3c3d167c6cdb1320e4be57890d838a93657`; shipping source commit/push/CI pending. The current checkpoint overrides only updated facts; earlier evidence remains historical. The connected web implementation is not the completed production/native roadmap.
 
-## Current checkpoint — opted-in coach directory
+## Current checkpoint — private shipping address
+
+`/app/account/shipping` links from Your Account and adds the reference light sheet, state/ZIP pair, XS–XXL selector and Update action. Country supports non-US addresses with optional region/postal fields. The owner-only `member_records` shipping singleton retains existing queries/export, commands, revisions and retries. This saves a private preference; it creates no order, shipment, coach send or fulfillment. [ADR-013](ADR-013-PRIVATE-SHIPPING-ADDRESS.md) records validation and ownership limits.
+
+Auth-scoped document-memory drafts survive same-document history with separate save/delete retry IDs. Dirty Close, explicit Remove, confirmed reload replacement, beforeunload, abort guards and focused errors protect edits. Local validation now displays `InputError.message` and checks trimmed completeness; the misleading network advice finding is closed. Draft recovery is not durable storage or a server acknowledgement.
+
+- **Hosted schema PASS, parent-reported:** source `20260906042113` → hosted `20260906043258` on approved development `crhcgcqanoeoddmwaqhb`; fourteen migrations total. Read-only SQL found zero shipping records. Hosted browser save/persistence/conflict/remove/export remain untested.
+- **Local PASS, parent-reported:** build/TypeScript; 44 units; lint zero errors/two existing coach warnings; three mocked HTTP tests, including valid/invalid shipping and delete. Fresh PostgreSQL 17.4 `gymaf_shipping_final` passed fourteen migrations, seed and nine SQL suites with simulated provider JWT/Storage. Logs: `.artifacts/shipping-review/{build-final,unit-final,lint,http-final,full-db,db}.log`; post-fix build/unit/HTTP reruns PASS.
+- **Mocked browser PASS, bounded:** save UUID `657f375d-e44d-49d1-b4ff-a6cdb34b0290` and delete UUID `4aaa5353-dffc-4bd0-8d7f-0470a8ea10ce` each retained revision 1 across two requests. Back/Forward retained `Synthetic preserved draft`; dirty-close Escape restored Close focus; reload/discard and mocked acknowledgement to Your Account passed. Country-aware validation tested; checked 320/393/1440 states had no overflow or controls below 44px.
+- **Bounded final SHIP:** P3 local-validation feedback closed; Country length error receives alert focus. Reviewer reports card bottom within 2px and Update within 4px at 393px. Detector `[]` and these geometry checks are not 1:1 acceptance. Capture/request list is in [FRONTEND_PARITY.md](FRONTEND_PARITY.md).
+
+Only three individual shipping form rows gain partial coverage: **232 partial / 38 not implemented / zero verified 1:1** across 270 captures/84 flows, all **NOT COMPLETE / NOT VERIFIED 1:1**. Native picker `716fd33fa6bc37d2` remains Not implemented. Original background, OS keyboard/picker, provider browser save/conflict/remove/export, fulfillment and native acceptance remain open.
+
+Directory source was pushed as `4de2d3c3d167c6cdb1320e4be57890d838a93657` and exact [CI 34011418342](https://github.com/darkapoparka/gymaf/actions/runs/34011418342) passed, superseding its earlier pending-publication notes. PR #3 Vercel Preview check passed deployment completion, not hosted UI acceptance. Shipping commit/push/CI remain pending. Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) targets `astra`; no main merge or production promotion. `DESIGN.md`, `PRODUCT.md` and `.impeccable` remain unchanged.
+
+## Earlier checkpoint — opted-in coach directory
 
 The connected app now includes `/app/coaches` explore plus `/app/coaches/search`, `/app/coaches/results`, `/app/coaches/profile/[slug]`, `/app/coaches/change` and `/app/coaches/reasons`. Search provides collapsed/expanded expertise, Default order/A–Z expertise choices, text search and filtered counts: OR within each category, AND between categories and text. Profiles show authored metadata and initials because approved photos are absent. Change reasons are private in-memory browsing notes. Connect explains private invitations and links to support; it does not send, book, charge, match or replace a coach.
 

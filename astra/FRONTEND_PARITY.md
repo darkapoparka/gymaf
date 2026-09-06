@@ -16,7 +16,7 @@ Implementation order: connected shell/home, progress/goal, schedule/detail/playe
 
 ## Current handoff — 6 September 2026
 
-Status: **NOT COMPLETE; all 270 captures across 84 flows remain NOT VERIFIED 1:1**. `astra/connected-screen-parity.json` is the current connected-screen ledger: 229 `Partial family adaptation`, 41 `Not implemented`, zero verified 1:1. The latest directory extension adds partial coverage for seven individually evidenced captures. Earlier counts below are historical; these coverage counts are not completed-screen counts. Bounded authenticated hosted location/equipment, favorites and synthetic private progress/cover journeys pass; wider connected flows and individual source-state acceptance remain open. The older 270-screen reference ledger under `docs/` describes the separate reference implementation and must not be counted as connected acceptance.
+Status: **NOT COMPLETE; all 270 captures across 84 flows remain NOT VERIFIED 1:1**. `astra/connected-screen-parity.json` is the current connected-screen ledger: 232 `Partial family adaptation`, 38 `Not implemented`, zero verified 1:1. The latest shipping extension adds partial coverage for three individually evidenced form captures; its native picker capture remains absent. Earlier counts below are historical; these coverage counts are not completed-screen counts. Bounded authenticated hosted location/equipment, favorites and synthetic private progress/cover journeys pass; wider connected flows and individual source-state acceptance remain open. The older 270-screen reference ledger under `docs/` describes the separate reference implementation and must not be counted as connected acceptance.
 
 This document records the active frontend direction and resumable work. Existing `DESIGN.md`, `PRODUCT.md` and `.impeccable` design context are known to describe an older world; they were not refreshed because that drift repair was not authorized. Use the owner decision above, actual connected components and this ledger for this task's scope.
 
@@ -28,6 +28,7 @@ The connected client now uses the reference's pale lavender canvas, serif titles
 
 | Surface | Current composition and ownership |
 | --- | --- |
+| Shipping, `/app/account/shipping` | Private address/shirt preference from Your Account; country-aware form, revisioned save/remove and scoped draft recovery. No fulfillment contract. |
 | Coach directory, `/app/coaches` | `CoachDirectory`: explore, search/results, authored profile, change introduction and private browsing reasons; opted-in directory with invitation-explanation dialog. Owner `/coach/profile` includes `DirectoryEditor`. |
 | Home, `/app` | `ClientHome` in `client-views.tsx`: next assigned workout, quick training links, loaded-history progress and upcoming records. |
 | Progress, `/app/history` | `ProgressView`: goal sheet, rolling 30-day consistency, day dialog, seven-day completed-session minutes and loaded attempt history; calculations in `progress-data.ts` use the client's timezone. |
@@ -249,3 +250,24 @@ Final ignored captures in `.artifacts/discovery-review/`: `filters-{320,393,1440
 Exactly seven rows move from Not implemented to Partial family adaptation: `8dae96b34ae39b84` (explore), `93b3d967c9f773aa` (profile top), `cb9726be9e6f072a` (filters), `9bbfbb4408c5aa98` (expanded expertise), `32e4b5a461cdee6c` (results), `de6aa2a677652a59` (change introduction), `5b8853eb6bed9cfa` (reasons). Totals: **229 partial / 41 not implemented / zero verified 1:1**; all 270 captures/84 flows remain **NOT COMPLETE / NOT VERIFIED 1:1**. A working A–Z control does not promote the separate source sort row. Source recommendations, availability/booking, exact portraits, native/private-public flows and hosted mutation/conflict/publication/privacy journeys remain unaccepted.
 
 Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) remains draft against `astra`. No main merge or production promotion. `DESIGN.md`, `PRODUCT.md` and `.impeccable` are unchanged.
+
+## Private shipping address extension — 6 September 2026
+
+Shipping begins at pushed directory HEAD `4de2d3c3d167c6cdb1320e4be57890d838a93657` in `M:/gym-fidelity`, branch `review/mobbin-fidelity`. Exact [CI 34011418342](https://github.com/darkapoparka/gymaf/actions/runs/34011418342) passed, superseding the earlier directory pending-publication notes. PR #3's Vercel Preview check passed deployment completion; it does not establish hosted UI acceptance. Shipping commit/push/CI remain pending.
+
+`/app/account/shipping` opens from Your Account with the source light sheet, state/ZIP pair, XS–XXL shirt selector and Update action. Country supports non-US addresses with optional region/postal inputs. US addresses require a recognized state/DC and ZIP or ZIP+4. These are input checks, not postal deliverability verification. Saved address/shirt size is an owner-only preference using the existing `member_records` singleton, RLS, query/export, commands and revision/idempotency boundary. No order, shipment, coach send or fulfillment is created. [ADR-013](ADR-013-PRIVATE-SHIPPING-ADDRESS.md) records the contract.
+
+Auth-scoped document-memory drafts survive same-document history and preserve separate save/delete retry IDs. Dirty Close, confirmed reload replacement and explicit Remove protect edits; beforeunload, abort guards and focused actionable errors support recovery. Local validation now uses `InputError.message` and trimmed completeness. These drafts and mocked acknowledgements are not durable storage or hosted persistence proof.
+
+| Evidence boundary | Result and limits |
+| --- | --- |
+| Hosted schema, parent-reported | Approved development `crhcgcqanoeoddmwaqhb`: source `20260906042113_private_shipping_address.sql` → hosted `20260906043258`; fourteen migrations total. Read-only SQL found zero shipping records. No hosted browser mutation/save/conflict/remove/export acceptance. |
+| Local checks, parent-reported | Build/TypeScript, 44 units, lint zero errors/two existing coach warnings and three mocked HTTP tests PASS. HTTP covers valid/invalid shipping and delete. Fresh PostgreSQL 17.4 `gymaf_shipping_final` passed fourteen migrations, seed and nine SQL suites with simulated provider JWT/Storage. Logs: `.artifacts/shipping-review/{build-final,unit-final,lint,http-final,full-db,db}.log`; post-fix build/unit/HTTP reruns PASS. |
+| Mocked browser, parent-reported | Save UUID `657f375d-e44d-49d1-b4ff-a6cdb34b0290`, delete UUID `4aaa5353-dffc-4bd0-8d7f-0470a8ea10ce`: each repeated twice with revision 1. Reload/discard, dirty-close Escape returning Close focus, Back/Forward retaining `Synthetic preserved draft` and mocked acknowledgement returning Your Account passed. Country-aware validation tested. `save-delete-retries.json` and `layout-checks.txt` document requests and checked 320/393/1440 states without overflow or controls below 44px. |
+| Final bounded review | SHIP, P3 local-validation finding closed. Country length error is clear and focused in `local-validation-393-fixed.png`. Reviewer reports card bottom within 2px and Update within 4px at 393px; detector `[]`. Neither the geometry nor the review is a full source-state acceptance. |
+
+Final ignored captures in `.artifacts/shipping-review/`: `shipping-320-final.png`, `shipping-393-final.png`, `shipping-1440-final.png`, `empty-393.png`, `filled-no-size-393.png`, `filled-size-393.png`, `dirty-close-393.png`, `save-error-393.png`, `reload-393.png`, `remove-error-393.png`, `international-320.png` and `local-validation-393-fixed.png`.
+
+Only initial form `35d81d4c979a3195`, filled/no-size `c69fee952cd49b41` and filled/size `693755a9410f5831` move from Not implemented to Partial family adaptation. Native picker `716fd33fa6bc37d2` remains Not implemented. Totals: **232 partial / 38 not implemented / zero verified 1:1**, across 270 captures/84 flows, all **NOT COMPLETE / NOT VERIFIED 1:1**. Original background, OS keyboard/picker, provider browser save/conflict/remove/export, fulfillment and native acceptance remain open.
+
+Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) remains against `astra`; no main merge or production promotion. `DESIGN.md`, `PRODUCT.md` and `.impeccable` are unchanged; this ordinary extension does not repair legacy drift.

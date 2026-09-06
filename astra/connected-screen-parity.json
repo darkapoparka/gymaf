@@ -5300,14 +5300,21 @@
     ],
     "referenceRoute": "/account/shipping",
     "referenceState": "Shipping form; native select menu is browser supplied",
-    "connectedRoute": null,
+    "connectedRoute": "/app/account/shipping",
     "family": "billing",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No payment-provider checkout, shipping or paid plan-change contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Private shipping address/shirt preference uses owner singleton member_records with existing RLS/query/export/member.save/member.delete, revisions and retries. Country-aware validation supports US state/ZIP and optional non-US region/postal. No order, shipment, coach send, fulfillment or paid plan-change contract. Hosted browser save/conflict/remove/export remain untested.",
+    "mediaStatus": "Light-sheet form adapted; original background and OS keyboard/picker not accepted. Native picker capture remains Not implemented.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked country validation, same-document draft/history, dirty-close/focus, reload/discard and separate save/delete retry IDs. Hosted provider browser persistence/conflict/remove/export NOT TESTED.",
+    "evidence": [
+      "Shipping increment after 4de2d3c3d167c6cdb1320e4be57890d838a93657: individually evidenced initial form adapts /app/account/shipping. Private preference only; no fulfillment. This row remains NOT VERIFIED 1:1.",
+      ".artifacts/shipping-review/empty-393.png; shipping-320-final.png; shipping-393-final.png; shipping-1440-final.png. Bounded reviewer SHIP: card bottom within 2px and Update within 4px at 393px. Original background/native states prevent exact acceptance.",
+      ".artifacts/shipping-review/save-delete-retries.json: save UUID 657f375d-e44d-49d1-b4ff-a6cdb34b0290 and delete UUID 4aaa5353-dffc-4bd0-8d7f-0470a8ea10ce each retried twice at revision 1. Back/Forward retained Synthetic preserved draft; mock acknowledgement returned Your Account. No hosted mutation.",
+      ".artifacts/shipping-review/dirty-close-393.png, save-error-393.png, reload-393.png, remove-error-393.png, international-320.png and local-validation-393-fixed.png: mocked error/reload/remove/country states. Dirty-close Escape returns Close focus; P3 local validation is closed with clear focused Country length error. layout-checks.txt: no checked 320/393/1440 overflow or controls below 44px; detector [] is not acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906042113 installed as 20260906043258; fourteen migrations and zero shipping records by read-only SQL. Schema proof only; no hosted browser save/conflict/remove/export.",
+      "Parent-reported local .artifacts/shipping-review/{build-final,unit-final,lint,http-final,full-db,db}.log: build/TypeScript, 44 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_shipping_final, 14 migrations + seed + 9 SQL suites PASS with simulated provider JWT/Storage. Post-fix build/unit/HTTP reruns PASS. Prior directory exact HEAD 4de2d3c3d167c6cdb1320e4be57890d838a93657 CI 34011418342 and PR3 Vercel Preview deployment check passed; these are not shipping CI or hosted UI acceptance. Shipping commit/push/CI pending."
+    ]
   },
   {
     "id": "c69fee952cd49b41",
@@ -5320,14 +5327,21 @@
     ],
     "referenceRoute": "/account/shipping",
     "referenceState": "Shipping form; native select menu is browser supplied",
-    "connectedRoute": null,
+    "connectedRoute": "/app/account/shipping",
     "family": "billing",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No payment-provider checkout, shipping or paid plan-change contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Private shipping address/shirt preference uses owner singleton member_records with existing RLS/query/export/member.save/member.delete, revisions and retries. Country-aware validation supports US state/ZIP and optional non-US region/postal. No order, shipment, coach send, fulfillment or paid plan-change contract. Hosted browser save/conflict/remove/export remain untested.",
+    "mediaStatus": "Light-sheet form adapted; original background and OS keyboard/picker not accepted. Native picker capture remains Not implemented.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked country validation, same-document draft/history, dirty-close/focus, reload/discard and separate save/delete retry IDs. Hosted provider browser persistence/conflict/remove/export NOT TESTED.",
+    "evidence": [
+      "Shipping increment after 4de2d3c3d167c6cdb1320e4be57890d838a93657: individually evidenced filled without shirt size adapts /app/account/shipping. Private preference only; no fulfillment. This row remains NOT VERIFIED 1:1.",
+      ".artifacts/shipping-review/filled-no-size-393.png; shipping-320-final.png; shipping-393-final.png; shipping-1440-final.png. Bounded reviewer SHIP: card bottom within 2px and Update within 4px at 393px. Original background/native states prevent exact acceptance.",
+      ".artifacts/shipping-review/save-delete-retries.json: save UUID 657f375d-e44d-49d1-b4ff-a6cdb34b0290 and delete UUID 4aaa5353-dffc-4bd0-8d7f-0470a8ea10ce each retried twice at revision 1. Back/Forward retained Synthetic preserved draft; mock acknowledgement returned Your Account. No hosted mutation.",
+      ".artifacts/shipping-review/dirty-close-393.png, save-error-393.png, reload-393.png, remove-error-393.png, international-320.png and local-validation-393-fixed.png: mocked error/reload/remove/country states. Dirty-close Escape returns Close focus; P3 local validation is closed with clear focused Country length error. layout-checks.txt: no checked 320/393/1440 overflow or controls below 44px; detector [] is not acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906042113 installed as 20260906043258; fourteen migrations and zero shipping records by read-only SQL. Schema proof only; no hosted browser save/conflict/remove/export.",
+      "Parent-reported local .artifacts/shipping-review/{build-final,unit-final,lint,http-final,full-db,db}.log: build/TypeScript, 44 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_shipping_final, 14 migrations + seed + 9 SQL suites PASS with simulated provider JWT/Storage. Post-fix build/unit/HTTP reruns PASS. Prior directory exact HEAD 4de2d3c3d167c6cdb1320e4be57890d838a93657 CI 34011418342 and PR3 Vercel Preview deployment check passed; these are not shipping CI or hosted UI acceptance. Shipping commit/push/CI pending."
+    ]
   },
   {
     "id": "716fd33fa6bc37d2",
@@ -5360,14 +5374,21 @@
     ],
     "referenceRoute": "/account/shipping",
     "referenceState": "Shipping form; native select menu is browser supplied",
-    "connectedRoute": null,
+    "connectedRoute": "/app/account/shipping",
     "family": "billing",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No payment-provider checkout, shipping or paid plan-change contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Private shipping address/shirt preference uses owner singleton member_records with existing RLS/query/export/member.save/member.delete, revisions and retries. Country-aware validation supports US state/ZIP and optional non-US region/postal. No order, shipment, coach send, fulfillment or paid plan-change contract. Hosted browser save/conflict/remove/export remain untested.",
+    "mediaStatus": "Light-sheet form adapted; original background and OS keyboard/picker not accepted. Native picker capture remains Not implemented.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked country validation, same-document draft/history, dirty-close/focus, reload/discard and separate save/delete retry IDs. Hosted provider browser persistence/conflict/remove/export NOT TESTED.",
+    "evidence": [
+      "Shipping increment after 4de2d3c3d167c6cdb1320e4be57890d838a93657: individually evidenced filled with shirt size adapts /app/account/shipping. Private preference only; no fulfillment. This row remains NOT VERIFIED 1:1.",
+      ".artifacts/shipping-review/filled-size-393.png; shipping-320-final.png; shipping-393-final.png; shipping-1440-final.png. Bounded reviewer SHIP: card bottom within 2px and Update within 4px at 393px. Original background/native states prevent exact acceptance.",
+      ".artifacts/shipping-review/save-delete-retries.json: save UUID 657f375d-e44d-49d1-b4ff-a6cdb34b0290 and delete UUID 4aaa5353-dffc-4bd0-8d7f-0470a8ea10ce each retried twice at revision 1. Back/Forward retained Synthetic preserved draft; mock acknowledgement returned Your Account. No hosted mutation.",
+      ".artifacts/shipping-review/dirty-close-393.png, save-error-393.png, reload-393.png, remove-error-393.png, international-320.png and local-validation-393-fixed.png: mocked error/reload/remove/country states. Dirty-close Escape returns Close focus; P3 local validation is closed with clear focused Country length error. layout-checks.txt: no checked 320/393/1440 overflow or controls below 44px; detector [] is not acceptance.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906042113 installed as 20260906043258; fourteen migrations and zero shipping records by read-only SQL. Schema proof only; no hosted browser save/conflict/remove/export.",
+      "Parent-reported local .artifacts/shipping-review/{build-final,unit-final,lint,http-final,full-db,db}.log: build/TypeScript, 44 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_shipping_final, 14 migrations + seed + 9 SQL suites PASS with simulated provider JWT/Storage. Post-fix build/unit/HTTP reruns PASS. Prior directory exact HEAD 4de2d3c3d167c6cdb1320e4be57890d838a93657 CI 34011418342 and PR3 Vercel Preview deployment check passed; these are not shipping CI or hosted UI acceptance. Shipping commit/push/CI pending."
+    ]
   },
   {
     "id": "fa33f93ee04cad49",

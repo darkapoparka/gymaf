@@ -12,6 +12,7 @@ import { Messages } from "./messages";
 import { ProfileScreen } from "./profile";
 import { CoachRatingDialog } from "./coach-rating";
 import { CoachDirectory } from "./coach-directory";
+import { ShippingEditor } from "./shipping-editor";
 import { AccountEditor } from "./account-editor";
 import { ProfileEditor } from "./profile-editor";
 import { Empty, ErrorNote, Field, Head, Note, Pending, Row, useCommand, useResource } from "./ui";
@@ -45,6 +46,7 @@ export function ClientArea({ account, path, selectedId, reloadAccount }: { accou
   const query = selected ? `?relationship=${selected.id}` : "";
   const reload = () => { resource.reload(); reloadAccount(); };
   if(path[0]==='coaches')return <CoachDirectory account={account} path={path} query={query}/>;
+  if(path[0]==='account'&&path[1]==='shipping')return <ShippingEditor ownerId={account.user.id} query={query}/>;
   if(path[0]==='account')return <AccountEditor key={account.user.id} user={account.user} query={query}/>;
   if(path[0]==='profile'&&path[1]==='edit')return <ProfileEditor key={account.user.id} user={account.user} query={query} reload={reloadAccount}/>;
   if ((path[0] === "progress" && path[1] === "photos") || (path[0] === "profile" && ["avatar","cover"].includes(path[1]))) return <MemberMediaArea key={`${account.user.id}:${path[1]}`} account={account} kind={path[1] === "avatar" ? "avatar" : path[1] === "cover" ? "cover" : "progress"} query={query}/>;

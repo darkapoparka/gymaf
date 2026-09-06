@@ -1,4 +1,6 @@
 import type { Command, ProgramPlan, PlanSet } from "./contracts";
+export const shirtSizes=['XS','S','M','L','XL','XXL'] as const;
+export const usStates=['AL','AK','AZ','AR','CA','CO','CT','DE','DC','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY'] as const;
 export const coachExpertise = [
   "Sports Performance",
   "General Strength Training",
@@ -134,7 +136,7 @@ export function validateCommand(value: unknown): Command {
     case "training.favorite": keys(p, ["scheduledId", "favorite", "revision"]); payload = { scheduledId: id("scheduledId"), favorite: boolean(p.favorite), revision: revision() }; break;
     case "member.save": {
       keys(p, ["id", "kind", "data", "revision"]);
-      const kind = oneOf(p.kind, ["preferences", "location", "injury", "event", "weight", "weight-target", "account"]);
+      const kind = oneOf(p.kind, ["preferences", "location", "injury", "event", "weight", "weight-target", "account", "shipping"]);
       const d = object(p.data); let data: Record<string, unknown>;
       const strings = (v: unknown, max: number) => {
         if (!Array.isArray(v) || v.length > max) throw new InputError("Invalid list.");
@@ -142,7 +144,12 @@ export function validateCommand(value: unknown): Command {
         if (new Set(items).size !== items.length) throw new InputError("Duplicate list entry.");
         return items;
       };
-      if (kind === "account") {
+      if (kind === "shipping") {
+        keys(d,['street','apartment','city','region','postalCode','country','shirtSize']);
+        const country=text(d.country,'Country',80,2),region=text(d.region,'Region',120),postalCode=text(d.postalCode,'Postal code',20);
+        if(['united states','united states of america','us','usa'].includes(country.toLowerCase())){oneOf(region,usStates);if(!/^\d{5}(-\d{4})?$/.test(postalCode))throw new InputError('Enter a five-digit US ZIP code, optionally followed by four extra digits.');}
+        data={street:text(d.street,'Street address',200,1),apartment:text(d.apartment,'Apartment',120),city:text(d.city,'City',120,1),region,postalCode,country,shirtSize:oneOf(d.shirtSize,shirtSizes)};
+      } else if (kind === "account") {
         keys(d, ["preferredName", "firstName", "lastName", "biologicalSex", "dateOfBirth", "heightCm", "phone"]);
         const birth = text(d.dateOfBirth, "Date of birth", 10);
         if (birth && (dateOnly(birth) > new Date().toISOString().slice(0,10) || birth < "1900-01-01")) throw new InputError("Enter a valid date of birth.");
@@ -173,7 +180,7 @@ export function validateCommand(value: unknown): Command {
       }
       payload = { id: id("id"), kind, revision: revision(), data }; break;
     }
-    case "member.delete": keys(p, ["id", "kind", "revision"]); payload = { id: id("id"), kind: oneOf(p.kind, ["location", "injury", "event", "weight", "weight-target"]), revision: revision() }; break;
+    case "member.delete": keys(p, ["id", "kind", "revision"]); payload = { id: id("id"), kind: oneOf(p.kind, ["location", "injury", "event", "weight", "weight-target", "shipping"]), revision: revision() }; break;
     case "profile.save": {
       keys(p, ["displayName", "locale", "timezone", "goal", "equipment", "availability", "revision", "interests"]);
       let interests:string[]|undefined;

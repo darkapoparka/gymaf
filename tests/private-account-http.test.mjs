@@ -41,6 +41,9 @@ test('private account, interests and coach-rating HTTP boundaries',{timeout:4500
   assert.equal((await post(command)).status,200);assert.equal(calls.at(-1).path,'/rest/v1/rpc/gymaf_coach_rating_command');assert.equal(calls.at(-1).body.p_command_id,id);
   const directory={action:'directory.save',commandId:id,payload:{workspaceId:rid,revision:0,data:{listed:false,expertise:[],styles:[],sports:[],languages:[],experience:'',qualifications:'',loves:'',location:''}}};
   assert.equal((await post(directory)).status,200);assert.equal(calls.at(-1).path,'/rest/v1/rpc/gymaf_directory_command');assert.equal((await post({...directory,payload:{...directory.payload,userId:id}})).status,422);
+  const shipping={action:'member.save',commandId:id,payload:{id,kind:'shipping',revision:0,data:{street:'Synthetic Way',apartment:'',city:'Synthetic City',region:'CA',postalCode:'00000',country:'United States',shirtSize:'L'}}};
+  assert.equal((await post(shipping)).status,200);assert.equal(calls.at(-1).path,'/rest/v1/rpc/gymaf_member_command');assert.equal((await post({...shipping,payload:{...shipping.payload,data:{...shipping.payload.data,postalCode:'INVALID'}}})).status,422);
+  assert.equal((await post({action:'member.delete',commandId:id,payload:{id,kind:'shipping',revision:1}})).status,200);
   conflict=true;assert.equal((await post(command)).status,409);
   assert.equal((await fetch(origin+'/design-review')).status,404);
  }finally{child.kill();await new Promise(resolve=>fixture.close(resolve));}

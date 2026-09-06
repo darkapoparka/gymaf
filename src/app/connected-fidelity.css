@@ -610,3 +610,16 @@
 @media(max-width:359px){.directory-explore-actions{padding-inline:24px;}.directory-chips>button{font-size:15px;padding:5px 0;}.directory-filter-body{padding-inline:16px;}.directory-search>header h1{font-size:16px;}.directory-reasons-next{margin-top:50px;}}
 
 .directory-change>.native-titlebar h1{font:500 22px/1.2 var(--sans);}.directory-change:has(.directory-reasons)>.native-titlebar{margin-bottom:27px;}.directory-reasons-next{margin-top:124px;}.directory-featured-hero{position:relative;}.directory-featured-hero>.directory-photo-note{position:absolute;top:20px;}
+
+/* Private address preference, with the source's two-column state / ZIP row. */
+.gymaf-client .app-shell:has(.shipping-editor){padding:0;max-width:540px;}
+.shipping-editor{margin-top:69px;min-height:calc(100svh - 69px);padding:16px 16px 40px;border-radius:40px 40px 0 0;background:#f0f1f5;}
+.shipping-editor>.native-titlebar{margin:0 0 26px;}.shipping-editor>.native-titlebar h1{font:500 22px/1.2 var(--sans);}.shipping-editor>.native-titlebar .icon-button{background:#fff;}
+.shipping-editor fieldset{display:grid;gap:24px;border:0;margin:0;padding:0;min-width:0;}
+.shipping-field-card{display:grid;gap:16px;padding:24px;border-radius:26px;background:#ffffff65;}.shipping-region{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;}
+.shipping-editor .form-field{display:grid;margin:0;font:400 15px/1.3 var(--sans);color:#696970;gap:8px;min-width:0;}
+.shipping-editor .form-field input,.shipping-editor .form-field select{border:0;background:#fff;min-height:46px;border-radius:25px;max-width:100%;width:100%;padding:10px 16px;color:#202020;font:400 17px/1.4 var(--sans);}
+.shipping-editor .form-field input::placeholder{color:#76767d;}.shipping-editor .form-field select{padding-right:28px;}
+.shipping-size{margin-top:0;}.shipping-update{min-height:49px;background:#202020;color:#fff;border-radius:25px;font:400 18px var(--sans);}.shipping-update:disabled{background:#888;opacity:1;}
+.shipping-country{padding-top:4px;}.shipping-help{font-size:13px;line-height:1.45;color:#616168;margin:0;}.shipping-editor .editor-error{margin-bottom:0;}
+@media(max-width:359px){.shipping-field-card{padding:20px 16px;}.shipping-region{gap:12px;}.shipping-editor>.native-titlebar h1{font-size:20px;}.shipping-editor .form-field input,.shipping-editor .form-field select{padding-inline:12px;}}
