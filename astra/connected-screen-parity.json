@@ -485,7 +485,7 @@
       }
     ],
     "referenceRoute": "/coaches/search",
-    "referenceState": "Expand expertise; switch sorting to A\u2013Z",
+    "referenceState": "Expand expertise; switch sorting to A–Z",
     "connectedRoute": null,
     "family": "coach-discovery",
     "frontendStatus": "Not implemented",
@@ -1433,11 +1433,14 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Summary Feedback supports private rating/difficulty/comment and movement flags, revisioned draft saves, explicit submitted snapshot to the assigned coach, one notification per submitted revision, and account export. Later draft edits remain private. Hosted feedback-save/conflict and coach-send/read browser journeys and exact source-state acceptance remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED authenticated summary Feedback read and local unsaved Back/Forward recovery/exit choices PASS; no browser mutation or coach send. Local SQL persistence/privacy/resubmission suites PASS. This individual source state and hosted save/send journey NOT VERIFIED.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql"
+    ]
   },
   {
     "id": "4aeac57b072491f1",
@@ -2002,11 +2005,18 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Private prescribed-movement reason/comment flags can be saved, edited or removed from player and summary; revisioned feedback.save acknowledges the private draft. Explicit feedback.submit alone shares the saved snapshot with the assigned coach. Hosted flag-save/conflict and coach-send/read browser journeys remain unverified; source-specific geometry and native/media contracts remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED mocked browser failure/reload PASS: reason/comment retention, Keep Editing and explicit Discard Changes and Reload with focus return; checked 320px has no overflow. Local SQL command/privacy suites PASS. Hosted successful save/409 UI NOT VERIFIED; this individual source state NOT VERIFIED 1:1.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql",
+      ".artifacts/feedback-review/flag-selected-393-final.png",
+      ".artifacts/feedback-review/flag-save-error-393.png",
+      ".artifacts/feedback-review/flag-reload-393.png",
+      ".artifacts/feedback-review/flag-reload-320.png"
+    ]
   },
   {
     "id": "05a17c38ff39fccf",
@@ -2022,11 +2032,18 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Private prescribed-movement reason/comment flags can be saved, edited or removed from player and summary; revisioned feedback.save acknowledges the private draft. Explicit feedback.submit alone shares the saved snapshot with the assigned coach. Hosted flag-save/conflict and coach-send/read browser journeys remain unverified; source-specific geometry and native/media contracts remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED mocked browser failure/reload PASS: reason/comment retention, Keep Editing and explicit Discard Changes and Reload with focus return; checked 320px has no overflow. Local SQL command/privacy suites PASS. Hosted successful save/409 UI NOT VERIFIED; this individual source state NOT VERIFIED 1:1.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql",
+      ".artifacts/feedback-review/flag-selected-393-final.png",
+      ".artifacts/feedback-review/flag-save-error-393.png",
+      ".artifacts/feedback-review/flag-reload-393.png",
+      ".artifacts/feedback-review/flag-reload-320.png"
+    ]
   },
   {
     "id": "d9903c7d95a8ba76",
@@ -2042,11 +2059,18 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Private prescribed-movement reason/comment flags can be saved, edited or removed from player and summary; revisioned feedback.save acknowledges the private draft. Explicit feedback.submit alone shares the saved snapshot with the assigned coach. Hosted flag-save/conflict and coach-send/read browser journeys remain unverified; source-specific geometry and native/media contracts remain open.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED mocked browser failure/reload PASS: reason/comment retention, Keep Editing and explicit Discard Changes and Reload with focus return; checked 320px has no overflow. Local SQL command/privacy suites PASS. Hosted successful save/409 UI NOT VERIFIED; this individual source state NOT VERIFIED 1:1.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql",
+      ".artifacts/feedback-review/flag-selected-393-final.png",
+      ".artifacts/feedback-review/flag-save-error-393.png",
+      ".artifacts/feedback-review/flag-reload-393.png",
+      ".artifacts/feedback-review/flag-reload-320.png"
+    ]
   },
   {
     "id": "d37166677b0b6079",
@@ -2253,11 +2277,14 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Summary Feedback supports private rating/difficulty/comment and movement flags, revisioned draft saves, explicit submitted snapshot to the assigned coach, one notification per submitted revision, and account export. Later draft edits remain private. Hosted feedback-save/conflict and coach-send/read browser journeys and exact source-state acceptance remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED authenticated summary Feedback read and local unsaved Back/Forward recovery/exit choices PASS; no browser mutation or coach send. Local SQL persistence/privacy/resubmission suites PASS. This individual source state and hosted save/send journey NOT VERIFIED.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql"
+    ]
   },
   {
     "id": "30911205601a5847",
@@ -2273,11 +2300,20 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Summary Feedback supports private rating/difficulty/comment and movement flags, revisioned draft saves, explicit submitted snapshot to the assigned coach, one notification per submitted revision, and account export. Later draft edits remain private. Hosted feedback-save/conflict and coach-send/read browser journeys and exact source-state acceptance remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED authenticated summary Feedback read and local unsaved Back/Forward recovery/exit choices PASS; no browser mutation or coach send. Local SQL persistence/privacy/resubmission suites PASS. This individual source state and hosted save/send journey NOT VERIFIED.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql",
+      ".artifacts/feedback-review/feedback-393-final.png",
+      ".artifacts/feedback-review/feedback-filled-393-final.png",
+      ".artifacts/feedback-review/feedback-filled-320-final.png",
+      ".artifacts/feedback-review/feedback-filled-1440-final.png",
+      ".artifacts/feedback-review/dirty-exit-393.png",
+      ".artifacts/feedback-review/dirty-exit-320.png"
+    ]
   },
   {
     "id": "c74f945c3522715d",
@@ -2293,11 +2329,14 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Summary Feedback supports private rating/difficulty/comment and movement flags, revisioned draft saves, explicit submitted snapshot to the assigned coach, one notification per submitted revision, and account export. Later draft edits remain private. Hosted feedback-save/conflict and coach-send/read browser journeys and exact source-state acceptance remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED authenticated summary Feedback read and local unsaved Back/Forward recovery/exit choices PASS; no browser mutation or coach send. Local SQL persistence/privacy/resubmission suites PASS. This individual source state and hosted save/send journey NOT VERIFIED.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql"
+    ]
   },
   {
     "id": "4164718dff7491cc",
@@ -2313,11 +2352,14 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Summary Feedback supports private rating/difficulty/comment and movement flags, revisioned draft saves, explicit submitted snapshot to the assigned coach, one notification per submitted revision, and account export. Later draft edits remain private. Hosted feedback-save/conflict and coach-send/read browser journeys and exact source-state acceptance remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED authenticated summary Feedback read and local unsaved Back/Forward recovery/exit choices PASS; no browser mutation or coach send. Local SQL persistence/privacy/resubmission suites PASS. This individual source state and hosted save/send journey NOT VERIFIED.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql"
+    ]
   },
   {
     "id": "6a45a461602f837d",
@@ -2333,11 +2375,14 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Summary Feedback supports private rating/difficulty/comment and movement flags, revisioned draft saves, explicit submitted snapshot to the assigned coach, one notification per submitted revision, and account export. Later draft edits remain private. Hosted feedback-save/conflict and coach-send/read browser journeys and exact source-state acceptance remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED authenticated summary Feedback read and local unsaved Back/Forward recovery/exit choices PASS; no browser mutation or coach send. Local SQL persistence/privacy/resubmission suites PASS. This individual source state and hosted save/send journey NOT VERIFIED.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql"
+    ]
   },
   {
     "id": "17f00755a1f2445d",
@@ -2353,11 +2398,14 @@
     "connectedRoute": "/app/sessions/[id]",
     "family": "workout-extensions",
     "frontendStatus": "Partial family adaptation",
-    "backendGap": "Gymaf supports prescribed sets and session transitions; source replacement catalog, per-exercise flags/history, running GPS, music and share templates are absent.",
+    "backendGap": "Summary Feedback supports private rating/difficulty/comment and movement flags, revisioned draft saves, explicit submitted snapshot to the assigned coach, one notification per submitted revision, and account export. Later draft edits remain private. Hosted feedback-save/conflict and coach-send/read browser journeys and exact source-state acceptance remain unverified.",
     "mediaStatus": "Original media not connected",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "BOUNDED authenticated summary Feedback read and local unsaved Back/Forward recovery/exit choices PASS; no browser mutation or coach send. Local SQL persistence/privacy/resubmission suites PASS. This individual source state and hosted save/send journey NOT VERIFIED.",
+    "evidence": [
+      "astra/FRONTEND_PARITY.md",
+      "tests/db/session-feedback.sql"
+    ]
   },
   {
     "id": "96bc22de5bed7abf",
