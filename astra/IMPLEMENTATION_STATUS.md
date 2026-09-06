@@ -103,3 +103,7 @@ Overall status: **NOT COMPLETE / NOT VERIFIED 1:1** for all 270 captures and 84 
 ## Review branch publication
 
 Member source committed as `d64a56d` and pushed to `origin/review/mobbin-fidelity`. Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3) targets `astra`; no merge or application deployment occurred. The preceding working-tree descriptions identify the earlier inspection snapshot. Prior CI run `33999086780` subsequently passed web/database checks; this does not validate the current uncommitted training batch. The earlier member PostgreSQL test server was stopped after its successful checks; its synthetic data/logs remain under `.artifacts/member-db/`. The review app uses port 3212. Hosted member migration approval and installation are complete as recorded in the current checkpoint.
+
+## Training review publication
+
+Training source and verification were committed as `57fdaad7bb96529de3a248fe85312a9da334784d` and pushed to `origin/review/mobbin-fidelity`. Draft PR [#3](https://github.com/darkapoparka/gymaf/pull/3), “Connect Future Pro-style member and training flows”, still targets `astra`. GitHub Actions [34001688959](https://github.com/darkapoparka/gymaf/actions/runs/34001688959) was in progress at this publication checkpoint; its final result must be checked separately. The preceding “not yet” references describe their earlier inspection checkpoint. The worktree is connected to the existing hosted backend on port 3212; no main merge or production promotion was performed.
