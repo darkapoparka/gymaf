@@ -1,0 +1,17 @@
+.gymaf-client .app-shell:has(.booking-sheet),.gymaf-client .app-shell:has(.directory-intro){padding:0;max-width:540px;}
+.booking-sheet{padding:18px 24px 40px;background:#f1f0f6;border-radius:36px 36px 0 0;margin-top:59px;min-height:calc(100svh - 59px);}
+.booking-sheet>.native-titlebar{margin-bottom:35px;}.booking-sheet>.native-titlebar h1{font:500 19px/1.3 var(--sans);}
+.gymaf-client .booking-sheet>h2{font:400 23px/1.3 var(--sans);margin:0 0 8px;}.booking-sheet>p{font:400 15px/1.45 var(--sans);color:#68666f;}
+.booking-sheet>.booking-zone{font-size:13px;margin:16px 0 24px;}
+.booking-days{display:flex;gap:8px;overflow-x:auto;padding:4px 0 12px;scrollbar-width:thin;}
+.booking-days>button{flex:0 0 44px;min-height:66px;border-radius:25px;background:#ffffff80;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;font:400 13px var(--sans);}.booking-days strong{font-weight:500;font-size:17px;}
+.booking-days>button[aria-pressed=true],.booking-times>button[aria-pressed=true]{background:#202020;color:#fff;}
+.booking-times{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding-top:8px;}.booking-times>button{min-height:60px;background:#fff8;border-radius:12px;font-size:17px;display:grid;place-content:center;gap:3px;}.booking-times>button>span{font-size:12px;opacity:.8;}
+.booking-submit{position:sticky;bottom:0;background:#f1f0f6;padding:18px 0 14px;margin-top:20px;}.booking-submit>p{font-size:13px;line-height:1.4;margin-bottom:12px;}.booking-submit>.button{min-height:48px;}
+.booking-empty{padding:28px 0;display:grid;gap:16px;}.booking-empty>p{font-size:15px;line-height:1.5;}
+.booking-upcoming{margin-top:40px;}.booking-upcoming>h2{font:500 25px var(--serif);margin-bottom:18px;}.booking-upcoming article{padding:20px 0;border-bottom:1px solid #d8d7df;}.booking-upcoming article>h3{font:500 18px var(--sans);margin-bottom:8px;}.booking-upcoming article>p{font-size:15px;line-height:1.5;margin:4px 0;}.booking-upcoming article>.button{margin-top:12px;}
+.booking-sheet>.booking-confirmed{display:flex;align-items:center;gap:10px;background:#e0efd8;color:#24451b;padding:14px;border-radius:12px;}
+.directory-intro{min-height:100svh;background:#202020;color:#fff;padding:24px;display:flex;flex-direction:column;gap:36px;}.directory-intro>header{display:flex;align-items:center;gap:20px;}.directory-intro>header>span{font:500 25px var(--serif);}.directory-intro .icon-button{background:#383838;color:#fff;box-shadow:none;}.directory-intro>div{flex:1;display:flex;flex-direction:column;justify-content:center;gap:24px;}.gymaf-client .directory-intro h1{font:400 30px/1.2 var(--sans);text-align:center;}.directory-intro .button.primary{background:#fff;color:#202020;}.directory-intro>div>a:last-child{text-align:center;min-height:44px;padding:12px;font-size:14px;color:#ddd;}.directory-intro>p{font-size:13px;line-height:1.5;color:#c9c8cf;text-align:center;}
+@media(max-width:359px){.booking-sheet{padding-inline:16px;}.booking-sheet>.native-titlebar h1{font-size:17px;}.gymaf-client .booking-sheet>h2{font-size:21px;}}
+
+.directory-matching{min-height:75svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 20px;gap:24px;text-align:center;}.directory-matching h1{font:400 28px/1.2 var(--serif);}.directory-matching p{font-size:15px;}

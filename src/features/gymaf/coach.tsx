@@ -6,6 +6,8 @@ import { localDate } from "@/shared/gymaf/validation";
 import { invitationToken } from "./api";
 import { Messages } from "./messages";
 import { ProfileScreen } from "./profile";
+import { DirectoryEditor } from "./directory-editor";
+import { CoachAppointments } from "./appointments";
 import { ProgramBuilder } from "./program-builder";
 import { Empty, ErrorNote, Field, Head, Note, Pending, Row, useCommand, useResource } from "./ui";
 
@@ -51,7 +53,7 @@ export function CoachArea({ account, path, workspaceId, reloadAccount }: { accou
   if (!resource.data) return <Pending error={resource.error} reload={resource.reload} />;
   const data = resource.data;
   if (path[0] === "clients" && path[1]) return <ClientDetail key={path[1]} id={path[1]} account={account} workspace={data} />;
-  if (path[0] === "profile") return <div className="gymaf-stack"><WorkspaceProfile data={data} reload={resource.reload} /><ProfileScreen key={account.user.revision} account={account} reload={reloadAccount} /></div>;
+  if (path[0] === "profile") return <div className="gymaf-stack"><WorkspaceProfile data={data} reload={resource.reload} /><DirectoryEditor ownerId={account.user.id} workspaceId={selected.id}/><CoachAppointments workspaceId={selected.id}/><ProfileScreen key={account.user.revision} account={account} reload={reloadAccount} /></div>;
   if (path[0] === "programs" && path[1] === "new") return <><Head title="Create a program" back="/coach/programs" /><ProgramBuilder workspaceId={selected.id} /></>;
   if (path[0] === "programs" && path[1]) return <ProgramEditor key={path[1]} id={path[1]} />;
   if (path[0] === "programs") return <div className="gymaf-stack"><Head title="Programs" /><Link className="button primary" href={`/coach/programs/new?workspace=${selected.id}`}>Create program</Link>{!data.programs.length && <Empty>Create your first program, then publish and assign it.</Empty>}{data.programs.map(p => <Row key={p.id} href={`/coach/programs/${p.id}?workspace=${selected.id}`} detail={`Draft revision ${p.revision} · ${data.versions.filter(v => v.program_id === p.id).length} published versions`}>{p.title}</Row>)}</div>;

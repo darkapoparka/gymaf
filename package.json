@@ -8,7 +8,8 @@
     "start": "next start --hostname 127.0.0.1 --port 3210",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test:unit": "node --experimental-strip-types --test tests/unit/validation.test.mjs",
+    "test:unit": "node --experimental-strip-types --test tests/unit/*.test.mjs",
+    "test:auth": "node --test tests/auth-email-link.test.mjs tests/media-http.test.mjs tests/private-account-http.test.mjs tests/conversation-media-http.test.mjs tests/billing-http.test.mjs",
     "test:integration": "node scripts/astra-integration.mjs",
     "astra:seed": "node scripts/astra-local.mjs"
   },
@@ -17,7 +18,9 @@
     "next": "16.3.4",
     "qrcode": "^1.5.4",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "sharp": "0.35.4",
+    "stripe": "^22.6.1"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

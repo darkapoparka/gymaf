@@ -9,9 +9,19 @@ import {
   Check,
 } from "lucide-react";
 import { useLocalData } from "@/lib/store";
+import { useBackend } from "@/lib/backend/context";
+import { progressData } from '@/features/gymaf/progress-data';
+import { localDate } from '@/shared/gymaf/validation';
+import { useAppRouter as useRouter } from './capture-link';
 import { PageHead, Rings, Row, Sheet, Tabs } from "./primitives";
 
 export function ProgressScreen() {
+  const backend = useBackend();
+  const router = useRouter();
+  const completed = backend?.relationship?.sessions.filter(s=>s.state==="completed") || [];
+  const today=localDate(backend?.account.user.timezone || 'UTC');
+  const savedProgress=progressData(completed,backend?.account.user.timezone || 'UTC',today);
+  const activeDays = savedProgress.active;
   const { data, update } = useLocalData();
   const [tab, setTab] = useCaptureState("progress.tab", "Goals");
   const [goalOpen, setGoalOpen] = useCaptureState("progress.goalOpen", false);
@@ -19,7 +29,7 @@ export function ProgressScreen() {
   const [goal, setGoal] = useCaptureState("progress.goal", data.goal);
   const metrics: string[] = JSON.parse(
     data.preferences.metrics ||
-      '["Activity Rings","Minutes of Activity","Daily Steps"]',
+      (backend ? '["Minutes of Activity","Weight","Progress Photos"]' : '["Activity Rings","Minutes of Activity","Daily Steps"]'),
   );
   return (
     <>
@@ -44,17 +54,17 @@ export function ProgressScreen() {
                 {["M", "T", "W", "T", "F", "S", "S"].map((d, i) => (
                   <small key={i}>{d}</small>
                 ))}
-                {Array.from({ length: 35 }, (_, i) => {
-                  const value = i < 30 ? i + 1 : i - 29;
+                {(backend ? savedProgress.dates : Array.from({length:35},(_,i)=>String(i))).map((date, i) => {
+                  const value = backend ? Number(date.slice(8)) : i < 30 ? i + 1 : i - 29;
                   return (
                     <button
                       key={i}
                       className={
-                        (i === 3 || i === 29 ? "active-day " : "") +
-                        (i > 29 ? "outside" : "")
+                        (backend ? activeDays.has(date) ? "active-day " : "" : i === 3 || i === 29 ? "active-day " : "") +
+                        ((backend ? date < savedProgress.start || date > today : i > 29) ? "outside" : "")
                       }
-                      aria-label={`View June ${value} workouts`}
-                      onClick={() => setDay(value)}
+                      aria-label={`View ${backend ? date : `June ${value}`} workouts`}
+                      onClick={() => backend ? router.push("/history") : setDay(value)}
                     >
                       {value}
                     </button>
@@ -64,31 +74,31 @@ export function ProgressScreen() {
               <div className="calendar-stats">
                 <span>
                   <small>Active Days</small>
-                  <b>{2 + data.completed.length} days</b>
+                  <b>{backend ? activeDays.size : 2 + data.completed.length} days</b>
                 </span>
                 <span>
                   <small>Target</small>
-                  <b>3 workouts/wk</b>
+                  <b>{backend ? `${backend.relationship?.workouts.length || 0} assigned` : "3 workouts/wk"}</b>
                 </span>
               </div>
             </article>
           </section>
           <section className="progress-secondary">
-            <h2>All Time</h2>
+            <h2>{backend ? "Recorded training" : "All Time"}</h2>
             <article className="all-time">
               <CalendarDays color="#82cf48" />
               <div className="bar-chart">
-                <span style={{ height: 100 + data.completed.length * 15 }} />
-                <small>Jun</small>
+                <span style={{ height: backend ? Math.min(180,completed.length*15) : 100 + data.completed.length * 15 }} />
+                <small>{backend ? 'All saved workouts' : 'Jun'}</small>
               </div>
               <div className="calendar-stats">
                 <span>
                   <small>Member since</small>
-                  <b>Jun 2026</b>
+                  <b>{backend ? "—" : "Jun 2026"}</b>
                 </span>
                 <span>
                   <small>Total Workouts</small>
-                  <b>{3 + data.completed.length}</b>
+                  <b>{(backend ? 0 : 3) + data.completed.length}</b>
                 </span>
               </div>
             </article>
@@ -124,7 +134,7 @@ export function ProgressScreen() {
                       {m === "Weight"
                         ? data.weight || "�"
                         : m === "Minutes of Activity"
-                          ? 18 +
+                          ? (backend ? 0 : 18) +
                             Math.floor(
                               Object.values(data.sessions).reduce(
                                 (a, v) => a + v.seconds,
@@ -177,9 +187,8 @@ export function ProgressScreen() {
           </div>
           <button
             className="button primary full"
-            onClick={() => {
-              update({ goal });
-              setGoalOpen(false);
+            onClick={async () => {
+              if (await update({ goal })) setGoalOpen(false);
             }}
           >
             Update Goal

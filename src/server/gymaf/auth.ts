@@ -1,10 +1,12 @@
 import type { NextRequest } from "next/server";
+import { requestEmailLink } from "./email-link";
 import { email, object, text, uuid, InputError } from "@/shared/gymaf/validation";
 import { accessToken, clearTokens, cookieNames, HttpError, provider, readBody, rpc, sameOrigin, setTokens, success, verifiedUser } from "./http";
 
 export async function authPost(request: NextRequest, action: string) {
   sameOrigin(request);
   const body = await readBody(request);
+  if (action === "request-link") return requestEmailLink(email(body.email));
   if (action === "request-code") {
     // Provider rate limits apply. Add approved edge/IP throttling before public release.
     await provider("/auth/v1/otp", { email: email(body.email), create_user: true });

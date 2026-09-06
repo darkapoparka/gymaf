@@ -20,11 +20,13 @@ export function useResource<T>(path: string | null) {
   const reload = useCallback(() => setTick(value => value + 1), []);
   // Retain acknowledged data on a failed refresh so unsaved sibling forms are not unmounted.
   // Identity changes/401s are handled by the enclosing session boundary, which hides all private UI.
-  return { data: state.path === path ? state.data : undefined, error: state.path === path ? state.error : undefined, reload };
+  const update = (transform: (data: T) => T) => setState(previous => previous.path === path && previous.data !== undefined ? { path, data: transform(previous.data) } : previous);
+  return { data: state.path === path ? state.data : undefined, error: state.path === path ? state.error : undefined, reload, update };
 }
 export function useCommand() {
   const [busy, setBusy] = useState(false), [error, setError] = useState("");
   const running = useRef(false), retry = useRef<{ fingerprint: string; id: string } | null>(null);
+  const clearError = useCallback(() => setError(""), []);
   async function run(action: string, payload: Record<string, unknown>): Promise<CommandResult | null> {
     if (running.current) return null;
     running.current = true; setBusy(true); setError("");
@@ -37,7 +39,7 @@ export function useCommand() {
     } catch (failure) { setError(failure instanceof Error ? failure.message : "The operation failed. Retry without changing the fields."); return null; }
     finally { running.current = false; setBusy(false); }
   }
-  return { busy, error, run };
+  return { busy, error, run, clearError };
 }
 export function Copy({ locale, en, bg }: { locale: Locale; en: string; bg: string }) { return locale === "bg" ? bg : en; }
 export function Head({ title, back, children }: { title: string; back?: string; children?: ReactNode }) { return <header className={`page-head ${back ? "with-back" : ""}`}>{back && <Link href={back} className="icon-button" aria-label="Back"><ChevronLeft /></Link>}<h1>{title}</h1>{children && <div className="head-actions">{children}</div>}</header>; }
@@ -46,17 +48,17 @@ export function Field({ label, ...props }: { label: string } & InputHTMLAttribut
 export function Note({ children }: { children: ReactNode }) { return <p className="note" role="status">{children}</p>; }
 export function ErrorNote({ message }: { message?: string }) { return message ? <p className="gymaf-error" role="alert">{message}</p> : null; }
 export function Pending({ error, reload }: { error?: string; reload?: () => void }) { return <section className="gymaf-panel" aria-busy={!error}>{error ? <><ErrorNote message={error} />{reload && <button className="button" onClick={reload}>Retry</button>}<Link className="button" href="/login">Sign in</Link></> : <p role="status">Loading…</p>}</section>; }
-export function Empty({ children }: { children: ReactNode }) { return <div className="empty-state gymaf-empty"><CalendarDays size={32} /><p>{children}</p></div>; }
-export function Dialog({ title, children, onClose }: { title: string; children: ReactNode; onClose: () => void }) {
+export function Empty({ children }: { children: ReactNode }) { return <div className="empty-state gymaf-empty"><CalendarDays size={32} /><div>{children}</div></div>; }
+export function Dialog({ title, children, onClose, className = "", decoration }: { title: string; children: ReactNode; onClose: () => void; className?: string; decoration?:ReactNode }) {
   const ref = useRef<HTMLDialogElement>(null), titleId = useId();
   useEffect(() => { const dialog = ref.current, trigger = document.activeElement; dialog?.showModal(); return () => { dialog?.close(); if (trigger instanceof HTMLElement && trigger.isConnected) trigger.focus(); }; }, []);
-  return <dialog ref={ref} className="sheet" aria-labelledby={titleId} onCancel={event => { event.preventDefault(); onClose(); }} onClick={event => { if (event.target === event.currentTarget) onClose(); }}><div className="sheet-inner"><header><button type="button" className="icon-button" onClick={onClose} aria-label="Close"><X /></button><h2 id={titleId}>{title}</h2></header><div className="sheet-content gymaf-stack">{children}</div></div></dialog>;
+  return <dialog ref={ref} className={`sheet ${className}`} aria-labelledby={titleId} onCancel={event => { event.preventDefault(); onClose(); }} onClick={event => { if (event.target === event.currentTarget) onClose(); }}>{decoration}<div className="sheet-inner"><header><button type="button" className="icon-button" onClick={onClose} aria-label="Close"><X /></button><h2 id={titleId}>{title}</h2></header><div className="sheet-content gymaf-stack">{children}</div></div></dialog>;
 }
 export function Navigation({ area, active, locale, query = "" }: { area: "app" | "coach"; active: string; locale: Locale; query?: string }) {
   const entries = area === "coach" ? [
     ["", "Clients", "Клиенти", Users], ["programs", "Programs", "Програми", CalendarDays], ["reviews", "Reviews", "Прегледи", Check], ["profile", "Profile", "Профил", CircleUserRound],
   ] as const : [
-    ["", "Home", "Начало", Home], ["history", "Progress", "Прогрес", ChartNoAxesColumnIncreasing], ["messages", "Messages", "Съобщения", MessageCircle], ["check-ins", "Check-ins", "Отчети", Check], ["profile", "Profile", "Профил", CircleUserRound],
+    ["", "Home", "Начало", Home], ["history", "Progress", "Прогрес", ChartNoAxesColumnIncreasing], ["messages", "Messages", "Съобщения", MessageCircle], ["friends", "Friends", "Приятели", Users], ["profile", "Profile", "Профил", CircleUserRound],
   ] as const;
   return <nav className="bottom-nav" aria-label={locale === "bg" ? "Основна навигация" : "Main navigation"}>{entries.map(([path, en, bg, Icon]) => <Link key={path} href={`/${area}${path ? "/" + path : ""}${query}`} aria-current={active === path ? "page" : undefined}><Icon size={25} /><span>{locale === "bg" ? bg : en}</span></Link>)}</nav>;
 }

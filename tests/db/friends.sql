@@ -1,0 +1,45 @@
+\set ON_ERROR_STOP on
+begin;
+update gymaf_private.application_sessions set revoked_at=null where user_id='a0000000-0000-4000-8000-000000000003';
+set local role authenticated;
+select test_helpers.set_actor(3);
+select test_helpers.assert(jsonb_array_length(public.gymaf_social_query()->'friends')=1,'New account sees only itself');
+select public.gymaf_social_command('social.invite','94000000-0000-4000-8000-000000000001',jsonb_build_object('token',repeat('a',64)))->>'id' as invite_id \gset
+select test_helpers.assert(public.gymaf_social_command('social.invite','94000000-0000-4000-8000-000000000001',jsonb_build_object('token',repeat('a',64)))->>'id'=:'invite_id','Invite retry is idempotent');
+select test_helpers.assert(public.gymaf_social_query(repeat('a',64))->>'ownInvitation'='true','Inviter can recognize own link');
+select test_helpers.denied($q$select public.gymaf_social_command('social.accept','94000000-0000-4000-8000-000000000002',jsonb_build_object('token',repeat('a',64)))$q$);
+select test_helpers.set_actor(4);
+select test_helpers.assert(jsonb_array_length(public.gymaf_social_query()->'friends')=1,'Unaccepted invitation shares no counts');
+select test_helpers.assert(public.gymaf_social_query(repeat('a',64))->>'ownInvitation'='false','Recipient previews invitation');
+select test_helpers.denied($q$select public.gymaf_social_query(repeat('b',64))$q$);
+select public.gymaf_social_command('social.accept','94000000-0000-4000-8000-000000000003',jsonb_build_object('token',repeat('a',64)));
+select test_helpers.assert(jsonb_array_length(public.gymaf_social_query()->'friends')=2,'Accepted friendship shares counts');
+select test_helpers.assert((select count(*) from public.friend_connections)=1,'Recipient sees own connection');
+select test_helpers.assert(not((public.gymaf_social_query()->'friends'->0) ?| array['weight','email','photos','messages','goal']),'Friend DTO excludes private profile fields');
+select test_helpers.set_actor(2);
+select test_helpers.assert((select count(*) from public.friend_connections)=0,'Unrelated coach cannot read friend connections');
+select test_helpers.assert(jsonb_array_length(public.gymaf_social_query()->'friends')=1,'Unrelated coach cannot read leaderboard');
+select test_helpers.denied($q$select public.gymaf_social_command('social.accept','94000000-0000-4000-8000-000000000004',jsonb_build_object('token',repeat('a',64)))$q$);
+select test_helpers.denied('select * from gymaf_private.friend_invitations');
+select test_helpers.set_actor(3);
+select public.gymaf_social_command('social.remove','94000000-0000-4000-8000-000000000005','{"id":"a0000000-0000-4000-8000-000000000004"}');
+select test_helpers.assert(jsonb_array_length(public.gymaf_social_query()->'friends')=1,'Removal revokes count sharing');
+select public.gymaf_social_command('social.invite','94000000-0000-4000-8000-000000000006',jsonb_build_object('token',repeat('c',64)));
+select public.gymaf_social_command('social.revoke','94000000-0000-4000-8000-000000000007',jsonb_build_object('token',repeat('c',64)));
+select test_helpers.set_actor(4);
+select test_helpers.denied($q$select public.gymaf_social_command('social.accept','94000000-0000-4000-8000-000000000008',jsonb_build_object('token',repeat('c',64)))$q$);
+select test_helpers.assert(jsonb_array_length(public.gymaf_social_query()->'friends')=1,'Removed friend loses access too');
+select test_helpers.set_actor(3);
+select public.gymaf_social_command('social.invite','94000000-0000-4000-8000-000000000011',jsonb_build_object('token',repeat('d',64)))->>'id' as managed_invite \gset
+select test_helpers.assert(jsonb_array_length(public.gymaf_social_query()->'invitations')=1,'Owner can recover invitation management after reload');
+select test_helpers.assert(not((public.gymaf_social_query()->'invitations'->0) ?| array['token','token_hash','accepted_by']),'Invitation management exposes no secret or recipient');
+select test_helpers.set_actor(4);
+select test_helpers.assert(jsonb_array_length(public.gymaf_social_query()->'invitations')=0,'Sibling cannot enumerate invites');
+select test_helpers.denied(format('select public.gymaf_social_command(%L,%L,%L::jsonb)','social.revoke-id','94000000-0000-4000-8000-000000000012',jsonb_build_object('id',:'managed_invite')));
+select test_helpers.set_actor(3);
+select public.gymaf_social_command('social.revoke-id','94000000-0000-4000-8000-000000000013',jsonb_build_object('id',:'managed_invite'));
+select test_helpers.assert(jsonb_array_length(public.gymaf_social_query()->'invitations')=0,'Owner can revoke recovered invite');
+reset role;
+set local role anon;
+do $$begin begin perform public.gymaf_social_query();raise exception 'Anonymous social query allowed';exception when insufficient_privilege then null;end;end $$;
+rollback;

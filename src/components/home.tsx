@@ -12,12 +12,18 @@ import {
 } from "./primitives";
 import { media, workouts, coachMessage } from "@/lib/data";
 import { useLocalData } from "@/lib/store";
+import { useBackend, useWorkoutCatalog } from "@/lib/backend/context";
 
 export function HomeScreen({ screen }: { screen?: string }) {
   const { data } = useLocalData();
   const [intro, setIntro] = useState(false);
-  const done = screen === "completed" || data.completed.includes("bodyweight-beach");
-  const state = screen || data.preferences.homeState || "workout";
+  const backend = useBackend();
+  const catalog = useWorkoutCatalog();
+  const next = backend ? [...(backend.relationship?.workouts || [])].filter(w => w.state === "assigned").sort((a,b) => a.scheduled_date.localeCompare(b.scheduled_date))[0] : null;
+  const featured = backend ? catalog.find(w => w.id === next?.id) : workouts[0];
+  const coach = backend?.relationship?.relationship.coach_name || (backend ? "Your coach" : "Lee");
+  const done = !backend && (screen === "completed" || data.completed.includes("bodyweight-beach"));
+  const state = backend ? featured ? "workout" : "pending" : screen || data.preferences.homeState || "workout";
   return (
     <>
       <PageHead title={"Morning, " + data.name.split(" ")[0]} />
@@ -76,7 +82,8 @@ export function HomeScreen({ screen }: { screen?: string }) {
               ) : state === "pending" ? (
                 <article className="pending-card">
                   <Avatar size={64} />
-                  <h2>Lee is putting together your custom workout plan</h2>
+                  <h2>{backend && !backend.relationship ? "Connect with your coach to receive your training plan" : `${coach} is putting together your custom workout plan`}</h2>
+                  {backend && !backend.relationship && <Link className="button primary" href="/coaches">Explore Coaches</Link>}
                 </article>
               ) : state === "running" ? (
                 <Link className="running-today" href="/workouts/running">
@@ -103,26 +110,26 @@ export function HomeScreen({ screen }: { screen?: string }) {
                 <article className="today-card">
                   <Link
                     className="today-photo"
-                    href="/workouts/bodyweight-beach"
-                    aria-label="Open BODYWEIGHT BEACH workout"
+                    href={featured ? `/workouts/${featured.id}` : "/schedule"}
+                    aria-label={featured ? `Open ${featured.title}` : "Open schedule"}
                   >
                     <Photo
-                      crop={media.home}
-                      alt="Bodyweight workout in the Future studio"
+                      crop={featured ? { ...featured.image, h: Math.round(featured.image.w * media.home.h / media.home.w) } : media.home}
+                      alt={featured?.title || "Workout"}
                       priority
                     />
                   </Link>
                   <button
                     className="intro-hotspot"
-                    aria-label="Lee’s Intro"
+                    aria-label={backend ? `${coach} intro` : "Lee’s Intro"}
                     onClick={() => setIntro(true)}
                   />
                   <Link
-                    href="/workouts/bodyweight-beach"
+                    href={featured ? `/workouts/${featured.id}` : "/schedule"}
                     className="today-copy"
                   >
-                    <h3>BODYWEIGHT BEACH 🚀💥</h3>
-                    <p>33 min • quick no weights travel work out</p>
+                    <h3>{featured?.title || "Your workout"}</h3>
+                    <p>{featured ? `${featured.minutes} min · ${featured.prescription?.exercises.length || 0} exercises` : ""}</p>
                   </Link>
                 </article>
               )}
@@ -132,20 +139,17 @@ export function HomeScreen({ screen }: { screen?: string }) {
         </div>
         <div className="week-column">
           <section className="challenge-section">
-            <h2>Challenges</h2>
-            <Link className="challenge-card" href="/progress">
+            <h2>{backend ? "Your coaching" : "Challenges"}</h2>
+            <Link className="challenge-card" href={backend ? "/check-ins" : "/progress"}>
               <div>
                 <h3>
-                  Strong Start
-                  <br />
-                  Challenge
+                  {backend ? coach : <>Strong Start<br />Challenge</>}
                 </h3>
                 <span className="challenge-ring">
                   <Flag size={31} />
                 </span>
                 <p>
-                  27 days left • {Math.min(12, 1 + data.completed.length)}/12
-                  workouts completed
+                  {backend ? `${data.completed.length} completed attempts · Weekly check-in` : <>27 days left • {Math.min(12, 1 + data.completed.length)}/12 workouts completed</>}
                 </p>
               </div>
               <div className="week-calendar">
@@ -153,8 +157,8 @@ export function HomeScreen({ screen }: { screen?: string }) {
                   (day, i) => (
                     <span key={day}>
                       <small>{day}</small>
-                      <b className={i === 1 ? "selected" : ""}>
-                        {[29, 30, 1, 2, 3, 4, 5][i]}
+                      <b className={i === (backend ? (new Date().getDay() + 6) % 7 : 1) ? "selected" : ""}>
+                        {backend ? (() => { const d=new Date(); d.setDate(d.getDate() - (d.getDay()+6)%7 + i); return d.getDate(); })() : [29, 30, 1, 2, 3, 4, 5][i]}
                       </b>
                     </span>
                   ),
@@ -167,7 +171,7 @@ export function HomeScreen({ screen }: { screen?: string }) {
             {Object.entries(data.schedule)
               .filter(([, id]) => id)
               .map(([day, id]) => {
-                const w = workouts.find((w) => w.id === id);
+                const w = catalog.find((w) => w.id === id);
                 return (
                   w && (
                     <div key={day}>
@@ -210,13 +214,13 @@ export function HomeScreen({ screen }: { screen?: string }) {
           <div className="coach-heading">
             <Avatar size={58} />
             <div>
-              <h3>Coach Lee</h3>
+              <h3>{coach}</h3>
               <p>Your coach</p>
             </div>
           </div>
-          <p className="pre-line">{coachMessage}</p>
+          <p className="pre-line">{backend ? "Open your coaching conversation." : coachMessage}</p>
           <Link className="button primary full" href="/messages">
-            Messages with Lee
+            Messages with {coach}
           </Link>
         </Sheet>
       )}

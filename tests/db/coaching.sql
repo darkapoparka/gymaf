@@ -12,7 +12,7 @@ end $$;
 create function test_helpers.conflict(statement text) returns void language plpgsql security invoker as $$
 begin
   begin execute statement;
-  exception when sqlstate '40001' or sqlstate '23505' then return; end;
+  exception when sqlstate 'GY409' or sqlstate '23505' then return; end;
   raise exception 'Expected revision or uniqueness conflict';
 end $$;
 create function test_helpers.set_actor(n integer) returns void language plpgsql security invoker as $$

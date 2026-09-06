@@ -3,7 +3,7 @@ on:
   push:
     branches: [astra]
   pull_request:
-    branches: [main]
+    branches: [main, astra]
 permissions:
   contents: read
 concurrency:
@@ -21,11 +21,11 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - name: Pure domain validation
-        run: npm run test:unit
       - name: Clean dependency install
         id: install
         run: npm ci
+      - name: Domain and image validation
+        run: npm run test:unit
       - name: ESLint
         if: always() && steps.install.outcome == 'success'
         run: npm run lint
@@ -37,6 +37,8 @@ jobs:
         env:
           GYMAF_REFERENCE_PREVIEW: '0'
         run: npm run build
+      - name: Authentication HTTP contract
+        run: npm run test:auth
   database:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -65,9 +67,36 @@ jobs:
           persist-credentials: false
       - name: Bootstrap simulated provider context
         run: psql -v ON_ERROR_STOP=1 -f tests/db/bootstrap.sql
+      - name: Bootstrap simulated storage metadata
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/storage-bootstrap.sql
       - name: Apply migrations and local-only seed helper
         run: |
           for file in supabase/migrations/*.sql; do psql -v ON_ERROR_STOP=1 -f "$file"; done
           psql -v ON_ERROR_STOP=1 -f supabase/seed.sql
       - name: Database ownership and history regression tests
         run: psql -v ON_ERROR_STOP=1 -f tests/db/coaching.sql
+      - name: Member record privacy and persistence regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/member-records.sql
+      - name: Training library privacy and persistence regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/training-library.sql
+      - name: Workout feedback privacy and submission regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/session-feedback.sql
+      - name: Private media ownership and lifecycle regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/member-media.sql
+      - name: Private account and interest regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/account-details.sql
+      - name: Private coach rating regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/coach-rating.sql
+      - name: Coach directory visibility and ownership regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/coach-directory.sql
+      - name: Private shipping address regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/shipping-address.sql
+      - name: Appointment ownership, retry and availability tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/appointments.sql
+      - name: Private friend invitation and sharing tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/friends.sql
+      - name: Conversation media sharing and storage policies
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/conversation-media.sql
+
+      - name: Billing settlement and guest-pass authorization tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/billing.sql

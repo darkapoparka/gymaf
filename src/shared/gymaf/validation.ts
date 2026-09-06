@@ -1,4 +1,40 @@
 import type { Command, ProgramPlan, PlanSet } from "./contracts";
+export const shirtSizes=['XS','S','M','L','XL','XXL'] as const;
+export const usStates=['AL','AK','AZ','AR','CA','CO','CT','DE','DC','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY'] as const;
+export const coachExpertise = [
+  "Sports Performance",
+  "General Strength Training",
+  "Nutrition",
+  "Bodybuilding",
+  "Weight Loss",
+  "Adaptive Exercise",
+  "Orthopedic Limitations",
+  "Injury Prevention",
+  "Tactical Performance",
+  "Sports Psychology",
+  "Olympic Weightlifting",
+  "Powerlifting",
+  "Running",
+  "Kettlebells",
+  "Prenatal and Postpartum",
+  "Hiking",
+  "Crossfit",
+  "Combat Sports",
+  "Triathlon",
+  "Metabolic Syndromes and Heart Conditions",
+  "Yoga",
+  "Cycling",
+  "Swimming",
+  "Gymnastics",
+  "Rowing",
+  "Pilates and Barre",
+  "Dance",
+  "Obstacle Races",
+];
+export const coachStyles=['Detail Oriented','Even Keeled','High Energy','Laid Back','Motivating','Results Oriented','Supportive'];
+export const coachSports=['Basketball','Football','Soccer','Baseball','Group Fitness and Bootcamps','Running','Cycling','Swimming','Tennis','Hiking'];
+export const coachLanguages=['English','Bulgarian','Spanish','French','German','Italian','Portuguese'];
+export const flagReasons = ['Dislike', 'Too Hard', 'Too Easy', 'Injured', 'Mix It Up', 'Traveling', 'Equipment Busy', 'Uncomfortable', 'Missing Equipment'] as const;
 
 export class InputError extends Error { constructor(message: string) { super(message); this.name = "InputError"; } }
 export function object(value: unknown): Record<string, unknown> {
@@ -77,11 +113,102 @@ export function validateCommand(value: unknown): Command {
   const id = (name: string) => uuid(p[name]);
   const revision = () => integer(p.revision, "Revision", 0, 2147483646);
   switch (action) {
+    case "guest.create": { keys(p,['relationshipId','token']);const token=text(p.token,'Guest pass',64,64);if(!/^[a-f0-9]{64}$/.test(token))throw new InputError('Invalid guest pass.');payload={relationshipId:id('relationshipId'),token};break; }
+    case "guest.replace-link": { keys(p,['id','token']);const token=text(p.token,'Guest pass',64,64);if(!/^[a-f0-9]{64}$/.test(token))throw new InputError('Invalid guest pass.');payload={id:id('id'),token};break; }
+    case "guest.accept": { keys(p,['token']);const token=text(p.token,'Guest pass',64,64);if(!/^[a-f0-9]{64}$/.test(token))throw new InputError('Invalid guest pass.');payload={token};break; }
+    case "guest.revoke": keys(p,['id']);payload={id:id('id')};break;
+    case "attachment.share": keys(p,['id']);payload={id:id('id')};break;
+    case "social.invite": case "social.accept": case "social.revoke": {
+      keys(p,['token']); const token=text(p.token,'Invitation',64,64); if(!/^[a-f0-9]{64}$/.test(token))throw new InputError('Invalid invitation.'); payload={token};break;
+    }
+    case "social.revoke-id": case "social.remove": keys(p,['id']);payload={id:id('id')};break;
+    case "booking.slot-create": {
+      keys(p,['workspaceId','startsAt','endsAt','cancelMinutes']);
+      const instant=(value:unknown)=>{const valueText=text(value,'Time',40,1);if(!/(Z|[+-]\d{2}:\d{2})$/.test(valueText)||!Number.isFinite(Date.parse(valueText)))throw new InputError('Choose a valid time with a timezone.');return new Date(valueText).toISOString();};
+      const startsAt=instant(p.startsAt),endsAt=instant(p.endsAt),duration=Date.parse(endsAt)-Date.parse(startsAt);
+      if(duration<=0||duration>14400000)throw new InputError('Appointment duration must be between one minute and four hours.');
+      payload={workspaceId:id('workspaceId'),startsAt,endsAt,cancelMinutes:integer(p.cancelMinutes,'Cancellation notice',0,10080)};break;
+    }
+    case "booking.reserve": case "booking.withdraw": case "booking.cancel": keys(p,['id']);payload={id:id('id')};break;
+    case "directory.save": {
+      keys(p,['workspaceId','revision','data']);const d=object(p.data);keys(d,['listed','expertise','styles','sports','languages','experience','qualifications','loves','location']);
+      const tags=(value:unknown,choices:string[])=>{if(!Array.isArray(value)||value.length>choices.length)throw new InputError('Invalid choices.');const selected=value.map(item=>oneOf(item,choices));if(new Set(selected).size!==selected.length)throw new InputError('Duplicate choice.');return selected;};
+      payload={workspaceId:id('workspaceId'),revision:revision(),data:{listed:boolean(d.listed),expertise:tags(d.expertise,coachExpertise),styles:tags(d.styles,coachStyles),sports:tags(d.sports,coachSports),languages:tags(d.languages,coachLanguages),experience:text(d.experience,'Experience',500),qualifications:text(d.qualifications,'Qualifications',1000),loves:text(d.loves,'Interests',500),location:text(d.location,'Location',120)}};break;
+    }
+    case "coach-rating.save": keys(p,["relationshipId","revision","rating"]);payload={relationshipId:id("relationshipId"),revision:revision(),rating:integer(p.rating,"Rating",1,5)};break;
+    case "feedback.submit": keys(p, ["sessionId", "revision"]); payload = { sessionId: id("sessionId"), revision: revision() }; break;
+    case "feedback.save": {
+      keys(p, ["sessionId", "revision", "data"]);
+      const d = object(p.data); keys(d, ["rating", "difficulty", "body", "flags"]);
+      if (!Array.isArray(d.flags) || d.flags.length > 30) throw new InputError("Invalid flags.");
+      const seen = new Set<string>();
+      const flags = d.flags.map(raw => {
+        const f = object(raw); keys(f, ["exerciseId", "reasons", "comment"]);
+        const exerciseId = uuid(f.exerciseId), reasons = list(f.reasons, "Reasons", 9).map(v => oneOf(v, flagReasons));
+        if (seen.has(exerciseId) || new Set(reasons).size !== reasons.length) throw new InputError("Duplicate flag or reason.");
+        seen.add(exerciseId); return { exerciseId, reasons, comment: text(f.comment, "Flag comment", 1000) };
+      });
+      payload = { sessionId: id("sessionId"), revision: revision(), data: { rating: d.rating === null ? null : integer(d.rating, "Rating", 1, 5), difficulty: d.difficulty === null ? null : integer(d.difficulty, "Difficulty", 1, 5), body: text(d.body, "Feedback", 2000), flags } }; break;
+    }
+    case "training.favorite": keys(p, ["scheduledId", "favorite", "revision"]); payload = { scheduledId: id("scheduledId"), favorite: boolean(p.favorite), revision: revision() }; break;
+    case "member.save": {
+      keys(p, ["id", "kind", "data", "revision"]);
+      const kind = oneOf(p.kind, ["preferences", "location", "injury", "event", "weight", "weight-target", "account", "shipping"]);
+      const d = object(p.data); let data: Record<string, unknown>;
+      const strings = (v: unknown, max: number) => {
+        if (!Array.isArray(v) || v.length > max) throw new InputError("Invalid list.");
+        const items = v.map(x => text(x, "Item", 120, 1));
+        if (new Set(items).size !== items.length) throw new InputError("Duplicate list entry.");
+        return items;
+      };
+      if (kind === "shipping") {
+        keys(d,['street','apartment','city','region','postalCode','country','shirtSize']);
+        const country=text(d.country,'Country',80,2),region=text(d.region,'Region',120),postalCode=text(d.postalCode,'Postal code',20);
+        if(['united states','united states of america','us','usa'].includes(country.toLowerCase())){oneOf(region,usStates);if(!/^\d{5}(-\d{4})?$/.test(postalCode))throw new InputError('Enter a five-digit US ZIP code, optionally followed by four extra digits.');}
+        data={street:text(d.street,'Street address',200,1),apartment:text(d.apartment,'Apartment',120),city:text(d.city,'City',120,1),region,postalCode,country,shirtSize:oneOf(d.shirtSize,shirtSizes)};
+      } else if (kind === "account") {
+        keys(d, ["preferredName", "firstName", "lastName", "biologicalSex", "dateOfBirth", "heightCm", "phone"]);
+        const birth = text(d.dateOfBirth, "Date of birth", 10);
+        if (birth && (dateOnly(birth) > new Date().toISOString().slice(0,10) || birth < "1900-01-01")) throw new InputError("Enter a valid date of birth.");
+        const height = text(d.heightCm, "Height", 6);
+        if (height && (!/^\d+(\.\d)?$/.test(height) || Number(height)<50 || Number(height)>300)) throw new InputError("Height must be between 50 and 300 cm.");
+        const phone = text(d.phone, "Phone number", 32);
+        if (phone && !/^\+?[0-9 ()-]{5,32}$/.test(phone)) throw new InputError("Enter a valid contact phone number.");
+        data = {preferredName:text(d.preferredName,"Preferred name",120),firstName:text(d.firstName,"First name",120),lastName:text(d.lastName,"Last name",120),biologicalSex:oneOf(d.biologicalSex,["","Female","Male","Intersex","Prefer not to say"]),dateOfBirth:birth,heightCm:height,phone};
+      } else if (kind === "preferences") {
+        keys(d, ["units", "privateProfile", "instructions", "tone", "countdown", "vibration"]);
+        data = { units: oneOf(d.units, ["Metric", "Imperial"]), privateProfile: boolean(d.privateProfile), instructions: oneOf(d.instructions, ["Never", "Periodic", "Every Time"]), tone: oneOf(d.tone, ["Marimba", "Beep"]), countdown: boolean(d.countdown), vibration: boolean(d.vibration) };
+      } else if (kind === "location") {
+        keys(d, ["name", "type", "equipment"]);
+        data = { name: text(d.name, "Location name", 120, 1), type: oneOf(d.type, ["Home", "Gym", "Outdoor", "Somewhere Else"]), equipment: strings(d.equipment, 100) };
+      } else if (kind === "injury") {
+        keys(d, ["description", "affectsMovement", "excluded"]);
+        data = { description: text(d.description, "Injury description", 500, 1), affectsMovement: boolean(d.affectsMovement), excluded: strings(d.excluded, 60) };
+      } else if (kind === "event") {
+        keys(d, ["name", "type", "details", "startDate", "endDate", "training"]);
+        const startDate = dateOnly(d.startDate), endDate = dateOnly(d.endDate);
+        if (endDate < startDate) throw new InputError("End date must follow the start date.");
+        data = { name: text(d.name, "Event name", 120, 1), type: oneOf(d.type, ["Travel", "Event"]), details: text(d.details, "Event details", 2000), startDate, endDate, training: oneOf(d.training, ["Normal", "Lighter", "No Workouts"]) };
+      } else {
+        keys(d, kind === "weight" ? ["date", "valueKg"] : ["valueKg"]);
+        const valueKg = decimal(d.valueKg, "weight", 500);
+        if (valueKg === null || valueKg < 20) throw new InputError("Weight must be between 20 and 500 kg.");
+        data = { valueKg, ...(kind === "weight" ? { date: dateOnly(d.date) } : {}) };
+      }
+      payload = { id: id("id"), kind, revision: revision(), data }; break;
+    }
+    case "member.delete": keys(p, ["id", "kind", "revision"]); payload = { id: id("id"), kind: oneOf(p.kind, ["location", "injury", "event", "weight", "weight-target", "shipping"]), revision: revision() }; break;
     case "profile.save": {
-      keys(p, ["displayName", "locale", "timezone", "goal", "equipment", "availability", "revision"]);
+      keys(p, ["displayName", "locale", "timezone", "goal", "equipment", "availability", "revision", "interests"]);
+      let interests:string[]|undefined;
+      if (p.interests !== undefined) {
+        if (!Array.isArray(p.interests) || p.interests.length>20) throw new InputError("Choose up to 20 interests.");
+        interests=p.interests.map(value=>text(value,"Interest",40,1));
+        if(interests.some(value=>!/^[-\p{L}\p{N}_ ]+$/u.test(value)) || new Set(interests.map(value=>value.toLowerCase())).size!==interests.length) throw new InputError("Use unique interests with letters, numbers, spaces, dashes or underscores.");
+      }
       const timezone = text(p.timezone, "Timezone", 80, 1);
       try { new Intl.DateTimeFormat("en", { timeZone: timezone }); } catch { throw new InputError("Invalid timezone."); }
-      payload = { displayName: text(p.displayName, "Name", 120, 1), locale: oneOf(p.locale, ["bg", "en"]), timezone, goal: text(p.goal, "Goal", 500), equipment: text(p.equipment, "Equipment", 1000), availability: text(p.availability, "Availability", 1000), revision: revision() }; break;
+      payload = { ...(interests === undefined ? {} : {interests}), displayName: text(p.displayName, "Name", 120, 1), locale: oneOf(p.locale, ["bg", "en"]), timezone, goal: text(p.goal, "Goal", 500), equipment: text(p.equipment, "Equipment", 1000), availability: text(p.availability, "Availability", 1000), revision: revision() }; break;
     }
     case "workspace.create": keys(p, ["name", "slug", "coachUserId"]); payload = { name: text(p.name, "Workspace", 120, 1), slug: text(p.slug, "Slug", 80, 3), coachUserId: id("coachUserId") }; if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(String(payload.slug))) throw new InputError("Use lowercase letters, numbers and hyphens for the slug."); break;
     case "workspace.publish": keys(p, ["workspaceId", "publicName", "bio", "published"]); payload = { workspaceId: id("workspaceId"), publicName: text(p.publicName, "Public name", 120, 1), bio: text(p.bio, "Biography", 2000), published: boolean(p.published) }; break;

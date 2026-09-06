@@ -1,4 +1,6 @@
 "use client";
+import { useState } from "react";
+import { useBackend } from '@/lib/backend/context';
 import { useCaptureState } from "@/lib/capture-context";
 import Link from "./capture-link";
 import { useAppRouter as useRouter } from "./capture-link";
@@ -28,8 +30,10 @@ const exclusions = [
 ];
 
 export function AccountFlows({ path }: { path: string }) {
+  const backend=useBackend();
   const { data, get, set, setMany, update } = usePreferences();
   const router = useRouter();
+  const [locationId]=useState(() => crypto.randomUUID()), [injuryId]=useState(() => crypto.randomUUID());
   const [sheet, setSheet] = useCaptureState<string | null>("account.sheet", null);
   const [query, setQuery] = useCaptureState("account.query", "");
   const [filter, setFilter] = useCaptureState("account.filter", "All");
@@ -51,9 +55,9 @@ export function AccountFlows({ path }: { path: string }) {
     setMany(values);
     router.push(href);
   }
-  function toggleEquipment(item: string) {
+  async function toggleEquipment(item: string) {
     if (!activeLocation) return;
-    update((s) => ({
+    await update((s) => ({
       locations: s.locations.map((l) =>
         l.id === activeLocation.id
           ? {
@@ -288,17 +292,16 @@ export function AccountFlows({ path }: { path: string }) {
                     value: activeLocation?.name,
                   },
                 ]}
-                onSave={(v) => {
-                  update((s) => ({
+                onSave={async (v) => {
+                  if (await update((s) => ({
                     locations: s.locations.map((l) =>
                       l.id === activeLocation?.id
                         ? { ...l, name: v.editedLocationName }
                         : l,
                     ),
-                  }));
-                  setSheet(null);
+                  }))) setSheet(null);
                 }}
-              />
+              >{backend && activeLocation && <Link className="button full" href={'/settings/equipment/'+activeLocation.id}>Manage or Delete Location</Link>}</Fields>
             )}
           </Sheet>
         )}
@@ -324,9 +327,9 @@ export function AccountFlows({ path }: { path: string }) {
             },
           ]}
           label="Next"
-          onSave={(v) => {
-            const id = crypto.randomUUID();
-            update((s) => ({
+          onSave={async (v) => {
+            const id = locationId;
+            if (await update((s) => ({
               locations: [
                 ...s.locations,
                 {
@@ -337,8 +340,7 @@ export function AccountFlows({ path }: { path: string }) {
                 },
               ],
               preferences: { ...s.preferences, activeLocation: id },
-            }));
-            router.push("/settings/equipment");
+            }))) router.push("/settings/equipment");
           }}
         />
       </div>
@@ -370,9 +372,9 @@ export function AccountFlows({ path }: { path: string }) {
               },
             ]}
             label="Save Injury"
-            onSave={(v) => {
-              const id = crypto.randomUUID();
-              update((s) => ({
+            onSave={async (v) => {
+              const id = injuryId;
+              if (await update((s) => ({
                 injuries: [
                   ...s.injuries,
                   {
@@ -383,8 +385,7 @@ export function AccountFlows({ path }: { path: string }) {
                   },
                 ],
                 preferences: { ...s.preferences, activeInjury: id },
-              }));
-              router.push("/settings/injury/detail");
+              }))) router.push("/settings/injury/detail");
             }}
           />
         ) : (
@@ -401,12 +402,10 @@ export function AccountFlows({ path }: { path: string }) {
             )}
             <h2>Excluded Movements</h2>
             <p>
-              These exercises will not be included in any of your programmed
-              workouts.
+              Save movements you want to discuss with your coach.
             </p>
             <p className="note">
-              Select exclusions for your local plan. Automated clinical
-              assessment is not connected.
+              These notes do not automatically change your assigned workouts.
             </p>
             {path.endsWith("exclusions") ? (
               <Choices
@@ -449,14 +448,13 @@ export function AccountFlows({ path }: { path: string }) {
         )}
         {sheet && (
           <Sheet title={sheet} onClose={() => setSheet(null)}>
-            <p>Remove this limitation from your local profile?</p>
+            <p>Remove this limitation from your profile?</p>
             <button
               className="button primary full"
-              onClick={() => {
-                update((s) => ({
+              onClick={async () => {
+                if (await update((s) => ({
                   injuries: s.injuries.filter((i) => i.id !== injury?.id),
-                }));
-                router.push("/settings");
+                }))) router.push("/settings");
               }}
             >
               Delete Limitation

@@ -1,4 +1,5 @@
 "use client";
+import { useBackend } from "@/lib/backend/context";
 import { useEffect, useRef, useId, type ReactNode, type CSSProperties } from "react";
 import Image from "next/image";
 import Link from "./capture-link";
@@ -20,6 +21,7 @@ import {
 } from "lucide-react";
 import { useCapture } from "@/lib/capture-context";
 import { media, type Crop } from "@/lib/data";
+import { PrivatePhoto } from '@/features/gymaf/member-media';
 
 // Only the photographic region is displayed; interface text and controls are rendered as HTML.
 export function Photo({
@@ -62,6 +64,12 @@ export function Avatar({
   person?: "lee" | "alex";
   size?: number;
 }) {
+  const backend=useBackend();
+  if (backend) {
+    const photo=person === 'alex' ? backend.photos.find(p => p.kind === 'avatar' && p.selected_at) : undefined;
+    const name=person === 'alex' ? backend.account.user.display_name : backend.relationship?.relationship.coach_name || 'Coach';
+    return <span className="avatar template-avatar" style={{width:size,height:size}}>{photo ? <PrivatePhoto item={photo}/> : <span aria-label={name}>{name.split(/\s+/).map(v => v[0]).slice(0,2).join('').toUpperCase()}</span>}</span>;
+  }
   return (
     <span className="avatar" style={{ width: size, height: size }}>
       <Photo
@@ -319,6 +327,7 @@ const activities: [string, LucideIcon, string][] = [
   ["Hiking", Mountain, "/workouts?activity=Hiking"],
 ];
 export function ActivityStrip() {
+  const backend = useBackend();
   return (
     <section className="activity-strip">
       <Link href="/workouts" className="strip-title">
@@ -326,7 +335,7 @@ export function ActivityStrip() {
       </Link>
       <div>
         {activities.map(([name, , href], i) => (
-          <Link href={href} key={name} title={name} aria-label={name}>
+          <Link href={backend ? "/workouts" : href} key={name} title={name} aria-label={name}>
             <Photo
               crop={{
                 src: "home.webp",

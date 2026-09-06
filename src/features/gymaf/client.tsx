@@ -1,30 +1,39 @@
 "use client";
 import Link from "next/link";
+import { MemberMediaArea, ProfileWithPhotos } from "./member-media";
+import { MemberArea } from "./member-area";
+import { TrainingLibrary } from "./training-library";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Dumbbell } from "lucide-react";
+import { ClientHome, WorkoutDetailView, ScheduleView, ProgressView } from "./client-views";
 import type { Bootstrap, RelationshipDetail, ScheduledWorkout } from "@/shared/gymaf/contracts";
 import { localDate, monday } from "@/shared/gymaf/validation";
 import { Messages } from "./messages";
 import { ProfileScreen } from "./profile";
+import { CoachRatingDialog } from "./coach-rating";
+import { CoachDirectory } from "./coach-directory";
+import { Appointments } from "./appointments";
+import { Membership,GuestPasses } from './billing';
+import { Friends } from "./friends";
+import { SharedMedia } from './conversation-media';
+import { WorkoutActivity, LaunchScreen } from './workout-activity';
+import { ShippingEditor } from "./shipping-editor";
+import { AccountEditor } from "./account-editor";
+import { ProfileEditor } from "./profile-editor";
 import { Empty, ErrorNote, Field, Head, Note, Pending, Row, useCommand, useResource } from "./ui";
 
-function WorkoutCard({ workout, query = "" }: { workout: ScheduledWorkout; query?: string }) {
-  return <article className="today-card"><Link className="gymaf-workout-art" href={`/app/workouts/${workout.id}${query}`} aria-label={workout.prescription.title}><Dumbbell aria-hidden="true" /></Link><Link className="today-copy" href={`/app/workouts/${workout.id}${query}`}><h3>{workout.prescription.title}</h3><p>{workout.scheduled_date} · {workout.prescription.exercises.length} exercises · {workout.state}</p></Link></article>;
-}
 function WorkoutDetail({ workout, data, query }: { workout: ScheduledWorkout; data: RelationshipDetail; query: string }) {
   const mutation = useCommand(), router = useRouter();
   const openSession = data.sessions.find(s => s.scheduled_workout_id === workout.id && (s.state === "in_progress" || s.state === "paused"));
-  async function start() { const result = await mutation.run("session.start", { scheduledId: workout.id }); if (result) router.push(`/app/sessions/${result.id}`); }
-  return <div className="gymaf-stack"><Head title={workout.prescription.title} back={`/app${query}`} /><WorkoutCard workout={workout} query={query} />
-    {workout.prescription.exercises.map(exercise => <section className="gymaf-panel gymaf-stack" key={exercise.id}><h2>{exercise.name}</h2><p className="gymaf-pre">{exercise.instructions}</p>{exercise.sets.map((set,index) => <p key={index}>Set {index + 1}: {[set.reps !== null ? `${set.reps} reps` : "",set.loadKg !== null ? `${set.loadKg} kg` : "",set.durationSeconds ? `${set.durationSeconds}s` : "",set.distanceM ? `${set.distanceM}m` : "",`${set.restSeconds}s rest`].filter(Boolean).join(" · ")}</p>)}</section>)}
-    <ErrorNote message={mutation.error} />{openSession ? <Link href={`/app/sessions/${openSession.id}`} className="button primary full">Resume saved session</Link> : <button className="button primary full" disabled={mutation.busy || !data.can_train || workout.state === "canceled"} onClick={() => void start()}>{mutation.busy ? "Starting…" : workout.state === "completed" ? "Start a new attempt" : "Start workout"}</button>}
-    {!data.can_train && <Note>An active coaching service is needed to start another workout. Your existing history remains available.</Note>}
-  </div>;
+  async function start() { const result = await mutation.run("session.start", { scheduledId: workout.id }); if (result) router.push(`/app/sessions/${result.id}${query}`); }
+  return <WorkoutDetailView workout={workout} query={query}>
+    <ErrorNote message={mutation.error}/>{openSession ? <Link href={`/app/sessions/${openSession.id}${query}`} className="button primary full">Resume</Link> : <button className="button primary full" disabled={mutation.busy || !data.can_train || workout.state === "canceled"} onClick={() => void start()}>{mutation.busy ? "Starting…" : workout.state === "completed" ? "Start New Attempt" : "Start"}</button>}
+    {!data.can_train && <Note>Contact your coach to reactivate training. Your saved history remains available.</Note>}
+  </WorkoutDetailView>;
 }
-function Schedule({ data, query, reload }: { data: RelationshipDetail; query: string; reload: () => void }) {
-  const mutation = useCommand(), [editing,setEditing] = useState(""), [date,setDate] = useState("");
-  return <div className="gymaf-stack"><Head title="Training schedule" back={`/app${query}`} /><ErrorNote message={mutation.error} />{!data.workouts.length && <Empty>Your coach has not assigned training yet.</Empty>}{[...data.workouts].sort((a,b) => a.scheduled_date.localeCompare(b.scheduled_date)).map(workout => <section key={workout.id} className="gymaf-panel gymaf-stack"><Row href={`/app/workouts/${workout.id}${query}`} detail={`${workout.scheduled_date} · ${workout.state}`}>{workout.prescription.title}</Row>{editing === workout.id ? <form className="gymaf-stack" onSubmit={async event => { event.preventDefault(); if (await mutation.run("schedule.move", { scheduledId:workout.id,date,revision:workout.revision })) { setEditing(""); reload(); } }}><Field label="New date" type="date" required value={date} onChange={event => setDate(event.target.value)} /><button className="button" disabled={mutation.busy}>Save date</button></form> : workout.state === "assigned" && data.can_train && <button className="text-button" onClick={() => { setEditing(workout.id); setDate(workout.scheduled_date); }}>Move workout</button>}</section>)}</div>;
+function Schedule({data,query,reload}:{data:RelationshipDetail;query:string;reload:()=>void}) {
+ const mutation=useCommand();
+ return <ScheduleView data={data} query={query} busy={mutation.busy} error={mutation.error} onMove={async(w,date)=>{if(await mutation.run("schedule.move",{scheduledId:w.id,date,revision:w.revision})){reload();return true;}return false;}}/>;
 }
 export function CheckIns({ data, reload }: { data: RelationshipDetail; reload: () => void }) {
   const mutation = useCommand();
@@ -36,24 +45,40 @@ export function CheckIns({ data, reload }: { data: RelationshipDetail; reload: (
   </form>{data.check_ins.map(c => <article key={c.id} className="gymaf-panel gymaf-stack"><h2>Week of {c.week_start}</h2><p>Difficulty: {c.difficulty}/10</p><p className="gymaf-pre">{c.body}</p>{c.review ? <><h3>Your coach’s feedback</h3><p className="gymaf-pre">{c.review.body}</p><small>{new Date(c.review.created_at).toLocaleString()}</small></> : <Note>Awaiting your coach’s review.</Note>}</article>)}</div>;
 }
 export function ClientArea({ account, path, selectedId, reloadAccount }: { account: Bootstrap; path: string[]; selectedId?: string; reloadAccount: () => void }) {
+  const goalMutation=useCommand();
   const selected = account.relationships.find(r => r.id === selectedId) || account.relationships.find(r => r.state === "active" || r.state === "paused") || account.relationships[0];
   const resource = useResource<RelationshipDetail>(selected ? `relationships/${selected.id}` : null);
   const query = selected ? `?relationship=${selected.id}` : "";
   const reload = () => { resource.reload(); reloadAccount(); };
-  if (path[0] === "profile") return <ProfileScreen key={account.user.revision} account={account} relationship={resource.data} reload={reload} />;
-  if (!selected) return <div className="gymaf-stack"><Head title={`Welcome${account.user.display_name ? ", " + account.user.display_name : ""}`} /><Empty>No coach is connected to this account yet. Open the invitation link your coach gave you.</Empty><Row href="/app/profile">Complete your profile</Row>{account.workspaces.length > 0 && <Row href="/coach">Open coach workspace</Row>}</div>;
+  if(path[0]==='checkout'||(path[0]==='account'&&path[1]==='plan'))return <Membership key={account.user.id+path.join('/')} relationshipId={selected?.id} checkoutView={path[0]==='checkout'}/>;
+  if(path[0]==='friends'&&path[1]==='invite')return <GuestPasses key={account.user.id}/>;
+  if(path[0]==='friends')return <Friends key={account.user.id} ownerId={account.user.id} inviteView={path[1]==='invite'} query={query}/>;
+  if(path[0]==='appointments')return <Appointments workspaceId={path[1]} zone={account.user.timezone} query={query}/>;
+  if(path[0]==='onboarding'&&['coach','matching'].includes(path[1]))return <CoachDirectory account={account} path={path[1]==='coach'?['coaches','intro']:['coaches','matching']} query={query}/>;
+  if(path[0]==='coaches')return <CoachDirectory account={account} path={path} query={query}/>;
+  if(path[0]==='account'&&path[1]==='shipping')return <ShippingEditor ownerId={account.user.id} query={query}/>;
+  if(path[0]==='account')return <AccountEditor key={account.user.id} user={account.user} query={query}/>;
+  if(path[0]==='profile'&&path[1]==='edit')return <ProfileEditor key={account.user.id} user={account.user} query={query} reload={reloadAccount}/>;
+  if ((path[0] === "progress" && path[1] === "photos") || (path[0] === "profile" && ["avatar","cover"].includes(path[1]))) return <MemberMediaArea key={`${account.user.id}:${path[1]}`} account={account} kind={path[1] === "avatar" ? "avatar" : path[1] === "cover" ? "cover" : "progress"} query={query}/>;
+  if ((path[0] === "settings" && !["security","service","support"].includes(path[1])) || path[0] === "progress" || (path[0] === "profile" && path[1] === "event")) return <MemberArea account={account} path={path} query={query}/>;
+  if (path[0] === "settings" || (path[0] === "profile" && path[1] === "edit")) return selected && !resource.data ? <Pending error={resource.error} reload={resource.reload}/> : <ProfileScreen key={`${account.user.revision}:${path.join('/')}`} account={account} relationship={resource.data} reload={reload} query={query} mode={path[0] === 'profile' ? 'edit' : path[1] === 'security' || path[1] === 'service' || path[1] === 'support' ? path[1] : 'settings'} />;
+  if (path[0] === "profile" && selected && !resource.data) return <Pending error={resource.error} reload={resource.reload}/>;
+  if (path[0] === "profile") return <ProfileWithPhotos account={account} data={resource.data} query={query}/>;
+  if(path[0]==='system'&&path[1]==='launch')return <LaunchScreen query={query}/>;
+  if (!selected) return <div className="gymaf-stack"><Head title={`Welcome${account.user.display_name ? ", " + account.user.display_name : ""}`} /><Empty>No coach is connected to this account yet. Open the invitation link your coach gave you.</Empty><Row href="/app/profile">Complete your profile</Row><Row href="/app/coaches">Explore Coaches</Row>{account.workspaces.length > 0 && <Row href="/coach">Open coach workspace</Row>}</div>;
   if (!resource.data) return <Pending error={resource.error} reload={resource.reload} />;
-  const data = resource.data, locale = account.user.locale, today = localDate(account.user.timezone);
+  const data = resource.data;
+  if(path[0]==='system'&&['launch','live-activity','dynamic-island','widgets'].includes(path[1]))return <WorkoutActivity data={data} mode={path[1]} query={query}/>;
+  if(path[0]==='messages'&&['videos','shared'].includes(path[1]))return <SharedMedia canSend={data.can_train} relationshipId={selected.id} query={query} videosOnly={path[1]==='videos'}/>;
+  if (path[0] === "workouts" && (!path[1] || path[1] === "picks")) return <TrainingLibrary key={selected.id} data={data} query={query}/>;
   if (path[0] === "workouts" && path[1]) { const workout = data.workouts.find(w => w.id === path[1]); return workout ? <WorkoutDetail key={workout.id} workout={workout} data={data} query={query} /> : <Empty>This workout is not in the currently loaded schedule. Open it through your current schedule or session history.</Empty>; }
   if (path[0] === "schedule") return <Schedule data={data} query={query} reload={resource.reload} />;
-  if (path[0] === "messages") return <><Head title={data.relationship.coach_name || "Your coach"} /><Messages key={selected.id} relationshipId={selected.id} userId={account.user.id} canSend={data.can_train} /></>;
+  if (path[0] === "messages") return <><Messages initialComposer={path[1]==="photo"} presentation="client" coachName={data.relationship.coach_name} key={selected.id} relationshipId={selected.id} userId={account.user.id} canSend={data.can_train} />{path[1]==='rate'&&<CoachRatingDialog ownerId={account.user.id} relationshipId={selected.id} coachName={data.relationship.coach_name}/>}</>;
   if (path[0] === "check-ins") return <CheckIns key={selected.id} data={data} reload={resource.reload} />;
-  if (path[0] === "history") { const completed = data.sessions.filter(s => s.state === "completed"); return <div className="gymaf-stack"><Head title={locale === "bg" ? "Твоят прогрес" : "Your progress"} /><div className="gymaf-stats"><article className="gymaf-panel"><p className="gymaf-stat">{completed.length}</p><p>Completed attempts</p></article><article className="gymaf-panel"><p className="gymaf-stat">{Math.round(completed.reduce((n,s) => n+s.elapsed_seconds,0)/60)}</p><p>Recorded minutes</p></article></div><Note>Showing the latest {data.sessions.length} loaded sessions. Totals describe these records, not a claimed lifetime total.</Note>{!data.sessions.length && <Empty>Completed training will appear here.</Empty>}<div className="gymaf-row-list">{data.sessions.map(s => <Row key={s.id} href={`/app/sessions/${s.id}`} detail={`${new Date(s.started_at).toLocaleString()} · ${s.state.replaceAll("_"," ")}`}>{s.prescription.title}</Row>)}</div></div>; }
+  if (path[0] === "history") return <ProgressView data={data} query={query} user={account.user} busy={goalMutation.busy} error={goalMutation.error} onGoal={async goal=>{
+    const u=account.user;
+    if(await goalMutation.run("profile.save",{displayName:u.display_name,locale:u.locale,timezone:u.timezone,goal,equipment:u.equipment,availability:u.availability,revision:u.revision})){reload();return true;}return false;
+  }}/>;
   if (path.length) return <Empty>This page is not available.</Empty>;
-  const upcoming = [...data.workouts].filter(w => w.state === "assigned").sort((a,b) => a.scheduled_date.localeCompare(b.scheduled_date)), next = upcoming.find(w => w.scheduled_date >= today) || upcoming[0];
-  return <div className="gymaf-stack"><Head title={`${locale === "bg" ? "Здравей" : "Hello"}, ${account.user.display_name || (locale === "bg" ? "приятелю" : "there")}`} />
-    {account.relationships.length > 1 && <label className="form-field">Coaching relationship<select value={selected.id} onChange={event => { window.location.assign(`/app?relationship=${event.target.value}`); }}>{account.relationships.map(r => <option key={r.id} value={r.id}>{r.coach_name || "Coach"} · {r.state}</option>)}</select></label>}
-    <div className="home-grid"><div className="today-column gymaf-stack"><h2>{locale === "bg" ? "Твоята тренировка" : "Your training"}</h2>{next ? <WorkoutCard workout={next} query={query} /> : <Empty>Your coach is preparing your next training. You can still review your history and feedback.</Empty>}<Row href={`/app/check-ins${query}`}>Your weekly check-in</Row></div>
-      <div className="week-column gymaf-stack"><section className="gymaf-panel gymaf-stack"><h2>{data.relationship.coach_name || "Your coach"}</h2><p>{data.can_train ? "Your coaching service is active." : "No active service entitlement. Contact your coach or use account support."}</p><Link className="button" href={`/app/messages${query}`}>Open messages</Link></section><section className="this-week gymaf-stack"><h2>Coming up</h2>{upcoming.slice(0,5).map(w => <Row key={w.id} href={`/app/workouts/${w.id}${query}`} detail={w.scheduled_date}>{w.prescription.title}</Row>)}<div className="button-row"><Link className="button" href={`/app/schedule${query}`}>Schedule</Link><Link className="button" href={`/app/history${query}`}>History</Link></div></section></div></div>
-  </div>;
+  return <ClientHome account={account} data={data} query={query}/>;
 }

@@ -1,0 +1,44 @@
+\set ON_ERROR_STOP on
+begin;
+update gymaf_private.application_sessions set revoked_at=null where user_id='a0000000-0000-4000-8000-000000000003';
+select count(*) as messages_before from public.messages \gset
+set local role authenticated;
+select test_helpers.set_actor(3);
+select jsonb_build_object('id','96000000-0000-4000-8000-000000000001','relationshipId','20000000-0000-4000-8000-000000000001','sessionId',null,'exerciseId',null,'mimeType','video/webm','contentHash',repeat('a',64)) as upload \gset
+select public.gymaf_attachment_command('attachment.reserve','96000000-0000-4000-8000-000000000002',:'upload');
+select public.gymaf_attachment_command('attachment.reserve','96000000-0000-4000-8000-000000000002',:'upload');
+select test_helpers.assert((select count(*) from public.conversation_media)=1,'Reservation retry does not duplicate upload');
+select test_helpers.conflict(format('select public.gymaf_attachment_command(%L,%L,%L::jsonb)','attachment.reserve','96000000-0000-4000-8000-000000000002',(:'upload'::jsonb||jsonb_build_object('contentHash',repeat('b',64)))::text));
+insert into storage.objects(bucket_id,name,owner_id)values('gymaf-conversation-media','a0000000-0000-4000-8000-000000000003/96000000-0000-4000-8000-000000000001.webm','a0000000-0000-4000-8000-000000000003');
+select public.gymaf_attachment_command('attachment.complete','96000000-0000-4000-8000-000000000003','{"id":"96000000-0000-4000-8000-000000000001"}');
+select test_helpers.assert(jsonb_array_length(public.gymaf_attachment_query())=1,'Owner sees uploaded private draft');
+select test_helpers.set_actor(1);
+select test_helpers.assert(jsonb_array_length(public.gymaf_attachment_query('20000000-0000-4000-8000-000000000001'))=0,'Coach cannot see private draft');
+select test_helpers.assert((select count(*) from storage.objects where bucket_id='gymaf-conversation-media')=0,'Coach cannot download private draft');
+select test_helpers.denied($q$select public.gymaf_attachment_query(null,'96000000-0000-4000-8000-000000000001')$q$);
+select test_helpers.set_actor(3);
+select public.gymaf_attachment_command('attachment.share','96000000-0000-4000-8000-000000000004','{"id":"96000000-0000-4000-8000-000000000001"}');
+select public.gymaf_attachment_command('attachment.share','96000000-0000-4000-8000-000000000004','{"id":"96000000-0000-4000-8000-000000000001"}');
+select test_helpers.assert((public.gymaf_attachment_query()->0->>'shared_at') is not null,'Explicit send marks attachment shared');
+select test_helpers.assert(not(public.gymaf_attachment_query()->0 ?| array['object_name','content_hash','user_id']),'List DTO excludes object details');
+select test_helpers.set_actor(1);
+select test_helpers.assert(jsonb_array_length(public.gymaf_attachment_query('20000000-0000-4000-8000-000000000001'))=1,'Coach sees explicitly shared video');
+select test_helpers.assert((select count(*) from storage.objects where bucket_id='gymaf-conversation-media')=1,'Coach can download shared media');
+select test_helpers.denied($q$select public.gymaf_attachment_command('attachment.remove','96000000-0000-4000-8000-000000000005','{"id":"96000000-0000-4000-8000-000000000001"}')$q$);
+select test_helpers.set_actor(4);
+select test_helpers.assert((select count(*) from public.conversation_media)=0,'Sibling cannot read shared conversation media');
+select test_helpers.assert((select count(*) from storage.objects where bucket_id='gymaf-conversation-media')=0,'Sibling cannot download shared media');
+select test_helpers.denied($q$select public.gymaf_attachment_query('20000000-0000-4000-8000-000000000001')$q$);
+select test_helpers.denied(format('select public.gymaf_attachment_command(%L,%L,%L::jsonb)','attachment.reserve','96000000-0000-4000-8000-000000000006',(:'upload'::jsonb||'{"id":"96000000-0000-4000-8000-000000000009"}')::text));
+select test_helpers.set_actor(2);
+select test_helpers.denied($q$select public.gymaf_attachment_query('20000000-0000-4000-8000-000000000001')$q$);
+select test_helpers.set_actor(3);
+delete from storage.objects where bucket_id='gymaf-conversation-media';
+select public.gymaf_attachment_command('attachment.remove','96000000-0000-4000-8000-000000000007','{"id":"96000000-0000-4000-8000-000000000001"}');
+select test_helpers.set_actor(1);
+select test_helpers.assert(jsonb_array_length(public.gymaf_attachment_query('20000000-0000-4000-8000-000000000001'))=0,'Removal revokes recipient access');
+reset role;
+select test_helpers.assert((select count(*) from public.messages)=:messages_before+1,'Share and retry create exactly one message');
+set local role anon;
+do $$begin begin perform public.gymaf_attachment_query();raise exception 'Anonymous media query allowed';exception when insufficient_privilege then null;end;end $$;
+rollback;

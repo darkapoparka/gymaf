@@ -5,4 +5,5 @@ out/
 .env*
 !.env.example
 .artifacts/
+supabase/.temp/
 next-env.d.ts

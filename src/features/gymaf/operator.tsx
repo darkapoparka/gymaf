@@ -1,4 +1,5 @@
 "use client";
+import { BillingSetup } from './billing';
 import { useState } from "react";
 import type { DataRequest, OperatorData } from "@/shared/gymaf/contracts";
 import { Empty, ErrorNote, Field, Head, Note, Pending, useCommand, useResource } from "./ui";
@@ -19,7 +20,7 @@ export function OperatorArea() {
   return <div className="gymaf-stack"><Head title="Operator workspace" /><Note>These controls manage access and support. They are not a global client-health-data browser. No payments are collected.</Note><ErrorNote message={mutation.error} />
     <div className="home-grid"><form className="gymaf-panel gymaf-stack" onSubmit={event => { event.preventDefault(); void create(); }}><h2>Create coach workspace</h2><Field label="Workspace name" value={name} required maxLength={120} onChange={event => setName(event.target.value)} /><Field label="URL slug" value={slug} required pattern="[a-z0-9]+(-[a-z0-9]+)*" minLength={3} maxLength={80} onChange={event => setSlug(event.target.value)} /><Field label="Verified coach account ID" value={coachUserId} required onChange={event => setCoachUserId(event.target.value)} /><Note>The coach must sign in once and give you the account ID shown in their profile.</Note><button className="button" disabled={mutation.busy}>Create workspace</button></form>
       <form className="gymaf-panel gymaf-stack" onSubmit={event => { event.preventDefault(); void grant(); }}><h2>Complimentary test access</h2><label className="form-field">Relationship<select required value={relationshipId} onChange={event => setRelationshipId(event.target.value)}><option value="">Choose a relationship</option>{data.relationships.filter(r => r.state === "active").map(r => <option key={r.id} value={r.id}>{r.client_user_id} · {r.id}</option>)}</select></label><Field label="Days" type="number" min={1} max={365} value={days} required onChange={event => setDays(Number(event.target.value))} /><Field label="Audit reason" value={reason} required maxLength={500} onChange={event => setReason(event.target.value)} /><button className="button" disabled={mutation.busy}>Grant complimentary access</button></form></div>
-    <h2>Workspaces</h2>{data.workspaces.map(w => <article key={w.id} className="gymaf-panel"><h3>{w.name}</h3><p>{w.slug} · {w.published ? "Public profile enabled" : "Profile unpublished"}</p></article>)}
+    <h2>Workspaces</h2>{data.workspaces.map(w => <article key={w.id} className="gymaf-panel"><h3>{w.name}</h3><p>{w.slug} · {w.published ? "Public profile enabled" : "Profile unpublished"}</p><BillingSetup workspaceId={w.id}/></article>)}
     <h2>Requests</h2>{!data.requests.length && <Empty>No support or data requests.</Empty>}{data.requests.map(request => <RequestReview key={`${request.id}:${request.state}:${request.resolution}`} request={request} reload={resource.reload} />)}
   </div>;
 }

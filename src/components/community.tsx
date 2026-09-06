@@ -18,8 +18,11 @@ import { ConversationHistory } from "./conversation-history";
 import { AchievementDialog } from "./achievement-dialog";
 import { coverChoices } from "@/lib/reference-media";
 import { FutureMark } from "./future-mark";
+import { PrivatePhoto } from '@/features/gymaf/member-media';
 import { media, coachMessage } from "@/lib/data";
 import { useLocalData } from "@/lib/store";
+import { useBackend } from "@/lib/backend/context";
+import { BackendMessages } from "./backend/messages";
 import {
   Avatar,
   IconButton,
@@ -31,6 +34,10 @@ import {
 } from "./primitives";
 
 export function MessagesScreen() {
+  const backend = useBackend();
+  return backend ? <BackendMessages /> : <ReferenceMessagesScreen />;
+}
+function ReferenceMessagesScreen() {
   const { data, update } = useLocalData();
   const [history] = useCaptureState("community.history", "workout");
   const [achievement, setAchievement] = useCaptureState("community.achievement", false);
@@ -242,6 +249,9 @@ export function FriendsScreen() {
 }
 
 export function ProfileScreen() {
+  const backend = useBackend();
+  const router=useRouter();
+  const cover=backend?.photos.find(p => p.kind === 'cover' && p.selected_at);
   const { data, update } = useLocalData();
   const [sheet, setSheet] = useCaptureState<string | null>("community.sheet", null);
   const [name, setName] = useCaptureState("community.name", "");
@@ -250,7 +260,7 @@ export function ProfileScreen() {
   return (
     <>
       <div className="profile-cover">
-        {data.preferences.coverPhoto ? (
+        {cover ? <PrivatePhoto item={cover}/> : data.preferences.coverPhoto ? (
           <Image
             src={data.preferences.coverPhoto}
             alt="Your cover photo"
@@ -297,11 +307,11 @@ export function ProfileScreen() {
         <div className="profile-stats">
           <span>
             <small>Member Since</small>
-            <b>{data.preferences.memberSince || "Jun 2026"}</b>
+            <b>{backend ? "—" : data.preferences.memberSince || "Jun 2026"}</b>
           </span>
           <span>
             <small>Workouts</small>
-            <b>{data.preferences.profileWorkouts === "0" && !data.completed.length ? "--" : Number(data.preferences.profileWorkouts ?? 3) + data.completed.length}</b>
+            <b>{data.preferences.profileWorkouts === "0" && !data.completed.length ? "--" : (backend ? 0 : Number(data.preferences.profileWorkouts ?? 3)) + data.completed.length}</b>
           </span>
           <span>
             <small>Lbs Lifted</small>
@@ -318,6 +328,7 @@ export function ProfileScreen() {
               className="event-card"
               key={e.id}
               onClick={() => {
+                if(backend){router.push('/profile/event/'+e.id);return;}
                 setName(e.name);
                 setDate(e.date);
                 setSheet("Event Details");
@@ -336,7 +347,7 @@ export function ProfileScreen() {
           <Link className="button" href="/profile/event">
             Add Event
           </Link>
-          {data.preferences.profileWorkouts !== "0" && <><h2>Achievements</h2>
+          {!backend && data.preferences.profileWorkouts !== "0" && <><h2>Achievements</h2>
           <button
             className="achievement"
             aria-label="500 calorie achievement"
@@ -349,11 +360,11 @@ export function ProfileScreen() {
           <h2>Your Coach</h2>
           <div className="row-group">
             <Row
-              href="/coaches/lee"
+              href={backend ? backend.relationship ? "/messages" : "/coaches" : "/coaches/lee"}
               icon={<Avatar size={40} />}
               detail="Your personal coach"
             >
-              Lee Owens
+              {backend?.relationship?.relationship.coach_name || (backend ? "No coach assigned" : "Lee Owens")}
             </Row>
             <Row href="/coaches/change">Change Coach</Row>
           </div>
@@ -441,6 +452,7 @@ export function EditProfileScreen() {
   );
 }
 function ProfileEditor() {
+  const backend = useBackend();
   const { data, update } = useLocalData();
   const router = useRouter();
   const [name, setName] = useCaptureState("community.name", data.name);
@@ -456,14 +468,14 @@ function ProfileEditor() {
         <Avatar person="alex" size={90} />
       </div>
       <form
-        onSubmit={(e) => {
+        onSubmit={async (e) => {
           e.preventDefault();
-          update({
+          const saved = await update({
             name: name.trim(),
             interest: interest.trim().replace(/^#/, ""),
             privateProfile,
           });
-          router.push("/profile");
+          if (saved !== false) router.push("/profile");
         }}
       >
         <label className="form-field">
@@ -492,11 +504,12 @@ function ProfileEditor() {
           Private Profile
           <input
             type="checkbox"
+            disabled={!!backend}
             checked={privateProfile}
             onChange={(e) => setPrivateProfile(e.target.checked)}
           />
         </label>
-        <p className="note">Changes are saved on this device.</p>
+        <p className="note">{backend ? "Your name and goal are saved to your account. Your training profile is private." : "Changes are saved on this device."}</p>
         <button className="button primary full">Save Profile</button>
       </form>
     </>

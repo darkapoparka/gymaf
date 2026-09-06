@@ -105,6 +105,7 @@ export const media = {
 } satisfies Record<string, Crop>;
 
 export type Workout = {
+  prescription?: import("@/shared/gymaf/contracts").PlanWorkout;
   id: string;
   title: string;
   minutes: number;
