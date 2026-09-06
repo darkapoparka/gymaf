@@ -16,9 +16,11 @@ test('private account, interests and coach-rating HTTP boundaries',{timeout:4500
   if(deny)return reply({code:'42501'},403);
   if(req.url==='/rest/v1/rpc/gymaf_query')return reply({user:{id,display_name:'Synthetic'}});
   if(req.url==='/rest/v1/rpc/gymaf_member_query')return reply([]);
+  if(req.url==='/rest/v1/rpc/gymaf_directory_query')return reply({coaches:[],hasMore:false});
+  if(req.url==='/rest/v1/rpc/gymaf_directory_export')return reply([]);
   if(req.url==='/rest/v1/rpc/gymaf_interests_query')return reply(['running']);
   if(req.url==='/rest/v1/rpc/gymaf_coach_rating_query')return reply({relationshipId:rid,rating:null,revision:0,canSave:true});
-  if(req.url==='/rest/v1/rpc/gymaf_coach_rating_command'||req.url==='/rest/v1/rpc/gymaf_member_command'||req.url==='/rest/v1/rpc/gymaf_command')return conflict?reply({code:'GY409'},400):reply({id,revision:1});
+  if(req.url==='/rest/v1/rpc/gymaf_directory_command'||req.url==='/rest/v1/rpc/gymaf_coach_rating_command'||req.url==='/rest/v1/rpc/gymaf_member_command'||req.url==='/rest/v1/rpc/gymaf_command')return conflict?reply({code:'GY409'},400):reply({id,revision:1});
   reply({},404);
  });
  fixture.listen(0,'127.0.0.1');await once(fixture,'listening');
@@ -27,7 +29,8 @@ test('private account, interests and coach-rating HTTP boundaries',{timeout:4500
  try{
   let ready=false;for(let n=0;n<100;n++){try{ready=(await fetch(origin+'/login')).ok;}catch{}if(ready)break;await delay(100);}assert.equal(ready,true);
   const headers={Origin:origin,cookie:'gymaf-access=fixture-access','Content-Type':'application/json'};
-  for(const path of ['/me/account',`/relationships/${rid}/rating`])assert.equal((await fetch(origin+'/api/v1'+path)).status,401);
+  const publicDirectory=await fetch(origin+'/api/v1/public/directory');assert.equal(publicDirectory.status,200);assert.equal(calls.at(-1).body.p_workspace,null);assert.match(publicDirectory.headers.get('cache-control'),/no-store/);
+  for(const path of ['/workspaces/'+rid+'/directory','/me/account',`/relationships/${rid}/rating`])assert.equal((await fetch(origin+'/api/v1'+path)).status,401);
   const account=await fetch(origin+'/api/v1/me/account',{headers});assert.equal(account.status,200);assert.match(account.headers.get('cache-control'),/no-store/);assert.deepEqual((await account.json()).data,{email:'synthetic@gymaf.example',records:[]});
   const me=await fetch(origin+'/api/v1/me',{headers});assert.deepEqual((await me.json()).data.user.interests,['running']);
   deny=true;assert.equal((await fetch(origin+'/api/v1/me/account',{headers})).status,403);assert.equal((await fetch(origin+`/api/v1/relationships/${rid}/rating`,{headers})).status,403);deny=false;
@@ -36,6 +39,8 @@ test('private account, interests and coach-rating HTTP boundaries',{timeout:4500
   assert.equal((await post(command,'https://wrong.example')).status,403);
   assert.equal((await post({...command,payload:{...command.payload,userId:id}})).status,422);
   assert.equal((await post(command)).status,200);assert.equal(calls.at(-1).path,'/rest/v1/rpc/gymaf_coach_rating_command');assert.equal(calls.at(-1).body.p_command_id,id);
+  const directory={action:'directory.save',commandId:id,payload:{workspaceId:rid,revision:0,data:{listed:false,expertise:[],styles:[],sports:[],languages:[],experience:'',qualifications:'',loves:'',location:''}}};
+  assert.equal((await post(directory)).status,200);assert.equal(calls.at(-1).path,'/rest/v1/rpc/gymaf_directory_command');assert.equal((await post({...directory,payload:{...directory.payload,userId:id}})).status,422);
   conflict=true;assert.equal((await post(command)).status,409);
   assert.equal((await fetch(origin+'/design-review')).status,404);
  }finally{child.kill();await new Promise(resolve=>fixture.close(resolve));}

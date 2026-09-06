@@ -87,3 +87,5 @@ jobs:
         run: psql -v ON_ERROR_STOP=1 -f tests/db/account-details.sql
       - name: Private coach rating regression tests
         run: psql -v ON_ERROR_STOP=1 -f tests/db/coach-rating.sql
+      - name: Coach directory visibility and ownership regression tests
+        run: psql -v ON_ERROR_STOP=1 -f tests/db/coach-directory.sql

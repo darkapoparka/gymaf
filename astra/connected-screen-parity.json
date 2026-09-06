@@ -278,14 +278,21 @@
     ],
     "referenceRoute": "/coaches",
     "referenceState": "First recommended coach",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Explicit public-directory opt-in plus active published workspace governs listed metadata. Owner directory.save uses MFA/ownership/RLS, revisions/idempotency and own export. Connect only explains private invitations and navigates to support; no send, booking, payment, matching or relationship replacement. Listed-profile browsing only; no source recommendation or matching. Hosted mutation/conflict/publication/privacy acceptance remains open.",
+    "mediaStatus": "Coach-authored public metadata and initials; approved original portraits/media absent. Native and exact source imagery remain unaccepted.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked directory navigation, filter/profile/Back recovery, Connect Escape/focus return and empty/error Retry. Six routes checked at 320/393/1440; hosted mutation/publication browser NOT TESTED.",
+    "evidence": [
+      "Directory increment after 4651f0b6e787656bc10c1133734ba3963e497088: this individual explore capture gains partial connected coverage on /app/coaches. Listed-profile browsing only; no source recommendation or matching. NOT VERIFIED 1:1.",
+      ".artifacts/discovery-review/explore-320-fixed.png; explore-393-fixed.png; explore-1440-fixed.png. Fixed captures supersede earlier final versions for explore/profile/filters/change. Bounded final SHIP: filter labels 5.07:1, See More 5.29:1, change copy 5.00:1; caption overlap resolved at 320/393/1440. Detector [] is not source acceptance.",
+      ".artifacts/discovery-review/layout-checks.txt: six mocked routes at 320/393/1440, no overflow or checked controls under 44px. Filters survive profile/Back; Connect Escape returns trigger focus; empty-393.png, unlisted-empty-393.png, load-error-393.png evidence bounded empty/retry states.",
+      ".artifacts/discovery-review/editor-retry-requests.json: mocked editor failed-save/retry retains command UUID 9406d16d-8fbe-418e-b684-7793db633f68 and revision 1 twice; mock acknowledgement clears dirty. editor-393-final.png, editor-error-393.png and editor-reload-393.png show bounded focused error/reload recovery, not hosted publication.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906035415 installed as 20260906041513; thirteen migrations. Actual unauthenticated development /api/v1/public/directory returned 200, private/no-store, coaches [] and hasMore false; no opted-in profiles. Schema/read evidence only.",
+      "Final parent-reported local logs .artifacts/discovery-review/{build-final,unit-final,lint,http-final,full-db,directory-db-final}.log: build/TypeScript, 42 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_directory_final, 13 migrations + seed + 8 SQL suites PASS with simulated provider JWT/Storage. Prior exact HEAD 4651f0b6e787656bc10c1133734ba3963e497088 CI 34010073109 SUCCESS does not cover uncommitted directory increment; commit/push/CI pending."
+    ]
   },
   {
     "id": "818823fea239b926",
@@ -322,14 +329,21 @@
     ],
     "referenceRoute": "/coaches/lee",
     "referenceState": "Top of coach profile",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/profile/[slug]",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Explicit public-directory opt-in plus active published workspace governs listed metadata. Owner directory.save uses MFA/ownership/RLS, revisions/idempotency and own export. Connect only explains private invitations and navigates to support; no send, booking, payment, matching or relationship replacement. Authored metadata only; missing original portrait, verified credentials and booking. Hosted mutation/conflict/publication/privacy acceptance remains open.",
+    "mediaStatus": "Coach-authored public metadata and initials; approved original portraits/media absent. Native and exact source imagery remain unaccepted.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked directory navigation, filter/profile/Back recovery, Connect Escape/focus return and empty/error Retry. Six routes checked at 320/393/1440; hosted mutation/publication browser NOT TESTED.",
+    "evidence": [
+      "Directory increment after 4651f0b6e787656bc10c1133734ba3963e497088: this individual profile capture gains partial connected coverage on /app/coaches/profile/[slug]. Authored metadata only; missing original portrait, verified credentials and booking. NOT VERIFIED 1:1.",
+      ".artifacts/discovery-review/profile-320-fixed.png; profile-393-fixed.png; profile-1440-fixed.png. Fixed captures supersede earlier final versions for explore/profile/filters/change. Bounded final SHIP: filter labels 5.07:1, See More 5.29:1, change copy 5.00:1; caption overlap resolved at 320/393/1440. Detector [] is not source acceptance.",
+      ".artifacts/discovery-review/layout-checks.txt: six mocked routes at 320/393/1440, no overflow or checked controls under 44px. Filters survive profile/Back; Connect Escape returns trigger focus; empty-393.png, unlisted-empty-393.png, load-error-393.png evidence bounded empty/retry states.",
+      ".artifacts/discovery-review/editor-retry-requests.json: mocked editor failed-save/retry retains command UUID 9406d16d-8fbe-418e-b684-7793db633f68 and revision 1 twice; mock acknowledgement clears dirty. editor-393-final.png, editor-error-393.png and editor-reload-393.png show bounded focused error/reload recovery, not hosted publication.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906035415 installed as 20260906041513; thirteen migrations. Actual unauthenticated development /api/v1/public/directory returned 200, private/no-store, coaches [] and hasMore false; no opted-in profiles. Schema/read evidence only.",
+      "Final parent-reported local logs .artifacts/discovery-review/{build-final,unit-final,lint,http-final,full-db,directory-db-final}.log: build/TypeScript, 42 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_directory_final, 13 migrations + seed + 8 SQL suites PASS with simulated provider JWT/Storage. Prior exact HEAD 4651f0b6e787656bc10c1133734ba3963e497088 CI 34010073109 SUCCESS does not cover uncommitted directory increment; commit/push/CI pending."
+    ]
   },
   {
     "id": "4050314ce4aaa198",
@@ -402,14 +416,21 @@
     ],
     "referenceRoute": "/coaches/search",
     "referenceState": "Initial expertise and style filters",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/search",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Explicit public-directory opt-in plus active published workspace governs listed metadata. Owner directory.save uses MFA/ownership/RLS, revisions/idempotency and own export. Connect only explains private invitations and navigates to support; no send, booking, payment, matching or relationship replacement. Collapsed filters connected; complete source/native filter-state acceptance remains open. Hosted mutation/conflict/publication/privacy acceptance remains open.",
+    "mediaStatus": "Coach-authored public metadata and initials; approved original portraits/media absent. Native and exact source imagery remain unaccepted.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked directory navigation, filter/profile/Back recovery, Connect Escape/focus return and empty/error Retry. Six routes checked at 320/393/1440; hosted mutation/publication browser NOT TESTED.",
+    "evidence": [
+      "Directory increment after 4651f0b6e787656bc10c1133734ba3963e497088: this individual filters capture gains partial connected coverage on /app/coaches/search. Collapsed filters connected; complete source/native filter-state acceptance remains open. NOT VERIFIED 1:1.",
+      ".artifacts/discovery-review/filters-320-fixed.png; filters-393-fixed.png; filters-1440-fixed.png. Fixed captures supersede earlier final versions for explore/profile/filters/change. Bounded final SHIP: filter labels 5.07:1, See More 5.29:1, change copy 5.00:1; caption overlap resolved at 320/393/1440. Detector [] is not source acceptance.",
+      ".artifacts/discovery-review/layout-checks.txt: six mocked routes at 320/393/1440, no overflow or checked controls under 44px. Filters survive profile/Back; Connect Escape returns trigger focus; empty-393.png, unlisted-empty-393.png, load-error-393.png evidence bounded empty/retry states.",
+      ".artifacts/discovery-review/editor-retry-requests.json: mocked editor failed-save/retry retains command UUID 9406d16d-8fbe-418e-b684-7793db633f68 and revision 1 twice; mock acknowledgement clears dirty. editor-393-final.png, editor-error-393.png and editor-reload-393.png show bounded focused error/reload recovery, not hosted publication.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906035415 installed as 20260906041513; thirteen migrations. Actual unauthenticated development /api/v1/public/directory returned 200, private/no-store, coaches [] and hasMore false; no opted-in profiles. Schema/read evidence only.",
+      "Final parent-reported local logs .artifacts/discovery-review/{build-final,unit-final,lint,http-final,full-db,directory-db-final}.log: build/TypeScript, 42 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_directory_final, 13 migrations + seed + 8 SQL suites PASS with simulated provider JWT/Storage. Prior exact HEAD 4651f0b6e787656bc10c1133734ba3963e497088 CI 34010073109 SUCCESS does not cover uncommitted directory increment; commit/push/CI pending."
+    ]
   },
   {
     "id": "9bbfbb4408c5aa98",
@@ -426,14 +447,21 @@
     ],
     "referenceRoute": "/coaches/search",
     "referenceState": "Expand expertise",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/search",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Explicit public-directory opt-in plus active published workspace governs listed metadata. Owner directory.save uses MFA/ownership/RLS, revisions/idempotency and own export. Connect only explains private invitations and navigates to support; no send, booking, payment, matching or relationship replacement. Expanded expertise connected; separate A–Z capture is not promoted. Hosted mutation/conflict/publication/privacy acceptance remains open.",
+    "mediaStatus": "Coach-authored public metadata and initials; approved original portraits/media absent. Native and exact source imagery remain unaccepted.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked directory navigation, filter/profile/Back recovery, Connect Escape/focus return and empty/error Retry. Six routes checked at 320/393/1440; hosted mutation/publication browser NOT TESTED.",
+    "evidence": [
+      "Directory increment after 4651f0b6e787656bc10c1133734ba3963e497088: this individual expanded capture gains partial connected coverage on /app/coaches/search. Expanded expertise connected; separate A–Z capture is not promoted. NOT VERIFIED 1:1.",
+      ".artifacts/discovery-review/expanded-393-final.png. Fixed captures supersede earlier final versions for explore/profile/filters/change. Bounded final SHIP: filter labels 5.07:1, See More 5.29:1, change copy 5.00:1; caption overlap resolved at 320/393/1440. Detector [] is not source acceptance.",
+      ".artifacts/discovery-review/layout-checks.txt: six mocked routes at 320/393/1440, no overflow or checked controls under 44px. Filters survive profile/Back; Connect Escape returns trigger focus; empty-393.png, unlisted-empty-393.png, load-error-393.png evidence bounded empty/retry states.",
+      ".artifacts/discovery-review/editor-retry-requests.json: mocked editor failed-save/retry retains command UUID 9406d16d-8fbe-418e-b684-7793db633f68 and revision 1 twice; mock acknowledgement clears dirty. editor-393-final.png, editor-error-393.png and editor-reload-393.png show bounded focused error/reload recovery, not hosted publication.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906035415 installed as 20260906041513; thirteen migrations. Actual unauthenticated development /api/v1/public/directory returned 200, private/no-store, coaches [] and hasMore false; no opted-in profiles. Schema/read evidence only.",
+      "Final parent-reported local logs .artifacts/discovery-review/{build-final,unit-final,lint,http-final,full-db,directory-db-final}.log: build/TypeScript, 42 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_directory_final, 13 migrations + seed + 8 SQL suites PASS with simulated provider JWT/Storage. Prior exact HEAD 4651f0b6e787656bc10c1133734ba3963e497088 CI 34010073109 SUCCESS does not cover uncommitted directory increment; commit/push/CI pending."
+    ]
   },
   {
     "id": "1ee01f448b7491b4",
@@ -466,14 +494,21 @@
     ],
     "referenceRoute": "/coaches/results",
     "referenceState": "Filtered coach result list; the local directory is a subset",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/results",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Explicit public-directory opt-in plus active published workspace governs listed metadata. Owner directory.save uses MFA/ownership/RLS, revisions/idempotency and own export. Connect only explains private invitations and navigates to support; no send, booking, payment, matching or relationship replacement. Actual text/category filtering and counts over first 500 eligible profiles; no full pagination or recommendations. Hosted mutation/conflict/publication/privacy acceptance remains open.",
+    "mediaStatus": "Coach-authored public metadata and initials; approved original portraits/media absent. Native and exact source imagery remain unaccepted.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked directory navigation, filter/profile/Back recovery, Connect Escape/focus return and empty/error Retry. Six routes checked at 320/393/1440; hosted mutation/publication browser NOT TESTED.",
+    "evidence": [
+      "Directory increment after 4651f0b6e787656bc10c1133734ba3963e497088: this individual results capture gains partial connected coverage on /app/coaches/results. Actual text/category filtering and counts over first 500 eligible profiles; no full pagination or recommendations. NOT VERIFIED 1:1.",
+      ".artifacts/discovery-review/results-320-final.png; results-393-final.png; results-1440-final.png. Fixed captures supersede earlier final versions for explore/profile/filters/change. Bounded final SHIP: filter labels 5.07:1, See More 5.29:1, change copy 5.00:1; caption overlap resolved at 320/393/1440. Detector [] is not source acceptance.",
+      ".artifacts/discovery-review/layout-checks.txt: six mocked routes at 320/393/1440, no overflow or checked controls under 44px. Filters survive profile/Back; Connect Escape returns trigger focus; empty-393.png, unlisted-empty-393.png, load-error-393.png evidence bounded empty/retry states.",
+      ".artifacts/discovery-review/editor-retry-requests.json: mocked editor failed-save/retry retains command UUID 9406d16d-8fbe-418e-b684-7793db633f68 and revision 1 twice; mock acknowledgement clears dirty. editor-393-final.png, editor-error-393.png and editor-reload-393.png show bounded focused error/reload recovery, not hosted publication.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906035415 installed as 20260906041513; thirteen migrations. Actual unauthenticated development /api/v1/public/directory returned 200, private/no-store, coaches [] and hasMore false; no opted-in profiles. Schema/read evidence only.",
+      "Final parent-reported local logs .artifacts/discovery-review/{build-final,unit-final,lint,http-final,full-db,directory-db-final}.log: build/TypeScript, 42 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_directory_final, 13 migrations + seed + 8 SQL suites PASS with simulated provider JWT/Storage. Prior exact HEAD 4651f0b6e787656bc10c1133734ba3963e497088 CI 34010073109 SUCCESS does not cover uncommitted directory increment; commit/push/CI pending."
+    ]
   },
   {
     "id": "ffc4e49a11c1acaf",
@@ -4519,14 +4554,21 @@
     ],
     "referenceRoute": "/coaches/change",
     "referenceState": "Change Coach introduction with Noah photograph and layered sheet",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/change",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Explicit public-directory opt-in plus active published workspace governs listed metadata. Owner directory.save uses MFA/ownership/RLS, revisions/idempotency and own export. Connect only explains private invitations and navigates to support; no send, booking, payment, matching or relationship replacement. Browsing introduction only; no coach replacement or native commercial flow. Hosted mutation/conflict/publication/privacy acceptance remains open.",
+    "mediaStatus": "Coach-authored public metadata and initials; approved original portraits/media absent. Native and exact source imagery remain unaccepted.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked directory navigation, filter/profile/Back recovery, Connect Escape/focus return and empty/error Retry. Six routes checked at 320/393/1440; hosted mutation/publication browser NOT TESTED.",
+    "evidence": [
+      "Directory increment after 4651f0b6e787656bc10c1133734ba3963e497088: this individual change capture gains partial connected coverage on /app/coaches/change. Browsing introduction only; no coach replacement or native commercial flow. NOT VERIFIED 1:1.",
+      ".artifacts/discovery-review/change-320-fixed.png; change-393-fixed.png; change-1440-fixed.png. Fixed captures supersede earlier final versions for explore/profile/filters/change. Bounded final SHIP: filter labels 5.07:1, See More 5.29:1, change copy 5.00:1; caption overlap resolved at 320/393/1440. Detector [] is not source acceptance.",
+      ".artifacts/discovery-review/layout-checks.txt: six mocked routes at 320/393/1440, no overflow or checked controls under 44px. Filters survive profile/Back; Connect Escape returns trigger focus; empty-393.png, unlisted-empty-393.png, load-error-393.png evidence bounded empty/retry states.",
+      ".artifacts/discovery-review/editor-retry-requests.json: mocked editor failed-save/retry retains command UUID 9406d16d-8fbe-418e-b684-7793db633f68 and revision 1 twice; mock acknowledgement clears dirty. editor-393-final.png, editor-error-393.png and editor-reload-393.png show bounded focused error/reload recovery, not hosted publication.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906035415 installed as 20260906041513; thirteen migrations. Actual unauthenticated development /api/v1/public/directory returned 200, private/no-store, coaches [] and hasMore false; no opted-in profiles. Schema/read evidence only.",
+      "Final parent-reported local logs .artifacts/discovery-review/{build-final,unit-final,lint,http-final,full-db,directory-db-final}.log: build/TypeScript, 42 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_directory_final, 13 migrations + seed + 8 SQL suites PASS with simulated provider JWT/Storage. Prior exact HEAD 4651f0b6e787656bc10c1133734ba3963e497088 CI 34010073109 SUCCESS does not cover uncommitted directory increment; commit/push/CI pending."
+    ]
   },
   {
     "id": "e690c12004fa0b11",
@@ -4559,14 +4601,21 @@
     ],
     "referenceRoute": "/coaches/change",
     "referenceState": "Choose Explore and select change reasons",
-    "connectedRoute": null,
+    "connectedRoute": "/app/coaches/reasons",
     "family": "coach-discovery",
-    "frontendStatus": "Not implemented",
-    "backendGap": "No public coach catalog, matching or booking contract.",
-    "mediaStatus": "Original media not connected",
+    "frontendStatus": "Partial family adaptation",
+    "backendGap": "Explicit public-directory opt-in plus active published workspace governs listed metadata. Owner directory.save uses MFA/ownership/RLS, revisions/idempotency and own export. Connect only explains private invitations and navigates to support; no send, booking, payment, matching or relationship replacement. Private document-memory browsing notes only; no submission, coach send or matching. Hosted mutation/conflict/publication/privacy acceptance remains open.",
+    "mediaStatus": "Coach-authored public metadata and initials; approved original portraits/media absent. Native and exact source imagery remain unaccepted.",
     "visualStatus": "NOT VERIFIED 1:1",
-    "connectedFlowStatus": "NOT TESTED in this worktree",
-    "evidence": []
+    "connectedFlowStatus": "PASS bounded mocked directory navigation, filter/profile/Back recovery, Connect Escape/focus return and empty/error Retry. Six routes checked at 320/393/1440; hosted mutation/publication browser NOT TESTED.",
+    "evidence": [
+      "Directory increment after 4651f0b6e787656bc10c1133734ba3963e497088: this individual reasons capture gains partial connected coverage on /app/coaches/reasons. Private document-memory browsing notes only; no submission, coach send or matching. NOT VERIFIED 1:1.",
+      ".artifacts/discovery-review/reasons-320-final.png; reasons-393-final.png; reasons-1440-final.png. Fixed captures supersede earlier final versions for explore/profile/filters/change. Bounded final SHIP: filter labels 5.07:1, See More 5.29:1, change copy 5.00:1; caption overlap resolved at 320/393/1440. Detector [] is not source acceptance.",
+      ".artifacts/discovery-review/layout-checks.txt: six mocked routes at 320/393/1440, no overflow or checked controls under 44px. Filters survive profile/Back; Connect Escape returns trigger focus; empty-393.png, unlisted-empty-393.png, load-error-393.png evidence bounded empty/retry states.",
+      ".artifacts/discovery-review/editor-retry-requests.json: mocked editor failed-save/retry retains command UUID 9406d16d-8fbe-418e-b684-7793db633f68 and revision 1 twice; mock acknowledgement clears dirty. editor-393-final.png, editor-error-393.png and editor-reload-393.png show bounded focused error/reload recovery, not hosted publication.",
+      "Hosted development crhcgcqanoeoddmwaqhb: source 20260906035415 installed as 20260906041513; thirteen migrations. Actual unauthenticated development /api/v1/public/directory returned 200, private/no-store, coaches [] and hasMore false; no opted-in profiles. Schema/read evidence only.",
+      "Final parent-reported local logs .artifacts/discovery-review/{build-final,unit-final,lint,http-final,full-db,directory-db-final}.log: build/TypeScript, 42 units, lint 0 errors/2 existing warnings, 3 mocked HTTP PASS; fresh PG17.4 gymaf_directory_final, 13 migrations + seed + 8 SQL suites PASS with simulated provider JWT/Storage. Prior exact HEAD 4651f0b6e787656bc10c1133734ba3963e497088 CI 34010073109 SUCCESS does not cover uncommitted directory increment; commit/push/CI pending."
+    ]
   },
   {
     "id": "cdd7b72066569858",

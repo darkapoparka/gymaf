@@ -36,3 +36,8 @@ export type SessionFeedback = { sessionId: string; editable: boolean; canSubmit:
 export type MemberMedia = { id:string;kind:'avatar'|'cover'|'progress';view:'front'|'back'|'side'|'image';taken_on:string;created_at:string;selected_at?:string|null };
 
 export type CoachRating = {relationshipId:string;rating:number|null;revision:number;updatedAt:string|null;canSave:boolean};
+
+export type DirectoryFields={listed:boolean;expertise:string[];styles:string[];sports:string[];languages:string[];experience:string;qualifications:string;loves:string;location:string};
+export type DirectoryProfile={workspaceId:string;revision:number;workspacePublished:boolean;data:DirectoryFields};
+export type DirectoryCoach={workspaceId:string;slug:string;name:string;bio:string;details:Omit<DirectoryFields,'listed'>};
+export type CoachDirectory={coaches:DirectoryCoach[];hasMore:boolean};

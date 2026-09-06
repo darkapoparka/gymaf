@@ -1,4 +1,37 @@
 import type { Command, ProgramPlan, PlanSet } from "./contracts";
+export const coachExpertise = [
+  "Sports Performance",
+  "General Strength Training",
+  "Nutrition",
+  "Bodybuilding",
+  "Weight Loss",
+  "Adaptive Exercise",
+  "Orthopedic Limitations",
+  "Injury Prevention",
+  "Tactical Performance",
+  "Sports Psychology",
+  "Olympic Weightlifting",
+  "Powerlifting",
+  "Running",
+  "Kettlebells",
+  "Prenatal and Postpartum",
+  "Hiking",
+  "Crossfit",
+  "Combat Sports",
+  "Triathlon",
+  "Metabolic Syndromes and Heart Conditions",
+  "Yoga",
+  "Cycling",
+  "Swimming",
+  "Gymnastics",
+  "Rowing",
+  "Pilates and Barre",
+  "Dance",
+  "Obstacle Races",
+];
+export const coachStyles=['Detail Oriented','Even Keeled','High Energy','Laid Back','Motivating','Results Oriented','Supportive'];
+export const coachSports=['Basketball','Football','Soccer','Baseball','Group Fitness and Bootcamps','Running','Cycling','Swimming','Tennis','Hiking'];
+export const coachLanguages=['English','Bulgarian','Spanish','French','German','Italian','Portuguese'];
 export const flagReasons = ['Dislike', 'Too Hard', 'Too Easy', 'Injured', 'Mix It Up', 'Traveling', 'Equipment Busy', 'Uncomfortable', 'Missing Equipment'] as const;
 
 export class InputError extends Error { constructor(message: string) { super(message); this.name = "InputError"; } }
@@ -78,6 +111,11 @@ export function validateCommand(value: unknown): Command {
   const id = (name: string) => uuid(p[name]);
   const revision = () => integer(p.revision, "Revision", 0, 2147483646);
   switch (action) {
+    case "directory.save": {
+      keys(p,['workspaceId','revision','data']);const d=object(p.data);keys(d,['listed','expertise','styles','sports','languages','experience','qualifications','loves','location']);
+      const tags=(value:unknown,choices:string[])=>{if(!Array.isArray(value)||value.length>choices.length)throw new InputError('Invalid choices.');const selected=value.map(item=>oneOf(item,choices));if(new Set(selected).size!==selected.length)throw new InputError('Duplicate choice.');return selected;};
+      payload={workspaceId:id('workspaceId'),revision:revision(),data:{listed:boolean(d.listed),expertise:tags(d.expertise,coachExpertise),styles:tags(d.styles,coachStyles),sports:tags(d.sports,coachSports),languages:tags(d.languages,coachLanguages),experience:text(d.experience,'Experience',500),qualifications:text(d.qualifications,'Qualifications',1000),loves:text(d.loves,'Interests',500),location:text(d.location,'Location',120)}};break;
+    }
     case "coach-rating.save": keys(p,["relationshipId","revision","rating"]);payload={relationshipId:id("relationshipId"),revision:revision(),rating:integer(p.rating,"Rating",1,5)};break;
     case "feedback.submit": keys(p, ["sessionId", "revision"]); payload = { sessionId: id("sessionId"), revision: revision() }; break;
     case "feedback.save": {
