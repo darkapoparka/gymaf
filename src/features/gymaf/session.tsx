@@ -1,9 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import type { MemberRecord, PlanSet, SessionDetail, SetLog, SessionState } from "@/shared/gymaf/contracts";
 import { preferenceDefaults } from "@/shared/gymaf/member-preferences";
 import { ExerciseHistoryPanel } from "./exercise-history";
+import { SessionFeedbackPanel, SessionFlagPanel } from "./session-feedback";
 import { SessionSummary } from "./session-summary";
 import { SessionView } from "./session-view";
 import { elapsedSeconds } from "@/shared/gymaf/validation";
@@ -33,11 +35,13 @@ function SetEditor({ sessionId, exerciseId, index, target, saved, editable, onDi
     {dirty && <Note>Unsaved changes. Keep this page open until saving is confirmed.</Note>}<Note>{notice}</Note><ErrorNote message={mutation.error} />
   </form>;
 }
-export function SessionScreen({ id, back }: { id: string; back: string }) {
+export function SessionScreen({ id, back, ownerId }: { id: string; back: string; ownerId:string }) {
   const resource = useResource<SessionDetail>(`workout-sessions/${id}`), transition = useCommand();
   const member = useResource<MemberRecord[]>('me/details');
   const savedPreferences=member.data?.find(r=>r.kind==='preferences')?.data;
   const preferences={instructions:String(savedPreferences?.instructions||preferenceDefaults.instructions),tone:String(savedPreferences?.tone||preferenceDefaults.tone),countdown:(savedPreferences?.countdown??preferenceDefaults.countdown)===true,vibration:(savedPreferences?.vibration??preferenceDefaults.vibration)===true};
+  const [feedbackDirty,setFeedbackDirty]=useState(false),[exitRequest,setExitRequest]=useState(0),[exitTarget,setExitTarget]=useState(back);
+  const router=useRouter();
   const [now, setNow] = useState(0), [dirty, setDirty] = useState<Set<string>>(new Set());
   useEffect(() => {
     const first = window.setTimeout(() => setNow(Date.now()), 0);
@@ -60,6 +64,6 @@ export function SessionScreen({ id, back }: { id: string; back: string }) {
       return <SetEditor key={`${fieldKey}:${saved?.revision || 0}`} sessionId={id} exerciseId={exercise.id} index={index} target={target} saved={saved} editable={editable} onDirty={value => setDirty(previous => { const next = new Set(previous); if (value) next.add(fieldKey); else next.delete(fieldKey); return next; })} onSaved={resource.reload} />;
     });
   };
-  if (session.state === 'completed' || session.state === 'abandoned') return <SessionSummary detail={resource.data} back={back} renderSets={renderSets}/>;
-  return <SessionView preferences={preferences} detail={resource.data} elapsed={elapsed} back={back} dirty={!!dirty.size} busy={transition.busy} error={resource.error || transition.error} onTransition={state => void change(state)} renderSets={renderSets} renderHistory={exerciseId=><ExerciseHistoryPanel sessionId={id} exerciseId={exerciseId}/>}/>;
+  if (session.state === 'completed' || session.state === 'abandoned') return <SessionSummary detail={resource.data} back={back} renderSets={renderSets} feedbackDirty={feedbackDirty} onDirtyExit={href=>{setExitTarget(href);setExitRequest(n=>n+1);}} feedback={<SessionFeedbackPanel ownerId={ownerId} exitRequest={exitRequest} onLeave={()=>router.push(exitTarget)} sessionId={id} exercises={session.prescription.exercises} onDirty={setFeedbackDirty}/>}/>;
+  return <SessionView renderFlag={(exerciseId,close)=><SessionFlagPanel ownerId={ownerId} sessionId={id} exercise={session.prescription.exercises.find(e=>e.id===exerciseId)!} onClose={close}/>} preferences={preferences} detail={resource.data} elapsed={elapsed} back={back} dirty={!!dirty.size} busy={transition.busy} error={resource.error || transition.error} onTransition={state => void change(state)} renderSets={renderSets} renderHistory={exerciseId=><ExerciseHistoryPanel sessionId={id} exerciseId={exerciseId}/>}/>;
 }

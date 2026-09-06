@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { Check, ChevronLeft, ChevronRight, History, List, Pause, Play, X } from 'lucide-react';
+import { Check, ChevronLeft, ChevronRight, History, Flag, List, Pause, Play, X } from 'lucide-react';
 import type { SessionDetail, SessionState } from '@/shared/gymaf/contracts';
 import { Dialog, ErrorNote } from './ui';
 import { TrainingArtwork, type Artwork } from './client-views';
@@ -10,11 +10,12 @@ type Props = {
   detail: SessionDetail; elapsed: number; back: string; dirty: boolean; busy: boolean;
   error?: string; artwork?: Artwork; preferences?: {instructions?: string; tone?: string; countdown?: boolean; vibration?: boolean}; onTransition: (state: SessionState) => void;
   renderSets: (exerciseId: string) => ReactNode;
+  renderFlag?: (exerciseId: string, close: () => void) => ReactNode;
   renderHistory?: (exerciseId: string) => ReactNode;
 };
 
 /** Presentation only. Every acknowledgement and state transition belongs to SessionScreen. */
-export function SessionView({ detail, elapsed, back, dirty, busy, error, artwork, preferences = {}, onTransition, renderSets, renderHistory }: Props) {
+export function SessionView({ detail, elapsed, back, dirty, busy, error, artwork, preferences = {}, onTransition, renderSets, renderHistory, renderFlag }: Props) {
   const [index, setIndex] = useState(0);
   const [countdown,setCountdown] = useState<number|null>(null);
   const audio = useRef<AudioContext|null>(null);
@@ -44,7 +45,7 @@ export function SessionView({ detail, elapsed, back, dirty, busy, error, artwork
     if(preferences.countdown)setCountdown(3);else setIndex(i=>i+1);
   }
   const [expanded, setExpanded] = useState(false);
-  const [sheet, setSheet] = useState<'overview' | 'sets' | 'finish' | 'history' | null>(null);
+  const [sheet, setSheet] = useState<'overview' | 'sets' | 'finish' | 'history' | 'flag' | null>(null);
   const { session, sets, editable } = detail;
   const exercises = session.prescription.exercises;
   const exercise = exercises[Math.min(index, exercises.length - 1)];
@@ -75,12 +76,14 @@ export function SessionView({ detail, elapsed, back, dirty, busy, error, artwork
       {expanded && <div className="player-action-row">
         <button className="button" disabled={locked || index === 0} onClick={() => setIndex(index - 1)}><ChevronLeft size={18}/>Previous</button>
         <button className="button primary" disabled={busy||countdown!==null} onClick={() => setSheet('sets')}>{editable ? 'Log Sets' : 'View Sets'}</button>
+        {editable&&renderFlag&&<button className="button" disabled={locked} onClick={()=>setSheet('flag')}><Flag size={18}/>Flag</button>}
         {renderHistory&&<button className="button" disabled={locked} onClick={()=>setSheet('history')}><History size={18}/>History</button>}
       </div>}
       <ErrorNote message={error}/>
       {editable && expanded && <button className="player-finish" disabled={locked} onClick={() => setSheet('finish')}>Finish Workout</button>}
     </div>
     {sheet === 'overview' && <Dialog title="Workout Overview" onClose={close}><div className="player-overview">{exercises.map((item, i) => <button key={item.id} onClick={() => { setIndex(i); setSheet(null); }} aria-current={i === index ? 'step' : undefined}><span><b>{item.name}</b><small>{item.sets.length} sets</small></span><ChevronRight/></button>)}</div></Dialog>}
+    {sheet === 'flag' && renderFlag?.(exercise.id,()=>setSheet(null))}
     {sheet === 'history' && <Dialog title={exercise.name} onClose={close} className="exercise-history-dialog">{renderHistory?.(exercise.id)}</Dialog>}
     {sheet === 'sets' && <Dialog title={exercise.name} onClose={close}><details key={`${exercise.id}:${preferences.instructions==='Every Time'?sets.length:''}`} className="player-instructions" open={preferences.instructions!=='Never'}><summary>Exercise Instructions</summary><p className="gymaf-pre">{exercise.instructions}</p></details><p className="note">Record what you performed. Blank values remain unrecorded.</p>{renderSets(exercise.id)}{dirty && <p role="status">Save every edited set before closing.</p>}</Dialog>}
     {sheet === 'finish' && <Dialog title="Finish Workout" onClose={close}><p>{sets.length} of {totalSets} sets logged.</p>{!performed && <p>Log a performed set to complete this workout.</p>}<ErrorNote message={error}/><button className="button primary full" disabled={locked || !performed} onClick={() => onTransition('completed')}>{busy ? 'Saving…' : 'Complete Workout'}</button><button className="button full" disabled={locked} onClick={() => { if (window.confirm('End this attempt without marking the workout completed?')) onTransition('abandoned'); }}>End Without Completion</button></Dialog>}

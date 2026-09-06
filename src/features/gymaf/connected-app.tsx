@@ -6,13 +6,14 @@ import { ClientArea } from "./client";
 import { CoachArea } from "./coach";
 import { OperatorArea } from "./operator";
 import { SessionScreen } from "./session";
+import { clearFeedbackDrafts } from "./feedback-drafts";
 import { Settings } from "lucide-react";
 import { Navigation, Note, Pending, useResource } from "./ui";
 
 export function ConnectedApp({ area, path = [], relationshipId, workspaceId }: { area: "app" | "coach" | "operator"; path?: string[]; relationshipId?: string; workspaceId?: string }) {
   const account = useResource<Bootstrap>("me"), [expired,setExpired] = useState(false);
   useEffect(() => {
-    const expire = () => setExpired(true);
+    const expire = () => {clearFeedbackDrafts();setExpired(true);};
     window.addEventListener("gymaf-session-expired",expire);
     const channel = typeof BroadcastChannel !== "undefined" ? new BroadcastChannel("gymaf-session") : null;
     if (channel) channel.onmessage=expire;
@@ -30,7 +31,7 @@ export function ConnectedApp({ area, path = [], relationshipId, workspaceId }: {
     <details className="gymaf-build-info"><summary aria-label="Environment and account menu"><Settings size={19}/><span>Environment</span></summary><div><p>{data.local_mode ? "Synthetic local environment · no live payments · MFA bypass is local-only" : "Pre-release integration build · not approved for real client data or public launch"}</p><Link href="/app/settings">Account settings</Link>{data.workspaces.length>0&&<Link href="/coach">Coach workspace</Link>}{data.operator&&<Link href="/operator">Operator</Link>}</div></details>
     <a href="#main" className="skip-link">Skip to content</a>
     <main id="main" className={`app-shell ${area==="app"?`connected-route-${path[0]||"home"}`:""} ${area === "app" && !path.length ? "home-page" : ""}`}>
-      {sessionId ? <SessionScreen key={sessionId} id={sessionId} back={area === "coach" ? "/coach" : `/app/history${query}`} /> : area === "operator" ? <OperatorArea /> : area === "coach" ? <CoachArea account={data} path={path} workspaceId={workspaceId} reloadAccount={account.reload} /> : <ClientArea account={data} path={path} selectedId={relationshipId} reloadAccount={account.reload} />}
+      {sessionId ? <SessionScreen ownerId={data.user.id} key={sessionId} id={sessionId} back={area === "coach" ? "/coach" : `/app/history${query}`} /> : area === "operator" ? <OperatorArea /> : area === "coach" ? <CoachArea account={data} path={path} workspaceId={workspaceId} reloadAccount={account.reload} /> : <ClientArea account={data} path={path} selectedId={relationshipId} reloadAccount={account.reload} />}
     </main>
     {area !== "operator" && !sessionId && !(area === "app" && (path[0] === "schedule" || path[0] === "settings" || path[0] === "progress" || (path[0] === "profile" && path[1]) || path[0] === "workouts")) && <Navigation area={area} active={path[0] || ""} locale={data.user.locale} query={query} />}
   </div>;

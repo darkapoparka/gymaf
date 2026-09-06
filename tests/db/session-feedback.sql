@@ -1,0 +1,67 @@
+\set ON_ERROR_STOP on
+begin;
+insert into auth.sessions values('b0000000-0000-4000-8000-000000000013','a0000000-0000-4000-8000-000000000003');
+select id as sid from public.workout_sessions where relationship_id='20000000-0000-4000-8000-000000000001' and state='completed' limit 1 \gset
+select id as open_sid from public.workout_sessions where relationship_id='20000000-0000-4000-8000-000000000001' and state='in_progress' limit 1 \gset
+create function test_helpers.feedback_invalid(statement text) returns void language plpgsql security invoker as $$
+begin begin execute statement; exception when sqlstate '22023' or sqlstate '22P02' or sqlstate '22003' then return; end; raise exception 'Expected validation denial'; end $$;
+grant execute on function test_helpers.feedback_invalid(text) to authenticated;
+set local role authenticated;
+select set_config('request.jwt.claims','{"sub":"a0000000-0000-4000-8000-000000000003","session_id":"b0000000-0000-4000-8000-000000000013","role":"authenticated","aal":"aal2"}',true);
+select public.gymaf_register_session();
+select test_helpers.assert(public.gymaf_feedback_query(:'sid')->>'revision'='0','Empty feedback does not invent ratings');
+select jsonb_build_object('sessionId',:'sid','revision',0,'data',jsonb_build_object('rating',5,'difficulty',3,'body','Private draft','flags',jsonb_build_array(jsonb_build_object('exerciseId','50000000-0000-4000-8000-000000000001','reasons',jsonb_build_array('Uncomfortable'),'comment','Please review'))))::text as draft \gset
+select public.gymaf_feedback_command('feedback.save','82000000-0000-4000-8000-000000000001',:'draft');
+select public.gymaf_feedback_command('feedback.save','82000000-0000-4000-8000-000000000001',:'draft');
+select test_helpers.assert(public.gymaf_feedback_query(:'sid')->>'revision'='1','Save retries do not advance revision');
+select test_helpers.assert((select count(*)=1 from public.session_feedback),'Owner can read own draft');
+select test_helpers.conflict(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.save','82000000-0000-4000-8000-000000000002',:'draft'));
+select test_helpers.conflict(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.save','82000000-0000-4000-8000-000000000001',(:'draft'::jsonb||'{"revision":1}')::text));
+select test_helpers.denied('update public.session_feedback set revision=10');
+select test_helpers.feedback_invalid(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.save','82000000-0000-4000-8000-000000000002',jsonb_set(:'draft'::jsonb||'{"revision":1}','{data,flags,0,exerciseId}','"50000000-0000-4000-8000-000000000099"')::text));
+select test_helpers.feedback_invalid(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.save','82000000-0000-4000-8000-000000000002',jsonb_set(:'draft'::jsonb||'{"revision":1}','{data,difficulty}','0')::text));
+select test_helpers.feedback_invalid(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.save','82000000-0000-4000-8000-000000000002',jsonb_set(:'draft'::jsonb||'{"revision":1}','{data,flags,0,reasons}','["Unknown"]')::text));
+select test_helpers.feedback_invalid(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.save','82000000-0000-4000-8000-000000000002',(:'draft'::jsonb||'{"revision":1,"userId":"spoof"}')::text));
+select test_helpers.set_actor(1);
+select test_helpers.assert((select count(*)=0 from public.session_feedback),'Assigned coach cannot select draft table');
+select test_helpers.assert(public.gymaf_feedback_query(:'sid')->'data'='null'::jsonb,'Assigned coach cannot read unsubmitted draft DTO');
+select test_helpers.assert(public.gymaf_feedback_query()='[]'::jsonb,'Coach export cannot leak private client drafts');
+select test_helpers.denied(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.save','82000000-0000-4000-8000-000000000004',:'draft'));
+select test_helpers.set_actor(2);
+select test_helpers.denied(format('select public.gymaf_feedback_query(%L)',:'sid'));
+select test_helpers.denied(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.submit','82000000-0000-4000-8000-000000000004',jsonb_build_object('sessionId',:'sid','revision',1)::text));
+select test_helpers.set_actor(4);
+select test_helpers.assert((select count(*)=0 from public.session_feedback),'Sibling cannot select drafts');
+select test_helpers.assert(public.gymaf_feedback_query()='[]'::jsonb,'Sibling export cannot leak drafts');
+select test_helpers.denied(format('select public.gymaf_feedback_query(%L)',:'sid'));
+select test_helpers.denied(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.save','82000000-0000-4000-8000-000000000004',:'draft'));
+select set_config('request.jwt.claims','{"sub":"a0000000-0000-4000-8000-000000000003","session_id":"b0000000-0000-4000-8000-000000000013","role":"authenticated","aal":"aal2"}',true);
+select public.gymaf_feedback_command('feedback.submit','82000000-0000-4000-8000-000000000002',jsonb_build_object('sessionId',:'sid','revision',1));
+select public.gymaf_feedback_command('feedback.submit','82000000-0000-4000-8000-000000000002',jsonb_build_object('sessionId',:'sid','revision',1));
+select public.gymaf_feedback_command('feedback.submit','82000000-0000-4000-8000-000000000003',jsonb_build_object('sessionId',:'sid','revision',1));
+select public.gymaf_feedback_command('feedback.save','82000000-0000-4000-8000-000000000004',jsonb_set(:'draft'::jsonb||'{"revision":1}','{data,body}','"Unsent edit"'));
+select test_helpers.assert(public.gymaf_feedback_query(:'sid')->'data'->>'body'='Unsent edit','Owner sees latest private draft');
+select test_helpers.assert(jsonb_array_length(public.gymaf_feedback_query())=1,'Owner export contains own feedback');
+select test_helpers.set_actor(1);
+select test_helpers.assert(public.gymaf_feedback_query(:'sid')->'data'->>'body'='Private draft','Coach sees only submitted snapshot after draft edits');
+select test_helpers.assert(public.gymaf_feedback_query(:'sid')->>'revision'='1','Private revision count hidden from coach');
+select test_helpers.assert((select count(*)=1 from public.notifications where kind='Workout feedback'),'One notification despite repeated submission');
+select set_config('request.jwt.claims','{"sub":"a0000000-0000-4000-8000-000000000003","session_id":"b0000000-0000-4000-8000-000000000013","role":"authenticated","aal":"aal2"}',true);
+select public.gymaf_feedback_command('feedback.submit','82000000-0000-4000-8000-000000000006',jsonb_build_object('sessionId',:'sid','revision',2));
+select public.gymaf_feedback_command('feedback.save','82000000-0000-4000-8000-000000000007',jsonb_set(:'draft'::jsonb,'{sessionId}',to_jsonb(:'open_sid'::text)));
+select test_helpers.feedback_invalid(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.submit','82000000-0000-4000-8000-000000000008',jsonb_build_object('sessionId',:'open_sid','revision',1)::text));
+select test_helpers.set_actor(1);
+select test_helpers.assert(public.gymaf_feedback_query(:'sid')->'data'->>'body'='Unsent edit','Explicit resubmission updates shared snapshot');
+select test_helpers.assert((select count(*)=2 from public.notifications where kind='Workout feedback'),'Only explicit revised feedback adds a second notification');
+reset role;
+update public.coaching_relationships set state='ended' where id='20000000-0000-4000-8000-000000000001';
+set local role authenticated;
+select test_helpers.denied(format('select public.gymaf_feedback_query(%L)',:'sid'));
+select set_config('request.jwt.claims','{"sub":"a0000000-0000-4000-8000-000000000003","session_id":"b0000000-0000-4000-8000-000000000013","role":"authenticated","aal":"aal2"}',true);
+select test_helpers.assert(public.gymaf_feedback_query(:'sid')->>'canSubmit'='false','Ended relationship retains client draft but disables sending');
+select test_helpers.denied(format('select public.gymaf_feedback_command(%L,%L,%L::jsonb)','feedback.submit','82000000-0000-4000-8000-000000000005',jsonb_build_object('sessionId',:'sid','revision',2)::text));
+reset role;
+select test_helpers.assert(not has_function_privilege('anon','public.gymaf_feedback_query(uuid)','execute'),'Anonymous query denied');
+select test_helpers.assert(not has_function_privilege('anon','public.gymaf_feedback_command(text,uuid,jsonb)','execute'),'Anonymous mutation denied');
+rollback;
+select 'PASS: feedback drafts, submitted snapshots, flags, retries, privacy and ended relationship' as result;

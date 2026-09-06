@@ -1,4 +1,5 @@
 import type { Command, ProgramPlan, PlanSet } from "./contracts";
+export const flagReasons = ['Dislike', 'Too Hard', 'Too Easy', 'Injured', 'Mix It Up', 'Traveling', 'Equipment Busy', 'Uncomfortable', 'Missing Equipment'] as const;
 
 export class InputError extends Error { constructor(message: string) { super(message); this.name = "InputError"; } }
 export function object(value: unknown): Record<string, unknown> {
@@ -77,6 +78,20 @@ export function validateCommand(value: unknown): Command {
   const id = (name: string) => uuid(p[name]);
   const revision = () => integer(p.revision, "Revision", 0, 2147483646);
   switch (action) {
+    case "feedback.submit": keys(p, ["sessionId", "revision"]); payload = { sessionId: id("sessionId"), revision: revision() }; break;
+    case "feedback.save": {
+      keys(p, ["sessionId", "revision", "data"]);
+      const d = object(p.data); keys(d, ["rating", "difficulty", "body", "flags"]);
+      if (!Array.isArray(d.flags) || d.flags.length > 30) throw new InputError("Invalid flags.");
+      const seen = new Set<string>();
+      const flags = d.flags.map(raw => {
+        const f = object(raw); keys(f, ["exerciseId", "reasons", "comment"]);
+        const exerciseId = uuid(f.exerciseId), reasons = list(f.reasons, "Reasons", 9).map(v => oneOf(v, flagReasons));
+        if (seen.has(exerciseId) || new Set(reasons).size !== reasons.length) throw new InputError("Duplicate flag or reason.");
+        seen.add(exerciseId); return { exerciseId, reasons, comment: text(f.comment, "Flag comment", 1000) };
+      });
+      payload = { sessionId: id("sessionId"), revision: revision(), data: { rating: d.rating === null ? null : integer(d.rating, "Rating", 1, 5), difficulty: d.difficulty === null ? null : integer(d.difficulty, "Difficulty", 1, 5), body: text(d.body, "Feedback", 2000), flags } }; break;
+    }
     case "training.favorite": keys(p, ["scheduledId", "favorite", "revision"]); payload = { scheduledId: id("scheduledId"), favorite: boolean(p.favorite), revision: revision() }; break;
     case "member.save": {
       keys(p, ["id", "kind", "data", "revision"]);
